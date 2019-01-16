@@ -1,0 +1,265 @@
+/* override critical */
+header {
+  width: 100%;
+  margin: 0 auto;
+}
+
+header .header__top {
+  padding: 2rem 0;
+}
+
+header .header__links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  width: 100%;
+  padding: 1rem 0.5rem 0 0.5rem;
+}
+
+header .header__links li {
+  display: inline-block;
+  line-height: 1;
+}
+
+header .links__internal,
+header .links__social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 1rem;
+}
+
+header .links__internal li {
+  margin: 0 0.5em;
+}
+
+header .links__social li {
+  margin: 0 0.25em;
+}
+
+header .header__links a {
+  display: block;
+  color: #2a2a2a;
+  border: none;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+header .header__links a.hiring {
+  background-image: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    color-stop(0, #0400ff),
+    color-stop(1, #c41717)
+  );
+  background-image: gradient(
+    linear,
+    left top,
+    right top,
+    color-stop(0, #eb5757),
+    color-stop(1, #17c4be)
+  );
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+header .header__logo {
+  display: block;
+  border: none;
+  max-width: 12rem;
+  width: 100%;
+  margin: 0 auto;
+  padding: 1rem 0;
+}
+
+header .header__logo svg {
+  width: 100%;
+}
+
+header .links__social a {
+  border: none;
+  /* display: inline-block; */
+  line-height: 1;
+}
+
+header .links__social svg,
+header .links__social img {
+  width: 15px;
+  height: 15px;
+  line-height: 1;
+}
+
+header .about__tagline {
+  text-align: center;
+  max-width: 30rem;
+  margin: 0 auto;
+  /* display: none; */
+}
+
+header .about__tagline p {
+  margin: 0;
+}
+
+header .about {
+  width: 100%;
+  position: relative;
+  /* background-color: #f3f3f3; */
+  padding: 1.5rem 0.75rem;
+}
+
+header .about__support {
+  max-width: 30rem;
+  margin: 1rem auto 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-around;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+header .about__support p {
+  margin: 0;
+  text-align: center;
+  font-size: 12px;
+  color: #484848;
+}
+
+header .about .support__item {
+  margin-bottom: 1.5rem;
+}
+
+header .about .support__item p:first-child {
+  margin-bottom: 1em;
+}
+
+header .support__patreon .btn {
+  display: block;
+  margin: 0 auto;
+  width: 9rem;
+  background-color: #2a2a2a;
+  font-size: 0.65rem;
+  line-height: 1.2;
+}
+
+header .support__patreon a {
+  border: none;
+  display: block;
+}
+
+header .patreon__content {
+  text-align: center;
+}
+
+header .subscribe__newsletter form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+header .subscribe__newsletter .newsletter__input {
+  display: block;
+  border: 1px solid #aaa;
+  border-radius: 3px;
+  font-size: 0.65rem;
+  background-color: #fff;
+  color: #484848;
+  height: 1.75rem;
+  padding: 0.5rem;
+  width: 9rem;
+  -moz-background-size: 40px 171px;
+  -o-background-size: 40px 171px;
+  background-size: 35px 162px;
+  background-image: url(https://pudding.cool/common/assets/misc/icon.png);
+  background-position: right -43px;
+  background-repeat: no-repeat;
+}
+
+header .subscribe__newsletter .newsletter__input:-moz-placeholder {
+  /* Firefox 18- */
+  color: #1a1a1a;
+  font-weight: 400;
+  font-family: 'Atlas Grotesk Web', Helvetica, sans-serif;
+  opacity: 0.5;
+}
+
+header .subscribe__newsletter .newsletter__input::-moz-placeholder {
+  /* Firefox 19+ */
+  color: #888;
+  font-family: 'Atlas Grotesk Web', Helvetica, sans-serif;
+}
+
+header .subscribe__newsletter .newsletter__input:-ms-input-placeholder {
+  color: #888;
+  font-family: 'Atlas Grotesk Web', Helvetica, sans-serif;
+}
+
+header .subscribe__newsletter .newsletter__input::-webkit-input-placeholder {
+  color: #888;
+  font-family: 'Atlas Grotesk Web', Helvetica, sans-serif;
+}
+
+header .subscribe__newsletter .newsletter__button {
+  text-decoration: none;
+  border: none;
+  -webkit-appearance: none;
+  outline: none;
+  margin-left: 0.5rem;
+  font-size: 0.65rem;
+  padding: 0 0.75rem;
+}
+
+@media only screen and (min-width: 30rem) {
+  header .about__support {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+  }
+}
+
+@media only screen and (min-width: 40em) {
+  header .about .support__item {
+    margin-bottom: 0;
+  }
+}
+
+@media only screen and (min-width: 60em) {
+  header .header__links {
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+  }
+
+  header .links__internal li {
+    margin: 0 1.2em;
+  }
+
+  header .header__logo {
+    width: 100%;
+  }
+
+  header .about__tagline {
+    display: block;
+  }
+}

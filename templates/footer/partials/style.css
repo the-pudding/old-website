@@ -1,0 +1,404 @@
+.pudding-footer {
+  margin: 0;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 1.6;
+  font-family: "Atlas Grotesk Web", "Whitney SSm A", "Whitney SSm B", Helvetica,
+    Arial, sans-serif;
+  background-color: #efefef;
+  color: #2a2a2a;
+  padding-top: 1em;
+  box-sizing: border-box;
+}
+.pudding-footer * {
+  box-sizing: border-box;
+}
+.pudding-footer p {
+  padding: 0;
+  margin: 0;
+  font-size: 1em;
+  line-height: 1.6;
+  max-width: 100%;
+}
+.pudding-footer .btn {
+  background-color: #ddd;
+  color: #2a2a2a;
+  font-weight: 500;
+  font-size: 1rem;
+  border-radius: 3px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  padding: 0.5rem 0.75rem;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  outline: 0;
+}
+.pudding-footer .btn--primary {
+  background-color: #eb5757;
+  color: #fff;
+}
+.pudding-footer .btn--dark {
+  background-color: #2a2a2a;
+  color: #fff;
+}
+.pudding-footer .xxx-small {
+  font-size: 10px;
+  line-height: 1.5;
+}
+.pudding-footer .xx-small {
+  font-size: 12px;
+  line-height: 1.5;
+}
+.pudding-footer .x-small {
+  font-size: 14px;
+  line-height: 1.5;
+}
+.pudding-footer .small {
+  font-size: 16px;
+  line-height: 1.5;
+}
+.pudding-footer .medium {
+  font-size: 18px;
+  line-height: 1.7;
+}
+.pudding-footer .large {
+  font-size: 24px;
+  line-height: 1.5;
+}
+.pudding-footer .x-large {
+  font-size: 32px;
+  line-height: 1.2;
+}
+.pudding-footer .xx-large {
+  font-size: 48px;
+  line-height: 1.2;
+}
+.pudding-footer .xxx-large {
+  font-size: 64px;
+  line-height: 1.2;
+}
+.pudding-footer .footer-social {
+  padding: 1em;
+  max-width: 40em;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 1em;
+}
+.pudding-footer .footer-social__preach {
+  display: block;
+  padding: 0;
+  margin-right: 0.5em;
+}
+.pudding-footer .footer-social__preach strong {
+  font-weight: 700;
+}
+.pudding-footer .footer-social__icons {
+  display: inline-block;
+  vertical-align: middle;
+  margin-top: 1em;
+  overflow: hidden;
+  zoom: 1;
+}
+.pudding-footer .footer-social__icon {
+  float: left;
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+  margin-right: 0.5em;
+  display: inline-block;
+}
+.pudding-footer .footer-recirc {
+  padding: 1em;
+  font-size: 1em;
+}
+.pudding-footer .footer-recirc__hed {
+  font-family: "Atlas Grotesk Web", "Whitney SSm A", "Whitney SSm B", Helvetica,
+    Arial, sans-serif;
+  text-align: center;
+  color: #1a1a1a;
+  font-weight: 700;
+  font-size: 0.9em;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 1rem;
+}
+.pudding-footer .footer-recirc__articles {
+  margin: 0 auto;
+  max-width: 50em;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+.pudding-footer .footer-recirc__article {
+  margin: 0;
+  padding: 1em;
+  display: block;
+  text-align: left;
+  text-decoration: none;
+  color: #2a2a2a;
+  font-size: 0.8em;
+  width: 100%;
+  max-width: 19em;
+  border: none;
+}
+.pudding-footer .footer-recirc__article p {
+  padding: 0;
+}
+.pudding-footer .footer-recirc .article__headline {
+  font-family: "Atlas Grotesk Web", "Whitney SSm A", "Whitney SSm B", Helvetica,
+    Arial, sans-serif;
+  font-weight: 400;
+  margin-top: 1em;
+}
+.pudding-footer .footer-recirc .article__img {
+  width: 100%;
+  height: 8em;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.pudding-footer .footer-support {
+  width: 100%;
+  max-width: 30rem;
+  margin: 0 auto;
+  position: relative;
+  padding: 1rem;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+.pudding-footer .footer-support p {
+  margin: 0 0 0.5rem 0;
+  text-align: center;
+}
+.pudding-footer .footer-support .support__item {
+  margin-bottom: 1.5rem;
+}
+.pudding-footer .footer-support .support__patreon .btn {
+  display: block;
+  margin: 0 auto;
+  width: 9rem;
+  background-color: #2a2a2a;
+  font-size: 0.65rem;
+  line-height: 1.2;
+}
+.pudding-footer .footer-support .support__patreon a {
+  border: none;
+  display: block;
+  text-decoration: none;
+}
+.pudding-footer .footer-support .patreon__content {
+  text-align: center;
+}
+.pudding-footer .footer-support .subscribe__newsletter form {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+.pudding-footer .footer-support .subscribe__newsletter .newsletter__input {
+  display: block;
+  border: 1px solid #aaa;
+  border-radius: 3px;
+  font-size: 0.65rem;
+  background-color: #fff;
+  color: #484848;
+  height: 1.75rem;
+  padding: 0.5rem;
+  width: 12rem;
+  background-size: 35px 162px;
+  background-image: url(https://pudding.cool/common/assets/misc/icon.png);
+  background-position: right -43px;
+  background-repeat: no-repeat;
+}
+.pudding-footer
+  .footer-support
+  .subscribe__newsletter
+  .newsletter__input:-moz-placeholder {
+  color: #1a1a1a;
+  font-weight: 400;
+  font-family: "Atlas Grotesk Web", Helvetica, sans-serif;
+  opacity: 0.5;
+}
+.pudding-footer
+  .footer-support
+  .subscribe__newsletter
+  .newsletter__input::-moz-placeholder {
+  color: #888;
+  font-family: "Atlas Grotesk Web", Helvetica, sans-serif;
+}
+.pudding-footer
+  .footer-support
+  .subscribe__newsletter
+  .newsletter__input:-ms-input-placeholder {
+  color: #888;
+  font-family: "Atlas Grotesk Web", Helvetica, sans-serif;
+}
+.pudding-footer
+  .footer-support
+  .subscribe__newsletter
+  .newsletter__input::-webkit-input-placeholder {
+  color: #888;
+  font-family: "Atlas Grotesk Web", Helvetica, sans-serif;
+}
+.pudding-footer .footer-support .subscribe__newsletter .newsletter__button {
+  text-decoration: none;
+  border: none;
+  -webkit-appearance: none;
+  outline: 0;
+  margin-left: 0.5rem;
+  font-size: 0.65rem;
+  text-decoration: none;
+}
+.pudding-footer .footer-company {
+  padding: 1em;
+  background: #fff;
+  color: #2a2a2a;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  font-size: 1em;
+}
+.pudding-footer .footer-company a {
+  color: #2a2a2a;
+  text-decoration: none;
+  border-bottom: 1px dotted #1a1a1a;
+}
+.pudding-footer .footer-company p,
+.pudding-footer .footer-company ul {
+  margin: 0;
+  font-weight: 400;
+  font-size: 0.8em;
+  line-height: 1.6;
+  list-style-type: none;
+}
+.pudding-footer .footer-company__wrapper {
+  max-width: 60em;
+  margin: 0 auto;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  overflow: hidden;
+  zoom: 1;
+}
+.pudding-footer .footer-company__left {
+  max-width: 25em;
+  padding: 0 1em;
+}
+.pudding-footer .footer-company__description {
+  max-width: 25em;
+  padding: 1em 0;
+}
+.pudding-footer .footer-company__right {
+  max-width: 25em;
+  padding: 0 1em;
+  text-align: left;
+  margin: 0 auto;
+}
+.pudding-footer .footer-company svg {
+  fill: #000;
+  height: 16px;
+  width: 16px;
+}
+.pudding-footer .footer-company ul {
+  max-width: 40em;
+  margin: 1em auto;
+  display: inline-block;
+  overflow: hidden;
+  zoom: 1;
+}
+.pudding-footer .footer-company ul li {
+  margin-right: 1.5em;
+  float: left;
+  font-size: 12px;
+}
+.pudding-footer .footer-company ul li a {
+  text-transform: uppercase;
+  text-decoration: none;
+  border-bottom: none;
+  font-weight: 400;
+}
+.pudding-footer .footer-company__trademark {
+  width: 100%;
+}
+.pudding-footer .footer-company__trademark p {
+  font-family: "Atlas Grotesk Web", "Whitney SSm A", "Whitney SSm B", Helvetica,
+    Arial, sans-serif;
+  margin: 3em auto 1em auto;
+  text-align: center;
+  width: 100%;
+  text-align: center;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  padding: 0 1em;
+  color: #888;
+  font-size: 0.8em;
+}
+.pudding-footer .footer-company__trademark span {
+  font-weight: 400;
+}
+@media only screen and (min-width: 25em) {
+  .hack {
+    display: none;
+  }
+}
+@media only screen and (min-width: 40em) {
+  .hack {
+    display: none;
+  }
+  .pudding-footer .footer-social__preach {
+    display: inline-block;
+  }
+  .pudding-footer .footer-social__icons {
+    margin-top: 0;
+  }
+  .pudding-footer .footer-recirc__article {
+    width: 50%;
+  }
+  .pudding-footer .footer-support {
+    -ms-flex-direction: row;
+    flex-direction: row;
+  }
+}
+@media only screen and (min-width: 50em) {
+  .hack {
+    display: none;
+  }
+  .pudding-footer .footer-recirc__article {
+    width: 25%;
+  }
+  .pudding-footer .footer-recirc .article__img {
+    height: 6.5em;
+  }
+  .pudding-footer .footer-support .support__item {
+    min-width: 15rem;
+  }
+  .pudding-footer .footer-company__wrapper {
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+  }
+  .pudding-footer .footer-company__right {
+    margin: 0;
+    text-align: center;
+  }
+}
+@media only screen and (min-width: 60em) {
+  .hack {
+    display: none;
+  }
+}

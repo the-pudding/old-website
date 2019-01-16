@@ -1,0 +1,38 @@
+#home #new
+
+	ul
+		display flex
+		flex-wrap wrap
+
+	.story-item
+		position relative
+		display flex
+		align-items center
+		width 50%
+		
+		&:first-of-type
+			width 100%
+
+			.item__img
+				width 100%
+
+			.item__info
+				position absolute
+				bottom 0
+				left 0
+				background $bg
+			
+			.item__hed
+				display block
+	
+			.item__author
+				display block
+	
+	.item__hed
+		display none
+	
+	.item__dek
+		display none
+	
+	.item__author
+		display none

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+ xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+ xmlns:slash="http://purl.org/rss/1.0/modules/slash/">
+	<channel>
+		<title>The Pudding</title>
+		<atom:link href="https://pudding.cool/feed/index.xml" rel="self" type="application/rss+xml" />
+		<link>https://pudding.cool</link>
+		<description>A weekly journal of visual essays</description>
+		<lastBuildDate>
+			<!-- lastBuildDate -->
+		</lastBuildDate>
+		<language>en-US</language>
+		<sy:updatePeriod>daily</sy:updatePeriod>
+		<sy:updateFrequency>1</sy:updateFrequency>
+		<image>
+			<title>The Pudding</title>
+			<url>https://pudding.cool/homepage/assets/misc/og-img.jpg</url>
+			<link>https://pudding.cool</link>
+		</image>
+
+		<!-- items -->
+
+	</channel>
+</rss>
