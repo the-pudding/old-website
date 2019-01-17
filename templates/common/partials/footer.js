@@ -1,47 +1,38 @@
-<footer>
-		<div class='outro'>
-			<p class='footer__description x-small'>
-				The Pudding is an editorial publication that explains ideas debated in culture with visual essays.
-			</p>
-			<div class='footer__interwebs'>
-				<div class='interwebs__outer'>
-					<p class='interwebs__label tk-atlas'>Interwebs</p>
-					<a target='_blank' href='https://www.facebook.com/pudding.viz/' class='facebook-logo'>
-						<img inline src='common/assets/svg/facebook.svg'>
-					</a>
-					<a target='_blank' href='https://twitter.com/puddingviz' class='twitter-logo'>
-						<img inline src='common/assets/svg/twitter.svg'>
-					</a>
-					<a target='_blank' href='https://www.instagram.com/pudding.cool' class='instagram-logo'>
-						<img inline src='common/assets/svg/instagram.svg'>
-					</a>
-				</div>
-			</div>
-		</div>
+module.exports = function({ path = '' }) {
+  return `
+		<footer>
+			<div class='footer__inner'>
+				<p class='footer__description'>
+					The Pudding is an editorial publication that explains ideas debated in culture with visual essays.
+				</p>
 
-		<ul class='footer__links x-small'>
-			<li class='x-small'>
-				<a href='about/'>About</a>
-			</li>
-			<li class='x-small'>
-				<a href='about/#positions'>Open positions</a>
-			</li>
-			<li class='x-small'>
-				<a href='about/#contribute'>Freelance contributions</a>
-			</li>
-			<li class='x-small'>
-				<a href='about/#team'>The team</a>
-			</li>
-			<li class='x-small'>
-				<a href='about/#contact'>Contact us</a>
-			</li>
-			<li class='x-small'>
-				<a href='about/#sponsored'>Sponsored posts</a>
-			</li>
-			<li class='x-small'>
-				<a href='feed/index.xml'>RSS</a>
-			</li>
-		</ul>
-		<p class='footer__location xx-small tk-atlas'>The Pudding
-			<span>®</span> is made in Brooklyn, NY; Seattle, WA; San Antonio, TX; and Great Barrington, MA.</p>
-	</footer>
+				<div class='footer__social'>
+					<p>Find us on the socials</p>
+					<ul>
+						<li>
+							<a target='_blank' href='https://www.facebook.com/pudding.viz/' class='logo--facebook'>
+							<img inline src='${path}common/assets/svg/facebook.svg'></a>
+						</li>
+
+						<li>
+							<a target='_blank' href='https://twitter.com/puddingviz' class='logo--twitter'>
+							<img inline src='${path}common/assets/svg/twitter.svg'>
+						</a>
+						</li>
+
+						<li>
+							<a target='_blank' href='https://www.instagram.com/pudding.cool' class='logo--instagram'>
+							<img inline src='${path}common/assets/svg/instagram.svg'>
+						</li>
+
+						<li>
+							<a target='_blank' href='https://www.patreon.com/thepudding' class='logo--patreon'><img inline src='${path}${path}common/assets/svg/patreon.svg'></a>
+						</li>
+					</ul>
+				</div>
+				
+				<p class='footer__location'>The Pudding<span>®</span> is made in Brooklyn, NY; Seattle, WA; San Antonio, TX; and Great Barrington, MA.</p>
+			</div>
+		</footer>
+	`;
+};

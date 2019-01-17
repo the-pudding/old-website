@@ -1,13 +1,16 @@
 const fse = require('fs-extra');
-const d3 = require('d3');
 const replace = require('replace-in-file');
 const buble = require('buble');
 
 const cwd = process.cwd();
 
 const Header = require(`${cwd}/templates/common/partials/header`);
-const Picks = require(`${cwd}/templates/homepage/partials/picks`);
-const New = require(`${cwd}/templates/homepage/partials/new`);
+const Picks = require(`${cwd}/templates/home/partials/picks`);
+const New = require(`${cwd}/templates/home/partials/new`);
+const Topics = require(`${cwd}/templates/home/partials/topics`);
+const How = require(`${cwd}/templates/home/partials/how`);
+const Cta = require(`${cwd}/templates/common/partials/cta`);
+const Footer = require(`${cwd}/templates/common/partials/footer`);
 
 const storyData = JSON.parse(
   fse.readFileSync(`${cwd}/.tmp/data/stories.json`, 'utf-8')
@@ -26,17 +29,17 @@ function cleanTemp(dir) {
 
 function copyHTMLTemplate() {
   console.log('copying html template file...');
-  fse.ensureDirSync(`${cwd}/.tmp/homepage`);
+  fse.ensureDirSync(`${cwd}/.tmp/home`);
   fse.copySync(
-    `${cwd}/templates/homepage/index.template`,
-    `${cwd}/.tmp/homepage/index.template`
+    `${cwd}/templates/home/index.template`,
+    `${cwd}/.tmp/home/index.template`
   );
   return Promise.resolve();
 }
 
 function compileEntryJS() {
   const input = fse.readFileSync(
-    `${cwd}/templates/homepage/entry.template.js`,
+    `${cwd}/templates/home/entry.template.js`,
     'utf-8'
   );
   const output = buble.transform(input);
@@ -49,19 +52,37 @@ function createMarkup() {
   const headerHTML = Header({});
   const picksHTML = Picks({});
   const newHTML = New({});
+  const topicsHTML = Topics({});
+  const ctaHTML = Cta();
+  const howHTML = How({});
+  const footerHTML = Footer({});
   const storyJS = JSON.stringify(storyData);
   const entryJS = compileEntryJS();
 
   const options = {
-    files: `${cwd}/.tmp/homepage/index.template`,
+    files: `${cwd}/.tmp/home/index.template`,
     from: [
       '<!-- header -->',
       '<!-- picks -->',
       '<!-- new -->',
+      '<!-- topics -->',
+      '<!-- cta -->',
+      '<!-- how -->',
+      '<!-- footer -->',
       '/* story-data */',
       '/* entry-js */'
     ],
-    to: [headerHTML, picksHTML, newHTML, storyJS, entryJS]
+    to: [
+      headerHTML,
+      picksHTML,
+      newHTML,
+      topicsHTML,
+      ctaHTML,
+      howHTML,
+      footerHTML,
+      storyJS,
+      entryJS
+    ]
   };
 
   return new Promise((resolve, reject) => {
@@ -87,10 +108,10 @@ function createHTML() {
 }
 
 function init() {
-  cleanTemp('homepage')
+  cleanTemp('home')
     .then(createHTML)
     .then(() => {
-      console.log('DONE: homepage.js');
+      console.log('DONE: home.js');
       process.exit();
     })
     .catch(err => console.log(err));

@@ -26,7 +26,7 @@ All modifications should go in the `styles` directory. The Stylus is compiled to
 
 #### JS
 
-All modifications should go in the `templates` JS files, for example `templates/homepage/entry.template.js`).
+All modifications should go in the `templates` JS files, for example `templates/home/entry.template.js`).
 
 ## Data and Copy
 

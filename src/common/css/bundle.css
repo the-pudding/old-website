@@ -321,6 +321,68 @@ sub {
   bottom: -0.25em;
 }
 
+.cta {
+  width: 100%;
+  background: #f00;
+}
+
+.cta__hed {
+  max-width: 80rem;
+  margin: 0 auto;
+}
+
+.cta__items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  max-width: 80rem;
+  margin: 0 auto;
+}
+
+footer {
+  background: #008000;
+}
+
+footer .footer__inner {
+  max-width: 80rem;
+  margin: 0 auto;
+}
+
+footer .footer__description {
+  margin: 0;
+}
+
+footer .footer__social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+footer .footer__social p {
+  margin: 0;
+}
+
+footer .footer__social ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+footer .footer__social a {
+  border: none;
+  display: block;
+  max-width: 2rem;
+}
+
+footer .footer__location {
+  margin: 0;
+}
+
 header {
   z-index: 1000;
   display: -webkit-box;
@@ -348,6 +410,33 @@ header .header__nav .nav__links {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+#home #how ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#home #how .story-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+#home #how .item__img {
+  max-width: 10rem;
+}
+
+#home #how .item__dek {
+  display: none;
+}
+
+#home #how .item__author {
+  display: none;
 }
 
 #home #new ul {
@@ -429,6 +518,38 @@ header .header__nav .nav__links {
 
 #home #picks .item__author {
   display: none;
+}
+
+#home #topics ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#home #topics .story-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+#home #topics .item__img {
+  max-width: 10rem;
+}
+
+#home #topics .item__dek {
+  display: none;
+}
+
+#home #topics .item__author {
+  display: none;
+}
+
+#home header {
+  max-width: 80rem;
+  margin: 0 auto;
 }
 
 #home section {

@@ -1,5 +1,5 @@
-live-homepage:
-	aws s3 sync dist/homepage/ s3://pudding.cool/homepage
+live-home:
+	aws s3 sync dist/home/ s3://pudding.cool/home
 	aws s3 cp dist/index.html s3://pudding.cool/index.html
 	aws s3 cp dist/feed/index.xml s3://pudding.cool/feed/index.xml
 
@@ -16,9 +16,9 @@ live-common:
 	aws s3 sync dist/common/ s3://pudding.cool/common
 
 live-cloudfront: 
-	aws cloudfront create-invalidation --distribution-id E13X38CRR4E04D --paths  '/' '/index.html' '/homepage*' '/feed*' '/common*' '/about*' '/author*' '/assets/scripts/pudding-footer.js'	
+	aws cloudfront create-invalidation --distribution-id E13X38CRR4E04D --paths  '/' '/index.html' '/home*' '/feed*' '/common*' '/about*' '/author*' '/assets/scripts/pudding-footer.js'	
 
-live: live-homepage live-footer live-about live-author live-common live-cloudfront
+live: live-home live-footer live-about live-author live-common live-cloudfront
 	
 server:
 	browser-sync start --ss ./src --files src/**/* --index index.html --no-notify

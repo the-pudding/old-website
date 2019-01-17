@@ -35,26 +35,26 @@ explains ideas debated in culture with visual essays.'>
 	<link rel='alternate' type='application/rss+xml' title='Latest from The Pudding' href='https://feeds.feedburner.com/pudding/feed'
 	/>
 
-	<link rel="apple-touch-icon-precomposed" sizes="57x57" href="homepage/assets/favicon/apple-touch-icon-57x57.png" />
-	<link rel="apple-touch-icon-precomposed" sizes="114x114" href="homepage/assets/favicon/apple-touch-icon-114x114.png" />
-	<link rel="apple-touch-icon-precomposed" sizes="72x72" href="homepage/assets/favicon/apple-touch-icon-72x72.png" />
-	<link rel="apple-touch-icon-precomposed" sizes="144x144" href="homepage/assets/favicon/apple-touch-icon-144x144.png" />
-	<link rel="apple-touch-icon-precomposed" sizes="60x60" href="homepage/assets/favicon/apple-touch-icon-60x60.png" />
-	<link rel="apple-touch-icon-precomposed" sizes="120x120" href="homepage/assets/favicon/apple-touch-icon-120x120.png" />
-	<link rel="apple-touch-icon-precomposed" sizes="76x76" href="homepage/assets/favicon/apple-touch-icon-76x76.png" />
-	<link rel="apple-touch-icon-precomposed" sizes="152x152" href="homepage/assets/favicon/apple-touch-icon-152x152.png" />
-	<link rel="icon" type="image/png" href="homepage/assets/favicon/favicon-196x196.png" sizes="196x196" />
-	<link rel="icon" type="image/png" href="homepage/assets/favicon/favicon-96x96.png" sizes="96x96" />
-	<link rel="icon" type="image/png" href="homepage/assets/favicon/favicon-32x32.png" sizes="32x32" />
-	<link rel="icon" type="image/png" href="homepage/assets/favicon/favicon-16x16.png" sizes="16x16" />
-	<link rel="icon" type="image/png" href="homepage/assets/favicon/favicon-128.png" sizes="128x128" />
+	<link rel="apple-touch-icon-precomposed" sizes="57x57" href="home/assets/favicon/apple-touch-icon-57x57.png" />
+	<link rel="apple-touch-icon-precomposed" sizes="114x114" href="home/assets/favicon/apple-touch-icon-114x114.png" />
+	<link rel="apple-touch-icon-precomposed" sizes="72x72" href="home/assets/favicon/apple-touch-icon-72x72.png" />
+	<link rel="apple-touch-icon-precomposed" sizes="144x144" href="home/assets/favicon/apple-touch-icon-144x144.png" />
+	<link rel="apple-touch-icon-precomposed" sizes="60x60" href="home/assets/favicon/apple-touch-icon-60x60.png" />
+	<link rel="apple-touch-icon-precomposed" sizes="120x120" href="home/assets/favicon/apple-touch-icon-120x120.png" />
+	<link rel="apple-touch-icon-precomposed" sizes="76x76" href="home/assets/favicon/apple-touch-icon-76x76.png" />
+	<link rel="apple-touch-icon-precomposed" sizes="152x152" href="home/assets/favicon/apple-touch-icon-152x152.png" />
+	<link rel="icon" type="image/png" href="home/assets/favicon/favicon-196x196.png" sizes="196x196" />
+	<link rel="icon" type="image/png" href="home/assets/favicon/favicon-96x96.png" sizes="96x96" />
+	<link rel="icon" type="image/png" href="home/assets/favicon/favicon-32x32.png" sizes="32x32" />
+	<link rel="icon" type="image/png" href="home/assets/favicon/favicon-16x16.png" sizes="16x16" />
+	<link rel="icon" type="image/png" href="home/assets/favicon/favicon-128.png" sizes="128x128" />
 	<meta name="application-name" content="&nbsp;" />
 	<meta name="msapplication-TileColor" content="#FFFFFF" />
-	<meta name="msapplication-TileImage" content="homepage/assets/favicon/mstile-144x144.png" />
-	<meta name="msapplication-square70x70logo" content="homepage/assets/favicon/mstile-70x70.png" />
-	<meta name="msapplication-square150x150logo" content="homepage/assets/favicon/mstile-150x150.png" />
-	<meta name="msapplication-wide310x150logo" content="homepage/assets/favicon/mstile-310x150.png" />
-	<meta name="msapplication-square310x310logo" content="homepage/assets/favicon/mstile-310x310.png" />
+	<meta name="msapplication-TileImage" content="home/assets/favicon/mstile-144x144.png" />
+	<meta name="msapplication-square70x70logo" content="home/assets/favicon/mstile-70x70.png" />
+	<meta name="msapplication-square150x150logo" content="home/assets/favicon/mstile-150x150.png" />
+	<meta name="msapplication-wide310x150logo" content="home/assets/favicon/mstile-310x150.png" />
+	<meta name="msapplication-square310x310logo" content="home/assets/favicon/mstile-310x310.png" />
 
 
 	<link inline rel='stylesheet' href='common/css/bundle.css'>
@@ -94,7 +94,7 @@ explains ideas debated in culture with visual essays.'>
 
 	<main id='content'>
 		<section id='picks'>
-			<p class='section__label'>Our Picks</p>
+			<p class='section__label random--color'>Our Picks</p>
 			<ul>
 				<!-- DO NOT REMOVE -->
 				<!-- picks -->
@@ -103,7 +103,7 @@ explains ideas debated in culture with visual essays.'>
 		</section>
 
 		<section id='new'>
-			<p class='section__label'>What’s New</p>
+			<p class='section__label random--color'>What’s New</p>
 			<ul>
 				<!-- DO NOT REMOVE -->
 				<!-- new -->
@@ -111,14 +111,25 @@ explains ideas debated in culture with visual essays.'>
 			</ul>
 		</section>
 
+		<section id='topics'>
+			<p class='section__label random--color'>Topics</p>
+			<!-- DO NOT REMOVE -->
+			<!-- topics -->
+		</section>
+
 		<!-- DO NOT REMOVE -->
-		<!-- topics -->
+		<!-- cta -->
 
 		<!-- DO NOT REMOVE -->
 		<!-- hits -->
 
-		<!-- DO NOT REMOVE -->
-		<!-- how -->
+		<section id='how'>
+			<p class='section__label random--color'>How-To</p>
+			<ul>
+				<!-- DO NOT REMOVE -->
+				<!-- how -->
+		
+			</ul>
 	</main>
 
 	<!-- DO NOT REMOVE -->

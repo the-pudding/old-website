@@ -9,12 +9,14 @@ const storyData = JSON.parse(
 );
 
 function createHTML({ data, path }) {
-  const storyItems = data.map(story => Item({ story, path })).join('');
+  const storyItems = data
+    .map(story => `<li>${Item({ story, path })}</li>`)
+    .join('');
   return storyItems;
 }
 
 module.exports = function({ path = '' }) {
-  const data = storyData.filter(d => d.pick);
+  const data = storyData.filter(d => d.topic === 'how to').slice(0, 3);
   const html = createHTML({ data, path });
   return html;
 };
