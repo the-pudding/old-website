@@ -1,6 +1,6 @@
 module.exports = function() {
   return `
-		<div class='cta random--background'>
+		<div class='cta random-background'>
 			<h4 class='cta__hed'>Picking up what we’re pudding down?</h4>
 			<div class='cta__items'>
 				<div class='cta__newsletter'>

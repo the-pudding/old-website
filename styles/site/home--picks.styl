@@ -6,16 +6,20 @@
 		opacity 0
 		transition opacity 250ms
 		width 33.3%
-		&.is-visible
-			opacity 1
 		&:nth-child(n+4)
 			display none
+		&.is-visible
+			opacity 1
+			display flex
+		&.is-hidden
+			display none
+		
 	
 
 	.story-item
 		display flex
 		align-items center
-		padding 1rem 2rem 0 0
+		padding 0 2rem 0 0
 	
 	.item__info
 		padding-left 0.5rem

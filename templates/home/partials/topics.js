@@ -10,12 +10,12 @@ const storyData = JSON.parse(
 );
 
 function createHTML({ data, path }) {
-  const ul = data
+  const stories = data
     .map(topic => {
       const storyItems = topic.value
         .map(story => `<li>${Item({ story, path })}</li>`)
         .join('');
-      return `<ul>${storyItems}</ul>`;
+      return `<ul data-topic='${topic.key}'>${storyItems}</ul>`;
     })
     .join('');
 
@@ -26,7 +26,14 @@ function createHTML({ data, path }) {
     )
     .join('');
 
-  return `${nav}${ul}`;
+  return `
+		<div class='topics__nav'>
+			<ul>${nav}</ul>
+		</div>
+		<div class='topics__stories'>
+			${stories}
+		</div>
+	`;
 }
 
 module.exports = function({ path = '' }) {

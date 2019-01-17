@@ -31,19 +31,57 @@
   };
 
   function setupPicks() {
-    const pickCount = d3.range(6);
-    d3.shuffle(pickCount);
-    const chosen = pickCount.slice(0, 3);
+    $li = d3.selectAll('#picks li');
+    const sz = $li.size();
+    const target = 3;
+    const count = d3.range(sz);
+    d3.shuffle(count);
+    const chosen = count.slice(0, target);
 
-    d3.selectAll('#picks li').each((d, i, n) => {
+    $li.each((d, i, n) => {
       const $story = d3.select(n[i]);
       if (chosen.includes(i)) $story.classed('is-visible', true);
-      else $story.remove();
+      else $story.classed('is-hidden', true);
     });
+  }
+
+  function handleTopicClick() {
+    const $el = d3.select(this);
+    const topic = $el.attr('data-topic');
+
+    d3.selectAll('#topics .topics__nav ul li').classed('is-active', false);
+    d3.select($el.node().parentNode).classed('is-active', true);
+
+    d3.selectAll('#topics .topics__stories ul')
+      .classed('is-visible', false)
+      .classed('is-hidden', true);
+
+    const $ul = d3.select(`#topics .topics__stories [data-topic="${topic}"]`);
+    $ul.classed('is-hidden', false).classed('is-visible', true);
+  }
+
+  function setupTopics() {
+    $ul = d3.selectAll('#topics .topics__stories ul');
+    const sz = $ul.size();
+    const target = 1;
+    const count = d3.range(sz);
+    d3.shuffle(count);
+    const chosen = count[0];
+    $ul.each((d, i, n) => {
+      const $topic = d3.select(n[i]);
+      if (chosen === i) $topic.classed('is-visible', true);
+      else $topic.classed('is-hidden', true);
+    });
+
+    d3.selectAll('#topics .topics__nav ul li')
+      .classed('is-active', (d, i) => chosen === i)
+      .select('button')
+      .on('click', handleTopicClick);
   }
 
   function init() {
     setupPicks();
+    setupTopics();
   }
 
   init();

@@ -87,14 +87,14 @@ explains ideas debated in culture with visual essays.'>
 	</script>
 </head>
 
-<body id='home'>
+<body class='tk-national' id='home'>
 
 	<!-- DO NOT REMOVE -->
 	<!-- header -->
 
 	<main id='content'>
 		<section id='picks'>
-			<p class='section__label random--color'>Our Picks</p>
+			<p class='section__label random-color'>Our Picks</p>
 			<ul>
 				<!-- DO NOT REMOVE -->
 				<!-- picks -->
@@ -103,7 +103,7 @@ explains ideas debated in culture with visual essays.'>
 		</section>
 
 		<section id='new'>
-			<p class='section__label random--color'>What’s New</p>
+			<p class='section__label random-color'>What’s New</p>
 			<ul>
 				<!-- DO NOT REMOVE -->
 				<!-- new -->
@@ -112,7 +112,7 @@ explains ideas debated in culture with visual essays.'>
 		</section>
 
 		<section id='topics'>
-			<p class='section__label random--color'>Topics</p>
+			<p class='section__label random-color'>Topics</p>
 			<!-- DO NOT REMOVE -->
 			<!-- topics -->
 		</section>
@@ -124,7 +124,7 @@ explains ideas debated in culture with visual essays.'>
 		<!-- hits -->
 
 		<section id='how'>
-			<p class='section__label random--color'>How-To</p>
+			<p class='section__label random-color'>How-To</p>
 			<ul>
 				<!-- DO NOT REMOVE -->
 				<!-- how -->
@@ -139,6 +139,8 @@ explains ideas debated in culture with visual essays.'>
 		window.storyData = /* story-data */;
 	</script>
 	<script src='common/js/d3.v5.min.js'></script>
+	<script inline src='common/js/random.js'></script>
+		
 	<script>
 		/* entry-js */
 	</script>
