@@ -1,25 +1,39 @@
-.random-color
+
+.btn, a.btn
+	font-weight 900
+	text-transform uppercase
+	padding 0.75rem
+	set-type-size(small, false)
+	line-height 1
+	background-color $fg
+	color $bg
+	font-family $sans
+	letter-spacing 0.03em
+	border none
+	
+.random-color, a.random-color, .btn.random-color
 	color $gray-dark
 	transition color 250ms
 	&--0
-		color red
+		color darkred
 	&--1
-		color green
+		color teal
 	&--2
-		color blue
+		color purple
 	&--3
-		color orange
-.random-background
+		color darkorange
+
+.random-background, a.random-background, .btn.random-background
 	background-color $gray-dark
 	transition background-color 250ms
 	&--0
-		background-color red
+		background-color darkred
 	&--1
-		background-color green
+		background-color teal
 	&--2
-		background-color blue
+		background-color purple
 	&--3
-		background-color orange
+		background-color darkorange
 
 	
 
@@ -33,3 +47,9 @@
 	
 	.item__author
 		margin 0
+		color $gray-dark
+		a
+			color $gray-dark
+			&:hover
+				color $gray
+	

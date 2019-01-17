@@ -1,11 +1,12 @@
 #home #picks
 	ul
 		display flex
-	
+		justify-content space-between
+
 	li
 		opacity 0
 		transition opacity 250ms
-		width 33.3%
+		width calc(33.3% - 0.5rem)
 		&:nth-child(n+4)
 			display none
 		&.is-visible
@@ -19,7 +20,6 @@
 	.story-item
 		display flex
 		align-items center
-		padding 0 2rem 0 0
 	
 	.item__info
 		padding-left 0.5rem

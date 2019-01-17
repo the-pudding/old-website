@@ -3,6 +3,7 @@ const d3 = require('d3');
 
 const cwd = process.cwd();
 
+const IGNORE = ['how to', 'awards'];
 const Item = require(`${cwd}/templates/common/partials/item`);
 
 const storyData = JSON.parse(
@@ -37,7 +38,7 @@ function createHTML({ data, path }) {
 }
 
 module.exports = function({ path = '' }) {
-  const filtered = storyData.filter(d => d.topic && d.topic !== 'how to');
+  const filtered = storyData.filter(d => d.topic && !IGNORE.includes(d.topic));
   const data = d3
     .nest()
     .key(d => d.topic)

@@ -1,26 +1,38 @@
 footer
+	width 100%
 	color $bg
-	
+
 	.footer__inner
 		max-width $main-width
 		margin 0 auto
+		padding 3rem 1rem
 	
-	.footer__description
-		margin 0
+	.footer__hed	
+		margin 0 auto
+		set-type-size(x-large, false)
+		line-height 1.4
 		
 	.footer__social
+		margin-top 2rem
 		display flex
-
+	
 		p
 			margin 0
 
 		ul
 			display flex
 
+		li
+			margin 0 0.25rem
 		a
 			border none
 			display block
 			max-width 2rem
+		
+		svg
+			fill $bg
 
 	.footer__location
 		margin 0
+		margin-top 2rem
+		set-type-size(small)

@@ -1,14 +1,56 @@
 .cta
 	width 100%
 	color $bg
+	margin-bottom 5rem
 	
-	&__hed
+	&__inner
 		max-width $main-width
 		margin 0 auto
+		padding 3rem 1rem
+	
+	&__hed
+		margin 0 auto
+		set-type-size(x-large, false)
+		line-height 1.4
 		
 	&__items
 		display flex
 		flex-wrap nowrap
 		justify-content space-between
-		max-width $main-width
 		margin 0 auto
+		margin-top 2rem
+
+	&__newsletter
+		display flex
+		align-items center
+
+		input
+			set-type-size(small, false)
+			line-height 1
+			font-family $sans
+			padding 0.6rem
+			background transparent
+			border 1px solid $bg
+			margin-right 0.5rem
+			&::placeholder
+				color $bg
+			
+		p
+			margin 0
+			set-type-size(large)
+			line-height 1
+			margin-right 1rem
+
+	&__patreon
+		display flex
+		align-items center
+
+		p
+			margin 0
+			margin-right 1rem
+			set-type-size(large)
+			line-height 1
+
+
+	.btn, a.btn
+		background-color $bg 
