@@ -1,24 +1,59 @@
 header
 	z-index set-index('overlay')
 	display flex
-	margin-left $sidebar-width
 	justify-content space-between
+	align-items center
+	margin-left $sidebar-width
+	padding-top 1.25rem
+	padding-bottom 1rem
 	
 	.header__title
-	// 
-	
+		width 12rem
+		a
+			display block
+			border none 
+
 	.header__sidebar
 		position fixed
 		top 0
 		left 0
 		width $sidebar-width
-		padding 0.5rem
+		padding-top 1rem
+		
 		svg
 			fill $gray
+
+		a
+			display block
+			border none
+			margin 0 auto
+
+		.header__logo
+			width 3rem
+			margin-bottom 1rem
+
+
+		ul
+			padding-right 1rem
+			li
+				margin-bottom 0.5rem
+			a
+				width 2rem
+				
+		
+
 	
 	.header__nav
 		.nav__links
 			display flex
+		
+		li
+			padding 0 1.25rem
+
+		a
+			display block
+			border none
+
 		
 		
 

@@ -14,6 +14,9 @@ Clone this repo and run `npm i`
 
 ## Development
 
+- Run `gulp` to start to server + Stylus live reload
+- Run specific scripts in `package.json`
+
 #### HTML
 
 All modifications to HTML should go in the `templates` directory. This is used

@@ -56,7 +56,7 @@ explains ideas debated in culture with visual essays.'>
 	<meta name="msapplication-wide310x150logo" content="home/assets/favicon/mstile-310x150.png" />
 	<meta name="msapplication-square310x310logo" content="home/assets/favicon/mstile-310x310.png" />
 
-
+	<link inline rel='stylesheet' href='common/css/font.css'>
 	<link inline rel='stylesheet' href='common/css/bundle.css'>
 
 	<!-- smoosh -->
@@ -87,7 +87,7 @@ explains ideas debated in culture with visual essays.'>
 	</script>
 </head>
 
-<body class='tk-publico' id='home'>
+<body id='home'>
 
 	<!-- DO NOT REMOVE -->
 	<!-- header -->

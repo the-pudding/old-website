@@ -133,28 +133,28 @@ caption,th,td {
   margin-right: 0.25em;
 }
 
-.tk-canela {
+.tk-$canela-hash {
   font-family: 'Times New Roman', serif;
 }
 
-.loaded-canela .tk-canela {
-  font-family: 'Canela Web', 'Times New Roman', serif;
+.loaded-$canela-hash .tk-$canela-hash {
+  font-family: $canela, 'Times New Roman', serif;
 }
 
-.tk-publico {
+.tk-$publico-hash {
   font-family: Georgia, Times, serif;
 }
 
-.loaded-publico .tk-publico {
-  font-family: 'Publico Text Web', Georgia, Times, serif;
+.loaded-$publico-hash .tk-$publico-hash {
+  font-family: $publico, Georgia, Times, serif;
 }
 
-.tk-atlas {
+.tk-$atlas-hash {
   font-family: Helvetica, Arial, sans-serif;
 }
 
-.loaded-atlas .tk-atlas {
-  font-family: 'Atlas Grotesk Web', Helvetica, Arial, sans-serif;
+.loaded-$atlas-hash .tk-$atlas-hash {
+  font-family: $atlas, Helvetica, Arial, sans-serif;
 }
 
 .xxx-small {
@@ -220,6 +220,7 @@ body {
   -webkit-tap-highlight-color: rgba(0,0,0,0);
   background-color: #fff;
   color: #282828;
+  font-family: 'National 2 Narrow Web', Helvetica, Arial, sans-serif;
   font-size: 16px;
 }
 
@@ -327,7 +328,7 @@ sub {
 }
 
 .cta__hed {
-  max-width: 80rem;
+  max-width: 60rem;
   margin: 0 auto;
 }
 
@@ -340,7 +341,7 @@ sub {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  max-width: 80rem;
+  max-width: 60rem;
   margin: 0 auto;
 }
 
@@ -349,7 +350,7 @@ footer {
 }
 
 footer .footer__inner {
-  max-width: 80rem;
+  max-width: 60rem;
   margin: 0 auto;
 }
 
@@ -383,33 +384,83 @@ footer .footer__location {
   margin: 0;
 }
 
+.random--color {
+  color: #008000;
+}
+
 header {
   z-index: 1000;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-left: 4rem;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-left: 5rem;
+  padding-top: 1.25rem;
+  padding-bottom: 1rem;
 }
 
-header .header__title,header .header__sidebar {
+header .header__title {
+  width: 12rem;
+}
+
+header .header__title a {
+  display: block;
+  border: none;
+}
+
+header .header__sidebar {
   position: fixed;
   top: 0;
   left: 0;
-  width: 4rem;
-  padding: 0.5rem;
+  width: 5rem;
+  padding-top: 1rem;
 }
 
-header .header__title svg,header .header__sidebar svg {
+header .header__sidebar svg {
   fill: #949494;
+}
+
+header .header__sidebar a {
+  display: block;
+  border: none;
+  margin: 0 auto;
+}
+
+header .header__sidebar .header__logo {
+  width: 3rem;
+  margin-bottom: 1rem;
+}
+
+header .header__sidebar ul {
+  padding-right: 1rem;
+}
+
+header .header__sidebar ul li {
+  margin-bottom: 0.5rem;
+}
+
+header .header__sidebar ul a {
+  width: 2rem;
 }
 
 header .header__nav .nav__links {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+header .header__nav li {
+  padding: 0 1.25rem;
+}
+
+header .header__nav a {
+  display: block;
+  border: none;
 }
 
 #home #how ul {
@@ -548,13 +599,13 @@ header .header__nav .nav__links {
 }
 
 #home header {
-  max-width: 80rem;
+  max-width: 60rem;
   margin: 0 auto;
 }
 
 #home section {
   position: relative;
-  max-width: 80rem;
+  max-width: 60rem;
   margin: 0 auto;
   border-left: 2px solid #282828;
   border-top: 2px solid #282828;

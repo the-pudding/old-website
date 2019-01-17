@@ -3,8 +3,8 @@ module.exports = function({ path = '' }) {
 		<a href='#content' class='skip-to-main'>Skip to main content</a>
 		<header>
 			
-			<div class='header__title>
-				<a class='header__logo' href='https://pudding.cool' target='_blank'>
+			<div class='header__title'>
+				<a class='header__wordmark' href='https://pudding.cool' target='_blank'>
 					<img inline src='${path}common/assets/svg/pudding-wordmark.svg'>
 				</a>
 			</div>
@@ -28,7 +28,7 @@ module.exports = function({ path = '' }) {
 					<li><a href='https://pudding.cool/about#archives'>Archives</a></li>
 					<li><a href='https://pudding.cool/about#topics'>Topis</a></li>
 					<li><a href='https://pudding.cool/#how'>How-To</a></li>
-					<li><a href='https://pudding.cool/#newsletter'>Join our Newsletter</a></li>
+					<li><a href='https://pudding.cool/#newsletter' class='btn'>Join our Newsletter</a></li>
 				</ul>
 					
 			</nav>
