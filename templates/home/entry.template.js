@@ -30,16 +30,20 @@
       isMobile.windows()
   };
 
-  function handleAuthorInput() {
-    window.location.href = `author/${this.value}`;
-  }
+  function setupPicks() {
+    const pickCount = d3.range(6);
+    d3.shuffle(pickCount);
+    const chosen = pickCount.slice(0, 3);
 
-  function setupAuthors() {
-    $authors.on('input', handleAuthorInput);
+    d3.selectAll('#picks li').each((d, i, n) => {
+      const $story = d3.select(n[i]);
+      if (chosen.includes(i)) $story.classed('is-visible', true);
+      else $story.remove();
+    });
   }
 
   function init() {
-    setupAuthors();
+    setupPicks();
   }
 
   init();

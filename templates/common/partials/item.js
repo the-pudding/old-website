@@ -4,7 +4,7 @@ module.exports = function({ path, story }) {
 		<div class='story-item'>
 			<div class='item__img'>
 				<a href='//pudding.cool/${story.url}'>
-					<img src='${src}' alt='${story.hed}' />
+					<img src='${src}' alt='${story.hed}'>
 				</a>
 			</div>
 			<div class='item__info'>
