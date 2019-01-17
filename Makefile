@@ -21,7 +21,7 @@ live-cloudfront:
 live: live-home live-footer live-about live-author live-common live-cloudfront
 	
 server:
-	browser-sync start --ss ./src --files src/**/* --index index.html --no-notify
+	browser-sync start --ss ./dev --files dev/**/* --index index.html --no-notify
 
 github:
 	rm -rf docs

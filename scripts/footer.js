@@ -68,11 +68,11 @@ function compileJS() {
   });
 }
 
-function copyToSrc() {
-  fse.ensureDirSync('src/footer');
+function copyToDev() {
+  fse.ensureDirSync('dev/footer');
   fse.copySync(
     `${cwd}/.tmp/footer/entry.js`,
-    `${cwd}/src/footer/pudding-footer.js`
+    `${cwd}/dev/footer/pudding-footer.js`
   );
   return Promise.resolve();
 }
@@ -80,7 +80,7 @@ function copyToSrc() {
 function init() {
   cleanTemp('footer')
     .then(compileJS)
-    .then(copyToSrc)
+    .then(copyToDev)
     .then(() => {
       console.log('DONE: footer.js');
       process.exit();

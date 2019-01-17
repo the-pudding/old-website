@@ -50,8 +50,8 @@ function createMarkup() {
   });
 }
 
-function copyFeedToSrc(files) {
-  fse.copySync(files[0], `${cwd}/src/feed/index.xml`);
+function copyFeedToDev(files) {
+  fse.copySync(files[0], `${cwd}/dev/feed/index.xml`);
   return Promise.resolve();
 }
 
@@ -59,7 +59,7 @@ function createXML() {
   return new Promise((resolve, reject) => {
     copyXMLTemplate()
       .then(createMarkup)
-      .then(copyFeedToSrc)
+      .then(copyFeedToDev)
       .then(resolve)
       .catch(reject);
   });

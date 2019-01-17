@@ -20,12 +20,12 @@ Clone this repo and run `npm i`
 #### HTML
 
 All modifications to HTML should go in the `templates` directory. This is used
-to generate the `index.html` files in `src` (**DO NOT MODIFY** `index.html`
+to generate the `index.html` files in `dev` (**DO NOT MODIFY** `index.html`
 files, any direct modifications will be overwritten on subsequent builds).
 
 #### CSS
 
-All modifications should go in the `styles` directory. The Stylus is compiled to CSS which is output in the `src/common/css` folder.
+All modifications should go in the `styles` directory. The Stylus is compiled to CSS which is output in the `dev/common/css` folder.
 
 #### JS
 
@@ -40,7 +40,7 @@ All other copy should be made in the HTML in the `templates` directory.
 
 ### Adding a new story
 
-- Add 640x320 jpg to `src/common/assets/story-thumbnails`
+- Add 640x320 jpg to `dev/common/assets/story-thumbnails`
 - `npm run start`
 - `npm run dist`
 - `make live` (need amazon CLI setup)

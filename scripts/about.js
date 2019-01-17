@@ -79,8 +79,8 @@ function createMarkup() {
   });
 }
 
-function copyHTMLToSrc(files) {
-  fse.copySync(files[0], `${cwd}/src/about/index.html`);
+function copyHTMLToDev(files) {
+  fse.copySync(files[0], `${cwd}/dev/about/index.html`);
   return Promise.resolve();
 }
 
@@ -88,7 +88,7 @@ function createHTML() {
   return new Promise((resolve, reject) => {
     copyHTMLTemplate()
       .then(createMarkup)
-      .then(copyHTMLToSrc)
+      .then(copyHTMLToDev)
       .then(resolve)
       .catch(reject);
   });

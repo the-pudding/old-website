@@ -30,7 +30,7 @@ function minifyFooter() {
 }
 
 function init() {
-  fse.copySync(`${cwd}/src`, `${cwd}/dist`);
+  fse.copySync(`${cwd}/dev`, `${cwd}/dist`);
   // homepage
   inlineAssets('');
   // about
