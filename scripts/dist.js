@@ -1,23 +1,17 @@
 const fse = require('fs-extra');
-const minify = require('html-minifier').minify;
 const uglify = require('uglify-js');
-const inline = require('inline-source').sync;
+const { inlineSource } = require('inline-source');
 
 const cwd = process.cwd();
 
 function inlineAssets(rootpath) {
   const path = `${cwd}/dist/${rootpath}index.html`;
-  const html = inline(path, {
+  inlineSource(path, {
     compress: false,
     rootpath: `dist/${rootpath}`
+  }).then(html => {
+    fse.writeFileSync(path, html);
   });
-
-  const htmlMin = minify(html, {
-    minifyCSS: true,
-    minifyJS: false
-  });
-
-  fse.writeFileSync(path, htmlMin);
 }
 
 function minifyFooter() {
@@ -34,12 +28,12 @@ function init() {
   // homepage
   inlineAssets('');
   // about
-  inlineAssets('about/');
-  // author pages
-  const authors = fse
-    .readdirSync(`${cwd}/dist/author`)
-    .filter(d => d.match(/\W/));
-  authors.forEach(d => inlineAssets(`author/${d}/`));
+  // inlineAssets('about/');
+  // // author pages
+  // const authors = fse
+  //   .readdirSync(`${cwd}/dist/author`)
+  //   .filter(d => d.match(/\W/) && d.includes('.html'));
+  // authors.forEach(d => inlineAssets(`author/${d}/`));
 
   // minify footer
   minifyFooter();

@@ -5,6 +5,7 @@ const rename = require('gulp-rename');
 const browserSync = require('browser-sync');
 const plumber = require('gulp-plumber');
 const combineMq = require('gulp-combine-mq');
+const cleanCSS = require('gulp-clean-css');
 const report = require('../report-error.js');
 
 const src = 'styles/config.styl';
@@ -21,7 +22,8 @@ gulp.task('style-dev', () => {
       })
     )
     .pipe(combineMq())
+    .pipe(cleanCSS())
     .pipe(rename('bundle.css'))
-    .pipe(gulp.dest('src/common/css'))
+    .pipe(gulp.dest('dev/common/css'))
     .pipe(browserSync.stream({ match: '**/*.css' }));
 });

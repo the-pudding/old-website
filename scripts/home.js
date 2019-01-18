@@ -1,5 +1,6 @@
 const fse = require('fs-extra');
 const replace = require('replace-in-file');
+const { inlineSource } = require('inline-source');
 const buble = require('buble');
 
 const cwd = process.cwd();
@@ -49,7 +50,7 @@ function compileEntryJS() {
 function createMarkup() {
   console.log('creating markup...');
 
-  const headerHTML = Header({});
+  const headerHTML = Header();
   const picksHTML = Picks({});
   const newHTML = New({});
   const topicsHTML = Topics({});
@@ -93,8 +94,19 @@ function createMarkup() {
 }
 
 function copyHTMLToDev(files) {
-  fse.copySync(files[0], `${cwd}/dev/index.html`);
-  return Promise.resolve();
+  return new Promise((resolve, reject) => {
+    const path = `${cwd}/.tmp/index.html`;
+    fse.copySync(files[0], path);
+    inlineSource(path, {
+      compress: false,
+      ignore: ['css', 'js']
+    })
+      .then(html => {
+        fse.writeFileSync(`${cwd}/dev/index.html`, html);
+        resolve();
+      })
+      .catch(reject);
+  });
 }
 
 function createHTML() {

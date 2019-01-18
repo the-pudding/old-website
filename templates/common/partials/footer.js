@@ -1,4 +1,4 @@
-module.exports = function({ path = '' }) {
+module.exports = function() {
   return `
 		<footer class='random-background'>
 			<div class='footer__inner'>
@@ -11,22 +11,22 @@ module.exports = function({ path = '' }) {
 					<ul>
 						<li>
 							<a target='_blank' href='https://www.facebook.com/pudding.viz/' class='logo--facebook'>
-							<img inline src='${path}common/assets/svg/facebook.svg'></a>
+							<img inline src='dev/common/assets/svg/facebook.svg'></a>
 						</li>
 
 						<li>
 							<a target='_blank' href='https://twitter.com/puddingviz' class='logo--twitter'>
-							<img inline src='${path}common/assets/svg/twitter.svg'>
+							<img inline src='dev/common/assets/svg/twitter.svg'>
 						</a>
 						</li>
 
 						<li>
 							<a target='_blank' href='https://www.instagram.com/pudding.cool' class='logo--instagram'>
-							<img inline src='${path}common/assets/svg/instagram.svg'>
+							<img inline src='dev/common/assets/svg/instagram.svg'>
 						</li>
 
 						<li>
-							<a target='_blank' href='https://www.patreon.com/thepudding' class='logo--patreon'><img inline src='${path}${path}common/assets/svg/patreon.svg'></a>
+							<a target='_blank' href='https://www.patreon.com/thepudding' class='logo--patreon'><img inline src='dev/common/assets/svg/patreon.svg'></a>
 						</li>
 					</ul>
 				</div>

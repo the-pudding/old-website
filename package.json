@@ -53,6 +53,7 @@
     "@babel/core": "7.2.2",
     "@babel/node": "7.2.2",
     "browser-sync": "2.26.3",
+    "gulp-clean-css": "4.0.0",
     "gulp-util": "3.0.8",
     "require-dir": "1.2.0"
   }
