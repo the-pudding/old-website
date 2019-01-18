@@ -1,4 +1,11 @@
-module.exports = function({ copyData }) {
+const fse = require('fs-extra');
+const cwd = process.cwd();
+
+const copyData = JSON.parse(
+  fse.readFileSync(`${cwd}/.tmp/data/about-copy.json`, 'utf-8')
+).copy;
+
+module.exports = function() {
   const li = arr => arr.map(d => `<li>${d.replace('\\:', ':')}</li>`).join('');
 
   const td = arr => arr.map(d => `<td>${d}</td>`).join('');

@@ -1,6 +1,12 @@
-module.exports = function({ authorData, filter }) {
+const fse = require('fs-extra');
+const cwd = process.cwd();
+
+const authorData = JSON.parse(
+  fse.readFileSync(`${cwd}/.tmp/data/authors.json`, 'utf-8')
+).filter(d => d.position.toLowerCase().trim() === 'staff');
+
+module.exports = function() {
   return authorData
-    .filter(d => d.position === filter)
     .map(d => {
       return `<a class="author" href="https://pudding.cool/author/${d.slug}">
 			<div class='author__image' style="background-image:url('../common/assets/authors/${

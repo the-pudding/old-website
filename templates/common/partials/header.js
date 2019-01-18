@@ -25,8 +25,8 @@ module.exports = function() {
 				<ul class='nav__links'>
 					<li><a href='https://pudding.cool/about'>About</a></li>
 					<li><a href='https://pudding.cool/about#contact'>Contact</a></li>
-					<li><a href='https://pudding.cool/about#archives'>Archives</a></li>
-					<li><a href='https://pudding.cool/about#topics'>Topis</a></li>
+					<li><a href='https://pudding.cool/archives'>Archives</a></li>
+					<li><a href='https://pudding.cool/topics'>Topics</a></li>
 					<li><a href='https://pudding.cool/#how'>How-To</a></li>
 					<li><a href='https://pudding.cool/#newsletter' class='btn'>Join our Newsletter</a></li>
 				</ul>

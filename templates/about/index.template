@@ -3,7 +3,7 @@
 
 <head>
 
-	<title>The Pudding</title>
+	<title>About - The Pudding</title>
 	<meta charset='utf-8'>
 	<meta name='viewport' content='width=device-width, initial-scale=1'>
 	<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
@@ -29,10 +29,8 @@
 	<meta name='twitter:description' content='A Journal of Visual Essays'>
 	<meta name='twitter:image:src' content='https://pudding.cool/common/assets/og-img.jpg'>
 
-	<link inline rel='stylesheet' href='../common/css/critical.css'>
-	<link inline rel='stylesheet' href='../common/css/header.css'>
-	<link inline rel='stylesheet' href='css/about.css'>
 	<link inline rel='stylesheet' href='../common/css/font.css'>
+	<link inline rel='stylesheet' href='../common/css/bundle.css'>
 
 	<!-- smoosh -->
 	<script inline src='../common/js/critical.js'></script>
@@ -51,12 +49,12 @@
 	</script>
 </head>
 
-<body class='tk-atlas'>
+<body id='about' class='tk-national'>
 
 	<!-- DO NOT REMOVE -->
 	<!-- header -->
 
-	<ul class='nav tk-atlas'>
+	<ul class='page-nav tk-atlas'>
 		<li class='xx-small'>
 			<a href='#content'>About</a>
 		</li>
@@ -102,6 +100,9 @@
 			</div>
 		</div>
 	</main>
+
+	<!-- DO NOT REMOVE -->
+	<!-- footer -->
 </body>
 
 </html>

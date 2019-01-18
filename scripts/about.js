@@ -1,39 +1,13 @@
 const fse = require('fs-extra');
-const d3 = require('d3');
 const replace = require('replace-in-file');
+const { inlineSource } = require('inline-source');
 
 const cwd = process.cwd();
 
 const Header = require(`${cwd}/templates/common/partials/header`);
+const Footer = require(`${cwd}/templates/common/partials/footer`);
 const Content = require(`${cwd}/templates/about/partials/content`);
-const Author = require(`${cwd}/templates/about/partials/author`);
-
-const storyData = JSON.parse(
-  fse.readFileSync(`${cwd}/.tmp/data/stories.json`, 'utf-8')
-);
-
-const authorData = JSON.parse(
-  fse.readFileSync(`${cwd}/.tmp/data/authors.json`, 'utf-8')
-);
-
-const copyData = JSON.parse(
-  fse.readFileSync(`${cwd}/.tmp/data/about-copy.json`, 'utf-8')
-).copy;
-
-function slugify(str) {
-  return str
-    .trim()
-    .toLowerCase()
-    .replace(/\s/g, '_')
-    .replace(/\W/g, '')
-    .replace(/\_/g, '-');
-}
-
-function addSlug() {
-  authorData.forEach(d => {
-    d.slug = slugify(d.name);
-  });
-}
+const Team = require(`${cwd}/templates/about/partials/team`);
 
 function cleanTemp(dir) {
   console.log('cleaning tmp folder...');
@@ -58,18 +32,20 @@ function copyHTMLTemplate() {
 function createMarkup() {
   console.log('creating markup...');
 
-  const headerHTML = Header({ path: '../', storyData });
-
-  const contentHTML = Content({ copyData });
-
-  // add slug to author data
-  addSlug();
-  const teamHTML = Author({ authorData, filter: 'Staff' });
+  const headerHTML = Header();
+  const contentHTML = Content();
+  const teamHTML = Team();
+  const footerHTML = Footer();
 
   const options = {
     files: `${cwd}/.tmp/about/index.template`,
-    from: ['<!-- header -->', '<!-- content -->', '<!-- team -->'],
-    to: [headerHTML, contentHTML, teamHTML]
+    from: [
+      '<!-- header -->',
+      '<!-- content -->',
+      '<!-- team -->',
+      '<!-- footer -->'
+    ],
+    to: [headerHTML, contentHTML, teamHTML, footerHTML]
   };
 
   return new Promise((resolve, reject) => {
@@ -80,8 +56,19 @@ function createMarkup() {
 }
 
 function copyHTMLToDev(files) {
-  fse.copySync(files[0], `${cwd}/dev/about/index.html`);
-  return Promise.resolve();
+  return new Promise((resolve, reject) => {
+    const path = `${cwd}/.tmp/about/index.html`;
+    fse.copySync(files[0], path);
+    inlineSource(path, {
+      compress: false,
+      ignore: ['css', 'js']
+    })
+      .then(html => {
+        fse.writeFileSync(`${cwd}/dev/about/index.html`, html);
+        resolve();
+      })
+      .catch(reject);
+  });
 }
 
 function createHTML() {
