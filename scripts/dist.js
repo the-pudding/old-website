@@ -28,7 +28,7 @@ function init() {
   // homepage
   inlineAssets('');
   // about
-  // inlineAssets('about/');
+  inlineAssets('about/');
   // // author pages
   // const authors = fse
   //   .readdirSync(`${cwd}/dist/author`)

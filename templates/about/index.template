@@ -53,56 +53,59 @@
 
 	<!-- DO NOT REMOVE -->
 	<!-- header -->
-
-	<ul class='page-nav tk-atlas'>
-		<li class='xx-small'>
-			<a href='#content'>About</a>
-		</li>
-		<li class='xx-small'>
-			<a href='#why'>Why “The Pudding?”</a>
-		</li>
-		<li class='xx-small'>
-			<a href='#how'>Our process</a>
-		</li>
-		<li class='xx-small'>
-			<a href='#lights'>Keeping the lights on</a>
-		</li>
-		<li class='xx-small'>
-			<a href='#working'>Working here</a>
-		</li>
-		<li class='xx-small'>
-			<a href='#positions'>Open positions</a>
-		</li>
-		<li class='xx-small'>
-			<a href='#rubric'>Editorial rubric</a>
-		</li>
-		<li class='xx-small'>
-			<a href='#awards'>Awards</a>
-		</li>
-		<li class='xx-small'>
-			<a href='#contact'>Contact us</a>
-		</li>
-		<li class='xx-small'>
-			<a href='#sponsored'>Content Studio</a>
-		</li>
-		<li class='xx-small'>
-			<a href='#team'>Team</a>
-		</li>
-	</ul>
 	<main id='content'>
-		<!-- DO NOT REMOVE -->
-		<!-- content -->
-		<div id='team'>
-			<h3 class='section__hed'>Team</h3>
+		<section>
+			<ul class='page-nav tk-atlas'>
+				<li>
+					<a href='#why'>Why “The Pudding?”</a>
+				</li>
+				<li>
+					<a href='#how'>Our process</a>
+				</li>
+				<li>
+					<a href='#lights'>Keeping the lights on</a>
+				</li>
+				<li>
+					<a href='#working'>Working here</a>
+				</li>
+				<li>
+					<a href='#positions'>Open positions</a>
+				</li>
+				<li>
+					<a href='#rubric'>Editorial rubric</a>
+				</li>
+				<li>
+					<a href='#awards'>Awards</a>
+				</li>
+				<li>
+					<a href='#contact'>Contact us</a>
+				</li>
+				<li>
+					<a href='#sponsored'>Content Studio</a>
+				</li>
+				<li>
+					<a href='#team'>Team</a>
+				</li>
+			</ul>
+			
+			<p class='section__label random-color'>About</p>
 			<!-- DO NOT REMOVE -->
-			<div class='authors'>
-				<!-- team -->
+			<!-- content -->
+			<div id='team'>
+				<h3 class='section__hed random-color'>Team</h3>
+				<!-- DO NOT REMOVE -->
+				<div class='authors'>
+					<!-- team -->
+				</div>
 			</div>
-		</div>
+		</section>
+		
 	</main>
 
 	<!-- DO NOT REMOVE -->
 	<!-- footer -->
 </body>
+<script src='../common/js/d3.v5.min.js'></script>
+<script inline src='../common/js/random.js'></script>
 
 </html>

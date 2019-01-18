@@ -1,13 +1,73 @@
 #about
-	main
-		position relative
-		max-width $main-width
-		margin 0 auto 5rem auto
-		border-left 4px solid $fg
-		border-top 4px solid $fg
-		padding-top 1rem
+	padding-top 6rem	
+	+mq('bp-m')
+		padding-top 0	
+	section
+		padding-left 1rem
+		+mq('bp-m')
+			padding-left 15rem
+			padding-top 4rem
 
-	.story-item a
-		border none
-		display block
+	.page-nav
+		display none
+		position absolute
+		top 6rem
+		left 2rem
+		li
+			margin-bottom 0.25rem
+		a
+			border none
+			color $gray-dark
+			&:hover
+				color $fg
+				font-weight 700
+			
+
+		+mq('bp-m')
+			display block
 	
+	.section__big
+		set-type-size(x-large)
+		line-height 1.2
+		margin-top 0.5em
+
+	.section__hed
+		position relative
+		font-weight 700
+		text-transform uppercase
+		set-type-size(medium, true)
+		padding-top 0.25em
+		margin-top 4rem
+
+		&:before
+			content ''
+			display block
+			position absolute
+			top 0
+			left 0
+			width 4rem
+			height $line-width
+			background-color $fg
+
+	p
+		line-height 1.5
+		margin 1em 0
+
+
+	table
+		thead
+			border-bottom 1px solid $gray-light
+		thead td
+			color $gray-dark
+			text-transform uppercase
+			font-weight 700
+			set-type-size(small)
+		tr
+			border-bottom 1px solid $gray-light
+			&:last-of-type
+				border none
+		td
+			padding 0.25em
+			&:first-of-type
+				padding-right 1em
+		

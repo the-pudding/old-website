@@ -5,8 +5,6 @@ header
 	align-items center
 	max-width $main-width
 	margin 0 auto
-	padding-top 1.25rem
-	padding-bottom 1rem
 	box-shadow 0 0 2px rgba(0,0,0,0.25)
 	position fixed
 	top 0
@@ -14,12 +12,16 @@ header
 	transform translate3d(0,0,0)
 	background $bg
 	width 100%
+	overflow hidden
+	padding 0.5rem 0
 	
 	+mq('bp-m')
 		width calc(100% - 10rem)
 		position relative
 		transform none
 		box-shadow none
+		padding-top 1.25rem
+		padding-bottom 1rem
 
 	.header__title
 		width 10rem
@@ -38,7 +40,7 @@ header
 		position fixed
 		top 0
 		left 0
-		padding 1rem
+		padding 0.5rem 1rem
 		display flex
 		width 100%
 		justify-content space-between
@@ -80,6 +82,8 @@ header
 				flex-direction column
 				padding-right 1rem
 			li
+				display block
+				line-height 1
 				&:last-of-type
 					display none
 				+mq('bp-m')
@@ -91,12 +95,14 @@ header
 				
 		
 	.header__nav
-		position fixed
+		position absolute
 		top 0
-		left 0
+		right 0
+		transform translateX(100%)
 
 		+mq('bp-m')
 			position relative
+			transform translateX(0)
 
 		.nav__links
 			display flex
@@ -113,13 +119,16 @@ header
 	.header__menu
 		background none
 		padding 0
-		width 1.5rem
-		height 1.5rem
+		width 1.75rem
 		position absolute
-		top 1.65rem
+		line-height 1
+		top 50%
+		transform translateY(-50%)
 		right 1rem
 		+mq('bp-m')
 			display none
 
 		svg
-			stroke $fg
+			stroke $gray
+			width 100%
+			height 100%

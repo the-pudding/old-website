@@ -34,7 +34,7 @@ All modifications should go in the `templates` JS files, for example `templates/
 ## Data and Copy
 
 - [data: google sheet](https://docs.google.com/spreadsheets/d/157mDBFAmsOdkO9f7RgUSgrQm1dzrpB9V3nN5-cEIQN0/edit#gid=0)
-- [about page: google doc](https://drive.google.com/open?id=1TRc-grkFei5z0JGVULkgRRV5dy4QU5-F1Lhh-Vd11mU).
+- [about page: google doc](https://drive.google.com/open?id=1TRc-grkFei5z0JGVULkgRRV5dy4QU5-F1Lhh-Vd11mU)
 
 All other copy should be made in the HTML in the `templates` directory.
 

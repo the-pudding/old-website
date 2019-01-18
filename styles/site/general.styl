@@ -52,3 +52,29 @@
 			&:hover
 				color $gray
 	
+section
+	width calc(100% - 3.6rem)
+	transform translateX(0.5rem)
+	position relative
+	max-width $main-width
+	margin 0 auto 5rem auto
+	border-left 4px solid $fg
+	border-top 4px solid $fg
+	padding-top 1rem
+	
+	+mq('bp-m')
+		width 100%
+		width calc(100% - 10rem)
+		transform translateX(0)
+
+	.section__label
+		position absolute
+		top 0
+		left 0
+		margin 0
+		margin-top 1rem
+		transform-origin 0 0
+		transform rotate(-90deg) translate(-100%, -150%)
+		font-weight 700
+		text-transform uppercase
+		line-height 1

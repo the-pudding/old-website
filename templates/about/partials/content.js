@@ -15,11 +15,11 @@ module.exports = function() {
   return copyData
     .map(d => {
       if (d.type === 'hed') {
-        return `<h3 id="${d.value.id}" class="section__hed">${
+        return `<h3 id="${d.value.id}" class="section__hed random-color">${
           d.value.text
         }</h3>`;
       } else if (d.type === 'big') {
-        return `<p class="section__big large">${d.value}</p>`;
+        return `<p class="section__big">${d.value}</p>`;
       } else if (d.type === 'ul') {
         return `
 					<ul>
