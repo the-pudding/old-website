@@ -21,7 +21,7 @@
 				text-transform capitalize
 
 	.topics__stories
-		+mq('bp-5')
+		+mq('bp-m')
 			transform translateX(-1 * $line-width)
 			width calc(100% + $line-width)
 		
@@ -43,15 +43,21 @@
 			width 100%
 			margin-bottom 4rem
 			border-top $line-width solid $fg
+			&:nth-child(3)
+				margin-bottom 0
+			&:nth-child(n+4)
+				display none
 			&:first-of-type
 				border none
 			&:last-of-type
 				margin-bottom 0
-			+mq('bp-5')
+			+mq('bp-m')
 				margin 0
 				border-top none
 				border-left $line-width solid $fg 
 				width calc(33.3% - 1.5rem)
+				&:nth-child(n+4)
+					display block
 				&:nth-child(-n+3)
 					margin-bottom 3rem
 				&:first-of-type

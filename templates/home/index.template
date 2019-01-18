@@ -120,8 +120,14 @@ explains ideas debated in culture with visual essays.'>
 		<!-- DO NOT REMOVE -->
 		<!-- cta -->
 
-		<!-- DO NOT REMOVE -->
-		<!-- hits -->
+		<section id='hits'>
+			<p class='section__label random-color'>Greatest Hits</p>
+			<ul>
+				<!-- DO NOT REMOVE -->
+				<!-- hits -->
+		
+			</ul>
+		</section>
 
 		<section id='how'>
 			<p class='section__label random-color'>How-To</p>

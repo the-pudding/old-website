@@ -15,7 +15,8 @@ header
 	background $bg
 	width 100%
 	
-	+mq('bp-5')
+	+mq('bp-m')
+		width calc(100% - 10rem)
 		position relative
 		transform none
 		box-shadow none
@@ -24,12 +25,13 @@ header
 		width 10rem
 		margin-left 3.5rem
 		margin-top 0.25rem
-		+mq('bp-5')
+		+mq('bp-m')
 			width 12rem
 			margin 0
 		a
 			display block
 			border none 
+			padding-top 0.3rem
 
 
 	.header__sidebar
@@ -41,7 +43,7 @@ header
 		width 100%
 		justify-content space-between
 		
-		+mq('bp-5')
+		+mq('bp-m')
 			flex-direction column
 			justify-content center
 			width $sidebar-width
@@ -51,7 +53,7 @@ header
 
 		.sidebar__social
 			padding-right 3rem
-			+mq('bp-5')
+			+mq('bp-m')
 				padding-right 0
 
 			svg
@@ -61,12 +63,12 @@ header
 		a
 			display block
 			border none
-			+mq('bp-5')
+			+mq('bp-m')
 				margin 0 auto
 
 		.header__logo
 			width 2rem
-			+mq('bp-5')
+			+mq('bp-m')
 				width 3rem
 				margin-bottom 1rem
 
@@ -74,13 +76,13 @@ header
 			display flex
 			flex-direction row
 			align-items center
-			+mq('bp-5')
+			+mq('bp-m')
 				flex-direction column
 				padding-right 1rem
 			li
 				&:last-of-type
 					display none
-				+mq('bp-5')
+				+mq('bp-m')
 					margin-bottom 0.5rem
 					&:last-of-type
 						display block
@@ -93,7 +95,7 @@ header
 		top 0
 		left 0
 
-		+mq('bp-5')
+		+mq('bp-m')
 			position relative
 
 		.nav__links
@@ -116,7 +118,7 @@ header
 		position absolute
 		top 1.65rem
 		right 1rem
-		+mq('bp-5')
+		+mq('bp-m')
 			display none
 
 		svg

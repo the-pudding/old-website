@@ -4,7 +4,7 @@
 		flex-wrap wrap
 		justify-content space-between
 		transition opacity 250ms
-		+mq('bp-5')
+		+mq('bp-m')
 			transform translateX(-1 * $line-width)
 			width calc(100% + $line-width)
 	
@@ -16,7 +16,7 @@
 			border none
 		&:last-of-type
 			margin-bottom 0
-		+mq('bp-5')
+		+mq('bp-m')
 			width calc(25% - 1.5rem)
 			border-top none
 			border-left $line-width solid $fg
@@ -29,18 +29,18 @@
 		display flex
 		flex-direction row
 		align-items center
-		+mq('bp-5')
+		+mq('bp-m')
 			flex-direction column
 
 	.item__img
 		width 60%
-		+mq('bp-5')
+		+mq('bp-m')
 			width 100%
 		
 	.item__info
 		padding-left 1rem
 		width 40%
-		+mq('bp-5')
+		+mq('bp-m')
 			width 100%
 			padding 1rem 0 0 1rem
 

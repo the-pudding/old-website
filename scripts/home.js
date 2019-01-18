@@ -8,6 +8,7 @@ const cwd = process.cwd();
 const Header = require(`${cwd}/templates/common/partials/header`);
 const Picks = require(`${cwd}/templates/home/partials/picks`);
 const New = require(`${cwd}/templates/home/partials/new`);
+const Hits = require(`${cwd}/templates/home/partials/hits`);
 const Topics = require(`${cwd}/templates/home/partials/topics`);
 const How = require(`${cwd}/templates/home/partials/how`);
 const Cta = require(`${cwd}/templates/common/partials/cta`);
@@ -55,6 +56,7 @@ function createMarkup() {
   const newHTML = New({});
   const topicsHTML = Topics({});
   const ctaHTML = Cta();
+  const hitsHTML = Hits({});
   const howHTML = How({});
   const footerHTML = Footer({});
   const storyJS = JSON.stringify(storyData);
@@ -68,6 +70,7 @@ function createMarkup() {
       '<!-- new -->',
       '<!-- topics -->',
       '<!-- cta -->',
+      '<!-- hits -->',
       '<!-- how -->',
       '<!-- footer -->',
       '/* story-data */',
@@ -79,6 +82,7 @@ function createMarkup() {
       newHTML,
       topicsHTML,
       ctaHTML,
+      hitsHTML,
       howHTML,
       footerHTML,
       storyJS,
