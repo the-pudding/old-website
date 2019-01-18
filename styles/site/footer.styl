@@ -3,9 +3,17 @@ footer
 	color $bg
 
 	.footer__inner
+		width calc(100% - 3.6rem)
+		transform translateX(0.5rem)
+		border-top $line-width solid $fg
+		border-left $line-width solid $fg
 		max-width $main-width
 		margin 0 auto
 		padding 3rem 1rem
+		+mq('bp-5')
+			width 100%
+			transform translateX(0)
+		
 	
 	.footer__hed	
 		margin 0 auto

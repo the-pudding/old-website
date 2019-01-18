@@ -1,23 +1,48 @@
 #home #how
 	ul
-		transform translateX(-1 * $line-width)
-		width calc(100% + $line-width)
 		display flex
 		flex-wrap wrap
 		justify-content space-between
 		transition opacity 250ms
+		+mq('bp-5')
+			transform translateX(-1 * $line-width)
+			width calc(100% + $line-width)
 	
 	li
-		width calc(25% - 1.5rem)
-		border-left $line-width solid $fg 
+		width 100%
+		border-top $line-width solid $fg
+		margin-bottom 4rem
+		&:first-of-type
+			border none
+		&:last-of-type
+			margin-bottom 0
+		+mq('bp-5')
+			width calc(25% - 1.5rem)
+			border-top none
+			border-left $line-width solid $fg
+			margin 0
+			&:first-of-type
+				border-left $line-width solid $fg
 			
 
 	.story-item
 		display flex
-		flex-direction column
+		flex-direction row
+		align-items center
+		+mq('bp-5')
+			flex-direction column
+
+	.item__img
+		width 60%
+		+mq('bp-5')
+			width 100%
 		
 	.item__info
-		padding 1rem 0 0 1rem
+		padding-left 1rem
+		width 40%
+		+mq('bp-5')
+			width 100%
+			padding 1rem 0 0 1rem
 
 	.item__hed
 		font-weight 700

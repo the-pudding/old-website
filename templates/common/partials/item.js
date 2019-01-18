@@ -1,5 +1,5 @@
 module.exports = function({ path, story }) {
-  const src = `${path}common/assets/story-thumbnails/${story.img}.jpg`;
+  const src = `${path}common/assets/thumbnails/1920/${story.img}.jpg`;
   return `
 		<div class='story-item'>
 			<div class='item__img'>

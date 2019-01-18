@@ -22,11 +22,14 @@ module.exports = function() {
 
 						<li>
 							<a target='_blank' href='https://www.instagram.com/pudding.cool' class='logo--instagram'>
-							<img inline src='dev/common/assets/svg/instagram.svg'>
+								<img inline src='dev/common/assets/svg/instagram.svg'>
+							</a>
 						</li>
 
 						<li>
-							<a target='_blank' href='https://www.patreon.com/thepudding' class='logo--patreon'><img inline src='dev/common/assets/svg/patreon.svg'></a>
+							<a target='_blank' href='https://www.patreon.com/thepudding' class='logo--patreon'>
+								<img inline src='dev/common/assets/svg/patreon.svg'>
+							</a>
 						</li>
 					</ul>
 				</div>

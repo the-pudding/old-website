@@ -7,45 +7,94 @@ header
 	margin 0 auto
 	padding-top 1.25rem
 	padding-bottom 1rem
+	box-shadow 0 0 2px rgba(0,0,0,0.25)
+	position fixed
+	top 0
+	left 0
+	transform translate3d(0,0,0)
+	background $bg
+	width 100%
 	
+	+mq('bp-5')
+		position relative
+		transform none
+		box-shadow none
+
 	.header__title
-		width 12rem
+		width 10rem
+		margin-left 3.5rem
+		margin-top 0.25rem
+		+mq('bp-5')
+			width 12rem
+			margin 0
 		a
 			display block
 			border none 
+
 
 	.header__sidebar
 		position fixed
 		top 0
 		left 0
-		width $sidebar-width
-		padding-top 1rem
-		background-color $bg
+		padding 1rem
+		display flex
+		width 100%
+		justify-content space-between
+		
+		+mq('bp-5')
+			flex-direction column
+			justify-content center
+			width $sidebar-width
+			padding 0
+			padding-top 1rem
+			
 
-		.sidebar__social svg
+		.sidebar__social
+			padding-right 3rem
+			+mq('bp-5')
+				padding-right 0
+
+		svg
 			fill $gray
 
 		a
 			display block
 			border none
-			margin 0 auto
+			+mq('bp-5')
+				margin 0 auto
 
 		.header__logo
-			width 3rem
-			margin-bottom 1rem
-
+			width 2rem
+			+mq('bp-5')
+				width 3rem
+				margin-bottom 1rem
 
 		ul
-			padding-right 1rem
+			display flex
+			flex-direction row
+			align-items center
+			+mq('bp-5')
+				flex-direction column
+				padding-right 1rem
 			li
-				margin-bottom 0.5rem
+				&:last-of-type
+					display none
+				+mq('bp-5')
+					margin-bottom 0.5rem
+					&:last-of-type
+						display block
 			a
 				width 2rem
 				
 		
-
-	
 	.header__nav
+		position fixed
+		top 0
+		left 0
+
+		+mq('bp-5')
+			position relative
+
 		.nav__links
 			display flex
 			align-items center
@@ -58,6 +107,16 @@ header
 			border none
 
 		
-		
+	.header__menu
+		background none
+		padding 0
+		width 1.5rem
+		height 1.5rem
+		position absolute
+		top 1.65rem
+		right 1rem
+		+mq('bp-5')
+			display none
 
-		
+		svg
+			stroke $fg

@@ -1,12 +1,21 @@
 #home
-	
+	padding-top 6rem	
+	+mq('bp-5')
+		padding-top 0
 	section
+		width calc(100% - 3.6rem)
+		transform translateX(0.5rem)
 		position relative
 		max-width $main-width
 		margin 0 auto 5rem auto
 		border-left 4px solid $fg
 		border-top 4px solid $fg
 		padding-top 1rem
+		
+		+mq('bp-5')
+			width 100%
+			transform translateX(0)
+		
 		// transform translateX($sidebar-width)
 
 	.section__label

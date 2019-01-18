@@ -4,9 +4,17 @@
 	margin-bottom 5rem
 	
 	&__inner
+		width calc(100% - 3.6rem)
+		transform translateX(0.5rem)
+		border-top $line-width solid $fg
+		border-left $line-width solid $fg
 		max-width $main-width
 		margin 0 auto
 		padding 3rem 1rem
+		+mq('bp-5')
+			width 100%
+			transform translateX(0)
+		
 	
 	&__hed
 		margin 0 auto
@@ -15,14 +23,22 @@
 		
 	&__items
 		display flex
-		flex-wrap nowrap
+		flex-wrap wrap
 		justify-content space-between
 		margin 0 auto
 		margin-top 2rem
+		+mq('bp-5')
+			flex-wrap nowrap
 
 	&__newsletter
 		display flex
 		align-items center
+		flex-wrap wrap
+		margin-bottom 2rem
+
+		+mq('bp-5')
+			margin 0
+			flex-wrap nowrap
 
 		input
 			set-type-size(small, false)
@@ -37,19 +53,31 @@
 			
 		p
 			margin 0
-			set-type-size(large)
+			margin-bottom 1rem
 			line-height 1
-			margin-right 1rem
+			width 100%
+			set-type-size(large)
+			+mq('bp-5')
+				width auto
+				margin 0
+				margin-right 1rem
 
 	&__patreon
 		display flex
 		align-items center
-
+		flex-wrap wrap
+		+mq('bp-5')
+			flex-wrap nowrap
 		p
 			margin 0
-			margin-right 1rem
+			margin-bottom 1rem
 			set-type-size(large)
 			line-height 1
+			width 100%
+			+mq('bp-5')
+				width auto
+				margin 0
+				margin-right 1rem
 
 
 	.btn, a.btn

@@ -30,8 +30,9 @@ module.exports = function() {
 					<li><a href='https://pudding.cool/#how'>How-To</a></li>
 					<li><a href='https://pudding.cool/#newsletter' class='btn'>Join our Newsletter</a></li>
 				</ul>
-					
 			</nav>
+
+			<button class='btn header__menu'><img inline src='dev/common/assets/svg/menu.svg'></a></button>
 		</header>
 	`;
 };
