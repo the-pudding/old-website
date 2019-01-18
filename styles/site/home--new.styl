@@ -1,38 +1,78 @@
 #home #new
-	display none
 	ul
-		display flex
-		flex-wrap wrap
-
-	.story-item
 		position relative
 		display flex
-		align-items center
-		width 50%
+		flex-wrap wrap
+		justify-content space-between
+		+mq('bp-5')
+			justify-content flex-end
+			transform translateX(-1 * $line-width)
+			width calc(100% + $line-width)
 		
+	li
+		width 100%
+		border-top $line-width solid $fg
+		margin-bottom 3rem
 		&:first-of-type
+			border none
 			width 100%
-
-			.item__img
-				width 100%
-
-			.item__info
-				position absolute
-				bottom 0
-				left 0
-				background $bg
-			
 			.item__hed
+				set-type-size(x-large)
+			.item__dek
 				display block
-	
-			.item__author
-				display block
-	
+			+mq('bp-5')
+				margin-bottom 1rem
+				margin-left 0
+				.item__info
+					position absolute
+					bottom 0
+					left $line-width
+					background-color $bg
+					width 33.3%
+				.item__hed
+					set-type-size(xx-large)
+					font-weight 900
+				.item__dek
+					set-type-size(large)
+		&:last-of-type
+			margin-bottom 0
+		+mq('bp-5')
+			width 50%
+			margin 0
+			border-top none
+			border-left $line-width solid $fg 
+			width calc(33.3% - 1.5rem)
+			margin-left 1.5rem
+			&:first-of-type
+				border-left $line-width solid $fg 
+		
+		
+	.story-item
+		display flex
+		flex-direction column
+		
+	.item__info
+		padding 1rem 0 0 1rem
+		
+
 	.item__hed
-		display none
+		font-weight 700
+		set-type-size(large) 
+		line-height 1
 	
 	.item__dek
 		display none
+		set-type-size(root, false)
+		line-height 1.4
+		font-family $serif
+		margin-top 0.5rem
 	
 	.item__author
-		display none
+		font-weight 700
+		margin-top 1rem
+		set-type-size(small)
+		line-height 1.2
+		
+		a
+			display inline-block
+			text-transform uppercase

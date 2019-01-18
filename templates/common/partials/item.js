@@ -1,5 +1,6 @@
 module.exports = function({ path, story }) {
-  const src = `${path}common/assets/thumbnails/1920/${story.img}.jpg`;
+  // const src = `${path}common/assets/thumbnails/1920/${story.img}.jpg`;
+  const src = 'https://placehold.it/1280x720.jpg';
   return `
 		<div class='story-item'>
 			<div class='item__img'>
