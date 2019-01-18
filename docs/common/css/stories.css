@@ -1,0 +1,171 @@
+/* CONTENT */
+
+main {
+  background: #f3f3f3;
+  padding: 1rem;
+  padding-bottom: 5rem;
+  position: relative;
+  padding-top: 4rem;
+}
+
+main section {
+  max-width: 48rem;
+  margin: 2rem auto;
+  color: #1f1f21;
+  margin-bottom: 6rem;
+}
+
+.essays__items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.item {
+  display: block;
+  width: 100%;
+  max-width: 20rem;
+}
+
+main .sidebar {
+  position: absolute;
+  padding-top: 2rem;
+  left: 2rem;
+  width: 10rem;
+  display: none;
+}
+
+main .sidebar ol {
+  counter-reset: item;
+}
+
+main .sidebar li {
+  font-weight: 400;
+  border: none;
+  text-decoration: none;
+  display: block;
+  line-height: 2;
+}
+
+main .sidebar li:before {
+  content: '0' counter(item) '.   ';
+  counter-increment: item;
+  color: #eb5757;
+}
+
+main .sidebar li a {
+  border: none;
+  text-decoration: none;
+  color: #1f1f21;
+}
+
+main .sidebar select {
+  width: 8rem;
+  display: inline-block;
+  border: none;
+  border-radius: 2px;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+.essays__hed {
+  margin: 0;
+  font-weight: 600;
+  position: relative;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  padding: 1rem;
+  padding-top: 0;
+}
+
+.essays__hed:before {
+  content: '';
+  width: 40px;
+  height: 2px;
+  background: #1f2022;
+  position: absolute;
+  top: -20px;
+}
+
+.collection__hed {
+  margin: 0;
+  font-weight: 600;
+  position: relative;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  padding: 1rem;
+  padding-top: 2rem;
+  padding-bottom: 0;
+  margin: 0;
+}
+
+.collection__dek {
+  margin: 0;
+  font-weight: 400;
+  position: relative;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  padding: 0 1rem;
+  padding-bottom: 1rem;
+  margin: 0;
+}
+
+.essays .item {
+  padding: 1rem;
+}
+
+.item__info .info__link {
+  display: block;
+  border: none;
+}
+
+.item__hed {
+  margin: 0;
+  font-weight: 600;
+  color: #1f1f21;
+  line-height: 1.5;
+  margin: 0.5em 0;
+}
+
+.item__stats {
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 0.5rem;
+  font-weight: 400;
+}
+
+.item__stats .stats__views {
+  /* color: #1f1f21; */
+  color: #4a4a4a;
+}
+
+.item__stats .stats__author a {
+  border: none;
+  color: #eb5757;
+}
+
+@media only screen and (min-width: 40rem) {
+  .essays__items {
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+  }
+  .item {
+    width: 50%;
+  }
+}
+
+@media only screen and (min-width: 70rem) {
+  main .sidebar {
+    display: block;
+  }
+  .item {
+    width: 33.33%;
+  }
+}

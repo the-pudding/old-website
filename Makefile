@@ -1,3 +1,5 @@
+PHONY: live-home live-footer live-about live-author live-common live-cloudfront live server github
+
 live-home:
 	aws s3 sync dist/home/ s3://pudding.cool/home
 	aws s3 cp dist/index.html s3://pudding.cool/index.html

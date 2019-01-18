@@ -1,0 +1,1123 @@
+<!doctype html>
+<html lang='en'>
+
+<head>
+
+	<title>The Pudding</title>
+	<meta charset='utf-8'>
+	<meta name='viewport' content='width=device-width, initial-scale=1'>
+	<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+	<meta name='description' content='The Pudding is an editorial publication that
+explains ideas debated in culture with visual essays.' />
+	<meta name='news_keywords' content='The Pudding' />
+
+	<meta property='og:title' content='The Pudding' />
+	<meta property='og:site_name' content='The Pudding' />
+	<meta property='og:url' content='https://pudding.cool' />
+	<meta property='og:description' content='The Pudding is an editorial publication that
+explains ideas debated in culture with visual essays.' />
+	<meta property='og:type' content='article' />
+	<meta property='og:locale' content='en_US' />
+
+	<meta property='og:image' content='https://pudding.cool/common/assets/misc/og-img.jpg' />
+	<meta property='og:image:type' content='image/jpeg' />
+	<meta property='og:image:width' content='1200' />
+	<meta property='og:image:height' content='600' />
+
+	<meta name='twitter:card' content='summary_large_image'>
+	<meta name='twitter:site' content='https://pudding.cool'>
+	<meta name='twitter:creator' content='@puddingviz'>
+	<meta name='twitter:title' content='The Pudding'>
+	<meta name='twitter:description' content='The Pudding is an editorial publication that
+explains ideas debated in culture with visual essays.'>
+	<meta name='twitter:image:src' content='https://pudding.cool/common/assets/misc/og-img.jpg'>
+
+	<link rel='alternate' type='application/rss+xml' title='Latest from The Pudding' href='https://feeds.feedburner.com/pudding/feed'
+	/>
+
+	<link rel="apple-touch-icon-precomposed" sizes="57x57" href="home/assets/favicon/apple-touch-icon-57x57.png" />
+	<link rel="apple-touch-icon-precomposed" sizes="114x114" href="home/assets/favicon/apple-touch-icon-114x114.png" />
+	<link rel="apple-touch-icon-precomposed" sizes="72x72" href="home/assets/favicon/apple-touch-icon-72x72.png" />
+	<link rel="apple-touch-icon-precomposed" sizes="144x144" href="home/assets/favicon/apple-touch-icon-144x144.png" />
+	<link rel="apple-touch-icon-precomposed" sizes="60x60" href="home/assets/favicon/apple-touch-icon-60x60.png" />
+	<link rel="apple-touch-icon-precomposed" sizes="120x120" href="home/assets/favicon/apple-touch-icon-120x120.png" />
+	<link rel="apple-touch-icon-precomposed" sizes="76x76" href="home/assets/favicon/apple-touch-icon-76x76.png" />
+	<link rel="apple-touch-icon-precomposed" sizes="152x152" href="home/assets/favicon/apple-touch-icon-152x152.png" />
+	<link rel="icon" type="image/png" href="home/assets/favicon/favicon-196x196.png" sizes="196x196" />
+	<link rel="icon" type="image/png" href="home/assets/favicon/favicon-96x96.png" sizes="96x96" />
+	<link rel="icon" type="image/png" href="home/assets/favicon/favicon-32x32.png" sizes="32x32" />
+	<link rel="icon" type="image/png" href="home/assets/favicon/favicon-16x16.png" sizes="16x16" />
+	<link rel="icon" type="image/png" href="home/assets/favicon/favicon-128.png" sizes="128x128" />
+	<meta name="application-name" content="&nbsp;" />
+	<meta name="msapplication-TileColor" content="#FFFFFF" />
+	<meta name="msapplication-TileImage" content="home/assets/favicon/mstile-144x144.png" />
+	<meta name="msapplication-square70x70logo" content="home/assets/favicon/mstile-70x70.png" />
+	<meta name="msapplication-square150x150logo" content="home/assets/favicon/mstile-150x150.png" />
+	<meta name="msapplication-wide310x150logo" content="home/assets/favicon/mstile-310x150.png" />
+	<meta name="msapplication-square310x310logo" content="home/assets/favicon/mstile-310x310.png" />
+
+	<style>/*
+        This font software is the property of Commercial Type.
+
+        You may not modify the font software, use it on another website, or install it on a computer.
+
+        License information is available at http://commercialtype.com/eula
+        For more information please visit Commercial Type at http://commercialtype.com or email us at info[at]commercialtype.com
+
+        Copyright (C) 2017 Schwartzco Inc.
+        License: 1704-GNCLGK
+*/
+/* National */
+
+@font-face {
+  font-family: 'National 2 Narrow Web';
+  src: url('https://pudding.cool/assets/fonts/national/National2NarrowWeb-Extralight.woff2')
+      format('woff2'),
+    url('https://pudding.cool/assets/fonts/national/National2NarrowWeb-Extralight.woff')
+      format('woff');
+  font-weight: 200;
+  font-style: normal;
+  font-stretch: normal;
+}
+
+@font-face {
+  font-family: 'National 2 Narrow Web';
+  src: url('https://pudding.cool/assets/fonts/national/National2NarrowWeb-Regular.woff2')
+      format('woff2'),
+    url('https://pudding.cool/assets/fonts/national/National2NarrowWeb-Regular.woff')
+      format('woff');
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+}
+
+@font-face {
+  font-family: 'National 2 Narrow Web';
+  src: url('https://pudding.cool/assets/fonts/national/National2NarrowWeb-Bold.woff2')
+      format('woff2'),
+    url('https://pudding.cool/assets/fonts/national/National2NarrowWeb-Bold.woff')
+      format('woff');
+  font-weight: 700;
+  font-style: normal;
+  font-stretch: normal;
+}
+
+@font-face {
+  font-family: 'National 2 Narrow Web';
+  src: url('https://pudding.cool/assets/fonts/national/National2NarrowWeb-Black.woff2')
+      format('woff2'),
+    url('https://pudding.cool/assets/fonts/national/National2NarrowWeb-Black.woff')
+      format('woff');
+  font-weight: 900;
+  font-style: normal;
+  font-stretch: normal;
+}
+/* Tiempos Text */
+
+@font-face {
+  font-family: 'Tiempos Text Web';
+  src: url('https://pudding.cool/assets/fonts/tiempos/TiemposTextWeb-Regular.woff2')
+      format('woff2'),
+    url('https://pudding.cool/assets/fonts/tiempos/TiemposTextWeb-Regular.woff')
+      format('woff');
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+}
+
+@font-face {
+  font-family: 'Tiempos Text Web';
+  src: url('https://pudding.cool/assets/fonts/tiempos/TiemposTextWeb-Bold.woff2')
+      format('woff2'),
+    url('https://pudding.cool/assets/fonts/tiempos/TiemposTextWeb-Bold.woff')
+      format('woff');
+  font-weight: 700;
+  font-style: normal;
+  font-stretch: normal;
+}
+</style>
+	<style>*{-webkit-box-sizing:border-box;box-sizing:border-box}a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,caption,center,cite,code,dd,del,details,dfn,div,dl,dt,em,embed,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,html,i,iframe,img,ins,kbd,label,legend,li,mark,menu,nav,object,ol,output,p,pre,q,ruby,s,samp,section,small,span,strike,strong,sub,summary,sup,table,tbody,td,tfoot,th,thead,time,tr,tt,u,ul,var,video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline}article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,section{display:block}a img{border:none}blockquote{quotes:none}blockquote:after,blockquote:before{content:'';content:none}table{border-collapse:collapse;border-spacing:0}caption,td,th{text-align:left;font-weight:400;vertical-align:middle}.hide-accessible{width:1px;height:1px;overflow:hidden;position:absolute}.hide-invisible{visibility:hidden}.hide-display{display:none}.skip-to-main{border:none;width:1px;height:1px;overflow:hidden;position:absolute}.skip-to-main:focus{width:auto;height:auto;background-color:#f4f4f4;padding:.5em;z-index:1001}.prose{max-width:40rem;margin:0 auto;padding:0 1rem}.prose__hed{font-weight:700}.media-overlay{position:absolute;top:0;left:0;width:100%;height:100%;background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAIAAAACCAYAAABytg0kAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyNpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNS1jMDE0IDc5LjE1MTQ4MSwgMjAxMy8wMy8xMy0xMjowOToxNSAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIChNYWNpbnRvc2gpIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOkRDMDBGQ0Y5NEI4NjExRTM5RTg2QTY1RTUyQjIxNEQyIiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOkRDMDBGQ0ZBNEI4NjExRTM5RTg2QTY1RTUyQjIxNEQyIj4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6REMwMEZDRjc0Qjg2MTFFMzlFODZBNjVFNTJCMjE0RDIiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6REMwMEZDRjg0Qjg2MTFFMzlFODZBNjVFNTJCMjE0RDIiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz6C0EmkAAAAGElEQVR42mJiYGD4DwQMTECCEchhAAgwAEcGBv9dngKPAAAAAElFTkSuQmCC)}.graphic__hed{font-weight:500}.graphic__dek{margin:0;margin-bottom:1.5rem}.graphic__chart{width:100%}.graphic__key{display:-webkit-box;display:-ms-flexbox;display:flex;-ms-flex-wrap:wrap;flex-wrap:wrap;margin-bottom:.5rem;-webkit-box-pack:end;-ms-flex-pack:end;justify-content:flex-end}.graphic__key li{padding:0;margin-left:.75em;letter-spacing:.05em;text-transform:uppercase;font-weight:700;line-height:1}.graphic__key li:before{content:'';display:inline-block;width:.8em;height:.8em;background-color:#282828;margin-right:.25em}.tk-national{font-family:Helvetica,Arial,sans-serif;letter-spacing:-.03em}.loaded-national .tk-national{font-family:'National 2 Narrow Web',Helvetica,Arial,sans-serif}.tk-tiempos{font-family:Georgia,Times,serif;letter-spacing:normal}.loaded-tiempos .tk-tiempos{font-family:'Tiempos Text Web',Georgia,Times,serif}.xxx-small{font-size:10px;line-height:1.5}.xx-small{font-size:11px;line-height:1.5}.x-small{font-size:12px;line-height:1.5}.small{font-size:14px;line-height:1.5}.root{font-size:16px;line-height:1.7}.medium{font-size:17px;line-height:1.7}.large{font-size:24px;line-height:1.5}.x-large{font-size:32px;line-height:1.5}.xx-large{font-size:40px;line-height:1.2}.xxx-large{font-size:48px;line-height:1.2}.xxxx-large{font-size:64px;line-height:1.2}body{-webkit-font-feature-settings:'kern' 1,'onum' 0,'liga' 0,'tnum' 1;font-feature-settings:'kern' 1,'onum' 0,'liga' 0,'tnum' 1;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;-webkit-tap-highlight-color:transparent;background-color:#fff;color:#282828;font-weight:500;font-size:16px}h1{font-size:40px;line-height:1.2;margin-top:1.5rem}h2{font-size:32px;line-height:1.5;margin-top:1.5rem}h3{font-size:24px;line-height:1.5;margin-top:1.5rem}h4{font-size:17px;line-height:1.7;margin-top:1.5rem}h5{font-size:16px;line-height:1.7;margin-top:1.5rem}h6{font-size:14px;line-height:1.5;margin-top:1.5rem}p{margin:1.5rem 0;font-size:16px;line-height:1.7}a{text-decoration:none;border-bottom:1px solid #282828;color:#282828}a:hover,a:visited{color:#282828}b,strong{font-weight:700}em,i{font-style:italic}ul{list-style-type:none}li{font-size:16px}img,video{display:block;width:100%}button{cursor:pointer;border:none;outline:0;margin:0;padding:0;font-size:1rem;font-size:16px}sub,sup{font-size:.75rem;line-height:0;position:relative;vertical-align:baseline}sup{top:-.5em}sub{bottom:-.25em}#about main{position:relative;max-width:60rem;margin:0 auto 5rem auto;border-left:4px solid #282828;border-top:4px solid #282828;padding-top:1rem}#about .story-item a{border:none;display:block}.cta{width:100%;color:#fff;margin-bottom:5rem}.cta__inner{width:calc(100% - 3.6rem);-webkit-transform:translateX(.5rem);-ms-transform:translateX(.5rem);transform:translateX(.5rem);border-top:4px solid #282828;border-left:4px solid #282828;max-width:60rem;margin:0 auto;padding:3rem 1rem}.cta__hed{margin:0 auto;font-size:32px;line-height:1.4}.cta__items{display:-webkit-box;display:-ms-flexbox;display:flex;-ms-flex-wrap:wrap;flex-wrap:wrap;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between;margin:0 auto;margin-top:2rem}.cta__newsletter{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-ms-flex-wrap:wrap;flex-wrap:wrap;margin-bottom:2rem}.cta__newsletter input{font-size:14px;line-height:1;font-family:'National 2 Narrow Web',Helvetica,Arial,sans-serif;padding:.6rem;background:0 0;border:1px solid #fff;margin-right:.5rem}.cta__newsletter input::-webkit-input-placeholder{color:#fff}.cta__newsletter input:-ms-input-placeholder{color:#fff}.cta__newsletter input::-ms-input-placeholder{color:#fff}.cta__newsletter input::placeholder{color:#fff}.cta__newsletter p{margin:0;margin-bottom:1rem;line-height:1;width:100%;font-size:24px}.cta__patreon{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-ms-flex-wrap:wrap;flex-wrap:wrap}.cta__patreon p{margin:0;margin-bottom:1rem;font-size:24px;line-height:1;width:100%}.cta .btn,.cta a.btn{background-color:#fff}footer{width:100%;color:#fff}footer .footer__inner{width:calc(100% - 3.6rem);-webkit-transform:translateX(.5rem);-ms-transform:translateX(.5rem);transform:translateX(.5rem);border-top:4px solid #282828;border-left:4px solid #282828;max-width:60rem;margin:0 auto;padding:3rem 1rem}footer .footer__hed{margin:0 auto;font-size:32px;line-height:1.4}footer .footer__social{margin-top:2rem;display:-webkit-box;display:-ms-flexbox;display:flex}footer .footer__social p{margin:0}footer .footer__social ul{display:-webkit-box;display:-ms-flexbox;display:flex}footer .footer__social li{margin:0 .25rem}footer .footer__social a{border:none;display:block;max-width:2rem}footer .footer__social svg{fill:#fff;stroke-opacity:.5}footer .footer__location{margin:0;margin-top:2rem;font-size:14px}.btn,a.btn{font-weight:900;text-transform:uppercase;padding:.75rem;font-size:14px;line-height:1;background-color:#282828;color:#fff;font-family:'National 2 Narrow Web',Helvetica,Arial,sans-serif;letter-spacing:.03em;border:none}.btn.random-color,.random-color,a.random-color{color:#5b5b5b;-webkit-transition:color 250ms;-o-transition:color 250ms;transition:color 250ms}.btn.random-color--0,.random-color--0,a.random-color--0{color:#4720ef}.btn.random-color--1,.random-color--1,a.random-color--1{color:#008296}.btn.random-color--2,.random-color--2,a.random-color--2{color:#009d53}.btn.random-color--3,.random-color--3,a.random-color--3{color:#f23c55}.btn.random-background,.random-background,a.random-background{background-color:#5b5b5b;-webkit-transition:background-color 250ms;-o-transition:background-color 250ms;transition:background-color 250ms}.btn.random-background--0,.random-background--0,a.random-background--0{background-color:#4720ef}.btn.random-background--1,.random-background--1,a.random-background--1{background-color:#008296}.btn.random-background--2,.random-background--2,a.random-background--2{background-color:#009d53}.btn.random-background--3,.random-background--3,a.random-background--3{background-color:#f23c55}.story-item .item__hed{margin:0}.story-item .item__dek{margin:0}.story-item .item__author{margin:0;color:#5b5b5b}.story-item .item__author a{color:#5b5b5b}.story-item .item__author a:hover{color:#949494}header{z-index:1000;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between;-webkit-box-align:center;-ms-flex-align:center;align-items:center;max-width:60rem;margin:0 auto;padding-top:1.25rem;padding-bottom:1rem;-webkit-box-shadow:0 0 2px rgba(0,0,0,.25);box-shadow:0 0 2px rgba(0,0,0,.25);position:fixed;top:0;left:0;-webkit-transform:translate3d(0,0,0);transform:translate3d(0,0,0);background:#fff;width:100%}header .header__title{width:10rem;margin-left:3.5rem;margin-top:.25rem}header .header__title a{display:block;border:none;padding-top:.3rem}header .header__sidebar{position:fixed;top:0;left:0;padding:1rem;display:-webkit-box;display:-ms-flexbox;display:flex;width:100%;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between}header .header__sidebar .sidebar__social{padding-right:3rem}header .header__sidebar .sidebar__social svg{fill:#949494;stroke:#fff}header .header__sidebar a{display:block;border:none}header .header__sidebar .header__logo{width:2rem}header .header__sidebar ul{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;-webkit-box-align:center;-ms-flex-align:center;align-items:center}header .header__sidebar ul li:last-of-type{display:none}header .header__sidebar ul a{width:2rem}header .header__nav{position:fixed;top:0;left:0}header .header__nav .nav__links{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center}header .header__nav li{padding:0 1.25rem}header .header__nav a{display:block;border:none}header .header__menu{background:0 0;padding:0;width:1.5rem;height:1.5rem;position:absolute;top:1.65rem;right:1rem}header .header__menu svg{stroke:#282828}#home #hits ul{position:relative;display:-webkit-box;display:-ms-flexbox;display:flex;-ms-flex-wrap:wrap;flex-wrap:wrap;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between}#home #hits li{width:100%;border-top:4px solid #282828;margin-bottom:3rem}#home #hits li:nth-child(3){margin-bottom:0}#home #hits li:nth-child(n+4){display:none}#home #hits li:first-of-type{border:none;width:100%}#home #hits li:first-of-type .item__hed{font-size:32px}#home #hits li:first-of-type .item__dek{display:block}#home #hits li:last-of-type{margin-bottom:0}#home #hits .story-item{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column}#home #hits .item__info{padding:1rem 0 0 1rem}#home #hits .item__hed{font-weight:700;font-size:24px;line-height:1}#home #hits .item__dek{font-size:16px;line-height:1.4;font-family:'Tiempos Text Web',Georgia,Times,serif;margin-top:.5rem}#home #hits .item__author{font-weight:700;margin-top:1rem;font-size:14px;line-height:1.2}#home #hits .item__author a{display:inline-block;text-transform:uppercase}#home #how ul{display:-webkit-box;display:-ms-flexbox;display:flex;-ms-flex-wrap:wrap;flex-wrap:wrap;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between;-webkit-transition:opacity 250ms;-o-transition:opacity 250ms;transition:opacity 250ms}#home #how li{width:100%;border-top:4px solid #282828;margin-bottom:4rem}#home #how li:first-of-type{border:none}#home #how li:last-of-type{margin-bottom:0}#home #how .story-item{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;-webkit-box-align:center;-ms-flex-align:center;align-items:center}#home #how .item__img{width:60%}#home #how .item__info{padding-left:1rem;width:40%}#home #how .item__hed{font-weight:700;font-size:17px;line-height:1}#home #how .item__dek{display:none}#home #how .item__author{font-weight:700;margin-top:1rem;font-size:14px;line-height:1}#home #how .item__author a{display:inline-block;text-transform:uppercase}#home #new ul{position:relative;display:-webkit-box;display:-ms-flexbox;display:flex;-ms-flex-wrap:wrap;flex-wrap:wrap;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between}#home #new li{width:100%;border-top:4px solid #282828;margin-bottom:3rem}#home #new li:first-of-type{border:none;width:100%}#home #new li:first-of-type .item__hed{font-size:32px}#home #new li:first-of-type .item__dek{display:block}#home #new li:last-of-type{margin-bottom:0}#home #new .story-item{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column}#home #new .item__info{padding:1rem 0 0 1rem}#home #new .item__hed{font-weight:700;font-size:24px;line-height:1}#home #new .item__dek{display:none;font-size:16px;line-height:1.4;font-family:'Tiempos Text Web',Georgia,Times,serif;margin-top:.5rem}#home #new .item__author{font-weight:700;margin-top:1rem;font-size:14px;line-height:1.2}#home #new .item__author a{display:inline-block;text-transform:uppercase}#home #picks{display:none}#home #picks ul{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between}#home #picks li{opacity:0;-webkit-transition:opacity 250ms;-o-transition:opacity 250ms;transition:opacity 250ms;width:calc(33.3% - .5rem)}#home #picks li:nth-child(n+4){display:none}#home #picks li.is-visible{opacity:1;display:-webkit-box;display:-ms-flexbox;display:flex}#home #picks li.is-hidden{display:none}#home #picks .story-item{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center}#home #picks .item__info{padding-left:.5rem;width:40%}#home #picks .item__img{width:60%}#home #picks .item__hed{font-weight:700;font-size:17px;line-height:1}#home #picks .item__dek{display:none}#home #picks .item__author{display:none}#home #topics .topics__nav{position:absolute;top:0;left:0;-webkit-transform:rotate(-90deg) translate(-100%,-125%);-ms-transform:rotate(-90deg) translate(-100%,-125%);transform:rotate(-90deg) translate(-100%,-125%);margin-top:4.75rem;-webkit-transform-origin:0 0;-ms-transform-origin:0 0;transform-origin:0 0}#home #topics .topics__nav ul{display:-webkit-box;display:-ms-flexbox;display:flex}#home #topics .topics__nav li{padding:0 .5rem}#home #topics .topics__nav li.is-active button{font-weight:700}#home #topics .topics__nav li button{font-weight:200;text-transform:capitalize}#home #topics .topics__stories ul{display:-webkit-box;display:-ms-flexbox;display:flex;-ms-flex-wrap:wrap;flex-wrap:wrap;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between;opacity:0;-webkit-transition:opacity 250ms;-o-transition:opacity 250ms;transition:opacity 250ms}#home #topics .topics__stories ul:nth-child(n+2){display:none}#home #topics .topics__stories ul.is-visible{opacity:1;display:-webkit-box;display:-ms-flexbox;display:flex}#home #topics .topics__stories ul.is-hidden{display:none}#home #topics .topics__stories li{width:100%;margin-bottom:4rem;border-top:4px solid #282828}#home #topics .topics__stories li:nth-child(3){margin-bottom:0}#home #topics .topics__stories li:nth-child(n+4){display:none}#home #topics .topics__stories li:first-of-type{border:none}#home #topics .topics__stories li:last-of-type{margin-bottom:0}#home #topics .story-item{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column}#home #topics .item__info{padding:1rem 0 0 1rem}#home #topics .item__hed{font-weight:700;font-size:24px;line-height:1}#home #topics .item__dek{font-size:16px;line-height:1.4;font-family:'Tiempos Text Web',Georgia,Times,serif;margin-top:.5rem}#home #topics .item__author{font-weight:700;margin-top:1rem;font-size:14px;line-height:1.2}#home #topics .item__author a{display:inline-block;text-transform:uppercase}#home{padding-top:6rem}#home section{width:calc(100% - 3.6rem);-webkit-transform:translateX(.5rem);-ms-transform:translateX(.5rem);transform:translateX(.5rem);position:relative;max-width:60rem;margin:0 auto 5rem auto;border-left:4px solid #282828;border-top:4px solid #282828;padding-top:1rem}#home .section__label{position:absolute;top:0;left:0;margin:0;margin-top:1rem;-webkit-transform-origin:0 0;-ms-transform-origin:0 0;transform-origin:0 0;-webkit-transform:rotate(-90deg) translate(-100%,-150%);-ms-transform:rotate(-90deg) translate(-100%,-150%);transform:rotate(-90deg) translate(-100%,-150%);font-weight:700;text-transform:uppercase;line-height:1}#home .story-item a{border:none;display:block}@media only screen and (min-width:30em){body{font-size:17px}p{font-size:17px;line-height:1.7}li{font-size:17px}button{font-size:17px}}@media only screen and (min-width:60em){.cta__inner{width:100%;-webkit-transform:translateX(0);-ms-transform:translateX(0);transform:translateX(0)}.cta__items{-ms-flex-wrap:nowrap;flex-wrap:nowrap}.cta__newsletter{margin:0;-ms-flex-wrap:nowrap;flex-wrap:nowrap}.cta__newsletter p{width:auto;margin:0;margin-right:1rem}.cta__patreon{-ms-flex-wrap:nowrap;flex-wrap:nowrap}.cta__patreon p{width:auto;margin:0;margin-right:1rem}footer .footer__inner{width:100%;-webkit-transform:translateX(0);-ms-transform:translateX(0);transform:translateX(0)}header{width:calc(100% - 10rem);position:relative;-webkit-transform:none;-ms-transform:none;transform:none;-webkit-box-shadow:none;box-shadow:none}header .header__title{width:12rem;margin:0}header .header__sidebar{-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;width:5rem;padding:0;padding-top:1rem}header .header__sidebar .sidebar__social{padding-right:0}header .header__sidebar a{margin:0 auto}header .header__sidebar .header__logo{width:3rem;margin-bottom:1rem}header .header__sidebar ul{-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;padding-right:1rem}header .header__sidebar ul li{margin-bottom:.5rem}header .header__sidebar ul li:last-of-type{display:block}header .header__nav{position:relative}header .header__menu{display:none}#home #hits ul{-webkit-box-pack:end;-ms-flex-pack:end;justify-content:flex-end;-webkit-transform:translateX(-4px);-ms-transform:translateX(-4px);transform:translateX(-4px);width:calc(100% + $line-width)}#home #hits li:first-of-type{margin-bottom:2rem;margin-left:0;margin-right:0}#home #hits li:first-of-type .story-item{-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row}#home #hits li:first-of-type .item__img{width:70%}#home #hits li:first-of-type .item__info{width:30%;padding-top:0}#home #hits li:first-of-type .item__hed{font-size:40px;font-weight:900}#home #hits li:first-of-type .item__dek{font-size:24px;line-height:1.2}#home #hits li:first-of-type .item__author{margin-top:2rem}#home #hits li{width:50%;margin:0;border-top:none;border-left:4px solid #282828;width:calc(50% - .75rem);margin-right:1.5rem;margin-bottom:0}#home #hits li:nth-child(odd){margin-right:0}#home #hits li:nth-child(n+4){display:block;margin-top:3rem}#home #hits li:first-of-type{border-left:4px solid #282828}#home #how ul{-webkit-transform:translateX(-4px);-ms-transform:translateX(-4px);transform:translateX(-4px);width:calc(100% + $line-width)}#home #how li{width:calc(25% - 1.5rem);border-top:none;border-left:4px solid #282828;margin:0}#home #how li:first-of-type{border-left:4px solid #282828}#home #how .story-item{-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column}#home #how .item__img{width:100%}#home #how .item__info{width:100%;padding:1rem 0 0 1rem}#home #new ul{-webkit-box-pack:end;-ms-flex-pack:end;justify-content:flex-end;-webkit-transform:translateX(-4px);-ms-transform:translateX(-4px);transform:translateX(-4px);width:calc(100% + $line-width)}#home #new li:first-of-type{margin-bottom:1rem;margin-left:0}#home #new li:first-of-type .item__info{position:absolute;bottom:0;left:4px;background-color:#fff;width:33.3%}#home #new li:first-of-type .item__hed{font-size:40px;font-weight:900}#home #new li:first-of-type .item__dek{font-size:24px;line-height:1.2}#home #new li:first-of-type .item__author{margin-top:2rem}#home #new li{width:50%;margin:0;border-top:none;border-left:4px solid #282828;width:calc(33.3% - 1.5rem);margin-left:1.5rem}#home #new li:first-of-type{border-left:4px solid #282828}#home #picks{display:block}#home #topics .topics__stories{-webkit-transform:translateX(-4px);-ms-transform:translateX(-4px);transform:translateX(-4px);width:calc(100% + $line-width)}#home #topics .topics__stories li{margin:0;border-top:none;border-left:4px solid #282828;width:calc(33.3% - 1.5rem)}#home #topics .topics__stories li:nth-child(n+4){display:block}#home #topics .topics__stories li:nth-child(-n+3){margin-bottom:3rem}#home #topics .topics__stories li:first-of-type{border-left:4px solid #282828}#home{padding-top:0}#home section{width:100%;width:calc(100% - 10rem);-webkit-transform:translateX(0);-ms-transform:translateX(0);transform:translateX(0)}}</style>
+
+	<!-- smoosh -->
+	<script>!function(e){var t={};function n(o){if(t[o])return t[o].exports;var i=t[o]={i:o,l:!1,exports:{}};return e[o].call(i.exports,i,i.exports,n),i.l=!0,i.exports}n.m=e,n.c=t,n.d=function(e,t,o){n.o(e,t)||Object.defineProperty(e,t,{enumerable:!0,get:o})},n.r=function(e){"undefined"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(e,"__esModule",{value:!0})},n.t=function(e,t){if(1&t&&(e=n(e)),8&t)return e;if(4&t&&"object"==typeof e&&e&&e.__esModule)return e;var o=Object.create(null);if(n.r(o),Object.defineProperty(o,"default",{enumerable:!0,value:e}),2&t&&"string"!=typeof e)for(var i in e)n.d(o,i,function(t){return e[t]}.bind(null,i));return o},n.n=function(e){var t=e&&e.__esModule?function(){return e.default}:function(){return e};return n.d(t,"a",t),t},n.o=function(e,t){return Object.prototype.hasOwnProperty.call(e,t)},n.p="",n(n.s=14)}([function(e,t){var n;n=function(){return this}();try{n=n||new Function("return this")()}catch(e){"object"==typeof window&&(n=window)}e.exports=n},function(e,t,n){!function(){function t(e,t){document.addEventListener?e.addEventListener("scroll",t,!1):e.attachEvent("scroll",t)}function n(e){this.a=document.createElement("div"),this.a.setAttribute("aria-hidden","true"),this.a.appendChild(document.createTextNode(e)),this.b=document.createElement("span"),this.c=document.createElement("span"),this.h=document.createElement("span"),this.f=document.createElement("span"),this.g=-1,this.b.style.cssText="max-width:none;display:inline-block;position:absolute;height:100%;width:100%;overflow:scroll;font-size:16px;",this.c.style.cssText="max-width:none;display:inline-block;position:absolute;height:100%;width:100%;overflow:scroll;font-size:16px;",this.f.style.cssText="max-width:none;display:inline-block;position:absolute;height:100%;width:100%;overflow:scroll;font-size:16px;",this.h.style.cssText="display:inline-block;width:200%;height:200%;font-size:16px;max-width:none;",this.b.appendChild(this.h),this.c.appendChild(this.f),this.a.appendChild(this.b),this.a.appendChild(this.c)}function o(e,t){e.a.style.cssText="max-width:none;min-width:20px;min-height:20px;display:inline-block;overflow:hidden;position:absolute;width:auto;margin:0;padding:0;top:-999px;white-space:nowrap;font-synthesis:none;font:"+t+";"}function i(e){var t=e.a.offsetWidth,n=t+100;return e.f.style.width=n+"px",e.c.scrollLeft=n,e.b.scrollLeft=e.b.scrollWidth+100,e.g!==t&&(e.g=t,!0)}function r(e,n){function o(){var e=r;i(e)&&e.a.parentNode&&n(e.g)}var r=e;t(e.b,o),t(e.c,o),i(e)}function a(e,t){var n=t||{};this.family=e,this.style=n.style||"normal",this.weight=n.weight||"normal",this.stretch=n.stretch||"normal"}var c=null,u=null,s=null,l=null;function f(){return null===l&&(l=!!document.fonts),l}function d(){if(null===s){var e=document.createElement("div");try{e.style.font="condensed 100px sans-serif"}catch(e){}s=""!==e.style.font}return s}function h(e,t){return[e.style,e.weight,d()?e.stretch:"","100px",t].join(" ")}a.prototype.load=function(e,t){var i=this,a=e||"BESbswy",s=0,l=t||3e3,d=(new Date).getTime();return new Promise(function(e,t){if(f()&&!function(){if(null===u)if(f()&&/Apple/.test(window.navigator.vendor)){var e=/AppleWebKit\/([0-9]+)(?:\.([0-9]+))(?:\.([0-9]+))/.exec(window.navigator.userAgent);u=!!e&&603>parseInt(e[1],10)}else u=!1;return u}()){var p=new Promise(function(e,t){!function n(){(new Date).getTime()-d>=l?t(Error(l+"ms timeout exceeded")):document.fonts.load(h(i,'"'+i.family+'"'),a).then(function(t){1<=t.length?e():setTimeout(n,25)},t)}()}),m=new Promise(function(e,t){s=setTimeout(function(){t(Error(l+"ms timeout exceeded"))},l)});Promise.race([m,p]).then(function(){clearTimeout(s),e(i)},t)}else!function(e){document.body?e():document.addEventListener?document.addEventListener("DOMContentLoaded",function t(){document.removeEventListener("DOMContentLoaded",t),e()}):document.attachEvent("onreadystatechange",function t(){"interactive"!=document.readyState&&"complete"!=document.readyState||(document.detachEvent("onreadystatechange",t),e())})}(function(){function u(){var t;(t=-1!=y&&-1!=v||-1!=y&&-1!=w||-1!=v&&-1!=w)&&((t=y!=v&&y!=w&&v!=w)||(null===c&&(t=/AppleWebKit\/([0-9]+)(?:\.([0-9]+))/.exec(window.navigator.userAgent),c=!!t&&(536>parseInt(t[1],10)||536===parseInt(t[1],10)&&11>=parseInt(t[2],10))),t=c&&(y==g&&v==g&&w==g||y==b&&v==b&&w==b||y==T&&v==T&&w==T)),t=!t),t&&(_.parentNode&&_.parentNode.removeChild(_),clearTimeout(s),e(i))}var f=new n(a),p=new n(a),m=new n(a),y=-1,v=-1,w=-1,g=-1,b=-1,T=-1,_=document.createElement("div");_.dir="ltr",o(f,h(i,"sans-serif")),o(p,h(i,"serif")),o(m,h(i,"monospace")),_.appendChild(f.a),_.appendChild(p.a),_.appendChild(m.a),document.body.appendChild(_),g=f.a.offsetWidth,b=p.a.offsetWidth,T=m.a.offsetWidth,function e(){if((new Date).getTime()-d>=l)_.parentNode&&_.parentNode.removeChild(_),t(Error(l+"ms timeout exceeded"));else{var n=document.hidden;!0!==n&&void 0!==n||(y=f.a.offsetWidth,v=p.a.offsetWidth,w=m.a.offsetWidth,u()),s=setTimeout(e,50)}}(),r(f,function(e){y=e,u()}),o(f,h(i,'"'+i.family+'",sans-serif')),r(p,function(e){v=e,u()}),o(p,h(i,'"'+i.family+'",serif')),r(m,function(e){w=e,u()}),o(m,h(i,'"'+i.family+'",monospace'))})})},e.exports=a}()},,function(e,t,n){"use strict";(function(e){var o=n(4),i=setTimeout;function r(){}function a(e){if(!(this instanceof a))throw new TypeError("Promises must be constructed via new");if("function"!=typeof e)throw new TypeError("not a function");this._state=0,this._handled=!1,this._value=void 0,this._deferreds=[],d(e,this)}function c(e,t){for(;3===e._state;)e=e._value;0!==e._state?(e._handled=!0,a._immediateFn(function(){var n=1===e._state?t.onFulfilled:t.onRejected;if(null!==n){var o;try{o=n(e._value)}catch(e){return void s(t.promise,e)}u(t.promise,o)}else(1===e._state?u:s)(t.promise,e._value)})):e._deferreds.push(t)}function u(e,t){try{if(t===e)throw new TypeError("A promise cannot be resolved with itself.");if(t&&("object"==typeof t||"function"==typeof t)){var n=t.then;if(t instanceof a)return e._state=3,e._value=t,void l(e);if("function"==typeof n)return void d((o=n,i=t,function(){o.apply(i,arguments)}),e)}e._state=1,e._value=t,l(e)}catch(t){s(e,t)}var o,i}function s(e,t){e._state=2,e._value=t,l(e)}function l(e){2===e._state&&0===e._deferreds.length&&a._immediateFn(function(){e._handled||a._unhandledRejectionFn(e._value)});for(var t=0,n=e._deferreds.length;t<n;t++)c(e,e._deferreds[t]);e._deferreds=null}function f(e,t,n){this.onFulfilled="function"==typeof e?e:null,this.onRejected="function"==typeof t?t:null,this.promise=n}function d(e,t){var n=!1;try{e(function(e){n||(n=!0,u(t,e))},function(e){n||(n=!0,s(t,e))})}catch(e){if(n)return;n=!0,s(t,e)}}a.prototype.catch=function(e){return this.then(null,e)},a.prototype.then=function(e,t){var n=new this.constructor(r);return c(this,new f(e,t,n)),n},a.prototype.finally=o.a,a.all=function(e){return new a(function(t,n){if(!e||void 0===e.length)throw new TypeError("Promise.all accepts an array");var o=Array.prototype.slice.call(e);if(0===o.length)return t([]);var i=o.length;function r(e,a){try{if(a&&("object"==typeof a||"function"==typeof a)){var c=a.then;if("function"==typeof c)return void c.call(a,function(t){r(e,t)},n)}o[e]=a,0==--i&&t(o)}catch(e){n(e)}}for(var a=0;a<o.length;a++)r(a,o[a])})},a.resolve=function(e){return e&&"object"==typeof e&&e.constructor===a?e:new a(function(t){t(e)})},a.reject=function(e){return new a(function(t,n){n(e)})},a.race=function(e){return new a(function(t,n){for(var o=0,i=e.length;o<i;o++)e[o].then(t,n)})},a._immediateFn="function"==typeof e&&function(t){e(t)}||function(e){i(e,0)},a._unhandledRejectionFn=function(e){"undefined"!=typeof console&&console&&console.warn("Possible Unhandled Promise Rejection:",e)},t.a=a}).call(this,n(5).setImmediate)},function(e,t,n){"use strict";t.a=function(e){var t=this.constructor;return this.then(function(n){return t.resolve(e()).then(function(){return n})},function(n){return t.resolve(e()).then(function(){return t.reject(n)})})}},function(e,t,n){(function(e){var o=void 0!==e&&e||"undefined"!=typeof self&&self||window,i=Function.prototype.apply;function r(e,t){this._id=e,this._clearFn=t}t.setTimeout=function(){return new r(i.call(setTimeout,o,arguments),clearTimeout)},t.setInterval=function(){return new r(i.call(setInterval,o,arguments),clearInterval)},t.clearTimeout=t.clearInterval=function(e){e&&e.close()},r.prototype.unref=r.prototype.ref=function(){},r.prototype.close=function(){this._clearFn.call(o,this._id)},t.enroll=function(e,t){clearTimeout(e._idleTimeoutId),e._idleTimeout=t},t.unenroll=function(e){clearTimeout(e._idleTimeoutId),e._idleTimeout=-1},t._unrefActive=t.active=function(e){clearTimeout(e._idleTimeoutId);var t=e._idleTimeout;t>=0&&(e._idleTimeoutId=setTimeout(function(){e._onTimeout&&e._onTimeout()},t))},n(6),t.setImmediate="undefined"!=typeof self&&self.setImmediate||void 0!==e&&e.setImmediate||this&&this.setImmediate,t.clearImmediate="undefined"!=typeof self&&self.clearImmediate||void 0!==e&&e.clearImmediate||this&&this.clearImmediate}).call(this,n(0))},function(e,t,n){(function(e,t){!function(e,n){"use strict";if(!e.setImmediate){var o,i,r,a,c,u=1,s={},l=!1,f=e.document,d=Object.getPrototypeOf&&Object.getPrototypeOf(e);d=d&&d.setTimeout?d:e,"[object process]"==={}.toString.call(e.process)?o=function(e){t.nextTick(function(){p(e)})}:!function(){if(e.postMessage&&!e.importScripts){var t=!0,n=e.onmessage;return e.onmessage=function(){t=!1},e.postMessage("","*"),e.onmessage=n,t}}()?e.MessageChannel?((r=new MessageChannel).port1.onmessage=function(e){p(e.data)},o=function(e){r.port2.postMessage(e)}):f&&"onreadystatechange"in f.createElement("script")?(i=f.documentElement,o=function(e){var t=f.createElement("script");t.onreadystatechange=function(){p(e),t.onreadystatechange=null,i.removeChild(t),t=null},i.appendChild(t)}):o=function(e){setTimeout(p,0,e)}:(a="setImmediate$"+Math.random()+"$",c=function(t){t.source===e&&"string"==typeof t.data&&0===t.data.indexOf(a)&&p(+t.data.slice(a.length))},e.addEventListener?e.addEventListener("message",c,!1):e.attachEvent("onmessage",c),o=function(t){e.postMessage(a+t,"*")}),d.setImmediate=function(e){"function"!=typeof e&&(e=new Function(""+e));for(var t=new Array(arguments.length-1),n=0;n<t.length;n++)t[n]=arguments[n+1];var i={callback:e,args:t};return s[u]=i,o(u),u++},d.clearImmediate=h}function h(e){delete s[e]}function p(e){if(l)setTimeout(p,0,e);else{var t=s[e];if(t){l=!0;try{!function(e){var t=e.callback,o=e.args;switch(o.length){case 0:t();break;case 1:t(o[0]);break;case 2:t(o[0],o[1]);break;case 3:t(o[0],o[1],o[2]);break;default:t.apply(n,o)}}(t)}finally{h(e),l=!1}}}}}("undefined"==typeof self?void 0===e?this:e:self)}).call(this,n(0),n(7))},function(e,t){var n,o,i=e.exports={};function r(){throw new Error("setTimeout has not been defined")}function a(){throw new Error("clearTimeout has not been defined")}function c(e){if(n===setTimeout)return setTimeout(e,0);if((n===r||!n)&&setTimeout)return n=setTimeout,setTimeout(e,0);try{return n(e,0)}catch(t){try{return n.call(null,e,0)}catch(t){return n.call(this,e,0)}}}!function(){try{n="function"==typeof setTimeout?setTimeout:r}catch(e){n=r}try{o="function"==typeof clearTimeout?clearTimeout:a}catch(e){o=a}}();var u,s=[],l=!1,f=-1;function d(){l&&u&&(l=!1,u.length?s=u.concat(s):f=-1,s.length&&h())}function h(){if(!l){var e=c(d);l=!0;for(var t=s.length;t;){for(u=s,s=[];++f<t;)u&&u[f].run();f=-1,t=s.length}u=null,l=!1,function(e){if(o===clearTimeout)return clearTimeout(e);if((o===a||!o)&&clearTimeout)return o=clearTimeout,clearTimeout(e);try{o(e)}catch(t){try{return o.call(null,e)}catch(t){return o.call(this,e)}}}(e)}}function p(e,t){this.fun=e,this.array=t}function m(){}i.nextTick=function(e){var t=new Array(arguments.length-1);if(arguments.length>1)for(var n=1;n<arguments.length;n++)t[n-1]=arguments[n];s.push(new p(e,t)),1!==s.length||l||c(h)},p.prototype.run=function(){this.fun.apply(null,this.array)},i.title="browser",i.browser=!0,i.env={},i.argv=[],i.version="",i.versions={},i.on=m,i.addListener=m,i.once=m,i.off=m,i.removeListener=m,i.removeAllListeners=m,i.emit=m,i.prependListener=m,i.prependOnceListener=m,i.listeners=function(e){return[]},i.binding=function(e){throw new Error("process.binding is not supported")},i.cwd=function(){return"/"},i.chdir=function(e){throw new Error("process.chdir is not supported")},i.umask=function(){return 0}},function(e,t){String.prototype.startsWith||(String.prototype.startsWith=function(e,t){return this.substr(t||0,e.length)===e})},function(e,t){String.prototype.endsWith||(String.prototype.endsWith=function(e,t){var n=this.toString();("number"!=typeof t||!isFinite(t)||Math.floor(t)!==t||t>n.length)&&(t=n.length),t-=e.length;var o=n.lastIndexOf(e,t);return-1!==o&&o===t})},function(e,t){Array.prototype.findIndex||Object.defineProperty(Array.prototype,"findIndex",{value:function(e){"use strict";if(null==this)throw new TypeError("Array.prototype.findIndex called on null or undefined");if("function"!=typeof e)throw new TypeError("predicate must be a function");for(var t,n=Object(this),o=n.length>>>0,i=arguments[1],r=0;r<o;r++)if(t=n[r],e.call(i,t,r,n))return r;return-1},enumerable:!1,configurable:!1,writable:!1})},function(e,t){Array.prototype.find||Object.defineProperty(Array.prototype,"find",{value:function(e){"use strict";if(null==this)throw new TypeError("Array.prototype.find called on null or undefined");if("function"!=typeof e)throw new TypeError("predicate must be a function");for(var t,n=Object(this),o=n.length>>>0,i=arguments[1],r=0;r<o;r++)if(t=n[r],e.call(i,t,r,n))return t}})},function(e,t){Array.prototype.includes||Object.defineProperty(Array.prototype,"includes",{value:function(e,t){if(null==this)throw new TypeError('"this" is null or not defined');var n=Object(this),o=n.length>>>0;if(0===o)return!1;for(var i=0|t,r=Math.max(i>=0?i:o-Math.abs(i),0);r<o;){if(n[r]===e)return!0;r++}return!1}})},,function(e,t,n){"use strict";n.r(t);var o=n(3),i=(n(8),n(9),n(10),n(11),n(12),n(1)),r=n.n(i);var a=document.documentElement,c=5e3;function u(e){var t=e.split(" ")[0].toLowerCase().replace(/ /g,"-"),n="loaded-".concat(t);!function(e,t){e.classList?e.classList.add(t):e.className="".concat(e.className," ").concat(t)}(a,n)}function s(e){console.error(e)}function l(e){var t=e.map(function(e){return new Promise(function(t,n){var o=e.family,i=e.weight,a=e.style,u=void 0===a?"normal":a;return new r.a(o,{weight:i,style:u}).load(null,c).then(function(){return t(o)}).catch(function(e){return n(e)})})});Promise.all(t).then(function(e){return u(e[0])}).catch(s)}window.Promise||(window.Promise=o.a),l([{family:"National 2 Narrow Web",weight:200},{family:"National 2 Narrow Web",weight:500},{family:"National 2 Narrow Web",weight:700},{family:"National 2 Narrow Web",weight:900}]),l([{family:"Tiempos Text Web",weight:500},{family:"Tiempos Text Web",weight:700}])}]);</script>
+	<!-- endsmoosh -->
+
+	<script>
+		(function (i, s, o, g, r, a, m) {
+			i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+				(i[r].q = i[r].q || []).push(arguments)
+			}, i[r].l = 1 * new Date(); a = s.createElement(o),
+				m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+		})(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+		ga('create', 'UA-90567923-1', 'auto');
+		ga('send', 'pageview');
+	</script>
+
+	<script>
+		(function () {
+			window.trackOutboundLink = function (url) {
+				ga('send', 'event', 'outbound', 'click', url, {
+					'transport': 'beacon',
+					'hitCallback': function () { document.location = url; }
+				});
+			}
+		})()
+	</script>
+</head>
+
+<body class='tk-national' id='home'>
+
+	<!-- DO NOT REMOVE -->
+	
+		<a href='#content' class='skip-to-main'>Skip to main content</a>
+		<header>
+			
+			<div class='header__title'>
+				<a class='header__wordmark' href='https://pudding.cool' target='_blank'>
+					<svg id="wordmark" x="0px" y="0px" enable-background="new 0 0 200 50" xml:space="preserve" viewBox="0 0 200 50">
+<g>
+	<circle fill="#282827" cx="153.2" cy="8.3" r="2.8"/>
+	<rect x="150.3" y="13.3" fill="#282827" width="5.6" height="18.2"/>
+	<path fill="#282827" d="M80.2,5.5h-1.9h-7v19.3v6.7h5.6v-6.7v-1.4h1.4h1.9c4.9,0,8.9-4,8.9-8.9S85.2,5.5,80.2,5.5z M80.2,17.8h-1.9
+		h-1.4v-1.4v-3.8v-1.4h1.4h1.9c1.8,0,3.3,1.5,3.3,3.3S82.1,17.8,80.2,17.8z"/>
+	<path fill="#282827" d="M108.8,13.6h-5.6v8.9c0,1.8-1.5,3.3-3.3,3.3c-1.8,0-3.3-1.5-3.3-3.3v-8.9H91v8.9c0,4.9,4,8.9,8.9,8.9
+		s8.9-4,8.9-8.9V13.6z"/>
+	<path fill="#282827" d="M167.2,13.6c-4.9,0-8.9,4-8.9,8.9v8.9h5.6v-8.9c0-1.8,1.5-3.3,3.3-3.3c1.8,0,3.3,1.5,3.3,3.3v8.9h5.6v-8.9
+		C176.1,17.6,172.1,13.6,167.2,13.6z"/>
+	<path fill="#282827" d="M122.8,12.2v1.4h-1.4h-1.9c-4.9,0-8.9,4-8.9,8.9s4,8.9,8.9,8.9h1.9h7V12.2V5.5l-5.6,3.3V12.2z M122.9,20.6
+		v3.8v1.4h-1.4h-1.9c-1.8,0-3.3-1.5-3.3-3.3c0-1.8,1.5-3.3,3.3-3.3h1.9h1.4V20.6z"/>
+	<path fill="#282827" d="M142.4,12.2v1.4H141h-1.9c-4.9,0-8.9,4-8.9,8.9s4,8.9,8.9,8.9h1.9h7V12.2V5.5l-5.6,3.3V12.2z M142.5,20.6
+		v3.8v1.4H141h-1.9c-1.8,0-3.3-1.5-3.3-3.3c0-1.8,1.5-3.3,3.3-3.3h1.9h1.4V20.6z"/>
+	<path fill="#282827" d="M186.8,13.6c-4.9,0-8.9,4-8.9,8.9s4,8.9,8.9,8.9h1.9h1.4v1.4v0.9l0,1.4v1.4c0,1.8-1.5,3.3-3.3,3.3
+		c-1.8,0-3.3-1.5-3.3-3.3v-2.5l-5.6,3.3c0.4,4.5,4.2,8.1,8.9,8.1c4.9,0,8.9-4,8.9-8.9v-1.4v-2.3V13.6h-7H186.8z M190.1,19.4v1.4v3.8
+		V26h-1.4h-1.9c-1.8,0-3.3-1.5-3.3-3.3c0-1.8,1.5-3.3,3.3-3.3h1.9H190.1z"/>
+	<path fill="#282827" d="M31.7,13.6c-1.2,0-2.3,0.2-3.3,0.6V5.5l-5.6,3.3v13.7v2v6.9h5.6v-6.9h0v-2c0-1.8,1.5-3.3,3.3-3.3
+		c1.8,0,3.3,1.5,3.3,3.3v8.9h5.6v-8.9C40.6,17.6,36.6,13.6,31.7,13.6z"/>
+	<polygon fill="#282827" points="20.9,5.5 3.1,5.5 3.1,11.1 9.2,11.1 9.2,31.4 14.8,31.4 14.8,11.1 20.9,11.1 	"/>
+	<path fill="#282827" d="M51.4,26.2c-0.4,0-1.2-0.1-1.8-0.4l5.2-2.1l5.6-2.3l-1-2.3l-0.1-0.2c-0.1-0.3-0.3-0.6-0.5-1
+		c-0.1-0.1-0.1-0.2-0.2-0.3c0,0,0-0.1-0.1-0.1c0,0-0.1-0.1-0.1-0.1l-0.1-0.1c-1.6-2.2-4-3.5-6.7-3.7l0,0l-0.6,0
+		c-4.9,0-8.9,4-8.9,8.9c0,0.4,0,0.9,0.1,1.4l0,0l0,0.1c0,0,0,0,0,0.1c0,0,0,0,0,0.1c0,0.3,0.1,0.5,0.2,0.8c0,0,0,0.1,0,0.1
+		c0,0,0,0.1,0,0.1c0.1,0.3,0.2,0.7,0.4,1c0,0,0,0.1,0,0.1l0,0.1c0.1,0.3,0.3,0.5,0.4,0.8c0,0.1,0.1,0.1,0.1,0.2l0,0
+		c0.1,0.2,0.3,0.4,0.4,0.6c0,0,0,0,0,0.1c0,0,0,0.1,0.1,0.1l0.1,0.1c1.7,2.1,4.4,3.4,7.2,3.4l6.1,0v-5.2
+		C57.6,26.2,53.7,26.2,51.4,26.2C51.4,26.2,51.4,26.2,51.4,26.2z M59.3,18.9L59.3,18.9L59.3,18.9z M47.7,21.7
+		C47.7,21.7,47.7,21.7,47.7,21.7l-0.2,0.1c0.2-1.9,1.8-3.5,3.7-3.5c0.9,0,1.8,0.4,2.4,0.9L49.3,21L47.7,21.7L47.7,21.7z"/>
+</g>
+</svg>
+				</a>
+			</div>
+			
+			<div class='header__sidebar'>
+				<a class='header__logo' href='https://pudding.cool' target='_blank'>
+					<svg id="logo" x="0px" y="0px" enable-background="new 0 0 75 110" xml:space="preserve" viewBox="0 0 75 110">
+<g id="leftP">
+	<polygon fill="#777777" points="25.8,32.5 14.8,26.1 14.8,14.3 25.8,20.7 	"/>
+	<polygon fill="#777777" points="25.8,56.4 3.8,43.8 3.8,32 25.8,44.6 	"/>
+	<polygon fill="#777777" points="25.8,81.1 20.2,77.9 20.2,66.1 25.8,69.3 	"/>
+	<polygon fill="#777777" points="25.8,105.5 9.5,96.1 9.5,84.3 25.8,93.7 	"/>
+</g>
+<g id="rightP">
+	<path fill="#282828" d="M67.2,14.1C62.6,4.8,55.3,3.8,48.1,7.6c-5.8,3.1-22.3,13.1-22.3,13.1v11.8c0,0,18.8-10.9,22.3-12.7
+		c4.3-2.3,8.7-1.6,11.5,3.9c2.8,5.6,2.7,15-1.8,22.5c-3.5,5.9-6.8,8.6-9.9,10.3c-3.1,1.7-22.1,12.9-22.1,12.9v11.8
+		c0,0,16.8-9.6,22-12.4c5.1-2.8,10.5-7.3,16.4-17.1C71.7,39.1,71.8,23.4,67.2,14.1z"/>
+	<path fill="#282828" d="M50.8,40.9c1.5-2.5,1.5-5.6,0.6-7.4c-0.9-1.8-2.4-2-3.8-1.3c-1.1,0.6-21.9,12.4-21.9,12.4v11.8
+		c0,0,20.8-11.6,21.8-12.2C48.6,43.7,49.7,42.8,50.8,40.9z"/>
+	<polygon fill="#282828" points="25.8,105.5 36.8,99.2 36.8,87.4 25.8,93.7 	"/>
+</g>
+</svg>
+				</a>
+				<ul class='sidebar__social'>
+					<li><a target='_blank' href='https://www.facebook.com/pudding.viz/' class='logo--facebook'><svg width="24" height="24" fill="#000000" stroke="currentColor" stroke-width=".2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-facebook" viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg></a></li>
+					<li><a target='_blank' href='https://twitter.com/puddingviz' class='logo--twitter'><svg width="24" height="24" fill="#000" stroke="currentColor" stroke-width="0" stroke-linecap="round" stroke-linejoin="round" class="feather feather-twitter" viewBox="0 0 24 24"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path></svg></a></li>
+					<li><a target='_blank' href='https://www.instagram.com/pudding.cool' class='logo--instagram'><svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-instagram" viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.5" y2="6.5"></line></svg></a></li>
+					<li><a target='_blank' href='https://www.patreon.com/thepudding' class='logo--patreon'><svg id="Layer_1" width="24" height="24" x="0px" y="0px" enable-background="new 0 0 24 24" xml:space="preserve" viewBox="0 0 24 24">
+<g>
+	
+		<path fill-rule="evenodd" clip-rule="evenodd" stroke="#000000" stroke-width="0.2" stroke-linecap="round" stroke-linejoin="round" d="
+		M15.7,3.3c-3.7,0-6.8,3-6.8,6.8c0,3.7,3,6.7,6.8,6.7c3.7,0,6.7-3,6.7-6.7C22.4,6.3,19.4,3.3,15.7,3.3"/>
+	
+		<rect x="3.7" y="3.3" stroke="#000000" stroke-width="0.2" stroke-linecap="round" stroke-linejoin="round" width="3.3" height="18"/>
+</g>
+</svg></a></li>
+				</ul>
+			</div>
+
+			<nav class='header__nav'>
+				<ul class='nav__links'>
+					<li><a href='https://pudding.cool/about'>About</a></li>
+					<li><a href='https://pudding.cool/about#contact'>Contact</a></li>
+					<li><a href='https://pudding.cool/archives'>Archives</a></li>
+					<li><a href='https://pudding.cool/topics'>Topics</a></li>
+					<li><a href='https://pudding.cool/#how'>How-To</a></li>
+					<li><a href='https://pudding.cool/#newsletter' class='btn'>Join our Newsletter</a></li>
+				</ul>
+			</nav>
+
+			<button class='btn header__menu'><svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-menu" viewBox="0 0 24 24"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg></a></button>
+		</header>
+	
+
+	<main id='content'>
+		<section id='picks'>
+			<p class='section__label random-color'>Our Picks</p>
+			<ul>
+				<!-- DO NOT REMOVE -->
+				<li>
+		<div class='story-item'>
+			<div class='item__img'>
+				<a href='//pudding.cool/2018/12/countries'>
+					<img src='https://placehold.it/1280x720.jpg' alt='The World through the Eyes of the US'>
+				</a>
+			</div>
+			<div class='item__info'>
+				<a href='//pudding.cool/2018/12/countries'>
+					<h3 class='item__hed'>The World through the Eyes of the US</h3>
+				</a>
+				<p class='item__dek tk-tiempos'>The countries that have preoccupied Americans since 1900.</p>
+				<p class='item__author'>By <a href='https://pudding.cool/author/russell-goldenberg'>Russell Goldenberg</a></p>
+			</div>
+		</div>
+	</li><li>
+		<div class='story-item'>
+			<div class='item__img'>
+				<a href='//pudding.cool/2018/12/brief-history'>
+					<img src='https://placehold.it/1280x720.jpg' alt='A brief history of the past 100 years'>
+				</a>
+			</div>
+			<div class='item__info'>
+				<a href='//pudding.cool/2018/12/brief-history'>
+					<h3 class='item__hed'>A brief history of the past 100 years</h3>
+				</a>
+				<p class='item__dek tk-tiempos'>An analysis of 12 decades of New York Times headlines</p>
+				<p class='item__author'>By <a href='https://pudding.cool/author/ilia-blinderman'>Ilia Blinderman</a>, <a href='https://pudding.cool/author/jan-diehm'>Jan Diehm</a></p>
+			</div>
+		</div>
+	</li><li>
+		<div class='story-item'>
+			<div class='item__img'>
+				<a href='//pudding.cool/2018/12/3d-cities-story'>
+					<img src='https://placehold.it/1280x720.jpg' alt='Population Mountains'>
+				</a>
+			</div>
+			<div class='item__info'>
+				<a href='//pudding.cool/2018/12/3d-cities-story'>
+					<h3 class='item__hed'>Population Mountains</h3>
+				</a>
+				<p class='item__dek tk-tiempos'>This is a story about how to perceive the population size of cities.</p>
+				<p class='item__author'>By <a href='https://pudding.cool/author/matt-daniels'>Matt Daniels</a></p>
+			</div>
+		</div>
+	</li><li>
+		<div class='story-item'>
+			<div class='item__img'>
+				<a href='//pudding.cool/2018/11/boy-bands'>
+					<img src='https://placehold.it/1280x720.jpg' alt='Internet Boy Band Database'>
+				</a>
+			</div>
+			<div class='item__info'>
+				<a href='//pudding.cool/2018/11/boy-bands'>
+					<h3 class='item__hed'>Internet Boy Band Database</h3>
+				</a>
+				<p class='item__dek tk-tiempos'>Every boy band to chart the Hot 100 since 1980.</p>
+				<p class='item__author'>By <a href='https://pudding.cool/author/russell-goldenberg'>Russell Goldenberg</a>, <a href='https://pudding.cool/author/amber-thomas'>Amber Thomas</a>, <a href='https://pudding.cool/author/malik-yusuf'>Malik Yusuf</a></p>
+			</div>
+		</div>
+	</li><li>
+		<div class='story-item'>
+			<div class='item__img'>
+				<a href='//pudding.cool/2018/10/wiki-breakout'>
+					<img src='https://placehold.it/1280x720.jpg' alt='What Does the Path to Fame Look Like?'>
+				</a>
+			</div>
+			<div class='item__info'>
+				<a href='//pudding.cool/2018/10/wiki-breakout'>
+					<h3 class='item__hed'>What Does the Path to Fame Look Like?</h3>
+				</a>
+				<p class='item__dek tk-tiempos'>Tracking the rise in popularity from Cardi B to Carson Wentz.</p>
+				<p class='item__author'>By <a href='https://pudding.cool/author/russell-goldenberg'>Russell Goldenberg</a>, <a href='https://pudding.cool/author/caitlyn-ralph'>Caitlyn Ralph</a></p>
+			</div>
+		</div>
+	</li><li>
+		<div class='story-item'>
+			<div class='item__img'>
+				<a href='//pudding.cool/2018/09/jordans'>
+					<img src='https://placehold.it/1280x720.jpg' alt='A visual history of every Air Jordan'>
+				</a>
+			</div>
+			<div class='item__info'>
+				<a href='//pudding.cool/2018/09/jordans'>
+					<h3 class='item__hed'>A visual history of every Air Jordan</h3>
+				</a>
+				<p class='item__dek tk-tiempos'>Michael Jordan is the OG 🐐 (both in basketball and sneakers). Watch how the design of his iconic Air Jordan changes over the last 32 years.</p>
+				<p class='item__author'>By <a href='https://pudding.cool/author/jan-diehm'>Jan Diehm</a></p>
+			</div>
+		</div>
+	</li>
+				
+			</ul>
+		</section>
+
+		<section id='new'>
+			<p class='section__label random-color'>What’s New</p>
+			<ul>
+				<!-- DO NOT REMOVE -->
+				<li>
+		<div class='story-item'>
+			<div class='item__img'>
+				<a href='//pudding.cool/projects/vocabulary'>
+					<img src='https://placehold.it/1280x720.jpg' alt='Rappers, sorted by the size of their vocabulary'>
+				</a>
+			</div>
+			<div class='item__info'>
+				<a href='//pudding.cool/projects/vocabulary'>
+					<h3 class='item__hed'>Rappers, sorted by the size of their vocabulary</h3>
+				</a>
+				<p class='item__dek tk-tiempos'>The number of unique lyrics used within artists’ first 35,000 lyrics</p>
+				<p class='item__author'>By <a href='https://pudding.cool/author/matt-daniels'>Matt Daniels</a></p>
+			</div>
+		</div>
+	</li><li>
+		<div class='story-item'>
+			<div class='item__img'>
+				<a href='//pudding.cool/2018/12/countries'>
+					<img src='https://placehold.it/1280x720.jpg' alt='The World through the Eyes of the US'>
+				</a>
+			</div>
+			<div class='item__info'>
+				<a href='//pudding.cool/2018/12/countries'>
+					<h3 class='item__hed'>The World through the Eyes of the US</h3>
+				</a>
+				<p class='item__dek tk-tiempos'>The countries that have preoccupied Americans since 1900.</p>
+				<p class='item__author'>By <a href='https://pudding.cool/author/russell-goldenberg'>Russell Goldenberg</a></p>
+			</div>
+		</div>
+	</li><li>
+		<div class='story-item'>
+			<div class='item__img'>
+				<a href='//pudding.cool/2018/12/brief-history'>
+					<img src='https://placehold.it/1280x720.jpg' alt='A brief history of the past 100 years'>
+				</a>
+			</div>
+			<div class='item__info'>
+				<a href='//pudding.cool/2018/12/brief-history'>
+					<h3 class='item__hed'>A brief history of the past 100 years</h3>
+				</a>
+				<p class='item__dek tk-tiempos'>An analysis of 12 decades of New York Times headlines</p>
+				<p class='item__author'>By <a href='https://pudding.cool/author/ilia-blinderman'>Ilia Blinderman</a>, <a href='https://pudding.cool/author/jan-diehm'>Jan Diehm</a></p>
+			</div>
+		</div>
+	</li>
+		
+			</ul>
+		</section>
+
+		<section id='topics'>
+			<p class='section__label random-color'>Topics</p>
+			<!-- DO NOT REMOVE -->
+			
+		<div class='topics__nav'>
+			<ul><li><button data-topic='music'>music</button></li><li><button data-topic='politics'>politics</button></li><li><button data-topic='culture'>culture</button></li><li><button data-topic='sports'>sports</button></li></ul>
+		</div>
+		<div class='topics__stories'>
+			<ul data-topic='music'><li>
+		<div class='story-item'>
+			<div class='item__img'>
+				<a href='//pudding.cool/2017/03/labels'>
+					<img src='https://placehold.it/1280x720.jpg' alt='The Most Succesful Labels in Hip Hop'>
+				</a>
+			</div>
+			<div class='item__info'>
+				<a href='//pudding.cool/2017/03/labels'>
+					<h3 class='item__hed'>The Most Succesful Labels in Hip Hop</h3>
+				</a>
+				<p class='item__dek tk-tiempos'>Every hip hop record label, since 1989, sorted by their artists' chart performance on Billboard.</p>
+				<p class='item__author'>By <a href='https://pudding.cool/author/matt-daniels'>Matt Daniels</a></p>
+			</div>
+		</div>
+	</li><li>
+		<div class='story-item'>
+			<div class='item__img'>
+				<a href='//pudding.cool/2018/05/similarity'>
+					<img src='https://placehold.it/1280x720.jpg' alt='Are Hit Songs Becoming Less Musically Diverse?'>
+				</a>
+			</div>
+			<div class='item__info'>
+				<a href='//pudding.cool/2018/05/similarity'>
+					<h3 class='item__hed'>Are Hit Songs Becoming Less Musically Diverse?</h3>
+				</a>
+				<p class='item__dek tk-tiempos'>Data on whether today’s hit artists are taking fewer risks and creating a narrower range of sounds.</p>
+				<p class='item__author'>By <a href='https://pudding.cool/author/matt-daniels'>Matt Daniels</a>, <a href='https://pudding.cool/author/andrew-thompson'>Andrew Thompson</a></p>
+			</div>
+		</div>
+	</li><li>
+		<div class='story-item'>
+			<div class='item__img'>
+				<a href='//pudding.cool/2018/08/emo-rap'>
+					<img src='https://placehold.it/1280x720.jpg' alt='The Most Emo Lyrics: Emo Rap vs. Dashboard Confessional'>
+				</a>
+			</div>
+			<div class='item__info'>
+				<a href='//pudding.cool/2018/08/emo-rap'>
+					<h3 class='item__hed'>The Most Emo Lyrics: Emo Rap vs. Dashboard Confessional</h3>
+				</a>
+				<p class='item__dek tk-tiempos'>Who has the most emotionally vulnerable lyrics, emo rappers or Dashboard Confessional? Has Juice Wrld out-emo’d emo bands?</p>
+				<p class='item__author'>By <a href='https://pudding.cool/author/matt-daniels'>Matt Daniels</a></p>
+			</div>
+		</div>
+	</li><li>
+		<div class='story-item'>
+			<div class='item__img'>
+				<a href='//pudding.cool/2017/03/miles'>
+					<img src='https://placehold.it/1280x720.jpg' alt='The 2,452 Wikipedia Pages on which Miles Davis is Mentioned'>
+				</a>
+			</div>
+			<div class='item__info'>
+				<a href='//pudding.cool/2017/03/miles'>
+					<h3 class='item__hed'>The 2,452 Wikipedia Pages on which Miles Davis is Mentioned</h3>
+				</a>
+				<p class='item__dek tk-tiempos'>25 years after his death, he's still synonymous with Jazz, but you can find his fingerprints on so many other ideas.</p>
+				<p class='item__author'>By <a href='https://pudding.cool/author/matt-daniels'>Matt Daniels</a></p>
+			</div>
+		</div>
+	</li><li>
+		<div class='story-item'>
+			<div class='item__img'>
+				<a href='//pudding.cool/2018/06/skate-music'>
+					<img src='https://placehold.it/1280x720.jpg' alt='The Good, the Rad, and the Gnarly'>
+				</a>
+			</div>
+			<div class='item__info'>
+				<a href='//pudding.cool/2018/06/skate-music'>
+					<h3 class='item__hed'>The Good, the Rad, and the Gnarly</h3>
+				</a>
+				<p class='item__dek tk-tiempos'>An exploration into the music of skateboarding.</p>
+				<p class='item__author'>By <a href='https://pudding.cool/author/jared-wilbur'>Jared Wilbur</a></p>
+			</div>
+		</div>
+	</li><li>
+		<div class='story-item'>
+			<div class='item__img'>
+				<a href='//pudding.cool/2018/11/boy-bands'>
+					<img src='https://placehold.it/1280x720.jpg' alt='Internet Boy Band Database'>
+				</a>
+			</div>
+			<div class='item__info'>
+				<a href='//pudding.cool/2018/11/boy-bands'>
+					<h3 class='item__hed'>Internet Boy Band Database</h3>
+				</a>
+				<p class='item__dek tk-tiempos'>Every boy band to chart the Hot 100 since 1980.</p>
+				<p class='item__author'>By <a href='https://pudding.cool/author/russell-goldenberg'>Russell Goldenberg</a>, <a href='https://pudding.cool/author/amber-thomas'>Amber Thomas</a>, <a href='https://pudding.cool/author/malik-yusuf'>Malik Yusuf</a></p>
+			</div>
+		</div>
+	</li></ul><ul data-topic='politics'><li>
+		<div class='story-item'>
+			<div class='item__img'>
+				<a href='//pudding.cool/2018/02/death'>
+					<img src='https://placehold.it/1280x720.jpg' alt='Limbo Lines: Dead Here, Alive There'>
+				</a>
+			</div>
+			<div class='item__info'>
+				<a href='//pudding.cool/2018/02/death'>
+					<h3 class='item__hed'>Limbo Lines: Dead Here, Alive There</h3>
+				</a>
+				<p class='item__dek tk-tiempos'>Brain death’s role in the uncertainties of death.</p>
+				<p class='item__author'>By <a href='https://pudding.cool/author/beatrice-jin'>Beatrice Jin</a></p>
+			</div>
+		</div>
+	</li><li>
+		<div class='story-item'>
+			<div class='item__img'>
+				<a href='//pudding.cool/2018/12/countries'>
+					<img src='https://placehold.it/1280x720.jpg' alt='The World through the Eyes of the US'>
+				</a>
+			</div>
+			<div class='item__info'>
+				<a href='//pudding.cool/2018/12/countries'>
+					<h3 class='item__hed'>The World through the Eyes of the US</h3>
+				</a>
+				<p class='item__dek tk-tiempos'>The countries that have preoccupied Americans since 1900.</p>
+				<p class='item__author'>By <a href='https://pudding.cool/author/russell-goldenberg'>Russell Goldenberg</a></p>
+			</div>
+		</div>
+	</li><li>
+		<div class='story-item'>
+			<div class='item__img'>
+				<a href='//pudding.cool/2017/03/incarceration'>
+					<img src='https://placehold.it/1280x720.jpg' alt='Why Does the US Lead the World in Incarceration?'>
+				</a>
+			</div>
+			<div class='item__info'>
+				<a href='//pudding.cool/2017/03/incarceration'>
+					<h3 class='item__hed'>Why Does the US Lead the World in Incarceration?</h3>
+				</a>
+				<p class='item__dek tk-tiempos'>How we got here – the global leader in incarceration – is one of the most debated questions in policy.</p>
+				<p class='item__author'>By <a href='https://pudding.cool/author/matt-daniels'>Matt Daniels</a></p>
+			</div>
+		</div>
+	</li><li>
+		<div class='story-item'>
+			<div class='item__img'>
+				<a href='//pudding.cool/2017/03/elections'>
+					<img src='https://placehold.it/1280x720.jpg' alt='How News Media Covers Trump & Clinton'>
+				</a>
+			</div>
+			<div class='item__info'>
+				<a href='//pudding.cool/2017/03/elections'>
+					<h3 class='item__hed'>How News Media Covers Trump & Clinton</h3>
+				</a>
+				<p class='item__dek tk-tiempos'>Analyzing 12,147 images of Trump and Clinton.</p>
+				<p class='item__author'>By <a href='https://pudding.cool/author/russell-goldenberg'>Russell Goldenberg</a></p>
+			</div>
+		</div>
+	</li><li>
+		<div class='story-item'>
+			<div class='item__img'>
+				<a href='//pudding.cool/2018/10/city_3d'>
+					<img src='https://placehold.it/1280x720.jpg' alt='Human Terrain'>
+				</a>
+			</div>
+			<div class='item__info'>
+				<a href='//pudding.cool/2018/10/city_3d'>
+					<h3 class='item__hed'>Human Terrain</h3>
+				</a>
+				<p class='item__dek tk-tiempos'>Visualizing the World’s Population, in 3D.</p>
+				<p class='item__author'>By <a href='https://pudding.cool/author/matt-daniels'>Matt Daniels</a></p>
+			</div>
+		</div>
+	</li><li>
+		<div class='story-item'>
+			<div class='item__img'>
+				<a href='//pudding.cool/2017/09/clinics'>
+					<img src='https://placehold.it/1280x720.jpg' alt='How far is too far? An analysis of driving times to abortion clinics in the US.'>
+				</a>
+			</div>
+			<div class='item__info'>
+				<a href='//pudding.cool/2017/09/clinics'>
+					<h3 class='item__hed'>How far is too far? An analysis of driving times to abortion clinics in the US.</h3>
+				</a>
+				<p class='item__dek tk-tiempos'>Mapping the cities and places with the worst access.</p>
+				<p class='item__author'>By <a href='https://pudding.cool/author/russell-goldenberg'>Russell Goldenberg</a>, <a href='https://pudding.cool/author/amber-thomas'>Amber Thomas</a>, <a href='https://pudding.cool/author/caitlyn-ralph'>Caitlyn Ralph</a></p>
+			</div>
+		</div>
+	</li></ul><ul data-topic='culture'><li>
+		<div class='story-item'>
+			<div class='item__img'>
+				<a href='//pudding.cool/2017/08/the-office'>
+					<img src='https://placehold.it/1280x720.jpg' alt='‘The Office’ Dialogue in Five Charts'>
+				</a>
+			</div>
+			<div class='item__info'>
+				<a href='//pudding.cool/2017/08/the-office'>
+					<h3 class='item__hed'>‘The Office’ Dialogue in Five Charts</h3>
+				</a>
+				<p class='item__dek tk-tiempos'>A breakdown of how every character contributed to the show.</p>
+				<p class='item__author'>By <a href='https://pudding.cool/author/caitlyn-ralph'>Caitlyn Ralph</a></p>
+			</div>
+		</div>
+	</li><li>
+		<div class='story-item'>
+			<div class='item__img'>
+				<a href='//pudding.cool/2018/06/gayborhoods'>
+					<img src='https://placehold.it/1280x720.jpg' alt='Men are from Chelsea, Women are from Park Slope'>
+				</a>
+			</div>
+			<div class='item__info'>
+				<a href='//pudding.cool/2018/06/gayborhoods'>
+					<h3 class='item__hed'>Men are from Chelsea, Women are from Park Slope</h3>
+				</a>
+				<p class='item__dek tk-tiempos'>How “gayborhoods” in 15 major American cities are divided by gender.</p>
+				<p class='item__author'>By <a href='https://pudding.cool/author/jan-diehm'>Jan Diehm</a></p>
+			</div>
+		</div>
+	</li><li>
+		<div class='story-item'>
+			<div class='item__img'>
+				<a href='//pudding.cool/2018/05/cookies'>
+					<img src='https://placehold.it/1280x720.jpg' alt='Baking the Most Average Chocolate Chip Cookie'>
+				</a>
+			</div>
+			<div class='item__info'>
+				<a href='//pudding.cool/2018/05/cookies'>
+					<h3 class='item__hed'>Baking the Most Average Chocolate Chip Cookie</h3>
+				</a>
+				<p class='item__dek tk-tiempos'>Cookie recipes written by computers. What could go wrong?</p>
+				<p class='item__author'>By <a href='https://pudding.cool/author/elle-obrien'>Elle O’Brien</a>, <a href='https://pudding.cool/author/amber-thomas'>Amber Thomas</a></p>
+			</div>
+		</div>
+	</li><li>
+		<div class='story-item'>
+			<div class='item__img'>
+				<a href='//pudding.cool/2018/03/neighborhoods'>
+					<img src='https://placehold.it/1280x720.jpg' alt='A Tale of Two Cities'>
+				</a>
+			</div>
+			<div class='item__info'>
+				<a href='//pudding.cool/2018/03/neighborhoods'>
+					<h3 class='item__hed'>A Tale of Two Cities</h3>
+				</a>
+				<p class='item__dek tk-tiempos'>Using data and our own experiences to write love letters to the cities we call home.</p>
+				<p class='item__author'>By <a href='https://pudding.cool/author/amber-thomas'>Amber Thomas</a>, <a href='https://pudding.cool/author/ilia-blinderman'>Ilia Blinderman</a></p>
+			</div>
+		</div>
+	</li><li>
+		<div class='story-item'>
+			<div class='item__img'>
+				<a href='//pudding.cool/2017/12/hater'>
+					<img src='https://placehold.it/1280x720.jpg' alt='10 Things Everyone Hates About You'>
+				</a>
+			</div>
+			<div class='item__info'>
+				<a href='//pudding.cool/2017/12/hater'>
+					<h3 class='item__hed'>10 Things Everyone Hates About You</h3>
+				</a>
+				<p class='item__dek tk-tiempos'>Exploring over 30 million feelings towards 3,000+ topics.</p>
+				<p class='item__author'>By <a href='https://pudding.cool/author/russell-goldenberg'>Russell Goldenberg</a>, <a href='https://pudding.cool/author/amber-thomas'>Amber Thomas</a></p>
+			</div>
+		</div>
+	</li><li>
+		<div class='story-item'>
+			<div class='item__img'>
+				<a href='//pudding.cool/2018/11/dearabby'>
+					<img src='https://placehold.it/1280x720.jpg' alt='30 Years of American Anxieties'>
+				</a>
+			</div>
+			<div class='item__info'>
+				<a href='//pudding.cool/2018/11/dearabby'>
+					<h3 class='item__hed'>30 Years of American Anxieties</h3>
+				</a>
+				<p class='item__dek tk-tiempos'>What 20,000 letters to an advice columnist tell us about what—and who—concerns us most.</p>
+				<p class='item__author'>By <a href='https://pudding.cool/author/ilia-blinderman'>Ilia Blinderman</a>, <a href='https://pudding.cool/author/caitlyn-ralph'>Caitlyn Ralph</a></p>
+			</div>
+		</div>
+	</li></ul><ul data-topic='sports'><li>
+		<div class='story-item'>
+			<div class='item__img'>
+				<a href='//pudding.cool/2017/03/home-court'>
+					<img src='https://placehold.it/1280x720.jpg' alt='Do NBA Refs Favor the Home Team?'>
+				</a>
+			</div>
+			<div class='item__info'>
+				<a href='//pudding.cool/2017/03/home-court'>
+					<h3 class='item__hed'>Do NBA Refs Favor the Home Team?</h3>
+				</a>
+				<p class='item__dek tk-tiempos'>Analyzing 13,658 reviewed calls by the NBA to rank teams by favorable home court officiating.</p>
+				<p class='item__author'>By <a href='https://pudding.cool/author/oliver-roeder'>Oliver Roeder</a>, <a href='https://pudding.cool/author/matt-daniels'>Matt Daniels</a></p>
+			</div>
+		</div>
+	</li><li>
+		<div class='story-item'>
+			<div class='item__img'>
+				<a href='//pudding.cool/2017/10/superteams'>
+					<img src='https://placehold.it/1280x720.jpg' alt='What is a Superteam in the NBA?'>
+				</a>
+			</div>
+			<div class='item__info'>
+				<a href='//pudding.cool/2017/10/superteams'>
+					<h3 class='item__hed'>What is a Superteam in the NBA?</h3>
+				</a>
+				<p class='item__dek tk-tiempos'>You Define It.</p>
+				<p class='item__author'>By <a href='https://pudding.cool/author/russell-goldenberg'>Russell Goldenberg</a>, <a href='https://pudding.cool/author/matt-daniels'>Matt Daniels</a></p>
+			</div>
+		</div>
+	</li><li>
+		<div class='story-item'>
+			<div class='item__img'>
+				<a href='//pudding.cool/2017/03/comeback'>
+					<img src='https://placehold.it/1280x720.jpg' alt='Using Historical NBA Data To Rank the Most Unlikely Comebacks'>
+				</a>
+			</div>
+			<div class='item__info'>
+				<a href='//pudding.cool/2017/03/comeback'>
+					<h3 class='item__hed'>Using Historical NBA Data To Rank the Most Unlikely Comebacks</h3>
+				</a>
+				<p class='item__dek tk-tiempos'>Using a win-probability model to identify the most statistically unlikely comebacks this season.</p>
+				<p class='item__author'>By <a href='https://pudding.cool/author/matt-daniels'>Matt Daniels</a></p>
+			</div>
+		</div>
+	</li><li>
+		<div class='story-item'>
+			<div class='item__img'>
+				<a href='//pudding.cool/2017/03/redraft'>
+					<img src='https://placehold.it/1280x720.jpg' alt='Twenty Years of the NBA Redrafted'>
+				</a>
+			</div>
+			<div class='item__info'>
+				<a href='//pudding.cool/2017/03/redraft'>
+					<h3 class='item__hed'>Twenty Years of the NBA Redrafted</h3>
+				</a>
+				<p class='item__dek tk-tiempos'>Using career stats to prove the best/worst NBA draft picks, ever.</p>
+				<p class='item__author'>By <a href='https://pudding.cool/author/russell-goldenberg'>Russell Goldenberg</a></p>
+			</div>
+		</div>
+	</li><li>
+		<div class='story-item'>
+			<div class='item__img'>
+				<a href='//pudding.cool/2017/05/nba-moments'>
+					<img src='https://placehold.it/1280x720.jpg' alt='The Most Timeless NBA Plays'>
+				</a>
+			</div>
+			<div class='item__info'>
+				<a href='//pudding.cool/2017/05/nba-moments'>
+					<h3 class='item__hed'>The Most Timeless NBA Plays</h3>
+				</a>
+				<p class='item__dek tk-tiempos'>Historic NBA games and plays, ranked by YouTube views.</p>
+				<p class='item__author'>By <a href='https://pudding.cool/author/matt-daniels'>Matt Daniels</a>, <a href='https://pudding.cool/author/russell-goldenberg'>Russell Goldenberg</a></p>
+			</div>
+		</div>
+	</li><li>
+		<div class='story-item'>
+			<div class='item__img'>
+				<a href='//pudding.cool/2018/05/nba-top-plays'>
+					<img src='https://placehold.it/1280x720.jpg' alt='The Most-Viewed NBA Plays in 2017-18'>
+				</a>
+			</div>
+			<div class='item__info'>
+				<a href='//pudding.cool/2018/05/nba-top-plays'>
+					<h3 class='item__hed'>The Most-Viewed NBA Plays in 2017-18</h3>
+				</a>
+				<p class='item__dek tk-tiempos'>Warning: this video contains a high dosage of LeBron footage.</p>
+				<p class='item__author'>By <a href='https://pudding.cool/author/russell-goldenberg'>Russell Goldenberg</a></p>
+			</div>
+		</div>
+	</li></ul>
+		</div>
+	
+		</section>
+
+		<!-- DO NOT REMOVE -->
+		
+		<div class='cta random-background'>
+			<div class='cta__inner'>
+				<h4 class='cta__hed tk-tiempos'>Picking up what we’re pudding down?</h4>
+				<div class='cta__items'>
+					<div class='cta__newsletter'>
+						<p>Get the latest emailed to you</p>
+						<form action='https://poly-graph.us11.list-manage.com/subscribe/post' method='POST'>
+							<input name='utf8' type='hidden' value='✓'>
+							<div class='cta__input-button'>
+								<input aria-label='Your email address' class='input-button__input' name='email' placeholder='you@example.com' required='' type='email'>
+								<button class='btn random-color'>Join</button>
+							</div>
+						</form>
+					</div>
+					
+					<div class='cta__patreon'>
+						<p>Support us on Patreon</p>
+						<a class='btn random-color' onclick='trackOutboundLink('https://www.patreon.com/thepudding'); return false;' target='_blank' href='https://www.patreon.com/thepudding'>Help fund us</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	
+
+		<section id='hits'>
+			<p class='section__label random-color'>Greatest Hits</p>
+			<ul>
+				<!-- DO NOT REMOVE -->
+				<li>
+		<div class='story-item'>
+			<div class='item__img'>
+				<a href='//pudding.cool/2017/02/vocabulary'>
+					<img src='https://placehold.it/1280x720.jpg' alt='The Largest Vocabulary in Hip Hop'>
+				</a>
+			</div>
+			<div class='item__info'>
+				<a href='//pudding.cool/2017/02/vocabulary'>
+					<h3 class='item__hed'>The Largest Vocabulary in Hip Hop</h3>
+				</a>
+				<p class='item__dek tk-tiempos'>Rappers, ranked by the number of unique words used in their lyrics.</p>
+				<p class='item__author'>By <a href='https://pudding.cool/author/matt-daniels'>Matt Daniels</a></p>
+			</div>
+		</div>
+	</li><li>
+		<div class='story-item'>
+			<div class='item__img'>
+				<a href='//pudding.cool/2017/03/film-dialogue'>
+					<img src='https://placehold.it/1280x720.jpg' alt='The Largest Analysis of Film Dialogue by Gender, Ever'>
+				</a>
+			</div>
+			<div class='item__info'>
+				<a href='//pudding.cool/2017/03/film-dialogue'>
+					<h3 class='item__hed'>The Largest Analysis of Film Dialogue by Gender, Ever</h3>
+				</a>
+				<p class='item__dek tk-tiempos'>From 2,000 screeplays, broken down by age and gender.</p>
+				<p class='item__author'>By <a href='https://pudding.cool/author/matt-daniels'>Matt Daniels</a>, <a href='https://pudding.cool/author/hanah-anderson'>Hanah Anderson</a></p>
+			</div>
+		</div>
+	</li><li>
+		<div class='story-item'>
+			<div class='item__img'>
+				<a href='//pudding.cool/2017/03/music-history'>
+					<img src='https://placehold.it/1280x720.jpg' alt='How Music Taste Evolved'>
+				</a>
+			</div>
+			<div class='item__info'>
+				<a href='//pudding.cool/2017/03/music-history'>
+					<h3 class='item__hed'>How Music Taste Evolved</h3>
+				</a>
+				<p class='item__dek tk-tiempos'>Every top 5 song, from 1958 - 2016, so we can stop arguing about when music was still good.</p>
+				<p class='item__author'>By <a href='https://pudding.cool/author/matt-daniels'>Matt Daniels</a></p>
+			</div>
+		</div>
+	</li><li>
+		<div class='story-item'>
+			<div class='item__img'>
+				<a href='//pudding.cool/2017/05/song-repetition'>
+					<img src='https://placehold.it/1280x720.jpg' alt='Are Pop Lyrics Getting More Repetitive?'>
+				</a>
+			</div>
+			<div class='item__info'>
+				<a href='//pudding.cool/2017/05/song-repetition'>
+					<h3 class='item__hed'>Are Pop Lyrics Getting More Repetitive?</h3>
+				</a>
+				<p class='item__dek tk-tiempos'>Measuring repetition in song lyrics over time using a compression algorithm.</p>
+				<p class='item__author'>By <a href='https://pudding.cool/author/colin-morris'>Colin Morris</a></p>
+			</div>
+		</div>
+	</li><li>
+		<div class='story-item'>
+			<div class='item__img'>
+				<a href='//pudding.cool/2018/10/city_3d'>
+					<img src='https://placehold.it/1280x720.jpg' alt='Human Terrain'>
+				</a>
+			</div>
+			<div class='item__info'>
+				<a href='//pudding.cool/2018/10/city_3d'>
+					<h3 class='item__hed'>Human Terrain</h3>
+				</a>
+				<p class='item__dek tk-tiempos'>Visualizing the World’s Population, in 3D.</p>
+				<p class='item__author'>By <a href='https://pudding.cool/author/matt-daniels'>Matt Daniels</a></p>
+			</div>
+		</div>
+	</li>
+		
+			</ul>
+		</section>
+
+		<section id='how'>
+			<p class='section__label random-color'>How-To</p>
+			<ul>
+				<!-- DO NOT REMOVE -->
+				<li>
+		<div class='story-item'>
+			<div class='item__img'>
+				<a href='//pudding.cool/process/flexbox-layout'>
+					<img src='https://placehold.it/1280x720.jpg' alt='Making Data Viz Without SVG Using D3 and Flexbox'>
+				</a>
+			</div>
+			<div class='item__info'>
+				<a href='//pudding.cool/process/flexbox-layout'>
+					<h3 class='item__hed'>Making Data Viz Without SVG Using D3 and Flexbox</h3>
+				</a>
+				<p class='item__dek tk-tiempos'>Bye bye tricky alignments.</p>
+				<p class='item__author'>By <a href='https://pudding.cool/author/amber-thomas'>Amber Thomas</a></p>
+			</div>
+		</div>
+	</li><li>
+		<div class='story-item'>
+			<div class='item__img'>
+				<a href='//pudding.cool/process/scrollytelling-sticky'>
+					<img src='https://placehold.it/1280x720.jpg' alt='Easier scrollytelling with position sticky'>
+				</a>
+			</div>
+			<div class='item__info'>
+				<a href='//pudding.cool/process/scrollytelling-sticky'>
+					<h3 class='item__hed'>Easier scrollytelling with position sticky</h3>
+				</a>
+				<p class='item__dek tk-tiempos'>Leaning on CSS to simplify the process.</p>
+				<p class='item__author'>By <a href='https://pudding.cool/author/russell-goldenberg'>Russell Goldenberg</a>, <a href='https://pudding.cool/author/elaina-natario'>Elaina Natario</a></p>
+			</div>
+		</div>
+	</li><li>
+		<div class='story-item'>
+			<div class='item__img'>
+				<a href='//pudding.cool/process/introducing-scrollama'>
+					<img src='https://placehold.it/1280x720.jpg' alt='An Introduction to Scrollama.js'>
+				</a>
+			</div>
+			<div class='item__info'>
+				<a href='//pudding.cool/process/introducing-scrollama'>
+					<h3 class='item__hed'>An Introduction to Scrollama.js</h3>
+				</a>
+				<p class='item__dek tk-tiempos'>The what, why, and how to use scrollama.js for your next scrollytelling story.</p>
+				<p class='item__author'>By <a href='https://pudding.cool/author/russell-goldenberg'>Russell Goldenberg</a></p>
+			</div>
+		</div>
+	</li><li>
+		<div class='story-item'>
+			<div class='item__img'>
+				<a href='//pudding.cool/process/how-to-make-dope-shit-part-2'>
+					<img src='https://placehold.it/1280x720.jpg' alt='How to Make Dope Shit Part 2: Design'>
+				</a>
+			</div>
+			<div class='item__info'>
+				<a href='//pudding.cool/process/how-to-make-dope-shit-part-2'>
+					<h3 class='item__hed'>How to Make Dope Shit Part 2: Design</h3>
+				</a>
+				<p class='item__dek tk-tiempos'>This is the second installment of a multi-part series designed to help you familiarize yourself with the tools used to make visual, data-driven essays.</p>
+				<p class='item__author'>By <a href='https://pudding.cool/author/ilia-blinderman'>Ilia Blinderman</a></p>
+			</div>
+		</div>
+	</li>
+		
+			</ul>
+	</main>
+
+	<!-- DO NOT REMOVE -->
+	
+		<footer class='random-background'>
+			<div class='footer__inner'>
+				<p class='footer__hed tk-tiempos'>
+					The Pudding is an editorial publication that explains ideas debated in culture with visual essays.
+				</p>
+
+				<div class='footer__social'>
+					<p>Find us on the socials</p>
+					<ul>
+						<li>
+							<a target='_blank' href='https://www.facebook.com/pudding.viz/' class='logo--facebook'>
+							<svg width="24" height="24" fill="#000000" stroke="currentColor" stroke-width=".2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-facebook" viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg></a>
+						</li>
+
+						<li>
+							<a target='_blank' href='https://twitter.com/puddingviz' class='logo--twitter'>
+							<svg width="24" height="24" fill="#000" stroke="currentColor" stroke-width="0" stroke-linecap="round" stroke-linejoin="round" class="feather feather-twitter" viewBox="0 0 24 24"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path></svg>
+						</a>
+						</li>
+
+						<li>
+							<a target='_blank' href='https://www.instagram.com/pudding.cool' class='logo--instagram'>
+								<svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-instagram" viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.5" y2="6.5"></line></svg>
+							</a>
+						</li>
+
+						<li>
+							<a target='_blank' href='https://www.patreon.com/thepudding' class='logo--patreon'>
+								<svg id="Layer_1" width="24" height="24" x="0px" y="0px" enable-background="new 0 0 24 24" xml:space="preserve" viewBox="0 0 24 24">
+<g>
+	
+		<path fill-rule="evenodd" clip-rule="evenodd" stroke="#000000" stroke-width="0.2" stroke-linecap="round" stroke-linejoin="round" d="
+		M15.7,3.3c-3.7,0-6.8,3-6.8,6.8c0,3.7,3,6.7,6.8,6.7c3.7,0,6.7-3,6.7-6.7C22.4,6.3,19.4,3.3,15.7,3.3"/>
+	
+		<rect x="3.7" y="3.3" stroke="#000000" stroke-width="0.2" stroke-linecap="round" stroke-linejoin="round" width="3.3" height="18"/>
+</g>
+</svg>
+							</a>
+						</li>
+					</ul>
+				</div>
+				
+				<p class='footer__location'>The Pudding<span>®</span> is made in Brooklyn, NY; Seattle, WA; San Antonio, TX; and Great Barrington, MA.</p>
+			</div>
+		</footer>
+	
+
+	<script>
+		window.storyData = [{"url":"projects/vocabulary","date":"2019-01-16T05:00:00.000Z","hed":"Rappers, sorted by the size of their vocabulary","dek":"The number of unique lyrics used within artists’ first 35,000 lyrics","topic":"music","pick":"","footer":"TRUE","author":["matt"],"views_key":"Rappers, sorted by the size of their vocabulary","views":398,"views_display":"400","img":"projects_vocabulary","time":"January 2019","author_html":"<a href='https://pudding.cool/author/matt-daniels'>Matt Daniels</a>"},{"url":"2018/12/countries","date":"2018-12-19T05:00:00.000Z","hed":"The World through the Eyes of the US","dek":"The countries that have preoccupied Americans since 1900.","topic":"politics","pick":"russell","footer":"TRUE","author":["russell"],"views_key":"The World through the Eyes of the US","views":78496,"views_display":"78k","img":"2018_12_countries","time":"December 2018","author_html":"<a href='https://pudding.cool/author/russell-goldenberg'>Russell Goldenberg</a>"},{"url":"2018/12/brief-history","date":"2018-12-19T05:00:00.000Z","hed":"A brief history of the past 100 years","dek":"An analysis of 12 decades of New York Times headlines","topic":"politics","pick":"ilia","footer":"TRUE","author":["ilia","jan"],"views_key":"A brief history of the past 100 years, as told through the New York Times archives","views":9735,"views_display":"9.7k","img":"2018_12_brief-history","time":"December 2018","author_html":"<a href='https://pudding.cool/author/ilia-blinderman'>Ilia Blinderman</a>, <a href='https://pudding.cool/author/jan-diehm'>Jan Diehm</a>"},{"url":"2018/12/3d-cities-story","date":"2018-12-04T05:00:00.000Z","hed":"Population Mountains","dek":"This is a story about how to perceive the population size of cities.","topic":"politics","pick":"matt","footer":"TRUE","author":["matt"],"views_key":"Population Mountains","views":253913,"views_display":"250k","img":"2018_12_3d-cities-story","time":"December 2018","author_html":"<a href='https://pudding.cool/author/matt-daniels'>Matt Daniels</a>"},{"url":"process/pudding-awards-2018","date":"2018-12-03T05:00:00.000Z","hed":"The Pudding Cup","dek":"The best visual and data-driven stories of 2018.","topic":"awards","pick":"","footer":"","author":["russell"],"views_key":"The Pudding Cup","views":3879,"views_display":"3.9k","img":"process_pudding-awards-2018","time":"December 2018","author_html":"<a href='https://pudding.cool/author/russell-goldenberg'>Russell Goldenberg</a>"},{"url":"2018/11/boy-bands","date":"2018-11-27T05:00:00.000Z","hed":"Internet Boy Band Database","dek":"Every boy band to chart the Hot 100 since 1980.","topic":"music","pick":"amber","footer":"TRUE","author":["russell","amber","malik"],"views_key":"Internet Boy Band Database","views":11366,"views_display":"11k","img":"2018_11_boy-bands","time":"November 2018","author_html":"<a href='https://pudding.cool/author/russell-goldenberg'>Russell Goldenberg</a>, <a href='https://pudding.cool/author/amber-thomas'>Amber Thomas</a>, <a href='https://pudding.cool/author/malik-yusuf'>Malik Yusuf</a>"},{"url":"2018/11/dearabby","date":"2018-11-13T05:00:00.000Z","hed":"30 Years of American Anxieties","dek":"What 20,000 letters to an advice columnist tell us about what—and who—concerns us most.","topic":"culture","pick":"","footer":"TRUE","author":["ilia","caitlyn"],"views_key":"30 Years of American Anxieties","views":24034,"views_display":"24k","img":"2018_11_dearabby","time":"November 2018","author_html":"<a href='https://pudding.cool/author/ilia-blinderman'>Ilia Blinderman</a>, <a href='https://pudding.cool/author/caitlyn-ralph'>Caitlyn Ralph</a>"},{"url":"2018/11/titletowns","date":"2018-11-07T05:00:00.000Z","hed":"The Winningest Cities in North American Sports","dek":"What makes a titletown?","topic":"sports","pick":"","footer":"TRUE","author":["sam"],"views_key":"The Winningest Cities in North American Sports","views":12912,"views_display":"13k","img":"2018_11_titletowns","time":"November 2018","author_html":"<a href='https://pudding.cool/author/sam-vickars'>Sam Vickars</a>"},{"url":"2018/10/city_3d","date":"2018-10-25T04:00:00.000Z","hed":"Human Terrain","dek":"Visualizing the World’s Population, in 3D.","topic":"politics","pick":"","footer":"TRUE","author":["matt"],"views_key":"Human Terrain","views":1183585,"views_display":"1.2M","img":"2018_10_city_3d","time":"October 2018","author_html":"<a href='https://pudding.cool/author/matt-daniels'>Matt Daniels</a>"},{"url":"2018/10/wiki-breakout","date":"2018-10-19T04:00:00.000Z","hed":"What Does the Path to Fame Look Like?","dek":"Tracking the rise in popularity from Cardi B to Carson Wentz.","topic":"culture","pick":"caitlyn","footer":"TRUE","author":["russell","caitlyn"],"views_key":"What Does the Path to Fame Look Like?","views":6255,"views_display":"6.3k","img":"2018_10_wiki-breakout","time":"October 2018","author_html":"<a href='https://pudding.cool/author/russell-goldenberg'>Russell Goldenberg</a>, <a href='https://pudding.cool/author/caitlyn-ralph'>Caitlyn Ralph</a>"},{"url":"2018/09/jordans","date":"2018-09-26T04:00:00.000Z","hed":"A visual history of every Air Jordan","dek":"Michael Jordan is the OG 🐐 (both in basketball and sneakers). Watch how the design of his iconic Air Jordan changes over the last 32 years.","topic":"sports","pick":"jan","footer":"TRUE","author":["jan"],"views_key":"A visual history of every Air Jordan","views":23116,"views_display":"23k","img":"2018_09_jordans","time":"September 2018","author_html":"<a href='https://pudding.cool/author/jan-diehm'>Jan Diehm</a>"},{"url":"2018/09/wiki-billboard","date":"2018-09-11T04:00:00.000Z","hed":"The Celebrity Billboard Project","dek":"Tracking the popularity of cultural figures in 2018.","topic":"culture","pick":"","footer":"TRUE","author":["russell","ilia","caitlyn"],"views_key":"The Celebrity Billboard Project","views":111995,"views_display":"110k","img":"2018_09_wiki-billboard","time":"September 2018","author_html":"<a href='https://pudding.cool/author/russell-goldenberg'>Russell Goldenberg</a>, <a href='https://pudding.cool/author/ilia-blinderman'>Ilia Blinderman</a>, <a href='https://pudding.cool/author/caitlyn-ralph'>Caitlyn Ralph</a>"},{"url":"2018/08/emo-rap","date":"2018-08-30T04:00:00.000Z","hed":"The Most Emo Lyrics: Emo Rap vs. Dashboard Confessional","dek":"Who has the most emotionally vulnerable lyrics, emo rappers or Dashboard Confessional? Has Juice Wrld out-emo’d emo bands?","topic":"music","pick":"","footer":"TRUE","author":["matt"],"views_key":"The Most Emo Lyrics: Emo Rap vs. Dashboard Confessional","views":12781,"views_display":"13k","img":"2018_08_emo-rap","time":"August 2018","author_html":"<a href='https://pudding.cool/author/matt-daniels'>Matt Daniels</a>"},{"url":"2018/08/filmordigital","date":"2018-08-22T04:00:00.000Z","hed":"Film or Digital?","dek":"Breaking down Hollywood's choice of shooting medium.","topic":"culture","pick":"","footer":"TRUE","author":["damar"],"views_key":"Film or Digital?","views":11535,"views_display":"12k","img":"2018_08_filmordigital","time":"August 2018","author_html":"<a href='https://pudding.cool/author/damar-aji-pramudita'>Damar Aji Pramudita</a>"},{"url":"2018/08/pockets","date":"2018-08-15T04:00:00.000Z","hed":"Women's Pockets are Inferior","dek":"If you wear women's clothes, you already know this. But now we've got the data to show it.","topic":"culture","pick":"","footer":"TRUE","author":["jan","amber"],"views_key":"Women's Pockets are Inferior.","views":211160,"views_display":"210k","img":"2018_08_pockets","time":"August 2018","author_html":"<a href='https://pudding.cool/author/jan-diehm'>Jan Diehm</a>, <a href='https://pudding.cool/author/amber-thomas'>Amber Thomas</a>"},{"url":"2018/08/wiki-death","date":"2018-08-05T04:00:00.000Z","hed":"Life After Death on Wikipedia","dek":"What pageviews tell us about how famous people are remembered after they die.","topic":"culture","pick":"","footer":"TRUE","author":["russell"],"views_key":"Life After Death on Wikipedia","views":60168,"views_display":"60k","img":"2018_08_wiki-death","time":"August 2018","author_html":"<a href='https://pudding.cool/author/russell-goldenberg'>Russell Goldenberg</a>"},{"url":"2018/08/retraining","date":"2018-08-02T04:00:00.000Z","hed":"Why the tech sector may not solve America’s looming automation crisis","dek":"5% of America’s employees may be replaced by robots, and transitioning them to become software developers seems to be a popular solution. Here’s why it might be misguided.","topic":"politics","pick":"","footer":"TRUE","author":["jordan","ilia"],"views_key":"Why the tech sector may not solve America’s looming automation crisis","views":16322,"views_display":"16k","img":"2018_08_retraining","time":"August 2018","author_html":"<a href='https://pudding.cool/author/jordan-dworkin'>Jordan Dworkin</a>, <a href='https://pudding.cool/author/ilia-blinderman'>Ilia Blinderman</a>"},{"url":"2018/07/airports","date":"2018-07-24T04:00:00.000Z","hed":"What Airport Traffic Tells Us About the World's Megacities","dek":"Last year, Daniel Knowles wrote an account of Kinshasa, the capital of the Democratic Republic of Congo, a city of 13 million people. One of his stats led me down a rabbit hole: Kinshasa has 13 departing flights per day.","topic":"politics","pick":"","footer":"TRUE","author":["matt"],"views_key":"What Airport Traffic Tells Us About the World's Megacities","views":14033,"views_display":"14k","img":"2018_07_airports","time":"July 2018","author_html":"<a href='https://pudding.cool/author/matt-daniels'>Matt Daniels</a>"},{"url":"process/flexbox-layout","date":"2018-07-20T04:00:00.000Z","hed":"Making Data Viz Without SVG Using D3 and Flexbox","dek":"Bye bye tricky alignments.","topic":"how to","pick":"","footer":"","author":["amber"],"views_key":"Making Data Viz Without SVG Using D3 and Flexbox","views":4795,"views_display":"4.8k","img":"process_flexbox-layout","time":"July 2018","author_html":"<a href='https://pudding.cool/author/amber-thomas'>Amber Thomas</a>"},{"url":"2018/07/birth_control","date":"2018-07-17T04:00:00.000Z","hed":"Let’s Talk About Birth Control","dek":"There’s no TMI here, just 20,759 people describing their experiences with contraception.","topic":"","pick":"","footer":"TRUE","author":["amber"],"views_key":"Let’s Talk About Birth Control","views":0,"views_display":"0.0","img":"2018_07_birth_control","time":"July 2018","author_html":"<a href='https://pudding.cool/author/amber-thomas'>Amber Thomas</a>"},{"url":"2018/07/women-in-congress","date":"2018-07-10T04:00:00.000Z","hed":"We mapped out the road to gender parity in the House of Representatives","dek":"Exploring the last 100 years of women in politics through data and machine learning.","topic":"politics","pick":"","footer":"TRUE","author":["durand"],"views_key":"We mapped out the road to gender parity in the House of Representatives","views":18007,"views_display":"18k","img":"2018_07_women-in-congress","time":"July 2018","author_html":"<a href='https://pudding.cool/author/durand-dsouza'>Durand D’souza</a>"},{"url":"2018/07/women-in-parliament","date":"2018-07-10T04:00:00.000Z","hed":"What 1.2 million parliamentary speeches can teach us about gender representation.","dek":"Exploring the last 100 years of women in parliament through data and machine learning.","topic":"politics","pick":"","footer":"","author":["durand"],"views_key":"What 1.2 million parliamentary speeches can teach us about gender representation.","views":9535,"views_display":"9.5k","img":"2018_07_women-in-parliament","time":"July 2018","author_html":"<a href='https://pudding.cool/author/durand-dsouza'>Durand D’souza</a>"},{"url":"2018/06/gayborhoods","date":"2018-06-28T04:00:00.000Z","hed":"Men are from Chelsea, Women are from Park Slope","dek":"How “gayborhoods” in 15 major American cities are divided by gender.","topic":"culture","pick":"","footer":"TRUE","author":["jan"],"views_key":"Men are from Chelsea, Women are from Park Slope","views":12617,"views_display":"13k","img":"2018_06_gayborhoods","time":"June 2018","author_html":"<a href='https://pudding.cool/author/jan-diehm'>Jan Diehm</a>"},{"url":"2018/06/makeup-shades","date":"2018-06-13T04:00:00.000Z","hed":"The Diversity of Makeup Shades","dek":"Rihanna's Fenty Beauty is a champion for makeup inclusivity. But how do other brands across the US and the world compare? ","topic":"culture","pick":"","footer":"TRUE","author":["jason","amber","divya"],"views_key":"The Diversity of Makeup Shades","views":35908,"views_display":"36k","img":"2018_06_makeup-shades","time":"June 2018","author_html":"<a href='https://pudding.cool/author/jason-li'>Jason Li</a>, <a href='https://pudding.cool/author/amber-thomas'>Amber Thomas</a>, <a href='https://pudding.cool/author/divya-manian'>Divya Manian</a>"},{"url":"process/scrollytelling-sticky","date":"2018-06-08T04:00:00.000Z","hed":"Easier scrollytelling with position sticky","dek":"Leaning on CSS to simplify the process.","topic":"how to","pick":"","footer":"","author":["russell","elaina"],"views_key":"Easier scrollytelling with position sticky","views":22030,"views_display":"22k","img":"process_scrollytelling-sticky","time":"June 2018","author_html":"<a href='https://pudding.cool/author/russell-goldenberg'>Russell Goldenberg</a>, <a href='https://pudding.cool/author/elaina-natario'>Elaina Natario</a>"},{"url":"2018/06/skate-music","date":"2018-06-05T04:00:00.000Z","hed":"The Good, the Rad, and the Gnarly","dek":"An exploration into the music of skateboarding.","topic":"music","pick":"","footer":"TRUE","author":["jared"],"views_key":"The Good, the Rad, and the Gnarly","views":12212,"views_display":"12k","img":"2018_06_skate-music","time":"June 2018","author_html":"<a href='https://pudding.cool/author/jared-wilbur'>Jared Wilbur</a>"},{"url":"2018/06/music-map","date":"2018-06-04T04:00:00.000Z","hed":"The Cultural Borders of Songs","dek":"We mapped last month’s #1 songs in 3,000 places. See where songs dominate across the globe.","topic":"music","pick":"","footer":"TRUE","author":["matt"],"views_key":"The Cultural Borders of Songs","views":670646,"views_display":"670k","img":"2018_06_music-map","time":"June 2018","author_html":"<a href='https://pudding.cool/author/matt-daniels'>Matt Daniels</a>"},{"url":"2018/05/nba-top-plays","date":"2018-05-31T04:00:00.000Z","hed":"The Most-Viewed NBA Plays in 2017-18","dek":"Warning: this video contains a high dosage of LeBron footage.","topic":"sports","pick":"","footer":"TRUE","author":["russell"],"views_key":"The Most-Viewed NBA Plays in 2017-18","views":24206,"views_display":"24k","img":"2018_05_nba-top-plays","time":"May 2018","author_html":"<a href='https://pudding.cool/author/russell-goldenberg'>Russell Goldenberg</a>"},{"url":"2018/05/similarity","date":"2018-05-24T04:00:00.000Z","hed":"Are Hit Songs Becoming Less Musically Diverse?","dek":"Data on whether today’s hit artists are taking fewer risks and creating a narrower range of sounds.","topic":"music","pick":"","footer":"TRUE","author":["matt","andrew"],"views_key":"Are Hit Songs Becoming Less Musically Diverse?","views":60252,"views_display":"60k","img":"2018_05_similarity","time":"May 2018","author_html":"<a href='https://pudding.cool/author/matt-daniels'>Matt Daniels</a>, <a href='https://pudding.cool/author/andrew-thompson'>Andrew Thompson</a>"},{"url":"2018/05/cookies","date":"2018-05-10T04:00:00.000Z","hed":"Baking the Most Average Chocolate Chip Cookie","dek":"Cookie recipes written by computers. What could go wrong?","topic":"culture","pick":"","footer":"TRUE","author":["elle","amber"],"views_key":"Baking the Most Average Chocolate Chip Cookie","views":10467,"views_display":"10k","img":"2018_05_cookies","time":"May 2018","author_html":"<a href='https://pudding.cool/author/elle-obrien'>Elle O’Brien</a>, <a href='https://pudding.cool/author/amber-thomas'>Amber Thomas</a>"},{"url":"2018/04/one-hit-wonders","date":"2018-04-30T04:00:00.000Z","hed":"One-Hit Wonders in Sports","dek":"The greatest single-season anomalies in the last 30 years.","topic":"sports","pick":"","footer":"TRUE","author":["russell","jan"],"views_key":"One-Hit Wonders in Sports","views":26305,"views_display":"26k","img":"2018_04_one-hit-wonders","time":"April 2018","author_html":"<a href='https://pudding.cool/author/russell-goldenberg'>Russell Goldenberg</a>, <a href='https://pudding.cool/author/jan-diehm'>Jan Diehm</a>"},{"url":"2018/04/birthday-paradox","date":"2018-04-09T04:00:00.000Z","hed":"The Birthday Paradox Experiment","dek":"Your birthday twin is probably reading this right now. Because math.","topic":"culture","pick":"","footer":"TRUE","author":["russell"],"views_key":"The Birthday Paradox Experiment","views":84333,"views_display":"84k","img":"2018_04_birthday-paradox","time":"April 2018","author_html":"<a href='https://pudding.cool/author/russell-goldenberg'>Russell Goldenberg</a>"},{"url":"2018/03/neighborhoods","date":"2018-03-21T04:00:00.000Z","hed":"A Tale of Two Cities","dek":"Using data and our own experiences to write love letters to the cities we call home.","topic":"culture","pick":"","footer":"TRUE","author":["amber","ilia"],"views_key":"A Tale of Two Cities","views":9737,"views_display":"9.7k","img":"2018_03_neighborhoods","time":"March 2018","author_html":"<a href='https://pudding.cool/author/amber-thomas'>Amber Thomas</a>, <a href='https://pudding.cool/author/ilia-blinderman'>Ilia Blinderman</a>"},{"url":"2018/02/stand-up","date":"2018-02-26T05:00:00.000Z","hed":"The Structure of Stand-Up Comedy","dek":"The genius of Ali Wong’s Netflix special.","topic":"culture","pick":"","footer":"TRUE","author":["russell","matt"],"views_key":"The Structure of Stand-Up Comedy","views":118189,"views_display":"120k","img":"2018_02_stand-up","time":"February 2018","author_html":"<a href='https://pudding.cool/author/russell-goldenberg'>Russell Goldenberg</a>, <a href='https://pudding.cool/author/matt-daniels'>Matt Daniels</a>"},{"url":"2018/02/waveforms","date":"2018-02-16T05:00:00.000Z","hed":"Let's Learn About Waveforms","dek":"An interactive guide that introduces and explores waveforms.","topic":"","pick":"","footer":"TRUE","author":["josh"],"views_key":"Let's Learn About Waveforms","views":96665,"views_display":"97k","img":"2018_02_waveforms","time":"February 2018","author_html":"<a href='https://pudding.cool/author/josh-comeau'>Josh Comeau</a>"},{"url":"2018/02/death","date":"2018-02-13T05:00:00.000Z","hed":"Limbo Lines: Dead Here, Alive There","dek":"Brain death’s role in the uncertainties of death.","topic":"politics","pick":"","footer":"TRUE","author":["beatrice"],"views_key":"Limbo Lines: Dead Here, Alive There","views":4634,"views_display":"4.6k","img":"2018_02_death","time":"February 2018","author_html":"<a href='https://pudding.cool/author/beatrice-jin'>Beatrice Jin</a>"},{"url":"2018/02/restaurants","date":"2018-02-06T05:00:00.000Z","hed":"Mapping Gastronomic Borders in the US","dek":"How US culture dictates geographic restaurant patterns","topic":"culture","pick":"","footer":"TRUE","author":["matt"],"views_key":"Mapping the US Gastronomic Borders","views":31204,"views_display":"31k","img":"2018_02_restaurants","time":"February 2018","author_html":"<a href='https://pudding.cool/author/matt-daniels'>Matt Daniels</a>"},{"url":"2018/01/mars-weather","date":"2018-01-31T05:00:00.000Z","hed":"Greetings from Mars","dek":"Exploring today's weather on Mars and in your area with the Curiosity Rover.","topic":"culture","pick":"","footer":"TRUE","author":["amber"],"views_key":"Greetings from Mars","views":16058,"views_display":"16k","img":"2018_01_mars-weather","time":"January 2018","author_html":"<a href='https://pudding.cool/author/amber-thomas'>Amber Thomas</a>"},{"url":"2018/01/chyrons","date":"2018-01-25T05:00:00.000Z","hed":"The Differences in How CNN, MSNBC, and FOX Cover the News","dek":"The story you get depends on the channel you watch.","topic":"politics","pick":"","footer":"TRUE","author":["charlie"],"views_key":"The Differences in How CNN, MSNBC, and FOX Cover the News","views":88542,"views_display":"89k","img":"2018_01_chyrons","time":"January 2018","author_html":"<a href='https://pudding.cool/author/charlie-smart'>Charlie Smart</a>"},{"url":"2017/12/hater","date":"2017-12-04T05:00:00.000Z","hed":"10 Things Everyone Hates About You","dek":"Exploring over 30 million feelings towards 3,000+ topics.","topic":"culture","pick":"","footer":"TRUE","author":["russell","amber"],"views_key":"10 Things Everyone Hates About You","views":77750,"views_display":"78k","img":"2017_12_hater","time":"December 2017","author_html":"<a href='https://pudding.cool/author/russell-goldenberg'>Russell Goldenberg</a>, <a href='https://pudding.cool/author/amber-thomas'>Amber Thomas</a>"},{"url":"process/pudding-awards-2017","date":"2017-11-26T05:00:00.000Z","hed":"The Pudding Awards","dek":"Our favorite projects on the internet in 2017.","topic":"awards","pick":"","footer":"","author":["russell"],"views_key":"The Pudding Awards","views":10638,"views_display":"11k","img":"process_pudding-awards-2017","time":"November 2017","author_html":"<a href='https://pudding.cool/author/russell-goldenberg'>Russell Goldenberg</a>"},{"url":"process/introducing-scrollama","date":"2017-11-16T05:00:00.000Z","hed":"An Introduction to Scrollama.js","dek":"The what, why, and how to use scrollama.js for your next scrollytelling story.","topic":"how to","pick":"","footer":"","author":["russell"],"views_key":"An Introduction to Scrollama.js","views":36766,"views_display":"37k","img":"process_introducing-scrollama","time":"November 2017","author_html":"<a href='https://pudding.cool/author/russell-goldenberg'>Russell Goldenberg</a>"},{"url":"process/how-to-make-dope-shit-part-2","date":"2017-11-01T04:00:00.000Z","hed":"How to Make Dope Shit Part 2: Design","dek":"This is the second installment of a multi-part series designed to help you familiarize yourself with the tools used to make visual, data-driven essays.","topic":"how to","pick":"","footer":"","author":["ilia"],"views_key":"Making Internet Things, Part 2: Design","views":7578,"views_display":"7.6k","img":"process_how-to-make-dope-shit-part-2","time":"November 2017","author_html":"<a href='https://pudding.cool/author/ilia-blinderman'>Ilia Blinderman</a>"},{"url":"2017/10/satellites","date":"2017-10-18T04:00:00.000Z","hed":"Seeing Earth from Outer Space","dek":"A visual history of satellites.","topic":"culture","pick":"","footer":"","author":["conlen"],"views_key":"Seeing Earth from Outer Space","views":29234,"views_display":"29k","img":"2017_10_satellites","time":"October 2017","author_html":"<a href='https://pudding.cool/author/matthew-conlen'>Matthew Conlen</a>"},{"url":"2017/10/superteams","date":"2017-10-12T04:00:00.000Z","hed":"What is a Superteam in the NBA?","dek":"You Define It.","topic":"sports","pick":"","footer":"TRUE","author":["russell","matt"],"views_key":"What is a Superteam in the NBA?","views":18585,"views_display":"19k","img":"2017_10_superteams","time":"October 2017","author_html":"<a href='https://pudding.cool/author/russell-goldenberg'>Russell Goldenberg</a>, <a href='https://pudding.cool/author/matt-daniels'>Matt Daniels</a>"},{"url":"2017/10/asne","date":"2017-10-12T04:00:00.000Z","hed":"Newspapers: A Black & White Issue","dek":"Measuring racial diversity in journalism.","topic":"culture","pick":"","footer":"TRUE","author":["matt","amber"],"views_key":"Newspapers: A Black & White Issue","views":18285,"views_display":"18k","img":"2017_10_asne","time":"October 2017","author_html":"<a href='https://pudding.cool/author/matt-daniels'>Matt Daniels</a>, <a href='https://pudding.cool/author/amber-thomas'>Amber Thomas</a>"},{"url":"2017/09/hip-hop-words","date":"2017-09-22T04:00:00.000Z","hed":"The Words That Are “Most Hip Hop”","dek":"Using math to rank words that are central to artists’ vocabularies.","topic":"music","pick":"","footer":"TRUE","author":["matt","thedataface"],"views_key":"The Words That Are “Most Hip Hop”","views":251373,"views_display":"250k","img":"2017_09_hip-hop-words","time":"September 2017","author_html":"<a href='https://pudding.cool/author/matt-daniels'>Matt Daniels</a>, <a href='https://pudding.cool/author/the-data-face'>The Data Face</a>"},{"url":"2017/09/this-american-life","date":"2017-09-21T04:00:00.000Z","hed":"Listen to Her: Gender on This American Life","dek":"The story behind the gender divide on This American Life.","topic":"culture","pick":"","footer":"TRUE","author":["ash"],"views_key":"Listen to Her: Gender on This American Life","views":22112,"views_display":"22k","img":"2017_09_this-american-life","time":"September 2017","author_html":"<a href='https://pudding.cool/author/ash-ngu'>Ash Ngu</a>"},{"url":"2017/09/clinics","date":"2017-09-07T04:00:00.000Z","hed":"How far is too far? An analysis of driving times to abortion clinics in the US.","dek":"Mapping the cities and places with the worst access.","topic":"politics","pick":"","footer":"TRUE","author":["russell","amber","caitlyn"],"views_key":"How far is too far? An analysis of driving times to abortion clinics in the US.","views":17670,"views_display":"18k","img":"2017_09_clinics","time":"September 2017","author_html":"<a href='https://pudding.cool/author/russell-goldenberg'>Russell Goldenberg</a>, <a href='https://pudding.cool/author/amber-thomas'>Amber Thomas</a>, <a href='https://pudding.cool/author/caitlyn-ralph'>Caitlyn Ralph</a>"},{"url":"2017/08/screen-direction","date":"2017-08-22T04:00:00.000Z","hed":"She Giggles, He Gallops","dek":"Analyzing gender tropes in film with screen direction from 2,000 scripts.","topic":"culture","pick":"","footer":"TRUE","author":["julia","russell","amber"],"views_key":"She Giggles, He Gallops","views":36159,"views_display":"36k","img":"2017_08_screen-direction","time":"August 2017","author_html":"<a href='https://pudding.cool/author/julia-silge'>Julia Silge</a>, <a href='https://pudding.cool/author/russell-goldenberg'>Russell Goldenberg</a>, <a href='https://pudding.cool/author/amber-thomas'>Amber Thomas</a>"},{"url":"process/how-to-make-dope-shit-part-1","date":"2017-08-13T04:00:00.000Z","hed":"How to Make Dope Shit Part 1: Working with Data","dek":"This is the first installment of a multi-part series designed to help you familiarize yourself with the tools used to make visual, data-driven essays.","topic":"how to","pick":"","footer":"","author":["ilia"],"views_key":"Making Internet Things, Part 1: Working with Data","views":16709,"views_display":"17k","img":"process_how-to-make-dope-shit-part-1","time":"August 2017","author_html":"<a href='https://pudding.cool/author/ilia-blinderman'>Ilia Blinderman</a>"},{"url":"2017/08/the-office","date":"2017-08-04T04:00:00.000Z","hed":"‘The Office’ Dialogue in Five Charts","dek":"A breakdown of how every character contributed to the show.","topic":"culture","pick":"","footer":"TRUE","author":["caitlyn"],"views_key":"‘The Office’ Dialogue in Five Charts","views":43157,"views_display":"43k","img":"2017_08_the-office","time":"August 2017","author_html":"<a href='https://pudding.cool/author/caitlyn-ralph'>Caitlyn Ralph</a>"},{"url":"process/resize","date":"2017-08-01T04:00:00.000Z","hed":"How Many Users Resize Their Browser?","dek":"A look at actual data and how to deal with it.","topic":"how to","pick":"","footer":"","author":["russell"],"views_key":"How Many Users Resize Their Browser?","views":7463,"views_display":"7.5k","img":"process_resize","time":"August 2017","author_html":"<a href='https://pudding.cool/author/russell-goldenberg'>Russell Goldenberg</a>"},{"url":"2017/07/eating-alone","date":"2017-07-28T04:00:00.000Z","hed":"Table for One","dek":"An exploration of the dining habits and companions of Americans.","topic":"culture","pick":"","footer":"TRUE","author":["henrik","amber"],"views_key":"Table for One","views":23728,"views_display":"24k","img":"2017_07_eating-alone","time":"July 2017","author_html":"<a href='https://pudding.cool/author/henrik-lindberg'>Henrik Lindberg</a>, <a href='https://pudding.cool/author/amber-thomas'>Amber Thomas</a>"},{"url":"2017/07/comics","date":"2017-07-18T04:00:00.000Z","hed":"Analyzing the Gender Representation of 34,476 Comic Book Characters","dek":"Female characters appear in superhero comics less often than males — but how are they depicted?","topic":"culture","pick":"","footer":"TRUE","author":["amanda"],"views_key":"Analyzing the Gender Representation of 34,476 Comic Book Characters","views":81259,"views_display":"81k","img":"2017_07_comics","time":"July 2017","author_html":"<a href='https://pudding.cool/author/amanda-shendruk'>Amanda Shendruk</a>"},{"url":"2017/07/jobs","date":"2017-07-11T04:00:00.000Z","hed":"Why the Republican Party Wins When Robots Take Your Job","dek":"Research suggests that job automation is only a matter of time. Here's why the American right will benefit.","topic":"politics","pick":"","footer":"TRUE","author":["ilia"],"views_key":"Why the Republican Party wins when robots take your job","views":14727,"views_display":"15k","img":"2017_07_jobs","time":"July 2017","author_html":"<a href='https://pudding.cool/author/ilia-blinderman'>Ilia Blinderman</a>"},{"url":"2017/07/cetaceans","date":"2017-07-06T04:00:00.000Z","hed":"Free Willy and Flipper by the Numbers","dek":"The past, present, and future of captive whales and dolphins according to data and pop culture.","topic":"culture","pick":"","footer":"TRUE","author":["amber","russell"],"views_key":"Free Willy and Flipper by the Numbers","views":8982,"views_display":"9.0k","img":"2017_07_cetaceans","time":"July 2017","author_html":"<a href='https://pudding.cool/author/amber-thomas'>Amber Thomas</a>, <a href='https://pudding.cool/author/russell-goldenberg'>Russell Goldenberg</a>"},{"url":"2017/06/film-trends","date":"2017-06-29T04:00:00.000Z","hed":"Analyzing Plot Trends for Every Top-Grossing Film from the Past 50 Years","dek":"This is a story about how film plots mirror (or shape) historical events.","topic":"culture","pick":"","footer":"TRUE","author":["matt","russell"],"views_key":"Analyzing plot trends for every top-grossing film from the past 50 years","views":20084,"views_display":"20k","img":"2017_06_film-trends","time":"June 2017","author_html":"<a href='https://pudding.cool/author/matt-daniels'>Matt Daniels</a>, <a href='https://pudding.cool/author/russell-goldenberg'>Russell Goldenberg</a>"},{"url":"2017/06/best-sellers","date":"2017-06-01T04:00:00.000Z","hed":"Bias, She Wrote","dek":"How much progress has American literature made towards gender equality?","topic":"culture","pick":"","footer":"TRUE","author":["rosie"],"views_key":"The Gender Balance of The New York Times Best Seller List","views":29230,"views_display":"29k","img":"2017_06_best-sellers","time":"June 2017","author_html":"<a href='https://pudding.cool/author/rosie-cima'>Rosie Cima</a>"},{"url":"2017/05/births","date":"2017-05-24T04:00:00.000Z","hed":"The Timing of Baby Making","dek":"Births, broken down by geography and month.","topic":"culture","pick":"","footer":"TRUE","author":["amber"],"views_key":"The Timing of Baby Making","views":25202,"views_display":"25k","img":"2017_05_births","time":"May 2017","author_html":"<a href='https://pudding.cool/author/amber-thomas'>Amber Thomas</a>"},{"url":"process/weighted-pivot-scatter-plot","date":"2017-05-15T04:00:00.000Z","hed":"The Making of the Weighted Pivot Scatter Plot","dek":"How (and why) the interactive chart was born.","topic":"how to","pick":"","footer":"","author":["russell"],"views_key":"The Making of the Weighted Pivot Scatter Plot","views":11269,"views_display":"11k","img":"process_weighted-pivot-scatter-plot","time":"May 2017","author_html":"<a href='https://pudding.cool/author/russell-goldenberg'>Russell Goldenberg</a>"},{"url":"process/regional_smoothing","date":"2017-05-11T04:00:00.000Z","hed":"Regional Smoothing in R","dek":"A guide to smoothing geospatial data in R.","topic":"how to","pick":"","footer":"","author":["ilia"],"views_key":"Regional Smoothing in R","views":9817,"views_display":"9.8k","img":"process_regional_smoothing","time":"May 2017","author_html":"<a href='https://pudding.cool/author/ilia-blinderman'>Ilia Blinderman</a>"},{"url":"2017/05/song-repetition","date":"2017-05-11T04:00:00.000Z","hed":"Are Pop Lyrics Getting More Repetitive?","dek":"Measuring repetition in song lyrics over time using a compression algorithm.","topic":"music","pick":"","footer":"TRUE","author":["colin"],"views_key":"Are Pop Lyrics Getting More Repetitive?","views":1336276,"views_display":"1.3M","img":"2017_05_song-repetition","time":"May 2017","author_html":"<a href='https://pudding.cool/author/colin-morris'>Colin Morris</a>"},{"url":"2017/05/nba-moments","date":"2017-05-06T04:00:00.000Z","hed":"The Most Timeless NBA Plays","dek":"Historic NBA games and plays, ranked by YouTube views.","topic":"sports","pick":"","footer":"TRUE","author":["matt","russell"],"views_key":"The Most Timeless NBA plays","views":17308,"views_display":"17k","img":"2017_05_nba-moments","time":"May 2017","author_html":"<a href='https://pudding.cool/author/matt-daniels'>Matt Daniels</a>, <a href='https://pudding.cool/author/russell-goldenberg'>Russell Goldenberg</a>"},{"url":"process/responsive-scrollytelling","date":"2017-04-21T04:00:00.000Z","hed":"Responsive Scrollytelling Best Practices","dek":"How to plan or adapt a scrollytelling story for mobile.","topic":"how to","pick":"","footer":"","author":["russell"],"views_key":"Responsive scrollytelling best practices","views":14064,"views_display":"14k","img":"process_responsive-scrollytelling","time":"April 2017","author_html":"<a href='https://pudding.cool/author/russell-goldenberg'>Russell Goldenberg</a>"},{"url":"2017/04/beer","date":"2017-04-18T04:00:00.000Z","hed":"What City is the Microbrew Capital of the US?","dek":"Using beer review data to rank the best cities in the country.","topic":"culture","pick":"","footer":"TRUE","author":["russell"],"views_key":"What city is the microbrew capital of the US?","views":402894,"views_display":"400k","img":"2017_04_beer","time":"April 2017","author_html":"<a href='https://pudding.cool/author/russell-goldenberg'>Russell Goldenberg</a>"},{"url":"2017/03/incarceration","date":"2017-03-21T04:00:00.000Z","hed":"Why Does the US Lead the World in Incarceration?","dek":"How we got here – the global leader in incarceration – is one of the most debated questions in policy.","topic":"politics","pick":"","footer":"TRUE","author":["matt"],"views_key":"Why does the U.S. lead the world in incarceration?","views":18097,"views_display":"18k","img":"2017_03_incarceration","time":"March 2017","author_html":"<a href='https://pudding.cool/author/matt-daniels'>Matt Daniels</a>"},{"url":"2017/03/westbrook","date":"2017-03-08T05:00:00.000Z","hed":"How Russell Westbrook Can Average a Triple-Double","dek":"As of March 10, Russell Westbrook is averaging a triple-double.","topic":"sports","pick":"","footer":"","author":["russell"],"views_key":"How Russell Westbrook can Average a Triple-Double","views":7133,"views_display":"7.1k","img":"2017_03_westbrook","time":"March 2017","author_html":"<a href='https://pudding.cool/author/russell-goldenberg'>Russell Goldenberg</a>"},{"url":"2017/03/home-court","date":"2017-03-02T05:00:00.000Z","hed":"Do NBA Refs Favor the Home Team?","dek":"Analyzing 13,658 reviewed calls by the NBA to rank teams by favorable home court officiating.","topic":"sports","pick":"","footer":"","author":["oliver","matt"],"views_key":"Do NBA refs favor the home team?","views":6979,"views_display":"7.0k","img":"2017_03_home-court","time":"March 2017","author_html":"<a href='https://pudding.cool/author/oliver-roeder'>Oliver Roeder</a>, <a href='https://pudding.cool/author/matt-daniels'>Matt Daniels</a>"},{"url":"2017/02/oscars_so_mapped","date":"2017-02-23T05:00:00.000Z","hed":"The Geographic Divide of Oscars Films","dek":"Mapping the popularity of Oscar-nominated films in 2017.","topic":"culture","pick":"","footer":"TRUE","author":["matt","russell","ilia"],"views_key":"The Geographic Divide of Oscar Films","views":14633,"views_display":"15k","img":"2017_02_oscars_so_mapped","time":"February 2017","author_html":"<a href='https://pudding.cool/author/matt-daniels'>Matt Daniels</a>, <a href='https://pudding.cool/author/russell-goldenberg'>Russell Goldenberg</a>, <a href='https://pudding.cool/author/ilia-blinderman'>Ilia Blinderman</a>"},{"url":"2017/02/two-minute-report","date":"2017-02-15T05:00:00.000Z","hed":"NBA Last Two Minute Report","dek":"A review of the NBA officiating from the Last Two Minute Report","topic":"sports","pick":"","footer":"TRUE","author":["russell"],"views_key":"NBA Last Two Minute Report","views":27595,"views_display":"28k","img":"2017_02_two-minute-report","time":"February 2017","author_html":"<a href='https://pudding.cool/author/russell-goldenberg'>Russell Goldenberg</a>"},{"url":"process/how-to-implement-scrollytelling","date":"2017-02-10T05:00:00.000Z","hed":"How to Implement Scrollytelling with Six Different Libraries","dek":"In this post, I look at how to tackle a simple scroll-driven chart using six different libraries, and share my thoughts on each implementation.","topic":"how to","pick":"","footer":"","author":["russell"],"views_key":"How to implement scrollytelling with six different libraries","views":33883,"views_display":"34k","img":"process_how-to-implement-scrollytelling","time":"February 2017","author_html":"<a href='https://pudding.cool/author/russell-goldenberg'>Russell Goldenberg</a>"},{"url":"2017/02/new-slang","date":"2017-02-05T05:00:00.000Z","hed":"The Emergence Of Slang, Using Search Data","dek":"Emerging slang, identified by searches for words’ definitions.","topic":"culture","pick":"","footer":"TRUE","author":["matt"],"views_key":"Where New Slang Comes From","views":55457,"views_display":"55k","img":"2017_02_new-slang","time":"February 2017","author_html":"<a href='https://pudding.cool/author/matt-daniels'>Matt Daniels</a>"},{"url":"2017/01/shape-of-slavery","date":"2017-01-23T05:00:00.000Z","hed":"Mapping Slavery Against US Incarceration","dek":"How do historic incarceration rates differ between slave states and non-slave states?","topic":"politics","pick":"","footer":"TRUE","author":["matt"],"views_key":"Mapping Slavery Against US Incarceration","views":22026,"views_display":"22k","img":"2017_01_shape-of-slavery","time":"January 2017","author_html":"<a href='https://pudding.cool/author/matt-daniels'>Matt Daniels</a>"},{"url":"2017/01/making-it-big","date":"2017-01-15T05:00:00.000Z","hed":"The Unlikely Odds of Making it Big","dek":"What three years and 75,000 shows tell us about the chance your favorite band will succeed.","topic":"music","pick":"","footer":"TRUE","author":["russell","dan"],"views_key":"The Unlikely Odds of Making it Big","views":70423,"views_display":"70k","img":"2017_01_making-it-big","time":"January 2017","author_html":"<a href='https://pudding.cool/author/russell-goldenberg'>Russell Goldenberg</a>, <a href='https://pudding.cool/author/dan-kopf'>Dan Kopf</a>"},{"url":"2017/03/hamilton","date":"2016-12-15T05:00:00.000Z","hed":"An Interactive Visualization of Every Line in Hamilton","dek":"From the moment I sat down to listen the whole way through, I was done for...","topic":"culture","pick":"","footer":"TRUE","author":["shirley"],"views_key":"An Interactive Visualization of Every Line in Hamilton","views":202597,"views_display":"200k","img":"2017_03_hamilton","time":"December 2016","author_html":"<a href='https://pudding.cool/author/shirley-wu'>Shirley Wu</a>"},{"url":"2017/03/elections","date":"2016-10-01T04:00:00.000Z","hed":"How News Media Covers Trump & Clinton","dek":"Analyzing 12,147 images of Trump and Clinton.","topic":"politics","pick":"","footer":"TRUE","author":["russell"],"views_key":"How news media covers Trump & Clinton","views":15836,"views_display":"16k","img":"2017_03_elections","time":"October 2016","author_html":"<a href='https://pudding.cool/author/russell-goldenberg'>Russell Goldenberg</a>"},{"url":"2017/03/redraft","date":"2016-09-01T04:00:00.000Z","hed":"Twenty Years of the NBA Redrafted","dek":"Using career stats to prove the best/worst NBA draft picks, ever.","topic":"sports","pick":"","footer":"TRUE","author":["russell"],"views_key":"Twenty years of the NBA redrafted","views":134884,"views_display":"130k","img":"2017_03_redraft","time":"September 2016","author_html":"<a href='https://pudding.cool/author/russell-goldenberg'>Russell Goldenberg</a>"},{"url":"2017/03/sampling","date":"2016-09-01T04:00:00.000Z","hed":"How Robert Glasper sampled Miles Davis on “Ghetto Walkin”","dek":"An interactive story about the art of sampling.","topic":"music","pick":"","footer":"TRUE","author":["matt"],"views_key":"How Robert Glasper sampled Miles Davis on “Ghetto Walkin”","views":40079,"views_display":"40k","img":"2017_03_sampling","time":"September 2016","author_html":"<a href='https://pudding.cool/author/matt-daniels'>Matt Daniels</a>"},{"url":"2017/03/miles","date":"2016-06-01T04:00:00.000Z","hed":"The 2,452 Wikipedia Pages on which Miles Davis is Mentioned","dek":"25 years after his death, he's still synonymous with Jazz, but you can find his fingerprints on so many other ideas.","topic":"music","pick":"","footer":"TRUE","author":["matt"],"views_key":"Miles Davis’ legacy, represented by every Wikipedia page that mentions him","views":39130,"views_display":"39k","img":"2017_03_miles","time":"June 2016","author_html":"<a href='https://pudding.cool/author/matt-daniels'>Matt Daniels</a>"},{"url":"2017/03/music-history","date":"2016-05-01T04:00:00.000Z","hed":"How Music Taste Evolved","dek":"Every top 5 song, from 1958 - 2016, so we can stop arguing about when music was still good.","topic":"music","pick":"","footer":"TRUE","author":["matt"],"views_key":"How Music Evolved: Billboard's Hot 100, 1958 - 2016","views":1411427,"views_display":"1.4M","img":"2017_03_music-history","time":"May 2016","author_html":"<a href='https://pudding.cool/author/matt-daniels'>Matt Daniels</a>"},{"url":"2017/03/comeback","date":"2016-04-10T04:00:00.000Z","hed":"Using Historical NBA Data To Rank the Most Unlikely Comebacks","dek":"Using a win-probability model to identify the most statistically unlikely comebacks this season.","topic":"sports","pick":"","footer":"TRUE","author":["matt"],"views_key":"Using Historical NBA Data To Rank the Most Unlikely Comebacks","views":15276,"views_display":"15k","img":"2017_03_comeback","time":"April 2016","author_html":"<a href='https://pudding.cool/author/matt-daniels'>Matt Daniels</a>"},{"url":"2017/03/film-dialogue","date":"2016-04-01T04:00:00.000Z","hed":"The Largest Analysis of Film Dialogue by Gender, Ever","dek":"From 2,000 screeplays, broken down by age and gender.","topic":"culture","pick":"","footer":"TRUE","author":["matt","hanah"],"views_key":"The Largest Ever Analysis of Film Dialogue by Gender: 2,000 scripts, 25,000 actors, 4 million lines","views":2168913,"views_display":"2.2M","img":"2017_03_film-dialogue","time":"April 2016","author_html":"<a href='https://pudding.cool/author/matt-daniels'>Matt Daniels</a>, <a href='https://pudding.cool/author/hanah-anderson'>Hanah Anderson</a>"},{"url":"2017/03/punk","date":"2016-01-09T05:00:00.000Z","hed":"Crowdsourcing the Definition of “Punk”","dek":"Looking at playlists to learn how parts of culture perceive genres and the bands who represent them.","topic":"music","pick":"","footer":"TRUE","author":["matt"],"views_key":"Crowdsourcing the Definition of \"Punk\"","views":64111,"views_display":"64k","img":"2017_03_punk","time":"January 2016","author_html":"<a href='https://pudding.cool/author/matt-daniels'>Matt Daniels</a>"},{"url":"2017/03/bechdel","date":"2016-01-01T05:00:00.000Z","hed":"Hollywood's Gender Divide and its Effect on Films","dek":"The writers, directors, and producers who make films that fail the Bechdel test.","topic":"culture","pick":"","footer":"TRUE","author":["matt","ilia"],"views_key":"The Writers, Directors, and Producers who Make Films that Fail the Bechdel Test","views":149119,"views_display":"150k","img":"2017_03_bechdel","time":"January 2016","author_html":"<a href='https://pudding.cool/author/matt-daniels'>Matt Daniels</a>, <a href='https://pudding.cool/author/ilia-blinderman'>Ilia Blinderman</a>"},{"url":"2017/03/labels","date":"2015-11-01T04:00:00.000Z","hed":"The Most Succesful Labels in Hip Hop","dek":"Every hip hop record label, since 1989, sorted by their artists' chart performance on Billboard.","topic":"music","pick":"","footer":"TRUE","author":["matt"],"views_key":"Every hip hop record label, since 1989, sorted by their artists' chart performance on Billboard","views":25987,"views_display":"26k","img":"2017_03_labels","time":"November 2015","author_html":"<a href='https://pudding.cool/author/matt-daniels'>Matt Daniels</a>"},{"url":"2017/03/timeless","date":"2015-09-01T04:00:00.000Z","hed":"The Most Timeless Songs of All-Time","dek":"Using Spotify to measure the popularity of older music.","topic":"music","pick":"","footer":"TRUE","author":["matt"],"views_key":"Using Spotify to measure the popularity of older music","views":0,"views_display":"0.0","img":"2017_03_timeless","time":"September 2015","author_html":"<a href='https://pudding.cool/author/matt-daniels'>Matt Daniels</a>"},{"url":"2017/02/vocabulary","date":"2014-05-01T04:00:00.000Z","hed":"The Largest Vocabulary in Hip Hop","dek":"Rappers, ranked by the number of unique words used in their lyrics.","topic":"music","pick":"","footer":"TRUE","author":["matt"],"views_key":"The Largest Vocabulary in Hip Hop","views":2671387,"views_display":"2.7M","img":"2017_02_vocabulary","time":"May 2014","author_html":"<a href='https://pudding.cool/author/matt-daniels'>Matt Daniels</a>"},{"url":"2017/03/outkast","date":"2014-03-01T05:00:00.000Z","hed":"Outkast, in Charts","dek":"A look at Outkast's history through the lens of data.","topic":"music","pick":"","footer":"TRUE","author":["matt"],"views_key":"Outkast, in Charts","views":15810,"views_display":"16k","img":"2017_03_outkast","time":"March 2014","author_html":"<a href='https://pudding.cool/author/matt-daniels'>Matt Daniels</a>"}];
+	</script>
+	<script src='common/js/d3.v5.min.js'></script>
+	<script>(function() {
+  var numColors = 4;
+  var r = Math.floor(Math.random() * numColors);
+  var c = 'colorize--' + r;
+  var classBackground = 'random-background--' + r;
+  var classColor = 'random-color--' + r;
+  d3.selectAll('.random-background').classed(classBackground, true);
+  d3.selectAll('.random-color').classed(classColor, true);
+})();
+</script>
+		
+	<script>
+		(function() {
+  var $preview = d3.select('.preview');
+  var $video = $preview.select('video');
+  var $collection = d3.select('.collection');
+  var $loader = $collection.select('.loader');
+  var $authors = d3.select('.sidebar .authors select');
+  var VIDEO_WIDTH = 300;
+  var VIDEO_HEIGHT = 150;
+  var PAD = 10;
+  // const DEFAULT_COLLECTION = 'media_diversity';
+
+  // device sniffing for mobile
+
+  var isMobile = {
+    android: function () { return navigator.userAgent.match(/Android/i); },
+
+    blackberry: function () { return navigator.userAgent.match(/BlackBerry/i); },
+
+    ios: function () { return navigator.userAgent.match(/iPhone|iPad|iPod/i); },
+
+    opera: function () { return navigator.userAgent.match(/Opera Mini/i); },
+
+    windows: function () { return navigator.userAgent.match(/IEMobile/i); },
+
+    any: function () { return isMobile.android() ||
+      isMobile.blackberry() ||
+      isMobile.ios() ||
+      isMobile.opera() ||
+      isMobile.windows(); }
+  };
+
+  function setupPicks() {
+    $li = d3.selectAll('#picks li');
+    var sz = $li.size();
+    var target = 3;
+    var count = d3.range(sz);
+    d3.shuffle(count);
+    var chosen = count.slice(0, target);
+
+    $li.each(function (d, i, n) {
+      var $story = d3.select(n[i]);
+      if (chosen.includes(i)) { $story.classed('is-visible', true); }
+      else { $story.classed('is-hidden', true); }
+    });
+  }
+
+  function handleTopicClick() {
+    var $el = d3.select(this);
+    var topic = $el.attr('data-topic');
+
+    d3.selectAll('#topics .topics__nav ul li').classed('is-active', false);
+    d3.select($el.node().parentNode).classed('is-active', true);
+
+    d3.selectAll('#topics .topics__stories ul')
+      .classed('is-visible', false)
+      .classed('is-hidden', true);
+
+    var $ul = d3.select(("#topics .topics__stories [data-topic=\"" + topic + "\"]"));
+    $ul.classed('is-hidden', false).classed('is-visible', true);
+  }
+
+  function setupTopics() {
+    $ul = d3.selectAll('#topics .topics__stories ul');
+    var sz = $ul.size();
+    var target = 1;
+    var count = d3.range(sz);
+    d3.shuffle(count);
+    var chosen = count[0];
+    $ul.each(function (d, i, n) {
+      var $topic = d3.select(n[i]);
+      if (chosen === i) { $topic.classed('is-visible', true); }
+      else { $topic.classed('is-hidden', true); }
+    });
+
+    d3.selectAll('#topics .topics__nav ul li')
+      .classed('is-active', function (d, i) { return chosen === i; })
+      .select('button')
+      .on('click', handleTopicClick);
+  }
+
+  function init() {
+    setupPicks();
+    setupTopics();
+  }
+
+  init();
+})();
+
+	</script>
+
+</body>
+
+</html>

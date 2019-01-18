@@ -1,0 +1,141 @@
+/* override */
+
+
+
+header .about {
+  display: none;
+}
+.nav {
+  position: fixed;
+  top: 12.5rem;
+  left: 2rem;
+  display: none;
+  border-top: 2px solid #aaaaaa4f;
+  padding-top: 0.5rem;
+}
+
+.nav li {
+  line-height: 1.8;
+  font-weight: 400;
+}
+
+.nav li a {
+  border: none;
+  color: #555;
+}
+
+main {
+  max-width: 40rem;
+  margin: 0 auto 0 auto;
+  padding: 0 1rem;
+	padding-bottom: 5rem;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+main p, main li, main td {
+	font-size: 15px;
+}
+
+main ul {
+	list-style-type: disc;
+	margin-left: 1.5rem;
+}
+
+main table thead td {
+	font-weight: 600;
+	text-transform: uppercase;
+	font-size: 12px;
+	color: #484848;
+	letter-spacing: 0.05em;
+}
+
+main table td {
+	padding: 0.25em 0;
+	padding-right: 1rem;
+}
+
+main p a {
+  color: #2a2a2a
+}
+
+
+.section__hed {
+  font-weight: 400;
+  margin-top: 2rem;
+  padding-top: 2rem;
+  font-size: 13px;
+  color: #ec5656;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.section__big {
+  line-height: 1.6;
+  font-size: 23px;
+}
+
+.ingredients li {
+  margin-bottom: 0.5rem;
+}
+
+.requirements li {
+  margin-left: 1rem;
+  list-style-type: circle;
+}
+
+.authors {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+.author {
+  display: block;
+  border: none;
+  max-width: 6rem;
+  text-align: center;
+  margin-right: 1rem;
+  margin-bottom: 1rem;
+}
+
+.author a {
+  border: none;
+}
+
+.author__name {
+  margin: 0;
+  padding: 0.5rem;
+  text-align: center;
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+.author__image {
+  width: 6rem;
+  height: 6rem;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #ddd;
+  border: 1px solid #ddd;
+  border-radius: 50%;
+  margin: 0 auto;
+}
+
+@media only screen and (min-width: 40rem) {
+  .section__hed {
+    -webkit-transform: translateX(-1rem);
+    -moz-transform: translateX(-1rem);
+    transform: translateX(-1rem);
+  }
+}
+
+@media only screen and (min-width: 65rem) {
+  .nav {
+    display: block;
+  }
