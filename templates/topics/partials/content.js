@@ -10,11 +10,11 @@ const storyData = JSON.parse(
   fse.readFileSync(`${cwd}/.tmp/data/stories.json`, 'utf-8')
 );
 
-function createHTML({ data, path }) {
+function createHTML({ data }) {
   const stories = data
     .map(topic => {
-      const storyItems = topic.value
-        .map(story => `<li>${Item({ story, path })}</li>`)
+      const storyItems = topic.values
+        .map(story => `<li>${Item({ story, path: '../' })}</li>`)
         .join('');
       return `<ul data-topic='${topic.key}'>${storyItems}</ul>`;
     })
@@ -37,13 +37,12 @@ function createHTML({ data, path }) {
 	`;
 }
 
-module.exports = function({ path = '' }) {
+module.exports = function() {
   const filtered = storyData.filter(d => d.topic && !IGNORE.includes(d.topic));
   const data = d3
     .nest()
     .key(d => d.topic)
-    .rollup(v => v.slice(0, 6))
     .entries(filtered);
-  const html = createHTML({ data, path });
+  const html = createHTML({ data });
   return html;
 };

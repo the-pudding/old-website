@@ -6,8 +6,8 @@ const cwd = process.cwd();
 
 const Header = require(`${cwd}/templates/common/partials/header`);
 const Footer = require(`${cwd}/templates/common/partials/footer`);
-const Content = require(`${cwd}/templates/about/partials/content`);
-const Team = require(`${cwd}/templates/about/partials/team`);
+const Content = require(`${cwd}/templates/archive/partials/content`);
+const Team = require(`${cwd}/templates/archive/partials/team`);
 
 function cleanTemp(dir) {
   console.log('cleaning tmp folder...');
@@ -21,10 +21,10 @@ function cleanTemp(dir) {
 
 function copyHTMLTemplate() {
   console.log('copying html template file...');
-  fse.ensureDirSync(`${cwd}/.tmp/about`);
+  fse.ensureDirSync(`${cwd}/.tmp/archive`);
   fse.copySync(
-    `${cwd}/templates/about/index.template`,
-    `${cwd}/.tmp/about/index.template`
+    `${cwd}/templates/archive/index.template`,
+    `${cwd}/.tmp/archive/index.template`
   );
   return Promise.resolve();
 }
@@ -38,7 +38,7 @@ function createMarkup() {
   const footerHTML = Footer();
 
   const options = {
-    files: `${cwd}/.tmp/about/index.template`,
+    files: `${cwd}/.tmp/archive/index.template`,
     from: [
       '<!-- header -->',
       '<!-- content -->',
@@ -57,15 +57,15 @@ function createMarkup() {
 
 function copyHTMLToDev(files) {
   return new Promise((resolve, reject) => {
-    const path = `${cwd}/.tmp/about/index.html`;
+    const path = `${cwd}/.tmp/archive/index.html`;
     fse.copySync(files[0], path);
     inlineSource(path, {
       compress: false,
       ignore: ['css', 'js']
     })
       .then(html => {
-        fse.ensureDirSync(`${cwd}/dev/about`);
-        fse.writeFileSync(`${cwd}/dev/about/index.html`, html);
+        fse.ensureDirSync(`${cwd}/dev/archives`);
+        fse.writeFileSync(`${cwd}/dev/archive/index.html`, html);
         resolve();
       })
       .catch(reject);
@@ -83,10 +83,10 @@ function createHTML() {
 }
 
 function init() {
-  cleanTemp('about')
+  cleanTemp('archive')
     .then(createHTML)
     .then(() => {
-      console.log('DONE: about.js');
+      console.log('DONE: archive.js');
       process.exit();
     })
     .catch(err => console.log(err));

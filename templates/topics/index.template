@@ -3,7 +3,7 @@
 
 <head>
 
-	<title>About - The Pudding</title>
+	<title>Topics - The Pudding</title>
 	<meta charset='utf-8'>
 	<meta name='viewport' content='width=device-width, initial-scale=1'>
 	<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
@@ -49,55 +49,15 @@
 	</script>
 </head>
 
-<body id='page-about' class='tk-national'>
+<body id='page-topics' class='tk-national'>
 
 	<!-- DO NOT REMOVE -->
 	<!-- header -->
 	<main id='content'>
 		<section>
-			<ul class='page-nav tk-atlas'>
-				<li>
-					<a href='#why'>Why “The Pudding?”</a>
-				</li>
-				<li>
-					<a href='#how'>Our process</a>
-				</li>
-				<li>
-					<a href='#lights'>Keeping the lights on</a>
-				</li>
-				<li>
-					<a href='#working'>Working here</a>
-				</li>
-				<li>
-					<a href='#positions'>Open positions</a>
-				</li>
-				<li>
-					<a href='#rubric'>Editorial rubric</a>
-				</li>
-				<li>
-					<a href='#awards'>Awards</a>
-				</li>
-				<li>
-					<a href='#contact'>Contact us</a>
-				</li>
-				<li>
-					<a href='#sponsored'>Content Studio</a>
-				</li>
-				<li>
-					<a href='#team'>Team</a>
-				</li>
-			</ul>
-			
-			<p class='section__label random-color'>About</p>
+			<p class='section__label random-color'>Topics</p>
 			<!-- DO NOT REMOVE -->
 			<!-- content -->
-			<div id='team'>
-				<h3 class='section__hed random-color'>Team</h3>
-				<!-- DO NOT REMOVE -->
-				<ul class='authors'>
-					<!-- team -->
-				</ul>
-			</div>
 		</section>
 		
 	</main>
@@ -107,5 +67,8 @@
 </body>
 <script src='../common/js/d3.v5.min.js'></script>
 <script inline src='../common/js/random.js'></script>
+<script>
+	/* entry-js */
+</script>
 
 </html>
