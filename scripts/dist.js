@@ -31,11 +31,11 @@ function init() {
   inlineAssets('about/');
   // topics
   inlineAssets('topics/');
-  // // author pages
-  // const authors = fse
-  //   .readdirSync(`${cwd}/dist/author`)
-  //   .filter(d => d.match(/\W/) && d.includes('.html'));
-  // authors.forEach(d => inlineAssets(`author/${d}/`));
+  // authors
+  const authors = fse
+    .readdirSync(`${cwd}/dist/author`)
+    .filter(d => d.match(/\W/) && d.includes('.html'));
+  authors.forEach(d => inlineAssets(`author/${d}/`));
 
   // minify footer
   minifyFooter();
