@@ -16,6 +16,15 @@ const url = {
   authors: '1258453125'
 };
 
+function slugify(str) {
+  return str
+    .trim()
+    .toLowerCase()
+    .replace(/\s/g, '_')
+    .replace(/\W/g, '')
+    .replace(/\_/g, '-');
+}
+
 function cleanTemp(dir) {
   console.log('cleaning tmp folder...');
   return new Promise((resolve, reject) => {
@@ -137,6 +146,7 @@ function initStoryData() {
       .then(fetchStories)
       .then(joinStoryData)
       .then(authorStoryData)
+      .then(authorStoryData)
       .then(writeStoryData)
       .then(resolve)
       .catch(reject);
@@ -156,6 +166,14 @@ function fetchAuthors() {
   });
 }
 
+function slugAuthors(data) {
+  const withSlug = data.map(d => ({
+    ...d,
+    slug: slugify(d.name)
+  }));
+  return Promise.resolve(withSlug);
+}
+
 function writeAuthorData(data) {
   console.log('writing author data to file...');
   const dir = `${cwd}/.tmp/data`;
@@ -168,6 +186,7 @@ function writeAuthorData(data) {
 function initAuthorData() {
   return new Promise((resolve, reject) => {
     fetchAuthors()
+      .then(slugAuthors)
       .then(writeAuthorData)
       .then(resolve)
       .catch(reject);

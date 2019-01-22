@@ -29,20 +29,10 @@ let storyDataWithAuthor = null;
 
 const groupedData = {};
 
-function slugify(str) {
-  return str
-    .trim()
-    .toLowerCase()
-    .replace(/\s/g, '_')
-    .replace(/\W/g, '')
-    .replace(/\_/g, '-');
-}
-
 function getAuthor(story) {
   return story.author
     .map(d => {
-      const { name } = authorData.find(a => a.id === d);
-      const slug = slugify(name);
+      const { name, slug } = authorData.find(a => a.id === d);
       const path = filepath || '';
       return `<a href='${path}author/${slug}'>${name}</a>`;
       // return `<a>${name}</a>`;

@@ -6,13 +6,9 @@
 	<!-- DO NOT REMOVE -->
 	<!-- meta -->
 
-	<link inline rel='stylesheet' href='../../common/css/critical.css'>
-	<link inline rel='stylesheet' href='../../common/css/header.css'>
-	<link inline rel='stylesheet' href='../../common/css/stories.css'>
-	<link inline rel='stylesheet' href='../css/person.css'>
-	<link inline rel='stylesheet' href='../css/stories-by-author.css'>
 	<link inline rel='stylesheet' href='../../common/css/font.css'>
-
+	<link inline rel='stylesheet' href='../../common/css/bundle.css'>
+	
 	<!-- smoosh -->
 	<script inline src='../../common/js/critical.js'></script>
 	<!-- endsmoosh -->
@@ -30,62 +26,31 @@
 	</script>
 </head>
 
-<body class='tk-publico'>
+
+<body id='page-author' class='tk-national'>
 
 	<!-- DO NOT REMOVE -->
 	<!-- header -->
+	<main id='content'>
+		<section class='author'>
+			<p class='section__label random-color'>Bio</p>
+			<!-- DO NOT REMOVE -->
+			<!-- bio -->
+		</section>
+		
+		<section class='stories'>
+			<p class='section__label random-color'>Stories</p>
+			<ul>
+				<!-- DO NOT REMOVE -->
+				<!-- stories -->
+			</ul>
+		</section>
+	</main>
 
 	<!-- DO NOT REMOVE -->
-	<!-- person -->
-
-	<div class='stories'>
-		<h4 class='stories__hed tk-canela'>Stories on The Pudding:</h4>
-		<!-- DO NOT REMOVE -->
-		<ul>
-			<!-- stories-by-author -->
-		</ul>
-	</div>
-
-	<main id='content'>
-
-		<div class='sidebar tk-atlas'>
-			<ol>
-				<li>
-					<a href='#greatest'>Greatest Hits</a>
-				</li>
-				<li>
-					<a href='#new'>What’s New</a>
-				</li>
-				<li>
-					<a href='#collections'>Collections</a>
-				</li>
-				<li>
-					<a href='#all'>All Essays</a>
-				</li>
-				<li>
-					<a href='#how'>How-to</a>
-				</li>
-			</ol>
-			<!-- <div class='search'>
-					<input placeholder='Search'>
-				</div> -->
-			<div class='authors'>
-				<select>
-					<!-- authors -->
-				</select>
-			</div>
-		</div>
-
-		</div>
-		<!-- DO NOT REMOVE -->
-		<!-- stories -->
-
-	</main>
-	<script inline src='../../common/js/d3.v4.min.js'></script>
-	<script inline src='../../common/js/ScrollMagic.min.js'></script>
-	<script>
-			/* entry-js */
-	</script>
+	<!-- footer -->
 </body>
+<script src='../../common/js/d3.v5.min.js'></script>
+<script inline src='../../common/js/random.js'></script>
 
 </html>

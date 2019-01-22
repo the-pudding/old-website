@@ -1,0 +1,79 @@
+#page-author
+	padding-top 6rem	
+	+mq('bp-m')
+		padding-top 0
+	section
+		width calc(100% - 3.6rem)
+		transform translateX(0.5rem)
+		position relative
+		max-width $main-width
+		margin 0 auto 5rem auto
+		border-left 4px solid $fg
+		border-top 4px solid $fg
+		padding-top 1rem
+		
+		+mq('bp-m')
+			width 100%
+			width calc(100% - 12rem)
+			transform translateX(0)
+
+	.bio
+		display flex
+		flex-wrap wrap
+		align-items flex-start
+		position relative
+
+		&__img
+			width 20%
+		
+		&__info
+			width 70%
+			p
+				margin 0
+				padding-left 1rem
+				set-type-size(medium, false)
+				line-height 1.4
+				+mq('bp-4')
+					set-type-size(large, false)
+
+		.description__name
+			font-weight 700
+
+		&__links
+			width 100%
+			display flex
+			justify-content flex-start
+			flex-wrap wrap
+			flex-direction column
+			margin-top 1rem
+			+mq('bp-4')
+				flex-direction row
+				position absolute
+				left 20%
+				width 70%
+				bottom 0
+				padding-left 1rem
+			li
+				margin 0 1rem
+				+mq('bp-4')
+					margin 0
+					margin-right 2rem
+			a
+				border none
+				color $gray-dark
+			svg
+				display inline-block
+				width 1rem
+				height 1rem
+				vertical-align middle
+				margin-right 0.5em
+		
+		.link__twitter path 
+			fill $gray-dark
+		
+		.link__email path
+			stroke $gray-dark
+		
+		.link__url path
+			stroke $gray-dark
+
