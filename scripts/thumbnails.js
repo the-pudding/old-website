@@ -1,25 +1,30 @@
 const fse = require('fs-extra');
 const Jimp = require('jimp');
 
-const ORIG = 1920;
-const sizes = [1280, 640];
+const cwd = process.cwd();
+const inpath = `${cwd}/thumbnails`;
+const outpath = `${cwd}/dev/common/assets/thumbnails`;
+
+const sizes = [1920, 1280, 640];
 
 function getFilesToProcess() {
-  const src = `${cwd}/dev/common/assets/thumbnails/${ORIG}`;
-  const dest = `${cwd}/dev/common/assets/thumbnails/${sizes[0]}`;
+  const dest = `${outpath}/${sizes[0]}`;
 
-  const inputFiles = fse.readdirSync(src).filter(d => d.includes('.jpg'));
+  const inputFiles = fse.readdirSync(inpath).filter(d => d.includes('.jpg'));
   const outFiles = fse.readdirSync(dest).filter(d => d.includes('.jpg'));
 
   return inputFiles.filter(d => !outFiles.includes(d));
 }
 
-function resize({ path, size }) {
+function resize({ file, size }) {
+  console.log(`resizing ${file} - ${size}...`);
   return new Promise((resolve, reject) => {
-    const output = path.replace(ORIG, size);
-    Jimp.read(path)
+    Jimp.read(`${inpath}/${file}`)
       .then(img => {
-        return img.resize(size).write(output, resolve);
+        return img
+          .resize(size, Jimp.AUTO)
+          .quality(70)
+          .write(`${outpath}/${size}/${file}`, resolve);
       })
       .catch(reject);
   });
@@ -27,8 +32,7 @@ function resize({ path, size }) {
 
 function processFile(file) {
   return new Promise((resolve, reject) => {
-    const path = `${cwd}/dev/common/assets/thumbnails/${ORIG}/${file}`;
-    const promises = sizes.forEach(s => resize({ path, size: sizes[0] }));
+    const promises = sizes.map(size => resize({ file, size }));
 
     Promise.all(promises)
       .then(resolve)
@@ -52,12 +56,18 @@ function init() {
         index += 1;
         if (index < queue.length) next();
         else {
-          process.exit();
           console.log('DONE: resize-thumbnails.js');
+          process.exit();
         }
       })
       .catch(console.error);
   };
 
-  next();
+  if (queue.length) next();
+  else {
+    console.log('no new thumbnails to resize...');
+    console.log('DONE: resize-thumbnails.js');
+  }
 }
+
+init();
