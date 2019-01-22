@@ -34,33 +34,48 @@
 		<section class='filter'>
 			<p class='section__label random-color'>Find It!</p>
 			<input aria-label='Search' name='search' placeholder='search'>
-			<ul>
-				<li>
-					<select>
-						<option>By topic</option>
-					</select>
-				</li>
-				<li>
-					<select>
-						<option>By author</option>
-					</select>
-				</li>
-				<li>
-					<select>
-						<option>By date</option>
-					</select>
-				</li>
-				<li>
-					<select>
-						<option>By chart</option>
-					</select>
-				</li>
-				<li>
-					<select>
-						<option>By topic</option>
-					</select>
-				</li>
-			</ul>
+			<fieldset>
+				<legend>Sort By</legend>
+				<ul>
+					<li>
+						<select>
+							<option>Newest to Oldest</option>
+							<option>Oldest to Newest</option>
+							<option>Most-Viewed</option>
+						</select>
+					</li>
+				</ul>
+			</fieldset>
+
+			<fieldset>
+				<legend>Filter By</legend>
+				<ul>
+					<li>
+						<select>
+							<option>Author</option>
+						</select>
+					</li>
+
+					<li>
+						<select>
+							<option>Topic</option>
+						</select>
+					</li>
+
+					<li>
+						<select>
+							<option>Chart Type</option>
+						</select>
+					</li>
+
+					<li>
+						<select>
+							<option>Tech</option>
+						</select>
+					</li>
+					
+				</ul>
+			</fieldset>
 		</section>
 
 		<section class='stories'>

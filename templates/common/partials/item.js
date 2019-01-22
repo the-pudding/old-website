@@ -18,6 +18,7 @@ module.exports = function({ path, story, hit }) {
 					<h3 class='item__hed'>${story.hed}</h3>
 				</a>
 				<p class='item__dek tk-tiempos'>${story.dek}</p>
+				<time class='item__time' datetime='${story.date}'></time>
 				<p class='item__author'>By ${story.author_html}</p>
 			</div>
 		</div>
