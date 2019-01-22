@@ -1,0 +1,50 @@
+#page-archives .stories
+	ul
+		position relative
+		display flex
+		flex-wrap wrap
+		justify-content space-between
+		
+	li
+		width 100%
+		border-top $line-width solid $fg
+		margin-bottom 3rem
+		&:first-of-type
+			border none
+		&:last-of-type
+			margin-bottom 0
+
+	.story-item
+		display flex
+		flex-wrap wrap
+		+mq('bp-3')
+			flex-wrap nowrap
+	
+	.item__img
+		width 100%
+		min-width 100%
+		+mq('bp-3')
+			width 35%
+			min-width 35%
+
+		+mq('bp-4')
+			width 20%
+			min-width 20%
+
+	.item__info
+		padding 1rem 0 0 1rem
+		
+
+	.item__hed
+		font-weight 700
+		set-type-size(x-large) 
+		line-height 1
+	
+	.item__dek
+		set-type-size(root, false)
+		line-height 1.4
+		font-family $serif
+		margin-top 0.5rem
+	
+	.item__author
+		display none

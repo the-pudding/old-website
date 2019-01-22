@@ -5,6 +5,7 @@ const buble = require('buble');
 
 const cwd = process.cwd();
 
+const Meta = require(`${cwd}/templates/common/partials/meta`);
 const Header = require(`${cwd}/templates/common/partials/header`);
 const Footer = require(`${cwd}/templates/common/partials/footer`);
 const Content = require(`${cwd}/templates/topics/partials/content`);
@@ -41,6 +42,7 @@ function compileEntryJS() {
 function createMarkup() {
   console.log('creating markup...');
 
+  const metaHTML = Meta({ title: 'Topics' });
   const headerHTML = Header();
   const contentHTML = Content();
   const footerHTML = Footer();
@@ -49,12 +51,13 @@ function createMarkup() {
   const options = {
     files: `${cwd}/.tmp/topics/index.template`,
     from: [
+      '<!-- meta -->',
       '<!-- header -->',
       '<!-- content -->',
       '<!-- footer -->',
       '/* entry-js */'
     ],
-    to: [headerHTML, contentHTML, footerHTML, entryJS]
+    to: [metaHTML, headerHTML, contentHTML, footerHTML, entryJS]
   };
 
   return new Promise((resolve, reject) => {

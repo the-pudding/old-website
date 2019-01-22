@@ -6,7 +6,7 @@
 		<title>The Pudding</title>
 		<atom:link href="https://pudding.cool/feed/index.xml" rel="self" type="application/rss+xml" />
 		<link>https://pudding.cool</link>
-		<description>A weekly journal of visual essays</description>
+		<description>The Pudding is an editorial publication that explains ideas debated in culture with visual essays.</description>
 		<lastBuildDate>
 			<!-- lastBuildDate -->
 		</lastBuildDate>

@@ -4,7 +4,7 @@ const { inlineSource } = require('inline-source');
 
 const cwd = process.cwd();
 
-const Meta = require(`${cwd}/templates/author/partials/meta`);
+const Meta = require(`${cwd}/templates/common/partials/meta`);
 const Header = require(`${cwd}/templates/common/partials/header`);
 const Bio = require(`${cwd}/templates/author/partials/bio`);
 const Stories = require(`${cwd}/templates/author/partials/stories`);
@@ -51,7 +51,10 @@ function createMarkup() {
 
   const promises = authorData.map(d => {
     return new Promise((resolve, reject) => {
-      const metaHTML = Meta(d);
+      const metaHTML = Meta({
+        title: d.name,
+        description: `Read more from ${d.name}} on The Pudding.`
+      });
       const headerHTML = Header();
       const bioHTML = Bio(d);
       const storiesHTML = Stories(d.stories);

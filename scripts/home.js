@@ -5,6 +5,7 @@ const buble = require('buble');
 
 const cwd = process.cwd();
 
+const Meta = require(`${cwd}/templates/common/partials/meta`);
 const Header = require(`${cwd}/templates/common/partials/header`);
 const Picks = require(`${cwd}/templates/home/partials/picks`);
 const New = require(`${cwd}/templates/home/partials/new`);
@@ -51,6 +52,7 @@ function compileEntryJS() {
 function createMarkup() {
   console.log('creating markup...');
 
+  const metaHTML = Meta({});
   const headerHTML = Header();
   const picksHTML = Picks({});
   const newHTML = New({});
@@ -65,6 +67,7 @@ function createMarkup() {
   const options = {
     files: `${cwd}/.tmp/home/index.template`,
     from: [
+      '<!-- meta -->',
       '<!-- header -->',
       '<!-- picks -->',
       '<!-- new -->',
@@ -77,6 +80,7 @@ function createMarkup() {
       '/* entry-js */'
     ],
     to: [
+      metaHTML,
       headerHTML,
       picksHTML,
       newHTML,

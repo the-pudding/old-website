@@ -4,10 +4,10 @@ const { inlineSource } = require('inline-source');
 
 const cwd = process.cwd();
 
+const Meta = require(`${cwd}/templates/common/partials/meta`);
 const Header = require(`${cwd}/templates/common/partials/header`);
 const Footer = require(`${cwd}/templates/common/partials/footer`);
-const Content = require(`${cwd}/templates/archive/partials/content`);
-const Team = require(`${cwd}/templates/archive/partials/team`);
+const Stories = require(`${cwd}/templates/archives/partials/stories`);
 
 function cleanTemp(dir) {
   console.log('cleaning tmp folder...');
@@ -21,10 +21,10 @@ function cleanTemp(dir) {
 
 function copyHTMLTemplate() {
   console.log('copying html template file...');
-  fse.ensureDirSync(`${cwd}/.tmp/archive`);
+  fse.ensureDirSync(`${cwd}/.tmp/archives`);
   fse.copySync(
-    `${cwd}/templates/archive/index.template`,
-    `${cwd}/.tmp/archive/index.template`
+    `${cwd}/templates/archives/index.template`,
+    `${cwd}/.tmp/archives/index.template`
   );
   return Promise.resolve();
 }
@@ -32,20 +32,20 @@ function copyHTMLTemplate() {
 function createMarkup() {
   console.log('creating markup...');
 
+  const metaHTML = Meta({ title: 'Archives' });
   const headerHTML = Header();
-  const contentHTML = Content();
-  const teamHTML = Team();
+  const storiesHTML = Stories();
   const footerHTML = Footer();
 
   const options = {
-    files: `${cwd}/.tmp/archive/index.template`,
+    files: `${cwd}/.tmp/archives/index.template`,
     from: [
+      '<!-- meta -->',
       '<!-- header -->',
-      '<!-- content -->',
-      '<!-- team -->',
+      '<!-- stories -->',
       '<!-- footer -->'
     ],
-    to: [headerHTML, contentHTML, teamHTML, footerHTML]
+    to: [metaHTML, headerHTML, storiesHTML, footerHTML]
   };
 
   return new Promise((resolve, reject) => {
@@ -57,7 +57,7 @@ function createMarkup() {
 
 function copyHTMLToDev(files) {
   return new Promise((resolve, reject) => {
-    const path = `${cwd}/.tmp/archive/index.html`;
+    const path = `${cwd}/.tmp/archives/index.html`;
     fse.copySync(files[0], path);
     inlineSource(path, {
       compress: false,
@@ -65,7 +65,7 @@ function copyHTMLToDev(files) {
     })
       .then(html => {
         fse.ensureDirSync(`${cwd}/dev/archives`);
-        fse.writeFileSync(`${cwd}/dev/archive/index.html`, html);
+        fse.writeFileSync(`${cwd}/dev/archives/index.html`, html);
         resolve();
       })
       .catch(reject);
@@ -83,10 +83,10 @@ function createHTML() {
 }
 
 function init() {
-  cleanTemp('archive')
+  cleanTemp('archives')
     .then(createHTML)
     .then(() => {
-      console.log('DONE: archive.js');
+      console.log('DONE: archives.js');
       process.exit();
     })
     .catch(err => console.log(err));

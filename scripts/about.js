@@ -4,6 +4,7 @@ const { inlineSource } = require('inline-source');
 
 const cwd = process.cwd();
 
+const Meta = require(`${cwd}/templates/common/partials/meta`);
 const Header = require(`${cwd}/templates/common/partials/header`);
 const Footer = require(`${cwd}/templates/common/partials/footer`);
 const Content = require(`${cwd}/templates/about/partials/content`);
@@ -32,6 +33,7 @@ function copyHTMLTemplate() {
 function createMarkup() {
   console.log('creating markup...');
 
+  const metaHTML = Meta({ title: 'About' });
   const headerHTML = Header();
   const contentHTML = Content();
   const teamHTML = Team();
@@ -40,12 +42,13 @@ function createMarkup() {
   const options = {
     files: `${cwd}/.tmp/about/index.template`,
     from: [
+      '<!-- meta -->',
       '<!-- header -->',
       '<!-- content -->',
       '<!-- team -->',
       '<!-- footer -->'
     ],
-    to: [headerHTML, contentHTML, teamHTML, footerHTML]
+    to: [metaHTML, headerHTML, contentHTML, teamHTML, footerHTML]
   };
 
   return new Promise((resolve, reject) => {
