@@ -66,9 +66,11 @@
 		display flex
 		flex-direction column
 		
+	.item__img
+		position relative
+		
 	.item__info
 		padding 1rem 0 0 1rem
-		
 
 	.item__hed
 		font-weight 700
@@ -80,7 +82,7 @@
 		line-height 1.4
 		font-family $serif
 		margin-top 0.5rem
-	
+
 	.item__author
 		font-weight 700
 		margin-top 1rem
@@ -90,3 +92,14 @@
 		a
 			display inline-block
 			text-transform uppercase
+
+	.img__hit
+		position absolute
+		top 0
+		right 0
+		margin 0
+		padding 0 0.5em
+		color $bg
+		text-transform uppercase
+		font-weight 700
+		set-type-size(root)

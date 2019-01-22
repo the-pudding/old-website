@@ -11,7 +11,7 @@ const storyData = JSON.parse(
 
 function createHTML({ data, path }) {
   const storyItems = data
-    .map(story => `<li>${Item({ story, path })}</li>`)
+    .map(story => `<li>${Item({ story, path, hit: 'Most Something' })}</li>`)
     .join('');
   return storyItems;
 }
