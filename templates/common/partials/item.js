@@ -5,8 +5,17 @@ module.exports = function({ path, story, hit }) {
   const hitHTML = () =>
     hit ? `<p class='img__hit random-background'>${hit}</p>` : '';
 
+  const dataAttr = () =>
+    `data-id='${story.url}' data-topic='${story.topic}' data-chart='${
+      story.chart
+    }' data-tech='${story.tech}' data-author='${
+      story.author
+    }' data-hed='${story.hed.toLowerCase()}' data-dek='${story.dek.toLowerCase()}' data-date='${
+      story.date
+    }' data-views='${story.views}'`;
+
   return `
-		<div class='story-item'>
+		<div class='story-item' ${dataAttr()}>
 			<div class='item__img'>
 				<a href='//pudding.cool/${story.url}'>
 					<img src='${src}' alt='${story.hed}'>

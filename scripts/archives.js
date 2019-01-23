@@ -1,6 +1,7 @@
 const fse = require('fs-extra');
 const replace = require('replace-in-file');
 const { inlineSource } = require('inline-source');
+const buble = require('buble');
 
 const cwd = process.cwd();
 
@@ -29,6 +30,15 @@ function copyHTMLTemplate() {
   return Promise.resolve();
 }
 
+function compileEntryJS() {
+  const input = fse.readFileSync(
+    `${cwd}/templates/archives/entry.template.js`,
+    'utf-8'
+  );
+  const output = buble.transform(input);
+  return output.code;
+}
+
 function createMarkup() {
   console.log('creating markup...');
 
@@ -36,6 +46,7 @@ function createMarkup() {
   const headerHTML = Header();
   const storiesHTML = Stories();
   const footerHTML = Footer();
+  const entryJS = compileEntryJS();
 
   const options = {
     files: `${cwd}/.tmp/archives/index.template`,
@@ -43,9 +54,10 @@ function createMarkup() {
       '<!-- meta -->',
       '<!-- header -->',
       '<!-- stories -->',
-      '<!-- footer -->'
+      '<!-- footer -->',
+      '/* entry.js */'
     ],
-    to: [metaHTML, headerHTML, storiesHTML, footerHTML]
+    to: [metaHTML, headerHTML, storiesHTML, footerHTML, entryJS]
   };
 
   return new Promise((resolve, reject) => {

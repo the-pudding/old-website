@@ -33,8 +33,8 @@
 	<main id='content'>
 		<section class='filter'>
 			<p class='section__label random-color'>Find It!</p>
-			<input aria-label='Search' name='search' placeholder='search'>
-			<fieldset>
+			<input aria-label='Search' name='search' placeholder='Search...'>
+			<fieldset class='field__sort'>
 				<legend>Sort By</legend>
 				<ul>
 					<li>
@@ -47,29 +47,29 @@
 				</ul>
 			</fieldset>
 
-			<fieldset>
+			<fieldset class='field__filter'>
 				<legend>Filter By</legend>
 				<ul>
 					<li>
-						<select>
+						<select class='filter--author'>
 							<option>Author</option>
 						</select>
 					</li>
 
 					<li>
-						<select>
+						<select class='filter--topic'>
 							<option>Topic</option>
 						</select>
 					</li>
 
 					<li>
-						<select>
+						<select class='filter--chart'>
 							<option>Chart Type</option>
 						</select>
 					</li>
 
 					<li>
-						<select>
+						<select class='filter--tech'>
 							<option>Tech</option>
 						</select>
 					</li>

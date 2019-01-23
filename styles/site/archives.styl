@@ -21,5 +21,58 @@
 	.filter
 		display flex
 		justify-content space-between
+		align-items flex-end
 		ul
 			display flex
+
+		li
+			padding-right 1rem
+			&:last-of-type
+				padding-right 0
+
+	input
+		width 9rem
+		padding 0
+		line-height 1
+		set-type-size(root, false)
+		font-family $sans
+		margin-left 1rem
+		color $gray-dark
+
+	legend
+		margin-bottom 0.25em
+		text-transform uppercase
+		font-weight 700
+		set-type-size(small)
+
+	select
+		display block
+		background-color $bg
+		border-color $gray
+		border-radius 0
+		color $gray-dark
+		set-type-size(root, false)
+		line-height 1
+		font-family $sans
+		padding 0.25em
+		margin 0 auto
+		// margin-bottom 1.5rem
+		// appearance none
+		// background-image url(../assets/svg/arrow.svg)
+		// background-repeat no-repeat
+		// background-position 95% 100%
+		// background-size 16px 16px
+		// overflow hidden
+		// text-overflow ellipsis
+		// white-space nowrap
+
+		&::-ms-expand
+			display none
+	
+	.field__sort
+		select
+			width 9rem
+	
+	.field__filter
+		select
+			width 7rem
