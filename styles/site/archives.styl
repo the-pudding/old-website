@@ -11,6 +11,7 @@
 		border-left 4px solid $fg
 		border-top 4px solid $fg
 		padding-top 1rem
+		min-height 4.5rem
 		
 		+mq('bp-m')
 			width 100%
@@ -21,14 +22,28 @@
 	.filter
 		display flex
 		justify-content space-between
-		align-items flex-end
+		align-items flex-start
+		flex-wrap wrap
+		padding-left 1rem
+		+mq('bp-m')
+			flex-wrap nowrap
+			align-items flex-end
 		ul
 			display flex
+			flex-wrap wrap
+			justify-content space-between
+			+mq('bp-m')
+				flex-wrap nowrap
 
 		li
-			padding-right 1rem
+			margin-bottom 1rem
+			padding-right 0.5rem
+			+mq('bp-m')
+				margin 0
 			&:last-of-type
 				padding-right 0
+			&:nth-child(n+2)
+				margin 0
 
 	input
 		width 9rem
@@ -36,8 +51,11 @@
 		line-height 1
 		set-type-size(root, false)
 		font-family $sans
-		margin-left 1rem
 		color $gray-dark
+		display none
+		padding 0.25em
+		+mq('bp-m')
+			display block
 
 	legend
 		margin-bottom 0.25em
@@ -69,6 +87,15 @@
 		&::-ms-expand
 			display none
 	
+	fieldset
+		margin-bottom 1rem
+		
+		+mq('bp-m')
+			margin 0
+
+		&:last-of-type
+			margin 0
+
 	.field__sort
 		select
 			width 9rem
