@@ -1,9 +1,9 @@
-module.exports = function({ path, story, hit }) {
+module.exports = function({ path, story }) {
   // const src = `${path}common/assets/thumbnails/640/${story.img}.jpg`;
   const src = 'https://placehold.it/640x320.jpg';
 
   const hitHTML = () =>
-    hit ? `<p class='img__hit random-background'>${hit}</p>` : '';
+    story.hits ? `<p class='img__hit random-background'>${story.hits}</p>` : '';
 
   const dataAttr = () =>
     `data-id='${story.url}' data-topic='${story.topic}' data-chart='${

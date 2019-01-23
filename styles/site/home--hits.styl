@@ -10,6 +10,7 @@
 			width calc(100% + $line-width)
 		
 	li
+		// opacity 0
 		width 100%
 		border-top $line-width solid $fg
 		margin-bottom 3rem
@@ -58,6 +59,8 @@
 			&:nth-child(n+4)
 				display block
 				margin-top 3rem
+			&:nth-child(n+6)
+				display none
 			&:first-of-type
 				border-left $line-width solid $fg 
 		
@@ -94,6 +97,7 @@
 			text-transform uppercase
 
 	.img__hit
+		display block
 		position absolute
 		top 0
 		right 0

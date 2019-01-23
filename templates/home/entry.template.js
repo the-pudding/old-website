@@ -45,6 +45,28 @@
     });
   }
 
+  function setupHits() {
+    $li = d3.selectAll('#hits li');
+
+    $li.each((d, i, n) => {
+      d3.select(n[i]).datum(i);
+    });
+
+    const sz = $li.size();
+    const target = 5;
+    const count = d3.range(sz);
+    d3.shuffle(count);
+    const chosen = count.slice(0, target);
+
+    $li.each((d, i, n) => {
+      const $story = d3.select(n[i]);
+      if (chosen.includes(i)) $story.classed('is-visible', true);
+      else $story.remove();
+    });
+
+    $li.sort((a, b) => d3.ascending(chosen.indexOf(a), chosen.indexOf(b)));
+  }
+
   function handleTopicClick() {
     const $el = d3.select(this);
     const topic = $el.attr('data-topic');
@@ -82,6 +104,7 @@
   function init() {
     setupPicks();
     setupTopics();
+    setupHits();
   }
 
   init();

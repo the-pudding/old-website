@@ -11,15 +11,13 @@ const storyData = JSON.parse(
 
 function createHTML({ data, path }) {
   const storyItems = data
-    .map(story => `<li>${Item({ story, path, hit: 'Most Something' })}</li>`)
+    .map(story => `<li>${Item({ story, path })}</li>`)
     .join('');
   return storyItems;
 }
 
 module.exports = function({ path = '' }) {
-  const data = storyData
-    .sort((a, b) => d3.descending(a.views, b.views))
-    .slice(0, 5);
+  const data = storyData.filter(d => d.hits.trim());
   const html = createHTML({ data, path });
   return html;
 };
