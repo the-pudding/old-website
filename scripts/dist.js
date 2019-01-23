@@ -31,6 +31,8 @@ function init() {
   inlineAssets('about/');
   // topics
   inlineAssets('topics/');
+  // archives
+  inlineAssets('archives/');
   // authors
   const authors = fse
     .readdirSync(`${cwd}/dist/author`)
