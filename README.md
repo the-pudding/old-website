@@ -38,9 +38,6 @@ All modifications should go in the `templates` JS files, for example `templates/
 
 All other copy should be made in the HTML in the `templates` directory.
 
-### Adding a new story
+### Publishing a Story
 
-- Add 640x320 jpg to `dev/common/assets/story-thumbnails`
-- `npm run start`
-- `npm run dist`
-- `make live` (need amazon CLI setup)
+See [here](https://github.com/the-pudding/FYI/wiki/Publishing-New-Story) for instructions.
