@@ -4,12 +4,22 @@
   const $selectSort = d3.selectAll('.field__sort select');
   const $selectFilter = d3.selectAll('.field__filter select');
   const storyData = [];
+  const filters = {
+    author: null,
+    topic: null,
+    chart: null,
+    tech: null,
+    search: null
+  };
+
   const attrs = [
     'id',
     'topic',
     'chart',
     'tech',
     'author',
+    'author_slug',
+    'author_name',
     'hed',
     'dek',
     'date',
@@ -28,7 +38,9 @@
     });
     storyData.forEach(d => {
       d.views = +d.views;
-      d.author = d.author.split(',');
+      d.author = d.author.split(',').map(d => d.trim());
+      d.author_slug = d.author_slug.split(',').map(d => d.trim());
+      d.author_name = d.author_name.split(',').map(d => d.trim());
       d.date = new Date(d.date);
     });
   }
@@ -37,18 +49,40 @@
     $li.classed('is-hidden', false);
   }
 
-  function handleKeyUp() {
-    reset();
-    if (this.value.length) {
-      const ids = storyData
-        .filter(d => d.hed.includes(this.value) || d.dek.includes(this.value))
-        .map(d => d.id);
-
-      $li.classed('is-hidden', d => !ids.includes(d.id));
-    }
+  function applyFilters(d) {
+    if (filters.author && !d.author_name.includes(filters.author)) return false;
+    if (filters.topic && !d.topic.includes(filters.topic)) return false;
+    if (filters.chart && !d.chart.includes(filters.chart)) return false;
+    if (filters.tech && !d.tech.includes(filters.tech)) return false;
+    if (
+      filters.search &&
+      !d.hed.includes(filters.search) &&
+      !d.dek.includes(filters.search)
+    )
+      return false;
+    return true;
   }
 
-  function handleFilter() {}
+  function updateStories() {
+    const ids = storyData.filter(applyFilters).map(d => d.id);
+    $li.classed('is-hidden', d => !ids.includes(d.id));
+  }
+
+  function handleKeyUp() {
+    reset();
+    filters.search = this.value ? this.value : null;
+    updateStories();
+  }
+
+  function handleFilter() {
+    reset();
+    const $el = d3.select(this);
+    const f = $el.attr('data-filter');
+    filters[f] = ['Author', 'Topic', 'Chart', 'Tech'].includes(this.value)
+      ? null
+      : this.value;
+    updateStories();
+  }
 
   function handleSort() {
     if (this.value === 'Oldest to Newest') {
@@ -62,13 +96,14 @@
 
   function setupFilters() {
     // author
-    const authorData = []
-      .concat(...storyData.map(d => d.author))
-      .filter((v, i, a) => a.indexOf(v) === i);
+    const authorNameData = []
+      .concat(...storyData.map(d => d.author_name))
+      .filter((v, i, a) => a.indexOf(v) === i)
+      .sort(d3.ascending);
 
     d3.select('select.filter--author')
       .selectAll('option')
-      .data(['Author', ...authorData])
+      .data(['Author', ...authorNameData])
       .enter()
       .append('option')
       .text(d => d);

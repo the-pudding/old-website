@@ -51,25 +51,25 @@
 				<legend>Filter By</legend>
 				<ul>
 					<li>
-						<select class='filter--author'>
+						<select data-filter='author' class='filter--author'>
 							<option>Author</option>
 						</select>
 					</li>
 
 					<li>
-						<select class='filter--topic'>
+						<select data-filter='topic'class='filter--topic'>
 							<option>Topic</option>
 						</select>
 					</li>
 
 					<li>
-						<select class='filter--chart'>
+						<select data-filter='chart' class='filter--chart'>
 							<option>Chart Type</option>
 						</select>
 					</li>
 
 					<li>
-						<select class='filter--tech'>
+						<select data-filter='tech'class='filter--tech'>
 							<option>Tech</option>
 						</select>
 					</li>

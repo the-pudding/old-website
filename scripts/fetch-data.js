@@ -127,7 +127,7 @@ function joinStoryData({ analytics, stories }) {
 function authorStoryData(data) {
   return data.map(d => ({
     ...d,
-    author_html: getAuthor(d)
+    ...getAuthor(d)
   }));
 }
 
@@ -145,7 +145,6 @@ function initStoryData() {
     fetchAnalytics()
       .then(fetchStories)
       .then(joinStoryData)
-      .then(authorStoryData)
       .then(authorStoryData)
       .then(writeStoryData)
       .then(resolve)

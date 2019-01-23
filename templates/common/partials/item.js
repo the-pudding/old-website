@@ -10,6 +10,8 @@ module.exports = function({ path, story, hit }) {
       story.chart
     }' data-tech='${story.tech}' data-author='${
       story.author
+    }' data-author_slug='${story.author_slug}' data-author_name='${
+      story.author_name
     }' data-hed='${story.hed.toLowerCase()}' data-dek='${story.dek.toLowerCase()}' data-date='${
       story.date
     }' data-views='${story.views}'`;

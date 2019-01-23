@@ -7,10 +7,18 @@ const authorData = JSON.parse(
 );
 
 module.exports = function getAuthor(story) {
-  return story.author
-    .map(d => {
-      const { name, slug } = authorData.find(a => a.id === d);
-      return `<a href='https://pudding.cool/author/${slug}'>${name}</a>`;
-    })
-    .join(', ');
+  const all = story.author.map(d => {
+    const { name, slug } = authorData.find(a => a.id === d);
+    return {
+      html: `<a href='https://pudding.cool/author/${slug}'>${name}</a>`,
+      name,
+      slug
+    };
+  });
+
+  return {
+    author_html: all.map(d => d.html).join(', '),
+    author_name: all.map(d => d.name).join(', '),
+    author_slug: all.map(d => d.slug).join(', ')
+  };
 };
