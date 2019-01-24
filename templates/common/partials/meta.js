@@ -8,7 +8,7 @@
 
 module.exports = function({
   title = 'The Pudding',
-  description = 'The Pudding is an editorial publication that explains ideas debated in culture with visual essays.'
+  description = 'The Pudding explains ideas debated in culture with visual essays.'
 }) {
   const post = title === 'The Pudding' ? '' : ' - The Pudding';
   return `

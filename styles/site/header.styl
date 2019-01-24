@@ -9,7 +9,6 @@ header
 	position fixed
 	top 0
 	left 0
-	transform translate3d(0,0,0)
 	background $bg
 	width 100%
 	overflow hidden
@@ -37,7 +36,7 @@ header
 
 
 	.header__sidebar
-		position fixed
+		position absolute
 		top 0
 		left 0
 		padding 0.5rem 1rem
@@ -51,10 +50,11 @@ header
 			width $sidebar-width
 			padding 0
 			padding-top 1rem
+			transform translate3d(0,0,0)
 			
 
 		.sidebar__social
-			padding-right 3rem
+			padding-right 3.5rem
 			+mq('bp-m')
 				padding-right 0
 
@@ -122,18 +122,81 @@ header
 
 		
 	.header__menu
-		background none
-		padding 0
-		width 1.75rem
-		position absolute
-		line-height 1
-		top 50%
-		transform translateY(-50%)
-		right 1rem
+		position fixed
+		top 0
+		right 0
+		transform translateX(100%)
+		height 100vh
+		width 100%
+		max-width 25rem
+		padding 1rem 1.5rem
+		background-color $fg
+		color $off-white
+		z-index set-index(overlay)
+		transition transform 200ms ease-in-out
+		+mq('bp-3')
+			border-left 1px solid $gray-dark
+
+		&.is-visible
+			transform translateX(0)
+
+		a
+			color $off-white
+			border-bottom 1px solid $off-white
+			&:hover
+				color $gray-light
+
+		.menu__links li
+			margin-bottom 0.5rem
+			set-type-size(medium)
+
+
+		.menu__patreon
+			margin-top 3rem
+			font-size 20px
+			line-height 1.2
+
+		.menu__patreon a
+			display inline-block
+			font-weight 700
+			color $bg
+			border 1px solid $bg
+			padding 0.5em 0.75em
+			font-size 0.8em
+			text-transform uppercase
+			margin-top 1rem
+		
+		.menu__tagline
+			margin-top 1.5rem
+			margin-bottom 1.5rem
+			set-type-size(large, false)
+			line-height 1.2
+			font-weight 700
+			padding-right 0.5rem
+
+		
+
+
+	.header__toggle-on
+		position relative
+		display block
+		padding-right 1.5rem
+		cursor pointer
+
 		+mq('bp-m')
 			display none
 
 		svg
-			stroke $gray
-			width 100%
-			height 100%
+			stroke $gray	
+		
+
+	.header__toggle-off
+		position absolute
+		top 0.75rem
+		right 0.75rem
+		cursor pointer
+
+		svg
+			stroke $off-white	
+		
+		

@@ -31,8 +31,27 @@ module.exports = function() {
 					<li><a href='http://eepurl.com/czym6f' target='_blank' class='btn'>Join our Newsletter</a></li>
 				</ul>
 			</nav>
+			
+			<div class='header__menu'>
+				<btn class='header__toggle-off'>
+					<img inline src='dev/common/assets/svg/x.svg'>
+				</btn>
+				<p class='menu__tagline'>The Pudding explains ideas debated in culture with visual essays.</p>
+				<ul class='menu__links'>
+					<li><a href='https://pudding.cool/about'>About</a></li>
+					<li><a href='https://pudding.cool/about#contact'>Contact</a></li>
+					<li><a href='https://pudding.cool/archives'>Archives</a></li>
+					<li><a href='https://pudding.cool/topics'>Topics</a></li>
+					<li><a href='http://eepurl.com/czym6f' target='_blank'>Join our Newsletter</a></li>
+				</ul>
+				<p class='menu__patreon'>We pour our ❤️ into these stories, but they take time and money. For just $1/month, you can help support us. Join our
+				growing community of data-driven enthusiasts.<br><a class='random-background' href='https://www.patreon.com/thepudding' target='_blank' onclick='trackOutboundLink("https://www.patreon.com/thepudding"); return false;'>Help fund us</a></p>
+			</div>
+			
+			<btn class='header__toggle-on'>
+				<img inline src='dev/common/assets/svg/menu.svg'>
+			</btn>
 
-			<button class='btn header__menu'><img inline src='dev/common/assets/svg/menu.svg'></a></button>
 		</header>
 	`;
 };
