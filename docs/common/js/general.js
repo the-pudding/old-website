@@ -2,6 +2,15 @@
   var DPR = Math.min(2, window.devicePixelRatio);
   var ORIG = 640;
 
+  function header() {
+    const $header = d3.select('header');
+    const $menu = $header.select('.header__menu');
+    const $toggleOn = $header.select('.header__toggle-on');
+    const $toggleOff = $header.select('.header__toggle-off');
+    $toggleOn.on('click', () => $menu.classed('is-visible', true));
+    $toggleOff.on('click', () => $menu.classed('is-visible', false));
+  }
+
   function random() {
     var numColors = 4;
     var r = Math.floor(Math.random() * numColors);
@@ -41,6 +50,7 @@
     });
   }
 
+  header();
   random();
   // images();
 })();
