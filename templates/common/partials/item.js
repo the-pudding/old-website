@@ -1,6 +1,5 @@
 module.exports = function({ path, story }) {
-  // const src = `${path}common/assets/thumbnails/640/${story.img}.jpg`;
-  const src = 'https://placehold.it/640x320.jpg';
+  const src = `${path}common/assets/thumbnails/640/${story.image}.jpg`;
 
   const hitHTML = () =>
     story.hits ? `<p class='img__hit random-background'>${story.hits}</p>` : '';

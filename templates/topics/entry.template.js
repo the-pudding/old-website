@@ -23,7 +23,6 @@
     const sz = $ul.size();
     const count = d3.range(sz);
     d3.shuffle(count);
-    const chosen = count[0];
 
     const $btn = d3.select('.topics__nav').select(`[data-topic='${t}']`);
     if ($btn.size()) handleTopicClick.call($btn.node());

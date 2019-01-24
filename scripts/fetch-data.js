@@ -4,7 +4,7 @@ const d3 = require('d3');
 
 const cwd = process.cwd();
 
-const getAuthor = require(`${cwd}/scripts/helpers/get-author.js`);
+const getAuthor = require(`${cwd}/scripts/get-author.js`);
 
 const url = {
   base: 'https://docs.google.com/spreadsheets/d',
@@ -114,7 +114,7 @@ function joinStoryData({ analytics, stories }) {
       d.author = d.author.split(',').map(a => a.trim());
 
       // clean topic
-      d.topic = d.topic.toLowerCase().trim();
+      d.topic = d.topic.split(',').map(v => v.toLowerCase().trim());
     });
 
     data.reverse();
@@ -128,6 +128,22 @@ function authorStoryData(data) {
   return data.map(d => ({
     ...d,
     ...getAuthor(d)
+  }));
+}
+
+function imageStoryData(data) {
+  const getImage = d => {
+    try {
+      if (fse.statSync(`${cwd}/dev/common/assets/thumbnails/1920/${d.img}.jpg`))
+        return d.img;
+    } catch (err) {
+      return d.topic[0];
+    }
+  };
+
+  return data.map(d => ({
+    ...d,
+    image: getImage(d)
   }));
 }
 
@@ -146,6 +162,7 @@ function initStoryData() {
       .then(fetchStories)
       .then(joinStoryData)
       .then(authorStoryData)
+      .then(imageStoryData)
       .then(writeStoryData)
       .then(resolve)
       .catch(reject);

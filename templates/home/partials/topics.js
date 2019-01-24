@@ -1,10 +1,9 @@
 const fse = require('fs-extra');
-const d3 = require('d3');
 
 const cwd = process.cwd();
 
-const IGNORE = ['how to', 'awards'];
 const Item = require(`${cwd}/templates/common/partials/item`);
+const topicsData = require(`${cwd}/scripts/topics-data.js`);
 
 const storyData = JSON.parse(
   fse.readFileSync(`${cwd}/.tmp/data/stories.json`, 'utf-8')
@@ -13,17 +12,17 @@ const storyData = JSON.parse(
 function createHTML({ data, path }) {
   const stories = data
     .map(topic => {
-      const storyItems = topic.value
+      const storyItems = topic.values
         .map(story => `<li>${Item({ story, path })}</li>`)
         .join('');
       return `<ul data-topic='${topic.key}'>${storyItems}</ul>`;
     })
     .join('');
 
-  const nav = data
+  const nav = topicsData
     .map(
       topic =>
-        `<li><button data-topic='${topic.key}'>${topic.key}</button></li>`
+        `<li><button data-topic='${topic.value}'>${topic.slug}</button></li>`
     )
     .join('');
 
@@ -38,12 +37,11 @@ function createHTML({ data, path }) {
 }
 
 module.exports = function({ path = '' }) {
-  const filtered = storyData.filter(d => d.topic && !IGNORE.includes(d.topic));
-  const data = d3
-    .nest()
-    .key(d => d.topic)
-    .rollup(v => v.slice(0, 6))
-    .entries(filtered);
+  const data = topicsData.map(d => ({
+    key: d.slug,
+    values: storyData.filter(d => d.topic.includes(d.slug)).slice(0, 6)
+  }));
+
   const html = createHTML({ data, path });
   return html;
 };
