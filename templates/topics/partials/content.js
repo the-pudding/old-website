@@ -39,7 +39,7 @@ function createHTML({ data }) {
 module.exports = function() {
   const data = topicsData.map(d => ({
     key: d.slug,
-    values: storyData.filter(d => d.topic.includes(d.slug)).slice(0, 6)
+    values: storyData.filter(v => v.topic.includes(d.slug)).slice(0, 6)
   }));
   const html = createHTML({ data });
   return html;
