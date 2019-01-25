@@ -13,17 +13,6 @@
 
 @font-face {
   font-family: 'National 2 Narrow Web';
-  src: url('https://pudding.cool/assets/fonts/national/National2NarrowWeb-Extralight.woff2')
-      format('woff2'),
-    url('https://pudding.cool/assets/fonts/national/National2NarrowWeb-Extralight.woff')
-      format('woff');
-  font-weight: 200;
-  font-style: normal;
-  font-stretch: normal;
-}
-
-@font-face {
-  font-family: 'National 2 Narrow Web';
   src: url('https://pudding.cool/assets/fonts/national/National2NarrowWeb-Regular.woff2')
       format('woff2'),
     url('https://pudding.cool/assets/fonts/national/National2NarrowWeb-Regular.woff')

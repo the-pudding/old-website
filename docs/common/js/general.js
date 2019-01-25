@@ -52,5 +52,5 @@
 
   header();
   random();
-  // images();
+  images();
 })();
