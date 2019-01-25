@@ -1,8 +1,11 @@
 module.exports = [
-  { slug: 'music', label: 'Music' },
   {
     slug: 'sports',
     label: 'Sports'
+  },
+  {
+    slug: 'people',
+    label: 'People & Culture'
   },
   {
     slug: 'entertainment',
@@ -12,8 +15,6 @@ module.exports = [
     slug: 'social',
     label: 'Social Issues'
   },
-  {
-    slug: 'people',
-    label: 'People & Culture'
-  }
+
+  { slug: 'music', label: 'Music' }
 ];

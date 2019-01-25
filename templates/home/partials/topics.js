@@ -22,7 +22,7 @@ function createHTML({ data, path }) {
   const nav = topicsData
     .map(
       topic =>
-        `<li><button data-topic='${topic.value}'>${topic.slug}</button></li>`
+        `<li><button data-topic='${topic.slug}'>${topic.label}</button></li>`
     )
     .join('');
 

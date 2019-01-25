@@ -84,42 +84,37 @@ function joinStoryData({ analytics, stories }) {
 
     const data = d3.csvParse(stories);
     // merge the two
-    data.forEach(d => {
-      // find match in analytics
-      const key = d.views_key;
-      const matchPudding = analyticsData.pudding.filter(
-        a => a.Pudding.toLowerCase().trim() === key.toLocaleLowerCase().trim()
-      );
-      const matchPolygraph = analyticsData.polygraph.filter(
-        a => a.Polygraph.toLowerCase().trim() === key.toLocaleLowerCase().trim()
-      );
+    const sanitized = data
+      .filter(d => !d.ignore)
+      .map(d => {
+        // find match in analytics
+        const key = d.views_key;
+        const matchPudding = analyticsData.pudding.filter(
+          a => a.Pudding.toLowerCase().trim() === key.toLocaleLowerCase().trim()
+        );
+        const matchPolygraph = analyticsData.polygraph.filter(
+          a =>
+            a.Polygraph.toLowerCase().trim() === key.toLocaleLowerCase().trim()
+        );
 
-      const sumPudding = d3.sum(matchPudding, a => +a['']);
-      const sumPolygraph = d3.sum(matchPolygraph, a => +a['']);
+        const sumPudding = d3.sum(matchPudding, a => +a['']);
+        const sumPolygraph = d3.sum(matchPolygraph, a => +a['']);
 
-      // views
-      d.views = sumPudding + sumPolygraph;
-      d.views_display = d3.format('.2s')(d.views);
+        return {
+          ...d,
+          views: sumPudding + sumPolygraph,
+          views_display: d3.format('.2s')(d.views),
+          img: d.url.toLowerCase().replace(/\//g, '_'),
+          date: d3.timeParse('%m/%d/%Y')(d.date),
+          time: d3.timeFormat('%B %Y')(d.date),
+          author: d.author.split(',').map(a => a.trim()),
+          topic: d.topic.split(',').map(v => v.toLowerCase().trim())
+        };
+      });
 
-      // add img
-      d.img = d.url.toLowerCase().replace(/\//g, '_');
+    sanitized.reverse();
 
-      // time
-      // d.time = +d.date.slice(-4) < 2017 ? 'Internet old' : moment(d.date, 'MM/DD/YYYY').fromNow()
-      // d.time = d.time.includes('hours') ? 'Today' : d.time
-      d.date = d3.timeParse('%m/%d/%Y')(d.date);
-      d.time = d3.timeFormat('%B %Y')(d.date);
-
-      // authors
-      d.author = d.author.split(',').map(a => a.trim());
-
-      // clean topic
-      d.topic = d.topic.split(',').map(v => v.toLowerCase().trim());
-    });
-
-    data.reverse();
-
-    if (data) resolve(data);
+    if (sanitized) resolve(sanitized);
     else reject('no data');
   });
 }
