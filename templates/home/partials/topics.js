@@ -3,7 +3,9 @@ const fse = require('fs-extra');
 const cwd = process.cwd();
 
 const Item = require(`${cwd}/templates/common/partials/item`);
-const topicsData = require(`${cwd}/scripts/topics-data.js`);
+const topicsData = JSON.parse(
+  fse.readFileSync(`${cwd}/scripts/topics-data.json`)
+);
 
 const storyData = JSON.parse(
   fse.readFileSync(`${cwd}/.tmp/data/stories.json`, 'utf-8')

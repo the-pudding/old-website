@@ -10,6 +10,10 @@ const Header = require(`${cwd}/templates/common/partials/header`);
 const Footer = require(`${cwd}/templates/common/partials/footer`);
 const Stories = require(`${cwd}/templates/archives/partials/stories`);
 
+const topicsData = JSON.parse(
+  fse.readFileSync(`${cwd}/scripts/topics-data.json`)
+);
+
 function cleanTemp(dir) {
   console.log('cleaning tmp folder...');
   return new Promise((resolve, reject) => {
@@ -30,6 +34,12 @@ function copyHTMLTemplate() {
   return Promise.resolve();
 }
 
+function compileTopicsJS() {
+  return `
+		window.topicsData = '${JSON.stringify(topicsData)}';
+	`;
+}
+
 function compileEntryJS() {
   const input = fse.readFileSync(
     `${cwd}/templates/archives/entry.template.js`,
@@ -46,6 +56,7 @@ function createMarkup() {
   const headerHTML = Header('../');
   const storiesHTML = Stories();
   const footerHTML = Footer();
+  const topicsJS = compileTopicsJS();
   const entryJS = compileEntryJS();
 
   const options = {
@@ -55,9 +66,10 @@ function createMarkup() {
       '<!-- header -->',
       '<!-- stories -->',
       '<!-- footer -->',
+      '/* topics.js */',
       '/* entry.js */'
     ],
-    to: [metaHTML, headerHTML, storiesHTML, footerHTML, entryJS]
+    to: [metaHTML, headerHTML, storiesHTML, footerHTML, topicsJS, entryJS]
   };
 
   return new Promise((resolve, reject) => {

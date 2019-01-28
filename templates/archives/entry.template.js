@@ -109,16 +109,15 @@
       .text(d => d);
 
     // topic
-    const topicData = []
-      .concat(...storyData.map(d => d.topic))
-      .filter((v, i, a) => a.indexOf(v) === i);
+    const topicData = JSON.parse(window.topicsData);
 
     d3.select('select.filter--topic')
       .selectAll('option')
       .data(['Topic', ...topicData])
       .enter()
       .append('option')
-      .text(d => d);
+      .property('value', d => d.slug)
+      .text(d => d.label);
   }
 
   function init() {
