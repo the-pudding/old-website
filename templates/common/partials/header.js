@@ -4,19 +4,19 @@ module.exports = function(path) {
 		<header>
 			
 			<div class='header__title'>
-				<a class='header__wordmark' href='${path}' target='_blank'>
+				<a class='header__wordmark' href='${path}'>
 					<img inline src='dev/common/assets/svg/pudding-wordmark.svg'>
 				</a>
 			</div>
 			
 			<div class='header__sidebar'>
-				<a class='header__logo' href='${path}' target='_blank'>
+				<a class='header__logo' href='${path}'>
 					<img inline src='dev/common/assets/svg/pudding-logo.svg'>
 				</a>
 				<ul class='sidebar__social'>
-					<li><a target='_blank' href='https://www.facebook.com/pudding.viz/' class='logo--facebook'><img inline src='dev/common/assets/svg/facebook.svg'></a></li>
-					<li><a target='_blank' href='https://twitter.com/puddingviz' class='logo--twitter'><img inline src='dev/common/assets/svg/twitter.svg'></a></li>
 					<li><a target='_blank' href='https://www.instagram.com/pudding.cool' class='logo--instagram'><img inline src='dev/common/assets/svg/instagram.svg'></a></li>
+					<li><a target='_blank' href='https://twitter.com/puddingviz' class='logo--twitter'><img inline src='dev/common/assets/svg/twitter.svg'></a></li>
+					<li><a target='_blank' href='https://www.facebook.com/pudding.viz/' class='logo--facebook'><img inline src='dev/common/assets/svg/facebook.svg'></a></li>					
 					<li><a target='_blank' href='https://www.patreon.com/thepudding' class='logo--patreon'><img inline src='dev/common/assets/svg/patreon.svg'></a></li>
 				</ul>
 			</div>

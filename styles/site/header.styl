@@ -83,14 +83,21 @@ header
 			li
 				display block
 				line-height 1
-				&:last-of-type
+				&:nth-child(n+3)
 					display none
+				+mq('bp-3')
+					&:nth-child(n+3)
+						display block
 				+mq('bp-m')
 					margin-bottom 0.5rem
 					&:last-of-type
 						display block
 			a
 				width 2rem
+				text-align center
+				+mq('bp-m')
+					text-align left
+
 				
 		
 	.header__nav
