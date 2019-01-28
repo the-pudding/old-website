@@ -1,14 +1,14 @@
 const fse = require('fs-extra');
 const replace = require('replace-in-file');
 const { inlineSource } = require('inline-source');
-const buble = require('buble');
 
 const cwd = process.cwd();
 
 const Meta = require(`${cwd}/templates/common/partials/meta`);
 const Header = require(`${cwd}/templates/common/partials/header`);
 const Footer = require(`${cwd}/templates/common/partials/footer`);
-const Content = require(`${cwd}/templates/topics/partials/content`);
+const Content = require(`${cwd}/templates/about/partials/content`);
+const Team = require(`${cwd}/templates/about/partials/team`);
 
 function cleanTemp(dir) {
   console.log('cleaning tmp folder...');
@@ -22,42 +22,33 @@ function cleanTemp(dir) {
 
 function copyHTMLTemplate() {
   console.log('copying html template file...');
-  fse.ensureDirSync(`${cwd}/.tmp/topics`);
+  fse.ensureDirSync(`${cwd}/.tmp/about`);
   fse.copySync(
-    `${cwd}/templates/topics/index.template`,
-    `${cwd}/.tmp/topics/index.template`
+    `${cwd}/templates/about/index.template`,
+    `${cwd}/.tmp/about/index.template`
   );
   return Promise.resolve();
-}
-
-function compileEntryJS() {
-  const input = fse.readFileSync(
-    `${cwd}/templates/topics/entry.template.js`,
-    'utf-8'
-  );
-  const output = buble.transform(input);
-  return output.code;
 }
 
 function createMarkup() {
   console.log('creating markup...');
 
-  const metaHTML = Meta({ title: 'Topics' });
-  const headerHTML = Header();
+  const metaHTML = Meta({ title: 'About' });
+  const headerHTML = Header('../');
   const contentHTML = Content();
+  const teamHTML = Team();
   const footerHTML = Footer();
-  const entryJS = compileEntryJS();
 
   const options = {
-    files: `${cwd}/.tmp/topics/index.template`,
+    files: `${cwd}/.tmp/about/index.template`,
     from: [
       '<!-- meta -->',
       '<!-- header -->',
       '<!-- content -->',
-      '<!-- footer -->',
-      '/* entry-js */'
+      '<!-- team -->',
+      '<!-- footer -->'
     ],
-    to: [metaHTML, headerHTML, contentHTML, footerHTML, entryJS]
+    to: [metaHTML, headerHTML, contentHTML, teamHTML, footerHTML]
   };
 
   return new Promise((resolve, reject) => {
@@ -69,15 +60,15 @@ function createMarkup() {
 
 function copyHTMLToDev(files) {
   return new Promise((resolve, reject) => {
-    const path = `${cwd}/.tmp/topics/index.html`;
+    const path = `${cwd}/.tmp/about/index.html`;
     fse.copySync(files[0], path);
     inlineSource(path, {
       compress: false,
       ignore: ['css', 'js']
     })
       .then(html => {
-        fse.ensureDirSync(`${cwd}/dev/topics`);
-        fse.writeFileSync(`${cwd}/dev/topics/index.html`, html);
+        fse.ensureDirSync(`${cwd}/dev/about`);
+        fse.writeFileSync(`${cwd}/dev/about/index.html`, html);
         resolve();
       })
       .catch(reject);
@@ -95,10 +86,10 @@ function createHTML() {
 }
 
 function init() {
-  cleanTemp('topics')
+  cleanTemp('about')
     .then(createHTML)
     .then(() => {
-      console.log('DONE: topics.js');
+      console.log('DONE: about.js');
       process.exit();
     })
     .catch(err => console.log(err));

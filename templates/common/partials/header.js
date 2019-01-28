@@ -1,16 +1,16 @@
-module.exports = function() {
+module.exports = function(path) {
   return `
 		<a href='#content' class='skip-to-main'>Skip to main content</a>
 		<header>
 			
 			<div class='header__title'>
-				<a class='header__wordmark' href='https://pudding.cool' target='_blank'>
+				<a class='header__wordmark' href='${path}' target='_blank'>
 					<img inline src='dev/common/assets/svg/pudding-wordmark.svg'>
 				</a>
 			</div>
 			
 			<div class='header__sidebar'>
-				<a class='header__logo' href='https://pudding.cool' target='_blank'>
+				<a class='header__logo' href='${path}' target='_blank'>
 					<img inline src='dev/common/assets/svg/pudding-logo.svg'>
 				</a>
 				<ul class='sidebar__social'>
@@ -23,11 +23,11 @@ module.exports = function() {
 
 			<nav class='header__nav'>
 				<ul class='nav__links'>
-					<li><a href='https://pudding.cool/about'>About</a></li>
-					<li><a href='https://pudding.cool/about#contact'>Contact</a></li>
-					<li><a href='https://pudding.cool/archives'>Archives</a></li>
-					<li><a href='https://pudding.cool/topics'>Topics</a></li>
-					<li><a href='https://pudding.cool/#how'>How-To</a></li>
+					<li><a href='${path}about'>About</a></li>
+					<li><a href='${path}about#contact'>Contact</a></li>
+					<li><a href='${path}archives'>Archives</a></li>
+					<li><a href='${path}topics'>Topics</a></li>
+					<li><a href='${path}#how'>How-To</a></li>
 					<li><a href='http://eepurl.com/czym6f' target='_blank' class='btn'>Join our Newsletter</a></li>
 				</ul>
 			</nav>
@@ -38,10 +38,10 @@ module.exports = function() {
 				</btn>
 				<p class='menu__tagline'>The Pudding explains ideas debated in culture with visual essays.</p>
 				<ul class='menu__links'>
-					<li><a href='https://pudding.cool/about'>About</a></li>
-					<li><a href='https://pudding.cool/about#contact'>Contact</a></li>
-					<li><a href='https://pudding.cool/archives'>Archives</a></li>
-					<li><a href='https://pudding.cool/topics'>Topics</a></li>
+					<li><a href='${path}about'>About</a></li>
+					<li><a href='${path}about#contact'>Contact</a></li>
+					<li><a href='${path}archives'>Archives</a></li>
+					<li><a href='${path}topics'>Topics</a></li>
 					<li><a href='http://eepurl.com/czym6f' target='_blank'>Join our Newsletter</a></li>
 				</ul>
 				<p class='menu__patreon'>We pour our ❤️ into these stories, but they take time and money. For just $1/month, you can help support us. Join our

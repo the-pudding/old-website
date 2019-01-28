@@ -1,5 +1,9 @@
 module.exports = function({ path, story }) {
   const src = `${path}common/assets/thumbnails/640/${story.image}.jpg`;
+  const authorHTML = story.author_html.replace(
+    /https\:\/\/pudding\.cool/g,
+    path
+  );
 
   const hitHTML = () =>
     story.hits ? `<p class='img__hit random-background'>${story.hits}</p>` : '';
@@ -29,7 +33,7 @@ module.exports = function({ path, story }) {
 				</a>
 				<p class='item__dek tk-tiempos'>${story.dek}</p>
 				<time class='item__time' datetime='${story.date}'></time>
-				<p class='item__author'>By ${story.author_html}</p>
+				<p class='item__author'>By ${authorHTML}</p>
 			</div>
 		</div>
 	`;

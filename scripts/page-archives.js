@@ -7,23 +7,13 @@ const cwd = process.cwd();
 
 const Meta = require(`${cwd}/templates/common/partials/meta`);
 const Header = require(`${cwd}/templates/common/partials/header`);
-const Picks = require(`${cwd}/templates/home/partials/picks`);
-const New = require(`${cwd}/templates/home/partials/new`);
-const Hits = require(`${cwd}/templates/home/partials/hits`);
-const Topics = require(`${cwd}/templates/home/partials/topics`);
-const How = require(`${cwd}/templates/home/partials/how`);
-const Cta = require(`${cwd}/templates/common/partials/cta`);
 const Footer = require(`${cwd}/templates/common/partials/footer`);
-
-const storyData = JSON.parse(
-  fse.readFileSync(`${cwd}/.tmp/data/stories.json`, 'utf-8')
-);
+const Stories = require(`${cwd}/templates/archives/partials/stories`);
 
 function cleanTemp(dir) {
-  fse.ensureDirSync(`${cwd}/.tmp`);
   console.log('cleaning tmp folder...');
   return new Promise((resolve, reject) => {
-    fse.remove(`.tmp/${dir}`, err => {
+    fse.remove(`${cwd}/.tmp/${dir}`, err => {
       if (err) reject(err);
       else resolve();
     });
@@ -32,17 +22,17 @@ function cleanTemp(dir) {
 
 function copyHTMLTemplate() {
   console.log('copying html template file...');
-  fse.ensureDirSync(`${cwd}/.tmp/home`);
+  fse.ensureDirSync(`${cwd}/.tmp/archives`);
   fse.copySync(
-    `${cwd}/templates/home/index.template`,
-    `${cwd}/.tmp/home/index.template`
+    `${cwd}/templates/archives/index.template`,
+    `${cwd}/.tmp/archives/index.template`
   );
   return Promise.resolve();
 }
 
 function compileEntryJS() {
   const input = fse.readFileSync(
-    `${cwd}/templates/home/entry.template.js`,
+    `${cwd}/templates/archives/entry.template.js`,
     'utf-8'
   );
   const output = buble.transform(input);
@@ -52,46 +42,22 @@ function compileEntryJS() {
 function createMarkup() {
   console.log('creating markup...');
 
-  const metaHTML = Meta({});
-  const headerHTML = Header();
-  const picksHTML = Picks({});
-  const newHTML = New({});
-  const topicsHTML = Topics({});
-  const ctaHTML = Cta();
-  const hitsHTML = Hits({});
-  const howHTML = How({});
-  const footerHTML = Footer({});
-  const storyJS = JSON.stringify(storyData);
+  const metaHTML = Meta({ title: 'Archives' });
+  const headerHTML = Header('../');
+  const storiesHTML = Stories();
+  const footerHTML = Footer();
   const entryJS = compileEntryJS();
 
   const options = {
-    files: `${cwd}/.tmp/home/index.template`,
+    files: `${cwd}/.tmp/archives/index.template`,
     from: [
       '<!-- meta -->',
       '<!-- header -->',
-      '<!-- picks -->',
-      '<!-- new -->',
-      '<!-- topics -->',
-      '<!-- cta -->',
-      '<!-- hits -->',
-      '<!-- how -->',
+      '<!-- stories -->',
       '<!-- footer -->',
-      '/* story-data */',
-      '/* entry-js */'
+      '/* entry.js */'
     ],
-    to: [
-      metaHTML,
-      headerHTML,
-      picksHTML,
-      newHTML,
-      topicsHTML,
-      ctaHTML,
-      hitsHTML,
-      howHTML,
-      footerHTML,
-      storyJS,
-      entryJS
-    ]
+    to: [metaHTML, headerHTML, storiesHTML, footerHTML, entryJS]
   };
 
   return new Promise((resolve, reject) => {
@@ -103,14 +69,15 @@ function createMarkup() {
 
 function copyHTMLToDev(files) {
   return new Promise((resolve, reject) => {
-    const path = `${cwd}/.tmp/index.html`;
+    const path = `${cwd}/.tmp/archives/index.html`;
     fse.copySync(files[0], path);
     inlineSource(path, {
       compress: false,
       ignore: ['css', 'js']
     })
       .then(html => {
-        fse.writeFileSync(`${cwd}/dev/index.html`, html);
+        fse.ensureDirSync(`${cwd}/dev/archives`);
+        fse.writeFileSync(`${cwd}/dev/archives/index.html`, html);
         resolve();
       })
       .catch(reject);
@@ -128,10 +95,10 @@ function createHTML() {
 }
 
 function init() {
-  cleanTemp('home')
+  cleanTemp('archives')
     .then(createHTML)
     .then(() => {
-      console.log('DONE: home.js');
+      console.log('DONE: archives.js');
       process.exit();
     })
     .catch(err => console.log(err));

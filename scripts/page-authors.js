@@ -55,7 +55,7 @@ function createMarkup() {
         title: d.name,
         description: `Read more from ${d.name}} on The Pudding.`
       });
-      const headerHTML = Header();
+      const headerHTML = Header('../../');
       const bioHTML = Bio(d);
       const storiesHTML = Stories(d.stories);
       const footerHTML = Footer();
