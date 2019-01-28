@@ -16,7 +16,7 @@ function createHTML({ data, path }) {
 }
 
 module.exports = function({ path = '' }) {
-  const data = storyData.filter(d => d.topic === 'how').slice(0, 4);
+  const data = storyData.filter(d => d.topic.includes('how')).slice(0, 4);
   const html = createHTML({ data, path });
   return html;
 };
