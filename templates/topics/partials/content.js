@@ -5,7 +5,7 @@ const cwd = process.cwd();
 const Item = require(`${cwd}/templates/common/partials/item`);
 const topicsData = JSON.parse(
   fse.readFileSync(`${cwd}/scripts/topics-data.json`)
-);
+).filter(d => d.slug !== 'other');
 
 const storyData = JSON.parse(
   fse.readFileSync(`${cwd}/.tmp/data/stories.json`, 'utf-8')
