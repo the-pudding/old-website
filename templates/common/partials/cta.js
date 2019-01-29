@@ -2,7 +2,7 @@ module.exports = function() {
   return `
 		<div class='cta random-background'>
 			<div class='cta__inner'>
-				<h4 class='cta__hed tk-tiempos'>Picking up what we’re pudding down?</h4>
+				<h4 class='cta__hed'>Picking up what we’re pudding down?</h4>
 				<div class='cta__items'>
 					<div class='cta__newsletter'>
 						<p>Get the latest emailed to you</p>

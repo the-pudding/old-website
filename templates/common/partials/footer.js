@@ -2,7 +2,7 @@ module.exports = function() {
   return `
 		<footer class='random-background'>
 			<div class='footer__inner'>
-				<p class='footer__hed tk-tiempos'>
+				<p class='footer__hed'>
 					The Pudding is an editorial publication that explains ideas debated in culture with visual essays.
 				</p>
 

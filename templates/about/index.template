@@ -26,13 +26,13 @@
 	</script>
 </head>
 
-<body id='page-about' class='tk-national'>
+<body id='page-about'>
 
 	<!-- DO NOT REMOVE -->
 	<!-- header -->
 	<main id='content'>
 		<section>
-			<ul class='page-nav tk-atlas'>
+			<ul class='page-nav'>
 				<li>
 					<a href='#why'>Why “The Pudding?”</a>
 				</li>
