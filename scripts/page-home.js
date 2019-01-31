@@ -53,7 +53,7 @@ function createMarkup() {
   console.log('creating markup...');
 
   const metaHTML = Meta({});
-  const headerHTML = Header('/');
+  const headerHTML = Header('./');
   const picksHTML = Picks({});
   const newHTML = New({});
   const topicsHTML = Topics({});

@@ -37,5 +37,12 @@ module.exports = function({
 		<link rel='mask-icon' href='https://pudding.cool/safari-pinned-tab.svg' color='#5bbad5'>
 		<meta name='msapplication-TileColor' content='#ffc40d'>
 		<meta name='theme-color' content='#ffffff'>
+
+		<link rel='preload' type='font/woff2' as='font' crossorigin href='https://pudding.cool/assets/fonts/national/National2NarrowWeb-Extralight.woff2'>
+		<link rel='preload' type='font/woff2' as='font' crossorigin href='https://pudding.cool/assets/fonts/national/National2NarrowWeb-Regular.woff2'>
+		<link rel='preload' type='font/woff2' as='font' crossorigin href='https://pudding.cool/assets/fonts/national/National2NarrowWeb-Bold.woff2'>
+		<link rel='preload' type='font/woff2' as='font' crossorigin href='https://pudding.cool/assets/fonts/national/National2NarrowWeb-Black.woff2'>
+		<link rel='preload' type='font/woff2' as='font' crossorigin href='https://pudding.cool/assets/fonts/tiempos/TiemposTextWeb-Regular.woff2'>
+		<link rel='preload' type='font/woff2' as='font' crossorigin href='https://pudding.cool/assets/fonts/tiempos/TiemposTextWeb-Bold.woff2'>
 	`;
 };
