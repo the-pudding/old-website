@@ -66,7 +66,22 @@
 					border-left $line-width solid $fg 
 			
 			
-				
+	.topics__more
+		position absolute
+		bottom 0
+		right 0
+		transform translateY(150%)
+		li
+			display none			
+			&.is-visible
+				display block
+		a
+			border none
+			font-weight 500
+			color $gray-dark
+		svg
+			vertical-align middle
+			transform translateY(-7.5%)
 	
 	.story-item
 		display flex
@@ -95,3 +110,5 @@
 		a
 			display inline-block
 			text-transform uppercase
+	
+	

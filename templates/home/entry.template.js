@@ -80,6 +80,10 @@
 
     const $ul = d3.select(`#topics .topics__stories [data-topic="${topic}"]`);
     $ul.classed('is-hidden', false).classed('is-visible', true);
+
+    d3.selectAll('#topics .topics__more li').classed('is-visible', false);
+    const $li = d3.select(`#topics .topics__more [data-topic="${topic}"]`);
+    $li.classed('is-visible', true);
   }
 
   function setupTopics() {
@@ -89,12 +93,19 @@
     const count = d3.range(sz);
     d3.shuffle(count);
     const chosen = count[0];
+    let slug = null;
     $ul.each((d, i, n) => {
       const $topic = d3.select(n[i]);
-      if (chosen === i) $topic.classed('is-visible', true);
-      else $topic.classed('is-hidden', true);
+      if (chosen === i) {
+        $topic.classed('is-visible', true);
+        slug = $topic.attr('data-topic');
+      } else $topic.classed('is-hidden', true);
     });
 
+    d3.select(`#topics .topics__more [data-topic="${slug}"]`).classed(
+      'is-visible',
+      true
+    );
     d3.selectAll('#topics .topics__nav ul li')
       .classed('is-active', (d, i) => chosen === i)
       .select('button')
