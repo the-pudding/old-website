@@ -17,8 +17,10 @@
     var c = 'colorize--' + r;
     var classBackground = 'random-background--' + r;
     var classColor = 'random-color--' + r;
+    var linkColor = 'random-link--' + r;
     d3.selectAll('.random-background').classed(classBackground, true);
     d3.selectAll('.random-color').classed(classColor, true);
+    d3.select('body').classed(linkColor, true);
   }
 
   function loadImage(url, cb) {

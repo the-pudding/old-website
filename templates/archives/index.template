@@ -68,11 +68,11 @@
 						</select>
 					</li>
 
-					<li>
+					<!-- <li>
 						<select data-filter='tech'class='filter--tech'>
 							<option>Tech</option>
 						</select>
-					</li>
+					</li> -->
 					
 				</ul>
 			</fieldset>

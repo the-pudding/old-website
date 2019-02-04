@@ -78,7 +78,7 @@
     reset();
     const $el = d3.select(this);
     const f = $el.attr('data-filter');
-    filters[f] = ['Author', 'Topic', 'Chart', 'Tech'].includes(this.value)
+    filters[f] = ['Author', 'Topic', 'Chart Type', 'Tech'].includes(this.value)
       ? null
       : this.value;
     updateStories();
@@ -118,6 +118,26 @@
       .append('option')
       .property('value', d => d.slug)
       .text(d => d.label);
+
+    // chart
+    const chartData = []
+      .concat(
+        ...storyData.map(d =>
+          d.chart
+            .split(',')
+            .map(v => v.trim())
+            .filter(v => v)
+        )
+      )
+      .filter((v, i, a) => a.indexOf(v) === i)
+      .sort(d3.ascending);
+
+    d3.select('select.filter--chart')
+      .selectAll('option')
+      .data(['Chart Type', ...chartData])
+      .enter()
+      .append('option')
+      .text(d => d);
   }
 
   function init() {
