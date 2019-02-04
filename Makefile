@@ -6,7 +6,9 @@ live-home:
 	aws s3 cp dist/feed/index.xml s3://pudding.cool/feed/index.xml
 
 live-footer:
+	aws s3 cp dist/footer/stories.json s3://pudding.cool/assets/data/stories.json
 	aws s3 cp dist/footer/pudding-footer.js s3://pudding.cool/assets/scripts/pudding-footer.js
+	aws s3 cp dist/footer/pudding-footer.v2.js s3://pudding.cool/assets/scripts/pudding-footer.v2.js
 
 live-about: 
 	aws s3 sync dist/about/ s3://pudding.cool/about

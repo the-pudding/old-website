@@ -1,4 +1,33 @@
 (function() {
+  const fallbackData = [
+    {
+      image: 'projects_vocabulary',
+      url: 'projects/vocabulary',
+      hed: 'Rappers, Sorted by the Size of their Vocabulary'
+    },
+    {
+      image: '2018_12_countries',
+      url: '2018/12/countries',
+      hed: 'The World through the Eyes of the US'
+    },
+    {
+      image: '2018_04_birthday-paradox',
+      url: '2018/04/birthday-paradox',
+      hed: 'The Birthday Paradox Experiment'
+    },
+    {
+      image: '2018_02_stand-up',
+      url: '2018/02/stand-up',
+      hed: 'The Structure of Stand-Up Comedy'
+    },
+    {
+      image: '2018_08_pockets',
+      url: '2018/08/pockets',
+      hed: 'Women’s Pockets are Inferior'
+    }
+  ];
+  let storyData = null;
+
   const facebookLogo = `
 	<svg version='1.1' id='icon-facebook' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' width='7px' height='15px' viewBox='-0.7 -1.5 7 15' enable-background='new -0.7 -1.5 7 15' xml:space='preserve' aria-labelledby='facebook-title facebook-desc'>
 	<title id='facebook-title'>Facebook</title>
@@ -95,6 +124,24 @@
 	`;
   }
 
+  function loadStories(cb) {
+    const request = new XMLHttpRequest();
+    request.open('GET', 'https://pudding.cool/assets/data/stories.json', true);
+
+    request.onload = () => {
+      if (request.status >= 200 && request.status < 400) {
+        const data = JSON.parse(request.responseText);
+        cb(data);
+      } else {
+        cb(fallbackData);
+      }
+    };
+
+    request.onerror = () => cb(fallbackData);
+
+    request.send();
+  }
+
   function recircHTML() {
     const shuffle = arr => {
       let currentIndex = arr.length;
@@ -112,35 +159,37 @@
     };
 
     const createLink = obj => {
-      const img = obj.url.replace(/\//g, '_');
       return `
-			<a class='footer-recirc__article' href='https://pudding.cool/${
-        obj.url
-      }' target='_blank'>
-				<div class='article__img' style='background-image: url("https://pudding.cool/common/assets/story-thumbnails/${img}.jpg")'></div>
-					<div class='article__headline'>
-						${obj.hed}
-				</div>
-			</a>
-		`;
+		<a class='footer-recirc__article' href='https://pudding.cool/${
+      obj.url
+    }' target='_blank'>
+			<div class='article__img' style='background-image: url("https://pudding.cool/common/assets/story-thumbnails/640/${
+        obj.image
+      }.jpg")'></div>
+				<div class='article__headline'>
+					${obj.hed}
+			</div>
+		</a>
+	`;
     };
 
-    const data = JSON.parse('*recirc-data*');
     const url = window.location.href;
-    const filtered = data.filter(d => url.indexOf(d.url) === -1);
+
+    storyData.reverse();
+    const filtered = storyData.filter(d => url.indexOf(d.url) === -1);
     const selected = [
       filtered.pop(),
       filtered.pop(),
       ...shuffle(filtered).slice(0, 2)
     ];
     return `
-		<div class='footer-recirc'>
-		<p class='footer-recirc__hed'>Picking up what we’re pudding down?</p>
-		<div class='footer-recirc__articles'>
-			${selected.map(createLink).join('')}
-		</div>	  	
-	</div>
-	`;
+			<div class='footer-recirc'>
+			<p class='footer-recirc__hed'>Picking up what we’re pudding down?</p>
+			<div class='footer-recirc__articles'>
+				${selected.map(createLink).join('')}
+			</div>	  	
+		</div>
+		`;
   }
 
   function newsletterHTML() {
@@ -252,12 +301,15 @@
   }
 
   function init() {
-    // insert css (this gets piped in on the build task)
-    insertStyle('*style-data*');
+    loadStories(data => {
+      storyData = data;
+      // insert css (this gets piped in on the build task)
+      insertStyle('*style-data*');
 
-    insertHTML();
+      insertHTML();
 
-    setupSocialJS();
+      setupSocialJS();
+    });
   }
 
   init();
