@@ -11,7 +11,7 @@ module.exports = function({ path, story }) {
   const dataAttr = () =>
     `data-id='${story.url}' data-topic='${story.topic}' data-chart='${
       story.chart
-    }' data-tech='${story.tech}' data-author='${
+    }' data-keyword='${story.keyword}' data-author='${
       story.author
     }' data-author_slug='${story.author_slug}' data-author_name='${
       story.author_name

@@ -8,7 +8,7 @@
     author: null,
     topic: null,
     chart: null,
-    tech: null,
+    keyword: null,
     search: null
   };
 
@@ -16,8 +16,8 @@
     'id',
     'topic',
     'chart',
-    'tech',
     'author',
+    'keyword',
     'author_slug',
     'author_name',
     'hed',
@@ -25,6 +25,10 @@
     'date',
     'views'
   ];
+
+  function arrayify(str) {
+    return str.split(',').map(d => d.trim());
+  }
 
   function prepareData() {
     $li.each((d, i, n) => {
@@ -38,9 +42,12 @@
     });
     storyData.forEach(d => {
       d.views = +d.views;
-      d.author = d.author.split(',').map(d => d.trim());
-      d.author_slug = d.author_slug.split(',').map(d => d.trim());
-      d.author_name = d.author_name.split(',').map(d => d.trim());
+      d.author = arrayify(d.author);
+      d.topic = arrayify(d.topic);
+      d.keyword = arrayify(d.keyword);
+      d.chart = arrayify(d.chart);
+      d.author_slug = arrayify(d.author_slug);
+      d.author_name = arrayify(d.author_name);
       d.date = new Date(d.date);
     });
   }
@@ -53,11 +60,11 @@
     if (filters.author && !d.author_name.includes(filters.author)) return false;
     if (filters.topic && !d.topic.includes(filters.topic)) return false;
     if (filters.chart && !d.chart.includes(filters.chart)) return false;
-    if (filters.tech && !d.tech.includes(filters.tech)) return false;
     if (
       filters.search &&
       !d.hed.includes(filters.search) &&
-      !d.dek.includes(filters.search)
+      !d.dek.includes(filters.search) &&
+      !d.keyword.includes(filters.search)
     )
       return false;
     return true;
@@ -78,7 +85,7 @@
     reset();
     const $el = d3.select(this);
     const f = $el.attr('data-filter');
-    filters[f] = ['Author', 'Topic', 'Chart Type', 'Tech'].includes(this.value)
+    filters[f] = ['Author', 'Topic', 'Chart Type'].includes(this.value)
       ? null
       : this.value;
     updateStories();
@@ -121,14 +128,7 @@
 
     // chart
     const chartData = []
-      .concat(
-        ...storyData.map(d =>
-          d.chart
-            .split(',')
-            .map(v => v.trim())
-            .filter(v => v)
-        )
-      )
+      .concat(...storyData.map(d => d.chart.filter(v => v)))
       .filter((v, i, a) => a.indexOf(v) === i)
       .sort(d3.ascending);
 

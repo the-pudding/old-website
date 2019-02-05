@@ -74,6 +74,10 @@ function fetchStories(analytics) {
   });
 }
 
+function arrayify(str) {
+  return str.split(',').map(d => d.trim());
+}
+
 function joinStoryData({ analytics, stories }) {
   console.log('loading data...');
   return new Promise((resolve, reject) => {
@@ -100,15 +104,17 @@ function joinStoryData({ analytics, stories }) {
         const sumPudding = d3.sum(matchPudding, a => +a['']);
         const sumPolygraph = d3.sum(matchPolygraph, a => +a['']);
 
+        const date = d3.timeParse('%m/%d/%Y')(d.date);
         return {
           ...d,
+          date,
           views: sumPudding + sumPolygraph,
-          views_display: d3.format('.2s')(d.views),
           img: d.url.toLowerCase().replace(/\//g, '_'),
-          date: d3.timeParse('%m/%d/%Y')(d.date),
-          time: d3.timeFormat('%B %Y')(d.date),
-          author: d.author.split(',').map(a => a.trim()),
-          topic: d.topic.split(',').map(v => v.toLowerCase().trim())
+          time: d3.timeFormat('%B %Y')(date),
+          author: arrayify(d.author),
+          topic: arrayify(d.topic),
+          chart: arrayify(d.chart),
+          keyword: arrayify(d.keyword)
         };
       });
 
