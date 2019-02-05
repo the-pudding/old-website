@@ -24,6 +24,17 @@
 		ga('create', 'UA-90567923-1', 'auto');
 		ga('send', 'pageview');
 	</script>
+	
+	<script>
+		(function () {
+			window.trackOutboundLink = function (url, category) {
+				ga('send', 'event', category || 'outbound', 'click', url, {
+					'transport': 'beacon',
+					'hitCallback': function () { document.location = url; }
+				});
+			}
+		})()
+	</script>
 </head>
 
 <body id='page-topics'>

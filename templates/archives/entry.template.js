@@ -3,6 +3,9 @@
   const $input = d3.select('.filter input');
   const $selectSort = d3.selectAll('.field__sort select');
   const $selectFilter = d3.selectAll('.field__filter select');
+
+  let trackSearch = false;
+
   const storyData = [];
   const filters = {
     author: null,
@@ -80,6 +83,15 @@
     reset();
     filters.search = this.value ? this.value : null;
     updateStories();
+    // tracking
+    if (window.ga && !trackSearch) {
+      ga('send', {
+        hitType: 'event',
+        eventCategory: 'search',
+        eventAction: 'input'
+      });
+      trackSearch = true;
+    }
   }
 
   function handleFilter() {
@@ -91,7 +103,16 @@
     )
       ? null
       : this.value;
+
     updateStories();
+
+    // tracking
+    if (window.ga)
+      ga('send', {
+        hitType: 'event',
+        eventCategory: f,
+        eventAction: 'filter'
+      });
   }
 
   function handleSort() {
@@ -168,6 +189,14 @@
 
     handleFilter.call($sel.node());
     window.scrollTo(0, 0);
+
+    // tracking
+    if (window.ga)
+      ga('send', {
+        hitType: 'event',
+        eventCategory: value,
+        eventAction: 'tag'
+      });
   }
 
   function setupTags() {

@@ -14,21 +14,19 @@ module.exports = function(path) {
 					<img inline src='dev/common/assets/svg/pudding-logo.svg'>
 				</a>
 				<ul class='sidebar__social'>
-					<li><a target='_blank' href='https://www.instagram.com/pudding.cool' class='logo--instagram'><img inline src='dev/common/assets/svg/instagram.svg'></a></li>
-					<li><a target='_blank' href='https://twitter.com/puddingviz' class='logo--twitter'><img inline src='dev/common/assets/svg/twitter.svg'></a></li>
-					<li><a target='_blank' href='https://www.facebook.com/pudding.viz/' class='logo--facebook'><img inline src='dev/common/assets/svg/facebook.svg'></a></li>					
-					<li><a target='_blank' href='https://www.patreon.com/thepudding' class='logo--patreon'><img inline src='dev/common/assets/svg/patreon.svg'></a></li>
+					<li><a target='_blank' onclick="trackOutboundLink('https://www.instagram.com/pudding.cool'); return false;" href='https://www.instagram.com/pudding.cool' class='logo--instagram'><img inline src='dev/common/assets/svg/instagram.svg'></a></li>
+					<li><a target='_blank' onclick="trackOutboundLink('https://twitter.com/puddingviz''); return false;" href='https://twitter.com/puddingviz' class='logo--twitter'><img inline src='dev/common/assets/svg/twitter.svg'></a></li>
+					<li><a target='_blank' onclick="trackOutboundLink('https://www.facebook.com/pudding.viz'); return false;" href='https://www.facebook.com/pudding.viz/' class='logo--facebook'><img inline src='dev/common/assets/svg/facebook.svg'></a></li>					
+					<li><a target='_blank' onclick="trackOutboundLink('https://www.patreon.com/thepudding'); return false;" href='https://www.patreon.com/thepudding' class='logo--patreon'><img inline src='dev/common/assets/svg/patreon.svg'></a></li>
 				</ul>
 			</div>
 
 			<nav class='header__nav'>
 				<ul class='nav__links'>
-					<li><a href='${path}about'>About</a></li>
-					<li><a href='${path}about#contact'>Contact</a></li>
-					<li><a href='${path}archives'>Archives</a></li>
-					<li><a href='${path}topics'>Topics</a></li>
-					<li><a href='${path}topics/#how'>How-To</a></li>
-					<li><a href='http://eepurl.com/czym6f' target='_blank' class='btn'>Join our Newsletter</a></li>
+					<li><a onclick="trackOutboundLink('${path}about'); return false;" href='${path}about'>About</a></li>
+					<li><a onclick="trackOutboundLink('${path}topics'); return false;" href='${path}topics'>Topics</a></li>
+					<li><a onclick="trackOutboundLink('${path}archives'); return false;" href='${path}archives'>Archives</a></li>
+					<li><a onclick="trackOutboundLink('http://eepurl.com/czym6f'); return false;" href='http://eepurl.com/czym6f' target='_blank' class='btn'>Join our Newsletter</a></li>
 				</ul>
 			</nav>
 			
@@ -38,11 +36,10 @@ module.exports = function(path) {
 				</btn>
 				<p class='menu__tagline'>The Pudding explains ideas debated in culture with visual essays.</p>
 				<ul class='menu__links'>
-					<li><a href='${path}about'>About</a></li>
-					<li><a href='${path}about#contact'>Contact</a></li>
-					<li><a href='${path}archives'>Archives</a></li>
-					<li><a href='${path}topics'>Topics</a></li>
-					<li><a href='http://eepurl.com/czym6f' target='_blank'>Join our Newsletter</a></li>
+					<li><a onclick="trackOutboundLink('${path}about'); return false;" href='${path}about'>About</a></li>
+					<li><a onclick="trackOutboundLink('${path}topics'); return false;" href='${path}topics'>Topics</a></li>
+					<li><a onclick="trackOutboundLink('${path}archives'); return false;" href='${path}archives'>Archives</a></li>
+					<li><a onclick="trackOutboundLink('http://eepurl.com/czym6f'); return false;" href='http://eepurl.com/czym6f' target='_blank' class='btn'>Join our Newsletter</a></li>
 				</ul>
 				<p class='menu__patreon'>We pour our ❤️ into these stories, but they take time and money. For just $1/month, you can help support us. Join our
 				growing community of data-driven enthusiasts.<br><a class='random-background' href='https://www.patreon.com/thepudding' target='_blank' onclick='trackOutboundLink("https://www.patreon.com/thepudding"); return false;'>Help fund us</a></p>

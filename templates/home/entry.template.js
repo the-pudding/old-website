@@ -1,34 +1,22 @@
 (function() {
-  const $preview = d3.select('.preview');
-  const $video = $preview.select('video');
-  const $collection = d3.select('.collection');
-  const $loader = $collection.select('.loader');
-  const $authors = d3.select('.sidebar .authors select');
-  const VIDEO_WIDTH = 300;
-  const VIDEO_HEIGHT = 150;
-  const PAD = 10;
-  // const DEFAULT_COLLECTION = 'media_diversity';
+  // polyfill for closest
+  if (!Element.prototype.matches) {
+    Element.prototype.matches =
+      Element.prototype.msMatchesSelector ||
+      Element.prototype.webkitMatchesSelector;
+  }
 
-  // device sniffing for mobile
+  if (!Element.prototype.closest) {
+    Element.prototype.closest = function(s) {
+      var el = this;
 
-  const isMobile = {
-    android: () => navigator.userAgent.match(/Android/i),
-
-    blackberry: () => navigator.userAgent.match(/BlackBerry/i),
-
-    ios: () => navigator.userAgent.match(/iPhone|iPad|iPod/i),
-
-    opera: () => navigator.userAgent.match(/Opera Mini/i),
-
-    windows: () => navigator.userAgent.match(/IEMobile/i),
-
-    any: () =>
-      isMobile.android() ||
-      isMobile.blackberry() ||
-      isMobile.ios() ||
-      isMobile.opera() ||
-      isMobile.windows()
-  };
+      do {
+        if (el.matches(s)) return el;
+        el = el.parentElement || el.parentNode;
+      } while (el !== null && el.nodeType === 1);
+      return null;
+    };
+  }
 
   function setupPicks() {
     $li = d3.selectAll('#picks li');
@@ -86,12 +74,19 @@
     $li.classed('is-visible', true);
 
     if (window.generalImages) window.generalImages();
+
+    // tracking
+    if (window.ga)
+      ga('send', {
+        hitType: 'event',
+        eventCategory: topic,
+        eventAction: 'toggle'
+      });
   }
 
   function setupTopics() {
     $ul = d3.selectAll('#topics .topics__stories ul');
     const sz = $ul.size();
-    const target = 1;
     const count = d3.range(sz);
     d3.shuffle(count);
     const chosen = count[0];
@@ -116,10 +111,22 @@
     if (window.generalImages) window.generalImages();
   }
 
+  function setupTracking() {
+    d3.selectAll('.story-item a').each((d, i, n) => {
+      const $story = d3.select(n[i]);
+      const $section = d3.select($story.node().closest('section'));
+      const id = $section.attr('id');
+      const url = $story.attr('href');
+      const onclick = `trackOutboundLink('${url}', '${id}'); return false;`;
+      $story.attr('onclick', onclick);
+    });
+  }
+
   function init() {
     setupPicks();
     setupTopics();
     setupHits();
+    setupTracking();
   }
 
   init();

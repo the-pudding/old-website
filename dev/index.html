@@ -92,8 +92,8 @@
 
 	<script>
 		(function () {
-			window.trackOutboundLink = function (url) {
-				ga('send', 'event', 'outbound', 'click', url, {
+			window.trackOutboundLink = function (url, category) {
+				ga('send', 'event', category || 'outbound', 'click', url, {
 					'transport': 'beacon',
 					'hitCallback': function () { document.location = url; }
 				});
@@ -195,10 +195,8 @@
 			<nav class='header__nav'>
 				<ul class='nav__links'>
 					<li><a href='./about'>About</a></li>
-					<li><a href='./about#contact'>Contact</a></li>
-					<li><a href='./archives'>Archives</a></li>
 					<li><a href='./topics'>Topics</a></li>
-					<li><a href='./topics/#how'>How-To</a></li>
+					<li><a href='./archives'>Archives</a></li>
 					<li><a href='http://eepurl.com/czym6f' target='_blank' class='btn'>Join our Newsletter</a></li>
 				</ul>
 			</nav>
@@ -210,9 +208,8 @@
 				<p class='menu__tagline'>The Pudding explains ideas debated in culture with visual essays.</p>
 				<ul class='menu__links'>
 					<li><a href='./about'>About</a></li>
-					<li><a href='./about#contact'>Contact</a></li>
-					<li><a href='./archives'>Archives</a></li>
 					<li><a href='./topics'>Topics</a></li>
+					<li><a href='./archives'>Archives</a></li>
 					<li><a href='http://eepurl.com/czym6f' target='_blank'>Join our Newsletter</a></li>
 				</ul>
 				<p class='menu__patreon'>We pour our ❤️ into these stories, but they take time and money. For just $1/month, you can help support us. Join our
@@ -1307,35 +1304,24 @@
 		
 	<script>
 		(function() {
-  var $preview = d3.select('.preview');
-  var $video = $preview.select('video');
-  var $collection = d3.select('.collection');
-  var $loader = $collection.select('.loader');
-  var $authors = d3.select('.sidebar .authors select');
-  var VIDEO_WIDTH = 300;
-  var VIDEO_HEIGHT = 150;
-  var PAD = 10;
-  // const DEFAULT_COLLECTION = 'media_diversity';
+  // polyfill for closest
+  if (!Element.prototype.matches) {
+    Element.prototype.matches =
+      Element.prototype.msMatchesSelector ||
+      Element.prototype.webkitMatchesSelector;
+  }
 
-  // device sniffing for mobile
+  if (!Element.prototype.closest) {
+    Element.prototype.closest = function(s) {
+      var el = this;
 
-  var isMobile = {
-    android: function () { return navigator.userAgent.match(/Android/i); },
-
-    blackberry: function () { return navigator.userAgent.match(/BlackBerry/i); },
-
-    ios: function () { return navigator.userAgent.match(/iPhone|iPad|iPod/i); },
-
-    opera: function () { return navigator.userAgent.match(/Opera Mini/i); },
-
-    windows: function () { return navigator.userAgent.match(/IEMobile/i); },
-
-    any: function () { return isMobile.android() ||
-      isMobile.blackberry() ||
-      isMobile.ios() ||
-      isMobile.opera() ||
-      isMobile.windows(); }
-  };
+      do {
+        if (el.matches(s)) { return el; }
+        el = el.parentElement || el.parentNode;
+      } while (el !== null && el.nodeType === 1);
+      return null;
+    };
+  }
 
   function setupPicks() {
     $li = d3.selectAll('#picks li');
@@ -1398,7 +1384,6 @@
   function setupTopics() {
     $ul = d3.selectAll('#topics .topics__stories ul');
     var sz = $ul.size();
-    var target = 1;
     var count = d3.range(sz);
     d3.shuffle(count);
     var chosen = count[0];
@@ -1423,10 +1408,22 @@
     if (window.generalImages) { window.generalImages(); }
   }
 
+  function setupTracking() {
+    d3.selectAll('.story-item a').each(function (d, i, n) {
+      var $story = d3.select(n[i]);
+      var $section = d3.select($story.node().closest('section'));
+      var id = $section.attr('id');
+      var url = $story.attr('href');
+      var onclick = "trackOutboundLink('" + url + "', '" + id + "'); return false;";
+      $story.attr('onclick', onclick);
+    });
+  }
+
   function init() {
     setupPicks();
     setupTopics();
     setupHits();
+    setupTracking();
   }
 
   init();
