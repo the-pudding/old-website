@@ -27,7 +27,7 @@ module.exports = function(path) {
 					<li><a href='${path}about#contact'>Contact</a></li>
 					<li><a href='${path}archives'>Archives</a></li>
 					<li><a href='${path}topics'>Topics</a></li>
-					<li><a href='${path}#how'>How-To</a></li>
+					<li><a href='${path}topics/#how'>How-To</a></li>
 					<li><a href='http://eepurl.com/czym6f' target='_blank' class='btn'>Join our Newsletter</a></li>
 				</ul>
 			</nav>

@@ -1,5 +1,5 @@
 (function() {
-  function handleTopicClick(el) {
+  function handleTopicClick() {
     const $el = d3.select(this);
 
     const topic = $el.attr('data-topic');
@@ -13,6 +13,7 @@
 
     const $ul = d3.select(`.topics__stories [data-topic="${topic}"]`);
     $ul.classed('is-hidden', false).classed('is-visible', true);
+    if (window.generalImages) window.generalImages();
   }
 
   function setupTopics() {
@@ -34,6 +35,8 @@
     d3.selectAll('.topics__nav ul li')
       .select('button')
       .on('click', handleTopicClick);
+
+    if (window.generalImages) window.generalImages();
   }
 
   function init() {

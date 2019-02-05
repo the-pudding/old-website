@@ -1,9 +1,12 @@
 const fse = require('fs-extra');
+const d3 = require('d3');
 const cwd = process.cwd();
 
 const authorData = JSON.parse(
   fse.readFileSync(`${cwd}/.tmp/data/authors.json`, 'utf-8')
-).filter(d => d.position.toLowerCase().trim() === 'staff');
+)
+  .filter(d => d.position.toLowerCase().trim() === 'staff')
+  .sort((a, b) => d3.ascending(a.name, b.name));
 
 module.exports = function() {
   return authorData

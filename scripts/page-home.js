@@ -56,7 +56,7 @@ function createMarkup() {
   const headerHTML = Header('./');
   const picksHTML = Picks({});
   const newHTML = New({});
-  const topicsHTML = Topics({});
+  const topicsHTML = Topics({path: './'});
   const ctaHTML = Cta();
   const hitsHTML = Hits({});
   const howHTML = How({});

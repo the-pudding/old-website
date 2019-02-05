@@ -6,7 +6,7 @@ const arrowSvg = `<svg class='random-stroke' xmlns="http://www.w3.org/2000/svg" 
 const Item = require(`${cwd}/templates/common/partials/item`);
 const topicsData = JSON.parse(
   fse.readFileSync(`${cwd}/scripts/topics-data.json`)
-).filter(d => d.slug !== 'other');
+).filter(d => !['other', 'how'].includes(d.slug));
 
 const storyData = JSON.parse(
   fse.readFileSync(`${cwd}/.tmp/data/stories.json`, 'utf-8')
@@ -32,7 +32,7 @@ function createHTML({ data, path }) {
   const more = topicsData
     .map(
       topic =>
-        `<li data-topic='${topic.slug}'><a href='${path}/topics/#${
+        `<li data-topic='${topic.slug}'><a href='${path}topics/#${
           topic.slug
         }'>More ${topic.label} ${arrowSvg}</a></li>`
     )

@@ -84,6 +84,8 @@
     d3.selectAll('#topics .topics__more li').classed('is-visible', false);
     const $li = d3.select(`#topics .topics__more [data-topic="${topic}"]`);
     $li.classed('is-visible', true);
+
+    if (window.generalImages) window.generalImages();
   }
 
   function setupTopics() {
@@ -110,6 +112,8 @@
       .classed('is-active', (d, i) => chosen === i)
       .select('button')
       .on('click', handleTopicClick);
+
+    if (window.generalImages) window.generalImages();
   }
 
   function init() {
