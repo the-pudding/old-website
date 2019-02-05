@@ -26,7 +26,7 @@ module.exports = function(path) {
 					<li><a onclick="trackOutboundLink('${path}about'); return false;" href='${path}about'>About</a></li>
 					<li><a onclick="trackOutboundLink('${path}topics'); return false;" href='${path}topics'>Topics</a></li>
 					<li><a onclick="trackOutboundLink('${path}archives'); return false;" href='${path}archives'>Archives</a></li>
-					<li><a onclick="trackOutboundLink('http://eepurl.com/czym6f'); return false;" href='http://eepurl.com/czym6f' target='_blank' class='btn'>Join our Newsletter</a></li>
+					<li><a target='_blank' onclick="trackOutboundLink('http://eepurl.com/czym6f'); return false;" href='http://eepurl.com/czym6f' target='_blank' class='btn'>Join our Newsletter</a></li>
 				</ul>
 			</nav>
 			
