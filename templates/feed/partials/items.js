@@ -2,9 +2,9 @@
 
 function clean(str) {
   return str
-    .replace(/\&/g, "&amp;")
-    .replace(/\</g, "&lt;")
-    .replace(/\>/g, "&gt;");
+    .replace(/\&/g, '&amp;')
+    .replace(/\</g, '&lt;')
+    .replace(/\>/g, '&gt;');
 }
 
 module.exports = function(data) {
@@ -15,11 +15,11 @@ module.exports = function(data) {
 	<title>${clean(d.hed)}</title>
 	<link>https://pudding.cool/${d.url}</link>
 	<description>${clean(d.dek)}</description>
-	<category>${d.category}></category>
+	<category>${d.topic[0]}></category>
 	<pubDate>${new Date(d.date).toUTCString()}</pubDate>
 	<guid isPermaLink="false">${d.url}</guid>
 </item>
 	`
     )
-    .join("");
+    .join('');
 };
