@@ -60,6 +60,7 @@
     if (filters.author && !d.author_name.includes(filters.author)) return false;
     if (filters.topic && !d.topic.includes(filters.topic)) return false;
     if (filters.chart && !d.chart.includes(filters.chart)) return false;
+    if (filters.keyword && !d.keyword.includes(filters.keyword)) return false;
     if (
       filters.search &&
       !d.hed.includes(filters.search) &&
@@ -85,7 +86,9 @@
     reset();
     const $el = d3.select(this);
     const f = $el.attr('data-filter');
-    filters[f] = ['Author', 'Topic', 'Chart Type'].includes(this.value)
+    filters[f] = ['Author', 'Topic', 'Chart Type', 'Keyword'].includes(
+      this.value
+    )
       ? null
       : this.value;
     updateStories();
@@ -137,12 +140,62 @@
       .data(['Chart Type', ...chartData])
       .enter()
       .append('option')
+      .property('value', d => d)
       .text(d => d);
+
+    // keyword
+    const keywordData = []
+      .concat(...storyData.map(d => d.keyword.filter(v => v)))
+      .filter((v, i, a) => a.indexOf(v) === i)
+      .sort(d3.ascending);
+
+    d3.select('select.filter--keyword')
+      .selectAll('option')
+      .data(['Keyword', ...keywordData])
+      .enter()
+      .append('option')
+      .property('value', d => d)
+      .text(d => d);
+  }
+
+  function handleTagClick() {
+    const $el = d3.select(this);
+    const filter = $el.attr('data-filter');
+    const value = $el.text();
+    const $sel = d3.select(`select.filter--${filter}`);
+
+    $sel.selectAll('option').property('selected', d => d === value);
+
+    handleFilter.call($sel.node());
+    window.scrollTo(0, 0);
+  }
+
+  function setupTags() {
+    $li.each((d, i, n) => {
+      const $el = d3.select(n[i]);
+      const $info = $el.select('.item__info');
+      const k = d.keyword.map(
+        v => `<button data-filter='keyword' class='tag'>${v}</button>`
+      );
+      const c = d.chart.map(
+        v => `<button data-filter='chart' class='tag'>${v}</button>`
+      );
+
+      const html = [...k, ...c].join('');
+
+      $info
+        .append('div')
+        .attr('class', 'info__tags')
+        .html(html);
+
+      $info.selectAll('button').on('click', handleTagClick);
+    });
   }
 
   function init() {
     prepareData();
     setupFilters();
+    setupTags();
     $input.on('keyup', handleKeyUp);
     $selectFilter.on('input', handleFilter);
     $selectSort.on('input', handleSort);

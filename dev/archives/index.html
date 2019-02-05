@@ -228,11 +228,11 @@
 						</select>
 					</li>
 
-					<!-- <li>
-						<select data-filter='tech'class='filter--tech'>
-							<option>Tech</option>
+					<li>
+						<select data-filter='keyword'class='filter--keyword'>
+							<option>Keyword</option>
 						</select>
-					</li> -->
+					</li>
 					
 				</ul>
 			</fieldset>
@@ -1869,6 +1869,7 @@
     if (filters.author && !d.author_name.includes(filters.author)) { return false; }
     if (filters.topic && !d.topic.includes(filters.topic)) { return false; }
     if (filters.chart && !d.chart.includes(filters.chart)) { return false; }
+    if (filters.keyword && !d.keyword.includes(filters.keyword)) { return false; }
     if (
       filters.search &&
       !d.hed.includes(filters.search) &&
@@ -1894,7 +1895,9 @@
     reset();
     var $el = d3.select(this);
     var f = $el.attr('data-filter');
-    filters[f] = ['Author', 'Topic', 'Chart Type'].includes(this.value)
+    filters[f] = ['Author', 'Topic', 'Chart Type', 'Keyword'].includes(
+      this.value
+    )
       ? null
       : this.value;
     updateStories();
@@ -1911,7 +1914,7 @@
   }
 
   function setupFilters() {
-    var ref, ref$1;
+    var ref, ref$1, ref$2;
 
     // author
     var authorNameData = (ref = [])
@@ -1948,12 +1951,62 @@
       .data(['Chart Type' ].concat( chartData))
       .enter()
       .append('option')
+      .property('value', function (d) { return d; })
       .text(function (d) { return d; });
+
+    // keyword
+    var keywordData = (ref$2 = [])
+      .concat.apply(ref$2, storyData.map(function (d) { return d.keyword.filter(function (v) { return v; }); }))
+      .filter(function (v, i, a) { return a.indexOf(v) === i; })
+      .sort(d3.ascending);
+
+    d3.select('select.filter--keyword')
+      .selectAll('option')
+      .data(['Keyword' ].concat( keywordData))
+      .enter()
+      .append('option')
+      .property('value', function (d) { return d; })
+      .text(function (d) { return d; });
+  }
+
+  function handleTagClick() {
+    var $el = d3.select(this);
+    var filter = $el.attr('data-filter');
+    var value = $el.text();
+    var $sel = d3.select(("select.filter--" + filter));
+
+    $sel.selectAll('option').property('selected', function (d) { return d === value; });
+
+    handleFilter.call($sel.node());
+    window.scrollTo(0, 0);
+  }
+
+  function setupTags() {
+    $li.each(function (d, i, n) {
+      var $el = d3.select(n[i]);
+      var $info = $el.select('.item__info');
+      var k = d.keyword.map(
+        function (v) { return ("<button data-filter='keyword' class='tag'>" + v + "</button>"); }
+      );
+      var c = d.chart.map(
+        function (v) { return ("<button data-filter='chart' class='tag'>" + v + "</button>"); }
+      );
+
+      var html = k.concat( c).join('');
+
+      $info
+        .append('div')
+        .attr('class', 'info__tags')
+        .html(html);
+
+      $info.selectAll('button').on('click', handleTagClick);
+    });
   }
 
   function init() {
     prepareData();
     setupFilters();
+    setupTags();
     $input.on('keyup', handleKeyUp);
     $selectFilter.on('input', handleFilter);
     $selectSort.on('input', handleSort);
