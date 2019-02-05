@@ -163,7 +163,7 @@
 		<a class='footer-recirc__article' href='https://pudding.cool/${
       obj.url
     }' target='_blank'>
-			<div class='article__img' style='background-image: url("https://pudding.cool/common/assets/story-thumbnails/640/${
+			<div class='article__img' style='background-image: url("https://pudding.cool/common/assets/thumbnails/640/${
         obj.image
       }.jpg")'></div>
 				<div class='article__headline'>

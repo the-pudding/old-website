@@ -104,7 +104,7 @@
 
   function recircHTML() {
     var createLink = function (obj) {
-      return ("\n\t\t<a class='footer-recirc__article' href='https://pudding.cool/" + (obj.url) + "' target='_blank'>\n\t\t\t<img class='article__img' src='https://pudding.cool/common/assets/story-thumbnails/640/" + (obj.image) + ".jpg' alt='" + (obj.hed) + "'>\n\t\t\t\t<div class='article__headline'>\n\t\t\t\t\t" + (obj.hed) + "\n\t\t\t</div>\n\t\t</a>\n\t");
+      return ("\n\t\t<a class='footer-recirc__article' href='https://pudding.cool/" + (obj.url) + "' target='_blank'>\n\t\t\t<img class='article__img' src='https://pudding.cool/common/assets/thumbnails/640/" + (obj.image) + ".jpg' alt='" + (obj.hed) + "'>\n\t\t\t\t<div class='article__headline'>\n\t\t\t\t\t" + (obj.hed) + "\n\t\t\t</div>\n\t\t</a>\n\t");
     };
 
     var url = window.location.href;
