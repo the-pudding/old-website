@@ -8,7 +8,7 @@
 		<link>https://pudding.cool</link>
 		<description>The Pudding is an editorial publication that explains ideas debated in culture with visual essays.</description>
 		<lastBuildDate>
-			Tue, 05 Feb 2019 16:13:20 GMT
+			Tue, 05 Feb 2019 18:20:56 GMT
 		</lastBuildDate>
 		<language>en-US</language>
 		<sy:updatePeriod>daily</sy:updatePeriod>
@@ -24,7 +24,7 @@
 	<title>Rappers, Sorted by the Size of their Vocabulary</title>
 	<link>https://pudding.cool/projects/vocabulary</link>
 	<description>The number of unique lyrics used within artists’ first 35,000 lyrics</description>
-	<category>undefined></category>
+	<category>music></category>
 	<pubDate>Wed, 16 Jan 2019 05:00:00 GMT</pubDate>
 	<guid isPermaLink="false">projects/vocabulary</guid>
 </item>
@@ -33,7 +33,7 @@
 	<title>The World through the Eyes of the US</title>
 	<link>https://pudding.cool/2018/12/countries</link>
 	<description>The countries that have preoccupied Americans since 1900</description>
-	<category>undefined></category>
+	<category>social></category>
 	<pubDate>Wed, 19 Dec 2018 05:00:00 GMT</pubDate>
 	<guid isPermaLink="false">2018/12/countries</guid>
 </item>
@@ -42,7 +42,7 @@
 	<title>A Brief History of the Past 100 Years</title>
 	<link>https://pudding.cool/2018/12/brief-history</link>
 	<description>An analysis of 12 decades of New York Times headlines</description>
-	<category>undefined></category>
+	<category>social></category>
 	<pubDate>Wed, 19 Dec 2018 05:00:00 GMT</pubDate>
 	<guid isPermaLink="false">2018/12/brief-history</guid>
 </item>
@@ -51,7 +51,7 @@
 	<title>Population Mountains</title>
 	<link>https://pudding.cool/2018/12/3d-cities-story</link>
 	<description>This is a story about how to perceive the population size of cities.</description>
-	<category>undefined></category>
+	<category>social></category>
 	<pubDate>Tue, 04 Dec 2018 05:00:00 GMT</pubDate>
 	<guid isPermaLink="false">2018/12/3d-cities-story</guid>
 </item>
@@ -60,7 +60,7 @@
 	<title>The Pudding Cup</title>
 	<link>https://pudding.cool/process/pudding-awards-2018</link>
 	<description>The best visual and data-driven stories of 2018</description>
-	<category>undefined></category>
+	<category>awards></category>
 	<pubDate>Mon, 03 Dec 2018 05:00:00 GMT</pubDate>
 	<guid isPermaLink="false">process/pudding-awards-2018</guid>
 </item>
@@ -69,7 +69,7 @@
 	<title>Internet Boy Band Database</title>
 	<link>https://pudding.cool/2018/11/boy-bands</link>
 	<description>Every boy band to chart the Hot 100 since 1980</description>
-	<category>undefined></category>
+	<category>music></category>
 	<pubDate>Tue, 27 Nov 2018 05:00:00 GMT</pubDate>
 	<guid isPermaLink="false">2018/11/boy-bands</guid>
 </item>
@@ -78,7 +78,7 @@
 	<title>30 Years of American Anxieties</title>
 	<link>https://pudding.cool/2018/11/dearabby</link>
 	<description>What 20,000 letters to an advice columnist tell us about what concerns us most.</description>
-	<category>undefined></category>
+	<category>people></category>
 	<pubDate>Tue, 13 Nov 2018 05:00:00 GMT</pubDate>
 	<guid isPermaLink="false">2018/11/dearabby</guid>
 </item>
@@ -87,7 +87,7 @@
 	<title>The Winningest Cities in North American Sports</title>
 	<link>https://pudding.cool/2018/11/titletowns</link>
 	<description>What makes a titletown in sports?</description>
-	<category>undefined></category>
+	<category>sports></category>
 	<pubDate>Wed, 07 Nov 2018 05:00:00 GMT</pubDate>
 	<guid isPermaLink="false">2018/11/titletowns</guid>
 </item>
@@ -96,7 +96,7 @@
 	<title>Human Terrain: Population in 3D</title>
 	<link>https://pudding.cool/2018/10/city_3d</link>
 	<description>Visualizing the World’s Population as a Terrain</description>
-	<category>undefined></category>
+	<category>social></category>
 	<pubDate>Thu, 25 Oct 2018 04:00:00 GMT</pubDate>
 	<guid isPermaLink="false">2018/10/city_3d</guid>
 </item>
@@ -105,7 +105,7 @@
 	<title>What Does the Path to Fame Look Like?</title>
 	<link>https://pudding.cool/2018/10/wiki-breakout</link>
 	<description>Tracking the rise in popularity from Cardi B to Carson Wentz</description>
-	<category>undefined></category>
+	<category>people></category>
 	<pubDate>Fri, 19 Oct 2018 04:00:00 GMT</pubDate>
 	<guid isPermaLink="false">2018/10/wiki-breakout</guid>
 </item>
@@ -114,7 +114,7 @@
 	<title>A Visual History of Every Air Jordan</title>
 	<link>https://pudding.cool/2018/09/jordans</link>
 	<description>Watch as the design of the iconic Air Jordan morphs over the last 33 editions.</description>
-	<category>undefined></category>
+	<category>sports></category>
 	<pubDate>Wed, 26 Sep 2018 04:00:00 GMT</pubDate>
 	<guid isPermaLink="false">2018/09/jordans</guid>
 </item>
@@ -123,7 +123,7 @@
 	<title>The Celebrity Billboard Project</title>
 	<link>https://pudding.cool/2018/09/wiki-billboard</link>
 	<description>Tracking the popularity of cultural figures in 2018</description>
-	<category>undefined></category>
+	<category>people></category>
 	<pubDate>Tue, 11 Sep 2018 04:00:00 GMT</pubDate>
 	<guid isPermaLink="false">2018/09/wiki-billboard</guid>
 </item>
@@ -132,7 +132,7 @@
 	<title>The Most Emo Lyrics: Emo Rap vs. Dashboard Confessional</title>
 	<link>https://pudding.cool/2018/08/emo-rap</link>
 	<description>Who has more emotionally vulnerable lyrics, emo-rap or Dashboard Confessional?</description>
-	<category>undefined></category>
+	<category>music></category>
 	<pubDate>Thu, 30 Aug 2018 04:00:00 GMT</pubDate>
 	<guid isPermaLink="false">2018/08/emo-rap</guid>
 </item>
@@ -141,7 +141,7 @@
 	<title>Film or Digital?</title>
 	<link>https://pudding.cool/2018/08/filmordigital</link>
 	<description>Breaking down Hollywood's choice of shooting medium</description>
-	<category>undefined></category>
+	<category>entertainment></category>
 	<pubDate>Wed, 22 Aug 2018 04:00:00 GMT</pubDate>
 	<guid isPermaLink="false">2018/08/filmordigital</guid>
 </item>
@@ -150,7 +150,7 @@
 	<title>Women's Pockets are Inferior</title>
 	<link>https://pudding.cool/2018/08/pockets</link>
 	<description>You already know this. But now we've got the data to show it.</description>
-	<category>undefined></category>
+	<category>people></category>
 	<pubDate>Wed, 15 Aug 2018 04:00:00 GMT</pubDate>
 	<guid isPermaLink="false">2018/08/pockets</guid>
 </item>
