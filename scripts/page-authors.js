@@ -5,6 +5,7 @@ const { inlineSource } = require('inline-source');
 const cwd = process.cwd();
 
 const Meta = require(`${cwd}/templates/common/partials/meta`);
+const Analytics = require(`${cwd}/templates/common/partials/analytics`);
 const Header = require(`${cwd}/templates/common/partials/header`);
 const Bio = require(`${cwd}/templates/author/partials/bio`);
 const Stories = require(`${cwd}/templates/author/partials/stories`);
@@ -55,6 +56,7 @@ function createMarkup() {
         title: d.name,
         description: `Read more from ${d.name}} on The Pudding.`
       });
+      const analyticsHTML = Analytics();
       const headerHTML = Header('../../');
       const bioHTML = Bio(d);
       const storiesHTML = Stories(d.stories);
@@ -64,12 +66,20 @@ function createMarkup() {
         files: `${cwd}/.tmp/author/${d.slug}/index.template`,
         from: [
           '<!-- meta -->',
+          '<!-- analytics -->',
           '<!-- header -->',
           '<!-- bio -->',
           '<!-- stories -->',
           '<!-- footer -->'
         ],
-        to: [metaHTML, headerHTML, bioHTML, storiesHTML, footerHTML]
+        to: [
+          metaHTML,
+          analyticsHTML,
+          headerHTML,
+          bioHTML,
+          storiesHTML,
+          footerHTML
+        ]
       };
 
       replace(options)

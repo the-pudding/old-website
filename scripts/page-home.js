@@ -6,6 +6,7 @@ const buble = require('buble');
 const cwd = process.cwd();
 
 const Meta = require(`${cwd}/templates/common/partials/meta`);
+const Analytics = require(`${cwd}/templates/common/partials/analytics`);
 const Header = require(`${cwd}/templates/common/partials/header`);
 const Picks = require(`${cwd}/templates/home/partials/picks`);
 const New = require(`${cwd}/templates/home/partials/new`);
@@ -53,10 +54,11 @@ function createMarkup() {
   console.log('creating markup...');
 
   const metaHTML = Meta({});
+  const analyticsHTML = Analytics();
   const headerHTML = Header('./');
   const picksHTML = Picks({});
   const newHTML = New({});
-  const topicsHTML = Topics({path: './'});
+  const topicsHTML = Topics({ path: './' });
   const ctaHTML = Cta();
   const hitsHTML = Hits({});
   const howHTML = How({});
@@ -68,6 +70,7 @@ function createMarkup() {
     files: `${cwd}/.tmp/home/index.template`,
     from: [
       '<!-- meta -->',
+      '<!-- analytics -->',
       '<!-- header -->',
       '<!-- picks -->',
       '<!-- new -->',
@@ -81,6 +84,7 @@ function createMarkup() {
     ],
     to: [
       metaHTML,
+      analyticsHTML,
       headerHTML,
       picksHTML,
       newHTML,

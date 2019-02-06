@@ -6,6 +6,7 @@ const buble = require('buble');
 const cwd = process.cwd();
 
 const Meta = require(`${cwd}/templates/common/partials/meta`);
+const Analytics = require(`${cwd}/templates/common/partials/analytics`);
 const Header = require(`${cwd}/templates/common/partials/header`);
 const Footer = require(`${cwd}/templates/common/partials/footer`);
 const Stories = require(`${cwd}/templates/archives/partials/stories`);
@@ -53,6 +54,7 @@ function createMarkup() {
   console.log('creating markup...');
 
   const metaHTML = Meta({ title: 'Archives' });
+  const analyticsHTML = Analytics();
   const headerHTML = Header('../');
   const storiesHTML = Stories();
   const footerHTML = Footer();
@@ -63,13 +65,22 @@ function createMarkup() {
     files: `${cwd}/.tmp/archives/index.template`,
     from: [
       '<!-- meta -->',
+      '<!-- analytics -->',
       '<!-- header -->',
       '<!-- stories -->',
       '<!-- footer -->',
       '/* topics.js */',
       '/* entry.js */'
     ],
-    to: [metaHTML, headerHTML, storiesHTML, footerHTML, topicsJS, entryJS]
+    to: [
+      metaHTML,
+      analyticsHTML,
+      headerHTML,
+      storiesHTML,
+      footerHTML,
+      topicsJS,
+      entryJS
+    ]
   };
 
   return new Promise((resolve, reject) => {

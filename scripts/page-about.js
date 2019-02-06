@@ -5,6 +5,7 @@ const { inlineSource } = require('inline-source');
 const cwd = process.cwd();
 
 const Meta = require(`${cwd}/templates/common/partials/meta`);
+const Analytics = require(`${cwd}/templates/common/partials/analytics`);
 const Header = require(`${cwd}/templates/common/partials/header`);
 const Footer = require(`${cwd}/templates/common/partials/footer`);
 const Content = require(`${cwd}/templates/about/partials/content`);
@@ -34,6 +35,7 @@ function createMarkup() {
   console.log('creating markup...');
 
   const metaHTML = Meta({ title: 'About' });
+  const analyticsHTML = Analytics();
   const headerHTML = Header('../');
   const contentHTML = Content();
   const teamHTML = Team();
@@ -43,12 +45,13 @@ function createMarkup() {
     files: `${cwd}/.tmp/about/index.template`,
     from: [
       '<!-- meta -->',
+      '<!-- analytics -->',
       '<!-- header -->',
       '<!-- content -->',
       '<!-- team -->',
       '<!-- footer -->'
     ],
-    to: [metaHTML, headerHTML, contentHTML, teamHTML, footerHTML]
+    to: [metaHTML, analyticsHTML, headerHTML, contentHTML, teamHTML, footerHTML]
   };
 
   return new Promise((resolve, reject) => {

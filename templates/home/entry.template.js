@@ -76,7 +76,11 @@
     if (window.generalImages) window.generalImages();
 
     // tracking
-    if (window.ga)
+    if (
+      window.GoogleAnalyticsObject &&
+      window.ga &&
+      typeof window.ga === 'function'
+    )
       ga('send', {
         hitType: 'event',
         eventCategory: topic,

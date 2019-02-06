@@ -84,7 +84,12 @@
     filters.search = this.value ? this.value : null;
     updateStories();
     // tracking
-    if (window.ga && !trackSearch) {
+    if (
+      !trackSearch &&
+      window.GoogleAnalyticsObject &&
+      window.ga &&
+      typeof window.ga === 'function'
+    ) {
       ga('send', {
         hitType: 'event',
         eventCategory: 'search',
@@ -107,7 +112,12 @@
     updateStories();
 
     // tracking
-    if (window.ga)
+    if (
+      !trackSearch &&
+      window.GoogleAnalyticsObject &&
+      window.ga &&
+      typeof window.ga === 'function'
+    )
       ga('send', {
         hitType: 'event',
         eventCategory: f,
@@ -191,7 +201,12 @@
     window.scrollTo(0, 0);
 
     // tracking
-    if (window.ga)
+    if (
+      !trackSearch &&
+      window.GoogleAnalyticsObject &&
+      window.ga &&
+      typeof window.ga === 'function'
+    )
       ga('send', {
         hitType: 'event',
         eventCategory: value,
