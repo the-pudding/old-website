@@ -2,11 +2,11 @@ const fse = require('fs-extra');
 
 const cwd = process.cwd();
 
-const authorData = JSON.parse(
-  fse.readFileSync(`${cwd}/.tmp/data/authors.json`, 'utf-8')
-);
-
 module.exports = function getAuthor(story) {
+  const authorData = JSON.parse(
+    fse.readFileSync(`${cwd}/.tmp/data/authors.json`, 'utf-8')
+  );
+
   const all = story.author.map(d => {
     const { name, slug } = authorData.find(a => a.id === d);
     return {
