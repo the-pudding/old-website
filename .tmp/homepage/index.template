@@ -1,0 +1,398 @@
+<!doctype html>
+<html lang='en'>
+
+<head>
+
+	<title>The Pudding</title>
+	<meta charset='utf-8'>
+	<meta name='viewport' content='width=device-width, initial-scale=1'>
+	<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+	<meta name='description' content='The Pudding is an editorial publication that
+explains ideas debated in culture with visual essays.' />
+	<meta name='news_keywords' content='The Pudding' />
+
+	<meta property='og:title' content='The Pudding' />
+	<meta property='og:site_name' content='The Pudding' />
+	<meta property='og:url' content='https://pudding.cool' />
+	<meta property='og:description' content='The Pudding is an editorial publication that
+explains ideas debated in culture with visual essays.' />
+	<meta property='og:type' content='article' />
+	<meta property='og:locale' content='en_US' />
+
+	<meta property='og:image' content='https://pudding.cool/common/assets/misc/og-img.jpg' />
+	<meta property='og:image:type' content='image/jpeg' />
+	<meta property='og:image:width' content='1200' />
+	<meta property='og:image:height' content='600' />
+
+	<meta name='twitter:card' content='summary_large_image'>
+	<meta name='twitter:site' content='https://pudding.cool'>
+	<meta name='twitter:creator' content='@puddingviz'>
+	<meta name='twitter:title' content='The Pudding'>
+	<meta name='twitter:description' content='The Pudding is an editorial publication that
+explains ideas debated in culture with visual essays.'>
+	<meta name='twitter:image:src' content='https://pudding.cool/common/assets/misc/og-img.jpg'>
+
+	<link rel='alternate' type='application/rss+xml' title='Latest from The Pudding' href='https://feeds.feedburner.com/pudding/feed'
+	/>
+
+	<link rel="apple-touch-icon-precomposed" sizes="57x57" href="homepage/assets/favicon/apple-touch-icon-57x57.png" />
+	<link rel="apple-touch-icon-precomposed" sizes="114x114" href="homepage/assets/favicon/apple-touch-icon-114x114.png" />
+	<link rel="apple-touch-icon-precomposed" sizes="72x72" href="homepage/assets/favicon/apple-touch-icon-72x72.png" />
+	<link rel="apple-touch-icon-precomposed" sizes="144x144" href="homepage/assets/favicon/apple-touch-icon-144x144.png" />
+	<link rel="apple-touch-icon-precomposed" sizes="60x60" href="homepage/assets/favicon/apple-touch-icon-60x60.png" />
+	<link rel="apple-touch-icon-precomposed" sizes="120x120" href="homepage/assets/favicon/apple-touch-icon-120x120.png" />
+	<link rel="apple-touch-icon-precomposed" sizes="76x76" href="homepage/assets/favicon/apple-touch-icon-76x76.png" />
+	<link rel="apple-touch-icon-precomposed" sizes="152x152" href="homepage/assets/favicon/apple-touch-icon-152x152.png" />
+	<link rel="icon" type="image/png" href="homepage/assets/favicon/favicon-196x196.png" sizes="196x196" />
+	<link rel="icon" type="image/png" href="homepage/assets/favicon/favicon-96x96.png" sizes="96x96" />
+	<link rel="icon" type="image/png" href="homepage/assets/favicon/favicon-32x32.png" sizes="32x32" />
+	<link rel="icon" type="image/png" href="homepage/assets/favicon/favicon-16x16.png" sizes="16x16" />
+	<link rel="icon" type="image/png" href="homepage/assets/favicon/favicon-128.png" sizes="128x128" />
+	<meta name="application-name" content="&nbsp;" />
+	<meta name="msapplication-TileColor" content="#FFFFFF" />
+	<meta name="msapplication-TileImage" content="homepage/assets/favicon/mstile-144x144.png" />
+	<meta name="msapplication-square70x70logo" content="homepage/assets/favicon/mstile-70x70.png" />
+	<meta name="msapplication-square150x150logo" content="homepage/assets/favicon/mstile-150x150.png" />
+	<meta name="msapplication-wide310x150logo" content="homepage/assets/favicon/mstile-310x150.png" />
+	<meta name="msapplication-square310x310logo" content="homepage/assets/favicon/mstile-310x310.png" />
+
+
+	<link inline rel='stylesheet' href='common/css/bundle.css'>
+
+	<!-- smoosh -->
+	<script inline src='common/js/critical.js'></script>
+	<!-- endsmoosh -->
+
+	<script>
+		(function (i, s, o, g, r, a, m) {
+			i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+				(i[r].q = i[r].q || []).push(arguments)
+			}, i[r].l = 1 * new Date(); a = s.createElement(o),
+				m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+		})(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+		ga('create', 'UA-90567923-1', 'auto');
+		ga('send', 'pageview');
+	</script>
+
+	<script>
+		(function () {
+			window.trackOutboundLink = function (url) {
+				ga('send', 'event', 'outbound', 'click', url, {
+					'transport': 'beacon',
+					'hitCallback': function () { document.location = url; }
+				});
+			}
+		})()
+	</script>
+</head>
+
+<body class='tk-publico' id='home'>
+
+	<!-- DO NOT REMOVE -->
+	
+		<a href='#content' class='skip-to-main'>Skip to main content</a>
+		<header>
+			
+			<div class='header__title>
+				<a class='header__logo' href='https://pudding.cool' target='_blank'>
+					<img inline src='common/assets/svg/pudding-wordmark.svg'>
+				</a>
+			</div>
+			
+			<div class='header__sidebar'>
+				<a class='header__logo' href='https://pudding.cool' target='_blank'>
+					<img inline src='common/assets/svg/pudding-logo.svg'>
+				</a>
+				<ul class='sidebar__social'>
+					<li><a class='xxx-small' target='_blank' href='https://www.facebook.com/pudding.viz/' class='facebook-logo'><img inline src='common/assets/svg/facebook.svg'></a></li>
+					<li><a class='xxx-small' target='_blank' href='https://twitter.com/puddingviz' class='twitter-logo'><img inline src='common/assets/svg/twitter.svg'></a></li>
+					<li><a class='xxx-small' target='_blank' href='https://www.instagram.com/pudding.cool' class='instagram-logo'><img inline src='common/assets/svg/instagram.svg'></a></li>
+				</ul>
+			</div>
+
+			<nav class='header__nav'>
+				<ul class='nav__links'>
+					<li><a class='xx-small' href='https://pudding.cool/about'>About</a></li>
+					<li><a class='xx-small' href='https://pudding.cool/about#contact'>Contact</a></li>
+					<li><a class='xx-small' href='https://pudding.cool/about#archives'>Archives</a></li>
+					<li><a class='xx-small' href='https://pudding.cool/about#topics'>Topis</a></li>
+					<li><a class='xx-small' href='https://pudding.cool/#how'>How-To</a></li>
+					<li><a class='xx-small' href='https://pudding.cool/#newsletter'>Join our Newsletter</a></li>
+				</ul>
+					
+			</nav>
+		</header>
+	
+
+	<main id='content'>
+		<section id='picks'>
+			<p class='section__label'>Our Picks</p>
+			<ul>
+				<!-- DO NOT REMOVE -->
+				<li>
+		<div class='story-item'>
+			<div class='item__img'>
+				<a href='//pudding.cool/2018/12/countries'>
+					<img src='common/assets/story-thumbnails/2018_12_countries.jpg' alt='The World through the Eyes of the US' />
+				</a>
+			</div>
+			<div class='item__info'>
+				<a href='//pudding.cool/2018/12/countries'>
+					<h3 class='item__hed'>The World through the Eyes of the US</h3>
+				</a>
+				<p class='item__dek'>The countries that have preoccupied Americans since 1900.</p>
+				<p class='item__author'>By <a href='https://pudding.cool/author/russell-goldenberg'>Russell Goldenberg</a></p>
+			</div>
+		</div>
+	</li><li>
+		<div class='story-item'>
+			<div class='item__img'>
+				<a href='//pudding.cool/2018/12/brief-history'>
+					<img src='common/assets/story-thumbnails/2018_12_brief-history.jpg' alt='A brief history of the past 100 years' />
+				</a>
+			</div>
+			<div class='item__info'>
+				<a href='//pudding.cool/2018/12/brief-history'>
+					<h3 class='item__hed'>A brief history of the past 100 years</h3>
+				</a>
+				<p class='item__dek'>An analysis of 12 decades of New York Times headlines</p>
+				<p class='item__author'>By <a href='https://pudding.cool/author/ilia-blinderman'>Ilia Blinderman</a>, <a href='https://pudding.cool/author/jan-diehm'>Jan Diehm</a></p>
+			</div>
+		</div>
+	</li><li>
+		<div class='story-item'>
+			<div class='item__img'>
+				<a href='//pudding.cool/2018/12/3d-cities-story'>
+					<img src='common/assets/story-thumbnails/2018_12_3d-cities-story.jpg' alt='Population Mountains' />
+				</a>
+			</div>
+			<div class='item__info'>
+				<a href='//pudding.cool/2018/12/3d-cities-story'>
+					<h3 class='item__hed'>Population Mountains</h3>
+				</a>
+				<p class='item__dek'>This is a story about how to perceive the population size of cities.</p>
+				<p class='item__author'>By <a href='https://pudding.cool/author/matt-daniels'>Matt Daniels</a></p>
+			</div>
+		</div>
+	</li><li>
+		<div class='story-item'>
+			<div class='item__img'>
+				<a href='//pudding.cool/2018/11/boy-bands'>
+					<img src='common/assets/story-thumbnails/2018_11_boy-bands.jpg' alt='Internet Boy Band Database' />
+				</a>
+			</div>
+			<div class='item__info'>
+				<a href='//pudding.cool/2018/11/boy-bands'>
+					<h3 class='item__hed'>Internet Boy Band Database</h3>
+				</a>
+				<p class='item__dek'>Every boy band to chart the Hot 100 since 1980.</p>
+				<p class='item__author'>By <a href='https://pudding.cool/author/russell-goldenberg'>Russell Goldenberg</a>, <a href='https://pudding.cool/author/amber-thomas'>Amber Thomas</a>, <a href='https://pudding.cool/author/malik-yusuf'>Malik Yusuf</a></p>
+			</div>
+		</div>
+	</li><li>
+		<div class='story-item'>
+			<div class='item__img'>
+				<a href='//pudding.cool/2018/10/wiki-breakout'>
+					<img src='common/assets/story-thumbnails/2018_10_wiki-breakout.jpg' alt='What Does the Path to Fame Look Like?' />
+				</a>
+			</div>
+			<div class='item__info'>
+				<a href='//pudding.cool/2018/10/wiki-breakout'>
+					<h3 class='item__hed'>What Does the Path to Fame Look Like?</h3>
+				</a>
+				<p class='item__dek'>Tracking the rise in popularity from Cardi B to Carson Wentz.</p>
+				<p class='item__author'>By <a href='https://pudding.cool/author/russell-goldenberg'>Russell Goldenberg</a>, <a href='https://pudding.cool/author/caitlyn-ralph'>Caitlyn Ralph</a></p>
+			</div>
+		</div>
+	</li><li>
+		<div class='story-item'>
+			<div class='item__img'>
+				<a href='//pudding.cool/2018/09/jordans'>
+					<img src='common/assets/story-thumbnails/2018_09_jordans.jpg' alt='A visual history of every Air Jordan' />
+				</a>
+			</div>
+			<div class='item__info'>
+				<a href='//pudding.cool/2018/09/jordans'>
+					<h3 class='item__hed'>A visual history of every Air Jordan</h3>
+				</a>
+				<p class='item__dek'>Michael Jordan is the OG 🐐 (both in basketball and sneakers). Watch how the design of his iconic Air Jordan changes over the last 32 years.</p>
+				<p class='item__author'>By <a href='https://pudding.cool/author/jan-diehm'>Jan Diehm</a></p>
+			</div>
+		</div>
+	</li>
+				
+			</ul>
+		</section>
+
+		<section id='new'>
+			<p class='section__label'>What’s New</p>
+			<ul>
+				<!-- DO NOT REMOVE -->
+				<li>
+		<div class='story-item'>
+			<div class='item__img'>
+				<a href='//pudding.cool/projects/vocabulary'>
+					<img src='common/assets/story-thumbnails/projects_vocabulary.jpg' alt='Rappers, sorted by the size of their vocabulary' />
+				</a>
+			</div>
+			<div class='item__info'>
+				<a href='//pudding.cool/projects/vocabulary'>
+					<h3 class='item__hed'>Rappers, sorted by the size of their vocabulary</h3>
+				</a>
+				<p class='item__dek'>The number of unique lyrics used within artists’ first 35,000 lyrics</p>
+				<p class='item__author'>By <a href='https://pudding.cool/author/matt-daniels'>Matt Daniels</a></p>
+			</div>
+		</div>
+	</li><li>
+		<div class='story-item'>
+			<div class='item__img'>
+				<a href='//pudding.cool/2018/12/countries'>
+					<img src='common/assets/story-thumbnails/2018_12_countries.jpg' alt='The World through the Eyes of the US' />
+				</a>
+			</div>
+			<div class='item__info'>
+				<a href='//pudding.cool/2018/12/countries'>
+					<h3 class='item__hed'>The World through the Eyes of the US</h3>
+				</a>
+				<p class='item__dek'>The countries that have preoccupied Americans since 1900.</p>
+				<p class='item__author'>By <a href='https://pudding.cool/author/russell-goldenberg'>Russell Goldenberg</a></p>
+			</div>
+		</div>
+	</li><li>
+		<div class='story-item'>
+			<div class='item__img'>
+				<a href='//pudding.cool/2018/12/brief-history'>
+					<img src='common/assets/story-thumbnails/2018_12_brief-history.jpg' alt='A brief history of the past 100 years' />
+				</a>
+			</div>
+			<div class='item__info'>
+				<a href='//pudding.cool/2018/12/brief-history'>
+					<h3 class='item__hed'>A brief history of the past 100 years</h3>
+				</a>
+				<p class='item__dek'>An analysis of 12 decades of New York Times headlines</p>
+				<p class='item__author'>By <a href='https://pudding.cool/author/ilia-blinderman'>Ilia Blinderman</a>, <a href='https://pudding.cool/author/jan-diehm'>Jan Diehm</a></p>
+			</div>
+		</div>
+	</li>
+		
+			</ul>
+		</section>
+
+		<section id='topics'>
+			<p class='section__label'>Topics</p>
+			<!-- DO NOT REMOVE -->
+			<li>
+		<div class='story-item'>
+			<div class='item__img'>
+				<a href='//pudding.cool/projects/vocabulary'>
+					<img src='common/assets/story-thumbnails/projects_vocabulary.jpg' alt='Rappers, sorted by the size of their vocabulary' />
+				</a>
+			</div>
+			<div class='item__info'>
+				<a href='//pudding.cool/projects/vocabulary'>
+					<h3 class='item__hed'>Rappers, sorted by the size of their vocabulary</h3>
+				</a>
+				<p class='item__dek'>The number of unique lyrics used within artists’ first 35,000 lyrics</p>
+				<p class='item__author'>By <a href='https://pudding.cool/author/matt-daniels'>Matt Daniels</a></p>
+			</div>
+		</div>
+	</li><li>
+		<div class='story-item'>
+			<div class='item__img'>
+				<a href='//pudding.cool/2018/12/countries'>
+					<img src='common/assets/story-thumbnails/2018_12_countries.jpg' alt='The World through the Eyes of the US' />
+				</a>
+			</div>
+			<div class='item__info'>
+				<a href='//pudding.cool/2018/12/countries'>
+					<h3 class='item__hed'>The World through the Eyes of the US</h3>
+				</a>
+				<p class='item__dek'>The countries that have preoccupied Americans since 1900.</p>
+				<p class='item__author'>By <a href='https://pudding.cool/author/russell-goldenberg'>Russell Goldenberg</a></p>
+			</div>
+		</div>
+	</li><li>
+		<div class='story-item'>
+			<div class='item__img'>
+				<a href='//pudding.cool/2018/12/brief-history'>
+					<img src='common/assets/story-thumbnails/2018_12_brief-history.jpg' alt='A brief history of the past 100 years' />
+				</a>
+			</div>
+			<div class='item__info'>
+				<a href='//pudding.cool/2018/12/brief-history'>
+					<h3 class='item__hed'>A brief history of the past 100 years</h3>
+				</a>
+				<p class='item__dek'>An analysis of 12 decades of New York Times headlines</p>
+				<p class='item__author'>By <a href='https://pudding.cool/author/ilia-blinderman'>Ilia Blinderman</a>, <a href='https://pudding.cool/author/jan-diehm'>Jan Diehm</a></p>
+			</div>
+		</div>
+	</li>
+		</section>
+
+		<!-- DO NOT REMOVE -->
+		<!-- hits -->
+
+		<!-- DO NOT REMOVE -->
+		<!-- how -->
+	</main>
+
+	<!-- DO NOT REMOVE -->
+	<!-- footer -->
+
+	<script>
+		window.storyData = [{"url":"projects/vocabulary","date":"2019-01-16T05:00:00.000Z","hed":"Rappers, sorted by the size of their vocabulary","dek":"The number of unique lyrics used within artists’ first 35,000 lyrics","topic":"music","pick":"","footer":"TRUE","author":["matt"],"views_key":"Rappers, sorted by the size of their vocabulary","views":398,"views_display":"400","img":"projects_vocabulary","time":"January 2019","author_html":"<a href='https://pudding.cool/author/matt-daniels'>Matt Daniels</a>"},{"url":"2018/12/countries","date":"2018-12-19T05:00:00.000Z","hed":"The World through the Eyes of the US","dek":"The countries that have preoccupied Americans since 1900.","topic":"politics","pick":"russell","footer":"TRUE","author":["russell"],"views_key":"The World through the Eyes of the US","views":78496,"views_display":"78k","img":"2018_12_countries","time":"December 2018","author_html":"<a href='https://pudding.cool/author/russell-goldenberg'>Russell Goldenberg</a>"},{"url":"2018/12/brief-history","date":"2018-12-19T05:00:00.000Z","hed":"A brief history of the past 100 years","dek":"An analysis of 12 decades of New York Times headlines","topic":"politics","pick":"ilia","footer":"TRUE","author":["ilia","jan"],"views_key":"A brief history of the past 100 years, as told through the New York Times archives","views":9735,"views_display":"9.7k","img":"2018_12_brief-history","time":"December 2018","author_html":"<a href='https://pudding.cool/author/ilia-blinderman'>Ilia Blinderman</a>, <a href='https://pudding.cool/author/jan-diehm'>Jan Diehm</a>"},{"url":"2018/12/3d-cities-story","date":"2018-12-04T05:00:00.000Z","hed":"Population Mountains","dek":"This is a story about how to perceive the population size of cities.","topic":"politics","pick":"matt","footer":"TRUE","author":["matt"],"views_key":"Population Mountains","views":253913,"views_display":"250k","img":"2018_12_3d-cities-story","time":"December 2018","author_html":"<a href='https://pudding.cool/author/matt-daniels'>Matt Daniels</a>"},{"url":"process/pudding-awards-2018","date":"2018-12-03T05:00:00.000Z","hed":"The Pudding Cup","dek":"The best visual and data-driven stories of 2018.","topic":"how to","pick":"","footer":"","author":["russell"],"views_key":"The Pudding Cup","views":3879,"views_display":"3.9k","img":"process_pudding-awards-2018","time":"December 2018","author_html":"<a href='https://pudding.cool/author/russell-goldenberg'>Russell Goldenberg</a>"},{"url":"2018/11/boy-bands","date":"2018-11-27T05:00:00.000Z","hed":"Internet Boy Band Database","dek":"Every boy band to chart the Hot 100 since 1980.","topic":"music","pick":"amber","footer":"TRUE","author":["russell","amber","malik"],"views_key":"Internet Boy Band Database","views":11366,"views_display":"11k","img":"2018_11_boy-bands","time":"November 2018","author_html":"<a href='https://pudding.cool/author/russell-goldenberg'>Russell Goldenberg</a>, <a href='https://pudding.cool/author/amber-thomas'>Amber Thomas</a>, <a href='https://pudding.cool/author/malik-yusuf'>Malik Yusuf</a>"},{"url":"2018/11/dearabby","date":"2018-11-13T05:00:00.000Z","hed":"30 Years of American Anxieties","dek":"What 20,000 letters to an advice columnist tell us about what—and who—concerns us most.","topic":"culture","pick":"","footer":"TRUE","author":["ilia","caitlyn"],"views_key":"30 Years of American Anxieties","views":24034,"views_display":"24k","img":"2018_11_dearabby","time":"November 2018","author_html":"<a href='https://pudding.cool/author/ilia-blinderman'>Ilia Blinderman</a>, <a href='https://pudding.cool/author/caitlyn-ralph'>Caitlyn Ralph</a>"},{"url":"2018/11/titletowns","date":"2018-11-07T05:00:00.000Z","hed":"The Winningest Cities in North American Sports","dek":"What makes a titletown?","topic":"sports","pick":"","footer":"TRUE","author":["sam"],"views_key":"The Winningest Cities in North American Sports","views":12912,"views_display":"13k","img":"2018_11_titletowns","time":"November 2018","author_html":"<a href='https://pudding.cool/author/sam-vickars'>Sam Vickars</a>"},{"url":"2018/10/city_3d","date":"2018-10-25T04:00:00.000Z","hed":"Human Terrain","dek":"Visualizing the World’s Population, in 3D.","topic":"politics","pick":"","footer":"TRUE","author":["matt"],"views_key":"Human Terrain","views":1183585,"views_display":"1.2M","img":"2018_10_city_3d","time":"October 2018","author_html":"<a href='https://pudding.cool/author/matt-daniels'>Matt Daniels</a>"},{"url":"2018/10/wiki-breakout","date":"2018-10-19T04:00:00.000Z","hed":"What Does the Path to Fame Look Like?","dek":"Tracking the rise in popularity from Cardi B to Carson Wentz.","topic":"culture","pick":"caitlyn","footer":"TRUE","author":["russell","caitlyn"],"views_key":"What Does the Path to Fame Look Like?","views":6255,"views_display":"6.3k","img":"2018_10_wiki-breakout","time":"October 2018","author_html":"<a href='https://pudding.cool/author/russell-goldenberg'>Russell Goldenberg</a>, <a href='https://pudding.cool/author/caitlyn-ralph'>Caitlyn Ralph</a>"},{"url":"2018/09/jordans","date":"2018-09-26T04:00:00.000Z","hed":"A visual history of every Air Jordan","dek":"Michael Jordan is the OG 🐐 (both in basketball and sneakers). Watch how the design of his iconic Air Jordan changes over the last 32 years.","topic":"sports","pick":"jan","footer":"TRUE","author":["jan"],"views_key":"A visual history of every Air Jordan","views":23116,"views_display":"23k","img":"2018_09_jordans","time":"September 2018","author_html":"<a href='https://pudding.cool/author/jan-diehm'>Jan Diehm</a>"},{"url":"2018/09/wiki-billboard","date":"2018-09-11T04:00:00.000Z","hed":"The Celebrity Billboard Project","dek":"Tracking the popularity of cultural figures in 2018.","topic":"culture","pick":"","footer":"TRUE","author":["russell","ilia","caitlyn"],"views_key":"The Celebrity Billboard Project","views":111995,"views_display":"110k","img":"2018_09_wiki-billboard","time":"September 2018","author_html":"<a href='https://pudding.cool/author/russell-goldenberg'>Russell Goldenberg</a>, <a href='https://pudding.cool/author/ilia-blinderman'>Ilia Blinderman</a>, <a href='https://pudding.cool/author/caitlyn-ralph'>Caitlyn Ralph</a>"},{"url":"2018/08/emo-rap","date":"2018-08-30T04:00:00.000Z","hed":"The Most Emo Lyrics: Emo Rap vs. Dashboard Confessional","dek":"Who has the most emotionally vulnerable lyrics, emo rappers or Dashboard Confessional? Has Juice Wrld out-emo’d emo bands?","topic":"music","pick":"","footer":"TRUE","author":["matt"],"views_key":"The Most Emo Lyrics: Emo Rap vs. Dashboard Confessional","views":12781,"views_display":"13k","img":"2018_08_emo-rap","time":"August 2018","author_html":"<a href='https://pudding.cool/author/matt-daniels'>Matt Daniels</a>"},{"url":"2018/08/filmordigital","date":"2018-08-22T04:00:00.000Z","hed":"Film or Digital?","dek":"Breaking down Hollywood's choice of shooting medium.","topic":"culture","pick":"","footer":"TRUE","author":["damar"],"views_key":"Film or Digital?","views":11535,"views_display":"12k","img":"2018_08_filmordigital","time":"August 2018","author_html":"<a href='https://pudding.cool/author/damar-aji-pramudita'>Damar Aji Pramudita</a>"},{"url":"2018/08/pockets","date":"2018-08-15T04:00:00.000Z","hed":"Women's Pockets are Inferior","dek":"If you wear women's clothes, you already know this. But now we've got the data to show it.","topic":"culture","pick":"","footer":"TRUE","author":["jan","amber"],"views_key":"Women's Pockets are Inferior.","views":211160,"views_display":"210k","img":"2018_08_pockets","time":"August 2018","author_html":"<a href='https://pudding.cool/author/jan-diehm'>Jan Diehm</a>, <a href='https://pudding.cool/author/amber-thomas'>Amber Thomas</a>"},{"url":"2018/08/wiki-death","date":"2018-08-05T04:00:00.000Z","hed":"Life After Death on Wikipedia","dek":"What pageviews tell us about how famous people are remembered after they die.","topic":"culture","pick":"","footer":"TRUE","author":["russell"],"views_key":"Life After Death on Wikipedia","views":60168,"views_display":"60k","img":"2018_08_wiki-death","time":"August 2018","author_html":"<a href='https://pudding.cool/author/russell-goldenberg'>Russell Goldenberg</a>"},{"url":"2018/08/retraining","date":"2018-08-02T04:00:00.000Z","hed":"Why the tech sector may not solve America’s looming automation crisis","dek":"5% of America’s employees may be replaced by robots, and transitioning them to become software developers seems to be a popular solution. Here’s why it might be misguided.","topic":"politics","pick":"","footer":"TRUE","author":["jordan","ilia"],"views_key":"Why the tech sector may not solve America’s looming automation crisis","views":16322,"views_display":"16k","img":"2018_08_retraining","time":"August 2018","author_html":"<a href='https://pudding.cool/author/jordan-dworkin'>Jordan Dworkin</a>, <a href='https://pudding.cool/author/ilia-blinderman'>Ilia Blinderman</a>"},{"url":"2018/07/airports","date":"2018-07-24T04:00:00.000Z","hed":"What Airport Traffic Tells Us About the World's Megacities","dek":"Last year, Daniel Knowles wrote an account of Kinshasa, the capital of the Democratic Republic of Congo, a city of 13 million people. One of his stats led me down a rabbit hole: Kinshasa has 13 departing flights per day.","topic":"politics","pick":"","footer":"TRUE","author":["matt"],"views_key":"What Airport Traffic Tells Us About the World's Megacities","views":14033,"views_display":"14k","img":"2018_07_airports","time":"July 2018","author_html":"<a href='https://pudding.cool/author/matt-daniels'>Matt Daniels</a>"},{"url":"process/flexbox-layout","date":"2018-07-20T04:00:00.000Z","hed":"Making Data Viz Without SVG Using D3 and Flexbox","dek":"Bye bye tricky alignments.","topic":"how to","pick":"","footer":"","author":["amber"],"views_key":"Making Data Viz Without SVG Using D3 and Flexbox","views":4795,"views_display":"4.8k","img":"process_flexbox-layout","time":"July 2018","author_html":"<a href='https://pudding.cool/author/amber-thomas'>Amber Thomas</a>"},{"url":"2018/07/birth_control","date":"2018-07-17T04:00:00.000Z","hed":"Let’s Talk About Birth Control","dek":"There’s no TMI here, just 20,759 people describing their experiences with contraception.","topic":"education","pick":"","footer":"TRUE","author":["amber"],"views_key":"Let’s Talk About Birth Control","views":0,"views_display":"0.0","img":"2018_07_birth_control","time":"July 2018","author_html":"<a href='https://pudding.cool/author/amber-thomas'>Amber Thomas</a>"},{"url":"2018/07/women-in-congress","date":"2018-07-10T04:00:00.000Z","hed":"We mapped out the road to gender parity in the House of Representatives","dek":"Exploring the last 100 years of women in politics through data and machine learning.","topic":"politics","pick":"","footer":"TRUE","author":["durand"],"views_key":"We mapped out the road to gender parity in the House of Representatives","views":18007,"views_display":"18k","img":"2018_07_women-in-congress","time":"July 2018","author_html":"<a href='https://pudding.cool/author/durand-dsouza'>Durand D’souza</a>"},{"url":"2018/07/women-in-parliament","date":"2018-07-10T04:00:00.000Z","hed":"What 1.2 million parliamentary speeches can teach us about gender representation.","dek":"Exploring the last 100 years of women in parliament through data and machine learning.","topic":"politics","pick":"","footer":"","author":["durand"],"views_key":"What 1.2 million parliamentary speeches can teach us about gender representation.","views":9535,"views_display":"9.5k","img":"2018_07_women-in-parliament","time":"July 2018","author_html":"<a href='https://pudding.cool/author/durand-dsouza'>Durand D’souza</a>"},{"url":"2018/06/gayborhoods","date":"2018-06-28T04:00:00.000Z","hed":"Men are from Chelsea, Women are from Park Slope","dek":"How “gayborhoods” in 15 major American cities are divided by gender.","topic":"culture","pick":"","footer":"TRUE","author":["jan"],"views_key":"Men are from Chelsea, Women are from Park Slope","views":12617,"views_display":"13k","img":"2018_06_gayborhoods","time":"June 2018","author_html":"<a href='https://pudding.cool/author/jan-diehm'>Jan Diehm</a>"},{"url":"2018/06/makeup-shades","date":"2018-06-13T04:00:00.000Z","hed":"The Diversity of Makeup Shades","dek":"Rihanna's Fenty Beauty is a champion for makeup inclusivity. But how do other brands across the US and the world compare? ","topic":"culture","pick":"","footer":"TRUE","author":["jason","amber","divya"],"views_key":"The Diversity of Makeup Shades","views":35908,"views_display":"36k","img":"2018_06_makeup-shades","time":"June 2018","author_html":"<a href='https://pudding.cool/author/jason-li'>Jason Li</a>, <a href='https://pudding.cool/author/amber-thomas'>Amber Thomas</a>, <a href='https://pudding.cool/author/divya-manian'>Divya Manian</a>"},{"url":"process/scrollytelling-sticky","date":"2018-06-08T04:00:00.000Z","hed":"Easier scrollytelling with position sticky","dek":"Leaning on CSS to simplify the process.","topic":"how to","pick":"","footer":"","author":["russell","elaina"],"views_key":"Easier scrollytelling with position sticky","views":22030,"views_display":"22k","img":"process_scrollytelling-sticky","time":"June 2018","author_html":"<a href='https://pudding.cool/author/russell-goldenberg'>Russell Goldenberg</a>, <a href='https://pudding.cool/author/elaina-natario'>Elaina Natario</a>"},{"url":"2018/06/skate-music","date":"2018-06-05T04:00:00.000Z","hed":"The Good, the Rad, and the Gnarly","dek":"An exploration into the music of skateboarding.","topic":"music","pick":"","footer":"TRUE","author":["jared"],"views_key":"The Good, the Rad, and the Gnarly","views":12212,"views_display":"12k","img":"2018_06_skate-music","time":"June 2018","author_html":"<a href='https://pudding.cool/author/jared-wilbur'>Jared Wilbur</a>"},{"url":"2018/06/music-map","date":"2018-06-04T04:00:00.000Z","hed":"The Cultural Borders of Songs","dek":"We mapped last month’s #1 songs in 3,000 places. See where songs dominate across the globe.","topic":"music","pick":"","footer":"TRUE","author":["matt"],"views_key":"The Cultural Borders of Songs","views":670646,"views_display":"670k","img":"2018_06_music-map","time":"June 2018","author_html":"<a href='https://pudding.cool/author/matt-daniels'>Matt Daniels</a>"},{"url":"2018/05/nba-top-plays","date":"2018-05-31T04:00:00.000Z","hed":"The Most-Viewed NBA Plays in 2017-18","dek":"Warning: this video contains a high dosage of LeBron footage.","topic":"sports","pick":"","footer":"TRUE","author":["russell"],"views_key":"The Most-Viewed NBA Plays in 2017-18","views":24206,"views_display":"24k","img":"2018_05_nba-top-plays","time":"May 2018","author_html":"<a href='https://pudding.cool/author/russell-goldenberg'>Russell Goldenberg</a>"},{"url":"2018/05/similarity","date":"2018-05-24T04:00:00.000Z","hed":"Are Hit Songs Becoming Less Musically Diverse?","dek":"Data on whether today’s hit artists are taking fewer risks and creating a narrower range of sounds.","topic":"music","pick":"","footer":"TRUE","author":["matt","andrew"],"views_key":"Are Hit Songs Becoming Less Musically Diverse?","views":60252,"views_display":"60k","img":"2018_05_similarity","time":"May 2018","author_html":"<a href='https://pudding.cool/author/matt-daniels'>Matt Daniels</a>, <a href='https://pudding.cool/author/andrew-thompson'>Andrew Thompson</a>"},{"url":"2018/05/cookies","date":"2018-05-10T04:00:00.000Z","hed":"Baking the Most Average Chocolate Chip Cookie","dek":"Cookie recipes written by computers. What could go wrong?","topic":"culture","pick":"","footer":"TRUE","author":["elle","amber"],"views_key":"Baking the Most Average Chocolate Chip Cookie","views":10467,"views_display":"10k","img":"2018_05_cookies","time":"May 2018","author_html":"<a href='https://pudding.cool/author/elle-obrien'>Elle O’Brien</a>, <a href='https://pudding.cool/author/amber-thomas'>Amber Thomas</a>"},{"url":"2018/04/one-hit-wonders","date":"2018-04-30T04:00:00.000Z","hed":"One-Hit Wonders in Sports","dek":"The greatest single-season anomalies in the last 30 years.","topic":"sports","pick":"","footer":"TRUE","author":["russell","jan"],"views_key":"One-Hit Wonders in Sports","views":26305,"views_display":"26k","img":"2018_04_one-hit-wonders","time":"April 2018","author_html":"<a href='https://pudding.cool/author/russell-goldenberg'>Russell Goldenberg</a>, <a href='https://pudding.cool/author/jan-diehm'>Jan Diehm</a>"},{"url":"2018/04/birthday-paradox","date":"2018-04-09T04:00:00.000Z","hed":"The Birthday Paradox Experiment","dek":"Your birthday twin is probably reading this right now. Because math.","topic":"culture","pick":"","footer":"TRUE","author":["russell"],"views_key":"The Birthday Paradox Experiment","views":84333,"views_display":"84k","img":"2018_04_birthday-paradox","time":"April 2018","author_html":"<a href='https://pudding.cool/author/russell-goldenberg'>Russell Goldenberg</a>"},{"url":"2018/03/neighborhoods","date":"2018-03-21T04:00:00.000Z","hed":"A Tale of Two Cities","dek":"Using data and our own experiences to write love letters to the cities we call home.","topic":"culture","pick":"","footer":"TRUE","author":["amber","ilia"],"views_key":"A Tale of Two Cities","views":9737,"views_display":"9.7k","img":"2018_03_neighborhoods","time":"March 2018","author_html":"<a href='https://pudding.cool/author/amber-thomas'>Amber Thomas</a>, <a href='https://pudding.cool/author/ilia-blinderman'>Ilia Blinderman</a>"},{"url":"2018/02/stand-up","date":"2018-02-26T05:00:00.000Z","hed":"The Structure of Stand-Up Comedy","dek":"The genius of Ali Wong’s Netflix special.","topic":"culture","pick":"","footer":"TRUE","author":["russell","matt"],"views_key":"The Structure of Stand-Up Comedy","views":118189,"views_display":"120k","img":"2018_02_stand-up","time":"February 2018","author_html":"<a href='https://pudding.cool/author/russell-goldenberg'>Russell Goldenberg</a>, <a href='https://pudding.cool/author/matt-daniels'>Matt Daniels</a>"},{"url":"2018/02/waveforms","date":"2018-02-16T05:00:00.000Z","hed":"Let's Learn About Waveforms","dek":"An interactive guide that introduces and explores waveforms.","topic":"education","pick":"","footer":"TRUE","author":["josh"],"views_key":"Let's Learn About Waveforms","views":96665,"views_display":"97k","img":"2018_02_waveforms","time":"February 2018","author_html":"<a href='https://pudding.cool/author/josh-comeau'>Josh Comeau</a>"},{"url":"2018/02/death","date":"2018-02-13T05:00:00.000Z","hed":"Limbo Lines: Dead Here, Alive There","dek":"Brain death’s role in the uncertainties of death.","topic":"politics","pick":"","footer":"TRUE","author":["beatrice"],"views_key":"Limbo Lines: Dead Here, Alive There","views":4634,"views_display":"4.6k","img":"2018_02_death","time":"February 2018","author_html":"<a href='https://pudding.cool/author/beatrice-jin'>Beatrice Jin</a>"},{"url":"2018/02/restaurants","date":"2018-02-06T05:00:00.000Z","hed":"Mapping Gastronomic Borders in the US","dek":"How US culture dictates geographic restaurant patterns","topic":"culture","pick":"","footer":"TRUE","author":["matt"],"views_key":"Mapping the US Gastronomic Borders","views":31204,"views_display":"31k","img":"2018_02_restaurants","time":"February 2018","author_html":"<a href='https://pudding.cool/author/matt-daniels'>Matt Daniels</a>"},{"url":"2018/01/mars-weather","date":"2018-01-31T05:00:00.000Z","hed":"Greetings from Mars","dek":"Exploring today's weather on Mars and in your area with the Curiosity Rover.","topic":"culture","pick":"","footer":"TRUE","author":["amber"],"views_key":"Greetings from Mars","views":16058,"views_display":"16k","img":"2018_01_mars-weather","time":"January 2018","author_html":"<a href='https://pudding.cool/author/amber-thomas'>Amber Thomas</a>"},{"url":"2018/01/chyrons","date":"2018-01-25T05:00:00.000Z","hed":"The Differences in How CNN, MSNBC, and FOX Cover the News","dek":"The story you get depends on the channel you watch.","topic":"politics","pick":"","footer":"TRUE","author":["charlie"],"views_key":"The Differences in How CNN, MSNBC, and FOX Cover the News","views":88542,"views_display":"89k","img":"2018_01_chyrons","time":"January 2018","author_html":"<a href='https://pudding.cool/author/charlie-smart'>Charlie Smart</a>"},{"url":"2017/12/hater","date":"2017-12-04T05:00:00.000Z","hed":"10 Things Everyone Hates About You","dek":"Exploring over 30 million feelings towards 3,000+ topics.","topic":"culture","pick":"","footer":"TRUE","author":["russell","amber"],"views_key":"10 Things Everyone Hates About You","views":77750,"views_display":"78k","img":"2017_12_hater","time":"December 2017","author_html":"<a href='https://pudding.cool/author/russell-goldenberg'>Russell Goldenberg</a>, <a href='https://pudding.cool/author/amber-thomas'>Amber Thomas</a>"},{"url":"process/pudding-awards-2017","date":"2017-11-26T05:00:00.000Z","hed":"The Pudding Awards","dek":"Our favorite projects on the internet in 2017.","topic":"how to","pick":"","footer":"","author":["russell"],"views_key":"The Pudding Awards","views":10638,"views_display":"11k","img":"process_pudding-awards-2017","time":"November 2017","author_html":"<a href='https://pudding.cool/author/russell-goldenberg'>Russell Goldenberg</a>"},{"url":"process/introducing-scrollama","date":"2017-11-16T05:00:00.000Z","hed":"An Introduction to Scrollama.js","dek":"The what, why, and how to use scrollama.js for your next scrollytelling story.","topic":"how to","pick":"","footer":"","author":["russell"],"views_key":"An Introduction to Scrollama.js","views":36766,"views_display":"37k","img":"process_introducing-scrollama","time":"November 2017","author_html":"<a href='https://pudding.cool/author/russell-goldenberg'>Russell Goldenberg</a>"},{"url":"process/how-to-make-dope-shit-part-2","date":"2017-11-01T04:00:00.000Z","hed":"How to Make Dope Shit Part 2: Design","dek":"This is the second installment of a multi-part series designed to help you familiarize yourself with the tools used to make visual, data-driven essays.","topic":"how to","pick":"","footer":"","author":["ilia"],"views_key":"Making Internet Things, Part 2: Design","views":7578,"views_display":"7.6k","img":"process_how-to-make-dope-shit-part-2","time":"November 2017","author_html":"<a href='https://pudding.cool/author/ilia-blinderman'>Ilia Blinderman</a>"},{"url":"2017/10/satellites","date":"2017-10-18T04:00:00.000Z","hed":"Seeing Earth from Outer Space","dek":"A visual history of satellites.","topic":"culture","pick":"","footer":"","author":["conlen"],"views_key":"Seeing Earth from Outer Space","views":29234,"views_display":"29k","img":"2017_10_satellites","time":"October 2017","author_html":"<a href='https://pudding.cool/author/matthew-conlen'>Matthew Conlen</a>"},{"url":"2017/10/superteams","date":"2017-10-12T04:00:00.000Z","hed":"What is a Superteam in the NBA?","dek":"You Define It.","topic":"sports","pick":"","footer":"TRUE","author":["russell","matt"],"views_key":"What is a Superteam in the NBA?","views":18585,"views_display":"19k","img":"2017_10_superteams","time":"October 2017","author_html":"<a href='https://pudding.cool/author/russell-goldenberg'>Russell Goldenberg</a>, <a href='https://pudding.cool/author/matt-daniels'>Matt Daniels</a>"},{"url":"2017/10/asne","date":"2017-10-12T04:00:00.000Z","hed":"Newspapers: A Black & White Issue","dek":"Measuring racial diversity in journalism.","topic":"culture","pick":"","footer":"TRUE","author":["matt","amber"],"views_key":"Newspapers: A Black & White Issue","views":18285,"views_display":"18k","img":"2017_10_asne","time":"October 2017","author_html":"<a href='https://pudding.cool/author/matt-daniels'>Matt Daniels</a>, <a href='https://pudding.cool/author/amber-thomas'>Amber Thomas</a>"},{"url":"2017/09/hip-hop-words","date":"2017-09-22T04:00:00.000Z","hed":"The Words That Are “Most Hip Hop”","dek":"Using math to rank words that are central to artists’ vocabularies.","topic":"music","pick":"","footer":"TRUE","author":["matt","thedataface"],"views_key":"The Words That Are “Most Hip Hop”","views":251373,"views_display":"250k","img":"2017_09_hip-hop-words","time":"September 2017","author_html":"<a href='https://pudding.cool/author/matt-daniels'>Matt Daniels</a>, <a href='https://pudding.cool/author/the-data-face'>The Data Face</a>"},{"url":"2017/09/this-american-life","date":"2017-09-21T04:00:00.000Z","hed":"Listen to Her: Gender on This American Life","dek":"The story behind the gender divide on This American Life.","topic":"culture","pick":"","footer":"TRUE","author":["ash"],"views_key":"Listen to Her: Gender on This American Life","views":22112,"views_display":"22k","img":"2017_09_this-american-life","time":"September 2017","author_html":"<a href='https://pudding.cool/author/ash-ngu'>Ash Ngu</a>"},{"url":"2017/09/clinics","date":"2017-09-07T04:00:00.000Z","hed":"How far is too far? An analysis of driving times to abortion clinics in the US.","dek":"Mapping the cities and places with the worst access.","topic":"politics","pick":"","footer":"TRUE","author":["russell","amber","caitlyn"],"views_key":"How far is too far? An analysis of driving times to abortion clinics in the US.","views":17670,"views_display":"18k","img":"2017_09_clinics","time":"September 2017","author_html":"<a href='https://pudding.cool/author/russell-goldenberg'>Russell Goldenberg</a>, <a href='https://pudding.cool/author/amber-thomas'>Amber Thomas</a>, <a href='https://pudding.cool/author/caitlyn-ralph'>Caitlyn Ralph</a>"},{"url":"2017/08/screen-direction","date":"2017-08-22T04:00:00.000Z","hed":"She Giggles, He Gallops","dek":"Analyzing gender tropes in film with screen direction from 2,000 scripts.","topic":"culture","pick":"","footer":"TRUE","author":["julia","russell","amber"],"views_key":"She Giggles, He Gallops","views":36159,"views_display":"36k","img":"2017_08_screen-direction","time":"August 2017","author_html":"<a href='https://pudding.cool/author/julia-silge'>Julia Silge</a>, <a href='https://pudding.cool/author/russell-goldenberg'>Russell Goldenberg</a>, <a href='https://pudding.cool/author/amber-thomas'>Amber Thomas</a>"},{"url":"process/how-to-make-dope-shit-part-1","date":"2017-08-13T04:00:00.000Z","hed":"How to Make Dope Shit Part 1: Working with Data","dek":"This is the first installment of a multi-part series designed to help you familiarize yourself with the tools used to make visual, data-driven essays.","topic":"how to","pick":"","footer":"","author":["ilia"],"views_key":"Making Internet Things, Part 1: Working with Data","views":16709,"views_display":"17k","img":"process_how-to-make-dope-shit-part-1","time":"August 2017","author_html":"<a href='https://pudding.cool/author/ilia-blinderman'>Ilia Blinderman</a>"},{"url":"2017/08/the-office","date":"2017-08-04T04:00:00.000Z","hed":"‘The Office’ Dialogue in Five Charts","dek":"A breakdown of how every character contributed to the show.","topic":"culture","pick":"","footer":"TRUE","author":["caitlyn"],"views_key":"‘The Office’ Dialogue in Five Charts","views":43157,"views_display":"43k","img":"2017_08_the-office","time":"August 2017","author_html":"<a href='https://pudding.cool/author/caitlyn-ralph'>Caitlyn Ralph</a>"},{"url":"process/resize","date":"2017-08-01T04:00:00.000Z","hed":"How Many Users Resize Their Browser?","dek":"A look at actual data and how to deal with it.","topic":"how to","pick":"","footer":"","author":["russell"],"views_key":"How Many Users Resize Their Browser?","views":7463,"views_display":"7.5k","img":"process_resize","time":"August 2017","author_html":"<a href='https://pudding.cool/author/russell-goldenberg'>Russell Goldenberg</a>"},{"url":"2017/07/eating-alone","date":"2017-07-28T04:00:00.000Z","hed":"Table for One","dek":"An exploration of the dining habits and companions of Americans.","topic":"culture","pick":"","footer":"TRUE","author":["henrik","amber"],"views_key":"Table for One","views":23728,"views_display":"24k","img":"2017_07_eating-alone","time":"July 2017","author_html":"<a href='https://pudding.cool/author/henrik-lindberg'>Henrik Lindberg</a>, <a href='https://pudding.cool/author/amber-thomas'>Amber Thomas</a>"},{"url":"2017/07/comics","date":"2017-07-18T04:00:00.000Z","hed":"Analyzing the Gender Representation of 34,476 Comic Book Characters","dek":"Female characters appear in superhero comics less often than males — but how are they depicted?","topic":"culture","pick":"","footer":"TRUE","author":["amanda"],"views_key":"Analyzing the Gender Representation of 34,476 Comic Book Characters","views":81259,"views_display":"81k","img":"2017_07_comics","time":"July 2017","author_html":"<a href='https://pudding.cool/author/amanda-shendruk'>Amanda Shendruk</a>"},{"url":"2017/07/jobs","date":"2017-07-11T04:00:00.000Z","hed":"Why the Republican Party Wins When Robots Take Your Job","dek":"Research suggests that job automation is only a matter of time. Here's why the American right will benefit.","topic":"politics","pick":"","footer":"TRUE","author":["ilia"],"views_key":"Why the Republican Party wins when robots take your job","views":14727,"views_display":"15k","img":"2017_07_jobs","time":"July 2017","author_html":"<a href='https://pudding.cool/author/ilia-blinderman'>Ilia Blinderman</a>"},{"url":"2017/07/cetaceans","date":"2017-07-06T04:00:00.000Z","hed":"Free Willy and Flipper by the Numbers","dek":"The past, present, and future of captive whales and dolphins according to data and pop culture.","topic":"culture","pick":"","footer":"TRUE","author":["amber","russell"],"views_key":"Free Willy and Flipper by the Numbers","views":8982,"views_display":"9.0k","img":"2017_07_cetaceans","time":"July 2017","author_html":"<a href='https://pudding.cool/author/amber-thomas'>Amber Thomas</a>, <a href='https://pudding.cool/author/russell-goldenberg'>Russell Goldenberg</a>"},{"url":"2017/06/film-trends","date":"2017-06-29T04:00:00.000Z","hed":"Analyzing Plot Trends for Every Top-Grossing Film from the Past 50 Years","dek":"This is a story about how film plots mirror (or shape) historical events.","topic":"culture","pick":"","footer":"TRUE","author":["matt","russell"],"views_key":"Analyzing plot trends for every top-grossing film from the past 50 years","views":20084,"views_display":"20k","img":"2017_06_film-trends","time":"June 2017","author_html":"<a href='https://pudding.cool/author/matt-daniels'>Matt Daniels</a>, <a href='https://pudding.cool/author/russell-goldenberg'>Russell Goldenberg</a>"},{"url":"2017/06/best-sellers","date":"2017-06-01T04:00:00.000Z","hed":"Bias, She Wrote","dek":"How much progress has American literature made towards gender equality?","topic":"culture","pick":"","footer":"TRUE","author":["rosie"],"views_key":"The Gender Balance of The New York Times Best Seller List","views":29230,"views_display":"29k","img":"2017_06_best-sellers","time":"June 2017","author_html":"<a href='https://pudding.cool/author/rosie-cima'>Rosie Cima</a>"},{"url":"2017/05/births","date":"2017-05-24T04:00:00.000Z","hed":"The Timing of Baby Making","dek":"Births, broken down by geography and month.","topic":"culture","pick":"","footer":"TRUE","author":["amber"],"views_key":"The Timing of Baby Making","views":25202,"views_display":"25k","img":"2017_05_births","time":"May 2017","author_html":"<a href='https://pudding.cool/author/amber-thomas'>Amber Thomas</a>"},{"url":"process/weighted-pivot-scatter-plot","date":"2017-05-15T04:00:00.000Z","hed":"The Making of the Weighted Pivot Scatter Plot","dek":"How (and why) the interactive chart was born.","topic":"how to","pick":"","footer":"","author":["russell"],"views_key":"The Making of the Weighted Pivot Scatter Plot","views":11269,"views_display":"11k","img":"process_weighted-pivot-scatter-plot","time":"May 2017","author_html":"<a href='https://pudding.cool/author/russell-goldenberg'>Russell Goldenberg</a>"},{"url":"process/regional_smoothing","date":"2017-05-11T04:00:00.000Z","hed":"Regional Smoothing in R","dek":"A guide to smoothing geospatial data in R.","topic":"how to","pick":"","footer":"","author":["ilia"],"views_key":"Regional Smoothing in R","views":9817,"views_display":"9.8k","img":"process_regional_smoothing","time":"May 2017","author_html":"<a href='https://pudding.cool/author/ilia-blinderman'>Ilia Blinderman</a>"},{"url":"2017/05/song-repetition","date":"2017-05-11T04:00:00.000Z","hed":"Are Pop Lyrics Getting More Repetitive?","dek":"Measuring repetition in song lyrics over time using a compression algorithm.","topic":"music","pick":"","footer":"TRUE","author":["colin"],"views_key":"Are Pop Lyrics Getting More Repetitive?","views":1336276,"views_display":"1.3M","img":"2017_05_song-repetition","time":"May 2017","author_html":"<a href='https://pudding.cool/author/colin-morris'>Colin Morris</a>"},{"url":"2017/05/nba-moments","date":"2017-05-06T04:00:00.000Z","hed":"The Most Timeless NBA Plays","dek":"Historic NBA games and plays, ranked by YouTube views.","topic":"sports","pick":"","footer":"TRUE","author":["matt","russell"],"views_key":"The Most Timeless NBA plays","views":17308,"views_display":"17k","img":"2017_05_nba-moments","time":"May 2017","author_html":"<a href='https://pudding.cool/author/matt-daniels'>Matt Daniels</a>, <a href='https://pudding.cool/author/russell-goldenberg'>Russell Goldenberg</a>"},{"url":"process/responsive-scrollytelling","date":"2017-04-21T04:00:00.000Z","hed":"Responsive Scrollytelling Best Practices","dek":"How to plan or adapt a scrollytelling story for mobile.","topic":"how to","pick":"","footer":"","author":["russell"],"views_key":"Responsive scrollytelling best practices","views":14064,"views_display":"14k","img":"process_responsive-scrollytelling","time":"April 2017","author_html":"<a href='https://pudding.cool/author/russell-goldenberg'>Russell Goldenberg</a>"},{"url":"2017/04/beer","date":"2017-04-18T04:00:00.000Z","hed":"What City is the Microbrew Capital of the US?","dek":"Using beer review data to rank the best cities in the country.","topic":"culture","pick":"","footer":"TRUE","author":["russell"],"views_key":"What city is the microbrew capital of the US?","views":402894,"views_display":"400k","img":"2017_04_beer","time":"April 2017","author_html":"<a href='https://pudding.cool/author/russell-goldenberg'>Russell Goldenberg</a>"},{"url":"2017/03/incarceration","date":"2017-03-21T04:00:00.000Z","hed":"Why Does the US Lead the World in Incarceration?","dek":"How we got here – the global leader in incarceration – is one of the most debated questions in policy.","topic":"politics","pick":"","footer":"TRUE","author":["matt"],"views_key":"Why does the U.S. lead the world in incarceration?","views":18097,"views_display":"18k","img":"2017_03_incarceration","time":"March 2017","author_html":"<a href='https://pudding.cool/author/matt-daniels'>Matt Daniels</a>"},{"url":"2017/03/westbrook","date":"2017-03-08T05:00:00.000Z","hed":"How Russell Westbrook Can Average a Triple-Double","dek":"As of March 10, Russell Westbrook is averaging a triple-double.","topic":"sports","pick":"","footer":"","author":["russell"],"views_key":"How Russell Westbrook can Average a Triple-Double","views":7133,"views_display":"7.1k","img":"2017_03_westbrook","time":"March 2017","author_html":"<a href='https://pudding.cool/author/russell-goldenberg'>Russell Goldenberg</a>"},{"url":"2017/03/home-court","date":"2017-03-02T05:00:00.000Z","hed":"Do NBA Refs Favor the Home Team?","dek":"Analyzing 13,658 reviewed calls by the NBA to rank teams by favorable home court officiating.","topic":"sports","pick":"","footer":"","author":["oliver","matt"],"views_key":"Do NBA refs favor the home team?","views":6979,"views_display":"7.0k","img":"2017_03_home-court","time":"March 2017","author_html":"<a href='https://pudding.cool/author/oliver-roeder'>Oliver Roeder</a>, <a href='https://pudding.cool/author/matt-daniels'>Matt Daniels</a>"},{"url":"2017/02/oscars_so_mapped","date":"2017-02-23T05:00:00.000Z","hed":"The Geographic Divide of Oscars Films","dek":"Mapping the popularity of Oscar-nominated films in 2017.","topic":"culture","pick":"","footer":"TRUE","author":["matt","russell","ilia"],"views_key":"The Geographic Divide of Oscar Films","views":14633,"views_display":"15k","img":"2017_02_oscars_so_mapped","time":"February 2017","author_html":"<a href='https://pudding.cool/author/matt-daniels'>Matt Daniels</a>, <a href='https://pudding.cool/author/russell-goldenberg'>Russell Goldenberg</a>, <a href='https://pudding.cool/author/ilia-blinderman'>Ilia Blinderman</a>"},{"url":"2017/02/two-minute-report","date":"2017-02-15T05:00:00.000Z","hed":"NBA Last Two Minute Report","dek":"A review of the NBA officiating from the Last Two Minute Report","topic":"sports","pick":"","footer":"TRUE","author":["russell"],"views_key":"NBA Last Two Minute Report","views":27595,"views_display":"28k","img":"2017_02_two-minute-report","time":"February 2017","author_html":"<a href='https://pudding.cool/author/russell-goldenberg'>Russell Goldenberg</a>"},{"url":"process/how-to-implement-scrollytelling","date":"2017-02-10T05:00:00.000Z","hed":"How to Implement Scrollytelling with Six Different Libraries","dek":"In this post, I look at how to tackle a simple scroll-driven chart using six different libraries, and share my thoughts on each implementation.","topic":"how to","pick":"","footer":"","author":["russell"],"views_key":"How to implement scrollytelling with six different libraries","views":33883,"views_display":"34k","img":"process_how-to-implement-scrollytelling","time":"February 2017","author_html":"<a href='https://pudding.cool/author/russell-goldenberg'>Russell Goldenberg</a>"},{"url":"2017/02/new-slang","date":"2017-02-05T05:00:00.000Z","hed":"The Emergence Of Slang, Using Search Data","dek":"Emerging slang, identified by searches for words’ definitions.","topic":"culture","pick":"","footer":"TRUE","author":["matt"],"views_key":"Where New Slang Comes From","views":55457,"views_display":"55k","img":"2017_02_new-slang","time":"February 2017","author_html":"<a href='https://pudding.cool/author/matt-daniels'>Matt Daniels</a>"},{"url":"2017/01/shape-of-slavery","date":"2017-01-23T05:00:00.000Z","hed":"Mapping Slavery Against US Incarceration","dek":"How do historic incarceration rates differ between slave states and non-slave states?","topic":"politics","pick":"","footer":"TRUE","author":["matt"],"views_key":"Mapping Slavery Against US Incarceration","views":22026,"views_display":"22k","img":"2017_01_shape-of-slavery","time":"January 2017","author_html":"<a href='https://pudding.cool/author/matt-daniels'>Matt Daniels</a>"},{"url":"2017/01/making-it-big","date":"2017-01-15T05:00:00.000Z","hed":"The Unlikely Odds of Making it Big","dek":"What three years and 75,000 shows tell us about the chance your favorite band will succeed.","topic":"music","pick":"","footer":"TRUE","author":["russell","dan"],"views_key":"The Unlikely Odds of Making it Big","views":70423,"views_display":"70k","img":"2017_01_making-it-big","time":"January 2017","author_html":"<a href='https://pudding.cool/author/russell-goldenberg'>Russell Goldenberg</a>, <a href='https://pudding.cool/author/dan-kopf'>Dan Kopf</a>"},{"url":"2017/03/hamilton","date":"2016-12-15T05:00:00.000Z","hed":"An Interactive Visualization of Every Line in Hamilton","dek":"From the moment I sat down to listen the whole way through, I was done for...","topic":"culture","pick":"","footer":"TRUE","author":["shirley"],"views_key":"An Interactive Visualization of Every Line in Hamilton","views":202597,"views_display":"200k","img":"2017_03_hamilton","time":"December 2016","author_html":"<a href='https://pudding.cool/author/shirley-wu'>Shirley Wu</a>"},{"url":"2017/03/elections","date":"2016-10-01T04:00:00.000Z","hed":"How News Media Covers Trump & Clinton","dek":"Analyzing 12,147 images of Trump and Clinton.","topic":"politics","pick":"","footer":"TRUE","author":["russell"],"views_key":"How news media covers Trump & Clinton","views":15836,"views_display":"16k","img":"2017_03_elections","time":"October 2016","author_html":"<a href='https://pudding.cool/author/russell-goldenberg'>Russell Goldenberg</a>"},{"url":"2017/03/redraft","date":"2016-09-01T04:00:00.000Z","hed":"Twenty Years of the NBA Redrafted","dek":"Using career stats to prove the best/worst NBA draft picks, ever.","topic":"sports","pick":"","footer":"TRUE","author":["russell"],"views_key":"Twenty years of the NBA redrafted","views":134884,"views_display":"130k","img":"2017_03_redraft","time":"September 2016","author_html":"<a href='https://pudding.cool/author/russell-goldenberg'>Russell Goldenberg</a>"},{"url":"2017/03/sampling","date":"2016-09-01T04:00:00.000Z","hed":"How Robert Glasper sampled Miles Davis on “Ghetto Walkin”","dek":"An interactive story about the art of sampling.","topic":"music","pick":"","footer":"TRUE","author":["matt"],"views_key":"How Robert Glasper sampled Miles Davis on “Ghetto Walkin”","views":40079,"views_display":"40k","img":"2017_03_sampling","time":"September 2016","author_html":"<a href='https://pudding.cool/author/matt-daniels'>Matt Daniels</a>"},{"url":"2017/03/miles","date":"2016-06-01T04:00:00.000Z","hed":"The 2,452 Wikipedia Pages on which Miles Davis is Mentioned","dek":"25 years after his death, he's still synonymous with Jazz, but you can find his fingerprints on so many other ideas.","topic":"music","pick":"","footer":"TRUE","author":["matt"],"views_key":"Miles Davis’ legacy, represented by every Wikipedia page that mentions him","views":39130,"views_display":"39k","img":"2017_03_miles","time":"June 2016","author_html":"<a href='https://pudding.cool/author/matt-daniels'>Matt Daniels</a>"},{"url":"2017/03/music-history","date":"2016-05-01T04:00:00.000Z","hed":"How Music Taste Evolved","dek":"Every top 5 song, from 1958 - 2016, so we can stop arguing about when music was still good.","topic":"music","pick":"","footer":"TRUE","author":["matt"],"views_key":"How Music Evolved: Billboard's Hot 100, 1958 - 2016","views":1411427,"views_display":"1.4M","img":"2017_03_music-history","time":"May 2016","author_html":"<a href='https://pudding.cool/author/matt-daniels'>Matt Daniels</a>"},{"url":"2017/03/comeback","date":"2016-04-10T04:00:00.000Z","hed":"Using Historical NBA Data To Rank the Most Unlikely Comebacks","dek":"Using a win-probability model to identify the most statistically unlikely comebacks this season.","topic":"sports","pick":"","footer":"TRUE","author":["matt"],"views_key":"Using Historical NBA Data To Rank the Most Unlikely Comebacks","views":15276,"views_display":"15k","img":"2017_03_comeback","time":"April 2016","author_html":"<a href='https://pudding.cool/author/matt-daniels'>Matt Daniels</a>"},{"url":"2017/03/film-dialogue","date":"2016-04-01T04:00:00.000Z","hed":"The Largest Analysis of Film Dialogue by Gender, Ever","dek":"From 2,000 screeplays, broken down by age and gender.","topic":"culture","pick":"","footer":"TRUE","author":["matt","hanah"],"views_key":"The Largest Ever Analysis of Film Dialogue by Gender: 2,000 scripts, 25,000 actors, 4 million lines","views":2168913,"views_display":"2.2M","img":"2017_03_film-dialogue","time":"April 2016","author_html":"<a href='https://pudding.cool/author/matt-daniels'>Matt Daniels</a>, <a href='https://pudding.cool/author/hanah-anderson'>Hanah Anderson</a>"},{"url":"2017/03/punk","date":"2016-01-09T05:00:00.000Z","hed":"Crowdsourcing the Definition of “Punk”","dek":"Looking at playlists to learn how parts of culture perceive genres and the bands who represent them.","topic":"music","pick":"","footer":"TRUE","author":["matt"],"views_key":"Crowdsourcing the Definition of \"Punk\"","views":64111,"views_display":"64k","img":"2017_03_punk","time":"January 2016","author_html":"<a href='https://pudding.cool/author/matt-daniels'>Matt Daniels</a>"},{"url":"2017/03/bechdel","date":"2016-01-01T05:00:00.000Z","hed":"Hollywood's Gender Divide and its Effect on Films","dek":"The writers, directors, and producers who make films that fail the Bechdel test.","topic":"culture","pick":"","footer":"TRUE","author":["matt","ilia"],"views_key":"The Writers, Directors, and Producers who Make Films that Fail the Bechdel Test","views":149119,"views_display":"150k","img":"2017_03_bechdel","time":"January 2016","author_html":"<a href='https://pudding.cool/author/matt-daniels'>Matt Daniels</a>, <a href='https://pudding.cool/author/ilia-blinderman'>Ilia Blinderman</a>"},{"url":"2017/03/labels","date":"2015-11-01T04:00:00.000Z","hed":"The Most Succesful Labels in Hip Hop","dek":"Every hip hop record label, since 1989, sorted by their artists' chart performance on Billboard.","topic":"music","pick":"","footer":"TRUE","author":["matt"],"views_key":"Every hip hop record label, since 1989, sorted by their artists' chart performance on Billboard","views":25987,"views_display":"26k","img":"2017_03_labels","time":"November 2015","author_html":"<a href='https://pudding.cool/author/matt-daniels'>Matt Daniels</a>"},{"url":"2017/03/timeless","date":"2015-09-01T04:00:00.000Z","hed":"The Most Timeless Songs of All-Time","dek":"Using Spotify to measure the popularity of older music.","topic":"music","pick":"","footer":"TRUE","author":["matt"],"views_key":"Using Spotify to measure the popularity of older music","views":0,"views_display":"0.0","img":"2017_03_timeless","time":"September 2015","author_html":"<a href='https://pudding.cool/author/matt-daniels'>Matt Daniels</a>"},{"url":"2017/02/vocabulary","date":"2014-05-01T04:00:00.000Z","hed":"The Largest Vocabulary in Hip Hop","dek":"Rappers, ranked by the number of unique words used in their lyrics.","topic":"music","pick":"","footer":"TRUE","author":["matt"],"views_key":"The Largest Vocabulary in Hip Hop","views":2671387,"views_display":"2.7M","img":"2017_02_vocabulary","time":"May 2014","author_html":"<a href='https://pudding.cool/author/matt-daniels'>Matt Daniels</a>"},{"url":"2017/03/outkast","date":"2014-03-01T05:00:00.000Z","hed":"Outkast, in Charts","dek":"A look at Outkast's history through the lens of data.","topic":"music","pick":"","footer":"TRUE","author":["matt"],"views_key":"Outkast, in Charts","views":15810,"views_display":"16k","img":"2017_03_outkast","time":"March 2014","author_html":"<a href='https://pudding.cool/author/matt-daniels'>Matt Daniels</a>"}];
+	</script>
+	<script src='common/js/d3.v5.min.js'></script>
+	<script>
+		(function() {
+  var $preview = d3.select('.preview');
+  var $video = $preview.select('video');
+  var $collection = d3.select('.collection');
+  var $loader = $collection.select('.loader');
+  var $authors = d3.select('.sidebar .authors select');
+  var VIDEO_WIDTH = 300;
+  var VIDEO_HEIGHT = 150;
+  var PAD = 10;
+  // const DEFAULT_COLLECTION = 'media_diversity';
+
+  // device sniffing for mobile
+
+  var isMobile = {
+    android: function () { return navigator.userAgent.match(/Android/i); },
+
+    blackberry: function () { return navigator.userAgent.match(/BlackBerry/i); },
+
+    ios: function () { return navigator.userAgent.match(/iPhone|iPad|iPod/i); },
+
+    opera: function () { return navigator.userAgent.match(/Opera Mini/i); },
+
+    windows: function () { return navigator.userAgent.match(/IEMobile/i); },
+
+    any: function () { return isMobile.android() ||
+      isMobile.blackberry() ||
+      isMobile.ios() ||
+      isMobile.opera() ||
+      isMobile.windows(); }
+  };
+
+  function handleAuthorInput() {
+    window.location.href = "author/" + (this.value);
+  }
+
+  function setupAuthors() {
+    $authors.on('input', handleAuthorInput);
+  }
+
+  function init() {
+    setupAuthors();
+  }
+
+  init();
+})();
+
+	</script>
+
+</body>
+
+</html>
