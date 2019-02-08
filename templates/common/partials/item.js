@@ -2,7 +2,7 @@ module.exports = function({ path, story }) {
   const src = `${path}common/assets/thumbnails/640/${story.image}.jpg`;
   const authorHTML = story.author_html
     .replace(/https\:\/\/pudding\.cool/g, path)
-    .replace('//author', '/author');
+    .replace(/\/\/author/g, '/author');
 
   const hitHTML = () =>
     story.hits ? `<p class='img__hit random-background'>${story.hits}</p>` : '';
