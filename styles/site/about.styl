@@ -1,9 +1,13 @@
 #page-about	
-	padding-top 6rem	
+	padding-top 6rem
 
 	li
 		list-style-type disc
 		margin-left 1rem
+		line-height 1.5
+		+mq('bp-m')
+			font-size 20px
+			letter-spacing 0.02em
 
 	+mq('bp-m')
 		padding-top 0	
@@ -41,6 +45,7 @@
 		set-type-size(x-large)
 		line-height 1.2
 		margin-top 0.5em
+		font-family $sans
 
 	.section__hed
 		position relative
@@ -49,6 +54,7 @@
 		font-size 20px
 		padding-top 0.25em
 		margin-top 4rem
+		font-family $sans
 
 		&:before
 			content ''
@@ -63,6 +69,9 @@
 	main p
 		line-height 1.5
 		margin 1em 0
+		+mq('bp-m')
+			font-size 20px
+			letter-spacing 0.02em
 
 
 	table
@@ -88,7 +97,7 @@
 		margin-top 2rem
 		
 		li
-			width 8rem
+			width 9rem
 			margin-bottom 1rem
 			text-align center
 			margin-right 1rem
@@ -96,16 +105,18 @@
 			list-style-type none
 			
 		.author__img
-			width 8rem
-			height 8rem
+			width 9rem
+			height 9rem
 			background-position center center
 			background-size cover
 			margin 0 auto
 		
 		p
 			margin 0
+			margin-top 0.5rem
 			font-weight 700
 			set-type-size(root)
+			line-height 1
 
 
 	
