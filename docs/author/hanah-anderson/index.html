@@ -28,7 +28,7 @@
 		<meta name='twitter:site' content='https://pudding.cool'>
 		<meta name='twitter:creator' content='@puddingviz'>
 		<meta name='twitter:title' content='The Pudding'>
-		<meta name='twitter:description' content='description'>
+		<meta name='twitter:description' content='Read more from Hanah Anderson} on The Pudding.'>
 		<meta name='twitter:image:src' content='https://pudding.cool/common/assets/misc/social-twitter.jpg'>
 
 		<link rel='apple-touch-icon' sizes='180x180' href='https://pudding.cool/apple-touch-icon.png'>
@@ -54,6 +54,7 @@
 	<script inline src='../../common/js/critical.js'></script>
 	<!-- endsmoosh -->
 
+	<!-- DO NOT REMOVE -->
 	<script>
 		(function (i, s, o, g, r, a, m) {
 			i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
@@ -65,14 +66,19 @@
 		ga('create', 'UA-90567923-1', 'auto');
 		ga('send', 'pageview');
 	</script>
-	
+
 	<script>
 		(function () {
 			window.trackOutboundLink = function (url, category) {
-				ga('send', 'event', category || 'outbound', 'click', url, {
-					'transport': 'beacon',
-					'hitCallback': function () { document.location = url; }
-				});
+				if (window.ga && ga.create) {
+					ga('send', 'event', category || 'outbound', 'click', url, {
+						'transport': 'beacon',
+						'hitCallback': function () { document.location = url; }
+					});
+				} else {
+					document.location = url;
+				}
+				
 			}
 		})()
 	</script>
@@ -226,7 +232,7 @@
 			<ul>
 				<!-- DO NOT REMOVE -->
 				<li>
-		<div class='story-item' data-id='2017/03/film-dialogue' data-topic='entertainment' data-chart='stacked bar chart,pictogram chart,bar chart,ridge plot' data-keyword='gender,equality,movies' data-author='matt,hanah' data-author_slug='matt-daniels, hanah-anderson' data-author_name='Matt Daniels, Hanah Anderson' data-hed='the largest analysis of film dialogue by gender, ever' data-dek='from 2,000 screeplays, broken down by age and gender' data-date='2016-04-01T04:00:00.000Z' data-views='2172490'>
+		<div class='story-item' data-id='2017/03/film-dialogue' data-topic='entertainment' data-chart='stacked bar chart,pictogram chart,bar chart,ridge plot' data-keyword='gender,equality,movies' data-author='matt,hanah' data-author_slug='matt-daniels, hanah-anderson' data-author_name='Matt Daniels, Hanah Anderson' data-hed='the largest analysis of film dialogue by gender, ever' data-dek='from 2,000 screeplays, broken down by age and gender' data-date='2016-04-01T04:00:00.000Z' data-views='2177693'>
 			<div class='item__img'>
 				<a href='//pudding.cool/2017/03/film-dialogue'>
 					<img src='../../common/assets/thumbnails/640/2017_03_film-dialogue.jpg' alt='The Largest Analysis of Film Dialogue by Gender, Ever'>
@@ -239,7 +245,7 @@
 				</a>
 				<p class='item__dek'>From 2,000 screeplays, broken down by age and gender</p>
 				<time class='item__time' datetime='2016-04-01T04:00:00.000Z'></time>
-				<p class='item__author'>By <a href='../../author/matt-daniels'>Matt Daniels</a>, <a href='../..//author/hanah-anderson'>Hanah Anderson</a></p>
+				<p class='item__author'>By <a href='../../author/matt-daniels'>Matt Daniels</a>, <a href='../../author/hanah-anderson'>Hanah Anderson</a></p>
 			</div>
 		</div>
 	</li>

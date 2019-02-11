@@ -28,7 +28,7 @@
 		<meta name='twitter:site' content='https://pudding.cool'>
 		<meta name='twitter:creator' content='@puddingviz'>
 		<meta name='twitter:title' content='The Pudding'>
-		<meta name='twitter:description' content='description'>
+		<meta name='twitter:description' content='Read more from Julia Silge} on The Pudding.'>
 		<meta name='twitter:image:src' content='https://pudding.cool/common/assets/misc/social-twitter.jpg'>
 
 		<link rel='apple-touch-icon' sizes='180x180' href='https://pudding.cool/apple-touch-icon.png'>
@@ -54,6 +54,7 @@
 	<script inline src='../../common/js/critical.js'></script>
 	<!-- endsmoosh -->
 
+	<!-- DO NOT REMOVE -->
 	<script>
 		(function (i, s, o, g, r, a, m) {
 			i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
@@ -65,14 +66,19 @@
 		ga('create', 'UA-90567923-1', 'auto');
 		ga('send', 'pageview');
 	</script>
-	
+
 	<script>
 		(function () {
 			window.trackOutboundLink = function (url, category) {
-				ga('send', 'event', category || 'outbound', 'click', url, {
-					'transport': 'beacon',
-					'hitCallback': function () { document.location = url; }
-				});
+				if (window.ga && ga.create) {
+					ga('send', 'event', category || 'outbound', 'click', url, {
+						'transport': 'beacon',
+						'hitCallback': function () { document.location = url; }
+					});
+				} else {
+					document.location = url;
+				}
+				
 			}
 		})()
 	</script>
@@ -226,7 +232,7 @@
 			<ul>
 				<!-- DO NOT REMOVE -->
 				<li>
-		<div class='story-item' data-id='2017/08/screen-direction' data-topic='entertainment' data-chart='bar chart,word wall,strip plot,scatterplot,unique' data-keyword='gender,equality,movies,language' data-author='julia,russell,amber' data-author_slug='julia-silge, russell-goldenberg, amber-thomas' data-author_name='Julia Silge, Russell Goldenberg, Amber Thomas' data-hed='she giggles, he gallops' data-dek='analyzing gender tropes in film with screen direction from 2,000 scripts' data-date='2017-08-22T04:00:00.000Z' data-views='36418'>
+		<div class='story-item' data-id='2017/08/screen-direction' data-topic='entertainment' data-chart='bar chart,word wall,strip plot,scatter plot,unique' data-keyword='gender,equality,movies,language' data-author='julia,russell,amber' data-author_slug='julia-silge, russell-goldenberg, amber-thomas' data-author_name='Julia Silge, Russell Goldenberg, Amber Thomas' data-hed='she giggles, he gallops' data-dek='analyzing gender tropes in film with screen direction from 2,000 scripts' data-date='2017-08-22T04:00:00.000Z' data-views='36803'>
 			<div class='item__img'>
 				<a href='//pudding.cool/2017/08/screen-direction'>
 					<img src='../../common/assets/thumbnails/640/2017_08_screen-direction.jpg' alt='She Giggles, He Gallops'>
@@ -239,7 +245,7 @@
 				</a>
 				<p class='item__dek'>Analyzing gender tropes in film with screen direction from 2,000 scripts</p>
 				<time class='item__time' datetime='2017-08-22T04:00:00.000Z'></time>
-				<p class='item__author'>By <a href='../../author/julia-silge'>Julia Silge</a>, <a href='../..//author/russell-goldenberg'>Russell Goldenberg</a>, <a href='../..//author/amber-thomas'>Amber Thomas</a></p>
+				<p class='item__author'>By <a href='../../author/julia-silge'>Julia Silge</a>, <a href='../../author/russell-goldenberg'>Russell Goldenberg</a>, <a href='../../author/amber-thomas'>Amber Thomas</a></p>
 			</div>
 		</div>
 	</li>

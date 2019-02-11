@@ -28,7 +28,7 @@
 		<meta name='twitter:site' content='https://pudding.cool'>
 		<meta name='twitter:creator' content='@puddingviz'>
 		<meta name='twitter:title' content='The Pudding'>
-		<meta name='twitter:description' content='description'>
+		<meta name='twitter:description' content='Read more from Jared Wilbur} on The Pudding.'>
 		<meta name='twitter:image:src' content='https://pudding.cool/common/assets/misc/social-twitter.jpg'>
 
 		<link rel='apple-touch-icon' sizes='180x180' href='https://pudding.cool/apple-touch-icon.png'>
@@ -54,6 +54,7 @@
 	<script inline src='../../common/js/critical.js'></script>
 	<!-- endsmoosh -->
 
+	<!-- DO NOT REMOVE -->
 	<script>
 		(function (i, s, o, g, r, a, m) {
 			i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
@@ -65,14 +66,19 @@
 		ga('create', 'UA-90567923-1', 'auto');
 		ga('send', 'pageview');
 	</script>
-	
+
 	<script>
 		(function () {
 			window.trackOutboundLink = function (url, category) {
-				ga('send', 'event', category || 'outbound', 'click', url, {
-					'transport': 'beacon',
-					'hitCallback': function () { document.location = url; }
-				});
+				if (window.ga && ga.create) {
+					ga('send', 'event', category || 'outbound', 'click', url, {
+						'transport': 'beacon',
+						'hitCallback': function () { document.location = url; }
+					});
+				} else {
+					document.location = url;
+				}
+				
 			}
 		})()
 	</script>
@@ -226,7 +232,7 @@
 			<ul>
 				<!-- DO NOT REMOVE -->
 				<li>
-		<div class='story-item' data-id='2018/06/skate-music' data-topic='music' data-chart='ridge plot,waffle chart,bubble chart' data-keyword='music' data-author='jared' data-author_slug='jared-wilbur' data-author_name='Jared Wilbur' data-hed='the good, the rad, and the gnarly' data-dek='an exploration into the music of skateboarding' data-date='2018-06-05T04:00:00.000Z' data-views='12321'>
+		<div class='story-item' data-id='2018/06/skate-music' data-topic='music' data-chart='ridge plot,waffle chart,bubble chart' data-keyword='music' data-author='jared' data-author_slug='jared-wilbur' data-author_name='Jared Wilbur' data-hed='the good, the rad, and the gnarly' data-dek='an exploration into the music of skateboarding' data-date='2018-06-05T04:00:00.000Z' data-views='12570'>
 			<div class='item__img'>
 				<a href='//pudding.cool/2018/06/skate-music'>
 					<img src='../../common/assets/thumbnails/640/2018_06_skate-music.jpg' alt='The Good, the Rad, and the Gnarly'>
