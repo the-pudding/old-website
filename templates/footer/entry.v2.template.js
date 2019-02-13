@@ -28,6 +28,39 @@
   ];
   let storyData = null;
 
+  const puddingWordmark = `<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 22.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="wordmark" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 200 50" style="enable-background:new 0 0 200 50;" xml:space="preserve">
+<g>
+	<path class="st0" d="M153.2,5.5c1.5,0,2.8,1.3,2.8,2.8s-1.3,2.8-2.8,2.8s-2.8-1.3-2.8-2.8S151.7,5.5,153.2,5.5z"/>
+	<path class="st0" d="M150.3,13.3h5.6v18.2h-5.6V13.3z"/>
+	<path class="st0" d="M80.2,5.5h-1.9h-7v19.3v6.7h5.6v-6.7v-1.4h1.4h1.9c4.9,0,8.9-4,8.9-8.9S85.2,5.5,80.2,5.5z M80.2,17.8h-1.9
+		h-1.4v-1.4v-3.8v-1.4h1.4h1.9c1.8,0,3.3,1.5,3.3,3.3S82.1,17.8,80.2,17.8z"/>
+	<path class="st0" d="M108.8,13.6h-5.6v8.9c0,1.8-1.5,3.3-3.3,3.3s-3.3-1.5-3.3-3.3v-8.9H91v8.9c0,4.9,4,8.9,8.9,8.9s8.9-4,8.9-8.9
+		V13.6z"/>
+	<path class="st0" d="M167.2,13.6c-4.9,0-8.9,4-8.9,8.9v8.9h5.6v-8.9c0-1.8,1.5-3.3,3.3-3.3s3.3,1.5,3.3,3.3v8.9h5.6v-8.9
+		C176.1,17.6,172.1,13.6,167.2,13.6z"/>
+	<path class="st0" d="M122.8,12.2v1.4h-1.4h-1.9c-4.9,0-8.9,4-8.9,8.9s4,8.9,8.9,8.9h1.9h7V12.2V5.5l-5.6,3.3
+		C122.8,8.8,122.8,12.2,122.8,12.2z M122.9,20.6v3.8v1.4h-1.4h-1.9c-1.8,0-3.3-1.5-3.3-3.3s1.5-3.3,3.3-3.3h1.9h1.4V20.6z"/>
+	<path class="st0" d="M142.4,12.2v1.4H141h-1.9c-4.9,0-8.9,4-8.9,8.9s4,8.9,8.9,8.9h1.9h7V12.2V5.5l-5.6,3.3V12.2z M142.5,20.6v3.8
+		v1.4H141h-1.9c-1.8,0-3.3-1.5-3.3-3.3s1.5-3.3,3.3-3.3h1.9h1.4v1.4H142.5z"/>
+	<path class="st0" d="M186.8,13.6c-4.9,0-8.9,4-8.9,8.9s4,8.9,8.9,8.9h1.9h1.4v1.4v0.9v1.4v1.4c0,1.8-1.5,3.3-3.3,3.3
+		s-3.3-1.5-3.3-3.3V34l-5.6,3.3c0.4,4.5,4.2,8.1,8.9,8.1c4.9,0,8.9-4,8.9-8.9v-1.4v-2.3V13.6h-7H186.8z M190.1,19.4v1.4v3.8V26h-1.4
+		h-1.9c-1.8,0-3.3-1.5-3.3-3.3s1.5-3.3,3.3-3.3h1.9C188.7,19.4,190.1,19.4,190.1,19.4z"/>
+	<path class="st0" d="M31.7,13.6c-1.2,0-2.3,0.2-3.3,0.6V5.5l-5.6,3.3v13.7v2v6.9h5.6v-6.9l0,0v-2c0-1.8,1.5-3.3,3.3-3.3
+		s3.3,1.5,3.3,3.3v8.9h5.6v-8.9C40.6,17.6,36.6,13.6,31.7,13.6z"/>
+	<path class="st0" d="M20.9,5.5H3.1v5.6h6.1v20.3h5.6V11.1h6.1V5.5z"/>
+	<path class="st0" d="M51.4,26.2c-0.4,0-1.2-0.1-1.8-0.4l5.2-2.1l5.6-2.3l-1-2.3l-0.1-0.2c-0.1-0.3-0.3-0.6-0.5-1
+		c-0.1-0.1-0.1-0.2-0.2-0.3c0,0,0-0.1-0.1-0.1l-0.1-0.1l-0.1-0.1c-1.6-2.2-4-3.5-6.7-3.7l0,0H51c-4.9,0-8.9,4-8.9,8.9
+		c0,0.4,0,0.9,0.1,1.4l0,0V24c0,0,0,0,0,0.1c0,0,0,0,0,0.1c0,0.3,0.1,0.5,0.2,0.8v0.1v0.1c0.1,0.3,0.2,0.7,0.4,1v0.1v0.1
+		c0.1,0.3,0.3,0.5,0.4,0.8c0,0.1,0.1,0.1,0.1,0.2l0,0c0.1,0.2,0.3,0.4,0.4,0.6c0,0,0,0,0,0.1c0,0,0,0.1,0.1,0.1l0.1,0.1
+		c1.7,2.1,4.4,3.4,7.2,3.4h6.1v-5.2C57.6,26.2,53.7,26.2,51.4,26.2L51.4,26.2z M59.3,18.9L59.3,18.9L59.3,18.9z M47.7,21.7
+		L47.7,21.7l-0.2,0.1c0.2-1.9,1.8-3.5,3.7-3.5c0.9,0,1.8,0.4,2.4,0.9L49.3,21L47.7,21.7L47.7,21.7z"/>
+</g>
+</svg>
+`
+
   const facebookLogo = `
 		<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="#000000" stroke="currentColor" stroke-width=".2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-facebook"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
 	`;
@@ -55,11 +88,11 @@
 		<svg version="1.1" id="Layer_1" width='24' height='24' xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 		viewBox="0 0 24 24" enable-background="new 0 0 24 24" xml:space="preserve">
 		<g>
-			
-				<path fill-rule="evenodd" clip-rule="evenodd" stroke="#000000" stroke-width="0.2" stroke-linecap="round" stroke-linejoin="round" d="
+
+				<path stroke-linecap="round" stroke-linejoin="round" d="
 				M15.7,3.3c-3.7,0-6.8,3-6.8,6.8c0,3.7,3,6.7,6.8,6.7c3.7,0,6.7-3,6.7-6.7C22.4,6.3,19.4,3.3,15.7,3.3"/>
-			
-				<rect x="3.7" y="3.3" stroke="#000000" stroke-width="0.2" stroke-linecap="round" stroke-linejoin="round" width="3.3" height="18"/>
+
+				<rect x="3.7" y="3.3" stroke-linecap="round" stroke-linejoin="round" width="3.3" height="18"/>
 		</g>
 		</svg>
 	`;
@@ -164,12 +197,12 @@
 
     const url = window.location.href;
 
-    const selected = storyData.slice(0, 3);
+    const selected = storyData.slice(0, 4);
     return `
 			<div class='footer-recirc'>
 			<div class='footer-recirc__articles'>
 				${selected.map(createLink).join('')}
-			</div>	  	
+			</div>
 		</div>
 		`;
   }
@@ -179,30 +212,51 @@
 	<div class='footer-company'>
 		<div class='footer-company__cta'>
 			<ul class='footer-company__cta-list'>
+        <li>
+          <a href='https://facebook.com/pudding.viz/'>
+            ${facebookLogo}
+            <p>FACEBOOK</p>
+          </a>
+        </li>
+        <li>
+          <a href='https://twitter.com/puddingviz/'>
+            ${twitterLogo}
+            <p>TWITTER</p>
+          </a>
+        </li>
 				<li>
-					<p>Follow us
-						<a href='https://www.instagram.com/pudding.cool'>${instagramLogo}</a>
-						<a href='https://twitter.com/puddingviz/'>${twitterLogo}</a>
-						<a href='https://facebook.com/pudding.viz/'>${facebookLogo}</a>
-					</p>
+          <a href='https://www.instagram.com/pudding.cool'>
+            ${instagramLogo}
+					  <p>INSTAGRAM</p>
+          </a>
 				</li>
 				<li>
-					<p>Support us <a href='https://patreon.com/the-pudding/'>${patreonLogo}</a></p>
+					<a href='https://patreon.com/the-pudding/'>
+            ${patreonLogo}
+            <p>PATREON</p>
+          </a>
 				</li>
 				<li>
-					<p>Get email from us <a href='http://eepurl.com/czym6f'>${mailLogo}</a></p>
+					<a href='http://eepurl.com/czym6f'>
+            ${mailLogo}
+            <p>NEWSLETTER</p>
+          </a>
 				</li>
 				<li>
-					<p>Learn more about us <a href='https://pudding.cool/about'>${infoLogo}</a></p>
+					<a href='https://pudding.cool/about'>
+            ${infoLogo}
+            <p>ABOUT</p>
+          </a>
 				</li>
 			</ul>
 		</div>
 
 		<div class='footer-company__about'>
+      ${puddingWordmark}
 			<p class='footer-company__description'><a href='https://pudding.cool'>The Pudding</a> is a digital publication that explains ideas debated in culture with visual essays.</p>
 			<p class='footer-company__trademark'>The Pudding<span>®</span> is made in Brooklyn, NY; Seattle, WA; and Great Barrington, MA.</p>
 		</div>
-			
+
 	</div>
 	`;
   }
