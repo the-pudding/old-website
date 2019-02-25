@@ -230,7 +230,7 @@
           </a>
 				</li>
 				<li>
-					<a href='https://patreon.com/the-pudding/'>
+					<a href='https://patreon.com/thepudding/'>
             ${patreonLogo}
             <p>PATREON</p>
           </a>
