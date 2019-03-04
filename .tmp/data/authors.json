@@ -1,5 +1,16 @@
 [
   {
+    "id": "pudding",
+    "name": "The Pudding Team",
+    "email": "sup@pudding.cool",
+    "email-unconfirmed": "",
+    "twitter": "puddingviz",
+    "url": "https://pudding.cool",
+    "position": "",
+    "bio": "is a group of folks telling stories with visual essays. ",
+    "slug": "the-pudding-team"
+  },
+  {
     "id": "russell",
     "name": "Russell Goldenberg",
     "email": "russell@pudding.cool",
