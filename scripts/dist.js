@@ -20,19 +20,19 @@ function footer() {
     `${cwd}/dist/footer/stories.json`
   );
 
-  const input = fse.readFileSync(
-    `${cwd}/dist/footer/pudding-footer.js`,
-    'utf-8'
-  );
-  const output = uglify.minify(input);
-  fse.writeFileSync(`${cwd}/dist/footer/pudding-footer.js`, output.code);
+  // const input = fse.readFileSync(
+  //   `${cwd}/dist/footer/pudding-footer.js`,
+  //   'utf-8'
+  // );
+  // const output = uglify.minify(input);
+  // fse.writeFileSync(`${cwd}/dist/footer/pudding-footer.js`, output.code);
 
-  const input2 = fse.readFileSync(
-    `${cwd}/dist/footer/pudding-footer.v2.js`,
-    'utf-8'
-  );
-  const output2 = uglify.minify(input2);
-  fse.writeFileSync(`${cwd}/dist/footer/pudding-footer.v2.js`, output2.code);
+  // const input2 = fse.readFileSync(
+  //   `${cwd}/dist/footer/pudding-footer.v2.js`,
+  //   'utf-8'
+  // );
+  // const output2 = uglify.minify(input2);
+  // fse.writeFileSync(`${cwd}/dist/footer/pudding-footer.v2.js`, output2.code);
 }
 
 function init() {

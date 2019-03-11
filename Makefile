@@ -18,8 +18,8 @@ live-archives:
 
 live-footer:
 	aws s3 cp dist/footer/stories.json s3://pudding.cool/assets/data/stories.json
-	aws s3 cp dist/footer/pudding-footer.js s3://pudding.cool/assets/scripts/pudding-footer.js
-	aws s3 cp dist/footer/pudding-footer.v2.js s3://pudding.cool/assets/scripts/pudding-footer.v2.js
+	# aws s3 cp dist/footer/pudding-footer.js s3://pudding.cool/assets/scripts/pudding-footer.js
+	# aws s3 cp dist/footer/pudding-footer.v2.js s3://pudding.cool/assets/scripts/pudding-footer.v2.js
 
 live-common:
 	aws s3 sync dist/common/ s3://pudding.cool/common

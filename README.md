@@ -1,6 +1,6 @@
 # The Pudding
 
-All scripts to generate and update our home page, archive page, about page, author pages, RSS feed, and footer widget.
+All scripts to generate and update our home page, archive page, about page, author pages, RSS feed, and footer data.
 
 ## Requirements
 

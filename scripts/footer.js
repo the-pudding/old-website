@@ -94,8 +94,8 @@ function copyToDev() {
 function init() {
   cleanTemp('footer')
     .then(prepareStories)
-    .then(compileJS1)
-    .then(compileJS2)
+    // .then(compileJS1)
+    // .then(compileJS2)
     .then(copyToDev)
     .then(() => {
       console.log('DONE: footer.js');
