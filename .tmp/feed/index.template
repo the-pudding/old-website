@@ -8,7 +8,7 @@
 		<link>https://pudding.cool</link>
 		<description>The Pudding is an editorial publication that explains ideas debated in culture with visual essays.</description>
 		<lastBuildDate>
-			Mon, 04 Mar 2019 18:09:34 GMT
+			Tue, 12 Mar 2019 14:55:40 GMT
 		</lastBuildDate>
 		<language>en-US</language>
 		<sy:updatePeriod>daily</sy:updatePeriod>
@@ -20,6 +20,15 @@
 		</image>
 
 		
+<item>
+	<title>Who is the Biggest Pop Star?</title>
+	<link>https://pudding.cool/2013/03/pop-music</link>
+	<description>Today, there's no single way to measure popularity in music.</description>
+	<category>music></category>
+	<pubDate>Tue, 12 Mar 2019 04:00:00 GMT</pubDate>
+	<guid isPermaLink="false">2013/03/pop-music</guid>
+</item>
+	
 <item>
 	<title>How Many High School Stars Make It in the NBA?</title>
 	<link>https://pudding.cool/2019/03/hype</link>
@@ -144,15 +153,6 @@
 	<category>sports></category>
 	<pubDate>Wed, 26 Sep 2018 04:00:00 GMT</pubDate>
 	<guid isPermaLink="false">2018/09/jordans</guid>
-</item>
-	
-<item>
-	<title>The Celebrity Billboard Project</title>
-	<link>https://pudding.cool/2018/09/wiki-billboard</link>
-	<description>Tracking the popularity of cultural figures in 2018</description>
-	<category>people></category>
-	<pubDate>Tue, 11 Sep 2018 04:00:00 GMT</pubDate>
-	<guid isPermaLink="false">2018/09/wiki-billboard</guid>
 </item>
 	
 
