@@ -12,11 +12,7 @@
     "pick": "",
     "footer": "",
     "author": [
-      "matt",
-      "amber",
-      "russell",
-      "ilia",
-      "jan"
+      "pudding"
     ],
     "hits": "",
     "keyword": [
@@ -31,9 +27,9 @@
     "views": 0,
     "img": "2019_03_pop-music",
     "time": "March 2019",
-    "author_html": "<a href='https://pudding.cool/author/matt-daniels'>Matt Daniels</a>, <a href='https://pudding.cool/author/amber-thomas'>Amber Thomas</a>, <a href='https://pudding.cool/author/russell-goldenberg'>Russell Goldenberg</a>, <a href='https://pudding.cool/author/ilia-blinderman'>Ilia Blinderman</a>, <a href='https://pudding.cool/author/jan-diehm'>Jan Diehm</a>",
-    "author_name": "Matt Daniels, Amber Thomas, Russell Goldenberg, Ilia Blinderman, Jan Diehm",
-    "author_slug": "matt-daniels, amber-thomas, russell-goldenberg, ilia-blinderman, jan-diehm",
+    "author_html": "<a href='https://pudding.cool/author/the-pudding-team'>The Pudding Team</a>",
+    "author_name": "The Pudding Team",
+    "author_slug": "the-pudding-team",
     "image": "2019_03_pop-music"
   },
   {

@@ -28,6 +28,7 @@ function cleanTemp(dir) {
 }
 
 function prepareStories() {
+  console.log('preparing story data...');
   const data = storyData
     .filter(d => d.footer)
     .map(d => ({
@@ -96,7 +97,7 @@ function init() {
     .then(prepareStories)
     // .then(compileJS1)
     // .then(compileJS2)
-    .then(copyToDev)
+    // .then(copyToDev)
     .then(() => {
       console.log('DONE: footer.js');
       process.exit();
