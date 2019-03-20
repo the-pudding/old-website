@@ -4,13 +4,13 @@ module.exports = function(path) {
 		<header>
 			
 			<div class='header__title'>
-				<a class='header__wordmark' href='${path}'>
+				<a class='header__wordmark' href='${path}' aria-label='The Pudding homepage'>
 					<img inline src='dev/common/assets/svg/pudding-wordmark.svg'>
 				</a>
 			</div>
 			
 			<div class='header__sidebar'>
-				<a class='header__logo' href='${path}'>
+				<a class='header__logo' href='${path}' aria-label='The Pudding homepage'>
 					<img inline src='dev/common/assets/svg/pudding-logo.svg'>
 				</a>
 				<ul class='sidebar__social'>

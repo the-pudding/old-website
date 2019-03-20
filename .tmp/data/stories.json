@@ -1,5 +1,41 @@
 [
   {
+    "url": "2019/03/nba-spelling",
+    "date": "2019-03-20T04:00:00.000Z",
+    "hed": "NBA Spelling Bee",
+    "hed_flag": "16",
+    "dek": "A spelling bee for the hardest names in the NBA.",
+    "dek_flag": "48",
+    "topic": [
+      "sports"
+    ],
+    "pick": "",
+    "footer": "TRUE",
+    "author": [
+      "russell",
+      "matt"
+    ],
+    "hits": "",
+    "keyword": [
+      "basketball",
+      "sports",
+      "language"
+    ],
+    "chart": [
+      "sankey diagram"
+    ],
+    "tech": "",
+    "views_key": "NBA Spell Jam",
+    "ignore": "",
+    "views": 0,
+    "img": "2019_03_nba-spelling",
+    "time": "March 2019",
+    "author_html": "<a href='https://pudding.cool/author/russell-goldenberg'>Russell Goldenberg</a>, <a href='https://pudding.cool/author/matt-daniels'>Matt Daniels</a>",
+    "author_name": "Russell Goldenberg, Matt Daniels",
+    "author_slug": "russell-goldenberg, matt-daniels",
+    "image": "sports"
+  },
+  {
     "url": "2019/03/pop-music",
     "date": "2019-03-12T04:00:00.000Z",
     "hed": "Who is the Biggest Pop Star?",
@@ -10,7 +46,7 @@
       "music"
     ],
     "pick": "",
-    "footer": "",
+    "footer": "TRUE",
     "author": [
       "pudding"
     ],

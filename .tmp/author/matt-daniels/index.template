@@ -93,13 +93,13 @@
 		<header>
 			
 			<div class='header__title'>
-				<a class='header__wordmark' href='../../'>
+				<a class='header__wordmark' href='../../' aria-label='The Pudding homepage'>
 					<img inline src='dev/common/assets/svg/pudding-wordmark.svg'>
 				</a>
 			</div>
 			
 			<div class='header__sidebar'>
-				<a class='header__logo' href='../../'>
+				<a class='header__logo' href='../../' aria-label='The Pudding homepage'>
 					<img inline src='dev/common/assets/svg/pudding-logo.svg'>
 				</a>
 				<ul class='sidebar__social'>
@@ -167,6 +167,23 @@
 			<ul>
 				<!-- DO NOT REMOVE -->
 				<li>
+		<div class='story-item' data-id='2019/03/nba-spelling' data-topic='sports' data-chart='sankey diagram' data-keyword='basketball,sports,language' data-author='russell,matt' data-author_slug='russell-goldenberg, matt-daniels' data-author_name='Russell Goldenberg, Matt Daniels' data-hed='nba spelling bee' data-dek='a spelling bee for the hardest names in the nba.' data-date='2019-03-20T04:00:00.000Z' data-views='0'>
+			<div class='item__img'>
+				<a href='//pudding.cool/2019/03/nba-spelling'>
+					<img src='../../common/assets/thumbnails/640/sports.jpg' alt='NBA Spelling Bee'>
+				</a>
+				
+			</div>
+			<div class='item__info'>
+				<a href='//pudding.cool/2019/03/nba-spelling'>
+					<h3 class='item__hed'>NBA Spelling Bee</h3>
+				</a>
+				<p class='item__dek'>A spelling bee for the hardest names in the NBA.</p>
+				<time class='item__time' datetime='2019-03-20T04:00:00.000Z'></time>
+				<p class='item__author'>By <a href='../../author/russell-goldenberg'>Russell Goldenberg</a>, <a href='../../author/matt-daniels'>Matt Daniels</a></p>
+			</div>
+		</div>
+	</li><li>
 		<div class='story-item' data-id='2019/02/gyllenhaal' data-topic='other' data-chart='sankey diagram' data-keyword='explainer,language' data-author='russell,matt' data-author_slug='russell-goldenberg, matt-daniels' data-author_name='Russell Goldenberg, Matt Daniels' data-hed='the gyllenhaal experiment' data-dek='the many ways to misspell the hardest names in pop culture.' data-date='2019-02-22T05:00:00.000Z' data-views='88471'>
 			<div class='item__img'>
 				<a href='//pudding.cool/2019/02/gyllenhaal'>

@@ -8,7 +8,7 @@
 		<link>https://pudding.cool</link>
 		<description>The Pudding is an editorial publication that explains ideas debated in culture with visual essays.</description>
 		<lastBuildDate>
-			Mon, 18 Mar 2019 13:08:56 GMT
+			Wed, 20 Mar 2019 13:56:53 GMT
 		</lastBuildDate>
 		<language>en-US</language>
 		<sy:updatePeriod>daily</sy:updatePeriod>
@@ -20,6 +20,15 @@
 		</image>
 
 		
+<item>
+	<title>NBA Spelling Bee</title>
+	<link>https://pudding.cool/2019/03/nba-spelling</link>
+	<description>A spelling bee for the hardest names in the NBA.</description>
+	<category>sports></category>
+	<pubDate>Wed, 20 Mar 2019 04:00:00 GMT</pubDate>
+	<guid isPermaLink="false">2019/03/nba-spelling</guid>
+</item>
+	
 <item>
 	<title>Who is the Biggest Pop Star?</title>
 	<link>https://pudding.cool/2019/03/pop-music</link>
@@ -144,15 +153,6 @@
 	<category>people></category>
 	<pubDate>Fri, 19 Oct 2018 04:00:00 GMT</pubDate>
 	<guid isPermaLink="false">2018/10/wiki-breakout</guid>
-</item>
-	
-<item>
-	<title>A Visual History of Every Air Jordan</title>
-	<link>https://pudding.cool/2018/09/jordans</link>
-	<description>Watch as the design of the iconic Air Jordan morphs over the last 33 editions.</description>
-	<category>sports></category>
-	<pubDate>Wed, 26 Sep 2018 04:00:00 GMT</pubDate>
-	<guid isPermaLink="false">2018/09/jordans</guid>
 </item>
 	
 

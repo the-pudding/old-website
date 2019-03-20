@@ -92,13 +92,13 @@
 		<header>
 			
 			<div class='header__title'>
-				<a class='header__wordmark' href='../'>
+				<a class='header__wordmark' href='../' aria-label='The Pudding homepage'>
 					<img inline src='dev/common/assets/svg/pudding-wordmark.svg'>
 				</a>
 			</div>
 			
 			<div class='header__sidebar'>
-				<a class='header__logo' href='../'>
+				<a class='header__logo' href='../' aria-label='The Pudding homepage'>
 					<img inline src='dev/common/assets/svg/pudding-logo.svg'>
 				</a>
 				<ul class='sidebar__social'>
@@ -191,6 +191,23 @@
 			<p class='section__label random-color'>Archives</p>
 			<!-- DO NOT REMOVE -->
 			<ul><li>
+		<div class='story-item' data-id='2019/03/nba-spelling' data-topic='sports' data-chart='sankey diagram' data-keyword='basketball,sports,language' data-author='russell,matt' data-author_slug='russell-goldenberg, matt-daniels' data-author_name='Russell Goldenberg, Matt Daniels' data-hed='nba spelling bee' data-dek='a spelling bee for the hardest names in the nba.' data-date='2019-03-20T04:00:00.000Z' data-views='0'>
+			<div class='item__img'>
+				<a href='//pudding.cool/2019/03/nba-spelling'>
+					<img src='../common/assets/thumbnails/640/sports.jpg' alt='NBA Spelling Bee'>
+				</a>
+				
+			</div>
+			<div class='item__info'>
+				<a href='//pudding.cool/2019/03/nba-spelling'>
+					<h3 class='item__hed'>NBA Spelling Bee</h3>
+				</a>
+				<p class='item__dek'>A spelling bee for the hardest names in the NBA.</p>
+				<time class='item__time' datetime='2019-03-20T04:00:00.000Z'></time>
+				<p class='item__author'>By <a href='../author/russell-goldenberg'>Russell Goldenberg</a>, <a href='../author/matt-daniels'>Matt Daniels</a></p>
+			</div>
+		</div>
+	</li><li>
 		<div class='story-item' data-id='2019/03/pop-music' data-topic='music' data-chart='unique' data-keyword='music' data-author='pudding' data-author_slug='the-pudding-team' data-author_name='The Pudding Team' data-hed='who is the biggest pop star?' data-dek='today, there's no single way to measure popularity in music.' data-date='2019-03-12T04:00:00.000Z' data-views='8165'>
 			<div class='item__img'>
 				<a href='//pudding.cool/2019/03/pop-music'>
