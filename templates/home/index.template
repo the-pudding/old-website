@@ -27,14 +27,6 @@
 	<!-- header -->
 
 	<main id='content'>
-		<section id='picks'>
-			<p class='section__label random-color'>Our Picks</p>
-			<ul>
-				<!-- DO NOT REMOVE -->
-				<!-- picks -->
-				
-			</ul>
-		</section>
 
 		<section id='new'>
 			<p class='section__label random-color'>What’s New</p>
@@ -54,6 +46,15 @@
 		<!-- DO NOT REMOVE -->
 		<!-- cta -->
 
+		<section id='picks'>
+			<p class='section__label random-color'>Our Picks</p>
+			<ul>
+				<!-- DO NOT REMOVE -->
+				<!-- picks -->
+		
+			</ul>
+		</section>
+		
 		<section id='hits'>
 			<p class='section__label random-color'>Greatest Hits</p>
 			<ul>

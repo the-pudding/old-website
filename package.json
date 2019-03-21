@@ -16,7 +16,7 @@
     "footer": "babel-node scripts/footer.js",
     "thumbnails": "babel-node scripts/thumbnails.js",
     "watch:home": "watch 'npm run home' templates/home",
-    "watch:authors": "watch 'npm run authors' templates/authors",
+    "watch:authors": "watch 'npm run authors' templates/author",
     "watch:about": "watch 'npm run about' templates/about",
     "watch:topics": "watch 'npm run topics' templates/topics",
     "watch:archives": "watch 'npm run archives' templates/archives",

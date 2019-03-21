@@ -3,7 +3,7 @@
 	color $bg
 	margin-bottom 5rem
 	
-	&__inner
+	.cta__inner
 		width calc(100% - 3.6rem)
 		transform translateX(0.5rem)
 		border-top $line-width solid $fg
@@ -17,13 +17,13 @@
 			transform translateX(0)
 		
 	
-	&__hed
+	.cta__hed
 		font-family $serif
 		margin 0 auto
 		set-type-size(x-large, false)
 		line-height 1.4
 		
-	&__items
+	.cta__items
 		display flex
 		flex-wrap wrap
 		justify-content space-between
@@ -32,7 +32,7 @@
 		+mq('bp-m')
 			flex-wrap nowrap
 
-	&__newsletter
+	.cta__newsletter
 		display flex
 		align-items center
 		flex-wrap wrap
@@ -65,7 +65,7 @@
 				margin 0
 				margin-right 1rem
 
-	&__patreon
+	.cta__patreon
 		display flex
 		align-items center
 		flex-wrap wrap
