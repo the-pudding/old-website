@@ -3,14 +3,16 @@ header
 	padding 0.5rem 0
 	max-width $main-width
 	margin 0 auto
-	margin-bottom 2rem
-
+	
 	&.is-home
+		margin-bottom 2rem
 		.top__title
 			+mq('bp-m')
 				width 20rem
 		.header__cta
 			display flex
+		.header__tagline
+			display block
 	
 	+mq('bp-m')
 		width calc(100% - 12rem)
@@ -69,6 +71,7 @@ header
 
 
 	.header__tagline
+		display none
 		margin 0
 		margin-top 0.25rem
 		set-type-size(xx-large, true)

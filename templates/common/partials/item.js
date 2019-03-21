@@ -30,9 +30,11 @@ module.exports = function({ path, story }) {
 				<a href='//pudding.cool/${story.url}'>
 					<h3 class='item__hed'>${story.hed}</h3>
 				</a>
-				<p class='item__dek'>${story.dek}</p>
-				<time class='item__time' datetime='${story.date}'></time>
-				<p class='item__author'>By ${authorHTML}</p>
+				<div class='info__details'>
+					<p class='item__dek'>${story.dek}</p>
+					<time class='item__time' datetime='${story.date}'></time>
+					<cite class='item__author'>By ${authorHTML}</cite>
+				</div>
 			</div>
 		</div>
 	`;

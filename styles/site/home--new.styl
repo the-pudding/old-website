@@ -1,51 +1,52 @@
 #page-home #new
 	ul
-		position relative
-		display flex
-		flex-wrap wrap
-		justify-content space-between
+		display grid
+		grid-gap 2rem
+		grid-template-columns repeat(2,1fr)
+		grid-template-rows auto
+
 		+mq('bp-m')
-			justify-content flex-end
-			transform translateX(-1 * $line-width)
-			width calc(100% + $line-width)
-		
-	li
-		width 100%
-		border-top $line-width solid $fg
-		margin-bottom 3rem
-		&:first-of-type
-			border none
-			width 100%
-			.item__hed
-				set-type-size(x-large)
-			.item__dek
-				display block
+			grid-template-columns repeat(3, 1fr)
+
+
+	li:first-of-type
+		grid-column 1/3
+		.item__info
 			+mq('bp-m')
-				margin-bottom 1rem
-				margin-left 0
-				.item__info
-					position absolute
-					bottom 0
-					left $line-width
-					background-color $bg
-					width 33.3%
-					padding-top 0.75rem
-				.item__hed
-					set-type-size(xx-large)
-					font-weight 900
-				.item__dek
-					set-type-size(large)
-					line-height 1.2
-				.item__author
-					margin-top 2rem
-		&:last-of-type
-			margin-bottom 0
+				display flex
+				> a
+					width 50%
+				> *
+					width 50%
+		.item__hed
+			set-type-size(x-large)
+			+mq('bp-m')
+				set-type-size(xxx-large)
+				font-weight 900
+		.item__dek
+			display block
+			+mq('bp-m')
+				set-type-size(large)
+				line-height 1.2
+			
+			// .item__author
+			// 	margin-top 2rem
+
 		+mq('bp-m')
-			width 50%
-			margin 0
-			border-top none
-			width calc(33.3% - 1.5rem)
-			margin-left 1.5rem
+			grid-row 1/4
+
+
+	// 	margin-bottom 3rem
+	// 	&:first-of-type
+	
+	// 	&:last-of-type
+	// 		margin-bottom 0
+	// 	+mq('bp-m')
+	// 		width 50%
+	// 		margin 0
+	// 		border-top none
+	// 		width calc(33.3% - 1.5rem)
+	// 		margin-left 1.5rem
 		
 		
 	.story-item
@@ -53,7 +54,7 @@
 		flex-direction column
 		
 	.item__info
-		padding 1rem 0 0 1rem
+		padding 1rem 0
 		
 
 	.item__hed
@@ -66,11 +67,11 @@
 		set-type-size(root, false)
 		line-height 1.4
 		font-family $serif
-		margin-top 0.5rem
+		margin 0
 	
 	.item__author
 		font-weight 700
-		margin-top 1rem
+		margin-top 0.5rem
 		set-type-size(small)
 		line-height 1.2
 		

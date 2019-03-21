@@ -29,16 +29,22 @@
 	<main id='content'>
 
 		<section id='new'>
-			<p class='section__label random-color'>What’s New</p>
+			<div class='section__top'>
+				<p class='section__label random-color'>What’s New</p>
+			</div>
+			
 			<ul>
 				<!-- DO NOT REMOVE -->
 				<!-- new -->
-		
 			</ul>
 		</section>
 
 		<section id='topics'>
-			<p class='section__label random-color'>Topics</p>
+			<div class='section__top'>
+				<p class='section__label random-color'>Topics</p>
+				<!-- topics-nav -->
+			</div>
+			
 			<!-- DO NOT REMOVE -->
 			<!-- topics -->
 		</section>
@@ -47,7 +53,11 @@
 		<!-- cta -->
 
 		<section id='picks'>
-			<p class='section__label random-color'>Our Picks</p>
+			<div class='section__top'>
+				<p class='section__label random-color'>Our Picks</p>
+				<p class='section__description'>The Pudding staff picks stories you should see</p>
+			</div>
+			
 			<ul>
 				<!-- DO NOT REMOVE -->
 				<!-- picks -->
@@ -56,7 +66,10 @@
 		</section>
 		
 		<section id='hits'>
-			<p class='section__label random-color'>Greatest Hits</p>
+			<div class='section__top'>
+				<p class='section__label random-color'>Greatest Hits</p>
+			</div>
+			
 			<ul>
 				<!-- DO NOT REMOVE -->
 				<!-- hits -->
@@ -65,7 +78,10 @@
 		</section>
 
 		<section id='how'>
-			<p class='section__label random-color'>How-To</p>
+			<div class='section__top'>
+				<p class='section__label random-color'>How-To</p>
+			</div>
+			
 			<ul>
 				<!-- DO NOT REMOVE -->
 				<!-- how -->

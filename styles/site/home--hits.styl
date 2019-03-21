@@ -36,6 +36,7 @@
 				.item__info
 					width 30%
 					padding-top 0
+					padding-left 1rem
 				.item__hed
 					set-type-size(xx-large)
 					font-weight 900
@@ -50,7 +51,6 @@
 			width 50%
 			margin 0
 			border-top none
-			border-left $line-width solid $fg 
 			width calc(50% - 0.75rem)
 			margin-right 1.5rem
 			margin-bottom 0
@@ -61,8 +61,6 @@
 				margin-top 3rem
 			&:nth-child(n+6)
 				display none
-			&:first-of-type
-				border-left $line-width solid $fg 
 		
 		
 	.story-item
@@ -73,7 +71,7 @@
 		position relative
 		
 	.item__info
-		padding 1rem 0 0 1rem
+		padding 1rem 0
 
 	.item__hed
 		font-weight 700
@@ -106,5 +104,6 @@
 		color $bg
 		text-transform uppercase
 		font-weight 700
+		font-family $sans-display
 		set-type-size(root)
 		pointer-events none

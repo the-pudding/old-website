@@ -113,6 +113,33 @@
 
 			<p class='header__tagline'>is an editorial publication that explains ideas debated in culture with visual essays.</p>
 			
+
+			<div class='header__cta'>
+				
+				<div class='cta__newsletter'>
+					<form action='https://poly-graph.us11.list-manage.com/subscribe/post' method='POST'>
+							<input type='hidden' name='u' value='c70d3c0e372cde433143ffeab'>
+							<input type='hidden' name='id' value='9af100ac0f'>
+							<input label='email' class='newsletter__input' type='email' autocapitalize='off' autocorrect='off' name='MERGE0' id='MERGE0' size='25' value='' placeholder='you@example.com'>
+							<div class='hidden-from-view' style='left:-10000px;position:absolute'>
+								<input label='text' type='text' name='b_c70d3c0e372cde433143ffeab_9af100ac0f' tabindex='-1' value=''>
+							</div>
+							<input class='btn' style='' type='submit' name='submit' value='Join Our Newsletter'>
+						</form>
+				</div>
+					
+				<div class='cta__patreon'>
+					<a class='btn' onclick='trackOutboundLink('https://www.patreon.com/thepudding'); return false;' target='_blank' href='https://www.patreon.com/thepudding'>Fund us on Patreon</a>
+				</div>
+
+				<ul class='cta__social'>
+					<li><a target='_blank' onclick="trackOutboundLink('https://www.facebook.com/pudding.viz'); return false;" href='https://www.facebook.com/pudding.viz/' class='logo--facebook'><img inline src='dev/common/assets/svg/facebook.svg'></a></li>
+					<li><a target='_blank' onclick="trackOutboundLink('https://twitter.com/puddingviz''); return false;" href='https://twitter.com/puddingviz' class='logo--twitter'><img inline src='dev/common/assets/svg/twitter.svg'></a></li>
+					<li><a target='_blank' onclick="trackOutboundLink('https://www.instagram.com/pudding.cool'); return false;" href='https://www.instagram.com/pudding.cool' class='logo--instagram'><img inline src='dev/common/assets/svg/instagram.svg'></a></li>
+				</ul>
+
+			</div>
+
 		</header>
 	
 	<main id='content'>

@@ -5,10 +5,11 @@ body
 	overflow-x hidden
 
 button 
-	font-family $sans
+	font-family $sans-display
 	background-color transparent
 	
 .btn, a.btn
+	font-family $sans-display
 	font-weight 900
 	text-transform uppercase
 	padding 0.75rem
@@ -16,7 +17,6 @@ button
 	line-height 1
 	background-color $fg
 	color $bg
-	font-family $sans
 	letter-spacing 0.03em
 	border none
 	
@@ -61,12 +61,15 @@ button
 	
 	.item__hed
 		margin 0
+		font-family $sans-display
 	
 	.item__dek
 		font-family $serif
 		margin 0
 	
 	.item__author
+		display block
+		font-family $sans-display
 		margin 0
 		color $gray-dark
 		a
@@ -92,16 +95,27 @@ section
 		transform translateX(0)
 		max-width 60rem
 
-	.section__label
+	.section__top
+		display flex
+
+	.section__description
 		margin 0
+		line-height 1
+		color $gray-dark
+		font-family $sans-display
+
+
+	.section__label
+		font-family $sans-display
 		font-weight 700
 		text-transform uppercase
 		line-height 1
+		margin 0
 		margin-bottom 2rem
-
+		margin-right 1rem
 
 select option
-	font-family $sans
+	font-family $sans-display
 
 .random-link--0 a:hover
 	color $purple
