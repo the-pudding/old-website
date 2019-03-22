@@ -10,13 +10,29 @@
 	color $bg
 	box-shadow 0 0 2px rgba($off-black,0.25)
 
+	svg
+		height 2.5rem
+		margin-top 0.25rem
+		#rightP
+			fill $off-black
+		#leftP
+			fill $gray
+
 	&.is-reveal
+		svg
+			#rightP
+				fill $off-black
+			#leftP
+				fill $gray
 		+mq('bp-m')
 			svg
-				fill $bg
+				#rightP
+					fill $white
+				#leftP
+					fill $gray-light
 			.feather-x
 				stroke $bg
-			
+
 
 	+mq('bp-m')
 		width 4rem
@@ -24,6 +40,10 @@
 		border-right 1px solid $gray-light
 		box-shadow none
 		background-color transparent
+
+		svg
+			height auto
+			margin-top 0
 
 	.menu__logo
 		position absolute
@@ -37,7 +57,7 @@
 			margin-bottom 1rem
 			top 1rem
 			right 1rem
-	
+
 	.menu__toggle
 		display block
 		position absolute
@@ -54,7 +74,7 @@
 			width 2rem
 			height auto
 			display block
-		
+
 
 
 
@@ -102,16 +122,17 @@
 		font-weight 700
 		color $bg
 		border none
-		padding 0.5rem 1rem
+		padding 0.75rem
 		font-weight 900
 		font-family $sans-display
-		set-type-size(root, false)
+		set-type-size(small, false)
 		line-height 1
 		text-transform uppercase
 		margin-top 1rem
-	
+
 	.sidebar__tagline
 		margin-top 0
+		font-family $sans-display
 		margin-bottom 1.5rem
 		set-type-size(large, false)
 		line-height 1.2

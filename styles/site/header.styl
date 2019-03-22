@@ -3,7 +3,7 @@ header
 	padding 0.5rem 0
 	max-width $main-width
 	margin 0 auto
-	
+
 	&.is-home
 		margin-bottom 2rem
 		padding 0
@@ -16,7 +16,8 @@ header
 			flex-wrap wrap
 		.header__tagline
 			display block
-	
+			max-width 52rem
+
 	+mq('bp-m')
 		width calc(100% - 12rem)
 		position relative
@@ -46,7 +47,9 @@ header
 			left 0
 		a
 			display block
-			border none 
+			border none
+		svg
+			fill $off-black
 
 	.top__nav
 		position absolute
@@ -61,7 +64,7 @@ header
 		.nav__links
 			display flex
 			align-items center
-		
+
 		li
 			set-type-size(small, false)
 			line-height 1
@@ -74,7 +77,7 @@ header
 			display block
 			border none
 			color $gray-dark
-		
+
 		.btn:hover
 			color $bg
 			background-color $gray-dark
@@ -83,7 +86,7 @@ header
 	.header__tagline
 		display none
 		margin-top 0.25rem
-		font-family $serif-display 
+		font-family $serif-display
 		padding 1rem
 		padding-top 2rem
 		max-width 35rem
@@ -108,7 +111,7 @@ header
 		+mq('bp-m')
 			flex-direction row
 			margin-top 2rem
-		
+
 		.btn, a.btn
 			background-color $fg
 			color $bg
@@ -116,7 +119,8 @@ header
 			cursor pointer
 			&:hover
 				background-color $gray-dark
-		
+
+
 		svg:hover
 			fill $gray-dark
 
@@ -138,7 +142,9 @@ header
 			line-height 1
 			font-family $sans-display
 			background transparent
-			border 1px solid $gray-dark
+			border 1px solid $off-black
+			&:hover
+				border 1px solid $gray-dark
 			// margin-right 0.5rem
 			color $fg
 			&::placeholder
@@ -148,7 +154,7 @@ header
 			width 10rem
 			height 2.5rem
 			padding 0 0.5rem
-			
+
 		p
 			margin 0
 			margin-bottom 1rem
@@ -167,6 +173,10 @@ header
 		+mq('bp-m')
 			flex-wrap nowrap
 			margin-left 2rem
+		a
+			border 1px solid $off-black
+			&:hover
+				border 1px solid $gray-dark
 		p
 			margin 0
 			margin-bottom 1rem
@@ -184,7 +194,7 @@ header
 		right 4rem
 		z-index set-index(overlay) + 1
 		display flex
-		
+
 		+mq('bp-m')
 			position relative
 			z-index auto

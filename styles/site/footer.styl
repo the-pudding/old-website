@@ -1,10 +1,10 @@
 footer
 	width 100%
 	color $bg
-	
+
 	.footer__inner
-		width calc(100% - 3.6rem)
-		transform translateX(0.5rem)
+		width calc(100% - 2rem)
+		transform translateX(0)
 		border-top $line-width solid $fg
 		max-width $main-width
 		margin 0 auto
@@ -14,14 +14,14 @@ footer
 		+mq('bp-m')
 			width 100%
 			width calc(100% - 12rem)
-			transform translateX(0)
+			transform translateX(0.5rem)
 			flex-direction row
 
 	.footer__cta
 		order 1
 		margin 2rem 0 0 0
 		width 100%
-		+mq('bp-5')
+		+mq('bp-m')
 			width 18rem
 			margin 0 0 0 2rem
 
@@ -31,7 +31,7 @@ footer
 		flex-direction column
 		height 9rem
 		font-family $sans-display
-		+mq('bp-5')
+		+mq('bp-m')
 			flex-direction column
 
 		li
@@ -40,7 +40,7 @@ footer
 			margin 0
 			margin-bottom 1.5rem
 			align-items center
-			+mq('bp-5')
+			+mq('bp-m')
 				padding-left 1rem
 
 			a
@@ -60,6 +60,8 @@ footer
 				circle, polyline, line
 					fill none
 					stroke $bg
+				path, rect
+					stroke none
 			.feather-mail path
 					stroke $bg
 					fill none
@@ -71,12 +73,12 @@ footer
 		display flex
 		flex-direction column
 		font-family $sans-display
-		+mq('bp-5')
+		+mq('bp-m')
 			width calc(100% - 20rem)
 
 		p
 			margin 0
-		
+
 		svg
 			width 12rem
 			margin-bottom 0.5rem
@@ -88,4 +90,3 @@ footer
 			border-bottom 1px solid currentColor
 			&:hover
 				color $bg
-

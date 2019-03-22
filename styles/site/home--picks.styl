@@ -1,4 +1,10 @@
 #page-home #picks
+	.section__description
+		set-type-size(small, false)
+		padding-top 0.1rem
+		+mq('bp-m')
+			set-type-size(medium, false)
+			padding-top 0
 
 	ul
 		display flex
@@ -8,7 +14,7 @@
 		+mq('bp-m')
 			transform translateX(-1 * $line-width)
 			width calc(100% + $line-width)
-	
+
 	li
 		opacity 0
 		&:nth-child(n+5)
@@ -19,6 +25,6 @@
 		&.is-hidden
 			display none
 
-	
+
 	.item__author
 		display none

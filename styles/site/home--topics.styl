@@ -1,11 +1,32 @@
 #page-home #topics
+	.section__top
+		display block
+		+mq('bp-m')
+			display flex
+
+	.top__nav
+		padding-top 0.5rem
+		border-top 1px solid $gray-light
+		+mq('bp-m')
+			padding-top 0
+			border-top none
+
+		span
+			padding-right 0.5rem
+			+mq('bp-m')
+				padding-right 0.75rem
+			button
+				set-type-size(small, false)
+				+mq('bp-m')
+					set-type-size(medium, false)
+
 	.top__more
 		position absolute
 		top 0.4rem
 		right 0
 
 		span
-			display none			
+			display none
 			&.is-visible
 				display block
 		a
@@ -25,7 +46,7 @@
 		+mq('bp-m')
 			transform translateX(-1 * $line-width)
 			width calc(100% + $line-width)
-		
+
 		ul
 			display flex
 			flex-wrap wrap
@@ -39,11 +60,10 @@
 				display flex
 			&.is-hidden
 				display none
-		
+
 		li
 			width 100%
 			margin-bottom 4rem
-			border-top $line-width solid $fg
 			&:nth-child(3)
 				margin-bottom 0
 			&:nth-child(n+4)
@@ -60,34 +80,32 @@
 					display block
 				&:nth-child(-n+3)
 					margin-bottom 3rem
-			
-	
+
+
 	.story-item
 		display flex
 		flex-direction column
-		
+
 	.item__info
 		padding 1rem 0
 
 	.item__hed
 		font-weight 700
-		set-type-size(large) 
+		set-type-size(large)
 		line-height 1
-	
+
 	.item__dek
 		set-type-size(root, false)
 		line-height 1.4
 		font-family $serif
 		margin-top 0.5rem
-	
+
 	.item__author
 		font-weight 700
 		margin-top 1rem
 		set-type-size(small)
 		line-height 1.2
-		
+
 		a
 			display inline-block
 			text-transform uppercase
-	
-	

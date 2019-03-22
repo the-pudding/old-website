@@ -1,9 +1,18 @@
 #page-topics
-	padding-top 6rem	
-	
+	padding-top 6rem
+
 	+mq('bp-m')
 		padding-top 0
-	
+
+	.top__nav
+		transform translateY(0rem)
+
+		span
+			button
+				set-type-size(small, false)
+				+mq('bp-m')
+					set-type-size(root, false)
+
 	.top__more
 		display none
 
@@ -19,3 +28,6 @@
 
 		li:nth-child(n+4)
 			display block
+
+	.info__details cite a
+		border-bottom none

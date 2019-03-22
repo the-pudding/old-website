@@ -1,10 +1,10 @@
 #page-archives
-	padding-top 6rem	
+	padding-top 6rem
 	+mq('bp-m')
 		padding-top 0
 	section
 		// min-height 2rem
-	
+
 
 	.filter
 		display flex
@@ -14,11 +14,11 @@
 			flex-wrap nowrap
 			align-items flex-end
 			justify-content space-between
-			
+
 		ul
 			display flex
 			flex-wrap wrap
-			justify-content space-between
+			justify-content flex-start
 			+mq('bp-m')
 				flex-wrap nowrap
 
@@ -78,10 +78,10 @@
 
 		&::-ms-expand
 			display none
-	
+
 	fieldset
 		margin-bottom 1rem
-		
+
 		+mq('bp-m')
 			margin 0
 
@@ -91,10 +91,10 @@
 	.field__sort
 		select
 			width 9rem
-	
+
 	.field__filter
 		select
 			width 7rem
-	
+
 	section.stories
 		border none
