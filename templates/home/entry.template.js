@@ -21,7 +21,7 @@
   function setupPicks() {
     $li = d3.selectAll('#picks li');
     const sz = $li.size();
-    const target = 3;
+    const target = 4;
     const count = d3.range(sz);
     d3.shuffle(count);
     const chosen = count.slice(0, target);
@@ -59,7 +59,7 @@
     const $el = d3.select(this);
     const topic = $el.attr('data-topic');
 
-    d3.selectAll('#topics .topics__nav ul li').classed('is-active', false);
+    d3.selectAll('#topics .top__nav span').classed('is-active', false);
     d3.select($el.node().parentNode).classed('is-active', true);
 
     d3.selectAll('#topics .topics__stories ul')
@@ -69,9 +69,9 @@
     const $ul = d3.select(`#topics .topics__stories [data-topic="${topic}"]`);
     $ul.classed('is-hidden', false).classed('is-visible', true);
 
-    d3.selectAll('#topics .topics__more li').classed('is-visible', false);
-    const $li = d3.select(`#topics .topics__more [data-topic="${topic}"]`);
-    $li.classed('is-visible', true);
+    d3.selectAll('#topics .top__more span').classed('is-visible', false);
+    const $span = d3.select(`#topics .top__more [data-topic="${topic}"]`);
+    $span.classed('is-visible', true);
 
     if (window.generalImages) window.generalImages();
 
@@ -103,11 +103,11 @@
       } else $topic.classed('is-hidden', true);
     });
 
-    d3.select(`#topics .topics__more [data-topic="${slug}"]`).classed(
+    d3.select(`#topics .top__more [data-topic="${slug}"]`).classed(
       'is-visible',
       true
     );
-    d3.selectAll('#topics .topics__nav ul li')
+    d3.selectAll('#topics .top__nav span')
       .classed('is-active', (d, i) => chosen === i)
       .select('button')
       .on('click', handleTopicClick);

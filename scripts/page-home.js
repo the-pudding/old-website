@@ -12,6 +12,7 @@ const Picks = require(`${cwd}/templates/home/partials/picks`);
 const New = require(`${cwd}/templates/home/partials/new`);
 const Hits = require(`${cwd}/templates/home/partials/hits`);
 const Topics = require(`${cwd}/templates/home/partials/topics`);
+const TopicsNav = require(`${cwd}/templates/common/partials/topics-nav`);
 const How = require(`${cwd}/templates/home/partials/how`);
 const Cta = require(`${cwd}/templates/common/partials/cta`);
 const Footer = require(`${cwd}/templates/common/partials/footer`);
@@ -59,6 +60,7 @@ function createMarkup() {
   const picksHTML = Picks({});
   const newHTML = New({});
   const topicsHTML = Topics({ path: './' });
+  const topicsNavHTML = TopicsNav({ path: './' });
   const ctaHTML = Cta();
   const hitsHTML = Hits({});
   const howHTML = How({});
@@ -75,6 +77,7 @@ function createMarkup() {
       '<!-- picks -->',
       '<!-- new -->',
       '<!-- topics -->',
+      '<!-- topics-nav -->',
       '<!-- cta -->',
       '<!-- hits -->',
       '<!-- how -->',
@@ -89,6 +92,7 @@ function createMarkup() {
       picksHTML,
       newHTML,
       topicsHTML,
+      topicsNavHTML,
       ctaHTML,
       hitsHTML,
       howHTML,

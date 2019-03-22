@@ -29,9 +29,6 @@ function createHTML({ data }) {
     .join('');
 
   return `
-		<div class='topics__nav'>
-			<ul>${nav}</ul>
-		</div>
 		<div class='topics__stories'>
 			${stories}
 		</div>

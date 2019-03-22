@@ -27,26 +27,24 @@
 	<!-- header -->
 
 	<main id='content'>
-		<section id='picks'>
-			<p class='section__label random-color'>Our Picks</p>
-			<ul>
-				<!-- DO NOT REMOVE -->
-				<!-- picks -->
-				
-			</ul>
-		</section>
 
-		<section id='new'>
-			<p class='section__label random-color'>What’s New</p>
+		<section id='new' class='layout--feature'>
+			<div class='section__top'>
+				<p class='section__label random-color'>What’s New</p>
+			</div>
+			
 			<ul>
 				<!-- DO NOT REMOVE -->
 				<!-- new -->
-		
 			</ul>
 		</section>
 
-		<section id='topics'>
-			<p class='section__label random-color'>Topics</p>
+		<section id='topics' class='layout--equal'>
+			<div class='section__top'>
+				<p class='section__label random-color'>Topics</p>
+				<!-- topics-nav -->
+			</div>
+			
 			<!-- DO NOT REMOVE -->
 			<!-- topics -->
 		</section>
@@ -54,8 +52,24 @@
 		<!-- DO NOT REMOVE -->
 		<!-- cta -->
 
-		<section id='hits'>
-			<p class='section__label random-color'>Greatest Hits</p>
+		<section id='picks' class='layout--small'>
+			<div class='section__top'>
+				<p class='section__label random-color'>Our Picks</p>
+				<p class='section__description'>The Pudding staff picks stories you should see</p>
+			</div>
+			
+			<ul>
+				<!-- DO NOT REMOVE -->
+				<!-- picks -->
+		
+			</ul>
+		</section>
+		
+		<section id='hits' class='layout--feature'>
+			<div class='section__top'>
+				<p class='section__label random-color'>Greatest Hits</p>
+			</div>
+			
 			<ul>
 				<!-- DO NOT REMOVE -->
 				<!-- hits -->
@@ -63,8 +77,18 @@
 			</ul>
 		</section>
 
-		<section id='how'>
-			<p class='section__label random-color'>How-To</p>
+		<section id='how' class='layout--small'>
+			<div class='section__top'>
+				<p class='section__label random-color'>How-To</p>
+				<div class='top__more'>
+					<a href='topics/#how'>See All <svg class='random-stroke' xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+						stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+						class="feather feather-chevron-right">
+						<polyline points="9 18 15 12 9 6"></polyline>
+					</svg></a>
+				</div>
+			</div>
+			
 			<ul>
 				<!-- DO NOT REMOVE -->
 				<!-- how -->

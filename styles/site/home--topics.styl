@@ -1,26 +1,25 @@
 #page-home #topics
-	
-	.topics__nav
+	.top__more
 		position absolute
-		top 0
-		left 0
-		transform rotate(-90deg) translate(-100%, -150%)
-		margin-top 4.75rem
-		transform-origin 0 0
-		
-		ul
-			display flex
-			min-width 30rem
+		top 0.4rem
+		right 0
 
 		li
-			padding 0 0.75rem
-			&.is-active
-				button
-					font-weight 700
-			button
-				font-weight 200
-				text-transform capitalize
-				set-type-size(root, false)
+			display none			
+			&.is-visible
+				display block
+		a
+			font-family $sans-display
+			text-transform uppercase
+			font-weight 700
+			border none
+			color $gray-dark
+			set-type-size(small, false)
+			line-height 1
+		svg
+			vertical-align middle
+			transform translateY(-5%)
+			width 1.25rem
 
 	.topics__stories
 		+mq('bp-m')
@@ -56,39 +55,19 @@
 			+mq('bp-m')
 				margin 0
 				border-top none
-				border-left $line-width solid $fg 
 				width calc(33.3% - 1.5rem)
 				&:nth-child(n+4)
 					display block
 				&:nth-child(-n+3)
 					margin-bottom 3rem
-				&:first-of-type
-					border-left $line-width solid $fg 
 			
-			
-	.topics__more
-		position absolute
-		bottom 0
-		right 0
-		transform translateY(150%)
-		li
-			display none			
-			&.is-visible
-				display block
-		a
-			border none
-			font-weight 500
-			color $gray-dark
-		svg
-			vertical-align middle
-			transform translateY(-7.5%)
 	
 	.story-item
 		display flex
 		flex-direction column
 		
 	.item__info
-		padding 1rem 0 0 1rem
+		padding 1rem 0
 
 	.item__hed
 		font-weight 700

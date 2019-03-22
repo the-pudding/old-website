@@ -1,7 +1,6 @@
 const fse = require('fs-extra');
 
 const cwd = process.cwd();
-const arrowSvg = `<svg class='random-stroke' xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-right"><polyline points="9 18 15 12 9 6"></polyline></svg>`;
 
 const Item = require(`${cwd}/templates/common/partials/item`);
 const topicsData = JSON.parse(
@@ -22,31 +21,9 @@ function createHTML({ data, path }) {
     })
     .join('');
 
-  const nav = topicsData
-    .map(
-      topic =>
-        `<li><button data-topic='${topic.slug}'>${topic.label}</button></li>`
-    )
-    .join('');
-
-  const more = topicsData
-    .map(
-      topic =>
-        `<li data-topic='${topic.slug}'><a href='${path}topics/#${
-          topic.slug
-        }'>More ${topic.label} ${arrowSvg}</a></li>`
-    )
-    .join('');
-
   return `
-		<div class='topics__nav'>
-			<ul>${nav}</ul>
-		</div>
 		<div class='topics__stories'>
 			${stories}
-		</div>
-		<div class='topics__more'>
-			<ul>${more}</ul>
 		</div>
 	`;
 }

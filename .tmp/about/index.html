@@ -39,9 +39,11 @@
 		<meta name='msapplication-TileColor' content='#ffc40d'>
 		<meta name='theme-color' content='#ffffff'>
 
-		<link rel='preload' type='font/woff2' as='font' crossorigin href='https://pudding.cool/assets/fonts/national/National2NarrowWeb-Extralight.woff2'>
+		<link rel='preload' type='font/woff2' as='font' crossorigin href='https://pudding.cool/assets/fonts/tiempos/TiemposHeadlineWeb-Regular.woff2'>
 		<link rel='preload' type='font/woff2' as='font' crossorigin href='https://pudding.cool/assets/fonts/national/National2NarrowWeb-Regular.woff2'>
 		<link rel='preload' type='font/woff2' as='font' crossorigin href='https://pudding.cool/assets/fonts/national/National2NarrowWeb-Bold.woff2'>
+		<link rel='preload' type='font/woff2' as='font' crossorigin href='https://pudding.cool/assets/fonts/national/National2Web-Regular.woff2'>
+		<link rel='preload' type='font/woff2' as='font' crossorigin href='https://pudding.cool/assets/fonts/national/National2Web-Bold.woff2'>
 		<link rel='preload' type='font/woff2' as='font' crossorigin href='https://pudding.cool/assets/fonts/national/National2NarrowWeb-Black.woff2'>
 		<link rel='preload' type='font/woff2' as='font' crossorigin href='https://pudding.cool/assets/fonts/tiempos/TiemposTextWeb-Regular.woff2'>
 		<link rel='preload' type='font/woff2' as='font' crossorigin href='https://pudding.cool/assets/fonts/tiempos/TiemposTextWeb-Bold.woff2'>
@@ -89,59 +91,90 @@
 	<!-- DO NOT REMOVE -->
 	
 		<a href='#content' class='skip-to-main'>Skip to main content</a>
-		<header>
+		<header class=''>
 			
-			<div class='header__title'>
-				<a class='header__wordmark' href='../' aria-label='The Pudding homepage'>
-					<img inline src='dev/common/assets/svg/pudding-wordmark.svg'>
-				</a>
-			</div>
-			
-			<div class='header__sidebar'>
-				<a class='header__logo' href='../' aria-label='The Pudding homepage'>
-					<img inline src='dev/common/assets/svg/pudding-logo.svg'>
-				</a>
-				<ul class='sidebar__social'>
-					<li><a target='_blank' onclick="trackOutboundLink('https://www.instagram.com/pudding.cool'); return false;" href='https://www.instagram.com/pudding.cool' class='logo--instagram'><img inline src='dev/common/assets/svg/instagram.svg'></a></li>
-					<li><a target='_blank' onclick="trackOutboundLink('https://twitter.com/puddingviz''); return false;" href='https://twitter.com/puddingviz' class='logo--twitter'><img inline src='dev/common/assets/svg/twitter.svg'></a></li>
-					<li><a target='_blank' onclick="trackOutboundLink('https://www.facebook.com/pudding.viz'); return false;" href='https://www.facebook.com/pudding.viz/' class='logo--facebook'><img inline src='dev/common/assets/svg/facebook.svg'></a></li>					
-					<li><a target='_blank' onclick="trackOutboundLink('https://www.patreon.com/thepudding'); return false;" href='https://www.patreon.com/thepudding' class='logo--patreon'><img inline src='dev/common/assets/svg/patreon.svg'></a></li>
-				</ul>
+			<div class='header__top'>
+				
+				<div class='top__title'>
+					<a class='title__wordmark' href='../' aria-label='The Pudding homepage'>
+						<img inline src='dev/common/assets/svg/pudding-wordmark.svg'>
+					</a>
+				</div>
+
+				<nav class='top__nav'>
+					<ul class='nav__links'>
+						<li><a onclick="trackOutboundLink('../about'); return false;" href='../about'>About</a></li>
+						<li><a onclick="trackOutboundLink('../archives'); return false;" href='../archives'>Archives</a></li>
+						<li><a onclick="trackOutboundLink('../topics'); return false;" href='../topics'>Topics</a></li>
+					</ul>
+				</nav>
+
 			</div>
 
-			<nav class='header__nav'>
-				<ul class='nav__links'>
-					<li><a onclick="trackOutboundLink('../about'); return false;" href='../about'>About</a></li>
-					<li><a onclick="trackOutboundLink('../topics'); return false;" href='../topics'>Topics</a></li>
-					<li><a onclick="trackOutboundLink('../archives'); return false;" href='../archives'>Archives</a></li>
-					<li><a target='_blank' onclick="trackOutboundLink('http://eepurl.com/czym6f'); return false;" href='http://eepurl.com/czym6f' target='_blank' class='btn'>Join our Newsletter</a></li>
-				</ul>
-			</nav>
+			<p class='header__tagline'><span>The Pudding</span> is a digital publication that explains ideas debated in culture with visual essays.</p>
 			
-			<div class='header__menu'>
-				<btn class='header__toggle-off'>
-					<img inline src='dev/common/assets/svg/x.svg'>
-				</btn>
-				<p class='menu__tagline'>The Pudding explains ideas debated in culture with visual essays.</p>
-				<ul class='menu__links'>
-					<li><a onclick="trackOutboundLink('../about'); return false;" href='../about'>About</a></li>
-					<li><a onclick="trackOutboundLink('../topics'); return false;" href='../topics'>Topics</a></li>
-					<li><a onclick="trackOutboundLink('../archives'); return false;" href='../archives'>Archives</a></li>
-					<li><a onclick="trackOutboundLink('http://eepurl.com/czym6f'); return false;" href='http://eepurl.com/czym6f' target='_blank'>Join our Newsletter</a></li>
+
+			<div class='header__cta'>
+				
+				<div class='cta__newsletter'>
+					<form action='https://poly-graph.us11.list-manage.com/subscribe/post' method='POST'>
+							<input type='hidden' name='u' value='c70d3c0e372cde433143ffeab'>
+							<input type='hidden' name='id' value='9af100ac0f'>
+							<input label='email' class='newsletter__input' type='email' autocapitalize='off' autocorrect='off' name='MERGE0' id='MERGE0' size='25' value='' placeholder='you@example.com'>
+							<div class='hidden-from-view' style='left:-10000px;position:absolute'>
+								<input label='text' type='text' name='b_c70d3c0e372cde433143ffeab_9af100ac0f' tabindex='-1' value=''>
+							</div>
+							<input class='btn' style='' type='submit' name='submit' value='Join Our Newsletter'>
+						</form>
+				</div>
+					
+				<div class='cta__patreon'>
+					<a class='btn' onclick='trackOutboundLink('https://www.patreon.com/thepudding'); return false;' target='_blank' href='https://www.patreon.com/thepudding'>Fund us on Patreon</a>
+				</div>
+
+				<ul class='cta__social'>
+					<li><a target='_blank' onclick="trackOutboundLink('https://www.facebook.com/pudding.viz'); return false;" href='https://www.facebook.com/pudding.viz/' class='logo--facebook'><img inline src='dev/common/assets/svg/facebook.svg'></a></li>
+					<li><a target='_blank' onclick="trackOutboundLink('https://twitter.com/puddingviz''); return false;" href='https://twitter.com/puddingviz' class='logo--twitter'><img inline src='dev/common/assets/svg/twitter.svg'></a></li>
+					<li><a target='_blank' onclick="trackOutboundLink('https://www.instagram.com/pudding.cool'); return false;" href='https://www.instagram.com/pudding.cool' class='logo--instagram'><img inline src='dev/common/assets/svg/instagram.svg'></a></li>
 				</ul>
-				<p class='menu__patreon'>We pour our ❤️ into these stories, but they take time and money. For just $1/month, you can help support us. Join our
-				growing community of data-driven enthusiasts.<br><a class='random-background' href='https://www.patreon.com/thepudding' target='_blank' onclick='trackOutboundLink("https://www.patreon.com/thepudding"); return false;'>Help fund us</a></p>
+
 			</div>
-			
-			<btn class='header__toggle-on'>
-				<img inline src='dev/common/assets/svg/menu.svg'>
-			</btn>
 
 		</header>
+
+	
+		<aside class='sidebar'>
+			<div class='sidebar__content'>
+				<p class='sidebar__tagline'>The Pudding explains ideas debated in culture with visual essays.</p>
+					<ul class='sidebar__links'>
+						<li><a onclick="trackOutboundLink('../about'); return false;" href='../about'>About</a></li>
+						<li><a onclick="trackOutboundLink('../topics'); return false;" href='../topics'>Topics</a></li>
+						<li><a onclick="trackOutboundLink('../archives'); return false;" href='../archives'>Archives</a></li>
+						<li><a onclick="trackOutboundLink('http://eepurl.com/czym6f'); return false;" href='http://eepurl.com/czym6f' target='_blank'>Join our Newsletter</a></li>
+					</ul>
+				<p class='sidebar__patreon'>We pour our ❤️ into these stories, but they take time and money. For just $1/month, you can help support us. Join our growing community of data-driven enthusiasts.<br><a class='random-background' href='https://www.patreon.com/thepudding' target='_blank' onclick='trackOutboundLink("https://www.patreon.com/thepudding"); return false;'>Help fund us</a></p>
+			</div>
+		</aside>
+
+		<div class='menu'>
+			<a class='menu__logo' href='../' aria-label='The Pudding homepage'>
+				<img inline src='dev/common/assets/svg/pudding-logo.svg'>
+			</a>
+			
+			<button class='menu__toggle'>
+				<span class='toggle--on'>
+					<img inline src='dev/common/assets/svg/menu.svg'>
+				</span>
+				<span class='toggle--off is-hidden'>
+					<img inline src='dev/common/assets/svg/x.svg'>
+				</span>
+			</button>
+		</div>
 	
 	<main id='content'>
 		<section>
 			<ul class='page-nav'>
+				<li><strong>About</strong></li>
 				<li>
 					<a href='#why'>Why “The Pudding?”</a>
 				</li>
@@ -174,7 +207,7 @@
 				</li>
 			</ul>
 			
-			<p class='section__label random-color'>About</p>
+			<!-- <p class='section__label random-color'>About</p> -->
 			<!-- DO NOT REMOVE -->
 			<p class="section__big">The Pudding explains ideas debated in culture with visual essays. By wielding original datasets, primary research, and interactivity, we try to thoroughly explore complex topics.</p><p>Visual essays are an emerging form of journalism. Some of the most complex, debated topics get lost in “too long; didn’t read” 10,000-word articles. Visual storytelling makes ideas more accessible—or so goes the adage “a picture is worth a thousand words.”</p><p>At The Pudding, our goal is to advance public discourse and avoid media echo chambers. We’re not chasing current events or clickbait. We choose topics where visuals both entertain and inform. This means that we invest in research and ignore news cycle noise.</p><p>The Pudding was founded in January, 2017.</p><h3 id="why" class="section__hed random-color">Why “The Pudding?”</h3><p>See <a target=_blank href=https://www.npr.org/2012/08/24/159975466/corrections-and-comments-to-stories>etymology</a>.</p><h3 id="how" class="section__hed random-color">How we do it</h3><p class="section__big">We're six full-time journalist-engineers who operate as a collective rather than hierarchical team.</p><p>Much of our work is done autonomously, with individuals choosing their essays and owning the whole story, from research to code. Each team member can do every step: research and reporting, data analysis, design, writing, and code.</p><p>One luxury that separates us from traditional newsrooms is our approach to publishing urgency. There are no deadlines because we are not tied to news events. With breaking news, it's difficult to gamble on weird, ambitious ideas if they <em>must</em> be published. No one will take on risky, creative projects when they're staring at a deadline.</p><p>So we experiment, <em>a lot</em>. The creative process feels more like workshopping a movie script than critiquing a bar chart. Consequently, many of our ideas are killed during production, but we wouldn’t have it any other way! It means we’re trying unproven, never-done-before things.</p><p>We're also trying to advance the craft. Visual journalism is still in its infancy. We don't have an established <a target=_blank href =https://en.wikipedia.org/wiki/Pattern_language>pattern language</a> found in traditional reporting. Sometimes we'll attempt an unfamiliar visual approach—not because it's guaranteed to work, but because we won’t know until we try. Rarely do organizations have the liberty take such risks, yet we're small enough to experiment in the pursuit of quality.</p><h3 id="lights" class="section__hed random-color">Keeping the lights on</h3><p class="section__big">The Pudding is financially viable, bootstrapped, and profitable (<a target=_blank href=https://m.signalvnoise.com/why-we-choose-profit-e511efc4dcb9>intentionally</a>).</p><p>There is no venture capital artificially keeping our lights on. To date, we are partially <a target_blank href=https://www.patreon.com/thepudding>reader-funded on Patreon</a> and actively seeking grants to support our journey toward independent visual journalism.</p><p>(So if you’re from a foundation, don't be shy!)</p><p>Our primary revenue sources are 1) essay sponsors and 2) white-labeled content. Sponsorship is akin to what you might find on a podcast..."this article was made possible by Blue Apron."</p><p>For white-labeled content (aka client work), we find purpose-aligned clients who want to collaborate on public, visual essays in exchange for fees. And as a team of world-class journalist-engineers, we can be selective (clients include Google, YouTube, Viacom, Kaggle, Kickstarter). So far, we have enjoyed our work-for-hire projects, as they often involve datasets that we'd otherwise never have access to. To avoid confusion with our editorial mission, these efforts are branded under our sister-visualization agency, <a target=_blank href=http://polygraph.cool>Polygraph</a>.</p><h3 id="working" class="section__hed random-color">Working here</h3><p>Some of the reasons why you might like it here:</p><p>1. This is a making-it-up-as-we-go, building-the-plane-in-the-air type of organization. Look to us if you want a small, startup feel that’s buzzing with possibility. This is different than other newsrooms that have hierarchies and an established "how-we-do-things," decades-old process.</p><p>2. You want to be involved in building something new. Yes, we publish essays, yet plenty of energy goes into perfecting a creative process that's still in its infancy. As part of a small team, your opinion matters a lot.</p><p>3. You crave autonomy rather than taking direction. There are plenty of organizations where you can slot into a well-oiled, historically prestigious machine. You'll get an editor, a process, and story assignments. But that also comes with baggage, particularly the creeping conservatism that <a href=https://medium.com/@tonyszhou/postmortem-1b338537fabc>often accompanies success</a> (i.e., you were told your idea isn’t “accessible”). This is pretty much the opposite: what you make emerges from your own burning desires—ideas gestating in the back of your head for months (or years!) that you’ve never had the latitude to explore.</p><p>4. You're over making noise. We want you to pick projects that don't live and die by the news cycle. You want your work to have a multi-year lifespan. The Pudding underwrites your research interests (go read all the books!) and gives you time (and financial stability) to explore them.</p><p>5. Creativity is not a solitary endeavor. If you’re working solo, we’ll give you an editor, or design resources, or coding help. Whatever it takes to execute your vision. What matters is that we help you understand what readers will feel and keep you motivated. We’ll be your sanity check for whether the music you're playing is just in your head or actually on the page.</p><p>6. Craft matters. We are building tools that make visual storytelling easier. Yet instead of making something for everyone, our tools begin with one group of users: ourselves. Building for general consumer adoption is a noble pursuit, but there’s <a target_blank href=http://snarkmarket.com/2011/7320>something special</a> that happens when a toolmaker builds something for their own creative ambitions.</p><p>7. You’re keen on building a following. Most of us started doing this work “on the side,” often on a personal blog. You may have experience wielding your own voice and the thrill of finding readers. We don’t want that to be lost by “getting hired” somewhere. Each person needs to have an identity that they'd otherwise cultivate independently.</p><p>8. We calibrate our salaries against interactive journalist and data visualization roles. We recognize that our skill sets are not the same as prose-based journalists, and we ensure that folks joining our mission aren’t taking a paycut from the tech world.</p>
 				<p><strong>Salary Levels</strong></p>
@@ -235,43 +268,60 @@
 
 	<!-- DO NOT REMOVE -->
 	
-		<footer class='random-background'>
-			<div class='footer__inner'>
-				<p class='footer__hed'>
-					The Pudding is an editorial publication that explains ideas debated in culture with visual essays.
-				</p>
-
-				<div class='footer__social'>
-					<p>Find us on the socials</p>
-					<ul>
-						<li>
-							<a target='_blank' href='https://www.facebook.com/pudding.viz/' class='logo--facebook'>
+	
+	<footer class='random-background'>
+		<div class='footer__inner'>
+			<div class='footer__cta'>
+				<ul class='footer__cta-list'>
+					<li>
+						<a href='https://facebook.com/pudding.viz/'>
 							<img inline src='dev/common/assets/svg/facebook.svg'></a>
-						</li>
-
-						<li>
-							<a target='_blank' href='https://twitter.com/puddingviz' class='logo--twitter'>
-							<img inline src='dev/common/assets/svg/twitter.svg'>
+							<p>FACEBOOK</p>
 						</a>
-						</li>
-
-						<li>
-							<a target='_blank' href='https://www.instagram.com/pudding.cool' class='logo--instagram'>
-								<img inline src='dev/common/assets/svg/instagram.svg'>
-							</a>
-						</li>
-
-						<li>
-							<a target='_blank' href='https://www.patreon.com/thepudding' class='logo--patreon'>
-								<img inline src='dev/common/assets/svg/patreon.svg'>
-							</a>
-						</li>
-					</ul>
-				</div>
-				
-				<p class='footer__location'>The Pudding<span>®</span> is made in Brooklyn, NY; Seattle, WA; San Antonio, TX; and Great Barrington, MA.</p>
+					</li>
+					<li>
+						<a href='https://twitter.com/puddingviz/'>
+							<img inline src='dev/common/assets/svg/twitter.svg'></a>
+							<p>TWITTER</p>
+						</a>
+					</li>
+					<li>
+						<a href='https://www.instagram.com/pudding.cool'>
+							<img inline src='dev/common/assets/svg/instagram.svg'></a>
+							<p>INSTAGRAM</p>
+						</a>
+					</li>
+					<li>
+						<a href='https://patreon.com/thepudding/'>
+							<img inline src='dev/common/assets/svg/patreon.svg'></a>
+							<p>PATREON</p>
+						</a>
+					</li>
+					<li>
+						<a href='http://eepurl.com/czym6f'>
+							<img inline src='dev/common/assets/svg/mail.svg'></a>
+							<p>NEWSLETTER</p>
+						</a>
+					</li>
+					<li>
+						<a href='https://pudding.cool/about'>
+							<img inline src='dev/common/assets/svg/info.svg'></a>
+							<p>ABOUT</p>
+						</a>
+					</li>
+				</ul>
 			</div>
-		</footer>
+
+			<div class='footer__about'>
+				<img inline src='dev/common/assets/svg/pudding-wordmark.svg'></a>
+				<p class='footer__description'><a href='https://pudding.cool'>The Pudding</a> is a digital publication that
+					explains ideas debated in culture with visual essays.</p>
+				<p class='footer__trademark'>The Pudding<span>®</span> is made in Brooklyn, NY; Seattle, WA; and Great
+					Barrington, MA.</p>
+			</div>
+
+		</div>
+	</div>
 	
 </body>
 <script src='../common/js/d3.v5.min.js'></script>

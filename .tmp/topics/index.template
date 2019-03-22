@@ -39,9 +39,11 @@
 		<meta name='msapplication-TileColor' content='#ffc40d'>
 		<meta name='theme-color' content='#ffffff'>
 
-		<link rel='preload' type='font/woff2' as='font' crossorigin href='https://pudding.cool/assets/fonts/national/National2NarrowWeb-Extralight.woff2'>
+		<link rel='preload' type='font/woff2' as='font' crossorigin href='https://pudding.cool/assets/fonts/tiempos/TiemposHeadlineWeb-Regular.woff2'>
 		<link rel='preload' type='font/woff2' as='font' crossorigin href='https://pudding.cool/assets/fonts/national/National2NarrowWeb-Regular.woff2'>
 		<link rel='preload' type='font/woff2' as='font' crossorigin href='https://pudding.cool/assets/fonts/national/National2NarrowWeb-Bold.woff2'>
+		<link rel='preload' type='font/woff2' as='font' crossorigin href='https://pudding.cool/assets/fonts/national/National2Web-Regular.woff2'>
+		<link rel='preload' type='font/woff2' as='font' crossorigin href='https://pudding.cool/assets/fonts/national/National2Web-Bold.woff2'>
 		<link rel='preload' type='font/woff2' as='font' crossorigin href='https://pudding.cool/assets/fonts/national/National2NarrowWeb-Black.woff2'>
 		<link rel='preload' type='font/woff2' as='font' crossorigin href='https://pudding.cool/assets/fonts/tiempos/TiemposTextWeb-Regular.woff2'>
 		<link rel='preload' type='font/woff2' as='font' crossorigin href='https://pudding.cool/assets/fonts/tiempos/TiemposTextWeb-Bold.woff2'>
@@ -89,64 +91,102 @@
 	<!-- DO NOT REMOVE -->
 	
 		<a href='#content' class='skip-to-main'>Skip to main content</a>
-		<header>
+		<header class=''>
 			
-			<div class='header__title'>
-				<a class='header__wordmark' href='../' aria-label='The Pudding homepage'>
-					<img inline src='dev/common/assets/svg/pudding-wordmark.svg'>
-				</a>
-			</div>
-			
-			<div class='header__sidebar'>
-				<a class='header__logo' href='../' aria-label='The Pudding homepage'>
-					<img inline src='dev/common/assets/svg/pudding-logo.svg'>
-				</a>
-				<ul class='sidebar__social'>
-					<li><a target='_blank' onclick="trackOutboundLink('https://www.instagram.com/pudding.cool'); return false;" href='https://www.instagram.com/pudding.cool' class='logo--instagram'><img inline src='dev/common/assets/svg/instagram.svg'></a></li>
-					<li><a target='_blank' onclick="trackOutboundLink('https://twitter.com/puddingviz''); return false;" href='https://twitter.com/puddingviz' class='logo--twitter'><img inline src='dev/common/assets/svg/twitter.svg'></a></li>
-					<li><a target='_blank' onclick="trackOutboundLink('https://www.facebook.com/pudding.viz'); return false;" href='https://www.facebook.com/pudding.viz/' class='logo--facebook'><img inline src='dev/common/assets/svg/facebook.svg'></a></li>					
-					<li><a target='_blank' onclick="trackOutboundLink('https://www.patreon.com/thepudding'); return false;" href='https://www.patreon.com/thepudding' class='logo--patreon'><img inline src='dev/common/assets/svg/patreon.svg'></a></li>
-				</ul>
+			<div class='header__top'>
+				
+				<div class='top__title'>
+					<a class='title__wordmark' href='../' aria-label='The Pudding homepage'>
+						<img inline src='dev/common/assets/svg/pudding-wordmark.svg'>
+					</a>
+				</div>
+
+				<nav class='top__nav'>
+					<ul class='nav__links'>
+						<li><a onclick="trackOutboundLink('../about'); return false;" href='../about'>About</a></li>
+						<li><a onclick="trackOutboundLink('../archives'); return false;" href='../archives'>Archives</a></li>
+						<li><a onclick="trackOutboundLink('../topics'); return false;" href='../topics'>Topics</a></li>
+					</ul>
+				</nav>
+
 			</div>
 
-			<nav class='header__nav'>
-				<ul class='nav__links'>
-					<li><a onclick="trackOutboundLink('../about'); return false;" href='../about'>About</a></li>
-					<li><a onclick="trackOutboundLink('../topics'); return false;" href='../topics'>Topics</a></li>
-					<li><a onclick="trackOutboundLink('../archives'); return false;" href='../archives'>Archives</a></li>
-					<li><a target='_blank' onclick="trackOutboundLink('http://eepurl.com/czym6f'); return false;" href='http://eepurl.com/czym6f' target='_blank' class='btn'>Join our Newsletter</a></li>
-				</ul>
-			</nav>
+			<p class='header__tagline'><span>The Pudding</span> is a digital publication that explains ideas debated in culture with visual essays.</p>
 			
-			<div class='header__menu'>
-				<btn class='header__toggle-off'>
-					<img inline src='dev/common/assets/svg/x.svg'>
-				</btn>
-				<p class='menu__tagline'>The Pudding explains ideas debated in culture with visual essays.</p>
-				<ul class='menu__links'>
-					<li><a onclick="trackOutboundLink('../about'); return false;" href='../about'>About</a></li>
-					<li><a onclick="trackOutboundLink('../topics'); return false;" href='../topics'>Topics</a></li>
-					<li><a onclick="trackOutboundLink('../archives'); return false;" href='../archives'>Archives</a></li>
-					<li><a onclick="trackOutboundLink('http://eepurl.com/czym6f'); return false;" href='http://eepurl.com/czym6f' target='_blank'>Join our Newsletter</a></li>
+
+			<div class='header__cta'>
+				
+				<div class='cta__newsletter'>
+					<form action='https://poly-graph.us11.list-manage.com/subscribe/post' method='POST'>
+							<input type='hidden' name='u' value='c70d3c0e372cde433143ffeab'>
+							<input type='hidden' name='id' value='9af100ac0f'>
+							<input label='email' class='newsletter__input' type='email' autocapitalize='off' autocorrect='off' name='MERGE0' id='MERGE0' size='25' value='' placeholder='you@example.com'>
+							<div class='hidden-from-view' style='left:-10000px;position:absolute'>
+								<input label='text' type='text' name='b_c70d3c0e372cde433143ffeab_9af100ac0f' tabindex='-1' value=''>
+							</div>
+							<input class='btn' style='' type='submit' name='submit' value='Join Our Newsletter'>
+						</form>
+				</div>
+					
+				<div class='cta__patreon'>
+					<a class='btn' onclick='trackOutboundLink('https://www.patreon.com/thepudding'); return false;' target='_blank' href='https://www.patreon.com/thepudding'>Fund us on Patreon</a>
+				</div>
+
+				<ul class='cta__social'>
+					<li><a target='_blank' onclick="trackOutboundLink('https://www.facebook.com/pudding.viz'); return false;" href='https://www.facebook.com/pudding.viz/' class='logo--facebook'><img inline src='dev/common/assets/svg/facebook.svg'></a></li>
+					<li><a target='_blank' onclick="trackOutboundLink('https://twitter.com/puddingviz''); return false;" href='https://twitter.com/puddingviz' class='logo--twitter'><img inline src='dev/common/assets/svg/twitter.svg'></a></li>
+					<li><a target='_blank' onclick="trackOutboundLink('https://www.instagram.com/pudding.cool'); return false;" href='https://www.instagram.com/pudding.cool' class='logo--instagram'><img inline src='dev/common/assets/svg/instagram.svg'></a></li>
 				</ul>
-				<p class='menu__patreon'>We pour our ❤️ into these stories, but they take time and money. For just $1/month, you can help support us. Join our
-				growing community of data-driven enthusiasts.<br><a class='random-background' href='https://www.patreon.com/thepudding' target='_blank' onclick='trackOutboundLink("https://www.patreon.com/thepudding"); return false;'>Help fund us</a></p>
+
 			</div>
-			
-			<btn class='header__toggle-on'>
-				<img inline src='dev/common/assets/svg/menu.svg'>
-			</btn>
 
 		</header>
+
+	
+		<aside class='sidebar'>
+			<div class='sidebar__content'>
+				<p class='sidebar__tagline'>The Pudding explains ideas debated in culture with visual essays.</p>
+					<ul class='sidebar__links'>
+						<li><a onclick="trackOutboundLink('../about'); return false;" href='../about'>About</a></li>
+						<li><a onclick="trackOutboundLink('../topics'); return false;" href='../topics'>Topics</a></li>
+						<li><a onclick="trackOutboundLink('../archives'); return false;" href='../archives'>Archives</a></li>
+						<li><a onclick="trackOutboundLink('http://eepurl.com/czym6f'); return false;" href='http://eepurl.com/czym6f' target='_blank'>Join our Newsletter</a></li>
+					</ul>
+				<p class='sidebar__patreon'>We pour our ❤️ into these stories, but they take time and money. For just $1/month, you can help support us. Join our growing community of data-driven enthusiasts.<br><a class='random-background' href='https://www.patreon.com/thepudding' target='_blank' onclick='trackOutboundLink("https://www.patreon.com/thepudding"); return false;'>Help fund us</a></p>
+			</div>
+		</aside>
+
+		<div class='menu'>
+			<a class='menu__logo' href='../' aria-label='The Pudding homepage'>
+				<img inline src='dev/common/assets/svg/pudding-logo.svg'>
+			</a>
+			
+			<button class='menu__toggle'>
+				<span class='toggle--on'>
+					<img inline src='dev/common/assets/svg/menu.svg'>
+				</span>
+				<span class='toggle--off is-hidden'>
+					<img inline src='dev/common/assets/svg/x.svg'>
+				</span>
+			</button>
+		</div>
 	
 	<main id='content'>
-		<section>
-			<p class='section__label random-color'>Topics</p>
+		<section class='layout--feature'>
+			<div class='section__top'>
+				<p class='section__label random-color'>Topics</p>
+				<!-- DO NOT REMOVE -->
+				
+		<div class='top__nav'>
+			<div><span><button data-topic='sports'>Sports</button></span><span><button data-topic='people'>People & Culture</button></span><span><button data-topic='entertainment'>Entertainment</button></span><span><button data-topic='social'>Social Issues</button></span><span><button data-topic='music'>Music</button></span></div>
+		</div>
+		<div class='top__more'>
+			<div><span data-topic='sports'><a href='../topics/#sports'>More Sports <svg class='random-stroke' xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-right"><polyline points="9 18 15 12 9 6"></polyline></svg></a></span><span data-topic='people'><a href='../topics/#people'>More People & Culture <svg class='random-stroke' xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-right"><polyline points="9 18 15 12 9 6"></polyline></svg></a></span><span data-topic='entertainment'><a href='../topics/#entertainment'>More Entertainment <svg class='random-stroke' xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-right"><polyline points="9 18 15 12 9 6"></polyline></svg></a></span><span data-topic='social'><a href='../topics/#social'>More Social Issues <svg class='random-stroke' xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-right"><polyline points="9 18 15 12 9 6"></polyline></svg></a></span><span data-topic='music'><a href='../topics/#music'>More Music <svg class='random-stroke' xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-right"><polyline points="9 18 15 12 9 6"></polyline></svg></a></span></div>
+		</div>
+	
+			</div>
 			<!-- DO NOT REMOVE -->
 			
-		<div class='topics__nav'>
-			<ul><li><button data-topic='how'>How-To</button></li><li><button data-topic='sports'>Sports</button></li><li><button data-topic='people'>People & Culture</button></li><li><button data-topic='entertainment'>Entertainment</button></li><li><button data-topic='social'>Social Issues</button></li><li><button data-topic='music'>Music</button></li></ul>
-		</div>
 		<div class='topics__stories'>
 			<ul data-topic='how'><li>
 		<div class='story-item' data-id='process/flexbox-layout' data-topic='how' data-chart='' data-keyword='how-to,javascript' data-author='amber' data-author_slug='amber-thomas' data-author_name='Amber Thomas' data-hed='making data viz without svg using d3 and flexbox' data-dek='bye bye tricky svg alignments. hello svg-free data viz!' data-date='2018-07-20T04:00:00.000Z' data-views='6309'>
@@ -160,9 +200,11 @@
 				<a href='//pudding.cool/process/flexbox-layout'>
 					<h3 class='item__hed'>Making Data Viz Without SVG Using D3 and Flexbox</h3>
 				</a>
-				<p class='item__dek'>Bye bye tricky SVG alignments. Hello SVG-free data viz!</p>
-				<time class='item__time' datetime='2018-07-20T04:00:00.000Z'></time>
-				<p class='item__author'>By <a href='../author/amber-thomas'>Amber Thomas</a></p>
+				<div class='info__details'>
+					<p class='item__dek'>Bye bye tricky SVG alignments. Hello SVG-free data viz!</p>
+					<time class='item__time' datetime='2018-07-20T04:00:00.000Z'></time>
+					<cite class='item__author'>By <a href='../author/amber-thomas'>Amber Thomas</a></cite>
+				</div>
 			</div>
 		</div>
 	</li><li>
@@ -177,9 +219,11 @@
 				<a href='//pudding.cool/process/scrollytelling-sticky'>
 					<h3 class='item__hed'>Easier Scrollytelling with Position Sticky</h3>
 				</a>
-				<p class='item__dek'>Leaning on CSS to simplify the process</p>
-				<time class='item__time' datetime='2018-06-08T04:00:00.000Z'></time>
-				<p class='item__author'>By <a href='../author/russell-goldenberg'>Russell Goldenberg</a>, <a href='../author/elaina-natario'>Elaina Natario</a></p>
+				<div class='info__details'>
+					<p class='item__dek'>Leaning on CSS to simplify the process</p>
+					<time class='item__time' datetime='2018-06-08T04:00:00.000Z'></time>
+					<cite class='item__author'>By <a href='../author/russell-goldenberg'>Russell Goldenberg</a>, <a href='../author/elaina-natario'>Elaina Natario</a></cite>
+				</div>
 			</div>
 		</div>
 	</li><li>
@@ -194,9 +238,11 @@
 				<a href='//pudding.cool/process/introducing-scrollama'>
 					<h3 class='item__hed'>An Introduction to Scrollama.js</h3>
 				</a>
-				<p class='item__dek'>The what, why, and how to use scrollama.js for your next scrollytelling story</p>
-				<time class='item__time' datetime='2017-11-16T05:00:00.000Z'></time>
-				<p class='item__author'>By <a href='../author/russell-goldenberg'>Russell Goldenberg</a></p>
+				<div class='info__details'>
+					<p class='item__dek'>The what, why, and how to use scrollama.js for your next scrollytelling story</p>
+					<time class='item__time' datetime='2017-11-16T05:00:00.000Z'></time>
+					<cite class='item__author'>By <a href='../author/russell-goldenberg'>Russell Goldenberg</a></cite>
+				</div>
 			</div>
 		</div>
 	</li><li>
@@ -211,9 +257,11 @@
 				<a href='//pudding.cool/process/how-to-make-dope-shit-part-2'>
 					<h3 class='item__hed'>How to Make Dope Shit Part 2: Design</h3>
 				</a>
-				<p class='item__dek'>Some pointers on learning to design data-driven visual essays.</p>
-				<time class='item__time' datetime='2017-11-01T04:00:00.000Z'></time>
-				<p class='item__author'>By <a href='../author/ilia-blinderman'>Ilia Blinderman</a></p>
+				<div class='info__details'>
+					<p class='item__dek'>Some pointers on learning to design data-driven visual essays.</p>
+					<time class='item__time' datetime='2017-11-01T04:00:00.000Z'></time>
+					<cite class='item__author'>By <a href='../author/ilia-blinderman'>Ilia Blinderman</a></cite>
+				</div>
 			</div>
 		</div>
 	</li><li>
@@ -228,9 +276,11 @@
 				<a href='//pudding.cool/process/how-to-make-dope-shit-part-1'>
 					<h3 class='item__hed'>How to Make Dope Shit Part 1: Working with Data</h3>
 				</a>
-				<p class='item__dek'>Familiarize yourself with the tools used to make visual, data-driven essays.</p>
-				<time class='item__time' datetime='2017-08-13T04:00:00.000Z'></time>
-				<p class='item__author'>By <a href='../author/ilia-blinderman'>Ilia Blinderman</a></p>
+				<div class='info__details'>
+					<p class='item__dek'>Familiarize yourself with the tools used to make visual, data-driven essays.</p>
+					<time class='item__time' datetime='2017-08-13T04:00:00.000Z'></time>
+					<cite class='item__author'>By <a href='../author/ilia-blinderman'>Ilia Blinderman</a></cite>
+				</div>
 			</div>
 		</div>
 	</li><li>
@@ -245,9 +295,11 @@
 				<a href='//pudding.cool/process/resize'>
 					<h3 class='item__hed'>How Many Users Resize Their Browser?</h3>
 				</a>
-				<p class='item__dek'>A look at actual data and how to deal with it</p>
-				<time class='item__time' datetime='2017-08-01T04:00:00.000Z'></time>
-				<p class='item__author'>By <a href='../author/russell-goldenberg'>Russell Goldenberg</a></p>
+				<div class='info__details'>
+					<p class='item__dek'>A look at actual data and how to deal with it</p>
+					<time class='item__time' datetime='2017-08-01T04:00:00.000Z'></time>
+					<cite class='item__author'>By <a href='../author/russell-goldenberg'>Russell Goldenberg</a></cite>
+				</div>
 			</div>
 		</div>
 	</li><li>
@@ -262,9 +314,11 @@
 				<a href='//pudding.cool/process/weighted-pivot-scatter-plot'>
 					<h3 class='item__hed'>The Making of the Weighted Pivot Scatter Plot</h3>
 				</a>
-				<p class='item__dek'>How (and why) the interactive chart was born</p>
-				<time class='item__time' datetime='2017-05-15T04:00:00.000Z'></time>
-				<p class='item__author'>By <a href='../author/russell-goldenberg'>Russell Goldenberg</a></p>
+				<div class='info__details'>
+					<p class='item__dek'>How (and why) the interactive chart was born</p>
+					<time class='item__time' datetime='2017-05-15T04:00:00.000Z'></time>
+					<cite class='item__author'>By <a href='../author/russell-goldenberg'>Russell Goldenberg</a></cite>
+				</div>
 			</div>
 		</div>
 	</li><li>
@@ -279,9 +333,11 @@
 				<a href='//pudding.cool/process/regional_smoothing'>
 					<h3 class='item__hed'>Regional Smoothing in R</h3>
 				</a>
-				<p class='item__dek'>A guide to smoothing geospatial data in R</p>
-				<time class='item__time' datetime='2017-05-11T04:00:00.000Z'></time>
-				<p class='item__author'>By <a href='../author/ilia-blinderman'>Ilia Blinderman</a></p>
+				<div class='info__details'>
+					<p class='item__dek'>A guide to smoothing geospatial data in R</p>
+					<time class='item__time' datetime='2017-05-11T04:00:00.000Z'></time>
+					<cite class='item__author'>By <a href='../author/ilia-blinderman'>Ilia Blinderman</a></cite>
+				</div>
 			</div>
 		</div>
 	</li><li>
@@ -296,9 +352,11 @@
 				<a href='//pudding.cool/process/responsive-scrollytelling'>
 					<h3 class='item__hed'>Responsive Scrollytelling Best Practices</h3>
 				</a>
-				<p class='item__dek'>How to plan or adapt a scrollytelling story for mobile.</p>
-				<time class='item__time' datetime='2017-04-21T04:00:00.000Z'></time>
-				<p class='item__author'>By <a href='../author/russell-goldenberg'>Russell Goldenberg</a></p>
+				<div class='info__details'>
+					<p class='item__dek'>How to plan or adapt a scrollytelling story for mobile.</p>
+					<time class='item__time' datetime='2017-04-21T04:00:00.000Z'></time>
+					<cite class='item__author'>By <a href='../author/russell-goldenberg'>Russell Goldenberg</a></cite>
+				</div>
 			</div>
 		</div>
 	</li><li>
@@ -313,9 +371,11 @@
 				<a href='//pudding.cool/process/how-to-implement-scrollytelling'>
 					<h3 class='item__hed'>How to Implement Scrollytelling with Six Different Libraries</h3>
 				</a>
-				<p class='item__dek'>How to tackle a simple scroll-driven chart using six different libraries</p>
-				<time class='item__time' datetime='2017-02-10T05:00:00.000Z'></time>
-				<p class='item__author'>By <a href='../author/russell-goldenberg'>Russell Goldenberg</a></p>
+				<div class='info__details'>
+					<p class='item__dek'>How to tackle a simple scroll-driven chart using six different libraries</p>
+					<time class='item__time' datetime='2017-02-10T05:00:00.000Z'></time>
+					<cite class='item__author'>By <a href='../author/russell-goldenberg'>Russell Goldenberg</a></cite>
+				</div>
 			</div>
 		</div>
 	</li></ul><ul data-topic='sports'><li>
@@ -330,9 +390,11 @@
 				<a href='//pudding.cool/2019/03/nba-spelling'>
 					<h3 class='item__hed'>NBA Spelling Bee</h3>
 				</a>
-				<p class='item__dek'>A spelling bee for the hardest names in the NBA.</p>
-				<time class='item__time' datetime='2019-03-20T04:00:00.000Z'></time>
-				<p class='item__author'>By <a href='../author/russell-goldenberg'>Russell Goldenberg</a>, <a href='../author/matt-daniels'>Matt Daniels</a></p>
+				<div class='info__details'>
+					<p class='item__dek'>A spelling bee for the hardest names in the NBA.</p>
+					<time class='item__time' datetime='2019-03-20T04:00:00.000Z'></time>
+					<cite class='item__author'>By <a href='../author/russell-goldenberg'>Russell Goldenberg</a>, <a href='../author/matt-daniels'>Matt Daniels</a></cite>
+				</div>
 			</div>
 		</div>
 	</li><li>
@@ -347,9 +409,11 @@
 				<a href='//pudding.cool/2019/03/hype'>
 					<h3 class='item__hed'>How Many High School Stars Make It in the NBA?</h3>
 				</a>
-				<p class='item__dek'>Every year the top high school basketball recruits get hyped up—do they pan out?</p>
-				<time class='item__time' datetime='2019-03-04T05:00:00.000Z'></time>
-				<p class='item__author'>By <a href='../author/amber-thomas'>Amber Thomas</a>, <a href='../author/russell-goldenberg'>Russell Goldenberg</a></p>
+				<div class='info__details'>
+					<p class='item__dek'>Every year the top high school basketball recruits get hyped up—do they pan out?</p>
+					<time class='item__time' datetime='2019-03-04T05:00:00.000Z'></time>
+					<cite class='item__author'>By <a href='../author/amber-thomas'>Amber Thomas</a>, <a href='../author/russell-goldenberg'>Russell Goldenberg</a></cite>
+				</div>
 			</div>
 		</div>
 	</li><li>
@@ -364,9 +428,11 @@
 				<a href='//pudding.cool/2018/11/titletowns'>
 					<h3 class='item__hed'>The Winningest Cities in North American Sports</h3>
 				</a>
-				<p class='item__dek'>What makes a titletown in sports?</p>
-				<time class='item__time' datetime='2018-11-07T05:00:00.000Z'></time>
-				<p class='item__author'>By <a href='../author/sam-vickars'>Sam Vickars</a></p>
+				<div class='info__details'>
+					<p class='item__dek'>What makes a titletown in sports?</p>
+					<time class='item__time' datetime='2018-11-07T05:00:00.000Z'></time>
+					<cite class='item__author'>By <a href='../author/sam-vickars'>Sam Vickars</a></cite>
+				</div>
 			</div>
 		</div>
 	</li><li>
@@ -381,9 +447,11 @@
 				<a href='//pudding.cool/2018/09/jordans'>
 					<h3 class='item__hed'>A Visual History of Every Air Jordan</h3>
 				</a>
-				<p class='item__dek'>Watch as the design of the iconic Air Jordan morphs over the last 33 editions.</p>
-				<time class='item__time' datetime='2018-09-26T04:00:00.000Z'></time>
-				<p class='item__author'>By <a href='../author/jan-diehm'>Jan Diehm</a></p>
+				<div class='info__details'>
+					<p class='item__dek'>Watch as the design of the iconic Air Jordan morphs over the last 33 editions.</p>
+					<time class='item__time' datetime='2018-09-26T04:00:00.000Z'></time>
+					<cite class='item__author'>By <a href='../author/jan-diehm'>Jan Diehm</a></cite>
+				</div>
 			</div>
 		</div>
 	</li><li>
@@ -398,9 +466,11 @@
 				<a href='//pudding.cool/2018/05/nba-top-plays'>
 					<h3 class='item__hed'>The Most-Viewed NBA Plays in 2017-18</h3>
 				</a>
-				<p class='item__dek'>Warning: this video contains a high dosage of LeBron footage.</p>
-				<time class='item__time' datetime='2018-05-31T04:00:00.000Z'></time>
-				<p class='item__author'>By <a href='../author/russell-goldenberg'>Russell Goldenberg</a></p>
+				<div class='info__details'>
+					<p class='item__dek'>Warning: this video contains a high dosage of LeBron footage.</p>
+					<time class='item__time' datetime='2018-05-31T04:00:00.000Z'></time>
+					<cite class='item__author'>By <a href='../author/russell-goldenberg'>Russell Goldenberg</a></cite>
+				</div>
 			</div>
 		</div>
 	</li><li>
@@ -415,9 +485,11 @@
 				<a href='//pudding.cool/2018/04/one-hit-wonders'>
 					<h3 class='item__hed'>One-Hit Wonders in Sports</h3>
 				</a>
-				<p class='item__dek'>The greatest single-season anomalies in the last 30 years</p>
-				<time class='item__time' datetime='2018-04-30T04:00:00.000Z'></time>
-				<p class='item__author'>By <a href='../author/russell-goldenberg'>Russell Goldenberg</a>, <a href='../author/jan-diehm'>Jan Diehm</a></p>
+				<div class='info__details'>
+					<p class='item__dek'>The greatest single-season anomalies in the last 30 years</p>
+					<time class='item__time' datetime='2018-04-30T04:00:00.000Z'></time>
+					<cite class='item__author'>By <a href='../author/russell-goldenberg'>Russell Goldenberg</a>, <a href='../author/jan-diehm'>Jan Diehm</a></cite>
+				</div>
 			</div>
 		</div>
 	</li><li>
@@ -432,9 +504,11 @@
 				<a href='//pudding.cool/2017/10/superteams'>
 					<h3 class='item__hed'>What is a Superteam in the NBA?</h3>
 				</a>
-				<p class='item__dek'>Defining what a superteam is with data</p>
-				<time class='item__time' datetime='2017-10-12T04:00:00.000Z'></time>
-				<p class='item__author'>By <a href='../author/russell-goldenberg'>Russell Goldenberg</a>, <a href='../author/matt-daniels'>Matt Daniels</a></p>
+				<div class='info__details'>
+					<p class='item__dek'>Defining what a superteam is with data</p>
+					<time class='item__time' datetime='2017-10-12T04:00:00.000Z'></time>
+					<cite class='item__author'>By <a href='../author/russell-goldenberg'>Russell Goldenberg</a>, <a href='../author/matt-daniels'>Matt Daniels</a></cite>
+				</div>
 			</div>
 		</div>
 	</li><li>
@@ -449,9 +523,11 @@
 				<a href='//pudding.cool/2017/05/nba-moments'>
 					<h3 class='item__hed'>The Most Timeless NBA Plays</h3>
 				</a>
-				<p class='item__dek'>Historic NBA games and plays, ranked by YouTube views</p>
-				<time class='item__time' datetime='2017-05-06T04:00:00.000Z'></time>
-				<p class='item__author'>By <a href='../author/matt-daniels'>Matt Daniels</a>, <a href='../author/russell-goldenberg'>Russell Goldenberg</a></p>
+				<div class='info__details'>
+					<p class='item__dek'>Historic NBA games and plays, ranked by YouTube views</p>
+					<time class='item__time' datetime='2017-05-06T04:00:00.000Z'></time>
+					<cite class='item__author'>By <a href='../author/matt-daniels'>Matt Daniels</a>, <a href='../author/russell-goldenberg'>Russell Goldenberg</a></cite>
+				</div>
 			</div>
 		</div>
 	</li><li>
@@ -466,9 +542,11 @@
 				<a href='//pudding.cool/2017/03/westbrook'>
 					<h3 class='item__hed'>How Russell Westbrook Can Average a Triple-Double</h3>
 				</a>
-				<p class='item__dek'>As of March 10, Russell Westbrook is averaging a triple-double.</p>
-				<time class='item__time' datetime='2017-03-08T05:00:00.000Z'></time>
-				<p class='item__author'>By <a href='../author/russell-goldenberg'>Russell Goldenberg</a></p>
+				<div class='info__details'>
+					<p class='item__dek'>As of March 10, Russell Westbrook is averaging a triple-double.</p>
+					<time class='item__time' datetime='2017-03-08T05:00:00.000Z'></time>
+					<cite class='item__author'>By <a href='../author/russell-goldenberg'>Russell Goldenberg</a></cite>
+				</div>
 			</div>
 		</div>
 	</li><li>
@@ -483,9 +561,11 @@
 				<a href='//pudding.cool/2017/03/home-court'>
 					<h3 class='item__hed'>Do NBA Refs Favor the Home Team?</h3>
 				</a>
-				<p class='item__dek'>Analyzing reviewed calls to rank NBA teams by favorable home court officiating</p>
-				<time class='item__time' datetime='2017-03-02T05:00:00.000Z'></time>
-				<p class='item__author'>By <a href='../author/oliver-roeder'>Oliver Roeder</a>, <a href='../author/matt-daniels'>Matt Daniels</a></p>
+				<div class='info__details'>
+					<p class='item__dek'>Analyzing reviewed calls to rank NBA teams by favorable home court officiating</p>
+					<time class='item__time' datetime='2017-03-02T05:00:00.000Z'></time>
+					<cite class='item__author'>By <a href='../author/oliver-roeder'>Oliver Roeder</a>, <a href='../author/matt-daniels'>Matt Daniels</a></cite>
+				</div>
 			</div>
 		</div>
 	</li><li>
@@ -500,9 +580,11 @@
 				<a href='//pudding.cool/2017/02/two-minute-report'>
 					<h3 class='item__hed'>NBA Last Two Minute Report</h3>
 				</a>
-				<p class='item__dek'>A review of the NBA officiating from the Last Two Minute Report</p>
-				<time class='item__time' datetime='2017-02-15T05:00:00.000Z'></time>
-				<p class='item__author'>By <a href='../author/russell-goldenberg'>Russell Goldenberg</a></p>
+				<div class='info__details'>
+					<p class='item__dek'>A review of the NBA officiating from the Last Two Minute Report</p>
+					<time class='item__time' datetime='2017-02-15T05:00:00.000Z'></time>
+					<cite class='item__author'>By <a href='../author/russell-goldenberg'>Russell Goldenberg</a></cite>
+				</div>
 			</div>
 		</div>
 	</li><li>
@@ -517,9 +599,11 @@
 				<a href='//pudding.cool/2017/03/redraft'>
 					<h3 class='item__hed'>Twenty Years of the NBA Redrafted</h3>
 				</a>
-				<p class='item__dek'>Using career stats to prove the best/worst NBA draft picks, ever</p>
-				<time class='item__time' datetime='2016-09-01T04:00:00.000Z'></time>
-				<p class='item__author'>By <a href='../author/russell-goldenberg'>Russell Goldenberg</a></p>
+				<div class='info__details'>
+					<p class='item__dek'>Using career stats to prove the best/worst NBA draft picks, ever</p>
+					<time class='item__time' datetime='2016-09-01T04:00:00.000Z'></time>
+					<cite class='item__author'>By <a href='../author/russell-goldenberg'>Russell Goldenberg</a></cite>
+				</div>
 			</div>
 		</div>
 	</li><li>
@@ -534,9 +618,11 @@
 				<a href='//pudding.cool/2017/03/comeback'>
 					<h3 class='item__hed'>Ranking the Most Unlikely NBA Comebacks</h3>
 				</a>
-				<p class='item__dek'>Identify the most statistically unlikely comebacks this season</p>
-				<time class='item__time' datetime='2016-04-10T04:00:00.000Z'></time>
-				<p class='item__author'>By <a href='../author/matt-daniels'>Matt Daniels</a></p>
+				<div class='info__details'>
+					<p class='item__dek'>Identify the most statistically unlikely comebacks this season</p>
+					<time class='item__time' datetime='2016-04-10T04:00:00.000Z'></time>
+					<cite class='item__author'>By <a href='../author/matt-daniels'>Matt Daniels</a></cite>
+				</div>
 			</div>
 		</div>
 	</li></ul><ul data-topic='people'><li>
@@ -551,9 +637,11 @@
 				<a href='//pudding.cool/2018/11/dearabby'>
 					<h3 class='item__hed'>30 Years of American Anxieties</h3>
 				</a>
-				<p class='item__dek'>What 20,000 letters to an advice columnist tell us about what concerns us most.</p>
-				<time class='item__time' datetime='2018-11-13T05:00:00.000Z'></time>
-				<p class='item__author'>By <a href='../author/ilia-blinderman'>Ilia Blinderman</a>, <a href='../author/caitlyn-ralph'>Caitlyn Ralph</a></p>
+				<div class='info__details'>
+					<p class='item__dek'>What 20,000 letters to an advice columnist tell us about what concerns us most.</p>
+					<time class='item__time' datetime='2018-11-13T05:00:00.000Z'></time>
+					<cite class='item__author'>By <a href='../author/ilia-blinderman'>Ilia Blinderman</a>, <a href='../author/caitlyn-ralph'>Caitlyn Ralph</a></cite>
+				</div>
 			</div>
 		</div>
 	</li><li>
@@ -568,9 +656,11 @@
 				<a href='//pudding.cool/2018/10/wiki-breakout'>
 					<h3 class='item__hed'>What Does the Path to Fame Look Like?</h3>
 				</a>
-				<p class='item__dek'>Tracking the rise in popularity from Cardi B to Carson Wentz</p>
-				<time class='item__time' datetime='2018-10-19T04:00:00.000Z'></time>
-				<p class='item__author'>By <a href='../author/russell-goldenberg'>Russell Goldenberg</a>, <a href='../author/caitlyn-ralph'>Caitlyn Ralph</a></p>
+				<div class='info__details'>
+					<p class='item__dek'>Tracking the rise in popularity from Cardi B to Carson Wentz</p>
+					<time class='item__time' datetime='2018-10-19T04:00:00.000Z'></time>
+					<cite class='item__author'>By <a href='../author/russell-goldenberg'>Russell Goldenberg</a>, <a href='../author/caitlyn-ralph'>Caitlyn Ralph</a></cite>
+				</div>
 			</div>
 		</div>
 	</li><li>
@@ -585,9 +675,11 @@
 				<a href='//pudding.cool/2018/09/jordans'>
 					<h3 class='item__hed'>A Visual History of Every Air Jordan</h3>
 				</a>
-				<p class='item__dek'>Watch as the design of the iconic Air Jordan morphs over the last 33 editions.</p>
-				<time class='item__time' datetime='2018-09-26T04:00:00.000Z'></time>
-				<p class='item__author'>By <a href='../author/jan-diehm'>Jan Diehm</a></p>
+				<div class='info__details'>
+					<p class='item__dek'>Watch as the design of the iconic Air Jordan morphs over the last 33 editions.</p>
+					<time class='item__time' datetime='2018-09-26T04:00:00.000Z'></time>
+					<cite class='item__author'>By <a href='../author/jan-diehm'>Jan Diehm</a></cite>
+				</div>
 			</div>
 		</div>
 	</li><li>
@@ -602,9 +694,11 @@
 				<a href='//pudding.cool/2018/09/wiki-billboard'>
 					<h3 class='item__hed'>The Celebrity Billboard Project</h3>
 				</a>
-				<p class='item__dek'>Tracking the popularity of cultural figures in 2018</p>
-				<time class='item__time' datetime='2018-09-11T04:00:00.000Z'></time>
-				<p class='item__author'>By <a href='../author/russell-goldenberg'>Russell Goldenberg</a>, <a href='../author/ilia-blinderman'>Ilia Blinderman</a>, <a href='../author/caitlyn-ralph'>Caitlyn Ralph</a></p>
+				<div class='info__details'>
+					<p class='item__dek'>Tracking the popularity of cultural figures in 2018</p>
+					<time class='item__time' datetime='2018-09-11T04:00:00.000Z'></time>
+					<cite class='item__author'>By <a href='../author/russell-goldenberg'>Russell Goldenberg</a>, <a href='../author/ilia-blinderman'>Ilia Blinderman</a>, <a href='../author/caitlyn-ralph'>Caitlyn Ralph</a></cite>
+				</div>
 			</div>
 		</div>
 	</li><li>
@@ -619,9 +713,11 @@
 				<a href='//pudding.cool/2018/08/pockets'>
 					<h3 class='item__hed'>Women's Pockets are Inferior</h3>
 				</a>
-				<p class='item__dek'>You already know this. But now we've got the data to show it.</p>
-				<time class='item__time' datetime='2018-08-15T04:00:00.000Z'></time>
-				<p class='item__author'>By <a href='../author/jan-diehm'>Jan Diehm</a>, <a href='../author/amber-thomas'>Amber Thomas</a></p>
+				<div class='info__details'>
+					<p class='item__dek'>You already know this. But now we've got the data to show it.</p>
+					<time class='item__time' datetime='2018-08-15T04:00:00.000Z'></time>
+					<cite class='item__author'>By <a href='../author/jan-diehm'>Jan Diehm</a>, <a href='../author/amber-thomas'>Amber Thomas</a></cite>
+				</div>
 			</div>
 		</div>
 	</li><li>
@@ -636,9 +732,11 @@
 				<a href='//pudding.cool/2018/08/wiki-death'>
 					<h3 class='item__hed'>Life After Death on Wikipedia</h3>
 				</a>
-				<p class='item__dek'>What pageviews tell us about how famous people are remembered after they die</p>
-				<time class='item__time' datetime='2018-08-05T04:00:00.000Z'></time>
-				<p class='item__author'>By <a href='../author/russell-goldenberg'>Russell Goldenberg</a></p>
+				<div class='info__details'>
+					<p class='item__dek'>What pageviews tell us about how famous people are remembered after they die</p>
+					<time class='item__time' datetime='2018-08-05T04:00:00.000Z'></time>
+					<cite class='item__author'>By <a href='../author/russell-goldenberg'>Russell Goldenberg</a></cite>
+				</div>
 			</div>
 		</div>
 	</li><li>
@@ -653,9 +751,11 @@
 				<a href='//pudding.cool/2018/07/airports'>
 					<h3 class='item__hed'>What Airport Traffic Tells Us About the World's Megacities</h3>
 				</a>
-				<p class='item__dek'>Kinshasa, DR Congo, a city of 13 million people has 13 departing flights per day.</p>
-				<time class='item__time' datetime='2018-07-24T04:00:00.000Z'></time>
-				<p class='item__author'>By <a href='../author/matt-daniels'>Matt Daniels</a></p>
+				<div class='info__details'>
+					<p class='item__dek'>Kinshasa, DR Congo, a city of 13 million people has 13 departing flights per day.</p>
+					<time class='item__time' datetime='2018-07-24T04:00:00.000Z'></time>
+					<cite class='item__author'>By <a href='../author/matt-daniels'>Matt Daniels</a></cite>
+				</div>
 			</div>
 		</div>
 	</li><li>
@@ -670,9 +770,11 @@
 				<a href='//pudding.cool/2018/07/birth_control'>
 					<h3 class='item__hed'>Let’s Talk About Birth Control</h3>
 				</a>
-				<p class='item__dek'>No TMI here, just 20,759 people describing their experiences with contraception.</p>
-				<time class='item__time' datetime='2018-07-17T04:00:00.000Z'></time>
-				<p class='item__author'>By <a href='../author/amber-thomas'>Amber Thomas</a></p>
+				<div class='info__details'>
+					<p class='item__dek'>No TMI here, just 20,759 people describing their experiences with contraception.</p>
+					<time class='item__time' datetime='2018-07-17T04:00:00.000Z'></time>
+					<cite class='item__author'>By <a href='../author/amber-thomas'>Amber Thomas</a></cite>
+				</div>
 			</div>
 		</div>
 	</li><li>
@@ -687,9 +789,11 @@
 				<a href='//pudding.cool/2018/06/makeup-shades'>
 					<h3 class='item__hed'>The Diversity of Makeup Shades</h3>
 				</a>
-				<p class='item__dek'>Fenty Beauty is a champion for makeup inclusivity. How do other brands compare?</p>
-				<time class='item__time' datetime='2018-06-13T04:00:00.000Z'></time>
-				<p class='item__author'>By <a href='../author/jason-li'>Jason Li</a>, <a href='../author/amber-thomas'>Amber Thomas</a>, <a href='../author/divya-manian'>Divya Manian</a></p>
+				<div class='info__details'>
+					<p class='item__dek'>Fenty Beauty is a champion for makeup inclusivity. How do other brands compare?</p>
+					<time class='item__time' datetime='2018-06-13T04:00:00.000Z'></time>
+					<cite class='item__author'>By <a href='../author/jason-li'>Jason Li</a>, <a href='../author/amber-thomas'>Amber Thomas</a>, <a href='../author/divya-manian'>Divya Manian</a></cite>
+				</div>
 			</div>
 		</div>
 	</li><li>
@@ -704,9 +808,11 @@
 				<a href='//pudding.cool/2018/05/cookies'>
 					<h3 class='item__hed'>Baking the Most Average Chocolate Chip Cookie</h3>
 				</a>
-				<p class='item__dek'>Cookie recipes written by computers — what could go wrong?</p>
-				<time class='item__time' datetime='2018-05-10T04:00:00.000Z'></time>
-				<p class='item__author'>By <a href='../author/elle-obrien'>Elle O’Brien</a>, <a href='../author/amber-thomas'>Amber Thomas</a></p>
+				<div class='info__details'>
+					<p class='item__dek'>Cookie recipes written by computers — what could go wrong?</p>
+					<time class='item__time' datetime='2018-05-10T04:00:00.000Z'></time>
+					<cite class='item__author'>By <a href='../author/elle-obrien'>Elle O’Brien</a>, <a href='../author/amber-thomas'>Amber Thomas</a></cite>
+				</div>
 			</div>
 		</div>
 	</li><li>
@@ -721,9 +827,11 @@
 				<a href='//pudding.cool/2018/03/neighborhoods'>
 					<h3 class='item__hed'>A Tale of Two Cities</h3>
 				</a>
-				<p class='item__dek'>Using data to write love letters to the cities we call home</p>
-				<time class='item__time' datetime='2018-03-21T04:00:00.000Z'></time>
-				<p class='item__author'>By <a href='../author/amber-thomas'>Amber Thomas</a>, <a href='../author/ilia-blinderman'>Ilia Blinderman</a></p>
+				<div class='info__details'>
+					<p class='item__dek'>Using data to write love letters to the cities we call home</p>
+					<time class='item__time' datetime='2018-03-21T04:00:00.000Z'></time>
+					<cite class='item__author'>By <a href='../author/amber-thomas'>Amber Thomas</a>, <a href='../author/ilia-blinderman'>Ilia Blinderman</a></cite>
+				</div>
 			</div>
 		</div>
 	</li><li>
@@ -738,9 +846,11 @@
 				<a href='//pudding.cool/2018/02/restaurants'>
 					<h3 class='item__hed'>Mapping Gastronomic Borders in the US</h3>
 				</a>
-				<p class='item__dek'>How US culture dictates geographic restaurant patterns</p>
-				<time class='item__time' datetime='2018-02-06T05:00:00.000Z'></time>
-				<p class='item__author'>By <a href='../author/matt-daniels'>Matt Daniels</a></p>
+				<div class='info__details'>
+					<p class='item__dek'>How US culture dictates geographic restaurant patterns</p>
+					<time class='item__time' datetime='2018-02-06T05:00:00.000Z'></time>
+					<cite class='item__author'>By <a href='../author/matt-daniels'>Matt Daniels</a></cite>
+				</div>
 			</div>
 		</div>
 	</li><li>
@@ -755,9 +865,11 @@
 				<a href='//pudding.cool/2017/12/hater'>
 					<h3 class='item__hed'>10 Things Everyone Hates About You</h3>
 				</a>
-				<p class='item__dek'>Exploring over 30 million feelings towards 3,000+ topics</p>
-				<time class='item__time' datetime='2017-12-04T05:00:00.000Z'></time>
-				<p class='item__author'>By <a href='../author/russell-goldenberg'>Russell Goldenberg</a>, <a href='../author/amber-thomas'>Amber Thomas</a></p>
+				<div class='info__details'>
+					<p class='item__dek'>Exploring over 30 million feelings towards 3,000+ topics</p>
+					<time class='item__time' datetime='2017-12-04T05:00:00.000Z'></time>
+					<cite class='item__author'>By <a href='../author/russell-goldenberg'>Russell Goldenberg</a>, <a href='../author/amber-thomas'>Amber Thomas</a></cite>
+				</div>
 			</div>
 		</div>
 	</li><li>
@@ -772,9 +884,11 @@
 				<a href='//pudding.cool/2017/07/eating-alone'>
 					<h3 class='item__hed'>The Dining Habits and Companions of Americans</h3>
 				</a>
-				<p class='item__dek'>The frequency of dining alone</p>
-				<time class='item__time' datetime='2017-07-28T04:00:00.000Z'></time>
-				<p class='item__author'>By <a href='../author/henrik-lindberg'>Henrik Lindberg</a>, <a href='../author/amber-thomas'>Amber Thomas</a></p>
+				<div class='info__details'>
+					<p class='item__dek'>The frequency of dining alone</p>
+					<time class='item__time' datetime='2017-07-28T04:00:00.000Z'></time>
+					<cite class='item__author'>By <a href='../author/henrik-lindberg'>Henrik Lindberg</a>, <a href='../author/amber-thomas'>Amber Thomas</a></cite>
+				</div>
 			</div>
 		</div>
 	</li><li>
@@ -789,9 +903,11 @@
 				<a href='//pudding.cool/2017/04/beer'>
 					<h3 class='item__hed'>What City is the Microbrew Capital of the US?</h3>
 				</a>
-				<p class='item__dek'>Using beer review data to rank the best cities in the country</p>
-				<time class='item__time' datetime='2017-04-18T04:00:00.000Z'></time>
-				<p class='item__author'>By <a href='../author/russell-goldenberg'>Russell Goldenberg</a></p>
+				<div class='info__details'>
+					<p class='item__dek'>Using beer review data to rank the best cities in the country</p>
+					<time class='item__time' datetime='2017-04-18T04:00:00.000Z'></time>
+					<cite class='item__author'>By <a href='../author/russell-goldenberg'>Russell Goldenberg</a></cite>
+				</div>
 			</div>
 		</div>
 	</li><li>
@@ -806,9 +922,11 @@
 				<a href='//pudding.cool/2017/02/new-slang'>
 					<h3 class='item__hed'>The Emergence Of Slang, Using Search Data</h3>
 				</a>
-				<p class='item__dek'>Emerging slang, identified by searches for words’ definitions</p>
-				<time class='item__time' datetime='2017-02-05T05:00:00.000Z'></time>
-				<p class='item__author'>By <a href='../author/matt-daniels'>Matt Daniels</a></p>
+				<div class='info__details'>
+					<p class='item__dek'>Emerging slang, identified by searches for words’ definitions</p>
+					<time class='item__time' datetime='2017-02-05T05:00:00.000Z'></time>
+					<cite class='item__author'>By <a href='../author/matt-daniels'>Matt Daniels</a></cite>
+				</div>
 			</div>
 		</div>
 	</li></ul><ul data-topic='entertainment'><li>
@@ -823,9 +941,11 @@
 				<a href='//pudding.cool/2018/08/filmordigital'>
 					<h3 class='item__hed'>Film or Digital?</h3>
 				</a>
-				<p class='item__dek'>Breaking down Hollywood's choice of shooting medium</p>
-				<time class='item__time' datetime='2018-08-22T04:00:00.000Z'></time>
-				<p class='item__author'>By <a href='../author/damar-aji-pramudita'>Damar Aji Pramudita</a></p>
+				<div class='info__details'>
+					<p class='item__dek'>Breaking down Hollywood's choice of shooting medium</p>
+					<time class='item__time' datetime='2018-08-22T04:00:00.000Z'></time>
+					<cite class='item__author'>By <a href='../author/damar-aji-pramudita'>Damar Aji Pramudita</a></cite>
+				</div>
 			</div>
 		</div>
 	</li><li>
@@ -840,9 +960,11 @@
 				<a href='//pudding.cool/2018/02/stand-up'>
 					<h3 class='item__hed'>The Structure of Stand-Up Comedy</h3>
 				</a>
-				<p class='item__dek'>The genius of Ali Wong’s Netflix special</p>
-				<time class='item__time' datetime='2018-02-26T05:00:00.000Z'></time>
-				<p class='item__author'>By <a href='../author/russell-goldenberg'>Russell Goldenberg</a>, <a href='../author/matt-daniels'>Matt Daniels</a></p>
+				<div class='info__details'>
+					<p class='item__dek'>The genius of Ali Wong’s Netflix special</p>
+					<time class='item__time' datetime='2018-02-26T05:00:00.000Z'></time>
+					<cite class='item__author'>By <a href='../author/russell-goldenberg'>Russell Goldenberg</a>, <a href='../author/matt-daniels'>Matt Daniels</a></cite>
+				</div>
 			</div>
 		</div>
 	</li><li>
@@ -857,9 +979,11 @@
 				<a href='//pudding.cool/2017/09/this-american-life'>
 					<h3 class='item__hed'>Listen to Her: Gender on This American Life</h3>
 				</a>
-				<p class='item__dek'>The story behind the gender divide on This American Life</p>
-				<time class='item__time' datetime='2017-09-21T04:00:00.000Z'></time>
-				<p class='item__author'>By <a href='../author/ash-ngu'>Ash Ngu</a></p>
+				<div class='info__details'>
+					<p class='item__dek'>The story behind the gender divide on This American Life</p>
+					<time class='item__time' datetime='2017-09-21T04:00:00.000Z'></time>
+					<cite class='item__author'>By <a href='../author/ash-ngu'>Ash Ngu</a></cite>
+				</div>
 			</div>
 		</div>
 	</li><li>
@@ -874,9 +998,11 @@
 				<a href='//pudding.cool/2017/08/screen-direction'>
 					<h3 class='item__hed'>She Giggles, He Gallops</h3>
 				</a>
-				<p class='item__dek'>Analyzing gender tropes in film with screen direction from 2,000 scripts</p>
-				<time class='item__time' datetime='2017-08-22T04:00:00.000Z'></time>
-				<p class='item__author'>By <a href='../author/julia-silge'>Julia Silge</a>, <a href='../author/russell-goldenberg'>Russell Goldenberg</a>, <a href='../author/amber-thomas'>Amber Thomas</a></p>
+				<div class='info__details'>
+					<p class='item__dek'>Analyzing gender tropes in film with screen direction from 2,000 scripts</p>
+					<time class='item__time' datetime='2017-08-22T04:00:00.000Z'></time>
+					<cite class='item__author'>By <a href='../author/julia-silge'>Julia Silge</a>, <a href='../author/russell-goldenberg'>Russell Goldenberg</a>, <a href='../author/amber-thomas'>Amber Thomas</a></cite>
+				</div>
 			</div>
 		</div>
 	</li><li>
@@ -891,9 +1017,11 @@
 				<a href='//pudding.cool/2017/08/the-office'>
 					<h3 class='item__hed'>‘The Office’ Dialogue in Five Charts</h3>
 				</a>
-				<p class='item__dek'>A breakdown of how every character contributed to the show</p>
-				<time class='item__time' datetime='2017-08-04T04:00:00.000Z'></time>
-				<p class='item__author'>By <a href='../author/caitlyn-ralph'>Caitlyn Ralph</a></p>
+				<div class='info__details'>
+					<p class='item__dek'>A breakdown of how every character contributed to the show</p>
+					<time class='item__time' datetime='2017-08-04T04:00:00.000Z'></time>
+					<cite class='item__author'>By <a href='../author/caitlyn-ralph'>Caitlyn Ralph</a></cite>
+				</div>
 			</div>
 		</div>
 	</li><li>
@@ -908,9 +1036,11 @@
 				<a href='//pudding.cool/2017/07/comics'>
 					<h3 class='item__hed'>Gender Representation of 34,476 Comic Book Characters</h3>
 				</a>
-				<p class='item__dek'>How are female characters in superhero comics depicted?</p>
-				<time class='item__time' datetime='2017-07-18T04:00:00.000Z'></time>
-				<p class='item__author'>By <a href='../author/amanda-shendruk'>Amanda Shendruk</a></p>
+				<div class='info__details'>
+					<p class='item__dek'>How are female characters in superhero comics depicted?</p>
+					<time class='item__time' datetime='2017-07-18T04:00:00.000Z'></time>
+					<cite class='item__author'>By <a href='../author/amanda-shendruk'>Amanda Shendruk</a></cite>
+				</div>
 			</div>
 		</div>
 	</li><li>
@@ -925,9 +1055,11 @@
 				<a href='//pudding.cool/2017/06/film-trends'>
 					<h3 class='item__hed'>Plot Trends for Top-Grossing Film from the Past 50 Years</h3>
 				</a>
-				<p class='item__dek'>This is a story about how film plots mirror (or shape) historical events.</p>
-				<time class='item__time' datetime='2017-06-29T04:00:00.000Z'></time>
-				<p class='item__author'>By <a href='../author/matt-daniels'>Matt Daniels</a>, <a href='../author/russell-goldenberg'>Russell Goldenberg</a></p>
+				<div class='info__details'>
+					<p class='item__dek'>This is a story about how film plots mirror (or shape) historical events.</p>
+					<time class='item__time' datetime='2017-06-29T04:00:00.000Z'></time>
+					<cite class='item__author'>By <a href='../author/matt-daniels'>Matt Daniels</a>, <a href='../author/russell-goldenberg'>Russell Goldenberg</a></cite>
+				</div>
 			</div>
 		</div>
 	</li><li>
@@ -942,9 +1074,11 @@
 				<a href='//pudding.cool/2017/06/best-sellers'>
 					<h3 class='item__hed'>Bias, She Wrote</h3>
 				</a>
-				<p class='item__dek'>How much progress has American literature made towards gender equality?</p>
-				<time class='item__time' datetime='2017-06-01T04:00:00.000Z'></time>
-				<p class='item__author'>By <a href='../author/rosie-cima'>Rosie Cima</a></p>
+				<div class='info__details'>
+					<p class='item__dek'>How much progress has American literature made towards gender equality?</p>
+					<time class='item__time' datetime='2017-06-01T04:00:00.000Z'></time>
+					<cite class='item__author'>By <a href='../author/rosie-cima'>Rosie Cima</a></cite>
+				</div>
 			</div>
 		</div>
 	</li><li>
@@ -959,9 +1093,11 @@
 				<a href='//pudding.cool/2017/02/oscars_so_mapped'>
 					<h3 class='item__hed'>The Geographic Divide of Oscars Films</h3>
 				</a>
-				<p class='item__dek'>Mapping the popularity of Oscar-nominated films in 2017</p>
-				<time class='item__time' datetime='2017-02-23T05:00:00.000Z'></time>
-				<p class='item__author'>By <a href='../author/matt-daniels'>Matt Daniels</a>, <a href='../author/russell-goldenberg'>Russell Goldenberg</a>, <a href='../author/ilia-blinderman'>Ilia Blinderman</a></p>
+				<div class='info__details'>
+					<p class='item__dek'>Mapping the popularity of Oscar-nominated films in 2017</p>
+					<time class='item__time' datetime='2017-02-23T05:00:00.000Z'></time>
+					<cite class='item__author'>By <a href='../author/matt-daniels'>Matt Daniels</a>, <a href='../author/russell-goldenberg'>Russell Goldenberg</a>, <a href='../author/ilia-blinderman'>Ilia Blinderman</a></cite>
+				</div>
 			</div>
 		</div>
 	</li><li>
@@ -976,9 +1112,11 @@
 				<a href='//pudding.cool/2017/03/hamilton'>
 					<h3 class='item__hed'>An Interactive Visualization of Every Line in Hamilton</h3>
 				</a>
-				<p class='item__dek'>From the moment I sat down to listen the whole way through, I was done for...</p>
-				<time class='item__time' datetime='2016-12-15T05:00:00.000Z'></time>
-				<p class='item__author'>By <a href='../author/shirley-wu'>Shirley Wu</a></p>
+				<div class='info__details'>
+					<p class='item__dek'>From the moment I sat down to listen the whole way through, I was done for...</p>
+					<time class='item__time' datetime='2016-12-15T05:00:00.000Z'></time>
+					<cite class='item__author'>By <a href='../author/shirley-wu'>Shirley Wu</a></cite>
+				</div>
 			</div>
 		</div>
 	</li><li>
@@ -993,9 +1131,11 @@
 				<a href='//pudding.cool/2017/03/film-dialogue'>
 					<h3 class='item__hed'>The Largest Analysis of Film Dialogue by Gender, Ever</h3>
 				</a>
-				<p class='item__dek'>From 2,000 screeplays, broken down by age and gender</p>
-				<time class='item__time' datetime='2016-04-01T04:00:00.000Z'></time>
-				<p class='item__author'>By <a href='../author/matt-daniels'>Matt Daniels</a>, <a href='../author/hanah-anderson'>Hanah Anderson</a></p>
+				<div class='info__details'>
+					<p class='item__dek'>From 2,000 screeplays, broken down by age and gender</p>
+					<time class='item__time' datetime='2016-04-01T04:00:00.000Z'></time>
+					<cite class='item__author'>By <a href='../author/matt-daniels'>Matt Daniels</a>, <a href='../author/hanah-anderson'>Hanah Anderson</a></cite>
+				</div>
 			</div>
 		</div>
 	</li><li>
@@ -1010,9 +1150,11 @@
 				<a href='//pudding.cool/2017/03/bechdel'>
 					<h3 class='item__hed'>Hollywood's Gender Divide and its Effect on Films</h3>
 				</a>
-				<p class='item__dek'>The writers, directors, and producers who make films that fail the Bechdel test</p>
-				<time class='item__time' datetime='2016-01-01T05:00:00.000Z'></time>
-				<p class='item__author'>By <a href='../author/matt-daniels'>Matt Daniels</a>, <a href='../author/ilia-blinderman'>Ilia Blinderman</a></p>
+				<div class='info__details'>
+					<p class='item__dek'>The writers, directors, and producers who make films that fail the Bechdel test</p>
+					<time class='item__time' datetime='2016-01-01T05:00:00.000Z'></time>
+					<cite class='item__author'>By <a href='../author/matt-daniels'>Matt Daniels</a>, <a href='../author/ilia-blinderman'>Ilia Blinderman</a></cite>
+				</div>
 			</div>
 		</div>
 	</li></ul><ul data-topic='social'><li>
@@ -1027,9 +1169,11 @@
 				<a href='//pudding.cool/2019/02/dress-code-sexualization'>
 					<h3 class='item__hed'>The Sexualized Messages Dress Codes are Sending to Students</h3>
 				</a>
-				<p class='item__dek'>What we learned about sexualization from analyzing 481 high school dress codes</p>
-				<time class='item__time' datetime='2019-02-07T05:00:00.000Z'></time>
-				<p class='item__author'>By <a href='../author/amber-thomas'>Amber Thomas</a></p>
+				<div class='info__details'>
+					<p class='item__dek'>What we learned about sexualization from analyzing 481 high school dress codes</p>
+					<time class='item__time' datetime='2019-02-07T05:00:00.000Z'></time>
+					<cite class='item__author'>By <a href='../author/amber-thomas'>Amber Thomas</a></cite>
+				</div>
 			</div>
 		</div>
 	</li><li>
@@ -1044,9 +1188,11 @@
 				<a href='//pudding.cool/2018/12/countries'>
 					<h3 class='item__hed'>The World through the Eyes of the US</h3>
 				</a>
-				<p class='item__dek'>The countries that have preoccupied Americans since 1900</p>
-				<time class='item__time' datetime='2018-12-19T05:00:00.000Z'></time>
-				<p class='item__author'>By <a href='../author/russell-goldenberg'>Russell Goldenberg</a></p>
+				<div class='info__details'>
+					<p class='item__dek'>The countries that have preoccupied Americans since 1900</p>
+					<time class='item__time' datetime='2018-12-19T05:00:00.000Z'></time>
+					<cite class='item__author'>By <a href='../author/russell-goldenberg'>Russell Goldenberg</a></cite>
+				</div>
 			</div>
 		</div>
 	</li><li>
@@ -1061,9 +1207,11 @@
 				<a href='//pudding.cool/2018/12/brief-history'>
 					<h3 class='item__hed'>A Brief History of the Past 100 Years</h3>
 				</a>
-				<p class='item__dek'>An analysis of 12 decades of New York Times headlines</p>
-				<time class='item__time' datetime='2018-12-19T05:00:00.000Z'></time>
-				<p class='item__author'>By <a href='../author/ilia-blinderman'>Ilia Blinderman</a>, <a href='../author/jan-diehm'>Jan Diehm</a></p>
+				<div class='info__details'>
+					<p class='item__dek'>An analysis of 12 decades of New York Times headlines</p>
+					<time class='item__time' datetime='2018-12-19T05:00:00.000Z'></time>
+					<cite class='item__author'>By <a href='../author/ilia-blinderman'>Ilia Blinderman</a>, <a href='../author/jan-diehm'>Jan Diehm</a></cite>
+				</div>
 			</div>
 		</div>
 	</li><li>
@@ -1078,9 +1226,11 @@
 				<a href='//pudding.cool/2018/12/3d-cities-story'>
 					<h3 class='item__hed'>Population Mountains</h3>
 				</a>
-				<p class='item__dek'>This is a story about how to perceive the population size of cities.</p>
-				<time class='item__time' datetime='2018-12-04T05:00:00.000Z'></time>
-				<p class='item__author'>By <a href='../author/matt-daniels'>Matt Daniels</a></p>
+				<div class='info__details'>
+					<p class='item__dek'>This is a story about how to perceive the population size of cities.</p>
+					<time class='item__time' datetime='2018-12-04T05:00:00.000Z'></time>
+					<cite class='item__author'>By <a href='../author/matt-daniels'>Matt Daniels</a></cite>
+				</div>
 			</div>
 		</div>
 	</li><li>
@@ -1095,9 +1245,11 @@
 				<a href='//pudding.cool/2018/10/city_3d'>
 					<h3 class='item__hed'>Human Terrain: Population in 3D</h3>
 				</a>
-				<p class='item__dek'>Visualizing the World’s Population as a Terrain</p>
-				<time class='item__time' datetime='2018-10-25T04:00:00.000Z'></time>
-				<p class='item__author'>By <a href='../author/matt-daniels'>Matt Daniels</a></p>
+				<div class='info__details'>
+					<p class='item__dek'>Visualizing the World’s Population as a Terrain</p>
+					<time class='item__time' datetime='2018-10-25T04:00:00.000Z'></time>
+					<cite class='item__author'>By <a href='../author/matt-daniels'>Matt Daniels</a></cite>
+				</div>
 			</div>
 		</div>
 	</li><li>
@@ -1112,9 +1264,11 @@
 				<a href='//pudding.cool/2018/08/retraining'>
 					<h3 class='item__hed'>Tech Jobs may not Solve America’s Looming Automation Crisis</h3>
 				</a>
-				<p class='item__dek'>Tech retraining programs are becoming more popular. They may not be a solution.</p>
-				<time class='item__time' datetime='2018-08-02T04:00:00.000Z'></time>
-				<p class='item__author'>By <a href='../author/jordan-dworkin'>Jordan Dworkin</a>, <a href='../author/ilia-blinderman'>Ilia Blinderman</a></p>
+				<div class='info__details'>
+					<p class='item__dek'>Tech retraining programs are becoming more popular. They may not be a solution.</p>
+					<time class='item__time' datetime='2018-08-02T04:00:00.000Z'></time>
+					<cite class='item__author'>By <a href='../author/jordan-dworkin'>Jordan Dworkin</a>, <a href='../author/ilia-blinderman'>Ilia Blinderman</a></cite>
+				</div>
 			</div>
 		</div>
 	</li><li>
@@ -1129,9 +1283,11 @@
 				<a href='//pudding.cool/2018/07/women-in-congress'>
 					<h3 class='item__hed'>The Road to Gender Parity in the House of Representatives</h3>
 				</a>
-				<p class='item__dek'>Exploring 100 years of women in politics through data and machine learning</p>
-				<time class='item__time' datetime='2018-07-10T04:00:00.000Z'></time>
-				<p class='item__author'>By <a href='../author/durand-dsouza'>Durand D’souza</a></p>
+				<div class='info__details'>
+					<p class='item__dek'>Exploring 100 years of women in politics through data and machine learning</p>
+					<time class='item__time' datetime='2018-07-10T04:00:00.000Z'></time>
+					<cite class='item__author'>By <a href='../author/durand-dsouza'>Durand D’souza</a></cite>
+				</div>
 			</div>
 		</div>
 	</li><li>
@@ -1146,9 +1302,11 @@
 				<a href='//pudding.cool/2018/07/women-in-parliament'>
 					<h3 class='item__hed'>Gender Representation in Parliamentary Speeches  </h3>
 				</a>
-				<p class='item__dek'>Exploring 100 years of women in parliament through data and machine learning</p>
-				<time class='item__time' datetime='2018-07-10T04:00:00.000Z'></time>
-				<p class='item__author'>By <a href='../author/durand-dsouza'>Durand D’souza</a></p>
+				<div class='info__details'>
+					<p class='item__dek'>Exploring 100 years of women in parliament through data and machine learning</p>
+					<time class='item__time' datetime='2018-07-10T04:00:00.000Z'></time>
+					<cite class='item__author'>By <a href='../author/durand-dsouza'>Durand D’souza</a></cite>
+				</div>
 			</div>
 		</div>
 	</li><li>
@@ -1163,9 +1321,11 @@
 				<a href='//pudding.cool/2018/06/gayborhoods'>
 					<h3 class='item__hed'>Men are from Chelsea, Women are from Park Slope</h3>
 				</a>
-				<p class='item__dek'>How “gayborhoods” in 15 major American cities are divided by gender</p>
-				<time class='item__time' datetime='2018-06-28T04:00:00.000Z'></time>
-				<p class='item__author'>By <a href='../author/jan-diehm'>Jan Diehm</a></p>
+				<div class='info__details'>
+					<p class='item__dek'>How “gayborhoods” in 15 major American cities are divided by gender</p>
+					<time class='item__time' datetime='2018-06-28T04:00:00.000Z'></time>
+					<cite class='item__author'>By <a href='../author/jan-diehm'>Jan Diehm</a></cite>
+				</div>
 			</div>
 		</div>
 	</li><li>
@@ -1180,9 +1340,11 @@
 				<a href='//pudding.cool/2018/02/death'>
 					<h3 class='item__hed'>Limbo Lines: Dead Here, Alive There</h3>
 				</a>
-				<p class='item__dek'>Brain death’s role in the uncertainties of death</p>
-				<time class='item__time' datetime='2018-02-13T05:00:00.000Z'></time>
-				<p class='item__author'>By <a href='../author/beatrice-jin'>Beatrice Jin</a></p>
+				<div class='info__details'>
+					<p class='item__dek'>Brain death’s role in the uncertainties of death</p>
+					<time class='item__time' datetime='2018-02-13T05:00:00.000Z'></time>
+					<cite class='item__author'>By <a href='../author/beatrice-jin'>Beatrice Jin</a></cite>
+				</div>
 			</div>
 		</div>
 	</li><li>
@@ -1197,9 +1359,11 @@
 				<a href='//pudding.cool/2018/01/chyrons'>
 					<h3 class='item__hed'>How CNN, MSNBC, and FOX Cover the News</h3>
 				</a>
-				<p class='item__dek'>The story you get depends on the channel you watch</p>
-				<time class='item__time' datetime='2018-01-25T05:00:00.000Z'></time>
-				<p class='item__author'>By <a href='../author/charlie-smart'>Charlie Smart</a></p>
+				<div class='info__details'>
+					<p class='item__dek'>The story you get depends on the channel you watch</p>
+					<time class='item__time' datetime='2018-01-25T05:00:00.000Z'></time>
+					<cite class='item__author'>By <a href='../author/charlie-smart'>Charlie Smart</a></cite>
+				</div>
 			</div>
 		</div>
 	</li><li>
@@ -1214,9 +1378,11 @@
 				<a href='//pudding.cool/2017/10/asne'>
 					<h3 class='item__hed'>Newspapers: A Black & White Issue</h3>
 				</a>
-				<p class='item__dek'>Measuring racial diversity in journalism</p>
-				<time class='item__time' datetime='2017-10-12T04:00:00.000Z'></time>
-				<p class='item__author'>By <a href='../author/matt-daniels'>Matt Daniels</a>, <a href='../author/amber-thomas'>Amber Thomas</a></p>
+				<div class='info__details'>
+					<p class='item__dek'>Measuring racial diversity in journalism</p>
+					<time class='item__time' datetime='2017-10-12T04:00:00.000Z'></time>
+					<cite class='item__author'>By <a href='../author/matt-daniels'>Matt Daniels</a>, <a href='../author/amber-thomas'>Amber Thomas</a></cite>
+				</div>
 			</div>
 		</div>
 	</li><li>
@@ -1231,9 +1397,11 @@
 				<a href='//pudding.cool/2017/09/clinics'>
 					<h3 class='item__hed'>An Analysis of Driving Times to Abortion Clinics in the US</h3>
 				</a>
-				<p class='item__dek'>Mapping the cities and places with the worst access</p>
-				<time class='item__time' datetime='2017-09-07T04:00:00.000Z'></time>
-				<p class='item__author'>By <a href='../author/russell-goldenberg'>Russell Goldenberg</a>, <a href='../author/amber-thomas'>Amber Thomas</a>, <a href='../author/caitlyn-ralph'>Caitlyn Ralph</a></p>
+				<div class='info__details'>
+					<p class='item__dek'>Mapping the cities and places with the worst access</p>
+					<time class='item__time' datetime='2017-09-07T04:00:00.000Z'></time>
+					<cite class='item__author'>By <a href='../author/russell-goldenberg'>Russell Goldenberg</a>, <a href='../author/amber-thomas'>Amber Thomas</a>, <a href='../author/caitlyn-ralph'>Caitlyn Ralph</a></cite>
+				</div>
 			</div>
 		</div>
 	</li><li>
@@ -1248,9 +1416,11 @@
 				<a href='//pudding.cool/2017/07/jobs'>
 					<h3 class='item__hed'>Why the Republican Party Wins When Robots Take Your Job</h3>
 				</a>
-				<p class='item__dek'>Job automation is only a matter of time. Here's why the right will benefit.</p>
-				<time class='item__time' datetime='2017-07-11T04:00:00.000Z'></time>
-				<p class='item__author'>By <a href='../author/ilia-blinderman'>Ilia Blinderman</a></p>
+				<div class='info__details'>
+					<p class='item__dek'>Job automation is only a matter of time. Here's why the right will benefit.</p>
+					<time class='item__time' datetime='2017-07-11T04:00:00.000Z'></time>
+					<cite class='item__author'>By <a href='../author/ilia-blinderman'>Ilia Blinderman</a></cite>
+				</div>
 			</div>
 		</div>
 	</li><li>
@@ -1265,9 +1435,11 @@
 				<a href='//pudding.cool/2017/07/cetaceans'>
 					<h3 class='item__hed'>Free Willy and Flipper by the Numbers</h3>
 				</a>
-				<p class='item__dek'>The past, present, and future of captive whales and dolphins</p>
-				<time class='item__time' datetime='2017-07-06T04:00:00.000Z'></time>
-				<p class='item__author'>By <a href='../author/amber-thomas'>Amber Thomas</a>, <a href='../author/russell-goldenberg'>Russell Goldenberg</a></p>
+				<div class='info__details'>
+					<p class='item__dek'>The past, present, and future of captive whales and dolphins</p>
+					<time class='item__time' datetime='2017-07-06T04:00:00.000Z'></time>
+					<cite class='item__author'>By <a href='../author/amber-thomas'>Amber Thomas</a>, <a href='../author/russell-goldenberg'>Russell Goldenberg</a></cite>
+				</div>
 			</div>
 		</div>
 	</li><li>
@@ -1282,9 +1454,11 @@
 				<a href='//pudding.cool/2017/05/births'>
 					<h3 class='item__hed'>The Timing of Baby Making</h3>
 				</a>
-				<p class='item__dek'>Births, broken down by geography and month</p>
-				<time class='item__time' datetime='2017-05-24T04:00:00.000Z'></time>
-				<p class='item__author'>By <a href='../author/amber-thomas'>Amber Thomas</a></p>
+				<div class='info__details'>
+					<p class='item__dek'>Births, broken down by geography and month</p>
+					<time class='item__time' datetime='2017-05-24T04:00:00.000Z'></time>
+					<cite class='item__author'>By <a href='../author/amber-thomas'>Amber Thomas</a></cite>
+				</div>
 			</div>
 		</div>
 	</li><li>
@@ -1299,9 +1473,11 @@
 				<a href='//pudding.cool/2017/03/incarceration'>
 					<h3 class='item__hed'>Why Does the US Lead the World in Incarceration?</h3>
 				</a>
-				<p class='item__dek'>How we got here is one of the most debated questions in policy.</p>
-				<time class='item__time' datetime='2017-03-21T04:00:00.000Z'></time>
-				<p class='item__author'>By <a href='../author/matt-daniels'>Matt Daniels</a></p>
+				<div class='info__details'>
+					<p class='item__dek'>How we got here is one of the most debated questions in policy.</p>
+					<time class='item__time' datetime='2017-03-21T04:00:00.000Z'></time>
+					<cite class='item__author'>By <a href='../author/matt-daniels'>Matt Daniels</a></cite>
+				</div>
 			</div>
 		</div>
 	</li><li>
@@ -1316,9 +1492,11 @@
 				<a href='//pudding.cool/2017/01/shape-of-slavery'>
 					<h3 class='item__hed'>Mapping Slavery Against US Incarceration</h3>
 				</a>
-				<p class='item__dek'>How do historic incarceration rates differ between slave and non-slave states?</p>
-				<time class='item__time' datetime='2017-01-23T05:00:00.000Z'></time>
-				<p class='item__author'>By <a href='../author/matt-daniels'>Matt Daniels</a></p>
+				<div class='info__details'>
+					<p class='item__dek'>How do historic incarceration rates differ between slave and non-slave states?</p>
+					<time class='item__time' datetime='2017-01-23T05:00:00.000Z'></time>
+					<cite class='item__author'>By <a href='../author/matt-daniels'>Matt Daniels</a></cite>
+				</div>
 			</div>
 		</div>
 	</li><li>
@@ -1333,9 +1511,11 @@
 				<a href='//pudding.cool/2017/03/elections'>
 					<h3 class='item__hed'>How News Media Covers Trump & Clinton</h3>
 				</a>
-				<p class='item__dek'>Analyzing 12,147 images of Trump and Clinton</p>
-				<time class='item__time' datetime='2016-10-01T04:00:00.000Z'></time>
-				<p class='item__author'>By <a href='../author/russell-goldenberg'>Russell Goldenberg</a></p>
+				<div class='info__details'>
+					<p class='item__dek'>Analyzing 12,147 images of Trump and Clinton</p>
+					<time class='item__time' datetime='2016-10-01T04:00:00.000Z'></time>
+					<cite class='item__author'>By <a href='../author/russell-goldenberg'>Russell Goldenberg</a></cite>
+				</div>
 			</div>
 		</div>
 	</li></ul><ul data-topic='music'><li>
@@ -1350,9 +1530,11 @@
 				<a href='//pudding.cool/2019/03/pop-music'>
 					<h3 class='item__hed'>Who is the Biggest Pop Star?</h3>
 				</a>
-				<p class='item__dek'>Today, there's no single way to measure popularity in music.</p>
-				<time class='item__time' datetime='2019-03-12T04:00:00.000Z'></time>
-				<p class='item__author'>By <a href='../author/the-pudding-team'>The Pudding Team</a></p>
+				<div class='info__details'>
+					<p class='item__dek'>Today, there's no single way to measure popularity in music.</p>
+					<time class='item__time' datetime='2019-03-12T04:00:00.000Z'></time>
+					<cite class='item__author'>By <a href='../author/the-pudding-team'>The Pudding Team</a></cite>
+				</div>
 			</div>
 		</div>
 	</li><li>
@@ -1367,9 +1549,11 @@
 				<a href='//pudding.cool/projects/vocabulary'>
 					<h3 class='item__hed'>Rappers, Sorted by the Size of their Vocabulary</h3>
 				</a>
-				<p class='item__dek'>The number of unique lyrics used within artists’ first 35,000 lyrics</p>
-				<time class='item__time' datetime='2019-01-16T05:00:00.000Z'></time>
-				<p class='item__author'>By <a href='../author/matt-daniels'>Matt Daniels</a></p>
+				<div class='info__details'>
+					<p class='item__dek'>The number of unique lyrics used within artists’ first 35,000 lyrics</p>
+					<time class='item__time' datetime='2019-01-16T05:00:00.000Z'></time>
+					<cite class='item__author'>By <a href='../author/matt-daniels'>Matt Daniels</a></cite>
+				</div>
 			</div>
 		</div>
 	</li><li>
@@ -1384,9 +1568,11 @@
 				<a href='//pudding.cool/2018/11/boy-bands'>
 					<h3 class='item__hed'>Internet Boy Band Database</h3>
 				</a>
-				<p class='item__dek'>Every boy band to chart the Hot 100 since 1980</p>
-				<time class='item__time' datetime='2018-11-27T05:00:00.000Z'></time>
-				<p class='item__author'>By <a href='../author/russell-goldenberg'>Russell Goldenberg</a>, <a href='../author/amber-thomas'>Amber Thomas</a>, <a href='../author/malik-yusuf'>Malik Yusuf</a></p>
+				<div class='info__details'>
+					<p class='item__dek'>Every boy band to chart the Hot 100 since 1980</p>
+					<time class='item__time' datetime='2018-11-27T05:00:00.000Z'></time>
+					<cite class='item__author'>By <a href='../author/russell-goldenberg'>Russell Goldenberg</a>, <a href='../author/amber-thomas'>Amber Thomas</a>, <a href='../author/malik-yusuf'>Malik Yusuf</a></cite>
+				</div>
 			</div>
 		</div>
 	</li><li>
@@ -1401,9 +1587,11 @@
 				<a href='//pudding.cool/2018/08/emo-rap'>
 					<h3 class='item__hed'>The Most Emo Lyrics: Emo Rap vs. Dashboard Confessional</h3>
 				</a>
-				<p class='item__dek'>Who has more emotionally vulnerable lyrics, emo-rap or Dashboard Confessional?</p>
-				<time class='item__time' datetime='2018-08-30T04:00:00.000Z'></time>
-				<p class='item__author'>By <a href='../author/matt-daniels'>Matt Daniels</a></p>
+				<div class='info__details'>
+					<p class='item__dek'>Who has more emotionally vulnerable lyrics, emo-rap or Dashboard Confessional?</p>
+					<time class='item__time' datetime='2018-08-30T04:00:00.000Z'></time>
+					<cite class='item__author'>By <a href='../author/matt-daniels'>Matt Daniels</a></cite>
+				</div>
 			</div>
 		</div>
 	</li><li>
@@ -1418,9 +1606,11 @@
 				<a href='//pudding.cool/2018/06/skate-music'>
 					<h3 class='item__hed'>The Good, the Rad, and the Gnarly</h3>
 				</a>
-				<p class='item__dek'>An exploration into the music of skateboarding</p>
-				<time class='item__time' datetime='2018-06-05T04:00:00.000Z'></time>
-				<p class='item__author'>By <a href='../author/jared-wilbur'>Jared Wilbur</a></p>
+				<div class='info__details'>
+					<p class='item__dek'>An exploration into the music of skateboarding</p>
+					<time class='item__time' datetime='2018-06-05T04:00:00.000Z'></time>
+					<cite class='item__author'>By <a href='../author/jared-wilbur'>Jared Wilbur</a></cite>
+				</div>
 			</div>
 		</div>
 	</li><li>
@@ -1435,9 +1625,11 @@
 				<a href='//pudding.cool/2018/06/music-map'>
 					<h3 class='item__hed'>The Cultural Borders of Songs</h3>
 				</a>
-				<p class='item__dek'>We mapped last month’s #1 songs in 3,000 places. </p>
-				<time class='item__time' datetime='2018-06-04T04:00:00.000Z'></time>
-				<p class='item__author'>By <a href='../author/matt-daniels'>Matt Daniels</a></p>
+				<div class='info__details'>
+					<p class='item__dek'>We mapped last month’s #1 songs in 3,000 places. </p>
+					<time class='item__time' datetime='2018-06-04T04:00:00.000Z'></time>
+					<cite class='item__author'>By <a href='../author/matt-daniels'>Matt Daniels</a></cite>
+				</div>
 			</div>
 		</div>
 	</li><li>
@@ -1452,9 +1644,11 @@
 				<a href='//pudding.cool/2018/05/similarity'>
 					<h3 class='item__hed'>Are Hit Songs Becoming Less Musically Diverse?</h3>
 				</a>
-				<p class='item__dek'>Today’s hit artists are take fewer risks and create a narrower range of sounds</p>
-				<time class='item__time' datetime='2018-05-24T04:00:00.000Z'></time>
-				<p class='item__author'>By <a href='../author/matt-daniels'>Matt Daniels</a>, <a href='../author/andrew-thompson'>Andrew Thompson</a></p>
+				<div class='info__details'>
+					<p class='item__dek'>Today’s hit artists are take fewer risks and create a narrower range of sounds</p>
+					<time class='item__time' datetime='2018-05-24T04:00:00.000Z'></time>
+					<cite class='item__author'>By <a href='../author/matt-daniels'>Matt Daniels</a>, <a href='../author/andrew-thompson'>Andrew Thompson</a></cite>
+				</div>
 			</div>
 		</div>
 	</li><li>
@@ -1469,9 +1663,11 @@
 				<a href='//pudding.cool/2017/09/hip-hop-words'>
 					<h3 class='item__hed'>The Words That Are “Most Hip Hop”</h3>
 				</a>
-				<p class='item__dek'>Using math to rank words that are central to artists’ vocabularies</p>
-				<time class='item__time' datetime='2017-09-22T04:00:00.000Z'></time>
-				<p class='item__author'>By <a href='../author/matt-daniels'>Matt Daniels</a>, <a href='../author/the-data-face'>The Data Face</a></p>
+				<div class='info__details'>
+					<p class='item__dek'>Using math to rank words that are central to artists’ vocabularies</p>
+					<time class='item__time' datetime='2017-09-22T04:00:00.000Z'></time>
+					<cite class='item__author'>By <a href='../author/matt-daniels'>Matt Daniels</a>, <a href='../author/the-data-face'>The Data Face</a></cite>
+				</div>
 			</div>
 		</div>
 	</li><li>
@@ -1486,9 +1682,11 @@
 				<a href='//pudding.cool/2017/05/song-repetition'>
 					<h3 class='item__hed'>Are Pop Lyrics Getting More Repetitive?</h3>
 				</a>
-				<p class='item__dek'>Measuring repetition in song lyrics over time using a compression algorithm</p>
-				<time class='item__time' datetime='2017-05-11T04:00:00.000Z'></time>
-				<p class='item__author'>By <a href='../author/colin-morris'>Colin Morris</a></p>
+				<div class='info__details'>
+					<p class='item__dek'>Measuring repetition in song lyrics over time using a compression algorithm</p>
+					<time class='item__time' datetime='2017-05-11T04:00:00.000Z'></time>
+					<cite class='item__author'>By <a href='../author/colin-morris'>Colin Morris</a></cite>
+				</div>
 			</div>
 		</div>
 	</li><li>
@@ -1503,9 +1701,11 @@
 				<a href='//pudding.cool/2017/01/making-it-big'>
 					<h3 class='item__hed'>The Unlikely Odds of Making it Big</h3>
 				</a>
-				<p class='item__dek'>What three years and 75,000 shows tell us about the chance of success</p>
-				<time class='item__time' datetime='2017-01-15T05:00:00.000Z'></time>
-				<p class='item__author'>By <a href='../author/russell-goldenberg'>Russell Goldenberg</a>, <a href='../author/dan-kopf'>Dan Kopf</a></p>
+				<div class='info__details'>
+					<p class='item__dek'>What three years and 75,000 shows tell us about the chance of success</p>
+					<time class='item__time' datetime='2017-01-15T05:00:00.000Z'></time>
+					<cite class='item__author'>By <a href='../author/russell-goldenberg'>Russell Goldenberg</a>, <a href='../author/dan-kopf'>Dan Kopf</a></cite>
+				</div>
 			</div>
 		</div>
 	</li><li>
@@ -1520,9 +1720,11 @@
 				<a href='//pudding.cool/2017/03/sampling'>
 					<h3 class='item__hed'>How Robert Glasper Sampled Miles Davis on “Ghetto Walkin”</h3>
 				</a>
-				<p class='item__dek'>An interactive story about the art of sampling</p>
-				<time class='item__time' datetime='2016-09-01T04:00:00.000Z'></time>
-				<p class='item__author'>By <a href='../author/matt-daniels'>Matt Daniels</a></p>
+				<div class='info__details'>
+					<p class='item__dek'>An interactive story about the art of sampling</p>
+					<time class='item__time' datetime='2016-09-01T04:00:00.000Z'></time>
+					<cite class='item__author'>By <a href='../author/matt-daniels'>Matt Daniels</a></cite>
+				</div>
 			</div>
 		</div>
 	</li><li>
@@ -1537,9 +1739,11 @@
 				<a href='//pudding.cool/2017/03/miles'>
 					<h3 class='item__hed'>The 2,452 Wikipedia Pages on which Miles Davis is Mentioned</h3>
 				</a>
-				<p class='item__dek'>25 years after his death, you can find Davis' fingerprints on many other ideas.</p>
-				<time class='item__time' datetime='2016-06-01T04:00:00.000Z'></time>
-				<p class='item__author'>By <a href='../author/matt-daniels'>Matt Daniels</a></p>
+				<div class='info__details'>
+					<p class='item__dek'>25 years after his death, you can find Davis' fingerprints on many other ideas.</p>
+					<time class='item__time' datetime='2016-06-01T04:00:00.000Z'></time>
+					<cite class='item__author'>By <a href='../author/matt-daniels'>Matt Daniels</a></cite>
+				</div>
 			</div>
 		</div>
 	</li><li>
@@ -1554,9 +1758,11 @@
 				<a href='//pudding.cool/2017/03/music-history'>
 					<h3 class='item__hed'>How Music Taste Evolved</h3>
 				</a>
-				<p class='item__dek'>Top 5 songs, from '58-'16, so we can stop arguing about when music was still good</p>
-				<time class='item__time' datetime='2016-05-01T04:00:00.000Z'></time>
-				<p class='item__author'>By <a href='../author/matt-daniels'>Matt Daniels</a></p>
+				<div class='info__details'>
+					<p class='item__dek'>Top 5 songs, from '58-'16, so we can stop arguing about when music was still good</p>
+					<time class='item__time' datetime='2016-05-01T04:00:00.000Z'></time>
+					<cite class='item__author'>By <a href='../author/matt-daniels'>Matt Daniels</a></cite>
+				</div>
 			</div>
 		</div>
 	</li><li>
@@ -1571,9 +1777,11 @@
 				<a href='//pudding.cool/2017/03/punk'>
 					<h3 class='item__hed'>Crowdsourcing the Definition of “Punk”</h3>
 				</a>
-				<p class='item__dek'>Looking at playlists to learn how parts of culture perceive genres</p>
-				<time class='item__time' datetime='2016-01-09T05:00:00.000Z'></time>
-				<p class='item__author'>By <a href='../author/matt-daniels'>Matt Daniels</a></p>
+				<div class='info__details'>
+					<p class='item__dek'>Looking at playlists to learn how parts of culture perceive genres</p>
+					<time class='item__time' datetime='2016-01-09T05:00:00.000Z'></time>
+					<cite class='item__author'>By <a href='../author/matt-daniels'>Matt Daniels</a></cite>
+				</div>
 			</div>
 		</div>
 	</li><li>
@@ -1588,9 +1796,11 @@
 				<a href='//pudding.cool/2017/03/labels'>
 					<h3 class='item__hed'>The Most Succesful Labels in Hip Hop</h3>
 				</a>
-				<p class='item__dek'>Hip hop record labels, sorted by their artists' chart performance on Billboard</p>
-				<time class='item__time' datetime='2015-11-01T04:00:00.000Z'></time>
-				<p class='item__author'>By <a href='../author/matt-daniels'>Matt Daniels</a></p>
+				<div class='info__details'>
+					<p class='item__dek'>Hip hop record labels, sorted by their artists' chart performance on Billboard</p>
+					<time class='item__time' datetime='2015-11-01T04:00:00.000Z'></time>
+					<cite class='item__author'>By <a href='../author/matt-daniels'>Matt Daniels</a></cite>
+				</div>
 			</div>
 		</div>
 	</li><li>
@@ -1605,9 +1815,11 @@
 				<a href='//pudding.cool/2017/03/timeless'>
 					<h3 class='item__hed'>The Most Timeless Songs of All-Time</h3>
 				</a>
-				<p class='item__dek'>Using Spotify to measure the popularity of older music</p>
-				<time class='item__time' datetime='2015-09-01T04:00:00.000Z'></time>
-				<p class='item__author'>By <a href='../author/matt-daniels'>Matt Daniels</a></p>
+				<div class='info__details'>
+					<p class='item__dek'>Using Spotify to measure the popularity of older music</p>
+					<time class='item__time' datetime='2015-09-01T04:00:00.000Z'></time>
+					<cite class='item__author'>By <a href='../author/matt-daniels'>Matt Daniels</a></cite>
+				</div>
 			</div>
 		</div>
 	</li><li>
@@ -1622,9 +1834,11 @@
 				<a href='//pudding.cool/2017/03/outkast'>
 					<h3 class='item__hed'>Outkast, in Charts</h3>
 				</a>
-				<p class='item__dek'>A look at Outkast's history through the lens of data</p>
-				<time class='item__time' datetime='2014-03-01T05:00:00.000Z'></time>
-				<p class='item__author'>By <a href='../author/matt-daniels'>Matt Daniels</a></p>
+				<div class='info__details'>
+					<p class='item__dek'>A look at Outkast's history through the lens of data</p>
+					<time class='item__time' datetime='2014-03-01T05:00:00.000Z'></time>
+					<cite class='item__author'>By <a href='../author/matt-daniels'>Matt Daniels</a></cite>
+				</div>
 			</div>
 		</div>
 	</li></ul>
@@ -1636,43 +1850,60 @@
 
 	<!-- DO NOT REMOVE -->
 	
-		<footer class='random-background'>
-			<div class='footer__inner'>
-				<p class='footer__hed'>
-					The Pudding is an editorial publication that explains ideas debated in culture with visual essays.
-				</p>
-
-				<div class='footer__social'>
-					<p>Find us on the socials</p>
-					<ul>
-						<li>
-							<a target='_blank' href='https://www.facebook.com/pudding.viz/' class='logo--facebook'>
+	
+	<footer class='random-background'>
+		<div class='footer__inner'>
+			<div class='footer__cta'>
+				<ul class='footer__cta-list'>
+					<li>
+						<a href='https://facebook.com/pudding.viz/'>
 							<img inline src='dev/common/assets/svg/facebook.svg'></a>
-						</li>
-
-						<li>
-							<a target='_blank' href='https://twitter.com/puddingviz' class='logo--twitter'>
-							<img inline src='dev/common/assets/svg/twitter.svg'>
+							<p>FACEBOOK</p>
 						</a>
-						</li>
-
-						<li>
-							<a target='_blank' href='https://www.instagram.com/pudding.cool' class='logo--instagram'>
-								<img inline src='dev/common/assets/svg/instagram.svg'>
-							</a>
-						</li>
-
-						<li>
-							<a target='_blank' href='https://www.patreon.com/thepudding' class='logo--patreon'>
-								<img inline src='dev/common/assets/svg/patreon.svg'>
-							</a>
-						</li>
-					</ul>
-				</div>
-				
-				<p class='footer__location'>The Pudding<span>®</span> is made in Brooklyn, NY; Seattle, WA; San Antonio, TX; and Great Barrington, MA.</p>
+					</li>
+					<li>
+						<a href='https://twitter.com/puddingviz/'>
+							<img inline src='dev/common/assets/svg/twitter.svg'></a>
+							<p>TWITTER</p>
+						</a>
+					</li>
+					<li>
+						<a href='https://www.instagram.com/pudding.cool'>
+							<img inline src='dev/common/assets/svg/instagram.svg'></a>
+							<p>INSTAGRAM</p>
+						</a>
+					</li>
+					<li>
+						<a href='https://patreon.com/thepudding/'>
+							<img inline src='dev/common/assets/svg/patreon.svg'></a>
+							<p>PATREON</p>
+						</a>
+					</li>
+					<li>
+						<a href='http://eepurl.com/czym6f'>
+							<img inline src='dev/common/assets/svg/mail.svg'></a>
+							<p>NEWSLETTER</p>
+						</a>
+					</li>
+					<li>
+						<a href='https://pudding.cool/about'>
+							<img inline src='dev/common/assets/svg/info.svg'></a>
+							<p>ABOUT</p>
+						</a>
+					</li>
+				</ul>
 			</div>
-		</footer>
+
+			<div class='footer__about'>
+				<img inline src='dev/common/assets/svg/pudding-wordmark.svg'></a>
+				<p class='footer__description'><a href='https://pudding.cool'>The Pudding</a> is a digital publication that
+					explains ideas debated in culture with visual essays.</p>
+				<p class='footer__trademark'>The Pudding<span>®</span> is made in Brooklyn, NY; Seattle, WA; and Great
+					Barrington, MA.</p>
+			</div>
+
+		</div>
+	</div>
 	
 </body>
 <script src='../common/js/d3.v5.min.js'></script>
@@ -1684,7 +1915,7 @@
 
     var topic = $el.attr('data-topic');
 
-    d3.selectAll('.topics__nav ul li').classed('is-active', false);
+    d3.selectAll('.top__nav span').classed('is-active', false);
     d3.select($el.node().parentNode).classed('is-active', true);
 
     d3.selectAll('.topics__stories ul')
@@ -1706,14 +1937,14 @@
     var count = d3.range(sz);
     d3.shuffle(count);
 
-    var $btn = d3.select('.topics__nav').select(("[data-topic='" + t + "']"));
+    var $btn = d3.select('.top__nav').select(("[data-topic='" + t + "']"));
     if ($btn.size()) { handleTopicClick.call($btn.node()); }
     else {
-      var $b = d3.select('.topics__nav button');
+      var $b = d3.select('.top__nav button');
       handleTopicClick.call($b.node());
     }
 
-    d3.selectAll('.topics__nav ul li')
+    d3.selectAll('.top__nav span')
       .select('button')
       .on('click', handleTopicClick);
 

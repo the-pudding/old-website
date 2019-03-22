@@ -23,10 +23,14 @@
 	<!-- header -->
 	<main id='content'>
 		<section class='filter'>
-			<p class='section__label random-color'>Find It!</p>
-			<input aria-label='Search' name='search' placeholder='Search...'>
 			<fieldset class='field__sort'>
-				<legend>Sort By</legend>
+				<legend class='random-color'>Search</legend>
+				<input aria-label='Search' name='search' placeholder='Search...'>
+			</fieldset>
+
+			
+			<fieldset class='field__sort'>
+				<legend class='random-color'>Sort By</legend>
 				<ul>
 					<li>
 						<select>
@@ -39,7 +43,7 @@
 			</fieldset>
 
 			<fieldset class='field__filter'>
-				<legend>Filter By</legend>
+				<legend class='random-color'>Filter By</legend>
 				<ul>
 					<li>
 						<select data-filter='author' class='filter--author'>
@@ -70,7 +74,6 @@
 		</section>
 
 		<section class='stories'>
-			<p class='section__label random-color'>Archives</p>
 			<!-- DO NOT REMOVE -->
 			<ul><!-- stories --></ul>
 		</section>

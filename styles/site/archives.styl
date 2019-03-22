@@ -3,17 +3,18 @@
 	+mq('bp-m')
 		padding-top 0
 	section
-		min-height 5.25rem
+		// min-height 2rem
 	
+
 	.filter
 		display flex
-		justify-content space-between
 		align-items flex-start
 		flex-wrap wrap
-		padding-left 1rem
 		+mq('bp-m')
 			flex-wrap nowrap
 			align-items flex-end
+			justify-content space-between
+			
 		ul
 			display flex
 			flex-wrap wrap
@@ -31,15 +32,19 @@
 			&:nth-child(n+2)
 				margin 0
 
+	fieldset
+		margin-right 1rem
+		+mq('bp-m')
+			margin 0
 	input
 		width 9rem
 		padding 0
 		line-height 1
 		set-type-size(root, false)
-		font-family $sans
+		font-family $sans-display
 		color $gray-dark
-		display none
-		padding 0.25em
+		// display none
+		padding 0 0.25em
 		+mq('bp-m')
 			display block
 
@@ -48,6 +53,7 @@
 		text-transform uppercase
 		font-weight 700
 		set-type-size(small)
+		font-family $sans-display
 
 	select
 		display block
@@ -57,7 +63,7 @@
 		color $gray-dark
 		set-type-size(root, false)
 		line-height 1
-		font-family $sans
+		font-family $sans-display
 		padding 0.25em
 		margin 0 auto
 		// margin-bottom 1.5rem
@@ -89,3 +95,6 @@
 	.field__filter
 		select
 			width 7rem
+	
+	section.stories
+		border none

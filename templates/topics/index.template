@@ -22,8 +22,12 @@
 	<!-- DO NOT REMOVE -->
 	<!-- header -->
 	<main id='content'>
-		<section>
-			<p class='section__label random-color'>Topics</p>
+		<section class='layout--feature'>
+			<div class='section__top'>
+				<p class='section__label random-color'>Topics</p>
+				<!-- DO NOT REMOVE -->
+				<!-- topics-nav -->
+			</div>
 			<!-- DO NOT REMOVE -->
 			<!-- content -->
 		</section>

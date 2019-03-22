@@ -2,13 +2,23 @@
   var DPR = Math.min(2, window.devicePixelRatio);
   var ORIG = 640;
 
-  window.generalHeader = function() {
-    const $header = d3.select('header');
-    const $menu = $header.select('.header__menu');
-    const $toggleOn = $header.select('.header__toggle-on');
-    const $toggleOff = $header.select('.header__toggle-off');
-    $toggleOn.on('click', () => $menu.classed('is-visible', true));
-    $toggleOff.on('click', () => $menu.classed('is-visible', false));
+  window.generalSidebar = function() {
+    const $menu = d3.select('.menu');
+    const $sidebar = d3.select('.sidebar');
+    const $toggleOn = $menu.select('.toggle--on');
+    const $toggleOff = $menu.select('.toggle--off');
+    $toggleOn.on('click', () => {
+      $sidebar.classed('is-reveal', true);
+      $menu.classed('is-reveal', true);
+      $toggleOn.classed('is-hidden', true);
+      $toggleOff.classed('is-hidden', false);
+    });
+    $toggleOff.on('click', () => {
+      $sidebar.classed('is-reveal', false);
+      $menu.classed('is-reveal', false);
+      $toggleOn.classed('is-hidden', false);
+      $toggleOff.classed('is-hidden', true);
+    });
   };
 
   window.generalRandom = function() {
@@ -56,7 +66,7 @@
     });
   };
 
-  generalHeader();
+  generalSidebar();
   generalRandom();
   generalImages();
 })();

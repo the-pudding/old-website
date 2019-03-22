@@ -8,19 +8,8 @@
 	li
 		width 100%
 		margin-bottom 3rem
-		border-top $line-width solid $fg
 		&.is-hidden
 			display none
-
-		&:not(.is-hidden) ~ li:not(.is-hidden)
-			border-top $line-width solid $fg
-			.item__info
-				padding 1rem 0 0 1rem
-
-		&:not(.is-hidden)
-			border none
-			.item__info
-				padding 0 0 0 1rem
 
 		&:last-of-type
 			margin-bottom 0
@@ -40,7 +29,7 @@
 			min-width 30%
 
 	.item__info
-		padding 1rem 0 0 1rem
+		padding-left 1rem
 		display flex
 		flex-direction column
 

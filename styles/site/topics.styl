@@ -1,124 +1,21 @@
 #page-topics
 	padding-top 6rem	
+	
 	+mq('bp-m')
 		padding-top 0
-
-	.topics__nav
-		position absolute
-		top 0
-		left 0
-		transform rotate(-90deg) translate(-100%, -150%)
-		margin-top 4.75rem
-		transform-origin 0 0
-		
-		ul
-			display flex
-			min-width 30rem
-
-		li
-			padding 0 0.75rem
-			&.is-active
-				button
-					font-weight 700
-			button
-				font-weight 200
-				text-transform capitalize
+	
+	.top__more
+		display none
 
 	.topics__stories
 		min-height 480px
-		+mq('bp-m')
-			transform translateX(-1 * $line-width)
-			width calc(100% + $line-width)
-		
 		ul
-			position relative
-			flex-wrap wrap
-			justify-content space-between
 			display none
 			&.is-visible
 				display flex
 			&.is-hidden
 				display none
-			+mq('bp-m')
-				justify-content flex-start
-				// transform translateX(-1 * $line-width)
-				// width calc(100% + $line-width)
-			
-		li
-			width 100%
-			border-top $line-width solid $fg
-			margin-bottom 3rem
-			&:first-of-type
-				border none
-				width 100%
-				.item__hed
-					set-type-size(x-large)
-				.item__dek
-					display block
-				+mq('bp-m')
-					margin-bottom 2rem
-					margin-left 0
-					margin-right 0
-					.story-item
-						flex-direction row
-					.item__img
-						width 70%
-					.item__info
-						width 30%
-						padding-top 0
-					.item__hed
-						set-type-size(xx-large)
-						font-weight 900
-					.item__dek
-						set-type-size(large)
-						line-height 1.2
-					.item__author
-						margin-top 2rem
-			&:last-of-type
-				margin-bottom 0
-			+mq('bp-m')
-				width 50%
-				margin 0
-				border-top none
-				border-left $line-width solid $fg 
-				width calc(50% - 0.75rem)
-				margin-right 1.5rem
-				margin-bottom 0
-				&:nth-child(odd)
-					margin-right 0
-				&:nth-child(n+4)
-					display block
-					margin-top 3rem
-				&:first-of-type
-					border-left $line-width solid $fg 
-			
-			
-		.story-item
-			display flex
-			flex-direction column
-			
-		.item__info
-			padding 1rem 0 0 1rem
-			
 
-		.item__hed
-			font-weight 700
-			set-type-size(large) 
-			line-height 1
-		
-		.item__dek
-			set-type-size(root, false)
-			line-height 1.4
-			font-family $serif
-			margin-top 0.5rem
-		
-		.item__author
-			font-weight 700
-			margin-top 1rem
-			set-type-size(small)
-			line-height 1.2
-			
-			a
-				display inline-block
-				text-transform uppercase
-				border none
+
+		li:nth-child(n+4)
+			display block

@@ -5,10 +5,14 @@ body
 	overflow-x hidden
 
 button 
-	font-family $sans
+	font-family $sans-display
 	background-color transparent
+
+input 
+	font-family $sans-display
 	
 .btn, a.btn
+	font-family $sans-display
 	font-weight 900
 	text-transform uppercase
 	padding 0.75rem
@@ -16,7 +20,6 @@ button
 	line-height 1
 	background-color $fg
 	color $bg
-	font-family $sans
 	letter-spacing 0.03em
 	border none
 	
@@ -61,12 +64,15 @@ button
 	
 	.item__hed
 		margin 0
+		font-family $sans-display
 	
 	.item__dek
 		font-family $serif
 		margin 0
 	
 	.item__author
+		display block
+		font-family $sans-display
 		margin 0
 		color $gray-dark
 		a
@@ -79,36 +85,41 @@ button
 		display none
 	
 section
-	width calc(100% - 4rem)
-	transform translateX(0.5rem)
+	width calc(100% - 2rem)
 	position relative
 	max-width $main-width
 	margin 0 auto 5rem auto
-	border-left 4px solid $fg
 	border-top 4px solid $fg
-	padding-top 1rem
+	padding-top 0.5rem
 	
 	+mq('bp-m')
 		width calc(100% - 12rem)
 		transform translateX(0)
 		max-width 60rem
 
-	.section__label
-		position absolute
-		top 0
-		left 0
+	.section__top
+		display block
+		+mq('bp-m')
+			display flex
+
+	.section__description
 		margin 0
-		margin-top 1.2rem
-		transform-origin 0 0
-		transform rotate(-90deg) translate(-100%, -150%)
+		line-height 1
+		color $gray-dark
+		font-family $sans-display
+
+
+	.section__label
+		font-family $sans-display
 		font-weight 700
 		text-transform uppercase
 		line-height 1
-		font-size 20px
-
+		margin 0
+		margin-bottom 2rem
+		margin-right 1rem
 
 select option
-	font-family $sans
+	font-family $sans-display
 
 .random-link--0 a:hover
 	color $purple
@@ -118,3 +129,207 @@ select option
 	color $green
 .random-link--3 a:hover
 	color $red
+
+.layout--feature
+	ul
+		position relative
+		display flex
+		flex-wrap wrap
+		justify-content space-between
+		+mq('bp-m')
+			justify-content flex-start
+			width 100%
+		
+	li
+		width 100%
+		border-top $line-width solid $fg
+		margin-bottom 3rem
+
+		+mq('bp-m')
+			width 50%
+			margin 0
+			border-top none
+			width calc(50% - 1rem)
+			margin-right 2rem
+			margin-bottom 0
+			
+			&:nth-child(odd)
+				margin-right 0
+			
+			&:nth-child(n+4)
+				display block
+				margin-top 3rem
+			
+			&:nth-child(n+6)
+				display none
+	
+	li:nth-child(3)
+			margin-bottom 0
+	
+	li:nth-child(n+4)
+			display none
+	
+	li:first-of-type
+		border none
+		width 100%
+		.item__hed
+			set-type-size(x-large)
+		.item__dek
+			display block
+		+mq('bp-m')
+			margin-bottom 2rem
+			margin-left 0
+			margin-right 0
+			.story-item
+				flex-direction row
+			.item__img
+				width 70%
+			.item__info
+				width 30%
+				padding-top 0
+				padding-left 1rem
+			.item__hed
+				set-type-size(xx-large)
+				font-weight 900
+			.item__dek
+				set-type-size(large)
+				line-height 1.2
+			.item__author
+				margin-top 2rem
+	
+	li:last-of-type
+		margin-bottom 0
+		
+	.story-item
+		display flex
+		flex-direction column
+		
+	.item__img
+		position relative
+		
+	.item__info
+		padding 1rem 0
+
+	.item__hed
+		font-weight 700
+		set-type-size(large) 
+		line-height 1
+	
+	.item__dek
+		set-type-size(root, false)
+		line-height 1.4
+		font-family $serif
+		margin-top 0.5rem
+
+	.item__author
+		font-weight 700
+		margin-top 1rem
+		set-type-size(small)
+		line-height 1.2
+		
+		a
+			display inline-block
+			text-transform uppercase
+
+
+.layout--small
+	ul
+		display flex
+		flex-wrap wrap
+		justify-content space-between
+		transition opacity 250ms
+		+mq('bp-m')
+			width 100%
+	
+	li
+		width 100%
+		border-top $line-width solid $fg
+		margin-bottom 4rem
+		&:first-of-type
+			border none
+		&:last-of-type
+			margin-bottom 0
+		+mq('bp-m')
+			width calc(25% - 1.5rem)
+			border-top none
+			margin 0
+			
+
+	.story-item
+		display flex
+		flex-direction row
+		align-items center
+		+mq('bp-m')
+			flex-direction column
+
+	.item__img
+		width 60%
+		+mq('bp-m')
+			width 100%
+		
+	.item__info
+		padding-left 1rem
+		width 40%
+		+mq('bp-m')
+			width 100%
+			padding 1rem 0
+
+	.item__hed
+		font-weight 700
+		set-type-size(medium) 
+		line-height 1
+
+	.item__dek
+		display none
+
+	.item__author
+		font-weight 700
+		margin-top 1rem
+		set-type-size(small)
+		line-height 1
+		
+		a
+			display inline-block
+			text-transform uppercase
+
+	
+	.top__more
+		position absolute
+		top 0.4rem
+		right 0
+
+		a
+			font-family $sans-display
+			text-transform uppercase
+			font-weight 700
+			border none
+			color $gray-dark
+			set-type-size(small, false)
+			line-height 1
+		svg
+			vertical-align middle
+			transform translateY(-5%)
+			width 1.25rem
+
+.top__nav
+	transform translateY(-1rem)
+	+mq('bp-m')
+		transform translateY(0)
+	div
+		display flex
+		flex-wrap wrap
+
+	span
+		padding-right 0.75rem
+		margin-bottom 0.25rem
+		line-height 1
+		+mq('bp-m')
+			padding 0 0.75rem
+			margin-bottom 0
+		&.is-active
+			button
+				font-weight 700
+		button
+			text-transform capitalize
+			line-height 1
+			color $gray-dark

@@ -4,7 +4,7 @@
 
     const topic = $el.attr('data-topic');
 
-    d3.selectAll('.topics__nav ul li').classed('is-active', false);
+    d3.selectAll('.top__nav span').classed('is-active', false);
     d3.select($el.node().parentNode).classed('is-active', true);
 
     d3.selectAll('.topics__stories ul')
@@ -25,14 +25,14 @@
     const count = d3.range(sz);
     d3.shuffle(count);
 
-    const $btn = d3.select('.topics__nav').select(`[data-topic='${t}']`);
+    const $btn = d3.select('.top__nav').select(`[data-topic='${t}']`);
     if ($btn.size()) handleTopicClick.call($btn.node());
     else {
-      const $b = d3.select('.topics__nav button');
+      const $b = d3.select('.top__nav button');
       handleTopicClick.call($b.node());
     }
 
-    d3.selectAll('.topics__nav ul li')
+    d3.selectAll('.top__nav span')
       .select('button')
       .on('click', handleTopicClick);
 

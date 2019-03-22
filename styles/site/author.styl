@@ -8,6 +8,7 @@
 		flex-wrap wrap
 		align-items flex-start
 		position relative
+		font-family $serif-display
 
 		&__img
 			width 20%
@@ -18,12 +19,14 @@
 				margin 0
 				padding-left 1rem
 				set-type-size(medium, false)
-				line-height 1.4
-				+mq('bp-4')
+				line-height 1.2
+				+mq('bp-m')
 					set-type-size(large, false)
+					line-height 1.4
 
 		.description__name
 			font-weight 700
+			font-family $sans-display
 
 		&__links
 			width 100%
@@ -32,7 +35,8 @@
 			flex-wrap wrap
 			flex-direction column
 			margin-top 1rem
-			+mq('bp-4')
+			font-family $sans-display
+			+mq('bp-m')
 				flex-direction row
 				position absolute
 				left 20%
@@ -40,9 +44,8 @@
 				bottom 0
 				padding-left 1rem
 			li
-				margin 0 1rem
-				+mq('bp-4')
-					margin 0
+				+mq('bp-m')
+					margin 0 1rem
 					margin-right 2rem
 			a
 				border none

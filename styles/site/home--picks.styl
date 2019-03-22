@@ -1,44 +1,24 @@
 #page-home #picks
-	display none
-	+mq('bp-m')
-		display block
-		
+
 	ul
 		display flex
+		flex-wrap wrap
 		justify-content space-between
-
+		transition opacity 250ms
+		+mq('bp-m')
+			transform translateX(-1 * $line-width)
+			width calc(100% + $line-width)
+	
 	li
 		opacity 0
-		transition opacity 250ms
-		width calc(33.3% - 0.5rem)
-		&:nth-child(n+4)
+		&:nth-child(n+5)
 			display none
 		&.is-visible
 			opacity 1
 			display flex
 		&.is-hidden
 			display none
-		
-	
 
-	.story-item
-		display flex
-		align-items center
-	
-	.item__info
-		padding-left 0.5rem
-		width 40%
-
-	.item__img
-		width 60%
-	
-	.item__hed
-		font-weight 700
-		set-type-size(medium) 
-		line-height 1
-	
-	.item__dek
-		display none
 	
 	.item__author
 		display none
