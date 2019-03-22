@@ -138,7 +138,7 @@
 
 			</div>
 
-			<p class='header__tagline'>is a digital publication that explains ideas debated in culture with visual essays.</p>
+			<p class='header__tagline'><span>The Pudding</span> is a digital publication that explains ideas debated in culture with visual essays.</p>
 			
 
 			<div class='header__cta'>
@@ -177,9 +177,22 @@
 
 		</header>
 
-		<aside class='sidebar random-background'>
-			
-			<a class='sidebar__logo' href='../' aria-label='The Pudding homepage'>
+	
+		<aside class='sidebar'>
+			<div class='sidebar__content'>
+				<p class='sidebar__tagline'>The Pudding explains ideas debated in culture with visual essays.</p>
+					<ul class='sidebar__links'>
+						<li><a onclick="trackOutboundLink('../about'); return false;" href='../about'>About</a></li>
+						<li><a onclick="trackOutboundLink('../topics'); return false;" href='../topics'>Topics</a></li>
+						<li><a onclick="trackOutboundLink('../archives'); return false;" href='../archives'>Archives</a></li>
+						<li><a onclick="trackOutboundLink('http://eepurl.com/czym6f'); return false;" href='http://eepurl.com/czym6f' target='_blank'>Join our Newsletter</a></li>
+					</ul>
+				<p class='sidebar__patreon'>We pour our ❤️ into these stories, but they take time and money. For just $1/month, you can help support us. Join our growing community of data-driven enthusiasts.<br><a class='random-background' href='https://www.patreon.com/thepudding' target='_blank' onclick='trackOutboundLink("https://www.patreon.com/thepudding"); return false;'>Help fund us</a></p>
+			</div>
+		</aside>
+
+		<div class='menu'>
+			<a class='menu__logo' href='../' aria-label='The Pudding homepage'>
 				<svg id="logo" x="0px" y="0px" style="enable-background:new 0 0 75 110;" xml:space="preserve" viewBox="0 0 75 110">
 <g id="rightP">
 	<path class="st0" d="M67.2,14.1C62.6,4.8,55.3,3.8,48.1,7.6c-5.8,3.1-22.3,13.1-22.3,13.1v11.8c0,0,18.8-10.9,22.3-12.7
@@ -198,7 +211,7 @@
 </svg>
 			</a>
 			
-			<button class='sidebar__toggle'>
+			<button class='menu__toggle'>
 				<span class='toggle--on'>
 					<svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-menu" viewBox="0 0 24 24"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
 				</span>
@@ -206,27 +219,24 @@
 					<svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-x" viewBox="0 0 24 24"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
 				</span>
 			</button>
-
-			<div class='sidebar__menu'>
-				<p class='menu__tagline'>The Pudding explains ideas debated in culture with visual essays.</p>
-					<ul class='menu__links'>
-						<li><a onclick="trackOutboundLink('../about'); return false;" href='../about'>About</a></li>
-						<li><a onclick="trackOutboundLink('../topics'); return false;" href='../topics'>Topics</a></li>
-						<li><a onclick="trackOutboundLink('../archives'); return false;" href='../archives'>Archives</a></li>
-						<li><a onclick="trackOutboundLink('http://eepurl.com/czym6f'); return false;" href='http://eepurl.com/czym6f' target='_blank'>Join our Newsletter</a></li>
-					</ul>
-				<p class='menu__patreon'>We pour our ❤️ into these stories, but they take time and money. For just $1/month, you can help support us. Join our growing community of data-driven enthusiasts.<br><a class='random-background' href='https://www.patreon.com/thepudding' target='_blank' onclick='trackOutboundLink("https://www.patreon.com/thepudding"); return false;'>Help fund us</a></p>
-			</div>					
-		</aside>
+		</div>
 	
 	<main id='content'>
-		<section>
-			<p class='section__label random-color'>Topics</p>
+		<section class='layout--feature'>
+			<div class='section__top'>
+				<p class='section__label random-color'>Topics</p>
+				<!-- DO NOT REMOVE -->
+				
+		<div class='top__nav'>
+			<div><span><button data-topic='sports'>Sports</button></span><span><button data-topic='people'>People & Culture</button></span><span><button data-topic='entertainment'>Entertainment</button></span><span><button data-topic='social'>Social Issues</button></span><span><button data-topic='music'>Music</button></span></div>
+		</div>
+		<div class='top__more'>
+			<div><span data-topic='sports'><a href='../topics/#sports'>More Sports <svg class='random-stroke' xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-right"><polyline points="9 18 15 12 9 6"></polyline></svg></a></span><span data-topic='people'><a href='../topics/#people'>More People & Culture <svg class='random-stroke' xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-right"><polyline points="9 18 15 12 9 6"></polyline></svg></a></span><span data-topic='entertainment'><a href='../topics/#entertainment'>More Entertainment <svg class='random-stroke' xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-right"><polyline points="9 18 15 12 9 6"></polyline></svg></a></span><span data-topic='social'><a href='../topics/#social'>More Social Issues <svg class='random-stroke' xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-right"><polyline points="9 18 15 12 9 6"></polyline></svg></a></span><span data-topic='music'><a href='../topics/#music'>More Music <svg class='random-stroke' xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-right"><polyline points="9 18 15 12 9 6"></polyline></svg></a></span></div>
+		</div>
+	
+			</div>
 			<!-- DO NOT REMOVE -->
 			
-		<div class='topics__nav'>
-			<ul><li><button data-topic='how'>How-To</button></li><li><button data-topic='sports'>Sports</button></li><li><button data-topic='people'>People & Culture</button></li><li><button data-topic='entertainment'>Entertainment</button></li><li><button data-topic='social'>Social Issues</button></li><li><button data-topic='music'>Music</button></li></ul>
-		</div>
 		<div class='topics__stories'>
 			<ul data-topic='how'><li>
 		<div class='story-item' data-id='process/flexbox-layout' data-topic='how' data-chart='' data-keyword='how-to,javascript' data-author='amber' data-author_slug='amber-thomas' data-author_name='Amber Thomas' data-hed='making data viz without svg using d3 and flexbox' data-dek='bye bye tricky svg alignments. hello svg-free data viz!' data-date='2018-07-20T04:00:00.000Z' data-views='6309'>
@@ -1998,7 +2008,7 @@
 
     var topic = $el.attr('data-topic');
 
-    d3.selectAll('.topics__nav ul li').classed('is-active', false);
+    d3.selectAll('.top__nav span').classed('is-active', false);
     d3.select($el.node().parentNode).classed('is-active', true);
 
     d3.selectAll('.topics__stories ul')
@@ -2020,14 +2030,14 @@
     var count = d3.range(sz);
     d3.shuffle(count);
 
-    var $btn = d3.select('.topics__nav').select(("[data-topic='" + t + "']"));
+    var $btn = d3.select('.top__nav').select(("[data-topic='" + t + "']"));
     if ($btn.size()) { handleTopicClick.call($btn.node()); }
     else {
-      var $b = d3.select('.topics__nav button');
+      var $b = d3.select('.top__nav button');
       handleTopicClick.call($b.node());
     }
 
-    d3.selectAll('.topics__nav ul li')
+    d3.selectAll('.top__nav span')
       .select('button')
       .on('click', handleTopicClick);
 

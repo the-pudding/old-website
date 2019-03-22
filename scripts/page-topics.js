@@ -9,6 +9,7 @@ const Meta = require(`${cwd}/templates/common/partials/meta`);
 const Analytics = require(`${cwd}/templates/common/partials/analytics`);
 const Header = require(`${cwd}/templates/common/partials/header`);
 const Footer = require(`${cwd}/templates/common/partials/footer`);
+const TopicsNav = require(`${cwd}/templates/common/partials/topics-nav`);
 const Content = require(`${cwd}/templates/topics/partials/content`);
 
 function cleanTemp(dir) {
@@ -46,6 +47,7 @@ function createMarkup() {
   const metaHTML = Meta({ title: 'Topics' });
   const analyticsHTML = Analytics();
   const headerHTML = Header('../');
+  const topicsNavHTML = TopicsNav({ path: '../' });
   const contentHTML = Content();
   const footerHTML = Footer();
   const entryJS = compileEntryJS();
@@ -56,11 +58,20 @@ function createMarkup() {
       '<!-- meta -->',
       '<!-- analytics -->',
       '<!-- header -->',
+      '<!-- topics-nav -->',
       '<!-- content -->',
       '<!-- footer -->',
       '/* entry-js */'
     ],
-    to: [metaHTML, analyticsHTML, headerHTML, contentHTML, footerHTML, entryJS]
+    to: [
+      metaHTML,
+      analyticsHTML,
+      headerHTML,
+      topicsNavHTML,
+      contentHTML,
+      footerHTML,
+      entryJS
+    ]
   };
 
   return new Promise((resolve, reject) => {

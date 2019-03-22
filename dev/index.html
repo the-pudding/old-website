@@ -301,10 +301,10 @@
 				<p class='section__label random-color'>Topics</p>
 				
 		<div class='top__nav'>
-			<ul><li><button data-topic='sports'>Sports</button></li><li><button data-topic='people'>People & Culture</button></li><li><button data-topic='entertainment'>Entertainment</button></li><li><button data-topic='social'>Social Issues</button></li><li><button data-topic='music'>Music</button></li></ul>
+			<div><span><button data-topic='sports'>Sports</button></span><span><button data-topic='people'>People & Culture</button></span><span><button data-topic='entertainment'>Entertainment</button></span><span><button data-topic='social'>Social Issues</button></span><span><button data-topic='music'>Music</button></span></div>
 		</div>
 		<div class='top__more'>
-			<ul><li data-topic='sports'><a href='./topics/#sports'>More Sports <svg class='random-stroke' xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-right"><polyline points="9 18 15 12 9 6"></polyline></svg></a></li><li data-topic='people'><a href='./topics/#people'>More People & Culture <svg class='random-stroke' xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-right"><polyline points="9 18 15 12 9 6"></polyline></svg></a></li><li data-topic='entertainment'><a href='./topics/#entertainment'>More Entertainment <svg class='random-stroke' xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-right"><polyline points="9 18 15 12 9 6"></polyline></svg></a></li><li data-topic='social'><a href='./topics/#social'>More Social Issues <svg class='random-stroke' xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-right"><polyline points="9 18 15 12 9 6"></polyline></svg></a></li><li data-topic='music'><a href='./topics/#music'>More Music <svg class='random-stroke' xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-right"><polyline points="9 18 15 12 9 6"></polyline></svg></a></li></ul>
+			<div><span data-topic='sports'><a href='./topics/#sports'>More Sports <svg class='random-stroke' xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-right"><polyline points="9 18 15 12 9 6"></polyline></svg></a></span><span data-topic='people'><a href='./topics/#people'>More People & Culture <svg class='random-stroke' xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-right"><polyline points="9 18 15 12 9 6"></polyline></svg></a></span><span data-topic='entertainment'><a href='./topics/#entertainment'>More Entertainment <svg class='random-stroke' xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-right"><polyline points="9 18 15 12 9 6"></polyline></svg></a></span><span data-topic='social'><a href='./topics/#social'>More Social Issues <svg class='random-stroke' xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-right"><polyline points="9 18 15 12 9 6"></polyline></svg></a></span><span data-topic='music'><a href='./topics/#music'>More Music <svg class='random-stroke' xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-right"><polyline points="9 18 15 12 9 6"></polyline></svg></a></span></div>
 		</div>
 	
 			</div>
@@ -1546,7 +1546,7 @@
     var $el = d3.select(this);
     var topic = $el.attr('data-topic');
 
-    d3.selectAll('#topics .top__nav ul li').classed('is-active', false);
+    d3.selectAll('#topics .top__nav span').classed('is-active', false);
     d3.select($el.node().parentNode).classed('is-active', true);
 
     d3.selectAll('#topics .topics__stories ul')
@@ -1556,9 +1556,9 @@
     var $ul = d3.select(("#topics .topics__stories [data-topic=\"" + topic + "\"]"));
     $ul.classed('is-hidden', false).classed('is-visible', true);
 
-    d3.selectAll('#topics .top__more li').classed('is-visible', false);
-    var $li = d3.select(("#topics .top__more [data-topic=\"" + topic + "\"]"));
-    $li.classed('is-visible', true);
+    d3.selectAll('#topics .top__more span').classed('is-visible', false);
+    var $span = d3.select(("#topics .top__more [data-topic=\"" + topic + "\"]"));
+    $span.classed('is-visible', true);
 
     if (window.generalImages) { window.generalImages(); }
 
@@ -1594,7 +1594,7 @@
       'is-visible',
       true
     );
-    d3.selectAll('#topics .top__nav ul li')
+    d3.selectAll('#topics .top__nav span')
       .classed('is-active', function (d, i) { return chosen === i; })
       .select('button')
       .on('click', handleTopicClick);

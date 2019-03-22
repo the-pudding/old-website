@@ -11,25 +11,27 @@ function createHTML({ path }) {
   const nav = topicsData
     .map(
       topic =>
-        `<li><button data-topic='${topic.slug}'>${topic.label}</button></li>`
+        `<span><button data-topic='${topic.slug}'>${
+          topic.label
+        }</button></span>`
     )
     .join('');
 
   const more = topicsData
     .map(
       topic =>
-        `<li data-topic='${topic.slug}'><a href='${path}topics/#${
+        `<span data-topic='${topic.slug}'><a href='${path}topics/#${
           topic.slug
-        }'>More ${topic.label} ${arrowSvg}</a></li>`
+        }'>More ${topic.label} ${arrowSvg}</a></span>`
     )
     .join('');
 
   return `
 		<div class='top__nav'>
-			<ul>${nav}</ul>
+			<div>${nav}</div>
 		</div>
 		<div class='top__more'>
-			<ul>${more}</ul>
+			<div>${more}</div>
 		</div>
 	`;
 }
