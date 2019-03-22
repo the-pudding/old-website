@@ -23,7 +23,7 @@ module.exports = function(path) {
 
 			</div>
 
-			<p class='header__tagline'>is a digital publication that explains ideas debated in culture with visual essays.</p>
+			<p class='header__tagline'><span>The Pudding</span> is a digital publication that explains ideas debated in culture with visual essays.</p>
 			
 
 			<div class='header__cta'>
@@ -54,13 +54,26 @@ module.exports = function(path) {
 
 		</header>
 
+	
 		<aside class='sidebar'>
-			
-			<a class='sidebar__logo' href='${path}' aria-label='The Pudding homepage'>
+			<div class='sidebar__content'>
+				<p class='sidebar__tagline'>The Pudding explains ideas debated in culture with visual essays.</p>
+					<ul class='sidebar__links'>
+						<li><a onclick="trackOutboundLink('${path}about'); return false;" href='${path}about'>About</a></li>
+						<li><a onclick="trackOutboundLink('${path}topics'); return false;" href='${path}topics'>Topics</a></li>
+						<li><a onclick="trackOutboundLink('${path}archives'); return false;" href='${path}archives'>Archives</a></li>
+						<li><a onclick="trackOutboundLink('http://eepurl.com/czym6f'); return false;" href='http://eepurl.com/czym6f' target='_blank'>Join our Newsletter</a></li>
+					</ul>
+				<p class='sidebar__patreon'>We pour our ❤️ into these stories, but they take time and money. For just $1/month, you can help support us. Join our growing community of data-driven enthusiasts.<br><a class='random-background' href='https://www.patreon.com/thepudding' target='_blank' onclick='trackOutboundLink("https://www.patreon.com/thepudding"); return false;'>Help fund us</a></p>
+			</div>
+		</aside>
+
+		<div class='menu'>
+			<a class='menu__logo' href='${path}' aria-label='The Pudding homepage'>
 				<img inline src='dev/common/assets/svg/pudding-logo.svg'>
 			</a>
 			
-			<button class='sidebar__toggle'>
+			<button class='menu__toggle'>
 				<span class='toggle--on'>
 					<img inline src='dev/common/assets/svg/menu.svg'>
 				</span>
@@ -68,18 +81,7 @@ module.exports = function(path) {
 					<img inline src='dev/common/assets/svg/x.svg'>
 				</span>
 			</button>
-
-			<div class='sidebar__menu'>
-				<p class='menu__tagline'>The Pudding explains ideas debated in culture with visual essays.</p>
-					<ul class='menu__links'>
-						<li><a onclick="trackOutboundLink('${path}about'); return false;" href='${path}about'>About</a></li>
-						<li><a onclick="trackOutboundLink('${path}topics'); return false;" href='${path}topics'>Topics</a></li>
-						<li><a onclick="trackOutboundLink('${path}archives'); return false;" href='${path}archives'>Archives</a></li>
-						<li><a onclick="trackOutboundLink('http://eepurl.com/czym6f'); return false;" href='http://eepurl.com/czym6f' target='_blank'>Join our Newsletter</a></li>
-					</ul>
-				<p class='menu__patreon'>We pour our ❤️ into these stories, but they take time and money. For just $1/month, you can help support us. Join our growing community of data-driven enthusiasts.<br><a class='random-background' href='https://www.patreon.com/thepudding' target='_blank' onclick='trackOutboundLink("https://www.patreon.com/thepudding"); return false;'>Help fund us</a></p>
-			</div>					
-		</aside>
+		</div>
 	`;
 };
 

@@ -1,16 +1,19 @@
 header
 	width 100%
-	padding 0
+	padding 0.5rem 0
 	max-width $main-width
 	margin 0 auto
 	
 	&.is-home
 		margin-bottom 2rem
+		padding 0
+		padding-bottom 1rem
 		.top__title
 			+mq('bp-m')
 				width 20rem
 		.header__cta
 			display flex
+			flex-wrap wrap
 		.header__tagline
 			display block
 	
@@ -19,7 +22,6 @@ header
 		position relative
 		transform none
 		box-shadow none
-		padding-bottom 1rem
 
 	.header__top
 		display flex
@@ -27,12 +29,21 @@ header
 		align-items center
 
 	.top__title
+		display none
+		position fixed
+		top 0.75rem
+		left 4rem
+		margin 0
 		width 10rem
-		margin-left 3.5rem
-		margin-top 0.25rem
+		z-index set-index(overlay) + 1
+		+mq('bp-3')
+			display block
 		+mq('bp-m')
+			position relative
 			width 12rem
-			margin 0
+			z-index auto
+			top 0
+			left 0
 		a
 			display block
 			border none 
@@ -71,18 +82,32 @@ header
 
 	.header__tagline
 		display none
-		margin 0
 		margin-top 0.25rem
-		set-type-size(xx-large, true)
 		font-family $serif-display 
+		padding 1rem
+		padding-top 2rem
+		max-width 35rem
+		margin 0 auto
+		set-type-size(large, true)
+		+mq('bp-m')
+			padding 0
+			max-width 100%
+			margin 0
+			set-type-size(xx-large, true)
+			span
+				display none
 
 
 	.header__cta
 		display none
-		flex-wrap wrap
+		flex-direction column
 		align-items center
 		font-family $sans-display
-		margin-top 2rem
+		margin-top 1rem
+
+		+mq('bp-m')
+			flex-direction row
+			margin-top 2rem
 		
 		.btn, a.btn
 			background-color $fg
@@ -139,9 +164,9 @@ header
 		display flex
 		align-items center
 		flex-wrap wrap
-		margin-left 2rem
 		+mq('bp-m')
 			flex-wrap nowrap
+			margin-left 2rem
 		p
 			margin 0
 			margin-bottom 1rem
@@ -154,8 +179,24 @@ header
 				margin-right 1rem
 
 	.cta__social
+		position fixed
+		top 1.25rem
+		right 4rem
+		z-index set-index(overlay) + 1
 		display flex
-		margin-left 2rem
+		
+		+mq('bp-m')
+			position relative
+			z-index auto
+			top 0
+			left 0
+			margin-left 2rem
+
+		svg
+			fill $gray
+			+mq('bp-m')
+				fill $fg
+
 		a
 			border none
 			margin-right 0.5rem

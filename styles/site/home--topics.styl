@@ -1,13 +1,21 @@
 #page-home #topics
 	
 	.top__nav
+		transform translateY(-1rem)
+		+mq('bp-m')
+			transform translateY(0)
 		ul
 			display flex
-			min-width 30rem
+			flex-wrap wrap
+			// min-width 30rem
 
 		li
-			padding 0 0.75rem
+			padding-right 0.75rem
+			margin-bottom 0.25rem
 			line-height 1
+			+mq('bp-m')
+				padding 0 0.75rem
+				margin-bottom 0
 			&.is-active
 				button
 					font-weight 700

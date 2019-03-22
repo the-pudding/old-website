@@ -1,38 +1,51 @@
-.sidebar
+.menu
 	position fixed
 	top 0
 	left 0
-	transform translate3d(-16rem,0,0)
-	padding 1rem
-	padding-right 4rem
-	max-width 20rem
-	height 100vh
+	width 100%
+	height 4rem
 	background-color $bg
-	border-right 1px solid $gray-light
 	z-index set-index(overlay)
-	transition transform 500ms ease-in-out
-	&.is-reveal
-		transform translate3d(0,0,0)
+	transform translate3d(0,0,0)
+	color $bg
+	box-shadow 0 0 2px rgba($off-black,0.25)
 
-	.sidebar__logo
-		display block
+	&.is-reveal
+		+mq('bp-m')
+			svg
+				fill $bg
+			.feather-x
+				stroke $bg
+			
+
+	+mq('bp-m')
+		width 4rem
+		height 100vh
+		border-right 1px solid $gray-light
+		box-shadow none
+		background-color transparent
+
+	.menu__logo
 		position absolute
 		border none
-		top 1rem
-		right 1rem
+		top 0.5rem
+		left 1rem
 		width 2rem
 		+mq('bp-m')
+			display block
 			width 2rem
 			margin-bottom 1rem
+			top 1rem
+			right 1rem
 	
-	.sidebar__toggle
+	.menu__toggle
 		display block
 		position absolute
 		border none
-		top 50%
+		bottom 1rem
 		right 1rem
 		width 2rem
-		transform translateY(-50%)
+		// transform translateY(-50%)
 		span
 			display block
 			&.is-hidden
@@ -42,19 +55,51 @@
 			height auto
 			display block
 		
-	.menu__links li
+
+
+
+.sidebar
+	position fixed
+	top 4rem
+	right 0
+	height calc(100vh - 4rem)
+	transform translate3d(20rem, 0, 0)
+	width 20rem
+	padding 1rem
+	background-color $fg
+	color $bg
+	z-index set-index(overlay) + 1
+	transition all 250ms ease-in-out
+	
+
+	+mq('bp-m')
+		z-index set-index(overlay)
+		top 0
+		left 0
+		height 100vh
+		padding-left 5rem
+		transform translate3d(-24rem, 0, 0)
+		width 24rem
+
+	&.is-reveal
+		transform translate3d(0, 0, 0)
+		opacity 1
+	.sidebar__links li
 		margin-bottom 0.5rem
 		set-type-size(medium)
 		a
-			border none
+			border-bottom 1px solid $bg
 			font-family $sans-display
+			color $bg
+			&:hover
+				color $bg
 
-	.menu__patreon
+	.sidebar__patreon
 		margin-top 2rem
-		set-type-size(medium, false)
-		line-height 1.2
+		set-type-size(small, false)
+		line-height 1.4
 
-	.menu__patreon a
+	.sidebar__patreon a
 		display inline-block
 		font-weight 700
 		color $bg
@@ -67,8 +112,8 @@
 		text-transform uppercase
 		margin-top 1rem
 	
-	.menu__tagline
-		margin-top 1.5rem
+	.sidebar__tagline
+		margin-top 0
 		margin-bottom 1.5rem
 		set-type-size(large, false)
 		line-height 1.2

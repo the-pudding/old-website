@@ -112,7 +112,7 @@
 
 			</div>
 
-			<p class='header__tagline'>is an editorial publication that explains ideas debated in culture with visual essays.</p>
+			<p class='header__tagline'>is a digital publication that explains ideas debated in culture with visual essays.</p>
 			
 
 			<div class='header__cta'>
@@ -143,22 +143,22 @@
 
 		</header>
 
-		<aside class='sidebar'>
+		<aside class='sidebar random-background'>
 			
 			<a class='sidebar__logo' href='../../' aria-label='The Pudding homepage'>
 				<img inline src='dev/common/assets/svg/pudding-logo.svg'>
 			</a>
 			
-			<btn class='sidebar__toggle'>
+			<button class='sidebar__toggle'>
 				<span class='toggle--on'>
 					<img inline src='dev/common/assets/svg/menu.svg'>
 				</span>
 				<span class='toggle--off is-hidden'>
 					<img inline src='dev/common/assets/svg/x.svg'>
 				</span>
-			</btn>
+			</button>
 
-			<div class='sidebar__content'>
+			<div class='sidebar__menu'>
 				<p class='menu__tagline'>The Pudding explains ideas debated in culture with visual essays.</p>
 					<ul class='menu__links'>
 						<li><a onclick="trackOutboundLink('../../about'); return false;" href='../../about'>About</a></li>
@@ -167,18 +167,7 @@
 						<li><a onclick="trackOutboundLink('http://eepurl.com/czym6f'); return false;" href='http://eepurl.com/czym6f' target='_blank'>Join our Newsletter</a></li>
 					</ul>
 				<p class='menu__patreon'>We pour our ❤️ into these stories, but they take time and money. For just $1/month, you can help support us. Join our growing community of data-driven enthusiasts.<br><a class='random-background' href='https://www.patreon.com/thepudding' target='_blank' onclick='trackOutboundLink("https://www.patreon.com/thepudding"); return false;'>Help fund us</a></p>
-			</div>
-			
-			// <ul class='sidebar__social'>
-			// 	<li><a target='_blank' onclick="trackOutboundLink('https://www.instagram.com/pudding.cool'); return false;" href='https://www.instagram.com/pudding.cool' class='logo--instagram'><img inline src='dev/common/assets/svg/instagram.svg'></a></li>
-			// 	<li><a target='_blank' onclick="trackOutboundLink('https://twitter.com/puddingviz''); return false;" href='https://twitter.com/puddingviz' class='logo--twitter'><img inline src='dev/common/assets/svg/twitter.svg'></a></li>
-			// 	<li><a target='_blank' onclick="trackOutboundLink('https://www.facebook.com/pudding.viz'); return false;" href='https://www.facebook.com/pudding.viz/' class='logo--facebook'><img inline src='dev/common/assets/svg/facebook.svg'></a></li>
-			// 	<li><a target='_blank' onclick="trackOutboundLink('https://www.patreon.com/thepudding'); return false;" href='https://www.patreon.com/thepudding' class='logo--patreon'><img inline src='dev/common/assets/svg/patreon.svg'></a></li>
-			// </ul>
-
-			
-
-								
+			</div>					
 		</aside>
 	
 	<main id='content'>
@@ -252,43 +241,60 @@
 
 	<!-- DO NOT REMOVE -->
 	
-		<footer class='random-background'>
-			<div class='footer__inner'>
-				<p class='footer__hed'>
-					The Pudding is an editorial publication that explains ideas debated in culture with visual essays.
-				</p>
-
-				<div class='footer__social'>
-					<p>Find us on the socials</p>
-					<ul>
-						<li>
-							<a target='_blank' href='https://www.facebook.com/pudding.viz/' class='logo--facebook'>
+	
+	<footer class='random-background'>
+		<div class='footer__inner'>
+			<div class='footer__cta'>
+				<ul class='footer__cta-list'>
+					<li>
+						<a href='https://facebook.com/pudding.viz/'>
 							<img inline src='dev/common/assets/svg/facebook.svg'></a>
-						</li>
-
-						<li>
-							<a target='_blank' href='https://twitter.com/puddingviz' class='logo--twitter'>
-							<img inline src='dev/common/assets/svg/twitter.svg'>
+							<p>FACEBOOK</p>
 						</a>
-						</li>
-
-						<li>
-							<a target='_blank' href='https://www.instagram.com/pudding.cool' class='logo--instagram'>
-								<img inline src='dev/common/assets/svg/instagram.svg'>
-							</a>
-						</li>
-
-						<li>
-							<a target='_blank' href='https://www.patreon.com/thepudding' class='logo--patreon'>
-								<img inline src='dev/common/assets/svg/patreon.svg'>
-							</a>
-						</li>
-					</ul>
-				</div>
-				
-				<p class='footer__location'>The Pudding<span>®</span> is made in Brooklyn, NY; Seattle, WA; San Antonio, TX; and Great Barrington, MA.</p>
+					</li>
+					<li>
+						<a href='https://twitter.com/puddingviz/'>
+							<img inline src='dev/common/assets/svg/twitter.svg'></a>
+							<p>TWITTER</p>
+						</a>
+					</li>
+					<li>
+						<a href='https://www.instagram.com/pudding.cool'>
+							<img inline src='dev/common/assets/svg/instagram.svg'></a>
+							<p>INSTAGRAM</p>
+						</a>
+					</li>
+					<li>
+						<a href='https://patreon.com/thepudding/'>
+							<img inline src='dev/common/assets/svg/patreon.svg'></a>
+							<p>PATREON</p>
+						</a>
+					</li>
+					<li>
+						<a href='http://eepurl.com/czym6f'>
+							<img inline src='dev/common/assets/svg/mail.svg'></a>
+							<p>NEWSLETTER</p>
+						</a>
+					</li>
+					<li>
+						<a href='https://pudding.cool/about'>
+							<img inline src='dev/common/assets/svg/info.svg'></a>
+							<p>ABOUT</p>
+						</a>
+					</li>
+				</ul>
 			</div>
-		</footer>
+
+			<div class='footer__about'>
+				<img inline src='dev/common/assets/svg/pudding-wordmark.svg'></a>
+				<p class='footer__description'><a href='https://pudding.cool'>The Pudding</a> is a digital publication that
+					explains ideas debated in culture with visual essays.</p>
+				<p class='footer__trademark'>The Pudding<span>®</span> is made in Brooklyn, NY; Seattle, WA; and Great
+					Barrington, MA.</p>
+			</div>
+
+		</div>
+	</div>
 	
 </body>
 <script src='../../common/js/d3.v5.min.js'></script>

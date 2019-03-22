@@ -85,8 +85,7 @@ input
 		display none
 	
 section
-	width calc(100% - 4rem)
-	transform translateX(0.5rem)
+	width calc(100% - 2rem)
 	position relative
 	max-width $main-width
 	margin 0 auto 5rem auto
@@ -99,7 +98,9 @@ section
 		max-width 60rem
 
 	.section__top
-		display flex
+		display block
+		+mq('bp-m')
+			display flex
 
 	.section__description
 		margin 0

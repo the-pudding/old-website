@@ -10,19 +10,7 @@
 			width calc(100% + $line-width)
 	
 	li
-		width 100%
-		border-top $line-width solid $fg
-		margin-bottom 4rem
 		opacity 0
-		transition opacity 250ms
-		&:first-of-type
-			border none
-		&:last-of-type
-			margin-bottom 0
-		+mq('bp-m')
-			width calc(25% - 1.5rem)
-			border-top none
-			margin 0
 		&:nth-child(n+5)
 			display none
 		&.is-visible
@@ -30,42 +18,7 @@
 			display flex
 		&.is-hidden
 			display none
-		
-			
 
-	.story-item
-		display flex
-		flex-direction row
-		align-items center
-		+mq('bp-m')
-			flex-direction column
-
-	.item__img
-		width 60%
-		+mq('bp-m')
-			width 100%
-		
-	.item__info
-		padding-left 1rem
-		width 40%
-		+mq('bp-m')
-			width 100%
-			padding 1rem 0
-
-	.item__hed
-		font-weight 700
-		set-type-size(medium) 
-		line-height 1
-
-	.item__dek
-		display none
-
+	
 	.item__author
-		font-weight 700
-		margin-top 1rem
-		set-type-size(small)
-		line-height 1
-		
-		a
-			display inline-block
-			text-transform uppercase
+		display none

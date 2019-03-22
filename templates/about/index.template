@@ -24,6 +24,7 @@
 	<main id='content'>
 		<section>
 			<ul class='page-nav'>
+				<li><strong>About</strong></li>
 				<li>
 					<a href='#why'>Why “The Pudding?”</a>
 				</li>
@@ -56,7 +57,7 @@
 				</li>
 			</ul>
 			
-			<p class='section__label random-color'>About</p>
+			<!-- <p class='section__label random-color'>About</p> -->
 			<!-- DO NOT REMOVE -->
 			<!-- content -->
 			<div id='team'>

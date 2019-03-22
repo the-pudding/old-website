@@ -23,8 +23,12 @@
 	<!-- header -->
 	<main id='content'>
 		<section class='filter'>
-			<p class='section__label random-color'>Find It!</p>
-			<input aria-label='Search' name='search' placeholder='Search...'>
+			<fieldset class='field__sort'>
+				<legend>Search</legend>
+				<input aria-label='Search' name='search' placeholder='Search...'>
+			</fieldset>
+
+			
 			<fieldset class='field__sort'>
 				<legend>Sort By</legend>
 				<ul>
@@ -70,7 +74,6 @@
 		</section>
 
 		<section class='stories'>
-			<p class='section__label random-color'>Archives</p>
 			<!-- DO NOT REMOVE -->
 			<ul><!-- stories --></ul>
 		</section>

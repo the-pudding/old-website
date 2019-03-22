@@ -102,9 +102,6 @@
 				<div class='top__title'>
 					<a class='title__wordmark' href='./' aria-label='The Pudding homepage'>
 						<svg id="wordmark" x="0px" y="0px" style="enable-background:new 0 0 192.6 50;" xml:space="preserve" viewBox="0 0 192.6 50">
-<style type="text/css">
-	.st0{fill:#282827;}
-</style>
 <g>
 	<path class="st0" d="M150.1,9.5c1.5,0,2.8,1.3,2.8,2.8s-1.3,2.8-2.8,2.8s-2.8-1.3-2.8-2.8S148.6,9.5,150.1,9.5z"/>
 	<path class="st0" d="M147.2,17.3h5.6v18.2h-5.6V17.3z"/>
@@ -145,7 +142,7 @@
 
 			</div>
 
-			<p class='header__tagline'>is a digital publication that explains ideas debated in culture with visual essays.</p>
+			<p class='header__tagline'><span>The Pudding</span> is a digital publication that explains ideas debated in culture with visual essays.</p>
 			
 
 			<div class='header__cta'>
@@ -184,14 +181,23 @@
 
 		</header>
 
+	
 		<aside class='sidebar'>
-			
-			<a class='sidebar__logo' href='./' aria-label='The Pudding homepage'>
+			<div class='sidebar__content'>
+				<p class='sidebar__tagline'>The Pudding explains ideas debated in culture with visual essays.</p>
+					<ul class='sidebar__links'>
+						<li><a onclick="trackOutboundLink('./about'); return false;" href='./about'>About</a></li>
+						<li><a onclick="trackOutboundLink('./topics'); return false;" href='./topics'>Topics</a></li>
+						<li><a onclick="trackOutboundLink('./archives'); return false;" href='./archives'>Archives</a></li>
+						<li><a onclick="trackOutboundLink('http://eepurl.com/czym6f'); return false;" href='http://eepurl.com/czym6f' target='_blank'>Join our Newsletter</a></li>
+					</ul>
+				<p class='sidebar__patreon'>We pour our ❤️ into these stories, but they take time and money. For just $1/month, you can help support us. Join our growing community of data-driven enthusiasts.<br><a class='random-background' href='https://www.patreon.com/thepudding' target='_blank' onclick='trackOutboundLink("https://www.patreon.com/thepudding"); return false;'>Help fund us</a></p>
+			</div>
+		</aside>
+
+		<div class='menu'>
+			<a class='menu__logo' href='./' aria-label='The Pudding homepage'>
 				<svg id="logo" x="0px" y="0px" style="enable-background:new 0 0 75 110;" xml:space="preserve" viewBox="0 0 75 110">
-<style type="text/css">
-	.st0{fill:#282828;}
-	.st1{fill:#777777;}
-</style>
 <g id="rightP">
 	<path class="st0" d="M67.2,14.1C62.6,4.8,55.3,3.8,48.1,7.6c-5.8,3.1-22.3,13.1-22.3,13.1v11.8c0,0,18.8-10.9,22.3-12.7
 		c4.3-2.3,8.7-1.6,11.5,3.9c2.8,5.6,2.7,15-1.8,22.5c-3.5,5.9-6.8,8.6-9.9,10.3S25.8,69.4,25.8,69.4v11.8c0,0,16.8-9.6,22-12.4
@@ -209,7 +215,7 @@
 </svg>
 			</a>
 			
-			<button class='sidebar__toggle'>
+			<button class='menu__toggle'>
 				<span class='toggle--on'>
 					<svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-menu" viewBox="0 0 24 24"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
 				</span>
@@ -217,23 +223,12 @@
 					<svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-x" viewBox="0 0 24 24"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
 				</span>
 			</button>
-
-			<div class='sidebar__menu'>
-				<p class='menu__tagline'>The Pudding explains ideas debated in culture with visual essays.</p>
-					<ul class='menu__links'>
-						<li><a onclick="trackOutboundLink('./about'); return false;" href='./about'>About</a></li>
-						<li><a onclick="trackOutboundLink('./topics'); return false;" href='./topics'>Topics</a></li>
-						<li><a onclick="trackOutboundLink('./archives'); return false;" href='./archives'>Archives</a></li>
-						<li><a onclick="trackOutboundLink('http://eepurl.com/czym6f'); return false;" href='http://eepurl.com/czym6f' target='_blank'>Join our Newsletter</a></li>
-					</ul>
-				<p class='menu__patreon'>We pour our ❤️ into these stories, but they take time and money. For just $1/month, you can help support us. Join our growing community of data-driven enthusiasts.<br><a class='random-background' href='https://www.patreon.com/thepudding' target='_blank' onclick='trackOutboundLink("https://www.patreon.com/thepudding"); return false;'>Help fund us</a></p>
-			</div>					
-		</aside>
+		</div>
 	
 
 	<main id='content'>
 
-		<section id='new'>
+		<section id='new' class='layout--feature'>
 			<div class='section__top'>
 				<p class='section__label random-color'>What’s New</p>
 			</div>
@@ -301,7 +296,7 @@
 			</ul>
 		</section>
 
-		<section id='topics'>
+		<section id='topics' class='layout--equal'>
 			<div class='section__top'>
 				<p class='section__label random-color'>Topics</p>
 				
@@ -920,7 +915,7 @@
 		</div>
 	
 
-		<section id='picks'>
+		<section id='picks' class='layout--small'>
 			<div class='section__top'>
 				<p class='section__label random-color'>Our Picks</p>
 				<p class='section__description'>The Pudding staff picks stories you should see</p>
@@ -1047,7 +1042,7 @@
 			</ul>
 		</section>
 		
-		<section id='hits'>
+		<section id='hits' class='layout--feature'>
 			<div class='section__top'>
 				<p class='section__label random-color'>Greatest Hits</p>
 			</div>
@@ -1287,7 +1282,7 @@
 			</ul>
 		</section>
 
-		<section id='how'>
+		<section id='how' class='layout--small'>
 			<div class='section__top'>
 				<p class='section__label random-color'>How-To</p>
 				<div class='top__more'>
@@ -1446,9 +1441,6 @@
 
 			<div class='footer__about'>
 				<svg id="wordmark" x="0px" y="0px" style="enable-background:new 0 0 192.6 50;" xml:space="preserve" viewBox="0 0 192.6 50">
-<style type="text/css">
-	.st0{fill:#282827;}
-</style>
 <g>
 	<path class="st0" d="M150.1,9.5c1.5,0,2.8,1.3,2.8,2.8s-1.3,2.8-2.8,2.8s-2.8-1.3-2.8-2.8S148.6,9.5,150.1,9.5z"/>
 	<path class="st0" d="M147.2,17.3h5.6v18.2h-5.6V17.3z"/>

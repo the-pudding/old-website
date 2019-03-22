@@ -3,16 +3,19 @@
   var ORIG = 640;
 
   window.generalSidebar = function() {
+    const $menu = d3.select('.menu');
     const $sidebar = d3.select('.sidebar');
-    const $toggleOn = $sidebar.select('.toggle--on');
-    const $toggleOff = $sidebar.select('.toggle--off');
+    const $toggleOn = $menu.select('.toggle--on');
+    const $toggleOff = $menu.select('.toggle--off');
     $toggleOn.on('click', () => {
       $sidebar.classed('is-reveal', true);
+      $menu.classed('is-reveal', true);
       $toggleOn.classed('is-hidden', true);
       $toggleOff.classed('is-hidden', false);
     });
     $toggleOff.on('click', () => {
       $sidebar.classed('is-reveal', false);
+      $menu.classed('is-reveal', false);
       $toggleOn.classed('is-hidden', false);
       $toggleOff.classed('is-hidden', true);
     });
