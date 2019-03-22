@@ -142,6 +142,44 @@
 			</div>
 
 		</header>
+
+		<aside class='sidebar'>
+			
+			<a class='sidebar__logo' href='../../' aria-label='The Pudding homepage'>
+				<img inline src='dev/common/assets/svg/pudding-logo.svg'>
+			</a>
+			
+			<btn class='sidebar__toggle'>
+				<span class='toggle--on'>
+					<img inline src='dev/common/assets/svg/menu.svg'>
+				</span>
+				<span class='toggle--off is-hidden'>
+					<img inline src='dev/common/assets/svg/x.svg'>
+				</span>
+			</btn>
+
+			<div class='sidebar__content'>
+				<p class='menu__tagline'>The Pudding explains ideas debated in culture with visual essays.</p>
+					<ul class='menu__links'>
+						<li><a onclick="trackOutboundLink('../../about'); return false;" href='../../about'>About</a></li>
+						<li><a onclick="trackOutboundLink('../../topics'); return false;" href='../../topics'>Topics</a></li>
+						<li><a onclick="trackOutboundLink('../../archives'); return false;" href='../../archives'>Archives</a></li>
+						<li><a onclick="trackOutboundLink('http://eepurl.com/czym6f'); return false;" href='http://eepurl.com/czym6f' target='_blank'>Join our Newsletter</a></li>
+					</ul>
+				<p class='menu__patreon'>We pour our ❤️ into these stories, but they take time and money. For just $1/month, you can help support us. Join our growing community of data-driven enthusiasts.<br><a class='random-background' href='https://www.patreon.com/thepudding' target='_blank' onclick='trackOutboundLink("https://www.patreon.com/thepudding"); return false;'>Help fund us</a></p>
+			</div>
+			
+			// <ul class='sidebar__social'>
+			// 	<li><a target='_blank' onclick="trackOutboundLink('https://www.instagram.com/pudding.cool'); return false;" href='https://www.instagram.com/pudding.cool' class='logo--instagram'><img inline src='dev/common/assets/svg/instagram.svg'></a></li>
+			// 	<li><a target='_blank' onclick="trackOutboundLink('https://twitter.com/puddingviz''); return false;" href='https://twitter.com/puddingviz' class='logo--twitter'><img inline src='dev/common/assets/svg/twitter.svg'></a></li>
+			// 	<li><a target='_blank' onclick="trackOutboundLink('https://www.facebook.com/pudding.viz'); return false;" href='https://www.facebook.com/pudding.viz/' class='logo--facebook'><img inline src='dev/common/assets/svg/facebook.svg'></a></li>
+			// 	<li><a target='_blank' onclick="trackOutboundLink('https://www.patreon.com/thepudding'); return false;" href='https://www.patreon.com/thepudding' class='logo--patreon'><img inline src='dev/common/assets/svg/patreon.svg'></a></li>
+			// </ul>
+
+			
+
+								
+		</aside>
 	
 	<main id='content'>
 		<section class='author'>
@@ -181,9 +219,11 @@
 				<a href='//pudding.cool/2017/08/screen-direction'>
 					<h3 class='item__hed'>She Giggles, He Gallops</h3>
 				</a>
-				<p class='item__dek'>Analyzing gender tropes in film with screen direction from 2,000 scripts</p>
-				<time class='item__time' datetime='2017-08-22T04:00:00.000Z'></time>
-				<p class='item__author'>By <a href='../../author/julia-silge'>Julia Silge</a>, <a href='../../author/russell-goldenberg'>Russell Goldenberg</a>, <a href='../../author/amber-thomas'>Amber Thomas</a></p>
+				<div class='info__details'>
+					<p class='item__dek'>Analyzing gender tropes in film with screen direction from 2,000 scripts</p>
+					<time class='item__time' datetime='2017-08-22T04:00:00.000Z'></time>
+					<cite class='item__author'>By <a href='../../author/julia-silge'>Julia Silge</a>, <a href='../../author/russell-goldenberg'>Russell Goldenberg</a>, <a href='../../author/amber-thomas'>Amber Thomas</a></cite>
+				</div>
 			</div>
 		</div>
 	</li>

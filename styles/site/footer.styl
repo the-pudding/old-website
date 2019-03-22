@@ -1,7 +1,7 @@
 footer
 	width 100%
 	color $bg
-
+	
 	.footer__inner
 		width calc(100% - 3.6rem)
 		transform translateX(0.5rem)
@@ -9,40 +9,83 @@ footer
 		max-width $main-width
 		margin 0 auto
 		padding 3rem 1rem
+		display flex
+		flex-direction column
 		+mq('bp-m')
 			width 100%
 			width calc(100% - 12rem)
 			transform translateX(0)
-		
-	
-	.footer__hed	
-		font-family $serif
-		margin 0 auto
-		set-type-size(x-large, false)
-		line-height 1.4
-		
-	.footer__social
-		margin-top 2rem
-		display flex
-		font-family $sans-display
-	
-		p
-			margin 0
+			flex-direction row
 
-		ul
-			display flex
+	.footer__cta
+		order 1
+		margin 2rem 0 0 0
+		width 100%
+		+mq('bp-5')
+			width 18rem
+			margin 0 0 0 2rem
+
+	.footer__cta-list
+		display flex
+		flex-wrap wrap
+		flex-direction column
+		height 9rem
+		font-family $sans-display
+		+mq('bp-5')
+			flex-direction column
 
 		li
-			margin 0 0.25rem
-		a
-			border none
-			display block
-			max-width 2rem
+			display flex
+			width 50%
+			margin 0
+			margin-bottom 1.5rem
+			align-items center
+			+mq('bp-5')
+				padding-left 1rem
+
+			a
+				display flex
+				border none
+
+			p
+				margin 0
+				padding-left 0.5rem
+				line-height 1
+				set-type-size(root, false)
+
+			svg
+				fill $bg
+				stroke none
+				vertical-align middle
+				circle, polyline, line
+					fill none
+					stroke $bg
+			.feather-mail path
+					stroke $bg
+					fill none
+
+
+	.footer__about
+		order 0
+		width 100%
+		display flex
+		flex-direction column
+		font-family $sans-display
+		+mq('bp-5')
+			width calc(100% - 20rem)
+
+		p
+			margin 0
 		
 		svg
-			fill $bg
+			width 12rem
+			margin-bottom 0.5rem
+			path
+				fill $bg
 
-	.footer__location
-		margin 0
-		margin-top 2rem
-		set-type-size(small)
+		a
+			color $bg
+			border-bottom 1px solid currentColor
+			&:hover
+				color $bg
+

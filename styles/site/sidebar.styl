@@ -1,0 +1,75 @@
+.sidebar
+	position fixed
+	top 0
+	left 0
+	transform translate3d(-16rem,0,0)
+	padding 1rem
+	padding-right 4rem
+	max-width 20rem
+	height 100vh
+	background-color $bg
+	border-right 1px solid $gray-light
+	z-index set-index(overlay)
+	transition transform 500ms ease-in-out
+	&.is-reveal
+		transform translate3d(0,0,0)
+
+	.sidebar__logo
+		display block
+		position absolute
+		border none
+		top 1rem
+		right 1rem
+		width 2rem
+		+mq('bp-m')
+			width 2rem
+			margin-bottom 1rem
+	
+	.sidebar__toggle
+		display block
+		position absolute
+		border none
+		top 50%
+		right 1rem
+		width 2rem
+		transform translateY(-50%)
+		span
+			display block
+			&.is-hidden
+				display none
+		svg
+			width 2rem
+			height auto
+			display block
+		
+	.menu__links li
+		margin-bottom 0.5rem
+		set-type-size(medium)
+		a
+			border none
+			font-family $sans-display
+
+	.menu__patreon
+		margin-top 2rem
+		set-type-size(medium, false)
+		line-height 1.2
+
+	.menu__patreon a
+		display inline-block
+		font-weight 700
+		color $bg
+		border none
+		padding 0.5rem 1rem
+		font-weight 900
+		font-family $sans-display
+		set-type-size(root, false)
+		line-height 1
+		text-transform uppercase
+		margin-top 1rem
+	
+	.menu__tagline
+		margin-top 1.5rem
+		margin-bottom 1.5rem
+		set-type-size(large, false)
+		line-height 1.2
+		font-weight 700

@@ -180,6 +180,79 @@
 			</div>
 
 		</header>
+
+		<aside class='sidebar'>
+			
+			<a class='sidebar__logo' href='../../' aria-label='The Pudding homepage'>
+				<svg id="logo" x="0px" y="0px" style="enable-background:new 0 0 75 110;" xml:space="preserve" viewBox="0 0 75 110">
+<style type="text/css">
+	.st0{fill:#282828;}
+	.st1{fill:#777777;}
+</style>
+<g id="rightP">
+	<path class="st0" d="M67.2,14.1C62.6,4.8,55.3,3.8,48.1,7.6c-5.8,3.1-22.3,13.1-22.3,13.1v11.8c0,0,18.8-10.9,22.3-12.7
+		c4.3-2.3,8.7-1.6,11.5,3.9c2.8,5.6,2.7,15-1.8,22.5c-3.5,5.9-6.8,8.6-9.9,10.3S25.8,69.4,25.8,69.4v11.8c0,0,16.8-9.6,22-12.4
+		c5.1-2.8,10.5-7.3,16.4-17.1C71.7,39.1,71.8,23.4,67.2,14.1z"/>
+	<path class="st0" d="M50.8,40.9c1.5-2.5,1.5-5.6,0.6-7.4c-0.9-1.8-2.4-2-3.8-1.3c-1.1,0.6-21.9,12.4-21.9,12.4v11.8
+		c0,0,20.8-11.6,21.8-12.2C48.6,43.7,49.7,42.8,50.8,40.9z"/>
+	<path class="st0" d="M25.8,105.5l11-6.3V87.4l-11,6.3V105.5z"/>
+</g>
+<g id="leftP">
+	<path class="st1" d="M25.8,32.5l-11-6.4V14.3l11,6.4V32.5z"/>
+	<path class="st1" d="M25.8,56.4l-22-12.6V32l22,12.6V56.4z"/>
+	<path class="st1" d="M25.8,81.1l-5.6-3.2V66.1l5.6,3.2V81.1z"/>
+	<path class="st1" d="M25.8,105.5L9.5,96.1V84.3l16.3,9.4V105.5z"/>
+</g>
+</svg>
+			</a>
+			
+			<btn class='sidebar__toggle'>
+				<span class='toggle--on'>
+					<svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-menu" viewBox="0 0 24 24"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+				</span>
+				<span class='toggle--off is-hidden'>
+					<svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-x" viewBox="0 0 24 24"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+				</span>
+			</btn>
+
+			<div class='sidebar__content'>
+				<p class='menu__tagline'>The Pudding explains ideas debated in culture with visual essays.</p>
+					<ul class='menu__links'>
+						<li><a onclick="trackOutboundLink('../../about'); return false;" href='../../about'>About</a></li>
+						<li><a onclick="trackOutboundLink('../../topics'); return false;" href='../../topics'>Topics</a></li>
+						<li><a onclick="trackOutboundLink('../../archives'); return false;" href='../../archives'>Archives</a></li>
+						<li><a onclick="trackOutboundLink('http://eepurl.com/czym6f'); return false;" href='http://eepurl.com/czym6f' target='_blank'>Join our Newsletter</a></li>
+					</ul>
+				<p class='menu__patreon'>We pour our ❤️ into these stories, but they take time and money. For just $1/month, you can help support us. Join our growing community of data-driven enthusiasts.<br><a class='random-background' href='https://www.patreon.com/thepudding' target='_blank' onclick='trackOutboundLink("https://www.patreon.com/thepudding"); return false;'>Help fund us</a></p>
+			</div>
+			
+			// <ul class='sidebar__social'>
+			// 	<li><a target='_blank' onclick="trackOutboundLink('https://www.instagram.com/pudding.cool'); return false;" href='https://www.instagram.com/pudding.cool' class='logo--instagram'><svg width="24" height="24" x="0px" y="0px" enable-background="new 0 0 24 24" xml:space="preserve" viewBox="0 0 24 24">
+<path d="M17,23H7c-3.3,0-6-2.7-6-6V7c0-3.3,2.7-6,6-6h10c3.3,0,6,2.7,6,6v10C23,20.3,20.3,23,17,23z M7,3C4.8,3,3,4.8,3,7v10
+	c0,2.2,1.8,4,4,4h10c2.2,0,4-1.8,4-4V7c0-2.2-1.8-4-4-4H7z"/>
+<path d="M12,17c-1.1,0-2.1-0.3-3-1c-1.1-0.8-1.8-2-2-3.3C6.7,10,8.6,7.4,11.3,7c0.5-0.1,1-0.1,1.5,0c2.2,0.3,3.9,2,4.2,4.2l0,0
+	c0.2,1.3-0.1,2.6-0.9,3.7c-0.8,1.1-2,1.8-3.3,2C12.5,16.9,12.3,17,12,17z M12,9c-0.1,0-0.3,0-0.4,0c-1.6,0.2-2.8,1.8-2.5,3.4
+	c0.2,1.6,1.8,2.8,3.4,2.5c0.8-0.1,1.5-0.5,2-1.2s0.7-1.4,0.6-2.2l0,0c-0.2-1.3-1.2-2.3-2.5-2.5C12.3,9,12.2,9,12,9z"/>
+<path d="M17.5,7.5c-0.3,0-0.5-0.1-0.7-0.3c-0.1-0.1-0.2-0.2-0.2-0.3c-0.1-0.1-0.1-0.2-0.1-0.4c0-0.3,0.1-0.5,0.3-0.7
+	c0.4-0.4,1-0.4,1.4,0c0.2,0.2,0.3,0.4,0.3,0.7c0,0.1,0,0.3-0.1,0.4s-0.1,0.2-0.2,0.3C18,7.4,17.8,7.5,17.5,7.5z"/>
+</svg></a></li>
+			// 	<li><a target='_blank' onclick="trackOutboundLink('https://twitter.com/puddingviz''); return false;" href='https://twitter.com/puddingviz' class='logo--twitter'><svg width="24" height="24" fill="#000" stroke="currentColor" stroke-width="0" stroke-linecap="round" stroke-linejoin="round" class="feather feather-twitter" viewBox="0 0 24 24"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path></svg></a></li>
+			// 	<li><a target='_blank' onclick="trackOutboundLink('https://www.facebook.com/pudding.viz'); return false;" href='https://www.facebook.com/pudding.viz/' class='logo--facebook'><svg width="24" height="24" fill="#000000" stroke="currentColor" stroke-width=".2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-facebook" viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg></a></li>
+			// 	<li><a target='_blank' onclick="trackOutboundLink('https://www.patreon.com/thepudding'); return false;" href='https://www.patreon.com/thepudding' class='logo--patreon'><svg width="24" height="24" x="0px" y="0px" enable-background="new 0 0 24 24" xml:space="preserve" viewBox="0 0 24 24">
+<g>
+	
+		<path fill-rule="evenodd" clip-rule="evenodd" stroke="#000000" stroke-width="0.2" stroke-linecap="round" stroke-linejoin="round" d="
+		M15.7,3.3c-3.7,0-6.8,3-6.8,6.8c0,3.7,3,6.7,6.8,6.7c3.7,0,6.7-3,6.7-6.7C22.4,6.3,19.4,3.3,15.7,3.3"/>
+	
+		<rect x="3.7" y="3.3" stroke="#000000" stroke-width="0.2" stroke-linecap="round" stroke-linejoin="round" width="3.3" height="18"/>
+</g>
+</svg></a></li>
+			// </ul>
+
+			
+
+								
+		</aside>
 	
 	<main id='content'>
 		<section class='author'>
@@ -219,9 +292,11 @@
 				<a href='//pudding.cool/2019/03/hype'>
 					<h3 class='item__hed'>How Many High School Stars Make It in the NBA?</h3>
 				</a>
-				<p class='item__dek'>Every year the top high school basketball recruits get hyped up—do they pan out?</p>
-				<time class='item__time' datetime='2019-03-04T05:00:00.000Z'></time>
-				<p class='item__author'>By <a href='../../author/amber-thomas'>Amber Thomas</a>, <a href='../../author/russell-goldenberg'>Russell Goldenberg</a></p>
+				<div class='info__details'>
+					<p class='item__dek'>Every year the top high school basketball recruits get hyped up—do they pan out?</p>
+					<time class='item__time' datetime='2019-03-04T05:00:00.000Z'></time>
+					<cite class='item__author'>By <a href='../../author/amber-thomas'>Amber Thomas</a>, <a href='../../author/russell-goldenberg'>Russell Goldenberg</a></cite>
+				</div>
 			</div>
 		</div>
 	</li><li>
@@ -236,9 +311,11 @@
 				<a href='//pudding.cool/2019/02/dress-code-sexualization'>
 					<h3 class='item__hed'>The Sexualized Messages Dress Codes are Sending to Students</h3>
 				</a>
-				<p class='item__dek'>What we learned about sexualization from analyzing 481 high school dress codes</p>
-				<time class='item__time' datetime='2019-02-07T05:00:00.000Z'></time>
-				<p class='item__author'>By <a href='../../author/amber-thomas'>Amber Thomas</a></p>
+				<div class='info__details'>
+					<p class='item__dek'>What we learned about sexualization from analyzing 481 high school dress codes</p>
+					<time class='item__time' datetime='2019-02-07T05:00:00.000Z'></time>
+					<cite class='item__author'>By <a href='../../author/amber-thomas'>Amber Thomas</a></cite>
+				</div>
 			</div>
 		</div>
 	</li><li>
@@ -253,9 +330,11 @@
 				<a href='//pudding.cool/2018/11/boy-bands'>
 					<h3 class='item__hed'>Internet Boy Band Database</h3>
 				</a>
-				<p class='item__dek'>Every boy band to chart the Hot 100 since 1980</p>
-				<time class='item__time' datetime='2018-11-27T05:00:00.000Z'></time>
-				<p class='item__author'>By <a href='../../author/russell-goldenberg'>Russell Goldenberg</a>, <a href='../../author/amber-thomas'>Amber Thomas</a>, <a href='../../author/malik-yusuf'>Malik Yusuf</a></p>
+				<div class='info__details'>
+					<p class='item__dek'>Every boy band to chart the Hot 100 since 1980</p>
+					<time class='item__time' datetime='2018-11-27T05:00:00.000Z'></time>
+					<cite class='item__author'>By <a href='../../author/russell-goldenberg'>Russell Goldenberg</a>, <a href='../../author/amber-thomas'>Amber Thomas</a>, <a href='../../author/malik-yusuf'>Malik Yusuf</a></cite>
+				</div>
 			</div>
 		</div>
 	</li><li>
@@ -270,9 +349,11 @@
 				<a href='//pudding.cool/2018/08/pockets'>
 					<h3 class='item__hed'>Women's Pockets are Inferior</h3>
 				</a>
-				<p class='item__dek'>You already know this. But now we've got the data to show it.</p>
-				<time class='item__time' datetime='2018-08-15T04:00:00.000Z'></time>
-				<p class='item__author'>By <a href='../../author/jan-diehm'>Jan Diehm</a>, <a href='../../author/amber-thomas'>Amber Thomas</a></p>
+				<div class='info__details'>
+					<p class='item__dek'>You already know this. But now we've got the data to show it.</p>
+					<time class='item__time' datetime='2018-08-15T04:00:00.000Z'></time>
+					<cite class='item__author'>By <a href='../../author/jan-diehm'>Jan Diehm</a>, <a href='../../author/amber-thomas'>Amber Thomas</a></cite>
+				</div>
 			</div>
 		</div>
 	</li><li>
@@ -287,9 +368,11 @@
 				<a href='//pudding.cool/process/flexbox-layout'>
 					<h3 class='item__hed'>Making Data Viz Without SVG Using D3 and Flexbox</h3>
 				</a>
-				<p class='item__dek'>Bye bye tricky SVG alignments. Hello SVG-free data viz!</p>
-				<time class='item__time' datetime='2018-07-20T04:00:00.000Z'></time>
-				<p class='item__author'>By <a href='../../author/amber-thomas'>Amber Thomas</a></p>
+				<div class='info__details'>
+					<p class='item__dek'>Bye bye tricky SVG alignments. Hello SVG-free data viz!</p>
+					<time class='item__time' datetime='2018-07-20T04:00:00.000Z'></time>
+					<cite class='item__author'>By <a href='../../author/amber-thomas'>Amber Thomas</a></cite>
+				</div>
 			</div>
 		</div>
 	</li><li>
@@ -304,9 +387,11 @@
 				<a href='//pudding.cool/2018/07/birth_control'>
 					<h3 class='item__hed'>Let’s Talk About Birth Control</h3>
 				</a>
-				<p class='item__dek'>No TMI here, just 20,759 people describing their experiences with contraception.</p>
-				<time class='item__time' datetime='2018-07-17T04:00:00.000Z'></time>
-				<p class='item__author'>By <a href='../../author/amber-thomas'>Amber Thomas</a></p>
+				<div class='info__details'>
+					<p class='item__dek'>No TMI here, just 20,759 people describing their experiences with contraception.</p>
+					<time class='item__time' datetime='2018-07-17T04:00:00.000Z'></time>
+					<cite class='item__author'>By <a href='../../author/amber-thomas'>Amber Thomas</a></cite>
+				</div>
 			</div>
 		</div>
 	</li><li>
@@ -321,9 +406,11 @@
 				<a href='//pudding.cool/2018/06/makeup-shades'>
 					<h3 class='item__hed'>The Diversity of Makeup Shades</h3>
 				</a>
-				<p class='item__dek'>Fenty Beauty is a champion for makeup inclusivity. How do other brands compare?</p>
-				<time class='item__time' datetime='2018-06-13T04:00:00.000Z'></time>
-				<p class='item__author'>By <a href='../../author/jason-li'>Jason Li</a>, <a href='../../author/amber-thomas'>Amber Thomas</a>, <a href='../../author/divya-manian'>Divya Manian</a></p>
+				<div class='info__details'>
+					<p class='item__dek'>Fenty Beauty is a champion for makeup inclusivity. How do other brands compare?</p>
+					<time class='item__time' datetime='2018-06-13T04:00:00.000Z'></time>
+					<cite class='item__author'>By <a href='../../author/jason-li'>Jason Li</a>, <a href='../../author/amber-thomas'>Amber Thomas</a>, <a href='../../author/divya-manian'>Divya Manian</a></cite>
+				</div>
 			</div>
 		</div>
 	</li><li>
@@ -338,9 +425,11 @@
 				<a href='//pudding.cool/2018/05/cookies'>
 					<h3 class='item__hed'>Baking the Most Average Chocolate Chip Cookie</h3>
 				</a>
-				<p class='item__dek'>Cookie recipes written by computers — what could go wrong?</p>
-				<time class='item__time' datetime='2018-05-10T04:00:00.000Z'></time>
-				<p class='item__author'>By <a href='../../author/elle-obrien'>Elle O’Brien</a>, <a href='../../author/amber-thomas'>Amber Thomas</a></p>
+				<div class='info__details'>
+					<p class='item__dek'>Cookie recipes written by computers — what could go wrong?</p>
+					<time class='item__time' datetime='2018-05-10T04:00:00.000Z'></time>
+					<cite class='item__author'>By <a href='../../author/elle-obrien'>Elle O’Brien</a>, <a href='../../author/amber-thomas'>Amber Thomas</a></cite>
+				</div>
 			</div>
 		</div>
 	</li><li>
@@ -355,9 +444,11 @@
 				<a href='//pudding.cool/2018/03/neighborhoods'>
 					<h3 class='item__hed'>A Tale of Two Cities</h3>
 				</a>
-				<p class='item__dek'>Using data to write love letters to the cities we call home</p>
-				<time class='item__time' datetime='2018-03-21T04:00:00.000Z'></time>
-				<p class='item__author'>By <a href='../../author/amber-thomas'>Amber Thomas</a>, <a href='../../author/ilia-blinderman'>Ilia Blinderman</a></p>
+				<div class='info__details'>
+					<p class='item__dek'>Using data to write love letters to the cities we call home</p>
+					<time class='item__time' datetime='2018-03-21T04:00:00.000Z'></time>
+					<cite class='item__author'>By <a href='../../author/amber-thomas'>Amber Thomas</a>, <a href='../../author/ilia-blinderman'>Ilia Blinderman</a></cite>
+				</div>
 			</div>
 		</div>
 	</li><li>
@@ -372,9 +463,11 @@
 				<a href='//pudding.cool/2018/01/mars-weather'>
 					<h3 class='item__hed'>Greetings from Mars</h3>
 				</a>
-				<p class='item__dek'>Exploring today's weather on Mars and in your area with the Curiosity Rover</p>
-				<time class='item__time' datetime='2018-01-31T05:00:00.000Z'></time>
-				<p class='item__author'>By <a href='../../author/amber-thomas'>Amber Thomas</a></p>
+				<div class='info__details'>
+					<p class='item__dek'>Exploring today's weather on Mars and in your area with the Curiosity Rover</p>
+					<time class='item__time' datetime='2018-01-31T05:00:00.000Z'></time>
+					<cite class='item__author'>By <a href='../../author/amber-thomas'>Amber Thomas</a></cite>
+				</div>
 			</div>
 		</div>
 	</li><li>
@@ -389,9 +482,11 @@
 				<a href='//pudding.cool/2017/12/hater'>
 					<h3 class='item__hed'>10 Things Everyone Hates About You</h3>
 				</a>
-				<p class='item__dek'>Exploring over 30 million feelings towards 3,000+ topics</p>
-				<time class='item__time' datetime='2017-12-04T05:00:00.000Z'></time>
-				<p class='item__author'>By <a href='../../author/russell-goldenberg'>Russell Goldenberg</a>, <a href='../../author/amber-thomas'>Amber Thomas</a></p>
+				<div class='info__details'>
+					<p class='item__dek'>Exploring over 30 million feelings towards 3,000+ topics</p>
+					<time class='item__time' datetime='2017-12-04T05:00:00.000Z'></time>
+					<cite class='item__author'>By <a href='../../author/russell-goldenberg'>Russell Goldenberg</a>, <a href='../../author/amber-thomas'>Amber Thomas</a></cite>
+				</div>
 			</div>
 		</div>
 	</li><li>
@@ -406,9 +501,11 @@
 				<a href='//pudding.cool/2017/10/asne'>
 					<h3 class='item__hed'>Newspapers: A Black & White Issue</h3>
 				</a>
-				<p class='item__dek'>Measuring racial diversity in journalism</p>
-				<time class='item__time' datetime='2017-10-12T04:00:00.000Z'></time>
-				<p class='item__author'>By <a href='../../author/matt-daniels'>Matt Daniels</a>, <a href='../../author/amber-thomas'>Amber Thomas</a></p>
+				<div class='info__details'>
+					<p class='item__dek'>Measuring racial diversity in journalism</p>
+					<time class='item__time' datetime='2017-10-12T04:00:00.000Z'></time>
+					<cite class='item__author'>By <a href='../../author/matt-daniels'>Matt Daniels</a>, <a href='../../author/amber-thomas'>Amber Thomas</a></cite>
+				</div>
 			</div>
 		</div>
 	</li><li>
@@ -423,9 +520,11 @@
 				<a href='//pudding.cool/2017/09/clinics'>
 					<h3 class='item__hed'>An Analysis of Driving Times to Abortion Clinics in the US</h3>
 				</a>
-				<p class='item__dek'>Mapping the cities and places with the worst access</p>
-				<time class='item__time' datetime='2017-09-07T04:00:00.000Z'></time>
-				<p class='item__author'>By <a href='../../author/russell-goldenberg'>Russell Goldenberg</a>, <a href='../../author/amber-thomas'>Amber Thomas</a>, <a href='../../author/caitlyn-ralph'>Caitlyn Ralph</a></p>
+				<div class='info__details'>
+					<p class='item__dek'>Mapping the cities and places with the worst access</p>
+					<time class='item__time' datetime='2017-09-07T04:00:00.000Z'></time>
+					<cite class='item__author'>By <a href='../../author/russell-goldenberg'>Russell Goldenberg</a>, <a href='../../author/amber-thomas'>Amber Thomas</a>, <a href='../../author/caitlyn-ralph'>Caitlyn Ralph</a></cite>
+				</div>
 			</div>
 		</div>
 	</li><li>
@@ -440,9 +539,11 @@
 				<a href='//pudding.cool/2017/08/screen-direction'>
 					<h3 class='item__hed'>She Giggles, He Gallops</h3>
 				</a>
-				<p class='item__dek'>Analyzing gender tropes in film with screen direction from 2,000 scripts</p>
-				<time class='item__time' datetime='2017-08-22T04:00:00.000Z'></time>
-				<p class='item__author'>By <a href='../../author/julia-silge'>Julia Silge</a>, <a href='../../author/russell-goldenberg'>Russell Goldenberg</a>, <a href='../../author/amber-thomas'>Amber Thomas</a></p>
+				<div class='info__details'>
+					<p class='item__dek'>Analyzing gender tropes in film with screen direction from 2,000 scripts</p>
+					<time class='item__time' datetime='2017-08-22T04:00:00.000Z'></time>
+					<cite class='item__author'>By <a href='../../author/julia-silge'>Julia Silge</a>, <a href='../../author/russell-goldenberg'>Russell Goldenberg</a>, <a href='../../author/amber-thomas'>Amber Thomas</a></cite>
+				</div>
 			</div>
 		</div>
 	</li><li>
@@ -457,9 +558,11 @@
 				<a href='//pudding.cool/2017/07/eating-alone'>
 					<h3 class='item__hed'>The Dining Habits and Companions of Americans</h3>
 				</a>
-				<p class='item__dek'>The frequency of dining alone</p>
-				<time class='item__time' datetime='2017-07-28T04:00:00.000Z'></time>
-				<p class='item__author'>By <a href='../../author/henrik-lindberg'>Henrik Lindberg</a>, <a href='../../author/amber-thomas'>Amber Thomas</a></p>
+				<div class='info__details'>
+					<p class='item__dek'>The frequency of dining alone</p>
+					<time class='item__time' datetime='2017-07-28T04:00:00.000Z'></time>
+					<cite class='item__author'>By <a href='../../author/henrik-lindberg'>Henrik Lindberg</a>, <a href='../../author/amber-thomas'>Amber Thomas</a></cite>
+				</div>
 			</div>
 		</div>
 	</li><li>
@@ -474,9 +577,11 @@
 				<a href='//pudding.cool/2017/07/cetaceans'>
 					<h3 class='item__hed'>Free Willy and Flipper by the Numbers</h3>
 				</a>
-				<p class='item__dek'>The past, present, and future of captive whales and dolphins</p>
-				<time class='item__time' datetime='2017-07-06T04:00:00.000Z'></time>
-				<p class='item__author'>By <a href='../../author/amber-thomas'>Amber Thomas</a>, <a href='../../author/russell-goldenberg'>Russell Goldenberg</a></p>
+				<div class='info__details'>
+					<p class='item__dek'>The past, present, and future of captive whales and dolphins</p>
+					<time class='item__time' datetime='2017-07-06T04:00:00.000Z'></time>
+					<cite class='item__author'>By <a href='../../author/amber-thomas'>Amber Thomas</a>, <a href='../../author/russell-goldenberg'>Russell Goldenberg</a></cite>
+				</div>
 			</div>
 		</div>
 	</li><li>
@@ -491,9 +596,11 @@
 				<a href='//pudding.cool/2017/05/births'>
 					<h3 class='item__hed'>The Timing of Baby Making</h3>
 				</a>
-				<p class='item__dek'>Births, broken down by geography and month</p>
-				<time class='item__time' datetime='2017-05-24T04:00:00.000Z'></time>
-				<p class='item__author'>By <a href='../../author/amber-thomas'>Amber Thomas</a></p>
+				<div class='info__details'>
+					<p class='item__dek'>Births, broken down by geography and month</p>
+					<time class='item__time' datetime='2017-05-24T04:00:00.000Z'></time>
+					<cite class='item__author'>By <a href='../../author/amber-thomas'>Amber Thomas</a></cite>
+				</div>
 			</div>
 		</div>
 	</li>

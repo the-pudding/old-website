@@ -142,6 +142,44 @@
 			</div>
 
 		</header>
+
+		<aside class='sidebar'>
+			
+			<a class='sidebar__logo' href='../../' aria-label='The Pudding homepage'>
+				<img inline src='dev/common/assets/svg/pudding-logo.svg'>
+			</a>
+			
+			<btn class='sidebar__toggle'>
+				<span class='toggle--on'>
+					<img inline src='dev/common/assets/svg/menu.svg'>
+				</span>
+				<span class='toggle--off is-hidden'>
+					<img inline src='dev/common/assets/svg/x.svg'>
+				</span>
+			</btn>
+
+			<div class='sidebar__content'>
+				<p class='menu__tagline'>The Pudding explains ideas debated in culture with visual essays.</p>
+					<ul class='menu__links'>
+						<li><a onclick="trackOutboundLink('../../about'); return false;" href='../../about'>About</a></li>
+						<li><a onclick="trackOutboundLink('../../topics'); return false;" href='../../topics'>Topics</a></li>
+						<li><a onclick="trackOutboundLink('../../archives'); return false;" href='../../archives'>Archives</a></li>
+						<li><a onclick="trackOutboundLink('http://eepurl.com/czym6f'); return false;" href='http://eepurl.com/czym6f' target='_blank'>Join our Newsletter</a></li>
+					</ul>
+				<p class='menu__patreon'>We pour our ❤️ into these stories, but they take time and money. For just $1/month, you can help support us. Join our growing community of data-driven enthusiasts.<br><a class='random-background' href='https://www.patreon.com/thepudding' target='_blank' onclick='trackOutboundLink("https://www.patreon.com/thepudding"); return false;'>Help fund us</a></p>
+			</div>
+			
+			// <ul class='sidebar__social'>
+			// 	<li><a target='_blank' onclick="trackOutboundLink('https://www.instagram.com/pudding.cool'); return false;" href='https://www.instagram.com/pudding.cool' class='logo--instagram'><img inline src='dev/common/assets/svg/instagram.svg'></a></li>
+			// 	<li><a target='_blank' onclick="trackOutboundLink('https://twitter.com/puddingviz''); return false;" href='https://twitter.com/puddingviz' class='logo--twitter'><img inline src='dev/common/assets/svg/twitter.svg'></a></li>
+			// 	<li><a target='_blank' onclick="trackOutboundLink('https://www.facebook.com/pudding.viz'); return false;" href='https://www.facebook.com/pudding.viz/' class='logo--facebook'><img inline src='dev/common/assets/svg/facebook.svg'></a></li>
+			// 	<li><a target='_blank' onclick="trackOutboundLink('https://www.patreon.com/thepudding'); return false;" href='https://www.patreon.com/thepudding' class='logo--patreon'><img inline src='dev/common/assets/svg/patreon.svg'></a></li>
+			// </ul>
+
+			
+
+								
+		</aside>
 	
 	<main id='content'>
 		<section class='author'>
@@ -181,9 +219,11 @@
 				<a href='//pudding.cool/2018/12/brief-history'>
 					<h3 class='item__hed'>A Brief History of the Past 100 Years</h3>
 				</a>
-				<p class='item__dek'>An analysis of 12 decades of New York Times headlines</p>
-				<time class='item__time' datetime='2018-12-19T05:00:00.000Z'></time>
-				<p class='item__author'>By <a href='../../author/ilia-blinderman'>Ilia Blinderman</a>, <a href='../../author/jan-diehm'>Jan Diehm</a></p>
+				<div class='info__details'>
+					<p class='item__dek'>An analysis of 12 decades of New York Times headlines</p>
+					<time class='item__time' datetime='2018-12-19T05:00:00.000Z'></time>
+					<cite class='item__author'>By <a href='../../author/ilia-blinderman'>Ilia Blinderman</a>, <a href='../../author/jan-diehm'>Jan Diehm</a></cite>
+				</div>
 			</div>
 		</div>
 	</li><li>
@@ -198,9 +238,11 @@
 				<a href='//pudding.cool/2018/11/dearabby'>
 					<h3 class='item__hed'>30 Years of American Anxieties</h3>
 				</a>
-				<p class='item__dek'>What 20,000 letters to an advice columnist tell us about what concerns us most.</p>
-				<time class='item__time' datetime='2018-11-13T05:00:00.000Z'></time>
-				<p class='item__author'>By <a href='../../author/ilia-blinderman'>Ilia Blinderman</a>, <a href='../../author/caitlyn-ralph'>Caitlyn Ralph</a></p>
+				<div class='info__details'>
+					<p class='item__dek'>What 20,000 letters to an advice columnist tell us about what concerns us most.</p>
+					<time class='item__time' datetime='2018-11-13T05:00:00.000Z'></time>
+					<cite class='item__author'>By <a href='../../author/ilia-blinderman'>Ilia Blinderman</a>, <a href='../../author/caitlyn-ralph'>Caitlyn Ralph</a></cite>
+				</div>
 			</div>
 		</div>
 	</li><li>
@@ -215,9 +257,11 @@
 				<a href='//pudding.cool/2018/09/wiki-billboard'>
 					<h3 class='item__hed'>The Celebrity Billboard Project</h3>
 				</a>
-				<p class='item__dek'>Tracking the popularity of cultural figures in 2018</p>
-				<time class='item__time' datetime='2018-09-11T04:00:00.000Z'></time>
-				<p class='item__author'>By <a href='../../author/russell-goldenberg'>Russell Goldenberg</a>, <a href='../../author/ilia-blinderman'>Ilia Blinderman</a>, <a href='../../author/caitlyn-ralph'>Caitlyn Ralph</a></p>
+				<div class='info__details'>
+					<p class='item__dek'>Tracking the popularity of cultural figures in 2018</p>
+					<time class='item__time' datetime='2018-09-11T04:00:00.000Z'></time>
+					<cite class='item__author'>By <a href='../../author/russell-goldenberg'>Russell Goldenberg</a>, <a href='../../author/ilia-blinderman'>Ilia Blinderman</a>, <a href='../../author/caitlyn-ralph'>Caitlyn Ralph</a></cite>
+				</div>
 			</div>
 		</div>
 	</li><li>
@@ -232,9 +276,11 @@
 				<a href='//pudding.cool/2018/08/retraining'>
 					<h3 class='item__hed'>Tech Jobs may not Solve America’s Looming Automation Crisis</h3>
 				</a>
-				<p class='item__dek'>Tech retraining programs are becoming more popular. They may not be a solution.</p>
-				<time class='item__time' datetime='2018-08-02T04:00:00.000Z'></time>
-				<p class='item__author'>By <a href='../../author/jordan-dworkin'>Jordan Dworkin</a>, <a href='../../author/ilia-blinderman'>Ilia Blinderman</a></p>
+				<div class='info__details'>
+					<p class='item__dek'>Tech retraining programs are becoming more popular. They may not be a solution.</p>
+					<time class='item__time' datetime='2018-08-02T04:00:00.000Z'></time>
+					<cite class='item__author'>By <a href='../../author/jordan-dworkin'>Jordan Dworkin</a>, <a href='../../author/ilia-blinderman'>Ilia Blinderman</a></cite>
+				</div>
 			</div>
 		</div>
 	</li><li>
@@ -249,9 +295,11 @@
 				<a href='//pudding.cool/2018/03/neighborhoods'>
 					<h3 class='item__hed'>A Tale of Two Cities</h3>
 				</a>
-				<p class='item__dek'>Using data to write love letters to the cities we call home</p>
-				<time class='item__time' datetime='2018-03-21T04:00:00.000Z'></time>
-				<p class='item__author'>By <a href='../../author/amber-thomas'>Amber Thomas</a>, <a href='../../author/ilia-blinderman'>Ilia Blinderman</a></p>
+				<div class='info__details'>
+					<p class='item__dek'>Using data to write love letters to the cities we call home</p>
+					<time class='item__time' datetime='2018-03-21T04:00:00.000Z'></time>
+					<cite class='item__author'>By <a href='../../author/amber-thomas'>Amber Thomas</a>, <a href='../../author/ilia-blinderman'>Ilia Blinderman</a></cite>
+				</div>
 			</div>
 		</div>
 	</li><li>
@@ -266,9 +314,11 @@
 				<a href='//pudding.cool/process/how-to-make-dope-shit-part-2'>
 					<h3 class='item__hed'>How to Make Dope Shit Part 2: Design</h3>
 				</a>
-				<p class='item__dek'>Some pointers on learning to design data-driven visual essays.</p>
-				<time class='item__time' datetime='2017-11-01T04:00:00.000Z'></time>
-				<p class='item__author'>By <a href='../../author/ilia-blinderman'>Ilia Blinderman</a></p>
+				<div class='info__details'>
+					<p class='item__dek'>Some pointers on learning to design data-driven visual essays.</p>
+					<time class='item__time' datetime='2017-11-01T04:00:00.000Z'></time>
+					<cite class='item__author'>By <a href='../../author/ilia-blinderman'>Ilia Blinderman</a></cite>
+				</div>
 			</div>
 		</div>
 	</li><li>
@@ -283,9 +333,11 @@
 				<a href='//pudding.cool/process/how-to-make-dope-shit-part-1'>
 					<h3 class='item__hed'>How to Make Dope Shit Part 1: Working with Data</h3>
 				</a>
-				<p class='item__dek'>Familiarize yourself with the tools used to make visual, data-driven essays.</p>
-				<time class='item__time' datetime='2017-08-13T04:00:00.000Z'></time>
-				<p class='item__author'>By <a href='../../author/ilia-blinderman'>Ilia Blinderman</a></p>
+				<div class='info__details'>
+					<p class='item__dek'>Familiarize yourself with the tools used to make visual, data-driven essays.</p>
+					<time class='item__time' datetime='2017-08-13T04:00:00.000Z'></time>
+					<cite class='item__author'>By <a href='../../author/ilia-blinderman'>Ilia Blinderman</a></cite>
+				</div>
 			</div>
 		</div>
 	</li><li>
@@ -300,9 +352,11 @@
 				<a href='//pudding.cool/2017/07/jobs'>
 					<h3 class='item__hed'>Why the Republican Party Wins When Robots Take Your Job</h3>
 				</a>
-				<p class='item__dek'>Job automation is only a matter of time. Here's why the right will benefit.</p>
-				<time class='item__time' datetime='2017-07-11T04:00:00.000Z'></time>
-				<p class='item__author'>By <a href='../../author/ilia-blinderman'>Ilia Blinderman</a></p>
+				<div class='info__details'>
+					<p class='item__dek'>Job automation is only a matter of time. Here's why the right will benefit.</p>
+					<time class='item__time' datetime='2017-07-11T04:00:00.000Z'></time>
+					<cite class='item__author'>By <a href='../../author/ilia-blinderman'>Ilia Blinderman</a></cite>
+				</div>
 			</div>
 		</div>
 	</li><li>
@@ -317,9 +371,11 @@
 				<a href='//pudding.cool/process/regional_smoothing'>
 					<h3 class='item__hed'>Regional Smoothing in R</h3>
 				</a>
-				<p class='item__dek'>A guide to smoothing geospatial data in R</p>
-				<time class='item__time' datetime='2017-05-11T04:00:00.000Z'></time>
-				<p class='item__author'>By <a href='../../author/ilia-blinderman'>Ilia Blinderman</a></p>
+				<div class='info__details'>
+					<p class='item__dek'>A guide to smoothing geospatial data in R</p>
+					<time class='item__time' datetime='2017-05-11T04:00:00.000Z'></time>
+					<cite class='item__author'>By <a href='../../author/ilia-blinderman'>Ilia Blinderman</a></cite>
+				</div>
 			</div>
 		</div>
 	</li><li>
@@ -334,9 +390,11 @@
 				<a href='//pudding.cool/2017/02/oscars_so_mapped'>
 					<h3 class='item__hed'>The Geographic Divide of Oscars Films</h3>
 				</a>
-				<p class='item__dek'>Mapping the popularity of Oscar-nominated films in 2017</p>
-				<time class='item__time' datetime='2017-02-23T05:00:00.000Z'></time>
-				<p class='item__author'>By <a href='../../author/matt-daniels'>Matt Daniels</a>, <a href='../../author/russell-goldenberg'>Russell Goldenberg</a>, <a href='../../author/ilia-blinderman'>Ilia Blinderman</a></p>
+				<div class='info__details'>
+					<p class='item__dek'>Mapping the popularity of Oscar-nominated films in 2017</p>
+					<time class='item__time' datetime='2017-02-23T05:00:00.000Z'></time>
+					<cite class='item__author'>By <a href='../../author/matt-daniels'>Matt Daniels</a>, <a href='../../author/russell-goldenberg'>Russell Goldenberg</a>, <a href='../../author/ilia-blinderman'>Ilia Blinderman</a></cite>
+				</div>
 			</div>
 		</div>
 	</li><li>
@@ -351,9 +409,11 @@
 				<a href='//pudding.cool/2017/03/bechdel'>
 					<h3 class='item__hed'>Hollywood's Gender Divide and its Effect on Films</h3>
 				</a>
-				<p class='item__dek'>The writers, directors, and producers who make films that fail the Bechdel test</p>
-				<time class='item__time' datetime='2016-01-01T05:00:00.000Z'></time>
-				<p class='item__author'>By <a href='../../author/matt-daniels'>Matt Daniels</a>, <a href='../../author/ilia-blinderman'>Ilia Blinderman</a></p>
+				<div class='info__details'>
+					<p class='item__dek'>The writers, directors, and producers who make films that fail the Bechdel test</p>
+					<time class='item__time' datetime='2016-01-01T05:00:00.000Z'></time>
+					<cite class='item__author'>By <a href='../../author/matt-daniels'>Matt Daniels</a>, <a href='../../author/ilia-blinderman'>Ilia Blinderman</a></cite>
+				</div>
 			</div>
 		</div>
 	</li>

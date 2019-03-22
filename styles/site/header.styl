@@ -1,6 +1,6 @@
 header
 	width 100%
-	padding 0.5rem 0
+	padding 0
 	max-width $main-width
 	margin 0 auto
 	
@@ -19,7 +19,6 @@ header
 		position relative
 		transform none
 		box-shadow none
-		padding-top 1.25rem
 		padding-bottom 1rem
 
 	.header__top
@@ -90,6 +89,11 @@ header
 			color $bg
 			font-family $sans-display
 			cursor pointer
+			&:hover
+				background-color $gray-dark
+		
+		svg:hover
+			fill $gray-dark
 
 	.cta__newsletter
 		display flex
@@ -100,6 +104,9 @@ header
 		+mq('bp-m')
 			margin 0
 			flex-wrap nowrap
+
+		form
+			display flex
 
 		input
 			set-type-size(small, false)
@@ -114,7 +121,8 @@ header
 
 		.newsletter__input
 			width 10rem
-			padding 0.6rem
+			height 2.5rem
+			padding 0 0.5rem
 			
 		p
 			margin 0
@@ -151,153 +159,3 @@ header
 		a
 			border none
 			margin-right 0.5rem
-
-	
-
-
-	// .header__sidebar
-	// 	position fixed
-	// 	top 0
-	// 	left 0
-	// 	padding 0.5rem 1rem
-	// 	display flex
-	// 	width 100%
-	// 	justify-content space-between
-	// 	pointer-events none
-		
-	// 	+mq('bp-m')
-	// 		flex-direction column
-	// 		justify-content center
-	// 		width $sidebar-width
-	// 		padding 0
-	// 		padding-top 1rem
-	// 		transform translate3d(0,0,0)
-			
-
-	// 	.sidebar__social
-	// 		padding-right 3.5rem
-	// 		pointer-events auto
-	// 		+mq('bp-m')
-	// 			padding-right 0
-
-	// 		svg
-	// 			fill $gray
-
-	// 	a
-	// 		display block
-	// 		border none
-	// 		+mq('bp-m')
-	// 			margin 0 auto
-
-	// 	.header__logo
-	// 		width 2rem
-	// 		+mq('bp-m')
-	// 			width 3rem
-	// 			margin-bottom 1rem
-
-	// 	ul
-	// 		display flex
-	// 		flex-direction row
-	// 		align-items center
-	// 		+mq('bp-m')
-	// 			flex-direction column
-	// 			padding-right 1rem
-	// 		li
-	// 			display block
-	// 			line-height 1
-	// 			&:nth-child(n+3)
-	// 				display none
-	// 			+mq('bp-3')
-	// 				&:nth-child(n+3)
-	// 					display block
-	// 			+mq('bp-m')
-	// 				margin-bottom 0.5rem
-	// 				&:last-of-type
-	// 					display block
-	// 		a
-	// 			width 2rem
-	// 			text-align center
-	// 			+mq('bp-m')
-	// 				text-align left
-
-				
-	// .header__menu
-	// 	position fixed
-	// 	top 0
-	// 	right 0
-	// 	transform translateX(100%)
-	// 	height 100vh
-	// 	width 100%
-	// 	max-width 28rem
-	// 	padding 1rem 1.5rem
-	// 	background-color $fg
-	// 	color $off-white
-	// 	z-index set-index(overlay)
-	// 	transition transform 200ms ease-in-out
-	// 	+mq('bp-3')
-	// 		border-left 1px solid $gray-dark
-
-	// 	&.is-visible
-	// 		transform translateX(0)
-
-	// 	a
-	// 		color $off-white
-	// 		border-bottom 1px solid $off-white
-	// 		&:hover
-	// 			color $gray-light
-
-	// 	.menu__links li
-	// 		margin-bottom 0.5rem
-	// 		set-type-size(medium)
-	// 		a
-	// 			border none
-
-
-	// 	.menu__patreon
-	// 		margin-top 3rem
-	// 		font-size 20px
-	// 		line-height 1.2
-
-	// 	.menu__patreon a
-	// 		display inline-block
-	// 		font-weight 700
-	// 		color $bg
-	// 		border 1px solid $bg
-	// 		padding 0.5em 0.75em
-	// 		font-size 0.8em
-	// 		text-transform uppercase
-	// 		margin-top 1rem
-		
-	// 	.menu__tagline
-	// 		margin-top 1.5rem
-	// 		margin-bottom 1.5rem
-	// 		set-type-size(large, false)
-	// 		line-height 1.2
-	// 		font-weight 700
-
-		
-
-
-	// .header__toggle-on
-	// 	position relative
-	// 	display block
-	// 	padding-right 1.5rem
-	// 	cursor pointer
-
-	// 	+mq('bp-m')
-	// 		display none
-
-	// 	svg
-	// 		stroke $gray	
-		
-
-	// .header__toggle-off
-	// 	position absolute
-	// 	top 0.75rem
-	// 	right 0.75rem
-	// 	cursor pointer
-
-	// 	svg
-	// 		stroke $off-white	
-		
-		
