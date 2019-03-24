@@ -11,9 +11,10 @@ header
 		.top__title
 			+mq('bp-m')
 				width 20rem
-		.header__cta
+		.cta__newsletter
 			display flex
-			flex-wrap wrap
+		.cta__patreon
+			display flex
 		.header__tagline
 			display block
 			max-width 52rem
@@ -102,7 +103,8 @@ header
 
 
 	.header__cta
-		display none
+		display flex
+		flex-wrap wrap
 		flex-direction column
 		align-items center
 		font-family $sans-display
@@ -125,7 +127,7 @@ header
 			fill $gray-dark
 
 	.cta__newsletter
-		display flex
+		display none
 		align-items center
 		flex-wrap wrap
 		margin-bottom 2rem
@@ -167,7 +169,7 @@ header
 				margin-right 1rem
 
 	.cta__patreon
-		display flex
+		display none
 		align-items center
 		flex-wrap wrap
 		+mq('bp-m')
