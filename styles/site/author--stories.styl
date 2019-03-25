@@ -16,22 +16,26 @@
 	.story-item
 		display flex
 		flex-wrap wrap
-		+mq('bp-3')
+		+mq('bp-4')
 			flex-wrap nowrap
 	
 	.item__img
 		width 100%
 		min-width 100%
-		+mq('bp-3')
+		+mq('bp-4')
 			width 35%
 			min-width 35%
 
-		+mq('bp-4')
+		+mq('bp-5')
 			width 20%
 			min-width 20%
 
 	.item__info
-		padding 1rem 0 0 1rem
+		padding 1rem 0 0 0
+		+mq('bp-4')
+			padding 0 0 0 1rem
+		+mq('bp-5')
+			padding 1rem 0 0 1rem
 		
 
 	.item__hed
