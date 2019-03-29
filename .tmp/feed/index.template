@@ -8,7 +8,7 @@
 		<link>https://pudding.cool</link>
 		<description>The Pudding is an editorial publication that explains ideas debated in culture with visual essays.</description>
 		<lastBuildDate>
-			Mon, 25 Mar 2019 17:35:42 GMT
+			Fri, 29 Mar 2019 14:06:20 GMT
 		</lastBuildDate>
 		<language>en-US</language>
 		<sy:updatePeriod>daily</sy:updatePeriod>
@@ -20,6 +20,15 @@
 		</image>
 
 		
+<item>
+	<title>Women's Issues Within Political Party Platforms</title>
+	<link>https://pudding.cool/projects/votes-for-women</link>
+	<description>How often do women’s issues appear in party platform documents over time?</description>
+	<category>social></category>
+	<pubDate>Fri, 29 Mar 2019 04:00:00 GMT</pubDate>
+	<guid isPermaLink="false">projects/votes-for-women</guid>
+</item>
+	
 <item>
 	<title>NBA Spelling Bee</title>
 	<link>https://pudding.cool/2019/03/nba-spelling</link>
@@ -144,15 +153,6 @@
 	<category>social></category>
 	<pubDate>Thu, 25 Oct 2018 04:00:00 GMT</pubDate>
 	<guid isPermaLink="false">2018/10/city_3d</guid>
-</item>
-	
-<item>
-	<title>What Does the Path to Fame Look Like?</title>
-	<link>https://pudding.cool/2018/10/wiki-breakout</link>
-	<description>Tracking the rise in popularity from Cardi B to Carson Wentz</description>
-	<category>people></category>
-	<pubDate>Fri, 19 Oct 2018 04:00:00 GMT</pubDate>
-	<guid isPermaLink="false">2018/10/wiki-breakout</guid>
 </item>
 	
 

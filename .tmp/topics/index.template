@@ -1158,6 +1158,25 @@
 			</div>
 		</div>
 	</li></ul><ul data-topic='social'><li>
+		<div class='story-item' data-id='projects/votes-for-women' data-topic='social' data-chart='text' data-keyword='america,gender,history,politics' data-author='russell,jan' data-author_slug='russell-goldenberg, jan-diehm' data-author_name='Russell Goldenberg, Jan Diehm' data-hed='women's issues within political party platforms' data-dek='how often do women’s issues appear in party platform documents over time?' data-date='2019-03-29T04:00:00.000Z' data-views='0'>
+			<div class='item__img'>
+				<a href='//pudding.cool/projects/votes-for-women'>
+					<img src='../common/assets/thumbnails/640/projects_votes-for-women.jpg' alt='Women's Issues Within Political Party Platforms'>
+				</a>
+				
+			</div>
+			<div class='item__info'>
+				<a href='//pudding.cool/projects/votes-for-women'>
+					<h3 class='item__hed'>Women's Issues Within Political Party Platforms</h3>
+				</a>
+				<div class='info__details'>
+					<p class='item__dek'>How often do women’s issues appear in party platform documents over time?</p>
+					<time class='item__time' datetime='2019-03-29T04:00:00.000Z'></time>
+					<cite class='item__author'>By <a href='../author/russell-goldenberg'>Russell Goldenberg</a>, <a href='../author/jan-diehm'>Jan Diehm</a></cite>
+				</div>
+			</div>
+		</div>
+	</li><li>
 		<div class='story-item' data-id='2019/02/dress-code-sexualization' data-topic='social' data-chart='bar chart,waffle chart,histogram,unique' data-keyword='gender,explainer,fashion' data-author='amber' data-author_slug='amber-thomas' data-author_name='Amber Thomas' data-hed='the sexualized messages dress codes are sending to students' data-dek='what we learned about sexualization from analyzing 481 high school dress codes' data-date='2019-02-07T05:00:00.000Z' data-views='16235'>
 			<div class='item__img'>
 				<a href='//pudding.cool/2019/02/dress-code-sexualization'>

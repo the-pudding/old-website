@@ -1,5 +1,42 @@
 [
   {
+    "url": "projects/votes-for-women",
+    "date": "2019-03-29T04:00:00.000Z",
+    "hed": "Women's Issues Within Political Party Platforms",
+    "hed_flag": "47",
+    "dek": "How often do women’s issues appear in party platform documents over time?",
+    "dek_flag": "73",
+    "topic": [
+      "social"
+    ],
+    "pick": "",
+    "footer": "TRUE",
+    "author": [
+      "russell",
+      "jan"
+    ],
+    "hits": "",
+    "keyword": [
+      "america",
+      "gender",
+      "history",
+      "politics"
+    ],
+    "chart": [
+      "text"
+    ],
+    "tech": "",
+    "views_key": "Women's Issues Within Political Party Platforms",
+    "ignore": "",
+    "views": 0,
+    "img": "projects_votes-for-women",
+    "time": "March 2019",
+    "author_html": "<a href='https://pudding.cool/author/russell-goldenberg'>Russell Goldenberg</a>, <a href='https://pudding.cool/author/jan-diehm'>Jan Diehm</a>",
+    "author_name": "Russell Goldenberg, Jan Diehm",
+    "author_slug": "russell-goldenberg, jan-diehm",
+    "image": "projects_votes-for-women"
+  },
+  {
     "url": "2019/03/nba-spelling",
     "date": "2019-03-20T04:00:00.000Z",
     "hed": "NBA Spelling Bee",
