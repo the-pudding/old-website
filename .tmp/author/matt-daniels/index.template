@@ -801,37 +801,37 @@
 				<ul class='footer__cta-list'>
 					<li>
 						<a href='https://facebook.com/pudding.viz/'>
-							<img inline src='dev/common/assets/svg/facebook.svg'></a>
+							<img inline src='dev/common/assets/svg/facebook.svg'>
 							<p>FACEBOOK</p>
 						</a>
 					</li>
 					<li>
 						<a href='https://twitter.com/puddingviz/'>
-							<img inline src='dev/common/assets/svg/twitter.svg'></a>
+							<img inline src='dev/common/assets/svg/twitter.svg'>
 							<p>TWITTER</p>
 						</a>
 					</li>
 					<li>
 						<a href='https://www.instagram.com/pudding.cool'>
-							<img inline src='dev/common/assets/svg/instagram.svg'></a>
+							<img inline src='dev/common/assets/svg/instagram.svg'>
 							<p>INSTAGRAM</p>
 						</a>
 					</li>
 					<li>
 						<a href='https://patreon.com/thepudding/'>
-							<img inline src='dev/common/assets/svg/patreon.svg'></a>
+							<img inline src='dev/common/assets/svg/patreon.svg'>
 							<p>PATREON</p>
 						</a>
 					</li>
 					<li>
 						<a href='http://eepurl.com/czym6f'>
-							<img inline src='dev/common/assets/svg/mail.svg'></a>
+							<img inline src='dev/common/assets/svg/mail.svg'>
 							<p>NEWSLETTER</p>
 						</a>
 					</li>
 					<li>
 						<a href='https://pudding.cool/about'>
-							<img inline src='dev/common/assets/svg/info.svg'></a>
+							<img inline src='dev/common/assets/svg/info.svg'>
 							<p>ABOUT</p>
 						</a>
 					</li>
