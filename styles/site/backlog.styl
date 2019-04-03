@@ -1,0 +1,32 @@
+#page-backlog
+	padding-top 6rem
+	+mq('bp-m')
+		padding-top 0
+	section
+		// border none
+	
+	.idea
+		display flex
+		flex-wrap wrap
+		justify-content flex-start
+		margin-bottom 1rem
+		padding 0.5rem
+
+		p
+			margin 0
+		// p:not(.idea--description)
+		// 	// flex 1
+		p.idea--description
+			width 100%
+			// flex 0 0 100%
+		p.idea--date
+			// flex-shrink 0
+			margin-right 0.5em
+			color $gray-dark
+		p.idea--story
+			font-weight 700
+
+		&.is-seeking
+			border 1px solid $gray
+		
+

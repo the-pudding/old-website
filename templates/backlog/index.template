@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang='en'>
+
+<head>
+
+	<!-- DO NOT REMOVE -->
+	<!-- meta -->
+
+	<link inline rel='stylesheet' href='../common/css/font.css'>
+	<link inline rel='stylesheet' href='../common/css/bundle.css'>
+
+	<!-- smoosh -->
+	<script inline src='../common/js/critical.js'></script>
+	<!-- endsmoosh -->
+
+	<!-- DO NOT REMOVE -->
+	<!-- analytics -->
+</head>
+
+<body id='page-backlog'>
+
+	<!-- DO NOT REMOVE -->
+	<!-- header -->
+	<main id='content'>
+
+		<section class='stories'>
+			<!-- DO NOT REMOVE -->
+			<!-- table -->
+		</section>
+
+	</main>
+
+	<!-- DO NOT REMOVE -->
+	<!-- footer -->
+</body>
+<script src='../common/js/d3.v5.min.js'></script>
+<script inline src='../common/js/general.js'></script>
+<script>
+	/* DO NOT REMOVE */
+	/* entry.js */
+</script>
+
+</html>
