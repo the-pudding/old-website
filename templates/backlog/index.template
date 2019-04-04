@@ -24,6 +24,13 @@
 	<main id='content'>
 
 		<section class='stories'>
+			<div class='section__top'>
+				<p class='section__label random-color'>Story Idea Backlog</p>
+			</div>
+			<p class='description'>The Pudding team regularly updates a spreadsheet that contains new ideas for stories that
+				we could potentially work on. Below is our constantly-updating list of story ideas from that spreadsheet. If any
+				of them excite you, feel free to pitch us your manifestation of the idea. Details <a
+					href='../about/#rubric'>here</a>.</p>
 			<!-- DO NOT REMOVE -->
 			<!-- table -->
 		</section>
