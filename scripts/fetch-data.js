@@ -210,12 +210,40 @@ function initAuthorData() {
   });
 }
 
+function initBacklogData() {
+	console.log('fetching backlog...');
+	
+	const dir = `${cwd}/.tmp/data`;
+	fse.ensureDirSync(dir);
+
+	const urlBacklog = {
+		base: 'https://docs.google.com/spreadsheets/d',
+		param: 'export?format=csv&gid=',
+		doc: '1uXY_VFKbiZGXPgX0xclOyWvmRRCB-kYhIgRwhixwxHw',
+		stories: '0',
+	};
+
+	const urlB = `${urlBacklog.base}/${urlBacklog.doc}/${urlBacklog.param}${urlBacklog.stories}`;
+	return new Promise((resolve, reject) => {
+		request(urlB, (error, response, body) => {
+			if (!error && response.statusCode == 200) {
+				const data = d3.csvParse(body);
+				const json = JSON.stringify(data, null, 2);
+				fse.writeFileSync(`${dir}/backlog.json`, json);
+				resolve();
+			}
+			else reject(error);
+		});
+	});
+}
+
 function init() {
   // make sure there is a .tmp dir
   fse.ensureDirSync(`${cwd}/.tmp`);
   cleanTemp('data')
     .then(initAuthorData)
-    .then(initStoryData)
+		.then(initStoryData)
+		.then(initBacklogData)
     .then(() => {
       console.log('DONE: fetch-data.js');
       process.exit();
