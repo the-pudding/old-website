@@ -44,7 +44,9 @@ function init() {
   // topics
   inlineAssets('topics/');
   // archives
-  inlineAssets('archives/');
+	inlineAssets('archives/');
+	// backlog
+  inlineAssets('backlog/');
   // authors
   const authors = fse
     .readdirSync(`${cwd}/dist/author`)
