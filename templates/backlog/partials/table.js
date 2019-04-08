@@ -15,7 +15,13 @@ const cols = [
 ]
 
 function createTD(d) {
-	return cols.map(c => `<p class='idea--${c}'>${d[c]}</p>`).join('')
+	return cols.map(c => {
+    if (!d[c]) return false
+    if (c === 'seeking' && d[c] === "TRUE") return false
+    const pre = c === 'seeking' ? '<span>Looking for: </span>' : '<span></span>'
+    const cl = c === 'involvement' ? `is-${d[c]}` : ''
+    return `<p class='idea--${c} ${cl}'>${pre}${d[c]}</p>`
+  }).filter(d => d).join('')
 }
 
 function createHTML() {
@@ -25,7 +31,7 @@ function createHTML() {
 	.join('');
 	const regularHTML = regularData.map(d => `<div class='idea'>${createTD(d)}</div>`)
 		.join('');
-	
+
 	return `
 		<div class='ideas--seeking'>${seekingHTML}</div>
 		<div class='ideas--regular'>${regularHTML}</div>

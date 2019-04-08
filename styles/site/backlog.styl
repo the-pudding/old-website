@@ -4,13 +4,14 @@
 		padding-top 0
 	section
 		// border none
-	
+
 	.idea
+		max-width 50rem
 		display flex
 		flex-wrap wrap
 		justify-content flex-start
-		margin-bottom 1rem
-		padding 0.5rem
+		margin-bottom 1.5rem
+		padding 1rem
 
 		p
 			margin 0
@@ -25,18 +26,49 @@
 			color $gray-dark
 		p.idea--story
 			font-weight 700
+			margin-right 0.5rem
+		p.idea--involvement
+			padding 0 0.25rem
+			border-radius 0.25rem
+			&:empty
+				display none
+			&.is-collab
+				color $white
+				background-color $blue
+			&.is-edit
+				color $white
+				background-color $red
+		p.idea--seeking
+			color $gray-dark
+			span
+				font-style italic
+
 
 		&.is-seeking
-			border 1px solid $gray
-		
+			background-color $off-white
+
 
 
 	p.description
+		max-width 50rem
 		font-family  $serif-display
 		margin 0
 		margin-bottom 2rem
-		set-type-size(medium, false)
+		set-type-size(large, false)
 		line-height 1.2
-		+mq('bp-m')
-			set-type-size(large, false)
-			line-height 1.4
+
+	.key
+		margin-bottom 5rem
+		p
+			max-width 50rem
+			span
+				border-radius 0.25rem
+				padding 0.125rem 0.25rem
+			.gray
+				background-color rgba($gray-light, 0.5)
+			.collab
+				background-color $blue
+				color $white
+			.edit
+				background-color $red
+				color $white

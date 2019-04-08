@@ -361,5 +361,27 @@
     "position": "Contributor",
     "bio": "",
     "slug": "malik-yusuf"
+  },
+  {
+    "id": "antal",
+    "name": "Antal van den Bosch",
+    "email": "",
+    "email-unconfirmed": "",
+    "twitter": "",
+    "url": "http://wesselstoop.ruhosting.nl/",
+    "position": "Contributor",
+    "bio": "",
+    "slug": "antal-van-den-bosch"
+  },
+  {
+    "id": "wessel",
+    "name": "Wessel Stoop",
+    "email": "",
+    "email-unconfirmed": "",
+    "twitter": "",
+    "url": "http://antalvandenbosch.ruhosting.nl/",
+    "position": "Contributor",
+    "bio": "",
+    "slug": "wessel-stoop"
   }
 ]
