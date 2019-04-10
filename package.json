@@ -23,7 +23,7 @@
 		"watch:archives": "watch 'npm run archives' templates/archives",
 		"watch:backlog": "watch 'npm run backlog' templates/backlog",
 		"watch": "npm-run-all --parallel watch:*",
-		"start": "npm run thumbnails && npm run fetch-data && npm run home && npm run feed && npm run authors && npm run about && npm run topics && npm run archives && npm run footer"
+		"start": "npm run thumbnails && npm run fetch-data && npm run home && npm run feed && npm run authors && npm run about && npm run topics && npm run archives && npm run backlog && npm run footer"
 	},
 	"keywords": [],
 	"author": "Russell Goldenberg",

@@ -8,7 +8,7 @@
     "phase_cleared": "storytime",
     "public": "TRUE",
     "seeking": "",
-    "description": "",
+    "description": "Between the cost of childcare, transportation etc. can new parents afford to go back to work after they have a new child? Worded another way, how much do new parents need to make per hour (per state) to make the return to work financially \"worth it\"?",
     "internal_notes": "",
     "Storytime link": ""
   },
@@ -21,12 +21,12 @@
     "phase_cleared": "storytime",
     "public": "FALSE",
     "seeking": "",
-    "description": "",
+    "description": "Examining the geographic locations people sing about most frequently",
     "internal_notes": "",
-    "Storytime link": "https://docs.google.com/document/d/1R7SsPXNpgyIpBLO_DmAAyaT4F1ikAD8ysEdMffSrukY/edit"
+    "Storytime link": ""
   },
   {
-    "story": "Who Shapes the English Language? ",
+    "story": "Who shapes the English language? ",
     "date": "2017-08-14",
     "originator": "ilia",
     "status": "",
@@ -36,10 +36,10 @@
     "seeking": "",
     "description": "",
     "internal_notes": "",
-    "Storytime link": "https://docs.google.com/document/d/1R7SsPXNpgyIpBLO_DmAAyaT4F1ikAD8ysEdMffSrukY/edit"
+    "Storytime link": ""
   },
   {
-    "story": "\"Who Shapes the English Language?\" but with quotes",
+    "story": "\"Who shapes the English language?\" but with quotes",
     "date": "2017-08-14",
     "originator": "ilia",
     "status": "",
@@ -49,31 +49,31 @@
     "seeking": "",
     "description": "",
     "internal_notes": "",
-    "Storytime link": "https://docs.google.com/document/d/1R7SsPXNpgyIpBLO_DmAAyaT4F1ikAD8ysEdMffSrukY/edit"
+    "Storytime link": ""
   },
   {
     "story": "Complexity of language in headlines",
     "date": "2017-10-01",
     "originator": "amber",
     "status": "",
-    "involvement": "",
+    "involvement": "edit",
     "phase_cleared": "storytime",
     "public": "TRUE",
     "seeking": "",
-    "description": "Inspired by this paper: https://elifesciences.org/articles/27725",
+    "description": "Inspired by <a href=\" https://elifesciences.org/articles/27725\" target=\"_blank\"> this paper</a>.",
     "internal_notes": "",
     "Storytime link": ""
   },
   {
-    "story": "Unpaid + Pay to Play Internships",
+    "story": "Unpaid + pay to play internships",
     "date": "2017-10-01",
     "originator": "amber",
     "status": "",
-    "involvement": "",
+    "involvement": "collab",
     "phase_cleared": "storytime",
     "public": "TRUE",
     "seeking": "",
-    "description": "",
+    "description": "Inspired by this Twitter thread: https://twitter.com/hormiga/status/913092766325817344 how many internship postings are either unpaid or require the applicant to pay?",
     "internal_notes": "",
     "Storytime link": ""
   },
@@ -88,7 +88,7 @@
     "seeking": "",
     "description": "",
     "internal_notes": "",
-    "Storytime link": "https://docs.google.com/document/d/1S6RjKBCioZc-5br8Rf5AgLFgl3kLs-i1GNdpkLp7rKQ/edit"
+    "Storytime link": ""
   },
   {
     "story": "Explaining gun violence",
@@ -99,9 +99,9 @@
     "phase_cleared": "storytime",
     "public": "TRUE",
     "seeking": "",
-    "description": "",
+    "description": "Separating talking points from statistics when it comes to gun violence and exploring its impact in the US visually.",
     "internal_notes": "",
-    "Storytime link": "https://docs.google.com/document/d/1S6RjKBCioZc-5br8Rf5AgLFgl3kLs-i1GNdpkLp7rKQ/edit"
+    "Storytime link": ""
   },
   {
     "story": "Shel Silverstein markov chain",
@@ -112,7 +112,7 @@
     "phase_cleared": "storytime",
     "public": "TRUE",
     "seeking": "illustrator",
-    "description": "Remix with musician, and create a visual poem (eg Lil’ Silverstein - Where Tha Carter Ends)",
+    "description": "An homage to the great children's poet, create a visual poem remix using markov chains (eg. Lil’ Silverstein - Where Tha Carter Ends). In the style of his books.",
     "internal_notes": "",
     "Storytime link": ""
   },
@@ -121,7 +121,7 @@
     "date": "2017-11-03",
     "originator": "amber",
     "status": "",
-    "involvement": "",
+    "involvement": "edit",
     "phase_cleared": "storytime",
     "public": "TRUE",
     "seeking": "",
@@ -130,20 +130,20 @@
     "Storytime link": ""
   },
   {
-    "story": "Generative soundtrack of america",
+    "story": "Generative soundtrack of America",
     "date": "2018-04-04",
     "originator": "russell",
     "status": "",
     "involvement": "collab",
     "phase_cleared": "storytime",
     "public": "TRUE",
-    "seeking": "composer",
-    "description": "using geographic data to create a record",
+    "seeking": "",
+    "description": "Using geographic or geological data to create an actual album / soundtrack to America.",
     "internal_notes": "",
     "Storytime link": ""
   },
   {
-    "story": "When i was your age",
+    "story": "When I was your age",
     "date": "2018-04-04",
     "originator": "russell",
     "status": "",
@@ -151,7 +151,7 @@
     "phase_cleared": "storytime",
     "public": "TRUE",
     "seeking": "filmmaker",
-    "description": "looking at activities throughout time and how they've changed (with data and interviews)",
+    "description": "Looking at activities throughout time and how they've changed (eg. going to the movies). Presented through a hybrid of data and documentary.",
     "internal_notes": "",
     "Storytime link": ""
   },
@@ -164,12 +164,12 @@
     "phase_cleared": "storytime",
     "public": "TRUE",
     "seeking": "",
-    "description": "a meta story about viral stories and unlocks more content as it gets shared more",
+    "description": "A story about viral stories. It unlocks more content as certain viral milestones are hit.",
     "internal_notes": "",
     "Storytime link": ""
   },
   {
-    "story": "Wedding traditions? ",
+    "story": "Wedding traditions",
     "date": "2018-04-21",
     "originator": "amber",
     "status": "",
@@ -177,7 +177,7 @@
     "phase_cleared": "storytime",
     "public": "TRUE",
     "seeking": "",
-    "description": "Maybe focus on wedding traditions, how many people still use specific traditions and how long we've been doing that thing.",
+    "description": "Weddings in the US have a lot of traditions. Some are cultural, some are religious. But how many people actually stick to them, and how long have those traditions been around?",
     "internal_notes": "",
     "Storytime link": ""
   },
@@ -190,7 +190,7 @@
     "phase_cleared": "storytime",
     "public": "TRUE",
     "seeking": "",
-    "description": "interactive explainer about recall ability / working memory.",
+    "description": "An interactive explainer about recall ability / working memory.",
     "internal_notes": "",
     "Storytime link": ""
   },
@@ -203,7 +203,7 @@
     "phase_cleared": "storytime",
     "public": "FALSE",
     "seeking": "",
-    "description": "prisonner's dilemna birthday paradox style",
+    "description": "Prisonner's dilemna birthday paradox style.",
     "internal_notes": "",
     "Storytime link": ""
   },
@@ -216,7 +216,7 @@
     "phase_cleared": "storytime",
     "public": "TRUE",
     "seeking": "",
-    "description": "Do they have a sharp or slow decline?",
+    "description": "Do athletes have a sharp or slow decline as they get older? Does it vary across sport?",
     "internal_notes": "",
     "Storytime link": ""
   },
@@ -255,7 +255,7 @@
     "phase_cleared": "storytime",
     "public": "TRUE",
     "seeking": "",
-    "description": "I’ve always been fascinated my colors and the psychology behind them. This would take a nerd topic like color temperature and attempt to explain it using social media photos. Thinking this would be in a similar style to the Waveforms explainer, possibly shifting the color temperature of the page as you scroll. Then it would maybe pull in some info about how we encounter color temperatures in our photos now. Doesn’t look like I’d be able to do it with Instagram since they shut down their public API (https://developers.facebook.com/docs/instagram-api/overview), but Flickr migiht work (https://www.flickr.com/services/api/).",
+    "description": "I’ve always been fascinated my colors and the psychology behind them. This would take a nerd topic like color temperature and attempt to explain it using social media photos. Thinking this would be in a similar style to the Waveforms explainer, possibly shifting the color temperature of the page as you scroll. Then it would maybe pull in some info about how we encounter color temperatures in our photos now. Doesn’t look like I’d be able to do it with Instagram since they shut down their public API, but Flickr might work.",
     "internal_notes": "",
     "Storytime link": ""
   },
@@ -264,11 +264,11 @@
     "date": "2018-08-01",
     "originator": "amber",
     "status": "",
-    "involvement": "",
+    "involvement": "edit",
     "phase_cleared": "storytime",
     "public": "TRUE",
     "seeking": "",
-    "description": "The end of a movie/series etc. date vs. when the re-make or sequel is made.",
+    "description": "How much time has passed between when an original movie/tv show aired and its sequel/prequel/remake? What's the ideal amount of time between these two things (i.e., when do you hit \"peak nostalgia\"?)",
     "internal_notes": "",
     "Storytime link": ""
   },
@@ -281,9 +281,9 @@
     "phase_cleared": "storytime",
     "public": "TRUE",
     "seeking": "",
-    "description": "",
+    "description": "Examining spending power over the years throughout North America.",
     "internal_notes": "",
-    "Storytime link": "https://docs.google.com/document/d/14z8fnYjT94-VXftObiH_0w1ORk2J9_yB6n1ydQAmryY/edit"
+    "Storytime link": ""
   },
   {
     "story": "Nowhere, USA",
@@ -296,7 +296,7 @@
     "seeking": "",
     "description": "",
     "internal_notes": "",
-    "Storytime link": "https://docs.google.com/document/d/14z8fnYjT94-VXftObiH_0w1ORk2J9_yB6n1ydQAmryY/edit"
+    "Storytime link": ""
   },
   {
     "story": "What are the smartest people in the room most interested in?",
@@ -309,7 +309,7 @@
     "seeking": "",
     "description": "",
     "internal_notes": "",
-    "Storytime link": "https://docs.google.com/document/d/14z8fnYjT94-VXftObiH_0w1ORk2J9_yB6n1ydQAmryY/edit"
+    "Storytime link": ""
   },
   {
     "story": "Opioid crisis timeline",
@@ -320,7 +320,7 @@
     "phase_cleared": "storytime",
     "public": "TRUE",
     "seeking": "",
-    "description": "the history + facts + figures in one interactive timeline",
+    "description": "The history, facts, figures, major players, etc., of the enornmous topic in one interactive timeline.",
     "internal_notes": "",
     "Storytime link": ""
   },
@@ -333,9 +333,9 @@
     "phase_cleared": "storytime",
     "public": "TRUE",
     "seeking": "",
-    "description": "",
+    "description": "Visualizing the amount of emails, headlines, and social media posts that target people daily.",
     "internal_notes": "",
-    "Storytime link": "https://docs.google.com/document/d/1We8DucQOeg9p1PiA2QyI9cHBqcRhA2OqZpKzTzp0i_E/edit"
+    "Storytime link": ""
   },
   {
     "story": "What words define our social platforms",
@@ -348,7 +348,7 @@
     "seeking": "",
     "description": "",
     "internal_notes": "",
-    "Storytime link": "https://docs.google.com/document/d/1We8DucQOeg9p1PiA2QyI9cHBqcRhA2OqZpKzTzp0i_E/edit"
+    "Storytime link": ""
   },
   {
     "story": "Youtube apology impact",
@@ -359,7 +359,7 @@
     "phase_cleared": "storytime",
     "public": "TRUE",
     "seeking": "",
-    "description": "based on the Reply All - Alex Jone episode - do subscribers go up/down after a huge apology video?",
+    "description": "Based on the <a href=\"https://www.gimletmedia.com/reply-all/126-alex-jones-dramageddon\" target=\"_blank\">Reply All - Alex Jones episode</a>. Do subscribers go up/down after a huge apology video?",
     "internal_notes": "",
     "Storytime link": ""
   },
@@ -437,7 +437,7 @@
     "phase_cleared": "idea",
     "public": "TRUE",
     "seeking": "",
-    "description": "Take a debated speech and annotate it. Or commission two peolple to have a debate and annotate.",
+    "description": "Take a debated speech and annotate it. Or commission two people to have a debate and annotate.",
     "internal_notes": "",
     "Storytime link": ""
   },
@@ -448,7 +448,7 @@
     "status": "",
     "involvement": "",
     "phase_cleared": "idea",
-    "public": "TRUE",
+    "public": "FALSE",
     "seeking": "",
     "description": "Ask people if they know things. Then look at generational gaps.",
     "internal_notes": "",
@@ -468,7 +468,7 @@
     "Storytime link": ""
   },
   {
-    "story": "L Word dating chart",
+    "story": "L word dating chart",
     "date": "2019-02-06",
     "originator": "jan",
     "status": "",
@@ -488,8 +488,8 @@
     "involvement": "",
     "phase_cleared": "storytime",
     "public": "TRUE",
-    "seeking": "TRUE",
-    "description": "https://newfoodeconomy.org/american-corporate-cookboks-food-marketing-jello-campbells-chiquita/",
+    "seeking": "",
+    "description": "Apparently bananas were forced upon us by <a href=\"https://newfoodeconomy.org/american-corporate-cookboks-food-marketing-jello-campbells-chiquita/\" target=\"_blank\">big banana industry</a>. Are people still using recipes with bananas?",
     "internal_notes": "",
     "Storytime link": ""
   },
@@ -502,7 +502,7 @@
     "phase_cleared": "storytime",
     "public": "TRUE",
     "seeking": "",
-    "description": "how often Trump appears on homepage of news sites",
+    "description": "How often Trump appears on homepage of news sites over time.",
     "internal_notes": "",
     "Storytime link": ""
   },
@@ -515,7 +515,7 @@
     "phase_cleared": "storytime",
     "public": "TRUE",
     "seeking": "",
-    "description": "Do athletes burn out or fade away? What is the norm, what are the outliers?",
+    "description": "What does the evolution of underlying grammatical structure of headlines look like?",
     "internal_notes": "",
     "Storytime link": ""
   },
@@ -528,12 +528,12 @@
     "phase_cleared": "storytime",
     "public": "TRUE",
     "seeking": "",
-    "description": "everything published in one day, printed",
+    "description": "Everything published in one day, printed as a book.",
     "internal_notes": "",
     "Storytime link": ""
   },
   {
-    "story": "Ggg labeling",
+    "story": "Egg labeling",
     "date": "2019-02-13",
     "originator": "russell",
     "status": "",
@@ -541,7 +541,7 @@
     "phase_cleared": "storytime",
     "public": "TRUE",
     "seeking": "",
-    "description": "use of marketing words that don't mean anything on packaging",
+    "description": "The use of marketing words that don't mean anything on packaging labels.",
     "internal_notes": "",
     "Storytime link": ""
   },
@@ -552,7 +552,7 @@
     "status": "",
     "involvement": "",
     "phase_cleared": "storytime",
-    "public": "TRUE",
+    "public": "FALSE",
     "seeking": "",
     "description": "",
     "internal_notes": "",
@@ -578,7 +578,7 @@
     "status": "",
     "involvement": "",
     "phase_cleared": "storytime",
-    "public": "TRUE",
+    "public": "FALSE",
     "seeking": "",
     "description": "",
     "internal_notes": "",
@@ -593,12 +593,12 @@
     "phase_cleared": "idea",
     "public": "TRUE",
     "seeking": "",
-    "description": "",
+    "description": "What TV shows produced the most future stars?",
     "internal_notes": "",
     "Storytime link": ""
   },
   {
-    "story": "Discourse markers / filler words (like)",
+    "story": "Discourse markers / filler words",
     "date": "2019-03-01",
     "originator": "russell",
     "status": "",
@@ -606,7 +606,7 @@
     "phase_cleared": "storytime",
     "public": "TRUE",
     "seeking": "",
-    "description": "how much people use like",
+    "description": "How much people use the word \"like.\"",
     "internal_notes": "",
     "Storytime link": ""
   },
@@ -619,7 +619,7 @@
     "phase_cleared": "storytime",
     "public": "TRUE",
     "seeking": "",
-    "description": "the cluchest players in basketball",
+    "description": "Who is the cluchest players in basketball?",
     "internal_notes": "",
     "Storytime link": ""
   },
@@ -650,15 +650,15 @@
     "Storytime link": ""
   },
   {
-    "story": "Astronaut.io for wikipedia",
+    "story": "Astronaut.io for Wikipedia",
     "date": "2019-04-02",
     "originator": "russell",
     "status": "",
-    "involvement": "edit",
+    "involvement": "",
     "phase_cleared": "storytime",
     "public": "TRUE",
     "seeking": "",
-    "description": "least viewed wiki pages as a passive experience",
+    "description": "Least viewed wiki pages as a passive experience, kind of like <a href=\"https://astronaut.io\" target=\"_blank\">astronaut.io</a>.",
     "internal_notes": "",
     "Storytime link": ""
   },
@@ -676,7 +676,7 @@
     "Storytime link": "https://docs.google.com/document/d/1zLSgancVlRnI-bedRPn9sU7ItP7LYRzuJ8z7RsV1Ouc/edit"
   },
   {
-    "story": "The Max Martin Mafia",
+    "story": "The Max Martin mafia",
     "date": "2019-04-04",
     "originator": "matt",
     "status": "",
@@ -687,5 +687,18 @@
     "description": "The outsized role of Max Martin and his deciples on the charts. This would also show the various \"Max Martins\" of each era.",
     "internal_notes": "",
     "Storytime link": "https://docs.google.com/document/d/1zLSgancVlRnI-bedRPn9sU7ItP7LYRzuJ8z7RsV1Ouc/edit"
+  },
+  {
+    "story": "People music map",
+    "date": "2018-12-01",
+    "originator": "matt",
+    "status": "",
+    "involvement": "",
+    "phase_cleared": "storytime",
+    "public": "FALSE",
+    "seeking": "",
+    "description": "",
+    "internal_notes": "",
+    "Storytime link": ""
   }
 ]

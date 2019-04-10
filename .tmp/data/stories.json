@@ -1,9 +1,9 @@
 [
   {
     "url": "2019/04/text-prediction",
-    "date": "2019-04-10T05:00:00.000Z",
-    "hed": "How Smartphones Know What You’ll Type Next",
-    "hed_flag": "42",
+    "date": "2019-04-10T04:00:00.000Z",
+    "hed": "How Algorithms Know What You’ll Type Next",
+    "hed_flag": "41",
     "dek": "Exploring how text prediction really works.",
     "dek_flag": "43",
     "topic": [
@@ -32,11 +32,11 @@
     "author_html": "<a href='https://pudding.cool/author/wessel-stoop'>Wessel Stoop</a>, <a href='https://pudding.cool/author/antal-van-den-bosch'>Antal van den Bosch</a>",
     "author_name": "Wessel Stoop, Antal van den Bosch",
     "author_slug": "wessel-stoop, antal-van-den-bosch",
-    "image": "other"
+    "image": "2019_04_text-prediction"
   },
   {
     "url": "projects/votes-for-women",
-    "date": "2019-03-29T05:00:00.000Z",
+    "date": "2019-03-29T04:00:00.000Z",
     "hed": "Women's Issues Within Political Party Platforms",
     "hed_flag": "47",
     "dek": "How often do women’s issues appear in party platform documents over time?",
@@ -73,7 +73,7 @@
   },
   {
     "url": "2019/03/nba-spelling",
-    "date": "2019-03-20T05:00:00.000Z",
+    "date": "2019-03-20T04:00:00.000Z",
     "hed": "NBA Spelling Bee",
     "hed_flag": "16",
     "dek": "Can you spell the hardest names in the NBA?",
@@ -109,7 +109,7 @@
   },
   {
     "url": "2019/03/pop-music",
-    "date": "2019-03-12T05:00:00.000Z",
+    "date": "2019-03-12T04:00:00.000Z",
     "hed": "Who is the Biggest Pop Star?",
     "hed_flag": "28",
     "dek": "Today, there's no single way to measure popularity in music.",
@@ -142,7 +142,7 @@
   },
   {
     "url": "2019/03/hype",
-    "date": "2019-03-04T06:00:00.000Z",
+    "date": "2019-03-04T05:00:00.000Z",
     "hed": "How Many High School Stars Make It in the NBA?",
     "hed_flag": "46",
     "dek": "Every year the top high school basketball recruits get hyped up—do they pan out?",
@@ -177,7 +177,7 @@
   },
   {
     "url": "2019/02/gyllenhaal",
-    "date": "2019-02-22T06:00:00.000Z",
+    "date": "2019-02-22T05:00:00.000Z",
     "hed": "The Gyllenhaal Experiment",
     "hed_flag": "25",
     "dek": "The many ways to misspell the hardest names in pop culture.",
@@ -212,7 +212,7 @@
   },
   {
     "url": "2019/02/dress-code-sexualization",
-    "date": "2019-02-07T06:00:00.000Z",
+    "date": "2019-02-07T05:00:00.000Z",
     "hed": "The Sexualized Messages Dress Codes are Sending to Students",
     "hed_flag": "59",
     "dek": "What we learned about sexualization from analyzing 481 high school dress codes",
@@ -250,7 +250,7 @@
   },
   {
     "url": "projects/vocabulary",
-    "date": "2019-01-16T06:00:00.000Z",
+    "date": "2019-01-16T05:00:00.000Z",
     "hed": "Rappers, Sorted by the Size of their Vocabulary",
     "hed_flag": "47",
     "dek": "The number of unique lyrics used within artists’ first 35,000 lyrics",
@@ -285,7 +285,7 @@
   },
   {
     "url": "2018/12/countries",
-    "date": "2018-12-19T06:00:00.000Z",
+    "date": "2018-12-19T05:00:00.000Z",
     "hed": "The World through the Eyes of the US",
     "hed_flag": "36",
     "dek": "The countries that have preoccupied Americans since 1900",
@@ -320,7 +320,7 @@
   },
   {
     "url": "2018/12/brief-history",
-    "date": "2018-12-19T06:00:00.000Z",
+    "date": "2018-12-19T05:00:00.000Z",
     "hed": "A Brief History of the Past 100 Years",
     "hed_flag": "37",
     "dek": "An analysis of 12 decades of New York Times headlines",
@@ -358,7 +358,7 @@
   },
   {
     "url": "2018/12/3d-cities-story",
-    "date": "2018-12-04T06:00:00.000Z",
+    "date": "2018-12-04T05:00:00.000Z",
     "hed": "Population Mountains",
     "hed_flag": "20",
     "dek": "This is a story about how to perceive the population size of cities.",
@@ -391,7 +391,7 @@
   },
   {
     "url": "process/pudding-awards-2018",
-    "date": "2018-12-03T06:00:00.000Z",
+    "date": "2018-12-03T05:00:00.000Z",
     "hed": "The Pudding Cup",
     "hed_flag": "15",
     "dek": "The best visual and data-driven stories of 2018",
@@ -424,7 +424,7 @@
   },
   {
     "url": "2018/11/boy-bands",
-    "date": "2018-11-27T06:00:00.000Z",
+    "date": "2018-11-27T05:00:00.000Z",
     "hed": "Internet Boy Band Database",
     "hed_flag": "26",
     "dek": "Every boy band to chart the Hot 100 since 1980",
@@ -460,7 +460,7 @@
   },
   {
     "url": "2018/11/dearabby",
-    "date": "2018-11-13T06:00:00.000Z",
+    "date": "2018-11-13T05:00:00.000Z",
     "hed": "30 Years of American Anxieties",
     "hed_flag": "30",
     "dek": "What 20,000 letters to an advice columnist tell us about what concerns us most.",
@@ -496,7 +496,7 @@
   },
   {
     "url": "2018/11/titletowns",
-    "date": "2018-11-07T06:00:00.000Z",
+    "date": "2018-11-07T05:00:00.000Z",
     "hed": "The Winningest Cities in North American Sports",
     "hed_flag": "46",
     "dek": "What makes a titletown in sports?",
@@ -535,7 +535,7 @@
   },
   {
     "url": "2018/10/city_3d",
-    "date": "2018-10-25T05:00:00.000Z",
+    "date": "2018-10-25T04:00:00.000Z",
     "hed": "Human Terrain: Population in 3D",
     "hed_flag": "31",
     "dek": "Visualizing the World’s Population as a Terrain",
@@ -568,7 +568,7 @@
   },
   {
     "url": "2018/10/wiki-breakout",
-    "date": "2018-10-19T05:00:00.000Z",
+    "date": "2018-10-19T04:00:00.000Z",
     "hed": "What Does the Path to Fame Look Like?",
     "hed_flag": "37",
     "dek": "Tracking the rise in popularity from Cardi B to Carson Wentz",
@@ -603,7 +603,7 @@
   },
   {
     "url": "2018/09/jordans",
-    "date": "2018-09-26T05:00:00.000Z",
+    "date": "2018-09-26T04:00:00.000Z",
     "hed": "A Visual History of Every Air Jordan",
     "hed_flag": "36",
     "dek": "Watch as the design of the iconic Air Jordan morphs over the last 33 editions.",
@@ -637,7 +637,7 @@
   },
   {
     "url": "2018/09/wiki-billboard",
-    "date": "2018-09-11T05:00:00.000Z",
+    "date": "2018-09-11T04:00:00.000Z",
     "hed": "The Celebrity Billboard Project",
     "hed_flag": "31",
     "dek": "Tracking the popularity of cultural figures in 2018",
@@ -672,7 +672,7 @@
   },
   {
     "url": "2018/08/emo-rap",
-    "date": "2018-08-30T05:00:00.000Z",
+    "date": "2018-08-30T04:00:00.000Z",
     "hed": "The Most Emo Lyrics: Emo Rap vs. Dashboard Confessional",
     "hed_flag": "55",
     "dek": "Who has more emotionally vulnerable lyrics, emo-rap or Dashboard Confessional?",
@@ -709,7 +709,7 @@
   },
   {
     "url": "2018/08/filmordigital",
-    "date": "2018-08-22T05:00:00.000Z",
+    "date": "2018-08-22T04:00:00.000Z",
     "hed": "Film or Digital?",
     "hed_flag": "16",
     "dek": "Breaking down Hollywood's choice of shooting medium",
@@ -746,7 +746,7 @@
   },
   {
     "url": "2018/08/pockets",
-    "date": "2018-08-15T05:00:00.000Z",
+    "date": "2018-08-15T04:00:00.000Z",
     "hed": "Women's Pockets are Inferior",
     "hed_flag": "28",
     "dek": "You already know this. But now we've got the data to show it.",
@@ -782,7 +782,7 @@
   },
   {
     "url": "2018/08/wiki-death",
-    "date": "2018-08-05T05:00:00.000Z",
+    "date": "2018-08-05T04:00:00.000Z",
     "hed": "Life After Death on Wikipedia",
     "hed_flag": "29",
     "dek": "What pageviews tell us about how famous people are remembered after they die",
@@ -820,7 +820,7 @@
   },
   {
     "url": "2018/08/retraining",
-    "date": "2018-08-02T05:00:00.000Z",
+    "date": "2018-08-02T04:00:00.000Z",
     "hed": "Tech Jobs may not Solve America’s Looming Automation Crisis",
     "hed_flag": "59",
     "dek": "Tech retraining programs are becoming more popular. They may not be a solution.",
@@ -860,7 +860,7 @@
   },
   {
     "url": "2018/07/airports",
-    "date": "2018-07-24T05:00:00.000Z",
+    "date": "2018-07-24T04:00:00.000Z",
     "hed": "What Airport Traffic Tells Us About the World's Megacities",
     "hed_flag": "58",
     "dek": "Kinshasa, DR Congo, a city of 13 million people has 13 departing flights per day.",
@@ -896,7 +896,7 @@
   },
   {
     "url": "process/flexbox-layout",
-    "date": "2018-07-20T05:00:00.000Z",
+    "date": "2018-07-20T04:00:00.000Z",
     "hed": "Making Data Viz Without SVG Using D3 and Flexbox",
     "hed_flag": "48",
     "dek": "Bye bye tricky SVG alignments. Hello SVG-free data viz!",
@@ -930,7 +930,7 @@
   },
   {
     "url": "2018/07/birth_control",
-    "date": "2018-07-17T05:00:00.000Z",
+    "date": "2018-07-17T04:00:00.000Z",
     "hed": "Let’s Talk About Birth Control",
     "hed_flag": "30",
     "dek": "No TMI here, just 20,759 people describing their experiences with contraception.",
@@ -966,7 +966,7 @@
   },
   {
     "url": "2018/07/women-in-congress",
-    "date": "2018-07-10T05:00:00.000Z",
+    "date": "2018-07-10T04:00:00.000Z",
     "hed": "The Road to Gender Parity in the House of Representatives",
     "hed_flag": "57",
     "dek": "Exploring 100 years of women in politics through data and machine learning",
@@ -1005,7 +1005,7 @@
   },
   {
     "url": "2018/07/women-in-parliament",
-    "date": "2018-07-10T05:00:00.000Z",
+    "date": "2018-07-10T04:00:00.000Z",
     "hed": "Gender Representation in Parliamentary Speeches  ",
     "hed_flag": "49",
     "dek": "Exploring 100 years of women in parliament through data and machine learning",
@@ -1043,7 +1043,7 @@
   },
   {
     "url": "2018/06/gayborhoods",
-    "date": "2018-06-28T05:00:00.000Z",
+    "date": "2018-06-28T04:00:00.000Z",
     "hed": "Men are from Chelsea, Women are from Park Slope",
     "hed_flag": "47",
     "dek": "How “gayborhoods” in 15 major American cities are divided by gender",
@@ -1079,7 +1079,7 @@
   },
   {
     "url": "2018/06/makeup-shades",
-    "date": "2018-06-13T05:00:00.000Z",
+    "date": "2018-06-13T04:00:00.000Z",
     "hed": "The Diversity of Makeup Shades",
     "hed_flag": "30",
     "dek": "Fenty Beauty is a champion for makeup inclusivity. How do other brands compare?",
@@ -1117,7 +1117,7 @@
   },
   {
     "url": "process/scrollytelling-sticky",
-    "date": "2018-06-08T05:00:00.000Z",
+    "date": "2018-06-08T04:00:00.000Z",
     "hed": "Easier Scrollytelling with Position Sticky",
     "hed_flag": "42",
     "dek": "Leaning on CSS to simplify the process",
@@ -1152,7 +1152,7 @@
   },
   {
     "url": "2018/06/skate-music",
-    "date": "2018-06-05T05:00:00.000Z",
+    "date": "2018-06-05T04:00:00.000Z",
     "hed": "The Good, the Rad, and the Gnarly",
     "hed_flag": "33",
     "dek": "An exploration into the music of skateboarding",
@@ -1187,7 +1187,7 @@
   },
   {
     "url": "2018/06/music-map",
-    "date": "2018-06-04T05:00:00.000Z",
+    "date": "2018-06-04T04:00:00.000Z",
     "hed": "The Cultural Borders of Songs",
     "hed_flag": "29",
     "dek": "We mapped last month’s #1 songs in 3,000 places. ",
@@ -1221,7 +1221,7 @@
   },
   {
     "url": "2018/05/nba-top-plays",
-    "date": "2018-05-31T05:00:00.000Z",
+    "date": "2018-05-31T04:00:00.000Z",
     "hed": "The Most-Viewed NBA Plays in 2017-18",
     "hed_flag": "36",
     "dek": "Warning: this video contains a high dosage of LeBron footage.",
@@ -1256,7 +1256,7 @@
   },
   {
     "url": "2018/05/similarity",
-    "date": "2018-05-24T05:00:00.000Z",
+    "date": "2018-05-24T04:00:00.000Z",
     "hed": "Are Hit Songs Becoming Less Musically Diverse?",
     "hed_flag": "46",
     "dek": "Today’s hit artists are take fewer risks and create a narrower range of sounds",
@@ -1294,7 +1294,7 @@
   },
   {
     "url": "2018/05/cookies",
-    "date": "2018-05-10T05:00:00.000Z",
+    "date": "2018-05-10T04:00:00.000Z",
     "hed": "Baking the Most Average Chocolate Chip Cookie",
     "hed_flag": "45",
     "dek": "Cookie recipes written by computers — what could go wrong?",
@@ -1330,7 +1330,7 @@
   },
   {
     "url": "2018/04/one-hit-wonders",
-    "date": "2018-04-30T05:00:00.000Z",
+    "date": "2018-04-30T04:00:00.000Z",
     "hed": "One-Hit Wonders in Sports",
     "hed_flag": "25",
     "dek": "The greatest single-season anomalies in the last 30 years",
@@ -1365,7 +1365,7 @@
   },
   {
     "url": "2018/04/birthday-paradox",
-    "date": "2018-04-09T05:00:00.000Z",
+    "date": "2018-04-09T04:00:00.000Z",
     "hed": "The Birthday Paradox Experiment",
     "hed_flag": "31",
     "dek": "Your birthday twin is probably reading this right now. Because math.",
@@ -1401,7 +1401,7 @@
   },
   {
     "url": "2018/03/neighborhoods",
-    "date": "2018-03-21T05:00:00.000Z",
+    "date": "2018-03-21T04:00:00.000Z",
     "hed": "A Tale of Two Cities",
     "hed_flag": "20",
     "dek": "Using data to write love letters to the cities we call home",
@@ -1436,7 +1436,7 @@
   },
   {
     "url": "2018/02/stand-up",
-    "date": "2018-02-26T06:00:00.000Z",
+    "date": "2018-02-26T05:00:00.000Z",
     "hed": "The Structure of Stand-Up Comedy",
     "hed_flag": "32",
     "dek": "The genius of Ali Wong’s Netflix special",
@@ -1473,7 +1473,7 @@
   },
   {
     "url": "2018/02/waveforms",
-    "date": "2018-02-16T06:00:00.000Z",
+    "date": "2018-02-16T05:00:00.000Z",
     "hed": "Let's Learn About Waveforms",
     "hed_flag": "27",
     "dek": "An interactive guide that introduces and explores waveforms",
@@ -1509,7 +1509,7 @@
   },
   {
     "url": "2018/02/death",
-    "date": "2018-02-13T06:00:00.000Z",
+    "date": "2018-02-13T05:00:00.000Z",
     "hed": "Limbo Lines: Dead Here, Alive There",
     "hed_flag": "35",
     "dek": "Brain death’s role in the uncertainties of death",
@@ -1547,7 +1547,7 @@
   },
   {
     "url": "2018/02/restaurants",
-    "date": "2018-02-06T06:00:00.000Z",
+    "date": "2018-02-06T05:00:00.000Z",
     "hed": "Mapping Gastronomic Borders in the US",
     "hed_flag": "37",
     "dek": "How US culture dictates geographic restaurant patterns",
@@ -1583,7 +1583,7 @@
   },
   {
     "url": "2018/01/mars-weather",
-    "date": "2018-01-31T06:00:00.000Z",
+    "date": "2018-01-31T05:00:00.000Z",
     "hed": "Greetings from Mars",
     "hed_flag": "19",
     "dek": "Exploring today's weather on Mars and in your area with the Curiosity Rover",
@@ -1618,7 +1618,7 @@
   },
   {
     "url": "2018/01/chyrons",
-    "date": "2018-01-25T06:00:00.000Z",
+    "date": "2018-01-25T05:00:00.000Z",
     "hed": "How CNN, MSNBC, and FOX Cover the News",
     "hed_flag": "38",
     "dek": "The story you get depends on the channel you watch",
@@ -1655,7 +1655,7 @@
   },
   {
     "url": "2017/12/hater",
-    "date": "2017-12-04T06:00:00.000Z",
+    "date": "2017-12-04T05:00:00.000Z",
     "hed": "10 Things Everyone Hates About You",
     "hed_flag": "34",
     "dek": "Exploring over 30 million feelings towards 3,000+ topics",
@@ -1691,7 +1691,7 @@
   },
   {
     "url": "process/pudding-awards-2017",
-    "date": "2017-11-26T06:00:00.000Z",
+    "date": "2017-11-26T05:00:00.000Z",
     "hed": "The Pudding Awards",
     "hed_flag": "18",
     "dek": "Our favorite projects on the internet in 2017",
@@ -1724,7 +1724,7 @@
   },
   {
     "url": "process/introducing-scrollama",
-    "date": "2017-11-16T06:00:00.000Z",
+    "date": "2017-11-16T05:00:00.000Z",
     "hed": "An Introduction to Scrollama.js",
     "hed_flag": "31",
     "dek": "The what, why, and how to use scrollama.js for your next scrollytelling story",
@@ -1758,7 +1758,7 @@
   },
   {
     "url": "process/how-to-make-dope-shit-part-2",
-    "date": "2017-11-01T05:00:00.000Z",
+    "date": "2017-11-01T04:00:00.000Z",
     "hed": "How to Make Dope Shit Part 2: Design",
     "hed_flag": "36",
     "dek": "Some pointers on learning to design data-driven visual essays.",
@@ -1792,7 +1792,7 @@
   },
   {
     "url": "2017/10/satellites",
-    "date": "2017-10-18T05:00:00.000Z",
+    "date": "2017-10-18T04:00:00.000Z",
     "hed": "Seeing Earth from Outer Space",
     "hed_flag": "29",
     "dek": "A visual history of satellites",
@@ -1827,7 +1827,7 @@
   },
   {
     "url": "2017/10/superteams",
-    "date": "2017-10-12T05:00:00.000Z",
+    "date": "2017-10-12T04:00:00.000Z",
     "hed": "What is a Superteam in the NBA?",
     "hed_flag": "31",
     "dek": "Defining what a superteam is with data",
@@ -1863,7 +1863,7 @@
   },
   {
     "url": "2017/10/asne",
-    "date": "2017-10-12T05:00:00.000Z",
+    "date": "2017-10-12T04:00:00.000Z",
     "hed": "Newspapers: A Black & White Issue",
     "hed_flag": "33",
     "dek": "Measuring racial diversity in journalism",
@@ -1902,7 +1902,7 @@
   },
   {
     "url": "2017/09/hip-hop-words",
-    "date": "2017-09-22T05:00:00.000Z",
+    "date": "2017-09-22T04:00:00.000Z",
     "hed": "The Words That Are “Most Hip Hop”",
     "hed_flag": "33",
     "dek": "Using math to rank words that are central to artists’ vocabularies",
@@ -1940,7 +1940,7 @@
   },
   {
     "url": "2017/09/this-american-life",
-    "date": "2017-09-21T05:00:00.000Z",
+    "date": "2017-09-21T04:00:00.000Z",
     "hed": "Listen to Her: Gender on This American Life",
     "hed_flag": "43",
     "dek": "The story behind the gender divide on This American Life",
@@ -1979,7 +1979,7 @@
   },
   {
     "url": "2017/09/clinics",
-    "date": "2017-09-07T05:00:00.000Z",
+    "date": "2017-09-07T04:00:00.000Z",
     "hed": "An Analysis of Driving Times to Abortion Clinics in the US",
     "hed_flag": "58",
     "dek": "Mapping the cities and places with the worst access",
@@ -2019,7 +2019,7 @@
   },
   {
     "url": "2017/08/screen-direction",
-    "date": "2017-08-22T05:00:00.000Z",
+    "date": "2017-08-22T04:00:00.000Z",
     "hed": "She Giggles, He Gallops",
     "hed_flag": "23",
     "dek": "Analyzing gender tropes in film with screen direction from 2,000 scripts",
@@ -2061,7 +2061,7 @@
   },
   {
     "url": "process/how-to-make-dope-shit-part-1",
-    "date": "2017-08-13T05:00:00.000Z",
+    "date": "2017-08-13T04:00:00.000Z",
     "hed": "How to Make Dope Shit Part 1: Working with Data",
     "hed_flag": "47",
     "dek": "Familiarize yourself with the tools used to make visual, data-driven essays.",
@@ -2094,7 +2094,7 @@
   },
   {
     "url": "2017/08/the-office",
-    "date": "2017-08-04T05:00:00.000Z",
+    "date": "2017-08-04T04:00:00.000Z",
     "hed": "‘The Office’ Dialogue in Five Charts",
     "hed_flag": "36",
     "dek": "A breakdown of how every character contributed to the show",
@@ -2129,7 +2129,7 @@
   },
   {
     "url": "process/resize",
-    "date": "2017-08-01T05:00:00.000Z",
+    "date": "2017-08-01T04:00:00.000Z",
     "hed": "How Many Users Resize Their Browser?",
     "hed_flag": "36",
     "dek": "A look at actual data and how to deal with it",
@@ -2162,7 +2162,7 @@
   },
   {
     "url": "2017/07/eating-alone",
-    "date": "2017-07-28T05:00:00.000Z",
+    "date": "2017-07-28T04:00:00.000Z",
     "hed": "The Dining Habits and Companions of Americans",
     "hed_flag": "45",
     "dek": "The frequency of dining alone",
@@ -2198,7 +2198,7 @@
   },
   {
     "url": "2017/07/comics",
-    "date": "2017-07-18T05:00:00.000Z",
+    "date": "2017-07-18T04:00:00.000Z",
     "hed": "Gender Representation of 34,476 Comic Book Characters",
     "hed_flag": "53",
     "dek": "How are female characters in superhero comics depicted?",
@@ -2234,7 +2234,7 @@
   },
   {
     "url": "2017/07/jobs",
-    "date": "2017-07-11T05:00:00.000Z",
+    "date": "2017-07-11T04:00:00.000Z",
     "hed": "Why the Republican Party Wins When Robots Take Your Job",
     "hed_flag": "55",
     "dek": "Job automation is only a matter of time. Here's why the right will benefit.",
@@ -2272,7 +2272,7 @@
   },
   {
     "url": "2017/07/cetaceans",
-    "date": "2017-07-06T05:00:00.000Z",
+    "date": "2017-07-06T04:00:00.000Z",
     "hed": "Free Willy and Flipper by the Numbers",
     "hed_flag": "37",
     "dek": "The past, present, and future of captive whales and dolphins",
@@ -2308,7 +2308,7 @@
   },
   {
     "url": "2017/06/film-trends",
-    "date": "2017-06-29T05:00:00.000Z",
+    "date": "2017-06-29T04:00:00.000Z",
     "hed": "Plot Trends for Top-Grossing Film from the Past 50 Years",
     "hed_flag": "56",
     "dek": "This is a story about how film plots mirror (or shape) historical events.",
@@ -2342,7 +2342,7 @@
   },
   {
     "url": "2017/06/best-sellers",
-    "date": "2017-06-01T05:00:00.000Z",
+    "date": "2017-06-01T04:00:00.000Z",
     "hed": "Bias, She Wrote",
     "hed_flag": "15",
     "dek": "How much progress has American literature made towards gender equality?",
@@ -2379,7 +2379,7 @@
   },
   {
     "url": "2017/05/births",
-    "date": "2017-05-24T05:00:00.000Z",
+    "date": "2017-05-24T04:00:00.000Z",
     "hed": "The Timing of Baby Making",
     "hed_flag": "25",
     "dek": "Births, broken down by geography and month",
@@ -2414,7 +2414,7 @@
   },
   {
     "url": "process/weighted-pivot-scatter-plot",
-    "date": "2017-05-15T05:00:00.000Z",
+    "date": "2017-05-15T04:00:00.000Z",
     "hed": "The Making of the Weighted Pivot Scatter Plot",
     "hed_flag": "45",
     "dek": "How (and why) the interactive chart was born",
@@ -2448,7 +2448,7 @@
   },
   {
     "url": "process/regional_smoothing",
-    "date": "2017-05-11T05:00:00.000Z",
+    "date": "2017-05-11T04:00:00.000Z",
     "hed": "Regional Smoothing in R",
     "hed_flag": "23",
     "dek": "A guide to smoothing geospatial data in R",
@@ -2482,7 +2482,7 @@
   },
   {
     "url": "2017/05/song-repetition",
-    "date": "2017-05-11T05:00:00.000Z",
+    "date": "2017-05-11T04:00:00.000Z",
     "hed": "Are Pop Lyrics Getting More Repetitive?",
     "hed_flag": "39",
     "dek": "Measuring repetition in song lyrics over time using a compression algorithm",
@@ -2519,7 +2519,7 @@
   },
   {
     "url": "2017/05/nba-moments",
-    "date": "2017-05-06T05:00:00.000Z",
+    "date": "2017-05-06T04:00:00.000Z",
     "hed": "The Most Timeless NBA Plays",
     "hed_flag": "27",
     "dek": "Historic NBA games and plays, ranked by YouTube views",
@@ -2554,7 +2554,7 @@
   },
   {
     "url": "process/responsive-scrollytelling",
-    "date": "2017-04-21T05:00:00.000Z",
+    "date": "2017-04-21T04:00:00.000Z",
     "hed": "Responsive Scrollytelling Best Practices",
     "hed_flag": "40",
     "dek": "How to plan or adapt a scrollytelling story for mobile.",
@@ -2588,7 +2588,7 @@
   },
   {
     "url": "2017/04/beer",
-    "date": "2017-04-18T05:00:00.000Z",
+    "date": "2017-04-18T04:00:00.000Z",
     "hed": "What City is the Microbrew Capital of the US?",
     "hed_flag": "45",
     "dek": "Using beer review data to rank the best cities in the country",
@@ -2626,7 +2626,7 @@
   },
   {
     "url": "2017/03/incarceration",
-    "date": "2017-03-21T05:00:00.000Z",
+    "date": "2017-03-21T04:00:00.000Z",
     "hed": "Why Does the US Lead the World in Incarceration?",
     "hed_flag": "48",
     "dek": "How we got here is one of the most debated questions in policy.",
@@ -2663,7 +2663,7 @@
   },
   {
     "url": "2017/03/westbrook",
-    "date": "2017-03-08T06:00:00.000Z",
+    "date": "2017-03-08T05:00:00.000Z",
     "hed": "How Russell Westbrook Can Average a Triple-Double",
     "hed_flag": "49",
     "dek": "As of March 10, Russell Westbrook is averaging a triple-double.",
@@ -2698,7 +2698,7 @@
   },
   {
     "url": "2017/03/home-court",
-    "date": "2017-03-02T06:00:00.000Z",
+    "date": "2017-03-02T05:00:00.000Z",
     "hed": "Do NBA Refs Favor the Home Team?",
     "hed_flag": "32",
     "dek": "Analyzing reviewed calls to rank NBA teams by favorable home court officiating",
@@ -2734,7 +2734,7 @@
   },
   {
     "url": "2017/02/oscars_so_mapped",
-    "date": "2017-02-23T06:00:00.000Z",
+    "date": "2017-02-23T05:00:00.000Z",
     "hed": "The Geographic Divide of Oscars Films",
     "hed_flag": "37",
     "dek": "Mapping the popularity of Oscar-nominated films in 2017",
@@ -2771,7 +2771,7 @@
   },
   {
     "url": "2017/02/two-minute-report",
-    "date": "2017-02-15T06:00:00.000Z",
+    "date": "2017-02-15T05:00:00.000Z",
     "hed": "NBA Last Two Minute Report",
     "hed_flag": "26",
     "dek": "A review of the NBA officiating from the Last Two Minute Report",
@@ -2806,7 +2806,7 @@
   },
   {
     "url": "process/how-to-implement-scrollytelling",
-    "date": "2017-02-10T06:00:00.000Z",
+    "date": "2017-02-10T05:00:00.000Z",
     "hed": "How to Implement Scrollytelling with Six Different Libraries",
     "hed_flag": "60",
     "dek": "How to tackle a simple scroll-driven chart using six different libraries",
@@ -2840,7 +2840,7 @@
   },
   {
     "url": "2017/02/new-slang",
-    "date": "2017-02-05T06:00:00.000Z",
+    "date": "2017-02-05T05:00:00.000Z",
     "hed": "The Emergence Of Slang, Using Search Data",
     "hed_flag": "41",
     "dek": "Emerging slang, identified by searches for words’ definitions",
@@ -2876,7 +2876,7 @@
   },
   {
     "url": "2017/01/shape-of-slavery",
-    "date": "2017-01-23T06:00:00.000Z",
+    "date": "2017-01-23T05:00:00.000Z",
     "hed": "Mapping Slavery Against US Incarceration",
     "hed_flag": "40",
     "dek": "How do historic incarceration rates differ between slave and non-slave states?",
@@ -2912,7 +2912,7 @@
   },
   {
     "url": "2017/01/making-it-big",
-    "date": "2017-01-15T06:00:00.000Z",
+    "date": "2017-01-15T05:00:00.000Z",
     "hed": "The Unlikely Odds of Making it Big",
     "hed_flag": "34",
     "dek": "What three years and 75,000 shows tell us about the chance of success",
@@ -2948,7 +2948,7 @@
   },
   {
     "url": "2017/03/hamilton",
-    "date": "2016-12-15T06:00:00.000Z",
+    "date": "2016-12-15T05:00:00.000Z",
     "hed": "An Interactive Visualization of Every Line in Hamilton",
     "hed_flag": "54",
     "dek": "From the moment I sat down to listen the whole way through, I was done for...",
@@ -2983,7 +2983,7 @@
   },
   {
     "url": "2017/03/elections",
-    "date": "2016-10-01T05:00:00.000Z",
+    "date": "2016-10-01T04:00:00.000Z",
     "hed": "How News Media Covers Trump & Clinton",
     "hed_flag": "37",
     "dek": "Analyzing 12,147 images of Trump and Clinton",
@@ -3021,7 +3021,7 @@
   },
   {
     "url": "2017/03/redraft",
-    "date": "2016-09-01T05:00:00.000Z",
+    "date": "2016-09-01T04:00:00.000Z",
     "hed": "Twenty Years of the NBA Redrafted",
     "hed_flag": "33",
     "dek": "Using career stats to prove the best/worst NBA draft picks, ever",
@@ -3060,7 +3060,7 @@
   },
   {
     "url": "2017/03/sampling",
-    "date": "2016-09-01T05:00:00.000Z",
+    "date": "2016-09-01T04:00:00.000Z",
     "hed": "How Robert Glasper Sampled Miles Davis on “Ghetto Walkin”",
     "hed_flag": "57",
     "dek": "An interactive story about the art of sampling",
@@ -3095,7 +3095,7 @@
   },
   {
     "url": "2017/03/miles",
-    "date": "2016-06-01T05:00:00.000Z",
+    "date": "2016-06-01T04:00:00.000Z",
     "hed": "The 2,452 Wikipedia Pages on which Miles Davis is Mentioned",
     "hed_flag": "59",
     "dek": "25 years after his death, you can find Davis' fingerprints on many other ideas.",
@@ -3132,7 +3132,7 @@
   },
   {
     "url": "2017/03/music-history",
-    "date": "2016-05-01T05:00:00.000Z",
+    "date": "2016-05-01T04:00:00.000Z",
     "hed": "How Music Taste Evolved",
     "hed_flag": "23",
     "dek": "Top 5 songs, from '58-'16, so we can stop arguing about when music was still good",
@@ -3166,7 +3166,7 @@
   },
   {
     "url": "2017/03/comeback",
-    "date": "2016-04-10T05:00:00.000Z",
+    "date": "2016-04-10T04:00:00.000Z",
     "hed": "Ranking the Most Unlikely NBA Comebacks",
     "hed_flag": "39",
     "dek": "Identify the most statistically unlikely comebacks this season",
@@ -3201,7 +3201,7 @@
   },
   {
     "url": "2017/03/film-dialogue",
-    "date": "2016-04-01T05:00:00.000Z",
+    "date": "2016-04-01T04:00:00.000Z",
     "hed": "The Largest Analysis of Film Dialogue by Gender, Ever",
     "hed_flag": "53",
     "dek": "From 2,000 screeplays, broken down by age and gender",
@@ -3240,7 +3240,7 @@
   },
   {
     "url": "2017/03/punk",
-    "date": "2016-01-09T06:00:00.000Z",
+    "date": "2016-01-09T05:00:00.000Z",
     "hed": "Crowdsourcing the Definition of “Punk”",
     "hed_flag": "38",
     "dek": "Looking at playlists to learn how parts of culture perceive genres",
@@ -3276,7 +3276,7 @@
   },
   {
     "url": "2017/03/bechdel",
-    "date": "2016-01-01T06:00:00.000Z",
+    "date": "2016-01-01T05:00:00.000Z",
     "hed": "Hollywood's Gender Divide and its Effect on Films",
     "hed_flag": "49",
     "dek": "The writers, directors, and producers who make films that fail the Bechdel test",
@@ -3316,7 +3316,7 @@
   },
   {
     "url": "2017/03/labels",
-    "date": "2015-11-01T05:00:00.000Z",
+    "date": "2015-11-01T04:00:00.000Z",
     "hed": "The Most Succesful Labels in Hip Hop",
     "hed_flag": "36",
     "dek": "Hip hop record labels, sorted by their artists' chart performance on Billboard",
@@ -3355,7 +3355,7 @@
   },
   {
     "url": "2017/03/timeless",
-    "date": "2015-09-01T05:00:00.000Z",
+    "date": "2015-09-01T04:00:00.000Z",
     "hed": "The Most Timeless Songs of All-Time",
     "hed_flag": "35",
     "dek": "Using Spotify to measure the popularity of older music",
@@ -3392,7 +3392,7 @@
   },
   {
     "url": "2017/03/outkast",
-    "date": "2014-03-01T06:00:00.000Z",
+    "date": "2014-03-01T05:00:00.000Z",
     "hed": "Outkast, in Charts",
     "hed_flag": "18",
     "dek": "A look at Outkast's history through the lens of data",
