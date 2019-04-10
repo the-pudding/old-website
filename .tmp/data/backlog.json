@@ -255,7 +255,7 @@
     "phase_cleared": "storytime",
     "public": "TRUE",
     "seeking": "",
-    "description": "I’ve always been fascinated my colors and the psychology behind them. This would take a nerd topic like color temperature and attempt to explain it using social media photos. Thinking this would be in a similar style to the Waveforms explainer, possibly shifting the color temperature of the page as you scroll. Then it would maybe pull in some info about how we encounter color temperatures in our photos now. Doesn’t look like I’d be able to do it with Instagram since they shut down their public API, but Flickr might work.",
+    "description": "This would take a nerd topic like color temperature and attempt to explain it using social media photos and filters.",
     "internal_notes": "",
     "Storytime link": ""
   },
@@ -372,7 +372,7 @@
     "phase_cleared": "storytime",
     "public": "TRUE",
     "seeking": "",
-    "description": "I’ve seen countless headlines proclaiming “Millennials have killed X” or “Millennials are the death of Y.” That gives you a single item, but is there a larger pattern to what we have supposedly killed? Use headlines from NYTimes API for data through time or Google News for more recent data only. Find out the types of things Millennials have killed. Do other generations kill the same types of things?",
+    "description": "There are countless headlines proclaiming “Millennials have killed X” or “Millennials are the death of Y.” That gives you a single item, but is there a larger pattern to what we have supposedly killed? Do other generations kill the same types of things?",
     "internal_notes": "",
     "Storytime link": ""
   },
@@ -385,7 +385,7 @@
     "phase_cleared": "storytime",
     "public": "TRUE",
     "seeking": "",
-    "description": "This year is the 20th anniversary and there have been 67 US albums since 1998. The songs included were the most “now” songs when each edition was released, but which album remains the most “now” now? Limit it to just albums released in 2008 or earlier to give a good gap between then and now (that gives us 29). Take the track list from each album and use the Spotify API to get the current popularity of a track. Maybe even use EchoNest points to find the NOW album that sounds most similar to today’s hits.",
+    "description": "2018 was the 20th anniversary and there have been 67 US albums since 1998. The songs included were the most “now” songs when each edition was released, but which album remains the most “now” now? ",
     "internal_notes": "",
     "Storytime link": ""
   },
@@ -398,7 +398,7 @@
     "phase_cleared": "storytime",
     "public": "TRUE",
     "seeking": "",
-    "description": "Kobe Bryant and Diana Taurasi are undoubtedly some of the best to ever play the game of basketball — they even share similar nicknames. This would be a love letter comparing their careers and marking the end of an era. Kobe’s already retired and Taurasi isn’t far out. Grab their seasonal data from Basketball Reference and see where it takes me. ",
+    "description": "Kobe Bryant and Diana Taurasi are undoubtedly some of the best to ever play the game of basketball — they even share similar nicknames. This would be a love letter comparing their careers and marking the end of an era. Kobe’s already retired and Taurasi isn’t far out. ",
     "internal_notes": "",
     "Storytime link": ""
   },
