@@ -16,6 +16,9 @@ live-topics:
 live-archives:
 	aws s3 sync dist/archives/ s3://pudding.cool/archives
 
+live-backlog:
+	aws s3 sync dist/backlog/ s3://pudding.cool/backlog
+
 live-footer:
 	aws s3 cp dist/footer/stories.json s3://pudding.cool/assets/data/stories.json
 	# aws s3 cp dist/footer/pudding-footer.js s3://pudding.cool/assets/scripts/pudding-footer.js
