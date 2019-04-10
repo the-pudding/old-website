@@ -28,7 +28,7 @@ live-common:
 	aws s3 sync dist/common/ s3://pudding.cool/common
 
 live-cloudfront: 
-	aws cloudfront create-invalidation --distribution-id E13X38CRR4E04D --paths  '/' '/index.html' '/feed*' '/common*' '/about*' '/author*' '/topics*' '/archives*' '/assets/scripts/pudding-footer.js' '/assets/scripts/pudding-footer.v2.js'	
+	aws cloudfront create-invalidation --distribution-id E13X38CRR4E04D --paths  '/' '/index.html' '/feed*' '/common*' '/about*' '/author*' '/topics*' '/archives*' '/backlog*' '/assets/scripts/pudding-footer.js' '/assets/scripts/pudding-footer.v2.js'	
 
 live: live-home live-about live-author live-topics live-archives live-footer live-common live-cloudfront
 	
