@@ -199,7 +199,7 @@
 			<ul>
 				<!-- DO NOT REMOVE -->
 				<li>
-		<div class='story-item' data-id='2017/03/hamilton' data-topic='entertainment' data-chart='bubble chart,network diagram,unique' data-keyword='music' data-author='shirley' data-author_slug='shirley-wu' data-author_name='Shirley Wu' data-hed='an interactive visualization of every line in hamilton' data-dek='from the moment i sat down to listen the whole way through, i was done for...' data-date='2016-12-15T05:00:00.000Z' data-views='209096' data-time_on_page='252'>
+		<div class='story-item' data-id='2017/03/hamilton' data-topic='entertainment' data-chart='bubble chart,network diagram,unique' data-keyword='music' data-author='shirley' data-author_slug='shirley-wu' data-author_name='Shirley Wu' data-hed='an interactive visualization of every line in hamilton' data-dek='from the moment i sat down to listen the whole way through, i was done for...' data-date='2016-12-15T05:00:00.000Z' data-views='209096' data-time_on_page='227'>
 			<div class='item__img'>
 				<a href='//pudding.cool/2017/03/hamilton'>
 					<img src='../../common/assets/thumbnails/640/2017_03_hamilton.jpg' alt='An Interactive Visualization of Every Line in Hamilton'>
@@ -272,7 +272,7 @@
 				<img inline src='dev/common/assets/svg/pudding-wordmark.svg'></a>
 				<p class='footer__description'><a href='https://pudding.cool'>The Pudding</a> is a digital publication that
 					explains ideas debated in culture with visual essays.</p>
-				<p class='footer__trademark'>The Pudding<span>®</span> is made in Brooklyn, NY; Seattle, WA; and Great
+				<p class='footer__trademark'>The Pudding<span>®</span> is made in Brooklyn, NY; Seattle, WA; San Antonio, TX; and Great
 					Barrington, MA.</p>
 			</div>
 

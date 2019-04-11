@@ -788,7 +788,7 @@
 			</div>
 		</div>
 	</li><li>
-		<div class='story-item' data-id='2017/03/elections' data-topic='social' data-chart='area chart,barbell plot,strip plot,unique' data-keyword='politics,media,news' data-author='russell' data-author_slug='russell-goldenberg' data-author_name='Russell Goldenberg' data-hed='how news media covers trump & clinton' data-dek='analyzing 12,147 images of trump and clinton' data-date='2016-10-01T04:00:00.000Z' data-views='16171' data-time_on_page='180'>
+		<div class='story-item' data-id='2017/03/elections' data-topic='social' data-chart='area chart,barbell plot,strip plot,unique' data-keyword='politics,media,news' data-author='russell' data-author_slug='russell-goldenberg' data-author_name='Russell Goldenberg' data-hed='how news media covers trump & clinton' data-dek='analyzing 12,147 images of trump and clinton' data-date='2016-10-01T04:00:00.000Z' data-views='16171' data-time_on_page='170'>
 			<div class='item__img'>
 				<a href='//pudding.cool/2017/03/elections'>
 					<img src='../../common/assets/thumbnails/640/social.jpg' alt='How News Media Covers Trump & Clinton'>
@@ -807,7 +807,7 @@
 			</div>
 		</div>
 	</li><li>
-		<div class='story-item' data-id='2017/03/redraft' data-topic='sports' data-chart='heat map,scatter plot,lollipop chart,bubble chart,bar chart,table' data-keyword='nba,basketball' data-author='russell' data-author_slug='russell-goldenberg' data-author_name='Russell Goldenberg' data-hed='twenty years of the nba redrafted' data-dek='using career stats to prove the best/worst nba draft picks, ever' data-date='2016-09-01T04:00:00.000Z' data-views='136814' data-time_on_page='557'>
+		<div class='story-item' data-id='2017/03/redraft' data-topic='sports' data-chart='heat map,scatter plot,lollipop chart,bubble chart,bar chart,table' data-keyword='nba,basketball' data-author='russell' data-author_slug='russell-goldenberg' data-author_name='Russell Goldenberg' data-hed='twenty years of the nba redrafted' data-dek='using career stats to prove the best/worst nba draft picks, ever' data-date='2016-09-01T04:00:00.000Z' data-views='136814' data-time_on_page='493'>
 			<div class='item__img'>
 				<a href='//pudding.cool/2017/03/redraft'>
 					<img src='../../common/assets/thumbnails/640/2017_03_redraft.jpg' alt='Twenty Years of the NBA Redrafted'>
@@ -880,7 +880,7 @@
 				<img inline src='dev/common/assets/svg/pudding-wordmark.svg'></a>
 				<p class='footer__description'><a href='https://pudding.cool'>The Pudding</a> is a digital publication that
 					explains ideas debated in culture with visual essays.</p>
-				<p class='footer__trademark'>The Pudding<span>®</span> is made in Brooklyn, NY; Seattle, WA; and Great
+				<p class='footer__trademark'>The Pudding<span>®</span> is made in Brooklyn, NY; Seattle, WA; San Antonio, TX; and Great
 					Barrington, MA.</p>
 			</div>
 
