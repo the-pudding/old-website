@@ -16,7 +16,7 @@ module.exports = function({ path, story }) {
       story.author_name
     }' data-hed='${story.hed.toLowerCase()}' data-dek='${story.dek.toLowerCase()}' data-date='${
       story.date
-    }' data-views='${story.views}'`;
+    }' data-views='${story.views}' data-time_on_page='${story.time_on_page}'`;
 
   return `
 		<div class='story-item' ${dataAttr()}>

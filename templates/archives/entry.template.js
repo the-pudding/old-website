@@ -26,7 +26,8 @@
     'hed',
     'dek',
     'date',
-    'views'
+		'views',
+		'time_on_page'
   ];
 
   function arrayify(str) {
@@ -132,7 +133,9 @@
       $li.sort((a, b) => d3.descending(a.date, b.date));
     } else if (this.value === 'Most-Viewed') {
       $li.sort((a, b) => d3.descending(a.views, b.views));
-    }
+		} else if (this.value === 'Time on Page') {
+			$li.sort((a, b) => d3.descending(a.time_on_page, b.time_on_page));
+		}
   }
 
   function setupFilters() {

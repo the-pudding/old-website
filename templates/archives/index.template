@@ -2,10 +2,10 @@
 <html lang='en'>
 
 <head>
-	
+
 	<!-- DO NOT REMOVE -->
 	<!-- meta -->
-	
+
 	<link inline rel='stylesheet' href='../common/css/font.css'>
 	<link inline rel='stylesheet' href='../common/css/bundle.css'>
 
@@ -28,7 +28,7 @@
 				<input aria-label='Search' name='search' placeholder='Search...'>
 			</fieldset>
 
-			
+
 			<fieldset class='field__sort'>
 				<legend class='random-color'>Sort By</legend>
 				<ul>
@@ -37,6 +37,7 @@
 							<option>Newest to Oldest</option>
 							<option>Oldest to Newest</option>
 							<option>Most-Viewed</option>
+							<option>Time on Page</option>
 						</select>
 					</li>
 				</ul>
@@ -52,7 +53,7 @@
 					</li>
 
 					<li>
-						<select data-filter='topic'class='filter--topic'>
+						<select data-filter='topic' class='filter--topic'>
 							<option>Topic</option>
 						</select>
 					</li>
@@ -64,20 +65,22 @@
 					</li>
 
 					<li>
-						<select data-filter='keyword'class='filter--keyword'>
+						<select data-filter='keyword' class='filter--keyword'>
 							<option>Keyword</option>
 						</select>
 					</li>
-					
+
 				</ul>
 			</fieldset>
 		</section>
 
 		<section class='stories'>
 			<!-- DO NOT REMOVE -->
-			<ul><!-- stories --></ul>
+			<ul>
+				<!-- stories -->
+			</ul>
 		</section>
-		
+
 	</main>
 
 	<!-- DO NOT REMOVE -->
