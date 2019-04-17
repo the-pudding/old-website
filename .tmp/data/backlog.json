@@ -854,7 +854,7 @@
     "public": "TRUE",
     "seeking": "",
     "description": "How much people use the word \"like.\"",
-    "internal_notes": "",
+    "internal_notes": "This could be analyzed using podcast transcripts or YouTube Comments",
     "Storytime link": ""
   },
   {
@@ -934,5 +934,70 @@
     "description": "The outsized role of Max Martin and his deciples on the charts. This would also show the various \"Max Martins\" of each era.",
     "internal_notes": "",
     "Storytime link": "https://docs.google.com/document/d/1zLSgancVlRnI-bedRPn9sU7ItP7LYRzuJ8z7RsV1Ouc/edit"
+  },
+  {
+    "story": "Visualize Stanford traffic stop data",
+    "date": "2019-04-12",
+    "originator": "matt",
+    "status": "",
+    "involvement": "collab",
+    "phase_cleared": "idea",
+    "public": "TRUE",
+    "seeking": "",
+    "description": "Stanford <a href=\"https://openpolicing.stanford.edu/publications/\" target=\"_blank\">has released</a> a paper summarizing its findings from the traffic stop dataset. There is an opportunity to visualize this data.",
+    "internal_notes": "",
+    "Storytime link": ""
+  },
+  {
+    "story": "Age of atheletes extending over time",
+    "date": "2019-04-12",
+    "originator": "matt",
+    "status": "",
+    "involvement": "collab",
+    "phase_cleared": "storytime",
+    "public": "TRUE",
+    "seeking": "",
+    "description": "This idea aims to look at whether performance of older atheletes is improving in major sports, potentially due to the improvement in training and medicine.",
+    "internal_notes": "",
+    "Storytime link": ""
+  },
+  {
+    "story": "Yearbook hairstyles",
+    "date": "2019-04-12",
+    "originator": "matt",
+    "status": "",
+    "involvement": "collab",
+    "phase_cleared": "storytime",
+    "public": "FALSE",
+    "seeking": "",
+    "description": "This idea is to <a href=\"http://people.eecs.berkeley.edu/~shiry/projects/yearbooks/yearbooks.html\">use the dataset from here</a> to analyze how hair styles or facial hair has changed over time.",
+    "internal_notes": "",
+    "Storytime link": ""
+  },
+  {
+    "story": "Words babies say",
+    "date": "2019-04-12",
+    "originator": "matt",
+    "status": "",
+    "involvement": "collab",
+    "phase_cleared": "storytime",
+    "public": "TRUE",
+    "seeking": "",
+    "description": "We don't have an idea yet, but we're looking to build some sort of narrative with <a href=\"http://wordbank.stanford.edu/\">this dataset</a>.",
+    "internal_notes": "",
+    "Storytime link": ""
+  },
+  {
+    "story": "Twitter verification investigation",
+    "date": "2019-04-17",
+    "originator": "eric",
+    "status": "",
+    "involvement": "",
+    "phase_cleared": "idea",
+    "public": "TRUE",
+    "seeking": "",
+    "description": "Does Twitter has a provable gender and race imbalance for verified accounts? Partly inspired by <a href=\"https://mashable.com/article/twitter-verification-pause/\" target=\"_blank\">This story.</a>",
+    "internal_notes": "",
+    "Storytime link": ""
   }
 ]
