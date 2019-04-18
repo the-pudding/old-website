@@ -383,5 +383,16 @@
     "position": "Contributor",
     "bio": "",
     "slug": "wessel-stoop"
+  },
+  {
+    "id": "maarten",
+    "name": "Maarten Lambrechts ",
+    "email": "",
+    "email-unconfirmed": "",
+    "twitter": "maartenzam",
+    "url": "http://maartenlambrechts.be",
+    "position": "Contributor",
+    "bio": "",
+    "slug": "maarten-lambrechts"
   }
 ]

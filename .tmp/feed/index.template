@@ -8,7 +8,7 @@
 		<link>https://pudding.cool</link>
 		<description>The Pudding is an editorial publication that explains ideas debated in culture with visual essays.</description>
 		<lastBuildDate>
-			Wed, 17 Apr 2019 14:52:55 GMT
+			Thu, 18 Apr 2019 13:19:52 GMT
 		</lastBuildDate>
 		<language>en-US</language>
 		<sy:updatePeriod>daily</sy:updatePeriod>
@@ -21,9 +21,18 @@
 
 		
 <item>
+	<title>Why Budapest, Warsaw, and Lithuania split themselves in two</title>
+	<link>https://pudding.cool/2019/04/eu-regions</link>
+	<description>Explaining how the European Union calculates wealth distribution</description>
+	<category>other></category>
+	<pubDate>Thu, 18 Apr 2019 04:00:00 GMT</pubDate>
+	<guid isPermaLink="false">2019/04/eu-regions</guid>
+</item>
+	
+<item>
 	<title>How Algorithms Know What You’ll Type Next</title>
 	<link>https://pudding.cool/2019/04/text-prediction</link>
-	<description>Exploring how text prediction really works.</description>
+	<description>Exploring how text prediction really works</description>
 	<category>other></category>
 	<pubDate>Wed, 10 Apr 2019 04:00:00 GMT</pubDate>
 	<guid isPermaLink="false">2019/04/text-prediction</guid>
@@ -144,15 +153,6 @@
 	<category>people></category>
 	<pubDate>Tue, 13 Nov 2018 05:00:00 GMT</pubDate>
 	<guid isPermaLink="false">2018/11/dearabby</guid>
-</item>
-	
-<item>
-	<title>The Winningest Cities in North American Sports</title>
-	<link>https://pudding.cool/2018/11/titletowns</link>
-	<description>What makes a titletown in sports?</description>
-	<category>sports></category>
-	<pubDate>Wed, 07 Nov 2018 05:00:00 GMT</pubDate>
-	<guid isPermaLink="false">2018/11/titletowns</guid>
 </item>
 	
 

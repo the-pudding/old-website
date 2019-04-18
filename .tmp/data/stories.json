@@ -1,11 +1,46 @@
 [
   {
+    "url": "2019/04/eu-regions",
+    "date": "2019-04-18T04:00:00.000Z",
+    "hed": "Why Budapest, Warsaw, and Lithuania split themselves in two",
+    "hed_flag": "59",
+    "dek": "Explaining how the European Union calculates wealth distribution",
+    "dek_flag": "64",
+    "topic": [
+      "other"
+    ],
+    "pick": "",
+    "footer": "TRUE",
+    "author": [
+      "maarten"
+    ],
+    "hits": "",
+    "keyword": [
+      "politics"
+    ],
+    "chart": [
+      "map",
+      "scatter plot"
+    ],
+    "tech": "",
+    "views_key": "Why Budapest, Warsaw, and Lithuania split themselves in two",
+    "ignore": "",
+    "views": 0,
+    "time_on_page": 0,
+    "img": "2019_04_eu-regions",
+    "time": "April 2019",
+    "author_html": "<a href='https://pudding.cool/author/maarten-lambrechts'>Maarten Lambrechts </a>",
+    "author_name": "Maarten Lambrechts ",
+    "author_slug": "maarten-lambrechts",
+    "image": "2019_04_eu-regions"
+  },
+  {
     "url": "2019/04/text-prediction",
     "date": "2019-04-10T04:00:00.000Z",
     "hed": "How Algorithms Know What You’ll Type Next",
     "hed_flag": "41",
-    "dek": "Exploring how text prediction really works.",
-    "dek_flag": "43",
+    "dek": "Exploring how text prediction really works",
+    "dek_flag": "42",
     "topic": [
       "other"
     ],
