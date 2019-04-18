@@ -990,13 +990,26 @@
   {
     "story": "Twitter verification investigation",
     "date": "2019-04-17",
-    "originator": "eric",
+    "originator": "russell",
     "status": "",
     "involvement": "",
     "phase_cleared": "idea",
     "public": "TRUE",
     "seeking": "",
     "description": "Does Twitter has a provable gender and race imbalance for verified accounts? <a href=\"https://mashable.com/article/twitter-verification-pause/\" target=\"_blank\">Related</a>.",
+    "internal_notes": "",
+    "Storytime link": ""
+  },
+  {
+    "story": "Longevity of dance fads",
+    "date": "2019-04-18",
+    "originator": "russell",
+    "status": "",
+    "involvement": "collab",
+    "phase_cleared": "storytime",
+    "public": "TRUE",
+    "seeking": "",
+    "description": "Are we ever going to produce another macarena? I feel like dance trends are more frequent and fleeting since social media. Perhaps wedding data as proxy, or quiz.",
     "internal_notes": "",
     "Storytime link": ""
   }
