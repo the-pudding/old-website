@@ -2022,11 +2022,13 @@
 <script inline src='../common/js/general.js'></script>
 <script>
 	(function() {
+	var baseURL = null;
+
   function handleTopicClick() {
     var $el = d3.select(this);
 
 		var topic = $el.attr('data-topic');
-
+		window.location.href = baseURL + "#" + topic;
     d3.selectAll('.top__nav span').classed('is-active', false);
     d3.select($el.node().parentNode).classed('is-active', true);
 
@@ -2042,7 +2044,8 @@
   function setupTopics() {
     var ref = window.location;
     var href = ref.href;
-    var split = href.split('#');
+		var split = href.split('#');
+		baseURL = split[0];
 		var t = split.length > 1 ? split[1] : 'music';
     $ul = d3.selectAll('.topics__stories ul');
     var sz = $ul.size();

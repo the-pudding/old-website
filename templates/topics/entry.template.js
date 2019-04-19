@@ -1,9 +1,11 @@
 (function() {
+	let baseURL = null;
+
   function handleTopicClick() {
     const $el = d3.select(this);
 
 		const topic = $el.attr('data-topic');
-
+		window.location.href = `${baseURL}#${topic}`;
     d3.selectAll('.top__nav span').classed('is-active', false);
     d3.select($el.node().parentNode).classed('is-active', true);
 
@@ -18,7 +20,8 @@
 
   function setupTopics() {
     const { href } = window.location;
-    const split = href.split('#');
+		const split = href.split('#');
+		baseURL = split[0];
 		const t = split.length > 1 ? split[1] : 'music';
     $ul = d3.selectAll('.topics__stories ul');
     const sz = $ul.size();
