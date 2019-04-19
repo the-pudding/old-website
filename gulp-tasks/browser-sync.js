@@ -8,7 +8,7 @@ gulp.task('browser-sync', () => {
       baseDir: 'dev/',
       index: 'index.html'
     },
-    port: 4000,
+    port: 3000,
     notify: false,
     ghostMode: false,
     online: false

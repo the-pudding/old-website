@@ -2025,7 +2025,7 @@
   function handleTopicClick() {
     var $el = d3.select(this);
 
-    var topic = $el.attr('data-topic');
+		var topic = $el.attr('data-topic');
 
     d3.selectAll('.top__nav span').classed('is-active', false);
     d3.select($el.node().parentNode).classed('is-active', true);
@@ -2043,13 +2043,13 @@
     var ref = window.location;
     var href = ref.href;
     var split = href.split('#');
-    var t = split.length > 1 ? split[1] : 'music';
+		var t = split.length > 1 ? split[1] : 'music';
     $ul = d3.selectAll('.topics__stories ul');
     var sz = $ul.size();
     var count = d3.range(sz);
     d3.shuffle(count);
 
-    var $btn = d3.select('.top__nav').select(("[data-topic='" + t + "']"));
+		var $btn = d3.select((".top__nav [data-topic='" + t + "']"));
     if ($btn.size()) { handleTopicClick.call($btn.node()); }
     else {
       var $b = d3.select('.top__nav button');
