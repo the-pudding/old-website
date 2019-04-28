@@ -18,7 +18,7 @@ module.exports = function() {
 						</a>
 					</li>
 					<li>
-						<a href='https://www.instagram.com/pudding.cool'>
+						<a href='https://www.instagram.com/the.pudding'>
 							<img inline src='dev/common/assets/svg/instagram.svg'>
 							<p>INSTAGRAM</p>
 						</a>

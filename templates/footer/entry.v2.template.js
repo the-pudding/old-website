@@ -224,7 +224,7 @@
           </a>
         </li>
 				<li>
-          <a href='https://www.instagram.com/pudding.cool'>
+          <a href='https://www.instagram.com/the.pudding'>
             ${instagramLogo}
 					  <p>INSTAGRAM</p>
           </a>
