@@ -11,7 +11,7 @@ function createHTML({ path }) {
   const nav = topicsData
     .map(
       topic =>
-        `<span><button data-topic='${topic.slug}'>${
+        `<span><button data-topic="${topic.slug}">${
           topic.label
         }</button></span>`
     )
@@ -20,7 +20,7 @@ function createHTML({ path }) {
   const more = topicsData
     .map(
       topic =>
-        `<span data-topic='${topic.slug}'><a href='${path}topics/#${
+        `<span data-topic="${topic.slug}"><a href='${path}topics/#${
           topic.slug
         }'>More ${topic.label} ${arrowSvg}</a></span>`
     )

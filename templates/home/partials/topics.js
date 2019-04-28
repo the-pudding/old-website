@@ -17,7 +17,7 @@ function createHTML({ data, path }) {
       const storyItems = topic.values
         .map(story => `<li>${Item({ story, path })}</li>`)
         .join('');
-      return `<ul data-topic='${topic.key}'>${storyItems}</ul>`;
+      return `<ul data-topic="${topic.key}">${storyItems}</ul>`;
     })
     .join('');
 

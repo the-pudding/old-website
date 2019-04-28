@@ -53,7 +53,7 @@
       d.author_slug = arrayify(d.author_slug);
       d.author_name = arrayify(d.author_name);
       d.date = new Date(d.date);
-    });
+		});
   }
 
   function reset() {
@@ -132,9 +132,9 @@
     } else if (this.value === 'Newest to Oldest') {
       $li.sort((a, b) => d3.descending(a.date, b.date));
     } else if (this.value === 'Most-Viewed') {
-      $li.sort((a, b) => d3.descending(a.views, b.views));
+      $li.sort((a, b) => d3.descending(+a.views, +b.views));
 		} else if (this.value === 'Time on Page') {
-			$li.sort((a, b) => d3.descending(a.time_on_page, b.time_on_page));
+			$li.sort((a, b) => d3.descending(+a.time_on_page, +b.time_on_page));
 		}
   }
 

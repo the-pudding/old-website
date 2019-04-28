@@ -8,15 +8,15 @@ module.exports = function({ path, story }) {
     story.hits ? `<p class='img__hit random-background'>${story.hits}</p>` : '';
 
   const dataAttr = () =>
-    `data-id='${story.url}' data-topic='${story.topic}' data-chart='${
+    `data-id="${story.url}" data-topic="${story.topic}" data-chart="${
       story.chart
-    }' data-keyword='${story.keyword}' data-author='${
+    }" data-keyword="${story.keyword}" data-author="${
       story.author
-    }' data-author_slug='${story.author_slug}' data-author_name='${
+    }" data-author_slug="${story.author_slug}" data-author_name="${
       story.author_name
-    }' data-hed='${story.hed.toLowerCase()}' data-dek='${story.dek.toLowerCase()}' data-date='${
+    }" data-hed="${story.hed.toLowerCase()}" data-dek="${story.dek.toLowerCase()}" data-date="${
       story.date
-    }' data-views='${story.views}' data-time_on_page='${story.time_on_page}'`;
+    }" data-views="${story.views}" data-time_on_page="${story.time_on_page}"`;
 
   return `
 		<div class='story-item' ${dataAttr()}>
