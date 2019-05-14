@@ -47,7 +47,7 @@ function createMarkup() {
   const metaHTML = Meta({ title: 'Topics' });
   const analyticsHTML = Analytics();
   const headerHTML = Header('../');
-  const topicsNavHTML = TopicsNav({ path: '../' });
+  const topicsNavHTML = TopicsNav({ path: '../', exclude: ['other'] });
   const contentHTML = Content();
   const footerHTML = Footer();
   const entryJS = compileEntryJS();
