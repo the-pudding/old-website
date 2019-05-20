@@ -8,7 +8,7 @@
 		<link>https://pudding.cool</link>
 		<description>The Pudding is an editorial publication that explains ideas debated in culture with visual essays.</description>
 		<lastBuildDate>
-			Tue, 14 May 2019 14:44:26 GMT
+			Mon, 20 May 2019 19:46:23 GMT
 		</lastBuildDate>
 		<language>en-US</language>
 		<sy:updatePeriod>daily</sy:updatePeriod>
@@ -20,6 +20,15 @@
 		</image>
 
 		
+<item>
+	<title>How Much Data Lies Behind the Paper You're Reading?</title>
+	<link>https://pudding.cool/2019/05/science_etc_1</link>
+	<description>Want to access the raw data behind an academic paper? Good luck.</description>
+	<category>culture></category>
+	<pubDate>Mon, 20 May 2019 04:00:00 GMT</pubDate>
+	<guid isPermaLink="false">2019/05/science_etc_1</guid>
+</item>
+	
 <item>
 	<title>The Rise of Hyphenated Last Names in Pro Sports</title>
 	<link>https://pudding.cool/2019/05/hyphens</link>
@@ -144,15 +153,6 @@
 	<category>social></category>
 	<pubDate>Wed, 19 Dec 2018 05:00:00 GMT</pubDate>
 	<guid isPermaLink="false">2018/12/brief-history</guid>
-</item>
-	
-<item>
-	<title>Population Mountains</title>
-	<link>https://pudding.cool/2018/12/3d-cities-story</link>
-	<description>This is a story about how to perceive the population size of cities.</description>
-	<category>social></category>
-	<pubDate>Tue, 04 Dec 2018 05:00:00 GMT</pubDate>
-	<guid isPermaLink="false">2018/12/3d-cities-story</guid>
 </item>
 	
 
