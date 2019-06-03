@@ -8,7 +8,7 @@
 		<link>https://pudding.cool</link>
 		<description>The Pudding is an editorial publication that explains ideas debated in culture with visual essays.</description>
 		<lastBuildDate>
-			Fri, 31 May 2019 13:08:29 GMT
+			Mon, 03 Jun 2019 12:12:22 GMT
 		</lastBuildDate>
 		<language>en-US</language>
 		<sy:updatePeriod>daily</sy:updatePeriod>
@@ -20,6 +20,15 @@
 		</image>
 
 		
+<item>
+	<title>A People Map of the UK</title>
+	<link>https://pudding.cool/2019/06/people-map-uk</link>
+	<description>Where city names are replaced by their most Wikipedia’ed resident.</description>
+	<category>people></category>
+	<pubDate>Mon, 03 Jun 2019 04:00:00 GMT</pubDate>
+	<guid isPermaLink="false">2019/06/people-map-uk</guid>
+</item>
+	
 <item>
 	<title>A People Map of the US</title>
 	<link>https://pudding.cool/2019/05/people-map</link>
@@ -144,15 +153,6 @@
 	<category>social></category>
 	<pubDate>Thu, 07 Feb 2019 05:00:00 GMT</pubDate>
 	<guid isPermaLink="false">2019/02/dress-code-sexualization</guid>
-</item>
-	
-<item>
-	<title>Rappers, Sorted by the Size of their Vocabulary</title>
-	<link>https://pudding.cool/projects/vocabulary</link>
-	<description>The number of unique lyrics used within artists’ first 35,000 lyrics</description>
-	<category>music></category>
-	<pubDate>Wed, 16 Jan 2019 05:00:00 GMT</pubDate>
-	<guid isPermaLink="false">projects/vocabulary</guid>
 </item>
 	
 
