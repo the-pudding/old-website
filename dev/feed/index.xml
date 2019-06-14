@@ -8,7 +8,7 @@
 		<link>https://pudding.cool</link>
 		<description>The Pudding is an editorial publication that explains ideas debated in culture with visual essays.</description>
 		<lastBuildDate>
-			Fri, 14 Jun 2019 19:27:47 GMT
+			Fri, 14 Jun 2019 19:47:01 GMT
 		</lastBuildDate>
 		<language>en-US</language>
 		<sy:updatePeriod>daily</sy:updatePeriod>
@@ -20,6 +20,15 @@
 		</image>
 
 		
+<item>
+	<title>Best Year in Music</title>
+	<link>https://pudding.cool/projects/music-history</link>
+	<description>A journey through every Billboard top 5 hit to find music’s greatest era</description>
+	<category>music></category>
+	<pubDate>Fri, 14 Jun 2019 04:00:00 GMT</pubDate>
+	<guid isPermaLink="false">projects/music-history</guid>
+</item>
+	
 <item>
 	<title>A People Map of the UK</title>
 	<link>https://pudding.cool/2019/06/people-map-uk</link>
@@ -144,15 +153,6 @@
 	<category>other></category>
 	<pubDate>Fri, 22 Feb 2019 05:00:00 GMT</pubDate>
 	<guid isPermaLink="false">2019/02/gyllenhaal</guid>
-</item>
-	
-<item>
-	<title>The Sexualized Messages Dress Codes are Sending to Students</title>
-	<link>https://pudding.cool/2019/02/dress-code-sexualization</link>
-	<description>What we learned about sexualization from analyzing 481 high school dress codes</description>
-	<category>social></category>
-	<pubDate>Thu, 07 Feb 2019 05:00:00 GMT</pubDate>
-	<guid isPermaLink="false">2019/02/dress-code-sexualization</guid>
 </item>
 	
 
