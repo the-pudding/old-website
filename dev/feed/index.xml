@@ -8,7 +8,7 @@
 		<link>https://pudding.cool</link>
 		<description>The Pudding is an editorial publication that explains ideas debated in culture with visual essays.</description>
 		<lastBuildDate>
-			Fri, 14 Jun 2019 19:47:01 GMT
+			Mon, 17 Jun 2019 20:20:09 GMT
 		</lastBuildDate>
 		<language>en-US</language>
 		<sy:updatePeriod>daily</sy:updatePeriod>
@@ -20,6 +20,15 @@
 		</image>
 
 		
+<item>
+	<title>A chronicle of the anti-vaccination movement</title>
+	<link>https://pudding.cool/2019/06/science_etc_2</link>
+	<description>How one unethical study on vaccines caused irreparable harm.</description>
+	<category>culture></category>
+	<pubDate>Mon, 17 Jun 2019 04:00:00 GMT</pubDate>
+	<guid isPermaLink="false">2019/06/science_etc_2</guid>
+</item>
+	
 <item>
 	<title>Best Year in Music</title>
 	<link>https://pudding.cool/projects/music-history</link>
@@ -144,15 +153,6 @@
 	<category>sports></category>
 	<pubDate>Mon, 04 Mar 2019 05:00:00 GMT</pubDate>
 	<guid isPermaLink="false">2019/03/hype</guid>
-</item>
-	
-<item>
-	<title>The Gyllenhaal Experiment</title>
-	<link>https://pudding.cool/2019/02/gyllenhaal</link>
-	<description>The many ways to misspell the hardest names in pop culture.</description>
-	<category>other></category>
-	<pubDate>Fri, 22 Feb 2019 05:00:00 GMT</pubDate>
-	<guid isPermaLink="false">2019/02/gyllenhaal</guid>
 </item>
 	
 
