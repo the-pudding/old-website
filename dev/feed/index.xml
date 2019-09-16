@@ -8,7 +8,7 @@
 		<link>https://pudding.cool</link>
 		<description>The Pudding is an editorial publication that explains ideas debated in culture with visual essays.</description>
 		<lastBuildDate>
-			Fri, 23 Aug 2019 19:33:07 GMT
+			Mon, 16 Sep 2019 15:08:50 GMT
 		</lastBuildDate>
 		<language>en-US</language>
 		<sy:updatePeriod>daily</sy:updatePeriod>
@@ -20,6 +20,15 @@
 		</image>
 
 		
+<item>
+	<title>The Language of Congress</title>
+	<link>https://pudding.cool/2019/09/language-of-congress</link>
+	<description>What topics do members of Congress tweet about most frequently?</description>
+	<category>social></category>
+	<pubDate>Sun, 15 Sep 2019 04:00:00 GMT</pubDate>
+	<guid isPermaLink="false">2019/09/language-of-congress</guid>
+</item>
+	
 <item>
 	<title>Are Men Singing Higher in Pop Music?</title>
 	<link>https://pudding.cool/2019/08/register</link>
@@ -144,15 +153,6 @@
 	<category>other></category>
 	<pubDate>Wed, 10 Apr 2019 04:00:00 GMT</pubDate>
 	<guid isPermaLink="false">2019/04/text-prediction</guid>
-</item>
-	
-<item>
-	<title>Women's Issues Within Political Party Platforms</title>
-	<link>https://pudding.cool/projects/votes-for-women</link>
-	<description>How often do women’s issues appear in party platform documents over time?</description>
-	<category>social></category>
-	<pubDate>Fri, 29 Mar 2019 04:00:00 GMT</pubDate>
-	<guid isPermaLink="false">projects/votes-for-women</guid>
 </item>
 	
 
