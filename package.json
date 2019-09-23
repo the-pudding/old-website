@@ -6,11 +6,13 @@
 	"scripts": {
 		"dist": "babel-node scripts/dist.js",
 		"fetch-about-copy": "babel-node scripts/fetch-about-copy.js",
-		"fetch-data": "babel-node scripts/fetch-data.js && npm run fetch-about-copy",
+		"fetch-privacy-copy": "babel-node scripts/fetch-privacy-copy.js",
+		"fetch-data": "babel-node scripts/fetch-data.js && npm run fetch-about-copy && npm run fetch-privacy-copy",
 		"home": "babel-node scripts/page-home.js",
 		"feed": "babel-node scripts/page-feed.js",
 		"authors": "babel-node scripts/page-authors.js",
 		"about": "babel-node scripts/page-about.js",
+		"privacy": "babel-node scripts/page-privacy.js",
 		"topics": "babel-node scripts/page-topics.js",
 		"archives": "babel-node scripts/page-archives.js",
 		"backlog": "babel-node scripts/page-backlog.js",
@@ -19,11 +21,12 @@
 		"watch:home": "watch 'npm run home' templates/home",
 		"watch:authors": "watch 'npm run authors' templates/author",
 		"watch:about": "watch 'npm run about' templates/about",
+		"watch:privacy": "watch 'npm run privacy' templates/privacy",
 		"watch:topics": "watch 'npm run topics' templates/topics",
 		"watch:archives": "watch 'npm run archives' templates/archives",
 		"watch:backlog": "watch 'npm run backlog' templates/backlog",
 		"watch": "npm-run-all --parallel watch:*",
-		"start": "npm run thumbnails && npm run fetch-data && npm run home && npm run feed && npm run authors && npm run about && npm run topics && npm run archives && npm run backlog && npm run footer"
+		"start": "npm run thumbnails && npm run fetch-data && npm run home && npm run feed && npm run authors && npm run about && npm run privacy && npm run topics && npm run archives && npm run backlog && npm run footer"
 	},
 	"keywords": [],
 	"author": "Russell Goldenberg",
