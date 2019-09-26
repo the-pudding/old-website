@@ -8,7 +8,7 @@
 		<link>https://pudding.cool</link>
 		<description>The Pudding is an editorial publication that explains ideas debated in culture with visual essays.</description>
 		<lastBuildDate>
-			Mon, 23 Sep 2019 13:33:22 GMT
+			Thu, 26 Sep 2019 20:05:02 GMT
 		</lastBuildDate>
 		<language>en-US</language>
 		<sy:updatePeriod>daily</sy:updatePeriod>
@@ -20,6 +20,15 @@
 		</image>
 
 		
+<item>
+	<title>The Millennial Question</title>
+	<link>https://pudding.cool/2019/09/millennials</link>
+	<description>How does popular media see our generation?</description>
+	<category>culture></category>
+	<pubDate>Thu, 26 Sep 2019 04:00:00 GMT</pubDate>
+	<guid isPermaLink="false">2019/09/millennials</guid>
+</item>
+	
 <item>
 	<title>The Language of Congress</title>
 	<link>https://pudding.cool/2019/09/language-of-congress</link>
@@ -144,15 +153,6 @@
 	<category>other></category>
 	<pubDate>Thu, 18 Apr 2019 04:00:00 GMT</pubDate>
 	<guid isPermaLink="false">2019/04/eu-regions</guid>
-</item>
-	
-<item>
-	<title>How Algorithms Know What You’ll Type Next</title>
-	<link>https://pudding.cool/2019/04/text-prediction</link>
-	<description>Exploring how text prediction really works</description>
-	<category>other></category>
-	<pubDate>Wed, 10 Apr 2019 04:00:00 GMT</pubDate>
-	<guid isPermaLink="false">2019/04/text-prediction</guid>
 </item>
 	
 
