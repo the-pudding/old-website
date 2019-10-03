@@ -1,6 +1,6 @@
 module.exports = function() {
   return `
-	
+
 	<footer class='random-background'>
 		<div class='footer__inner'>
 			<div class='footer__cta'>
@@ -29,6 +29,18 @@ module.exports = function() {
 							<p>PATREON</p>
 						</a>
 					</li>
+          <li>
+						<a href='https://pudding.cool/about'>
+							<img inline src='dev/common/assets/svg/info.svg'>
+							<p>ABOUT</p>
+						</a>
+					</li>
+          <li>
+						<a href='https://pudding.cool/privacy/'>
+							<img inline src='dev/common/assets/svg/lock.svg'>
+							<p>PRIVACY</p>
+						</a>
+					</li>
 					<li>
 						<a href='http://eepurl.com/czym6f'>
 							<img inline src='dev/common/assets/svg/mail.svg'>
@@ -36,9 +48,9 @@ module.exports = function() {
 						</a>
 					</li>
 					<li>
-						<a href='https://pudding.cool/about'>
-							<img inline src='dev/common/assets/svg/info.svg'>
-							<p>ABOUT</p>
+						<a href='https://pudding.cool/feed/index.xml'>
+							<img inline src='dev/common/assets/svg/rss.svg'>
+							<p>RSS</p>
 						</a>
 					</li>
 				</ul>

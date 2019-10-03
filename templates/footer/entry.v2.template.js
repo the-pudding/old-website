@@ -104,6 +104,14 @@
 		<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-info"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12" y2="8"></line></svg>
 	`;
 
+  const privacyLogo = `
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-lock"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
+  `;
+
+  const rssLogo = `
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-rss"><path d="M4 11a9 9 0 0 1 9 9"></path><path d="M4 4a16 16 0 0 1 16 16"></path><circle cx="5" cy="19" r="1"></circle></svg>
+  `;
+
   function loadJS(src, cb) {
     const ref = document.getElementsByTagName('script')[0];
     const script = document.createElement('script');
@@ -235,6 +243,18 @@
             <p>PATREON</p>
           </a>
 				</li>
+        <li>
+					<a href='https://pudding.cool/about'>
+            ${infoLogo}
+            <p>ABOUT</p>
+          </a>
+				</li>
+        <li>
+					<a href='https://pudding.cool/privacy/'>
+            ${privacyLogo}
+            <p>PRIVACY</p>
+          </a>
+				</li>
 				<li>
 					<a href='http://eepurl.com/czym6f'>
             ${mailLogo}
@@ -242,9 +262,9 @@
           </a>
 				</li>
 				<li>
-					<a href='https://pudding.cool/about'>
-            ${infoLogo}
-            <p>ABOUT</p>
+					<a href='https://pudding.cool/feed/index.xml'>
+            ${rssLogo}
+            <p>RSS</p>
           </a>
 				</li>
 			</ul>
