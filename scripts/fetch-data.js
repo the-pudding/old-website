@@ -22,9 +22,8 @@ function slugify(str) {
   return str
     .trim()
     .toLowerCase()
-    .replace(/\s/g, '_')
-    .replace(/\W/g, '')
-    .replace(/\_/g, '-');
+    .replace(/'/g, '')
+    .replace(/\s/g, '-');
 }
 
 function cleanTemp(dir) {
