@@ -1,4 +1,4 @@
-PHONY: live-home live-about live-privacy live-author live-topics live-archives live-footer live-common live-cloudfront live server github
+PHONY: live-home live-about live-privacy live-faq live-author live-topics live-archives live-footer live-common live-cloudfront live server github
 
 live-home:
 	aws s3 cp dist/index.html s3://pudding.cool/index.html
@@ -9,6 +9,9 @@ live-about:
 
 live-privacy: 
 	aws s3 sync dist/privacy/ s3://pudding.cool/privacy
+
+live-faq: 
+	aws s3 sync dist/faq/ s3://pudding.cool/faq
 
 live-author: 
 	aws s3 sync dist/author/ s3://pudding.cool/author
@@ -31,7 +34,7 @@ live-common:
 	aws s3 sync dist/common/ s3://pudding.cool/common
 
 live-cloudfront: 
-	aws cloudfront create-invalidation --distribution-id E13X38CRR4E04D --paths  '/' '/index.html' '/feed*' '/common*' '/about*' '/privacy*' '/author*' '/topics*' '/archives*' '/backlog*' '/assets/scripts/pudding-footer.js' '/assets/scripts/pudding-footer.v2.js'	
+	aws cloudfront create-invalidation --distribution-id E13X38CRR4E04D --paths  '/' '/index.html' '/feed*' '/common*' '/about*' '/privacy*' '/faq*' '/author*' '/topics*' '/archives*' '/backlog*' '/assets/scripts/pudding-footer.js' '/assets/scripts/pudding-footer.v2.js'	
 
 live: live-home live-about live-privacy live-author live-topics live-archives live-backlog live-footer live-common live-cloudfront
 	
