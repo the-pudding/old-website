@@ -45,6 +45,10 @@ function init() {
   inlineAssets('topics/');
   // archives
 	inlineAssets('archives/');
+	// privacy
+	inlineAssets('privacy/');
+	// faq
+	inlineAssets('faq/');
 	// backlog
   inlineAssets('backlog/');
   // authors
