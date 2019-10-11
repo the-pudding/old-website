@@ -36,7 +36,7 @@ live-common:
 live-cloudfront: 
 	aws cloudfront create-invalidation --distribution-id E13X38CRR4E04D --paths  '/' '/index.html' '/feed*' '/common*' '/about*' '/privacy*' '/faq*' '/author*' '/topics*' '/archives*' '/backlog*' '/assets/scripts/pudding-footer.js' '/assets/scripts/pudding-footer.v2.js'	
 
-live: live-home live-about live-privacy live-author live-topics live-archives live-backlog live-footer live-common live-cloudfront
+live: live-home live-about live-privacy live-faq live-author live-topics live-archives live-backlog live-footer live-common live-cloudfront
 	
 server:
 	browser-sync start --ss ./dev --files dev/**/* --index index.html --no-notify
