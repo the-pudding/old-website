@@ -16,11 +16,7 @@ gulp.task('style-dev', () => {
     .src(src)
     .pipe(plumber({ errorHandler: report }))
     .pipe(stylus())
-    .pipe(
-      autoprefixer({
-        browsers: ['last 4 versions']
-      })
-    )
+    .pipe(autoprefixer())
     .pipe(combineMq())
     .pipe(cleanCSS())
     .pipe(rename('bundle.css'))

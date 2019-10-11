@@ -72,5 +72,9 @@
 		"shelljs": "0.8.3",
 		"uglify-js": "3.6.1",
 		"watch": "1.0.2"
-	}
+	},
+	"browserslist": [
+		"last 4 versions",
+		"> 1%"
+	]
 }
