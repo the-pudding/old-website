@@ -2,101 +2,116 @@
 	padding-top 6rem
 
 	main li
-		list-style-type disc
 		margin-left 1rem
+		list-style-type disc
 		line-height 1.8
+
 		+mq('bp-m')
 			// font-size 20px
 			// letter-spacing 0.02em
 
 	+mq('bp-m')
 		padding-top 0
+
 	section
-		border-top none
-		padding-left 0rem
 		padding-top 0rem
+		padding-left 0rem
+		border-top none
+
+		> *
+			max-width 40rem
+
 		+mq('bp-m')
 			// padding-left 15rem
-			padding-top 4rem
+			padding-top 1rem
 
 	.section__label
 		margin 0
 		margin-top 1rem
 		line-height 1
+
 	.page-nav
-		display none
 		position absolute
 		top 4rem
 		left 0
+		display none
 		font-family $sans-display
+
 		li
 			margin-bottom 0.5rem
 			margin-left 0
 			list-style-type none
 			set-type-size(root, false)
 			line-height 1
+
 		a
 			border none
 			color $gray-dark
+
 			&:hover
 				color $fg
 				font-weight 700
-
 
 		+mq('bp-m')
 			display block
 
 	.section__big
 		set-type-size(large, false)
-		line-height 1.2
 		margin-top 0
-		//font-weight 700
-		font-family  $serif-display
+		// font-weight 700
+		font-family $serif-display
+		line-height 1.2
 
 	.section__hed
-		font-family $sans-display
 		position relative
-		font-weight 700
 		text-transform uppercase
+		font-weight 700
+		font-family $sans-display
 		set-type-size(medium, true)
-		padding-top 0.25em
 		margin 4rem 0 1rem 0
+		padding-top 0.25em
 
 		&:before
-			content ''
-			display block
 			position absolute
 			top 0
 			left 0
+			display block
 			width 4rem
 			height $line-width
 			background-color $fg
+			content ''
 
 	main p
-		line-height 1.5
 		margin 1em 0
+		line-height 1.5
+
 		+mq('bp-m')
 			set-type-size(medium, true)
 			letter-spacing 0.02em
 
-
 	table
-		font-family $sans-display
-		width 100%
 		max-width 30rem
+		width 100%
+		font-family $sans-display
+
 		thead
 			border-bottom 1px solid $gray-light
+
 		thead td
 			color $gray-dark
 			text-transform uppercase
 			font-weight 700
 			set-type-size(small)
+
 		tr
 			border-bottom 1px solid $gray-light
+
 			&:last-of-type
 				border none
+
 		td
 			padding 0.5em 0.25rem
+
 			&:first-of-type
 				padding-right 1em
 
@@ -107,19 +122,20 @@
 		font-family $sans-display
 
 		li
-			width 9rem
-			margin-bottom 1rem
-			text-align center
 			margin-right 1rem
+			margin-bottom 1rem
 			margin-left 0
+			width 9rem
 			list-style-type none
+			text-align center
 
 		.author__img
+			margin 0 auto
 			width 9rem
 			height 9rem
 			background-position center center
 			background-size cover
-			margin 0 auto
+
 			&:hover
 				opacity 0.75
 
