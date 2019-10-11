@@ -8,7 +8,7 @@
 		"fetch-about-copy": "babel-node scripts/fetch-about-copy.js",
 		"fetch-privacy-copy": "babel-node scripts/fetch-privacy-copy.js",
 		"fetch-faq-copy": "babel-node scripts/fetch-faq-copy.js",
-		"fetch-data": "babel-node scripts/fetch-data.js && npm run fetch-about-copy && npm run fetch-privacy-copy",
+		"fetch-data": "babel-node scripts/fetch-data.js && npm run fetch-about-copy && npm run fetch-privacy-copy && npm run fetch-faq-copy",
 		"home": "babel-node scripts/page-home.js",
 		"feed": "babel-node scripts/page-feed.js",
 		"authors": "babel-node scripts/page-authors.js",

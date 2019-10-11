@@ -9,6 +9,7 @@ const Analytics = require(`${cwd}/templates/common/partials/analytics`);
 const Header = require(`${cwd}/templates/common/partials/header`);
 const Footer = require(`${cwd}/templates/common/partials/footer`);
 const Content = require(`${cwd}/templates/faq/partials/content`);
+const Contributors = require(`${cwd}/templates/faq/partials/contributors`);
 
 function cleanTemp(dir) {
 	console.log('cleaning tmp folder...');
@@ -37,6 +38,7 @@ function createMarkup() {
 	const analyticsHTML = Analytics();
 	const headerHTML = Header('../');
 	const contentHTML = Content();
+	const contributorsHTML = Contributors();
 	const footerHTML = Footer();
 
 	const options = {
@@ -46,9 +48,10 @@ function createMarkup() {
 			'<!-- analytics -->',
 			'<!-- header -->',
 			'<!-- content -->',
+			'<!-- contributors -->',
 			'<!-- footer -->'
 		],
-		to: [metaHTML, analyticsHTML, headerHTML, contentHTML, footerHTML]
+		to: [metaHTML, analyticsHTML, headerHTML, contentHTML, contributorsHTML, footerHTML]
 	};
 
 	return new Promise((resolve, reject) => {
