@@ -83,7 +83,7 @@ function createMarkup() {
       '<!-- how -->',
       '<!-- footer -->',
       '/* story-data */',
-      '/* entry-js */'
+      '/* entry-js */',
     ],
     to: [
       metaHTML,
@@ -98,8 +98,8 @@ function createMarkup() {
       howHTML,
       footerHTML,
       storyJS,
-      entryJS
-    ]
+      entryJS,
+    ],
   };
 
   return new Promise((resolve, reject) => {
@@ -112,10 +112,10 @@ function createMarkup() {
 function copyHTMLToDev(files) {
   return new Promise((resolve, reject) => {
     const path = `${cwd}/.tmp/index.html`;
-    fse.copySync(files[0], path);
+    fse.copySync(files[0].file, path);
     inlineSource(path, {
       compress: false,
-      ignore: ['css', 'js']
+      ignore: ['css', 'js'],
     })
       .then(html => {
         fse.writeFileSync(`${cwd}/dev/index.html`, html);

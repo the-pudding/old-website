@@ -8,7 +8,7 @@ console.log('fetching privacy page copy...');
 
 const google = {
   id: '1LToR_WZ-E8q6FMzFnYN62IfoZd6tmW80bC0kQBEGp84',
-  filename: 'privacy-copy'
+  filename: 'privacy-copy',
 };
 
 const url = `https://docs.google.com/document/d/${google.id}/export?format=txt`;
@@ -25,5 +25,3 @@ request(url, function(error, response, body) {
     process.exit();
   });
 });
-
-

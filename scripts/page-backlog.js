@@ -67,7 +67,7 @@ function createMarkup() {
       tableHTML,
       footerHTML,
       // entryJS
-    ]
+    ],
   };
 
   return new Promise((resolve, reject) => {
@@ -80,10 +80,10 @@ function createMarkup() {
 function copyHTMLToDev(files) {
   return new Promise((resolve, reject) => {
     const path = `${cwd}/.tmp/backlog/index.html`;
-    fse.copySync(files[0], path);
+    fse.copySync(files[0].file, path);
     inlineSource(path, {
       compress: false,
-      ignore: ['css', 'js']
+      ignore: ['css', 'js'],
     })
       .then(html => {
         fse.ensureDirSync(`${cwd}/dev/backlog`);

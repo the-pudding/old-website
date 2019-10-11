@@ -34,7 +34,7 @@ function prepareStories() {
     .map(d => ({
       image: d.image,
       url: d.url.trim(),
-      hed: d.hed.replace(/'/g, '’').trim()
+      hed: d.hed.replace(/'/g, '’').trim(),
     }));
 
   const output = JSON.stringify(data);
@@ -56,7 +56,7 @@ function compileJS1() {
   const options = {
     files: `${cwd}/.tmp/footer/entry.js`,
     from: ['*style-data*'],
-    to: [outputCSS.styles]
+    to: [outputCSS.styles],
   };
 
   return new Promise((resolve, reject) => {

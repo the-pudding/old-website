@@ -8,7 +8,7 @@ console.log('fetching about page copy...');
 
 const google = {
   id: '1TRc-grkFei5z0JGVULkgRRV5dy4QU5-F1Lhh-Vd11mU',
-  filename: 'about-copy'
+  filename: 'about-copy',
 };
 
 const url = `https://docs.google.com/document/d/${google.id}/export?format=txt`;

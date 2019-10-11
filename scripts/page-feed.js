@@ -40,7 +40,7 @@ function createMarkup() {
   const options = {
     files: `${cwd}/.tmp/feed/index.template`,
     from: ['<!-- items -->', '<!-- lastBuildDate -->'],
-    to: [itemsXML, new Date().toUTCString()]
+    to: [itemsXML, new Date().toUTCString()],
   };
 
   return new Promise((resolve, reject) => {
@@ -51,7 +51,7 @@ function createMarkup() {
 }
 
 function copyFeedToDev(files) {
-  fse.copySync(files[0], `${cwd}/dev/feed/index.xml`);
+  fse.copySync(files[0].file, `${cwd}/dev/feed/index.xml`);
   return Promise.resolve();
 }
 
