@@ -54,7 +54,7 @@ function createMarkup() {
     return new Promise((resolve, reject) => {
       const metaHTML = Meta({
         title: d.name,
-        description: `Read more from ${d.name}} on The Pudding.`
+        description: `Read more from ${d.name}} on The Pudding.`,
       });
       const analyticsHTML = Analytics();
       const headerHTML = Header('../../');
@@ -70,7 +70,7 @@ function createMarkup() {
           '<!-- header -->',
           '<!-- bio -->',
           '<!-- stories -->',
-          '<!-- footer -->'
+          '<!-- footer -->',
         ],
         to: [
           metaHTML,
@@ -78,8 +78,8 @@ function createMarkup() {
           headerHTML,
           bioHTML,
           storiesHTML,
-          footerHTML
-        ]
+          footerHTML,
+        ],
       };
 
       replace(options)
@@ -94,15 +94,16 @@ function createMarkup() {
 function copyHTMLToDev(files) {
   const promises = files.map(d => {
     return new Promise((res, rej) => {
-      const path = d[0].replace('.template', '.html');
-      fse.copySync(d[0], path);
+      const { file } = d[0];
+      const path = file.replace('.template', '.html');
+      fse.copySync(file, path);
 
       inlineSource(path, {
         compress: false,
-        ignore: ['css', 'js']
+        ignore: ['css', 'js'],
       })
         .then(html => {
-          const slug = d[0]
+          const slug = file
             .replace('/index.template', '')
             .split('/')
             .pop();
