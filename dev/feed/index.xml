@@ -8,7 +8,7 @@
 		<link>https://pudding.cool</link>
 		<description>The Pudding is an editorial publication that explains ideas debated in culture with visual essays.</description>
 		<lastBuildDate>
-			Tue, 15 Oct 2019 17:09:47 GMT
+			Thu, 24 Oct 2019 11:30:28 GMT
 		</lastBuildDate>
 		<language>en-US</language>
 		<sy:updatePeriod>daily</sy:updatePeriod>
@@ -21,6 +21,15 @@
 
 		
 <item>
+	<title>The Kim Foxx Effect</title>
+	<link>https://pudding.cool/2019/10/prosecutors</link>
+	<description>Measuring the data behind a promise to transform prosecution.</description>
+	<category>social></category>
+	<pubDate>Thu, 24 Oct 2019 04:00:00 GMT</pubDate>
+	<guid isPermaLink="false">2019/10/prosecutors</guid>
+</item>
+	
+<item>
 	<title>Where Do Adoptable Dogs in Your State Come From?</title>
 	<link>https://pudding.cool/2019/10/shelters</link>
 	<description>It may be further than you think.</description>
@@ -32,7 +41,7 @@
 <item>
 	<title>Ye Olde Mad-Lib Pub Crawl Generator</title>
 	<link>https://pudding.cool/2019/10/pubs</link>
-	<description>Finding the shortest route between UK pubs of the same name</description>
+	<description>Finding the shortest route between UK pubs of the same name.</description>
 	<category>culture></category>
 	<pubDate>Wed, 09 Oct 2019 04:00:00 GMT</pubDate>
 	<guid isPermaLink="false">2019/10/pubs</guid>
@@ -41,7 +50,7 @@
 <item>
 	<title>Is “Ass” the Most Complicated Word in English?</title>
 	<link>https://pudding.cool/2019/10/slang</link>
-	<description>An investigation into the mutability of slang</description>
+	<description>An investigation into the mutability of slang.</description>
 	<category>culture></category>
 	<pubDate>Tue, 01 Oct 2019 04:00:00 GMT</pubDate>
 	<guid isPermaLink="false">2019/10/slang</guid>
@@ -144,15 +153,6 @@
 	<category>culture></category>
 	<pubDate>Mon, 20 May 2019 04:00:00 GMT</pubDate>
 	<guid isPermaLink="false">2019/05/science_etc_1</guid>
-</item>
-	
-<item>
-	<title>The Rise of Hyphenated Last Names in Pro Sports</title>
-	<link>https://pudding.cool/2019/05/hyphens</link>
-	<description>Since the 1990s names that arch over jerseys have become more common.</description>
-	<category>sports></category>
-	<pubDate>Mon, 13 May 2019 04:00:00 GMT</pubDate>
-	<guid isPermaLink="false">2019/05/hyphens</guid>
 </item>
 	
 
