@@ -8,7 +8,7 @@
 		<link>https://pudding.cool</link>
 		<description>The Pudding is an editorial publication that explains ideas debated in culture with visual essays.</description>
 		<lastBuildDate>
-			Thu, 24 Oct 2019 11:30:28 GMT
+			Tue, 29 Oct 2019 13:08:54 GMT
 		</lastBuildDate>
 		<language>en-US</language>
 		<sy:updatePeriod>daily</sy:updatePeriod>
@@ -20,6 +20,15 @@
 		</image>
 
 		
+<item>
+	<title>Laughing OnLine</title>
+	<link>https://pudding.cool/2019/10/laugh</link>
+	<description>Exploring the usage, evolution, and perception of digital laughter.</description>
+	<category>culture></category>
+	<pubDate>Tue, 29 Oct 2019 04:00:00 GMT</pubDate>
+	<guid isPermaLink="false">2019/10/laugh</guid>
+</item>
+	
 <item>
 	<title>The Kim Foxx Effect</title>
 	<link>https://pudding.cool/2019/10/prosecutors</link>
@@ -144,15 +153,6 @@
 	<category>music></category>
 	<pubDate>Thu, 23 May 2019 04:00:00 GMT</pubDate>
 	<guid isPermaLink="false">2019/05/names-in-songs</guid>
-</item>
-	
-<item>
-	<title>How Much Data Lies Behind the Paper You're Reading?</title>
-	<link>https://pudding.cool/2019/05/science_etc_1</link>
-	<description>Want to access the raw data behind an academic paper? Good luck.</description>
-	<category>culture></category>
-	<pubDate>Mon, 20 May 2019 04:00:00 GMT</pubDate>
-	<guid isPermaLink="false">2019/05/science_etc_1</guid>
 </item>
 	
 
