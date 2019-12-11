@@ -8,7 +8,7 @@
 		<link>https://pudding.cool</link>
 		<description>The Pudding is an editorial publication that explains ideas debated in culture with visual essays.</description>
 		<lastBuildDate>
-			Fri, 06 Dec 2019 20:16:14 GMT
+			Mon, 09 Dec 2019 20:03:56 GMT
 		</lastBuildDate>
 		<language>en-US</language>
 		<sy:updatePeriod>daily</sy:updatePeriod>
@@ -20,6 +20,15 @@
 		</image>
 
 		
+<item>
+	<title>The Pudding Cup 2019</title>
+	<link>https://pudding.cool/process/pudding-cup-2019</link>
+	<description>The best visual and data-driven stories of 2019</description>
+	<category>awards></category>
+	<pubDate>Mon, 09 Dec 2019 05:00:00 GMT</pubDate>
+	<guid isPermaLink="false">process/pudding-cup-2019</guid>
+</item>
+	
 <item>
 	<title>The Worst, Highest-Paid NBA Player, Ever</title>
 	<link>https://pudding.cool/2019/12/real-mvp</link>
@@ -144,15 +153,6 @@
 	<category>music></category>
 	<pubDate>Fri, 14 Jun 2019 04:00:00 GMT</pubDate>
 	<guid isPermaLink="false">projects/music-history</guid>
-</item>
-	
-<item>
-	<title>A People Map of the UK</title>
-	<link>https://pudding.cool/2019/06/people-map-uk</link>
-	<description>Where city names are replaced by their most Wikipedia’ed resident.</description>
-	<category>people></category>
-	<pubDate>Mon, 03 Jun 2019 04:00:00 GMT</pubDate>
-	<guid isPermaLink="false">2019/06/people-map-uk</guid>
 </item>
 	
 
