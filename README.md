@@ -33,11 +33,8 @@ All modifications should go in the `templates` JS files, for example `templates/
 
 ## Data and Copy
 
-- [data: google sheet](https://docs.google.com/spreadsheets/d/157mDBFAmsOdkO9f7RgUSgrQm1dzrpB9V3nN5-cEIQN0/edit#gid=0)
-- [about page: google doc](https://drive.google.com/open?id=1TRc-grkFei5z0JGVULkgRRV5dy4QU5-F1Lhh-Vd11mU)
-
-All other copy should be made in the HTML in the `templates` directory.
+See [here](https://www.notion.so/thepudding/Data-and-Copy-7cb246a38ddc4b8883651b21dc06746e) for piped in content documents. All other copy should be made in the HTML in the `templates` directory.
 
 ### Publishing a Story
 
-See [here](https://github.com/the-pudding/FYI/wiki/Publishing-New-Story) for instructions.
+See [here](https://www.notion.so/thepudding/Publish-A-New-Story-c847b223ad814599a679b41dea6281a0) for instructions.
