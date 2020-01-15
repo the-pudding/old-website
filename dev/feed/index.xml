@@ -8,7 +8,7 @@
 		<link>https://pudding.cool</link>
 		<description>The Pudding is an editorial publication that explains ideas debated in culture with visual essays.</description>
 		<lastBuildDate>
-			Thu, 09 Jan 2020 21:51:49 GMT
+			Wed, 15 Jan 2020 14:23:43 GMT
 		</lastBuildDate>
 		<language>en-US</language>
 		<sy:updatePeriod>daily</sy:updatePeriod>
@@ -20,6 +20,15 @@
 		</image>
 
 		
+<item>
+	<title>The Aftermath of a YouTube Apology</title>
+	<link>https://pudding.cool/2020/01/apology</link>
+	<description>Quantifying the lasting impact of a YouTube controversy.</description>
+	<category>culture></category>
+	<pubDate>Wed, 15 Jan 2020 05:00:00 GMT</pubDate>
+	<guid isPermaLink="false">2020/01/apology</guid>
+</item>
+	
 <item>
 	<title>The Pudding Cup 2019</title>
 	<link>https://pudding.cool/process/pudding-cup-2019</link>
@@ -144,15 +153,6 @@
 	<category>culture></category>
 	<pubDate>Mon, 17 Jun 2019 04:00:00 GMT</pubDate>
 	<guid isPermaLink="false">2019/06/science_etc_2</guid>
-</item>
-	
-<item>
-	<title>Best Year in Music</title>
-	<link>https://pudding.cool/projects/music-history</link>
-	<description>A journey through every Billboard top 5 hit to find music’s greatest era</description>
-	<category>music></category>
-	<pubDate>Fri, 14 Jun 2019 04:00:00 GMT</pubDate>
-	<guid isPermaLink="false">projects/music-history</guid>
 </item>
 	
 
