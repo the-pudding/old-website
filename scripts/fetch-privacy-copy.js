@@ -7,7 +7,7 @@ const cwd = process.cwd();
 console.log('fetching privacy page copy...');
 
 const google = {
-  id: '1LToR_WZ-E8q6FMzFnYN62IfoZd6tmW80bC0kQBEGp84',
+  id: '1sztth4irlCgXiMO-Tg548za02Pw6HyS_v4sh4-YLMMk',
   filename: 'privacy-copy',
 };
 

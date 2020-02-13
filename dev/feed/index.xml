@@ -8,7 +8,7 @@
 		<link>https://pudding.cool</link>
 		<description>The Pudding is an editorial publication that explains ideas debated in culture with visual essays.</description>
 		<lastBuildDate>
-			Tue, 29 Oct 2019 13:08:54 GMT
+			Mon, 27 Jan 2020 14:56:49 GMT
 		</lastBuildDate>
 		<language>en-US</language>
 		<sy:updatePeriod>daily</sy:updatePeriod>
@@ -20,6 +20,51 @@
 		</image>
 
 		
+<item>
+	<title>Where International Communities Cluster</title>
+	<link>https://pudding.cool/2020/01/diaspora</link>
+	<description>America has often been called a nation of immigrants. Here's where they settled.</description>
+	<category>culture></category>
+	<pubDate>Thu, 23 Jan 2020 05:00:00 GMT</pubDate>
+	<guid isPermaLink="false">2020/01/diaspora</guid>
+</item>
+	
+<item>
+	<title>The Aftermath of a YouTube Apology</title>
+	<link>https://pudding.cool/2020/01/apology</link>
+	<description>Quantifying the lasting impact of a YouTube controversy.</description>
+	<category>culture></category>
+	<pubDate>Wed, 15 Jan 2020 05:00:00 GMT</pubDate>
+	<guid isPermaLink="false">2020/01/apology</guid>
+</item>
+	
+<item>
+	<title>The Pudding Cup 2019</title>
+	<link>https://pudding.cool/process/pudding-cup-2019</link>
+	<description>The best visual and data-driven stories of 2019</description>
+	<category>awards></category>
+	<pubDate>Mon, 09 Dec 2019 05:00:00 GMT</pubDate>
+	<guid isPermaLink="false">process/pudding-cup-2019</guid>
+</item>
+	
+<item>
+	<title>The Worst, Highest-Paid NBA Player, Ever</title>
+	<link>https://pudding.cool/2019/12/real-mvp</link>
+	<description>Using advanced NBA stats to rank player performance against pay.</description>
+	<category>sports></category>
+	<pubDate>Thu, 05 Dec 2019 05:00:00 GMT</pubDate>
+	<guid isPermaLink="false">2019/12/real-mvp</guid>
+</item>
+	
+<item>
+	<title>The Big Data of Big Hair</title>
+	<link>https://pudding.cool/2019/11/big-hair</link>
+	<description>Investigating when big hair was at its height.</description>
+	<category>culture></category>
+	<pubDate>Wed, 20 Nov 2019 05:00:00 GMT</pubDate>
+	<guid isPermaLink="false">2019/11/big-hair</guid>
+</item>
+	
 <item>
 	<title>Laughing OnLine</title>
 	<link>https://pudding.cool/2019/10/laugh</link>
@@ -108,51 +153,6 @@
 	<category>other></category>
 	<pubDate>Mon, 24 Jun 2019 04:00:00 GMT</pubDate>
 	<guid isPermaLink="false">2019/06/summer-reading</guid>
-</item>
-	
-<item>
-	<title>A Chronicle of the Anti-vaccination Movement</title>
-	<link>https://pudding.cool/2019/06/science_etc_2</link>
-	<description>How one unethical study on vaccines caused irreparable harm.</description>
-	<category>culture></category>
-	<pubDate>Mon, 17 Jun 2019 04:00:00 GMT</pubDate>
-	<guid isPermaLink="false">2019/06/science_etc_2</guid>
-</item>
-	
-<item>
-	<title>Best Year in Music</title>
-	<link>https://pudding.cool/projects/music-history</link>
-	<description>A journey through every Billboard top 5 hit to find music’s greatest era</description>
-	<category>music></category>
-	<pubDate>Fri, 14 Jun 2019 04:00:00 GMT</pubDate>
-	<guid isPermaLink="false">projects/music-history</guid>
-</item>
-	
-<item>
-	<title>A People Map of the UK</title>
-	<link>https://pudding.cool/2019/06/people-map-uk</link>
-	<description>Where city names are replaced by their most Wikipedia’ed resident.</description>
-	<category>people></category>
-	<pubDate>Mon, 03 Jun 2019 04:00:00 GMT</pubDate>
-	<guid isPermaLink="false">2019/06/people-map-uk</guid>
-</item>
-	
-<item>
-	<title>A People Map of the US</title>
-	<link>https://pudding.cool/2019/05/people-map</link>
-	<description>Where city names are replaced by their most Wikipedia’ed resident.</description>
-	<category>people></category>
-	<pubDate>Wed, 29 May 2019 04:00:00 GMT</pubDate>
-	<guid isPermaLink="false">2019/05/people-map</guid>
-</item>
-	
-<item>
-	<title>How Often Names are in Songs</title>
-	<link>https://pudding.cool/2019/05/names-in-songs</link>
-	<description>Every song seems to be written about "Baby". Where does your name stack up?</description>
-	<category>music></category>
-	<pubDate>Thu, 23 May 2019 04:00:00 GMT</pubDate>
-	<guid isPermaLink="false">2019/05/names-in-songs</guid>
 </item>
 	
 

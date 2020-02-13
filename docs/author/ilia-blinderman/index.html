@@ -64,7 +64,7 @@
 			}, i[r].l = 1 * new Date(); a = s.createElement(o),
 				m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
 		})(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
-
+		ga('set', 'anonymizeIp', true);
 		ga('create', 'UA-90567923-1', 'auto');
 		ga('send', 'pageview');
 	</script>
@@ -163,7 +163,7 @@
 				<ul class='cta__social'>
 					<li><a target='_blank' onclick="trackOutboundLink('https://www.facebook.com/pudding.viz'); return false;" href='https://www.facebook.com/pudding.viz/' class='logo--facebook'><svg width="24" height="24" fill="#000000" stroke="currentColor" stroke-width=".2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-facebook" viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg></a></li>
 					<li><a target='_blank' onclick="trackOutboundLink('https://twitter.com/puddingviz''); return false;" href='https://twitter.com/puddingviz' class='logo--twitter'><svg width="24" height="24" fill="#000" stroke="currentColor" stroke-width="0" stroke-linecap="round" stroke-linejoin="round" class="feather feather-twitter" viewBox="0 0 24 24"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path></svg></a></li>
-					<li><a target='_blank' onclick="trackOutboundLink('https://www.instagram.com/pudding.cool'); return false;" href='https://www.instagram.com/pudding.cool' class='logo--instagram'><svg width="24" height="24" x="0px" y="0px" enable-background="new 0 0 24 24" xml:space="preserve" viewBox="0 0 24 24">
+					<li><a target='_blank' onclick="trackOutboundLink('https://www.instagram.com/the.pudding'); return false;" href='https://www.instagram.com/the.pudding' class='logo--instagram'><svg width="24" height="24" x="0px" y="0px" enable-background="new 0 0 24 24" xml:space="preserve" viewBox="0 0 24 24">
 <path d="M17,23H7c-3.3,0-6-2.7-6-6V7c0-3.3,2.7-6,6-6h10c3.3,0,6,2.7,6,6v10C23,20.3,20.3,23,17,23z M7,3C4.8,3,3,4.8,3,7v10
 	c0,2.2,1.8,4,4,4h10c2.2,0,4-1.8,4-4V7c0-2.2-1.8-4-4-4H7z"/>
 <path d="M12,17c-1.1,0-2.1-0.3-3-1c-1.1-0.8-1.8-2-2-3.3C6.7,10,8.6,7.4,11.3,7c0.5-0.1,1-0.1,1.5,0c2.2,0.3,3.9,2,4.2,4.2l0,0
@@ -187,6 +187,7 @@
 						<li><a onclick="trackOutboundLink('../../topics'); return false;" href='../../topics'>Topics</a></li>
 						<li><a onclick="trackOutboundLink('../../archives'); return false;" href='../../archives'>Archives</a></li>
 						<li><a onclick="trackOutboundLink('http://eepurl.com/czym6f'); return false;" href='http://eepurl.com/czym6f' target='_blank'>Join our Newsletter</a></li>
+						<li><a href='https://pudding.cool/feed/index.xml'>RSS</a></li>
 					</ul>
 				<p class='sidebar__patreon'>We pour our ❤️ into these stories, but they take time and money. For just $1/month, you can help support us. Join our growing community of data-driven enthusiasts.<br><a class='random-background' href='https://www.patreon.com/thepudding' target='_blank' onclick='trackOutboundLink("https://www.patreon.com/thepudding"); return false;'>Help fund us</a></p>
 			</div>
@@ -249,7 +250,64 @@
 			<ul>
 				<!-- DO NOT REMOVE -->
 				<li>
-		<div class='story-item' data-id='2018/12/brief-history' data-topic='social' data-chart='word cloud,line chart' data-keyword='history,america,news,media' data-author='ilia,jan' data-author_slug='ilia-blinderman, jan-diehm' data-author_name='Ilia Blinderman, Jan Diehm' data-hed='a brief history of the past 100 years' data-dek='an analysis of 12 decades of new york times headlines' data-date='2018-12-19T05:00:00.000Z' data-views='25587'>
+		<div class='story-item' data-id="2019/09/millennials" data-topic="culture" data-chart="word wall" data-keyword="language" data-author="allie,ilia,jan" data-author_slug="alexandra-saizan, ilia-blinderman, jan-diehm" data-author_name="Alexandra Saizan, Ilia Blinderman, Jan Diehm" data-hed="the millennial question" data-dek="how does popular media see our generation?" data-date="2019-09-26T04:00:00.000Z" data-views="35112" data-time_on_page="193">
+			<div class='item__img'>
+				<a href='//pudding.cool/2019/09/millennials'>
+					<img src='../../common/assets/thumbnails/640/2019_09_millennials.jpg' alt='The Millennial Question'>
+				</a>
+				
+			</div>
+			<div class='item__info'>
+				<a href='//pudding.cool/2019/09/millennials'>
+					<h3 class='item__hed'>The Millennial Question</h3>
+				</a>
+				<div class='info__details'>
+					<p class='item__dek'>How does popular media see our generation?</p>
+					<time class='item__time' datetime='2019-09-26T04:00:00.000Z'></time>
+					<cite class='item__author'>By <a href='../../author/alexandra-saizan'>Alexandra Saizan</a>, <a href='../../author/ilia-blinderman'>Ilia Blinderman</a>, <a href='../../author/jan-diehm'>Jan Diehm</a></cite>
+				</div>
+			</div>
+		</div>
+	</li><li>
+		<div class='story-item' data-id="2019/06/science_etc_2" data-topic="culture" data-chart="timeline,beeswarm" data-keyword="health,science" data-author="ilia" data-author_slug="ilia-blinderman" data-author_name="Ilia Blinderman" data-hed="a chronicle of the anti-vaccination movement" data-dek="how one unethical study on vaccines caused irreparable harm." data-date="2019-06-17T04:00:00.000Z" data-views="19398" data-time_on_page="115">
+			<div class='item__img'>
+				<a href='//pudding.cool/2019/06/science_etc_2'>
+					<img src='../../common/assets/thumbnails/640/2019_06_science_etc_2.jpg' alt='A Chronicle of the Anti-vaccination Movement'>
+				</a>
+				
+			</div>
+			<div class='item__info'>
+				<a href='//pudding.cool/2019/06/science_etc_2'>
+					<h3 class='item__hed'>A Chronicle of the Anti-vaccination Movement</h3>
+				</a>
+				<div class='info__details'>
+					<p class='item__dek'>How one unethical study on vaccines caused irreparable harm.</p>
+					<time class='item__time' datetime='2019-06-17T04:00:00.000Z'></time>
+					<cite class='item__author'>By <a href='../../author/ilia-blinderman'>Ilia Blinderman</a></cite>
+				</div>
+			</div>
+		</div>
+	</li><li>
+		<div class='story-item' data-id="2019/05/science_etc_1" data-topic="culture" data-chart="heatmap" data-keyword="science" data-author="ilia" data-author_slug="ilia-blinderman" data-author_name="Ilia Blinderman" data-hed="how much data lies behind the paper you're reading?" data-dek="want to access the raw data behind an academic paper? good luck." data-date="2019-05-20T04:00:00.000Z" data-views="8011" data-time_on_page="115">
+			<div class='item__img'>
+				<a href='//pudding.cool/2019/05/science_etc_1'>
+					<img src='../../common/assets/thumbnails/640/2019_05_science_etc_1.jpg' alt='How Much Data Lies Behind the Paper You're Reading?'>
+				</a>
+				
+			</div>
+			<div class='item__info'>
+				<a href='//pudding.cool/2019/05/science_etc_1'>
+					<h3 class='item__hed'>How Much Data Lies Behind the Paper You're Reading?</h3>
+				</a>
+				<div class='info__details'>
+					<p class='item__dek'>Want to access the raw data behind an academic paper? Good luck.</p>
+					<time class='item__time' datetime='2019-05-20T04:00:00.000Z'></time>
+					<cite class='item__author'>By <a href='../../author/ilia-blinderman'>Ilia Blinderman</a></cite>
+				</div>
+			</div>
+		</div>
+	</li><li>
+		<div class='story-item' data-id="2018/12/brief-history" data-topic="social" data-chart="word cloud,line chart" data-keyword="history,america,news,media" data-author="ilia,jan" data-author_slug="ilia-blinderman, jan-diehm" data-author_name="Ilia Blinderman, Jan Diehm" data-hed="a brief history of the past 100 years" data-dek="an analysis of 12 decades of new york times headlines" data-date="2018-12-19T05:00:00.000Z" data-views="39135" data-time_on_page="147">
 			<div class='item__img'>
 				<a href='//pudding.cool/2018/12/brief-history'>
 					<img src='../../common/assets/thumbnails/640/2018_12_brief-history.jpg' alt='A Brief History of the Past 100 Years'>
@@ -268,7 +326,7 @@
 			</div>
 		</div>
 	</li><li>
-		<div class='story-item' data-id='2018/11/dearabby' data-topic='people' data-chart='pictogram chart,scatter plot,waffle chart' data-keyword='relationships' data-author='ilia,caitlyn' data-author_slug='ilia-blinderman, caitlyn-ralph' data-author_name='Ilia Blinderman, Caitlyn Ralph' data-hed='30 years of american anxieties' data-dek='what 20,000 letters to an advice columnist tell us about what concerns us most.' data-date='2018-11-13T05:00:00.000Z' data-views='28776'>
+		<div class='story-item' data-id="2018/11/dearabby" data-topic="people" data-chart="pictogram chart,scatter plot,waffle chart" data-keyword="relationships" data-author="ilia,caitlyn" data-author_slug="ilia-blinderman, caitlyn-ralph" data-author_name="Ilia Blinderman, Caitlyn Ralph" data-hed="30 years of american anxieties" data-dek="what 20,000 letters to an advice columnist tell us about what concerns us most." data-date="2018-11-13T05:00:00.000Z" data-views="35429" data-time_on_page="175">
 			<div class='item__img'>
 				<a href='//pudding.cool/2018/11/dearabby'>
 					<img src='../../common/assets/thumbnails/640/2018_11_dearabby.jpg' alt='30 Years of American Anxieties'>
@@ -287,7 +345,7 @@
 			</div>
 		</div>
 	</li><li>
-		<div class='story-item' data-id='2018/09/wiki-billboard' data-topic='people' data-chart='unique' data-keyword='wiki' data-author='russell,ilia,caitlyn' data-author_slug='russell-goldenberg, ilia-blinderman, caitlyn-ralph' data-author_name='Russell Goldenberg, Ilia Blinderman, Caitlyn Ralph' data-hed='the celebrity billboard project' data-dek='tracking the popularity of cultural figures in 2018' data-date='2018-09-11T04:00:00.000Z' data-views='112899'>
+		<div class='story-item' data-id="2018/09/wiki-billboard" data-topic="people" data-chart="unique" data-keyword="wiki" data-author="russell,ilia,caitlyn" data-author_slug="russell-goldenberg, ilia-blinderman, caitlyn-ralph" data-author_name="Russell Goldenberg, Ilia Blinderman, Caitlyn Ralph" data-hed="the celebrity billboard project" data-dek="tracking the popularity of cultural figures in 2018" data-date="2018-09-11T04:00:00.000Z" data-views="114314" data-time_on_page="117">
 			<div class='item__img'>
 				<a href='//pudding.cool/2018/09/wiki-billboard'>
 					<img src='../../common/assets/thumbnails/640/2018_09_wiki-billboard.jpg' alt='The Celebrity Billboard Project'>
@@ -306,7 +364,7 @@
 			</div>
 		</div>
 	</li><li>
-		<div class='story-item' data-id='2018/08/retraining' data-topic='social' data-chart='barbell plot,stacked bar chart,strip plot,scatter plot,bubble chart' data-keyword='jobs,automation,america' data-author='jordan,ilia' data-author_slug='jordan-dworkin, ilia-blinderman' data-author_name='Jordan Dworkin, Ilia Blinderman' data-hed='tech jobs may not solve america’s looming automation crisis' data-dek='tech retraining programs are becoming more popular. they may not be a solution.' data-date='2018-08-02T04:00:00.000Z' data-views='19506'>
+		<div class='story-item' data-id="2018/08/retraining" data-topic="social" data-chart="barbell plot,stacked bar chart,strip plot,scatter plot,bubble chart" data-keyword="jobs,automation,america" data-author="jordan,ilia" data-author_slug="jordan-dworkin, ilia-blinderman" data-author_name="Jordan Dworkin, Ilia Blinderman" data-hed="tech jobs may not solve america’s looming automation crisis" data-dek="tech retraining programs are becoming more popular. they may not be a solution." data-date="2018-08-02T04:00:00.000Z" data-views="21512" data-time_on_page="250">
 			<div class='item__img'>
 				<a href='//pudding.cool/2018/08/retraining'>
 					<img src='../../common/assets/thumbnails/640/2018_08_retraining.jpg' alt='Tech Jobs may not Solve America’s Looming Automation Crisis'>
@@ -325,7 +383,7 @@
 			</div>
 		</div>
 	</li><li>
-		<div class='story-item' data-id='2018/03/neighborhoods' data-topic='people' data-chart='map' data-keyword='geography,neighborhoods' data-author='amber,ilia' data-author_slug='amber-thomas, ilia-blinderman' data-author_name='Amber Thomas, Ilia Blinderman' data-hed='a tale of two cities' data-dek='using data to write love letters to the cities we call home' data-date='2018-03-21T04:00:00.000Z' data-views='10475'>
+		<div class='story-item' data-id="2018/03/neighborhoods" data-topic="people" data-chart="map" data-keyword="geography,neighborhoods" data-author="amber,ilia" data-author_slug="amber-thomas, ilia-blinderman" data-author_name="Amber Thomas, Ilia Blinderman" data-hed="a tale of two cities" data-dek="using data to write love letters to the cities we call home" data-date="2018-03-21T04:00:00.000Z" data-views="11909" data-time_on_page="169">
 			<div class='item__img'>
 				<a href='//pudding.cool/2018/03/neighborhoods'>
 					<img src='../../common/assets/thumbnails/640/2018_03_neighborhoods.jpg' alt='A Tale of Two Cities'>
@@ -344,7 +402,7 @@
 			</div>
 		</div>
 	</li><li>
-		<div class='story-item' data-id='process/how-to-make-dope-shit-part-2' data-topic='how' data-chart='' data-keyword='how-to,design' data-author='ilia' data-author_slug='ilia-blinderman' data-author_name='Ilia Blinderman' data-hed='how to make dope shit part 2: design' data-dek='some pointers on learning to design data-driven visual essays.' data-date='2017-11-01T04:00:00.000Z' data-views='9773'>
+		<div class='story-item' data-id="process/how-to-make-dope-shit-part-2" data-topic="how" data-chart="" data-keyword="how-to,design" data-author="ilia" data-author_slug="ilia-blinderman" data-author_name="Ilia Blinderman" data-hed="how to make dope shit part 2: design" data-dek="some pointers on learning to design data-driven visual essays." data-date="2017-11-01T04:00:00.000Z" data-views="18136" data-time_on_page="168">
 			<div class='item__img'>
 				<a href='//pudding.cool/process/how-to-make-dope-shit-part-2'>
 					<img src='../../common/assets/thumbnails/640/process_how-to-make-dope-shit-part-2.jpg' alt='How to Make Dope Shit Part 2: Design'>
@@ -363,7 +421,7 @@
 			</div>
 		</div>
 	</li><li>
-		<div class='story-item' data-id='process/how-to-make-dope-shit-part-1' data-topic='how' data-chart='' data-keyword='how-to' data-author='ilia' data-author_slug='ilia-blinderman' data-author_name='Ilia Blinderman' data-hed='how to make dope shit part 1: working with data' data-dek='familiarize yourself with the tools used to make visual, data-driven essays.' data-date='2017-08-13T04:00:00.000Z' data-views='18129'>
+		<div class='story-item' data-id="process/how-to-make-dope-shit-part-1" data-topic="how" data-chart="" data-keyword="how-to" data-author="ilia" data-author_slug="ilia-blinderman" data-author_name="Ilia Blinderman" data-hed="how to make dope shit part 1: working with data" data-dek="familiarize yourself with the tools used to make visual, data-driven essays." data-date="2017-08-13T04:00:00.000Z" data-views="24895" data-time_on_page="175">
 			<div class='item__img'>
 				<a href='//pudding.cool/process/how-to-make-dope-shit-part-1'>
 					<img src='../../common/assets/thumbnails/640/process_how-to-make-dope-shit-part-1.jpg' alt='How to Make Dope Shit Part 1: Working with Data'>
@@ -382,10 +440,10 @@
 			</div>
 		</div>
 	</li><li>
-		<div class='story-item' data-id='2017/07/jobs' data-topic='social' data-chart='beeswarm,choropleth map,stacked bar chart' data-keyword='jobs,automation,politics,america' data-author='ilia' data-author_slug='ilia-blinderman' data-author_name='Ilia Blinderman' data-hed='why the republican party wins when robots take your job' data-dek='job automation is only a matter of time. here's why the right will benefit.' data-date='2017-07-11T04:00:00.000Z' data-views='15156'>
+		<div class='story-item' data-id="2017/07/jobs" data-topic="social" data-chart="beeswarm,choropleth map,stacked bar chart" data-keyword="jobs,automation,politics,america" data-author="ilia" data-author_slug="ilia-blinderman" data-author_name="Ilia Blinderman" data-hed="why the republican party wins when robots take your job" data-dek="job automation is only a matter of time. here's why the right will benefit." data-date="2017-07-11T04:00:00.000Z" data-views="15810" data-time_on_page="227">
 			<div class='item__img'>
 				<a href='//pudding.cool/2017/07/jobs'>
-					<img src='../../common/assets/thumbnails/640/social.jpg' alt='Why the Republican Party Wins When Robots Take Your Job'>
+					<img src='../../common/assets/thumbnails/640/2017_07_jobs.jpg' alt='Why the Republican Party Wins When Robots Take Your Job'>
 				</a>
 				
 			</div>
@@ -401,10 +459,10 @@
 			</div>
 		</div>
 	</li><li>
-		<div class='story-item' data-id='process/regional_smoothing' data-topic='how' data-chart='' data-keyword='charts,how-to' data-author='ilia' data-author_slug='ilia-blinderman' data-author_name='Ilia Blinderman' data-hed='regional smoothing in r' data-dek='a guide to smoothing geospatial data in r' data-date='2017-05-11T04:00:00.000Z' data-views='10462'>
+		<div class='story-item' data-id="process/regional_smoothing" data-topic="how" data-chart="" data-keyword="charts,how-to" data-author="ilia" data-author_slug="ilia-blinderman" data-author_name="Ilia Blinderman" data-hed="regional smoothing in r" data-dek="a guide to smoothing geospatial data in r" data-date="2017-05-11T04:00:00.000Z" data-views="12319" data-time_on_page="165">
 			<div class='item__img'>
 				<a href='//pudding.cool/process/regional_smoothing'>
-					<img src='../../common/assets/thumbnails/640/how.jpg' alt='Regional Smoothing in R'>
+					<img src='../../common/assets/thumbnails/640/process_regional_smoothing.jpg' alt='Regional Smoothing in R'>
 				</a>
 				
 			</div>
@@ -420,10 +478,10 @@
 			</div>
 		</div>
 	</li><li>
-		<div class='story-item' data-id='2017/02/oscars_so_mapped' data-topic='entertainment' data-chart='map' data-keyword='oscars,movies,geography' data-author='matt,russell,ilia' data-author_slug='matt-daniels, russell-goldenberg, ilia-blinderman' data-author_name='Matt Daniels, Russell Goldenberg, Ilia Blinderman' data-hed='the geographic divide of oscars films' data-dek='mapping the popularity of oscar-nominated films in 2017' data-date='2017-02-23T05:00:00.000Z' data-views='15231'>
+		<div class='story-item' data-id="2017/02/oscars_so_mapped" data-topic="entertainment" data-chart="map" data-keyword="oscars,movies,geography" data-author="matt,russell,ilia" data-author_slug="matt-daniels, russell-goldenberg, ilia-blinderman" data-author_name="Matt Daniels, Russell Goldenberg, Ilia Blinderman" data-hed="the geographic divide of oscars films" data-dek="mapping the popularity of oscar-nominated films in 2017" data-date="2017-02-23T05:00:00.000Z" data-views="16123" data-time_on_page="149">
 			<div class='item__img'>
 				<a href='//pudding.cool/2017/02/oscars_so_mapped'>
-					<img src='../../common/assets/thumbnails/640/entertainment.jpg' alt='The Geographic Divide of Oscars Films'>
+					<img src='../../common/assets/thumbnails/640/2017_02_oscars_so_mapped.jpg' alt='The Geographic Divide of Oscars Films'>
 				</a>
 				
 			</div>
@@ -439,7 +497,7 @@
 			</div>
 		</div>
 	</li><li>
-		<div class='story-item' data-id='2017/03/bechdel' data-topic='entertainment' data-chart='unique,table,waffle chart,stacked bar chart,bar chart' data-keyword='gender,equality,movies' data-author='matt,ilia' data-author_slug='matt-daniels, ilia-blinderman' data-author_name='Matt Daniels, Ilia Blinderman' data-hed='hollywood's gender divide and its effect on films' data-dek='the writers, directors, and producers who make films that fail the bechdel test' data-date='2016-01-01T05:00:00.000Z' data-views='150937'>
+		<div class='story-item' data-id="2017/03/bechdel" data-topic="entertainment" data-chart="unique,table,waffle chart,stacked bar chart,bar chart" data-keyword="gender,equality,movies" data-author="matt,ilia" data-author_slug="matt-daniels, ilia-blinderman" data-author_name="Matt Daniels, Ilia Blinderman" data-hed="hollywood's gender divide and its effect on films" data-dek="the writers, directors, and producers who make films that fail the bechdel test" data-date="2016-01-01T05:00:00.000Z" data-views="153498" data-time_on_page="217">
 			<div class='item__img'>
 				<a href='//pudding.cool/2017/03/bechdel'>
 					<img src='../../common/assets/thumbnails/640/2017_03_bechdel.jpg' alt='Hollywood's Gender Divide and its Effect on Films'>
@@ -464,7 +522,7 @@
 
 	<!-- DO NOT REMOVE -->
 	
-	
+
 	<footer class='random-background'>
 		<div class='footer__inner'>
 			<div class='footer__cta'>
@@ -482,7 +540,7 @@
 						</a>
 					</li>
 					<li>
-						<a href='https://www.instagram.com/pudding.cool'>
+						<a href='https://www.instagram.com/the.pudding'>
 							<svg width="24" height="24" x="0px" y="0px" enable-background="new 0 0 24 24" xml:space="preserve" viewBox="0 0 24 24">
 <path d="M17,23H7c-3.3,0-6-2.7-6-6V7c0-3.3,2.7-6,6-6h10c3.3,0,6,2.7,6,6v10C23,20.3,20.3,23,17,23z M7,3C4.8,3,3,4.8,3,7v10
 	c0,2.2,1.8,4,4,4h10c2.2,0,4-1.8,4-4V7c0-2.2-1.8-4-4-4H7z"/>
@@ -509,6 +567,18 @@
 							<p>PATREON</p>
 						</a>
 					</li>
+          <li>
+						<a href='https://pudding.cool/about'>
+							<svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-info" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12" y2="8"></line></svg>
+							<p>ABOUT</p>
+						</a>
+					</li>
+          <li>
+						<a href='https://pudding.cool/privacy/'>
+							<svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-lock" viewBox="0 0 24 24"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
+							<p>PRIVACY</p>
+						</a>
+					</li>
 					<li>
 						<a href='http://eepurl.com/czym6f'>
 							<svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-mail" viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
@@ -516,9 +586,9 @@
 						</a>
 					</li>
 					<li>
-						<a href='https://pudding.cool/about'>
-							<svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-info" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12" y2="8"></line></svg>
-							<p>ABOUT</p>
+						<a href='https://pudding.cool/feed/index.xml'>
+							<svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-rss" viewBox="0 0 24 24"><path d="M4 11a9 9 0 0 1 9 9"></path><path d="M4 4a16 16 0 0 1 16 16"></path><circle cx="5" cy="19" r="1"></circle></svg>
+							<p>RSS</p>
 						</a>
 					</li>
 				</ul>
@@ -555,7 +625,7 @@
 </svg></a>
 				<p class='footer__description'><a href='https://pudding.cool'>The Pudding</a> is a digital publication that
 					explains ideas debated in culture with visual essays.</p>
-				<p class='footer__trademark'>The Pudding<span>®</span> is made in Brooklyn, NY; Seattle, WA; and Great
+				<p class='footer__trademark'>The Pudding<span>®</span> is made in Brooklyn, NY; Seattle, WA; San Antonio, TX; and Great
 					Barrington, MA.</p>
 			</div>
 

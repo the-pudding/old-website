@@ -7,7 +7,7 @@ const cwd = process.cwd();
 console.log('fetching about page copy...');
 
 const google = {
-  id: '1TRc-grkFei5z0JGVULkgRRV5dy4QU5-F1Lhh-Vd11mU',
+  id: '1nzzqdS9KGNg2XE1DjHqvy5w2WreFydd8O9YLVQaFInA',
   filename: 'about-copy',
 };
 
