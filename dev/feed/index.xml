@@ -8,7 +8,7 @@
 		<link>https://pudding.cool</link>
 		<description>The Pudding is an editorial publication that explains ideas debated in culture with visual essays.</description>
 		<lastBuildDate>
-			Thu, 13 Feb 2020 18:34:53 GMT
+			Thu, 27 Feb 2020 16:40:35 GMT
 		</lastBuildDate>
 		<language>en-US</language>
 		<sy:updatePeriod>daily</sy:updatePeriod>
@@ -20,6 +20,15 @@
 		</image>
 
 		
+<item>
+	<title>Where will you need your umbrella?</title>
+	<link>https://pudding.cool/2020/02/rain</link>
+	<description>Seattle may be further down that list than you'd think.</description>
+	<category>other></category>
+	<pubDate>Wed, 26 Feb 2020 08:00:00 GMT</pubDate>
+	<guid isPermaLink="false">2020/02/rain</guid>
+</item>
+	
 <item>
 	<title>Do Authors Write Where They Know?</title>
 	<link>https://pudding.cool/2020/02/authors</link>
@@ -144,15 +153,6 @@
 	<category>music></category>
 	<pubDate>Thu, 15 Aug 2019 07:00:00 GMT</pubDate>
 	<guid isPermaLink="false">2019/08/register</guid>
-</item>
-	
-<item>
-	<title>Top-Selling Book Covers, Arranged by Visual Similarity</title>
-	<link>https://pudding.cool/2019/07/book-covers</link>
-	<description>An interactive map of over 5,000 book covers, organized by machine learning</description>
-	<category>culture></category>
-	<pubDate>Tue, 02 Jul 2019 07:00:00 GMT</pubDate>
-	<guid isPermaLink="false">2019/07/book-covers</guid>
 </item>
 	
 
