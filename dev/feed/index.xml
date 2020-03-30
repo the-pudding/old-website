@@ -8,7 +8,7 @@
 		<link>https://pudding.cool</link>
 		<description>The Pudding is an editorial publication that explains ideas debated in culture with visual essays.</description>
 		<lastBuildDate>
-			Wed, 18 Mar 2020 15:40:41 GMT
+			Mon, 30 Mar 2020 15:01:38 GMT
 		</lastBuildDate>
 		<language>en-US</language>
 		<sy:updatePeriod>daily</sy:updatePeriod>
@@ -21,11 +21,20 @@
 
 		
 <item>
+	<title>The Evolution of the American Census</title>
+	<link>https://pudding.cool/2020/03/census-history</link>
+	<description>What do the questions reveal about American culture and society?</description>
+	<category>other></category>
+	<pubDate>Mon, 30 Mar 2020 05:00:00 GMT</pubDate>
+	<guid isPermaLink="false">2020/03/census-history</guid>
+</item>
+	
+<item>
 	<title>The Emotional GIF Range of Celebs</title>
 	<link>https://pudding.cool/2020/03/gifs</link>
 	<description>Breaking down how celebrities are used to convey feelings.</description>
 	<category>other></category>
-	<pubDate>Sun, 08 Mar 2020 05:00:00 GMT</pubDate>
+	<pubDate>Sun, 08 Mar 2020 06:00:00 GMT</pubDate>
 	<guid isPermaLink="false">2020/03/gifs</guid>
 </item>
 	
@@ -34,7 +43,7 @@
 	<link>https://pudding.cool/2020/02/rain</link>
 	<description>Seattle may be further down that list than you'd think.</description>
 	<category>other></category>
-	<pubDate>Wed, 26 Feb 2020 05:00:00 GMT</pubDate>
+	<pubDate>Wed, 26 Feb 2020 06:00:00 GMT</pubDate>
 	<guid isPermaLink="false">2020/02/rain</guid>
 </item>
 	
@@ -43,7 +52,7 @@
 	<link>https://pudding.cool/2020/02/authors</link>
 	<description>Examining how far authors set their books from where they’ve lived.</description>
 	<category>culture></category>
-	<pubDate>Thu, 13 Feb 2020 05:00:00 GMT</pubDate>
+	<pubDate>Thu, 13 Feb 2020 06:00:00 GMT</pubDate>
 	<guid isPermaLink="false">2020/02/authors</guid>
 </item>
 	
@@ -52,7 +61,7 @@
 	<link>https://pudding.cool/2020/01/diaspora</link>
 	<description>America has often been called a nation of immigrants. Here's where they settled.</description>
 	<category>culture></category>
-	<pubDate>Thu, 23 Jan 2020 05:00:00 GMT</pubDate>
+	<pubDate>Thu, 23 Jan 2020 06:00:00 GMT</pubDate>
 	<guid isPermaLink="false">2020/01/diaspora</guid>
 </item>
 	
@@ -61,7 +70,7 @@
 	<link>https://pudding.cool/2020/01/apology</link>
 	<description>Quantifying the lasting impact of a YouTube controversy.</description>
 	<category>culture></category>
-	<pubDate>Wed, 15 Jan 2020 05:00:00 GMT</pubDate>
+	<pubDate>Wed, 15 Jan 2020 06:00:00 GMT</pubDate>
 	<guid isPermaLink="false">2020/01/apology</guid>
 </item>
 	
@@ -70,7 +79,7 @@
 	<link>https://pudding.cool/process/pudding-cup-2019</link>
 	<description>The best visual and data-driven stories of 2019</description>
 	<category>awards></category>
-	<pubDate>Mon, 09 Dec 2019 05:00:00 GMT</pubDate>
+	<pubDate>Mon, 09 Dec 2019 06:00:00 GMT</pubDate>
 	<guid isPermaLink="false">process/pudding-cup-2019</guid>
 </item>
 	
@@ -79,7 +88,7 @@
 	<link>https://pudding.cool/2019/12/real-mvp</link>
 	<description>Using advanced NBA stats to rank player performance against pay.</description>
 	<category>sports></category>
-	<pubDate>Thu, 05 Dec 2019 05:00:00 GMT</pubDate>
+	<pubDate>Thu, 05 Dec 2019 06:00:00 GMT</pubDate>
 	<guid isPermaLink="false">2019/12/real-mvp</guid>
 </item>
 	
@@ -88,7 +97,7 @@
 	<link>https://pudding.cool/2019/11/big-hair</link>
 	<description>Investigating when big hair was at its height.</description>
 	<category>culture></category>
-	<pubDate>Wed, 20 Nov 2019 05:00:00 GMT</pubDate>
+	<pubDate>Wed, 20 Nov 2019 06:00:00 GMT</pubDate>
 	<guid isPermaLink="false">2019/11/big-hair</guid>
 </item>
 	
@@ -97,7 +106,7 @@
 	<link>https://pudding.cool/2019/10/laugh</link>
 	<description>Exploring the usage, evolution, and perception of digital laughter.</description>
 	<category>culture></category>
-	<pubDate>Tue, 29 Oct 2019 04:00:00 GMT</pubDate>
+	<pubDate>Tue, 29 Oct 2019 05:00:00 GMT</pubDate>
 	<guid isPermaLink="false">2019/10/laugh</guid>
 </item>
 	
@@ -106,7 +115,7 @@
 	<link>https://pudding.cool/2019/10/prosecutors</link>
 	<description>Measuring the data behind a promise to transform prosecution.</description>
 	<category>social></category>
-	<pubDate>Thu, 24 Oct 2019 04:00:00 GMT</pubDate>
+	<pubDate>Thu, 24 Oct 2019 05:00:00 GMT</pubDate>
 	<guid isPermaLink="false">2019/10/prosecutors</guid>
 </item>
 	
@@ -115,7 +124,7 @@
 	<link>https://pudding.cool/2019/10/shelters</link>
 	<description>It may be further than you think.</description>
 	<category>culture></category>
-	<pubDate>Tue, 15 Oct 2019 04:00:00 GMT</pubDate>
+	<pubDate>Tue, 15 Oct 2019 05:00:00 GMT</pubDate>
 	<guid isPermaLink="false">2019/10/shelters</guid>
 </item>
 	
@@ -124,7 +133,7 @@
 	<link>https://pudding.cool/2019/10/pubs</link>
 	<description>Finding the shortest route between UK pubs of the same name.</description>
 	<category>culture></category>
-	<pubDate>Wed, 09 Oct 2019 04:00:00 GMT</pubDate>
+	<pubDate>Wed, 09 Oct 2019 05:00:00 GMT</pubDate>
 	<guid isPermaLink="false">2019/10/pubs</guid>
 </item>
 	
@@ -133,7 +142,7 @@
 	<link>https://pudding.cool/2019/10/slang</link>
 	<description>An investigation into the mutability of slang.</description>
 	<category>culture></category>
-	<pubDate>Tue, 01 Oct 2019 04:00:00 GMT</pubDate>
+	<pubDate>Tue, 01 Oct 2019 05:00:00 GMT</pubDate>
 	<guid isPermaLink="false">2019/10/slang</guid>
 </item>
 	
@@ -142,17 +151,8 @@
 	<link>https://pudding.cool/2019/09/millennials</link>
 	<description>How does popular media see our generation?</description>
 	<category>culture></category>
-	<pubDate>Thu, 26 Sep 2019 04:00:00 GMT</pubDate>
+	<pubDate>Thu, 26 Sep 2019 05:00:00 GMT</pubDate>
 	<guid isPermaLink="false">2019/09/millennials</guid>
-</item>
-	
-<item>
-	<title>The Language of Congress</title>
-	<link>https://pudding.cool/2019/09/language-of-congress</link>
-	<description>What topics do members of Congress tweet about most frequently?</description>
-	<category>social></category>
-	<pubDate>Sun, 15 Sep 2019 04:00:00 GMT</pubDate>
-	<guid isPermaLink="false">2019/09/language-of-congress</guid>
 </item>
 	
 
