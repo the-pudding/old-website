@@ -8,7 +8,7 @@
 		<link>https://pudding.cool</link>
 		<description>The Pudding is an editorial publication that explains ideas debated in culture with visual essays.</description>
 		<lastBuildDate>
-			Tue, 14 Apr 2020 14:29:33 GMT
+			Fri, 01 May 2020 00:41:52 GMT
 		</lastBuildDate>
 		<language>en-US</language>
 		<sy:updatePeriod>daily</sy:updatePeriod>
@@ -20,6 +20,15 @@
 		</image>
 
 		
+<item>
+	<title>Identifying Generational Gaps in Music</title>
+	<link>https://pudding.cool/2020/04/music-challenge</link>
+	<description>Do you recognize songs from history more than people your age?</description>
+	<category>music></category>
+	<pubDate>Thu, 30 Apr 2020 04:00:00 GMT</pubDate>
+	<guid isPermaLink="false">2020/04/music-challenge</guid>
+</item>
+	
 <item>
 	<title>The Infinite Monkey Theorem Experiment</title>
 	<link>https://pudding.cool/2020/04/infinite</link>
@@ -144,15 +153,6 @@
 	<category>culture></category>
 	<pubDate>Tue, 15 Oct 2019 04:00:00 GMT</pubDate>
 	<guid isPermaLink="false">2019/10/shelters</guid>
-</item>
-	
-<item>
-	<title>Ye Olde Mad-Lib Pub Crawl Generator</title>
-	<link>https://pudding.cool/2019/10/pubs</link>
-	<description>Finding the shortest route between UK pubs of the same name.</description>
-	<category>culture></category>
-	<pubDate>Wed, 09 Oct 2019 04:00:00 GMT</pubDate>
-	<guid isPermaLink="false">2019/10/pubs</guid>
 </item>
 	
 
