@@ -8,7 +8,7 @@
 		<link>https://pudding.cool</link>
 		<description>The Pudding is an editorial publication that explains ideas debated in culture with visual essays.</description>
 		<lastBuildDate>
-			Thu, 21 May 2020 21:24:29 GMT
+			Wed, 27 May 2020 17:46:31 GMT
 		</lastBuildDate>
 		<language>en-US</language>
 		<sy:updatePeriod>daily</sy:updatePeriod>
@@ -20,6 +20,15 @@
 		</image>
 
 		
+<item>
+	<title>The USA, According to The Pudding</title>
+	<link>https://pudding.cool/2020/05/travel-local</link>
+	<description>A travel-like-a-local guide to 74,762 attractions according to 9,526,193 reviews</description>
+	<category>culture></category>
+	<pubDate>Wed, 27 May 2020 04:00:00 GMT</pubDate>
+	<guid isPermaLink="false">2020/05/travel-local</guid>
+</item>
+	
 <item>
 	<title>An Illustrated Guide to Masked Wrestlers</title>
 	<link>https://pudding.cool/2020/05/wrestling</link>
@@ -144,15 +153,6 @@
 	<category>culture></category>
 	<pubDate>Tue, 29 Oct 2019 04:00:00 GMT</pubDate>
 	<guid isPermaLink="false">2019/10/laugh</guid>
-</item>
-	
-<item>
-	<title>The Kim Foxx Effect</title>
-	<link>https://pudding.cool/2019/10/prosecutors</link>
-	<description>Measuring the data behind a promise to transform prosecution.</description>
-	<category>social></category>
-	<pubDate>Thu, 24 Oct 2019 04:00:00 GMT</pubDate>
-	<guid isPermaLink="false">2019/10/prosecutors</guid>
 </item>
 	
 
