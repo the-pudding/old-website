@@ -8,7 +8,7 @@
 		<link>https://pudding.cool</link>
 		<description>The Pudding is an editorial publication that explains ideas debated in culture with visual essays.</description>
 		<lastBuildDate>
-			Mon, 29 Jun 2020 21:46:15 GMT
+			Thu, 16 Jul 2020 13:52:04 GMT
 		</lastBuildDate>
 		<language>en-US</language>
 		<sy:updatePeriod>daily</sy:updatePeriod>
@@ -20,6 +20,15 @@
 		</image>
 
 		
+<item>
+	<title>The Physical Traits that Define Men and Women in Literature</title>
+	<link>https://pudding.cool/2020/07/gendered-descriptions</link>
+	<description>An analysis of 2,000 books and how body parts are described, by gender.</description>
+	<category>culture></category>
+	<pubDate>Thu, 16 Jul 2020 04:00:00 GMT</pubDate>
+	<guid isPermaLink="false">2020/07/gendered-descriptions</guid>
+</item>
+	
 <item>
 	<title>Flooding in America</title>
 	<link>https://pudding.cool/projects/flooding/visuals</link>
@@ -144,15 +153,6 @@
 	<category>awards></category>
 	<pubDate>Mon, 09 Dec 2019 05:00:00 GMT</pubDate>
 	<guid isPermaLink="false">process/pudding-cup-2019</guid>
-</item>
-	
-<item>
-	<title>The Worst, Highest-Paid NBA Player, Ever</title>
-	<link>https://pudding.cool/2019/12/real-mvp</link>
-	<description>Using advanced NBA stats to rank player performance against pay.</description>
-	<category>sports></category>
-	<pubDate>Thu, 05 Dec 2019 05:00:00 GMT</pubDate>
-	<guid isPermaLink="false">2019/12/real-mvp</guid>
 </item>
 	
 
