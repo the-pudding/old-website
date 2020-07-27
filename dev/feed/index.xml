@@ -8,7 +8,7 @@
 		<link>https://pudding.cool</link>
 		<description>The Pudding is an editorial publication that explains ideas debated in culture with visual essays.</description>
 		<lastBuildDate>
-			Thu, 16 Jul 2020 13:52:04 GMT
+			Mon, 27 Jul 2020 13:34:56 GMT
 		</lastBuildDate>
 		<language>en-US</language>
 		<sy:updatePeriod>daily</sy:updatePeriod>
@@ -20,6 +20,24 @@
 		</image>
 
 		
+<item>
+	<title>Winning the Internet</title>
+	<link>https://pudding.cool/projects/newsletter</link>
+	<description>A data-driven newsletter of links in other newsletters.</description>
+	<category>other></category>
+	<pubDate>Fri, 24 Jul 2020 04:00:00 GMT</pubDate>
+	<guid isPermaLink="false">projects/newsletter</guid>
+</item>
+	
+<item>
+	<title>Defining the ’90s Music Canon</title>
+	<link>https://pudding.cool/2020/07/song-decay</link>
+	<description>Quantifying the songs that will characterize the ’90s</description>
+	<category>music></category>
+	<pubDate>Wed, 22 Jul 2020 04:00:00 GMT</pubDate>
+	<guid isPermaLink="false">2020/07/song-decay</guid>
+</item>
+	
 <item>
 	<title>The Physical Traits that Define Men and Women in Literature</title>
 	<link>https://pudding.cool/2020/07/gendered-descriptions</link>
@@ -135,24 +153,6 @@
 	<category>culture></category>
 	<pubDate>Thu, 23 Jan 2020 05:00:00 GMT</pubDate>
 	<guid isPermaLink="false">2020/01/diaspora</guid>
-</item>
-	
-<item>
-	<title>The Aftermath of a YouTube Apology</title>
-	<link>https://pudding.cool/2020/01/apology</link>
-	<description>Quantifying the lasting impact of a YouTube controversy.</description>
-	<category>culture></category>
-	<pubDate>Wed, 15 Jan 2020 05:00:00 GMT</pubDate>
-	<guid isPermaLink="false">2020/01/apology</guid>
-</item>
-	
-<item>
-	<title>The Pudding Cup 2019</title>
-	<link>https://pudding.cool/process/pudding-cup-2019</link>
-	<description>The best visual and data-driven stories of 2019</description>
-	<category>awards></category>
-	<pubDate>Mon, 09 Dec 2019 05:00:00 GMT</pubDate>
-	<guid isPermaLink="false">process/pudding-cup-2019</guid>
 </item>
 	
 
