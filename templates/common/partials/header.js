@@ -15,9 +15,9 @@ module.exports = function(path) {
 
 				<nav class='top__nav'>
 					<ul class='nav__links'>
-						<li><a onclick="trackOutboundLink('${path}about'); return false;" href='${path}about'>About</a></li>
-						<li><a onclick="trackOutboundLink('${path}archives'); return false;" href='${path}archives'>Archives</a></li>
-						<li><a onclick="trackOutboundLink('${path}topics'); return false;" href='${path}topics'>Topics</a></li>
+						<li><a href='${path}about'>About</a></li>
+						<li><a href='${path}archives'>Archives</a></li>
+						<li><a href='${path}topics'>Topics</a></li>
 					</ul>
 				</nav>
 
@@ -41,13 +41,13 @@ module.exports = function(path) {
 				</div>
 					
 				<div class='cta__patreon'>
-					<a class='btn' onclick='trackOutboundLink('https://www.patreon.com/thepudding'); return false;' target='_blank' href='https://www.patreon.com/thepudding'>Fund us on Patreon</a>
+					<a class='btn' target='_blank' href='https://www.patreon.com/thepudding'>Fund us on Patreon</a>
 				</div>
 
 				<ul class='cta__social'>
-					<li><a target='_blank' onclick="trackOutboundLink('https://www.facebook.com/pudding.viz'); return false;" href='https://www.facebook.com/pudding.viz/' class='logo--facebook'><img inline src='dev/common/assets/svg/facebook.svg'></a></li>
-					<li><a target='_blank' onclick="trackOutboundLink('https://twitter.com/puddingviz''); return false;" href='https://twitter.com/puddingviz' class='logo--twitter'><img inline src='dev/common/assets/svg/twitter.svg'></a></li>
-					<li><a target='_blank' onclick="trackOutboundLink('https://www.instagram.com/the.pudding'); return false;" href='https://www.instagram.com/the.pudding' class='logo--instagram'><img inline src='dev/common/assets/svg/instagram.svg'></a></li>
+					<li><a target='_blank' href='https://www.facebook.com/pudding.viz/' class='logo--facebook'><img inline src='dev/common/assets/svg/facebook.svg'></a></li>
+					<li><a target='_blank' href='https://twitter.com/puddingviz' class='logo--twitter'><img inline src='dev/common/assets/svg/twitter.svg'></a></li>
+					<li><a target='_blank' href='https://www.instagram.com/the.pudding' class='logo--instagram'><img inline src='dev/common/assets/svg/instagram.svg'></a></li>
 				</ul>
 
 			</div>
@@ -59,13 +59,13 @@ module.exports = function(path) {
 			<div class='sidebar__content'>
 				<p class='sidebar__tagline'>The Pudding explains ideas debated in culture with visual essays.</p>
 					<ul class='sidebar__links'>
-						<li><a onclick="trackOutboundLink('${path}about'); return false;" href='${path}about'>About</a></li>
-						<li><a onclick="trackOutboundLink('${path}topics'); return false;" href='${path}topics'>Topics</a></li>
-						<li><a onclick="trackOutboundLink('${path}archives'); return false;" href='${path}archives'>Archives</a></li>
-						<li><a onclick="trackOutboundLink('http://eepurl.com/czym6f'); return false;" href='http://eepurl.com/czym6f' target='_blank'>Join our Newsletter</a></li>
+						<li><a href='${path}about'>About</a></li>
+						<li><a href='${path}topics'>Topics</a></li>
+						<li><a href='${path}archives'>Archives</a></li>
+						<li><a href='http://eepurl.com/czym6f' target='_blank'>Join our Newsletter</a></li>
 						<li><a href='https://pudding.cool/feed/index.xml'>RSS</a></li>
 					</ul>
-				<p class='sidebar__patreon'>We pour our ❤️ into these stories, but they take time and money. For just $1/month, you can help support us. Join our growing community of data-driven enthusiasts.<br><a class='random-background' href='https://www.patreon.com/thepudding' target='_blank' onclick='trackOutboundLink("https://www.patreon.com/thepudding"); return false;'>Help fund us</a></p>
+				<p class='sidebar__patreon'>We pour our ❤️ into these stories, but they take time and money. For just $1/month, you can help support us. Join our growing community of data-driven enthusiasts.<br><a class='random-background' href='https://www.patreon.com/thepudding' target='_blank'>Help fund us</a></p>
 			</div>
 		</aside>
 

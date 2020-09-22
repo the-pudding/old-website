@@ -213,7 +213,7 @@
 			<div class='support__patreon support__item tk-atlas'>
 				<p class='patreon__overline xx-small'>Support us on Patreon.</p>
 				<p class='patreon__content'>
-					<a onclick="trackOutboundLink('https://www.patreon.com/thepudding'); return false;" target='_blank' href='https://www.patreon.com/thepudding'
+					<a target='_blank' href='https://www.patreon.com/thepudding'
 					 class='btn btn--dark'>Help fund us</a>
 				</p>
 			</div>

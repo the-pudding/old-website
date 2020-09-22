@@ -19,7 +19,7 @@ module.exports = function() {
 					
 					<div class='cta__patreon'>
 						<p>Support us on Patreon</p>
-						<a class='btn random-color' onclick='trackOutboundLink('https://www.patreon.com/thepudding'); return false;' target='_blank' href='https://www.patreon.com/thepudding'>Help fund us</a>
+						<a class='btn random-color' target='_blank' href='https://www.patreon.com/thepudding'>Help fund us</a>
 					</div>
 				</div>
 			</div>

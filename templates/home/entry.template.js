@@ -121,8 +121,6 @@
       const $section = d3.select($story.node().closest('section'));
       const id = $section.attr('id');
       const url = $story.attr('href');
-      const onclick = `trackOutboundLink('${url}', '${id}'); return false;`;
-      $story.attr('onclick', onclick);
     });
   }
 
