@@ -38,3 +38,6 @@ See [here](https://www.notion.so/thepudding/Data-and-Copy-7cb246a38ddc4b8883651b
 ### Publishing a Story
 
 See [here](https://www.notion.so/thepudding/Publish-A-New-Story-c847b223ad814599a679b41dea6281a0) for instructions.
+
+Thank you !
+Please visit again.
