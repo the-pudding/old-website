@@ -8,7 +8,7 @@
 		<link>https://pudding.cool</link>
 		<description>The Pudding is an editorial publication that explains ideas debated in culture with visual essays.</description>
 		<lastBuildDate>
-			Wed, 30 Sep 2020 20:34:36 GMT
+			Tue, 20 Oct 2020 19:41:29 GMT
 		</lastBuildDate>
 		<language>en-US</language>
 		<sy:updatePeriod>daily</sy:updatePeriod>
@@ -20,6 +20,15 @@
 		</image>
 
 		
+<item>
+	<title>This is an Experiment about How We View History</title>
+	<link>https://pudding.cool/2020/10/photo-history</link>
+	<description>We’re going to show you some photos and ask you when each picture was taken.</description>
+	<category>culture></category>
+	<pubDate>Tue, 20 Oct 2020 05:00:00 GMT</pubDate>
+	<guid isPermaLink="false">2020/10/photo-history</guid>
+</item>
+	
 <item>
 	<title>Why are K-pop groups so big?</title>
 	<link>https://pudding.cool/2020/10/kpop</link>
@@ -144,15 +153,6 @@
 	<category>sports></category>
 	<pubDate>Tue, 12 May 2020 05:00:00 GMT</pubDate>
 	<guid isPermaLink="false">2020/05/wrestling</guid>
-</item>
-	
-<item>
-	<title>Identifying Generational Gaps in Music</title>
-	<link>https://pudding.cool/2020/04/music-challenge</link>
-	<description>Do you recognize songs from history more than people your age?</description>
-	<category>music></category>
-	<pubDate>Thu, 30 Apr 2020 05:00:00 GMT</pubDate>
-	<guid isPermaLink="false">2020/04/music-challenge</guid>
 </item>
 	
 
