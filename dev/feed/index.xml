@@ -8,7 +8,7 @@
 		<link>https://pudding.cool</link>
 		<description>The Pudding is an editorial publication that explains ideas debated in culture with visual essays.</description>
 		<lastBuildDate>
-			Tue, 22 Sep 2020 19:04:15 GMT
+			Thu, 29 Oct 2020 15:44:27 GMT
 		</lastBuildDate>
 		<language>en-US</language>
 		<sy:updatePeriod>daily</sy:updatePeriod>
@@ -20,6 +20,33 @@
 		</image>
 
 		
+<item>
+	<title>How officer complaints are investigated: a case study of Philadelphia police</title>
+	<link>https://pudding.cool/2020/10/police-misconduct</link>
+	<description>A case study of Philadelphia police</description>
+	<category>social></category>
+	<pubDate>Thu, 29 Oct 2020 04:00:00 GMT</pubDate>
+	<guid isPermaLink="false">2020/10/police-misconduct</guid>
+</item>
+	
+<item>
+	<title>This is an Experiment about How We View History</title>
+	<link>https://pudding.cool/2020/10/photo-history</link>
+	<description>We’re going to show you some photos and ask you when each picture was taken.</description>
+	<category>culture></category>
+	<pubDate>Tue, 20 Oct 2020 04:00:00 GMT</pubDate>
+	<guid isPermaLink="false">2020/10/photo-history</guid>
+</item>
+	
+<item>
+	<title>Why are K-pop groups so big?</title>
+	<link>https://pudding.cool/2020/10/kpop</link>
+	<description>We tracked group sizes and member roles over modern K-pop’s 30-year history.</description>
+	<category>music></category>
+	<pubDate>Thu, 01 Oct 2020 04:00:00 GMT</pubDate>
+	<guid isPermaLink="false">2020/10/kpop</guid>
+</item>
+	
 <item>
 	<title>A Data-Led Theory to Generationally Divide Dance Floors</title>
 	<link>https://pudding.cool/2020/09/wedding-playlists</link>
@@ -126,33 +153,6 @@
 	<category>culture></category>
 	<pubDate>Wed, 27 May 2020 04:00:00 GMT</pubDate>
 	<guid isPermaLink="false">2020/05/travel-local</guid>
-</item>
-	
-<item>
-	<title>An Illustrated Guide to Masked Wrestlers</title>
-	<link>https://pudding.cool/2020/05/wrestling</link>
-	<description>Stories, facts, and pixel art drawings of hundreds of masked wrestlers.</description>
-	<category>sports></category>
-	<pubDate>Tue, 12 May 2020 04:00:00 GMT</pubDate>
-	<guid isPermaLink="false">2020/05/wrestling</guid>
-</item>
-	
-<item>
-	<title>Identifying Generational Gaps in Music</title>
-	<link>https://pudding.cool/2020/04/music-challenge</link>
-	<description>Do you recognize songs from history more than people your age?</description>
-	<category>music></category>
-	<pubDate>Thu, 30 Apr 2020 04:00:00 GMT</pubDate>
-	<guid isPermaLink="false">2020/04/music-challenge</guid>
-</item>
-	
-<item>
-	<title>The Infinite Monkey Theorem Experiment</title>
-	<link>https://pudding.cool/2020/04/infinite</link>
-	<description>What happens when you combine music, Joe Rogan, and probability?</description>
-	<category>other></category>
-	<pubDate>Tue, 14 Apr 2020 04:00:00 GMT</pubDate>
-	<guid isPermaLink="false">2020/04/infinite</guid>
 </item>
 	
 
