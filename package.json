@@ -3,8 +3,8 @@
 	"version": "3.2.0",
 	"description": "website",
 	"engines": {
-    "node": "14.15.0"
-  },
+		"node": "14.15.0"
+	},
 	"scripts": {
 		"dist": "babel-node scripts/dist.js",
 		"fetch-about-copy": "babel-node scripts/fetch-about-copy.js",
