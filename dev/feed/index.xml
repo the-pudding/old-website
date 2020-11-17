@@ -8,7 +8,7 @@
 		<link>https://pudding.cool</link>
 		<description>The Pudding is an editorial publication that explains ideas debated in culture with visual essays.</description>
 		<lastBuildDate>
-			Mon, 09 Nov 2020 21:00:44 GMT
+			Tue, 17 Nov 2020 11:06:28 GMT
 		</lastBuildDate>
 		<language>en-US</language>
 		<sy:updatePeriod>daily</sy:updatePeriod>
@@ -21,11 +21,29 @@
 
 		
 <item>
+	<title>Who’s in the Crossword?</title>
+	<link>https://pudding.cool/2020/11/crossword</link>
+	<description>A look at representation and inclusivity in crossword puzzles.</description>
+	<category>culture></category>
+	<pubDate>Mon, 16 Nov 2020 05:00:00 GMT</pubDate>
+	<guid isPermaLink="false">2020/11/crossword</guid>
+</item>
+	
+<item>
+	<title>Playble Puzzles About Race and Gender in Crosswords</title>
+	<link>https://pudding.cool/2020/11/crossword-puzzles</link>
+	<description>Minis generated from an analysis of the New York Times, and others.</description>
+	<category>culture></category>
+	<pubDate>Mon, 16 Nov 2020 05:00:00 GMT</pubDate>
+	<guid isPermaLink="false">2020/11/crossword-puzzles</guid>
+</item>
+	
+<item>
 	<title>Welcome to the Cloud Zoo</title>
 	<link>https://pudding.cool/2020/11/cloud-zoo</link>
 	<description>Live-streamed animals from your favorite zoos and aquariums all in one place</description>
-	<category>culture></category>
-	<pubDate>Mon, 09 Nov 2020 08:00:00 GMT</pubDate>
+	<category>other></category>
+	<pubDate>Mon, 09 Nov 2020 05:00:00 GMT</pubDate>
 	<guid isPermaLink="false">2020/11/cloud-zoo</guid>
 </item>
 	
@@ -34,7 +52,7 @@
 	<link>https://pudding.cool/2020/10/police-misconduct</link>
 	<description>A case study of Philadelphia police</description>
 	<category>social></category>
-	<pubDate>Thu, 29 Oct 2020 07:00:00 GMT</pubDate>
+	<pubDate>Thu, 29 Oct 2020 04:00:00 GMT</pubDate>
 	<guid isPermaLink="false">2020/10/police-misconduct</guid>
 </item>
 	
@@ -43,7 +61,7 @@
 	<link>https://pudding.cool/2020/10/photo-history</link>
 	<description>We’re going to show you some photos and ask you when each picture was taken.</description>
 	<category>culture></category>
-	<pubDate>Tue, 20 Oct 2020 07:00:00 GMT</pubDate>
+	<pubDate>Tue, 20 Oct 2020 04:00:00 GMT</pubDate>
 	<guid isPermaLink="false">2020/10/photo-history</guid>
 </item>
 	
@@ -52,7 +70,7 @@
 	<link>https://pudding.cool/2020/10/kpop</link>
 	<description>We tracked group sizes and member roles over modern K-pop’s 30-year history.</description>
 	<category>music></category>
-	<pubDate>Thu, 01 Oct 2020 07:00:00 GMT</pubDate>
+	<pubDate>Thu, 01 Oct 2020 04:00:00 GMT</pubDate>
 	<guid isPermaLink="false">2020/10/kpop</guid>
 </item>
 	
@@ -61,7 +79,7 @@
 	<link>https://pudding.cool/2020/09/wedding-playlists</link>
 	<description>Some age groups are more likely to recognize certain songs than others</description>
 	<category>music></category>
-	<pubDate>Thu, 10 Sep 2020 07:00:00 GMT</pubDate>
+	<pubDate>Thu, 10 Sep 2020 04:00:00 GMT</pubDate>
 	<guid isPermaLink="false">2020/09/wedding-playlists</guid>
 </item>
 	
@@ -70,7 +88,7 @@
 	<link>https://pudding.cool/process/how-to-make-dope-shit-part-3</link>
 	<description>How to think about storytelling in your data-driven visual essay.</description>
 	<category>how></category>
-	<pubDate>Tue, 01 Sep 2020 07:00:00 GMT</pubDate>
+	<pubDate>Tue, 01 Sep 2020 04:00:00 GMT</pubDate>
 	<guid isPermaLink="false">process/how-to-make-dope-shit-part-3</guid>
 </item>
 	
@@ -79,7 +97,7 @@
 	<link>https://pudding.cool/2020/08/income</link>
 	<description>Exploring the economic mobility of 11,172 middle class families over 50 years</description>
 	<category>social></category>
-	<pubDate>Wed, 19 Aug 2020 07:00:00 GMT</pubDate>
+	<pubDate>Wed, 19 Aug 2020 04:00:00 GMT</pubDate>
 	<guid isPermaLink="false">2020/08/income</guid>
 </item>
 	
@@ -88,7 +106,7 @@
 	<link>https://pudding.cool/2020/08/campaign-colors</link>
 	<description>We examined 271 presidential designs from 1968–2020.</description>
 	<category>social></category>
-	<pubDate>Tue, 11 Aug 2020 07:00:00 GMT</pubDate>
+	<pubDate>Tue, 11 Aug 2020 04:00:00 GMT</pubDate>
 	<guid isPermaLink="false">2020/08/campaign-colors</guid>
 </item>
 	
@@ -97,7 +115,7 @@
 	<link>https://pudding.cool/process/pivot-continue-down</link>
 	<description>The Pudding's process to go from idea to data story</description>
 	<category>how></category>
-	<pubDate>Wed, 05 Aug 2020 07:00:00 GMT</pubDate>
+	<pubDate>Wed, 05 Aug 2020 04:00:00 GMT</pubDate>
 	<guid isPermaLink="false">process/pivot-continue-down</guid>
 </item>
 	
@@ -106,7 +124,7 @@
 	<link>https://pudding.cool/process/pitching-gendered-descriptions</link>
 	<description>How I successfully pitched my first visual essay</description>
 	<category>how></category>
-	<pubDate>Thu, 30 Jul 2020 07:00:00 GMT</pubDate>
+	<pubDate>Thu, 30 Jul 2020 04:00:00 GMT</pubDate>
 	<guid isPermaLink="false">process/pitching-gendered-descriptions</guid>
 </item>
 	
@@ -115,7 +133,7 @@
 	<link>https://pudding.cool/projects/newsletter</link>
 	<description>A data-driven newsletter of links in other newsletters.</description>
 	<category>other></category>
-	<pubDate>Fri, 24 Jul 2020 07:00:00 GMT</pubDate>
+	<pubDate>Fri, 24 Jul 2020 04:00:00 GMT</pubDate>
 	<guid isPermaLink="false">projects/newsletter</guid>
 </item>
 	
@@ -124,7 +142,7 @@
 	<link>https://pudding.cool/2020/07/song-decay</link>
 	<description>Quantifying the songs that will characterize the ’90s</description>
 	<category>music></category>
-	<pubDate>Wed, 22 Jul 2020 07:00:00 GMT</pubDate>
+	<pubDate>Wed, 22 Jul 2020 04:00:00 GMT</pubDate>
 	<guid isPermaLink="false">2020/07/song-decay</guid>
 </item>
 	
@@ -133,26 +151,8 @@
 	<link>https://pudding.cool/2020/07/gendered-descriptions</link>
 	<description>An analysis of 2,000 books and how body parts are described, by gender.</description>
 	<category>culture></category>
-	<pubDate>Thu, 16 Jul 2020 07:00:00 GMT</pubDate>
+	<pubDate>Thu, 16 Jul 2020 04:00:00 GMT</pubDate>
 	<guid isPermaLink="false">2020/07/gendered-descriptions</guid>
-</item>
-	
-<item>
-	<title>Flooding in America</title>
-	<link>https://pudding.cool/projects/flooding/visuals</link>
-	<description>How is Flooding Affecting Your Community?</description>
-	<category>other></category>
-	<pubDate>Mon, 29 Jun 2020 07:00:00 GMT</pubDate>
-	<guid isPermaLink="false">projects/flooding/visuals</guid>
-</item>
-	
-<item>
-	<title>You Know Karen</title>
-	<link>https://pudding.cool/2020/06/karen</link>
-	<description>We found names that could be “other Karens,” "male Karens," and “future Karens.”</description>
-	<category>culture></category>
-	<pubDate>Tue, 16 Jun 2020 07:00:00 GMT</pubDate>
-	<guid isPermaLink="false">2020/06/karen</guid>
 </item>
 	
 
