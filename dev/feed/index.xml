@@ -8,7 +8,7 @@
 		<link>https://pudding.cool</link>
 		<description>The Pudding is an editorial publication that explains ideas debated in culture with visual essays.</description>
 		<lastBuildDate>
-			Fri, 18 Dec 2020 21:26:52 GMT
+			Wed, 23 Dec 2020 13:55:11 GMT
 		</lastBuildDate>
 		<language>en-US</language>
 		<sy:updatePeriod>daily</sy:updatePeriod>
@@ -20,6 +20,15 @@
 		</image>
 
 		
+<item>
+	<title>How Bad is Your Spotify?</title>
+	<link>https://pudding.cool/2020/12/judge-my-spotify</link>
+	<description>Our sophisticated A.I. judges your awful taste in music.</description>
+	<category>music></category>
+	<pubDate>Tue, 22 Dec 2020 05:00:00 GMT</pubDate>
+	<guid isPermaLink="false">2020/12/judge-my-spotify</guid>
+</item>
+	
 <item>
 	<title>The historical cost of light</title>
 	<link>https://pudding.cool/2020/12/lighting-cost</link>
@@ -144,15 +153,6 @@
 	<category>how></category>
 	<pubDate>Thu, 30 Jul 2020 04:00:00 GMT</pubDate>
 	<guid isPermaLink="false">process/pitching-gendered-descriptions</guid>
-</item>
-	
-<item>
-	<title>Winning the Internet</title>
-	<link>https://pudding.cool/projects/newsletter</link>
-	<description>A data-driven newsletter of links in other newsletters.</description>
-	<category>other></category>
-	<pubDate>Fri, 24 Jul 2020 04:00:00 GMT</pubDate>
-	<guid isPermaLink="false">projects/newsletter</guid>
 </item>
 	
 
