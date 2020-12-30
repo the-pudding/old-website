@@ -36,8 +36,8 @@
 						<select>
 							<option>Newest to Oldest</option>
 							<option>Oldest to Newest</option>
-							<option>Most-Viewed</option>
-							<option>Time on Page</option>
+							<!-- <option>Most-Viewed</option>
+							<option>Time on Page</option> -->
 						</select>
 					</li>
 				</ul>
