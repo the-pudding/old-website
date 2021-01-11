@@ -8,7 +8,7 @@
 		<link>https://pudding.cool</link>
 		<description>The Pudding is an editorial publication that explains ideas debated in culture with visual essays.</description>
 		<lastBuildDate>
-			Tue, 05 Jan 2021 11:11:14 GMT
+			Mon, 11 Jan 2021 16:34:34 GMT
 		</lastBuildDate>
 		<language>en-US</language>
 		<sy:updatePeriod>daily</sy:updatePeriod>
@@ -20,6 +20,15 @@
 		</image>
 
 		
+<item>
+	<title>Every time someone says cool in Community</title>
+	<link>https://pudding.cool/2021/01/cool</link>
+	<description>Watch all 412 cools from Abed, and others.</description>
+	<category>entertainment></category>
+	<pubDate>Mon, 11 Jan 2021 05:00:00 GMT</pubDate>
+	<guid isPermaLink="false">2021/01/cool</guid>
+</item>
+	
 <item>
 	<title>Oreos and the Art of Crossword Puzzle Construction</title>
 	<link>https://pudding.cool/2021/01/oreo</link>
@@ -144,15 +153,6 @@
 	<category>social></category>
 	<pubDate>Tue, 11 Aug 2020 04:00:00 GMT</pubDate>
 	<guid isPermaLink="false">2020/08/campaign-colors</guid>
-</item>
-	
-<item>
-	<title>Continue, Pivot, or Put It Down</title>
-	<link>https://pudding.cool/process/pivot-continue-down</link>
-	<description>The Pudding's process to go from idea to data story</description>
-	<category>how></category>
-	<pubDate>Wed, 05 Aug 2020 04:00:00 GMT</pubDate>
-	<guid isPermaLink="false">process/pivot-continue-down</guid>
 </item>
 	
 
