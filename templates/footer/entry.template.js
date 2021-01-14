@@ -253,7 +253,6 @@
 				</ul>
 			</div>
 		</div>
-		<div class='footer-company__trademark'><p class='footer__location xx-small tk-atlas'>The Pudding<span>®</span> is made in Brooklyn, NY; Seattle, WA; and Great Barrington, MA.</p></div>
 	</div>
 	`;
   }

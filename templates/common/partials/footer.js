@@ -60,8 +60,6 @@ module.exports = function() {
 				<img inline src='dev/common/assets/svg/pudding-wordmark.svg'></a>
 				<p class='footer__description'><a href='https://pudding.cool'>The Pudding</a> is a digital publication that
 					explains ideas debated in culture with visual essays.</p>
-				<p class='footer__trademark'>The Pudding<span>®</span> is made in Brooklyn, NY; Seattle, WA; San Antonio, TX; and Great
-					Barrington, MA.</p>
 			</div>
 
 		</div>

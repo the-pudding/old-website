@@ -273,7 +273,6 @@
 		<div class='footer-company__about'>
       ${puddingWordmark}
 			<p class='footer-company__description'><a href='https://pudding.cool'>The Pudding</a> is a digital publication that explains ideas debated in culture with visual essays.</p>
-			<p class='footer-company__trademark'>The Pudding<span>®</span> is made in Brooklyn, NY; Seattle, WA; and Great Barrington, MA.</p>
 		</div>
 
 	</div>
