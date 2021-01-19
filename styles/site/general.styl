@@ -30,7 +30,7 @@ input[type='email'], input[type='text'], input[type='button'], input[type='submi
 	line-height 1
 
 .random-color, a.random-color, .btn.random-color
-	color $off-black
+	color $gray-dark
 	transition color 250ms
 
 	&--0
@@ -40,13 +40,13 @@ input[type='email'], input[type='text'], input[type='button'], input[type='submi
 		color $blue
 
 	&--2
-		color $green
+		color darken($green, 10)
 
 	&--3
-		color $red
+		color darken($red, 20)
 
 .random-background, a.random-background, .btn.random-background
-	background-color $off-black
+	background-color $gray-dark
 	transition background-color 250ms
 
 	&--0
@@ -56,10 +56,10 @@ input[type='email'], input[type='text'], input[type='button'], input[type='submi
 		background-color $blue
 
 	&--2
-		background-color $green
+		background-color darken($green, 10)
 
 	&--3
-		background-color $red
+		background-color darken($red, 20)
 
 .random-stroke
 	transition color 250ms
