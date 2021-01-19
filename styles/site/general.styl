@@ -1,86 +1,96 @@
 html
 	scroll-behavior smooth
+
 body
-	font-family $sans
 	overflow-x hidden
+	font-family $sans
 
 button
-	font-family $sans-display
 	background-color transparent
+	font-family $sans-display
 
 input
 	font-family $sans-display
 
-
-input[type="email"], input[type="text"], input[type="button"], input[type="submit"]
-	-webkit-appearance none
-	border-radius 0
+input[type='email'], input[type='text'], input[type='button'], input[type='submit']
 	margin 0
+	border-radius 0
+	-webkit-appearance none
 
 .btn, a.btn
-	font-family $sans-display
-	font-weight 900
-	text-transform uppercase
 	padding 0.75rem
+	text-transform uppercase
+	font-weight 900
+	font-family $sans-display
 	set-type-size(small, false)
-	line-height 1
+	border none
 	background-color $fg
 	color $bg
 	letter-spacing 0.03em
-	border none
+	line-height 1
 
 .random-color, a.random-color, .btn.random-color
-	color $gray-dark
+	color $off-black
 	transition color 250ms
+
 	&--0
 		color $purple
+
 	&--1
 		color $blue
+
 	&--2
 		color $green
+
 	&--3
 		color $red
 
 .random-background, a.random-background, .btn.random-background
-	background-color $gray-dark
+	background-color $off-black
 	transition background-color 250ms
+
 	&--0
 		background-color $purple
+
 	&--1
 		background-color $blue
+
 	&--2
 		background-color $green
+
 	&--3
 		background-color $red
 
 .random-stroke
 	transition color 250ms
+
 	&--0
 		stroke $purple
+
 	&--1
 		stroke $blue
+
 	&--2
 		stroke $green
+
 	&--3
 		stroke $red
 
-
-
 .story-item
-
 	.item__hed
 		margin 0
 		font-family $sans-display
 
 	.item__dek
-		font-family $serif
 		margin 0
+		font-family $serif
 
 	.item__author
 		display block
-		font-family $sans-display
 		margin 0
 		color $gray-dark
+		font-family $sans-display
+
 		a
 			color $gray-dark
 
@@ -91,48 +101,51 @@ input[type="email"], input[type="text"], input[type="button"], input[type="submi
 		display none
 
 section
-	width calc(100% - 2rem)
 	position relative
-	max-width $main-width
 	margin 0 auto 5rem auto
-	border-top 4px solid $fg
 	padding-top 0.5rem
+	max-width $main-width
+	width calc(100% - 2rem)
+	border-top 4px solid $fg
 
 	+mq('bp-m')
+		max-width 60rem
 		width calc(100% - 12rem)
 		transform translateX(0)
-		max-width 60rem
 
 	.section__top
 		display flex
+
 		+mq('bp-m')
 			display flex
 
 	.section__description
 		margin 0
-		line-height 1
 		color $gray-dark
 		font-family $sans-display
-
+		line-height 1
 
 	.section__label
-		font-family $sans-display
-		font-weight 700
-		text-transform uppercase
-		line-height 1
 		margin 0
-		margin-bottom 2rem
 		margin-right 1rem
+		margin-bottom 2rem
+		text-transform uppercase
+		font-weight 700
+		font-family $sans-display
+		line-height 1
 
 select option
 	font-family $sans-display
 
 .random-link--0 a:hover
 	color $purple
+
 .random-link--1 a:hover
 	color $blue
+
 .random-link--2 a:hover
 	color $green
+
 .random-link--3 a:hover
 	color $red
 
@@ -142,21 +155,22 @@ select option
 		display flex
 		flex-wrap wrap
 		justify-content space-between
+
 		+mq('bp-m')
 			justify-content flex-start
 			width 100%
 
 	li
-		width 100%
 		margin-bottom 3rem
+		width 100%
 
 		+mq('bp-m')
-			width 50%
 			margin 0
-			border-top none
-			width calc(50% - 1rem)
 			margin-right 2rem
 			margin-bottom 0
+			width 50%
+			width calc(50% - 1rem)
+			border-top none
 
 			&:nth-child(odd)
 				margin-right 0
@@ -169,36 +183,45 @@ select option
 				display none
 
 	li:nth-child(3)
-			margin-bottom 0
+		margin-bottom 0
 
 	li:nth-child(n+4)
-			display none
+		display none
 
 	li:first-of-type
-		border none
 		width 100%
+		border none
+
 		.item__hed
 			set-type-size(x-large)
+
 		.item__dek
 			display block
+
 		+mq('bp-m')
+			margin-right 0
 			margin-bottom 2rem
 			margin-left 0
-			margin-right 0
+
 			.story-item
 				flex-direction row
+
 			.item__img
 				width 70%
+
 			.item__info
-				width 30%
 				padding-top 0
 				padding-left 1rem
+				width 30%
+
 			.item__hed
 				set-type-size(xx-large)
 				font-weight 900
+
 			.item__dek
 				set-type-size(large)
 				line-height 1.2
+
 			.item__author
 				margin-top 2rem
 
@@ -222,13 +245,13 @@ select option
 
 	.item__dek
 		set-type-size(root, false)
-		line-height 1.4
-		font-family $serif
 		margin-top 0.5rem
+		font-family $serif
+		line-height 1.4
 
 	.item__author
-		font-weight 700
 		margin-top 1rem
+		font-weight 700
 		set-type-size(small)
 		line-height 1.2
 
@@ -236,47 +259,52 @@ select option
 			display inline-block
 			text-transform uppercase
 
-
 .layout--small
 	ul
 		display flex
 		flex-wrap wrap
 		justify-content space-between
 		transition opacity 250ms
+
 		+mq('bp-m')
 			width 100%
 
 	li
-		width 100%
 		margin-bottom 4rem
+		width 100%
+
 		&:first-of-type
 			border none
+
 		&:last-of-type
 			margin-bottom 0
+
 		+mq('bp-m')
+			margin 0
 			width calc(25% - 1.5rem)
 			border-top none
-			margin 0
-
 
 	.story-item
 		display flex
 		flex-direction row
 		align-items center
+
 		+mq('bp-m')
 			flex-direction column
 
 	.item__img
 		width 60%
+
 		+mq('bp-m')
 			width 100%
 
 	.item__info
 		padding-left 1rem
 		width 40%
+
 		+mq('bp-m')
-			width 100%
 			padding 1rem 0
+			width 100%
 
 	.item__hed
 		font-weight 700
@@ -287,8 +315,8 @@ select option
 		display none
 
 	.item__author
-		font-weight 700
 		margin-top 1rem
+		font-weight 700
 		set-type-size(small)
 		line-height 1
 
@@ -296,51 +324,56 @@ select option
 			display inline-block
 			text-transform uppercase
 
-
 .top__more
 	position absolute
 	top 0.4rem
 	right 0
 
 	a
-		font-family $sans-display
-		text-transform uppercase
-		font-weight 700
 		border none
 		color $gray-dark
+		text-transform uppercase
+		font-weight 700
+		font-family $sans-display
 		set-type-size(small, false)
 		line-height 1
+
 		&:hover
 			color red
+
 	svg
+		width 1.25rem
 		vertical-align middle
 		transform translateY(-5%)
-		width 1.25rem
 
 .top__nav
 	transform translateY(-1rem)
+
 	+mq('bp-m')
 		transform translateY(0)
+
 	div
 		display flex
 		flex-wrap wrap
 
 	span
-		padding-right 0.75rem
 		margin-bottom 0.25rem
+		padding-right 0.75rem
 		line-height 1
+
 		+mq('bp-m')
-			padding 0 0.75rem
 			margin-bottom 0
+			padding 0 0.75rem
+
 		&.is-active
 			button
-				font-weight 700
 				color $off-black
+				font-weight 700
+
 		button
+			color $gray-dark
 			text-transform capitalize
 			line-height 1
-			color $gray-dark
+
 			&:hover
 				color $off-black
-
-

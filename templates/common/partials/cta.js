@@ -9,9 +9,9 @@ module.exports = function() {
 						<form action='https://poly-graph.us11.list-manage.com/subscribe/post' method='POST'>
 								<input type='hidden' name='u' value='c70d3c0e372cde433143ffeab'>
 								<input type='hidden' name='id' value='9af100ac0f'>
-								<input label='email' class='newsletter__input' type='email' autocapitalize='off' autocorrect='off' name='MERGE1' id='MERGE1' size='25' value='' placeholder='you@example.com'>
+								<input aria-label='email' class='newsletter__input' type='email' autocapitalize='off' autocorrect='off' name='MERGE1' id='MERGE1' size='25' value='' placeholder='you@example.com'>
 								<div class='hidden-from-view' style='left:-10000px;position:absolute'>
-									<input label='text' type='text' name='b_c70d3c0e372cde433143ffeab_9af100ac0f' tabindex='-1' value=''>
+									<input aria-label='text' type='text' name='b_c70d3c0e372cde433143ffeab_9af100ac0f' tabindex='-1' value=''>
 								</div>
 								<input class='btn random-color' style='' type='submit' name='submit' value='JOIN'>
 							</form>
@@ -19,7 +19,7 @@ module.exports = function() {
 					
 					<div class='cta__patreon'>
 						<p>Support us on Patreon</p>
-						<a class='btn random-color' target='_blank' href='https://www.patreon.com/thepudding'>Help fund us</a>
+						<a class='btn random-color' href='https://www.patreon.com/thepudding'>Help fund us</a>
 					</div>
 				</div>
 			</div>

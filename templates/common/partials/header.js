@@ -32,22 +32,22 @@ module.exports = function(path) {
 					<form action='https://poly-graph.us11.list-manage.com/subscribe/post' method='POST'>
 							<input type='hidden' name='u' value='c70d3c0e372cde433143ffeab'>
 							<input type='hidden' name='id' value='9af100ac0f'>
-							<input label='email' class='newsletter__input' type='email' autocapitalize='off' autocorrect='off' name='MERGE0' id='MERGE0' size='25' value='' placeholder='you@example.com'>
+							<input aria-label='email' class='newsletter__input' type='email' autocapitalize='off' autocorrect='off' name='MERGE0' id='MERGE0' size='25' value='' placeholder='you@example.com'>
 							<div class='hidden-from-view' style='left:-10000px;position:absolute'>
-								<input label='text' type='text' name='b_c70d3c0e372cde433143ffeab_9af100ac0f' tabindex='-1' value=''>
+								<input aria-label='text' type='text' name='b_c70d3c0e372cde433143ffeab_9af100ac0f' tabindex='-1' value=''>
 							</div>
 							<input class='btn' style='' type='submit' name='submit' value='Join Our Newsletter'>
 						</form>
 				</div>
 					
 				<div class='cta__patreon'>
-					<a class='btn' target='_blank' href='https://www.patreon.com/thepudding'>Fund us on Patreon</a>
+					<a class='btn' href='https://www.patreon.com/thepudding'>Fund us on Patreon</a>
 				</div>
 
 				<ul class='cta__social'>
-					<li><a target='_blank' href='https://www.facebook.com/pudding.viz/' class='logo--facebook'><img inline src='dev/common/assets/svg/facebook.svg'></a></li>
-					<li><a target='_blank' href='https://twitter.com/puddingviz' class='logo--twitter'><img inline src='dev/common/assets/svg/twitter.svg'></a></li>
-					<li><a target='_blank' href='https://www.instagram.com/the.pudding' class='logo--instagram'><img inline src='dev/common/assets/svg/instagram.svg'></a></li>
+					<li><a href='https://www.facebook.com/pudding.viz/' aria-label='facebook' class='logo--facebook'><img inline src='dev/common/assets/svg/facebook.svg'></a></li>
+					<li><a href='https://twitter.com/puddingviz' aria-label='twitter' class='logo--twitter'><img inline src='dev/common/assets/svg/twitter.svg'></a></li>
+					<li><a href='https://www.instagram.com/the.pudding' aria-label='instagram' class='logo--instagram'><img inline src='dev/common/assets/svg/instagram.svg'></a></li>
 				</ul>
 
 			</div>
@@ -62,10 +62,10 @@ module.exports = function(path) {
 						<li><a href='${path}about'>About</a></li>
 						<li><a href='${path}topics'>Topics</a></li>
 						<li><a href='${path}archives'>Archives</a></li>
-						<li><a href='http://eepurl.com/czym6f' target='_blank'>Join our Newsletter</a></li>
+						<li><a href='http://eepurl.com/czym6f'>Join our Newsletter</a></li>
 						<li><a href='https://pudding.cool/feed/index.xml'>RSS</a></li>
 					</ul>
-				<p class='sidebar__patreon'>We pour our ❤️ into these stories, but they take time and money. For just $1/month, you can help support us. Join our growing community of data-driven enthusiasts.<br><a class='random-background' href='https://www.patreon.com/thepudding' target='_blank'>Help fund us</a></p>
+				<p class='sidebar__patreon'>We pour our ❤️ into these stories, but they take time and money. For just $1/month, you can help support us. Join our growing community of data-driven enthusiasts.<br><a class='random-background' href='https://www.patreon.com/thepudding'>Help fund us</a></p>
 			</div>
 		</aside>
 

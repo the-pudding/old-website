@@ -191,7 +191,7 @@
       return `
 		<a class='footer-recirc__article' href='https://pudding.cool/${
       obj.url
-    }' target='_blank'>
+    }'>
 			<img class='article__img' src='https://pudding.cool/common/assets/thumbnails/640/${
         obj.image
       }.jpg' alt='${obj.hed}'>

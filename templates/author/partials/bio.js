@@ -2,19 +2,19 @@ module.exports = function(d) {
   const website = d.url
     ? `<li class='link__url'><a href='${
         d.url
-      }' target='_blank'><img inline src='dev/common/assets/svg/link.svg'>website</a></li>`
+      }'><img inline src='dev/common/assets/svg/link.svg'>website</a></li>`
     : '';
   const twitter = d.twitter
     ? `<li class='link__twitter'><a href='https://twitter.com/${
         d.twitter
-      }' target='_blank'><img inline src='dev/common/assets/svg/twitter.svg'>@${
+      }'><img inline src='dev/common/assets/svg/twitter.svg'>@${
         d.twitter
       }</a></li>`
     : '';
   const email = d.email
     ? `<li class='link__email'><a href='mailto:${
         d.email
-      }' target='_blank'><img inline src='dev/common/assets/svg/mail.svg'>${
+      }'><img inline src='dev/common/assets/svg/mail.svg'>${
         d.email
       }</a></li>`
     : '';

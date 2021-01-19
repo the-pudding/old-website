@@ -162,7 +162,7 @@
       return `
 		<a class='footer-recirc__article' href='https://pudding.cool/${
       obj.url
-    }' target='_blank'>
+    }'>
 			<div class='article__img' style='background-image: url("https://pudding.cool/common/assets/thumbnails/640/${
         obj.image
       }.jpg")'></div>
@@ -213,7 +213,7 @@
 			<div class='support__patreon support__item tk-atlas'>
 				<p class='patreon__overline xx-small'>Support us on Patreon.</p>
 				<p class='patreon__content'>
-					<a target='_blank' href='https://www.patreon.com/thepudding'
+					<a href='https://www.patreon.com/thepudding'
 					 class='btn btn--dark'>Help fund us</a>
 				</p>
 			</div>
