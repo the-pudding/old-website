@@ -74,7 +74,7 @@ module.exports = function(path) {
 				<img inline src='dev/common/assets/svg/pudding-logo.svg'>
 			</a>
 			
-			<button class='menu__toggle'>
+			<button class='menu__toggle' aria-label="Menu">
 				<span class='toggle--on'>
 					<img inline src='dev/common/assets/svg/menu.svg'>
 				</span>
