@@ -8,7 +8,7 @@
 		<link>https://pudding.cool</link>
 		<description>The Pudding is an editorial publication that explains ideas debated in culture with visual essays.</description>
 		<lastBuildDate>
-			Fri, 05 Feb 2021 18:54:06 GMT
+			Fri, 05 Feb 2021 21:24:50 GMT
 		</lastBuildDate>
 		<language>en-US</language>
 		<sy:updatePeriod>daily</sy:updatePeriod>
@@ -20,15 +20,6 @@
 		</image>
 
 		
-<item>
-	<title>Introducing the Live Music Jukebox</title>
-	<link>https://pudding.cool/2021/02/live-music-jukebox</link>
-	<description>An auditory comparison of 770 artists' live and studio tracks</description>
-	<category>music></category>
-	<pubDate>Fri, 05 Feb 2021 06:00:00 GMT</pubDate>
-	<guid isPermaLink="false">2021/02/live-music-jukebox</guid>
-</item>
-	
 <item>
 	<title>We created a speaker rider. Journalism didn’t have one.</title>
 	<link>https://pudding.cool/process/speaker-rider</link>
@@ -153,6 +144,15 @@
 	<category>how></category>
 	<pubDate>Tue, 01 Sep 2020 05:00:00 GMT</pubDate>
 	<guid isPermaLink="false">process/how-to-make-dope-shit-part-3</guid>
+</item>
+	
+<item>
+	<title>How rigid is the middle class in the US, really?</title>
+	<link>https://pudding.cool/2020/08/income</link>
+	<description>Exploring the economic mobility of 11,172 middle class families over 50 years</description>
+	<category>social></category>
+	<pubDate>Wed, 19 Aug 2020 05:00:00 GMT</pubDate>
+	<guid isPermaLink="false">2020/08/income</guid>
 </item>
 	
 
