@@ -24,21 +24,17 @@
           <p class="section__label random-color">Story Idea Backlog</p>
         </div>
         <p class="description">
-          The Pudding team regularly maintains an on-going dump of questions,
-          ideas, datasets, and half-baked thoughts for potential stories, listed
-          below. If any of them excite you, feel free to pitch us your
-          manifestation of the idea. Details <a href="../about/#pitch">here</a>.
+					The Pudding team maintains a continuously updated list of questions, ideas, datasets, and half-baked thoughts for
+					potential stories. For the ideas below, we'd like your help.
         </p>
         <div class="key">
-          <!-- <p>We are actively seeking contributors for ideas highlighted in <span class='gray'>gray</span>.</p> -->
           <p>
-            We have a more vested interest in the production of certain stories.
-            If it has a <span class="collab">collab</span> tag, we want to be
-            involved in the creation process. If it has an
-            <span class="edit">edit</span> tag, we’re happy to take the backseat
-            and just help guide the story. Ideas without tags are blank
-            canvases&mdash;feel free to work on them and then
-            <a href="https://pudding.cool/about/#pitch">pitch us</a>.
+						In their current form, they’re shower thoughts — we don’t know whether they’re viable stories, but something about them
+						seemed like a compelling narrative may emerge after some exploration. If you’d like to work on one of these ideas with
+						us, you’ll need to flesh it out and research it more thoroughly before it moves into production. That is to say, they
+						need some proof that they are interesting. Think of them as starting points for your pitches: if any of them excite you,
+						feel free to explore the data, and send us the preliminary results that suggest the story is sufficiently intriguing to
+						merit further work. Details <a href="../about/#pitch">here</a>.
           </p>
         </div>
         <!-- DO NOT REMOVE -->
