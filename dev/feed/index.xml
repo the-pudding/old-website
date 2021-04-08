@@ -8,7 +8,7 @@
 		<link>https://pudding.cool</link>
 		<description>The Pudding is an editorial publication that explains ideas debated in culture with visual essays.</description>
 		<lastBuildDate>
-			Wed, 31 Mar 2021 21:38:45 GMT
+			Thu, 08 Apr 2021 17:59:50 GMT
 		</lastBuildDate>
 		<language>en-US</language>
 		<sy:updatePeriod>daily</sy:updatePeriod>
@@ -20,6 +20,15 @@
 		</image>
 
 		
+<item>
+	<title>Get out of your geographic music bubble</title>
+	<link>https://pudding.cool/2021/04/music-bubble</link>
+	<description>The songs that are popular, far away from you</description>
+	<category>music></category>
+	<pubDate>Thu, 08 Apr 2021 04:00:00 GMT</pubDate>
+	<guid isPermaLink="false">2021/04/music-bubble</guid>
+</item>
+	
 <item>
 	<title>How Science Came Together During COVID-19</title>
 	<link>https://pudding.cool/2021/03/covid-science</link>
@@ -144,15 +153,6 @@
 	<category>culture></category>
 	<pubDate>Mon, 16 Nov 2020 05:00:00 GMT</pubDate>
 	<guid isPermaLink="false">2020/11/crossword-puzzles</guid>
-</item>
-	
-<item>
-	<title>Welcome to the Cloud Zoo</title>
-	<link>https://pudding.cool/2020/11/cloud-zoo</link>
-	<description>Live-streamed animals from your favorite zoos and aquariums all in one place</description>
-	<category>other></category>
-	<pubDate>Mon, 09 Nov 2020 05:00:00 GMT</pubDate>
-	<guid isPermaLink="false">2020/11/cloud-zoo</guid>
 </item>
 	
 
