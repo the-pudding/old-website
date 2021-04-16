@@ -1,7 +1,38 @@
 #page-home
 	padding-top 4rem
+
 	+mq('bp-m')
 		padding-top 0
-	
+
 	.story-item a
 		border none
+
+	.hiring
+		background $black
+		text-align center
+
+		+mq('bp-6')
+			position absolute
+			top 0
+			right 0
+			width 8em
+
+		+mq('bp-7')
+			top 2em
+			right 1em
+			padding 0.5em
+			width 5em
+			height 5em
+			border-radius 50%
+
+		p
+			margin 0
+			padding 0
+			padding 0.75em 0
+			line-height 1.2
+
+		a
+			color $white
+			text-decoration underline
+			font-weight bold
+			font-size 0.85em

@@ -6,8 +6,8 @@
 	<!-- DO NOT REMOVE -->
 	<!-- meta -->
 
-	<link rel='alternate' type='application/rss+xml' title='Latest from The Pudding' href='https://feeds.feedburner.com/pudding/feed'
-	/>
+	<link rel='alternate' type='application/rss+xml' title='Latest from The Pudding'
+		href='https://feeds.feedburner.com/pudding/feed' />
 
 
 	<link inline rel='stylesheet' href='common/css/font.css'>
@@ -22,6 +22,9 @@
 </head>
 
 <body id='page-home'>
+	<div class='hiring'>
+		<p><a href="https://pudding.cool/career/managing-director">We’re hiring!</a></p>
+	</div>
 
 	<!-- DO NOT REMOVE -->
 	<!-- header -->
@@ -32,7 +35,7 @@
 			<div class='section__top'>
 				<p class='section__label random-color'>What’s New</p>
 			</div>
-			
+
 			<ul>
 				<!-- DO NOT REMOVE -->
 				<!-- new -->
@@ -44,7 +47,7 @@
 				<p class='section__label random-color'>Topics</p>
 				<!-- topics-nav -->
 			</div>
-			
+
 			<!-- DO NOT REMOVE -->
 			<!-- topics -->
 		</section>
@@ -57,23 +60,23 @@
 				<p class='section__label random-color'>Our Picks</p>
 				<p class='section__description'>The Pudding staff picks stories you should see</p>
 			</div>
-			
+
 			<ul>
 				<!-- DO NOT REMOVE -->
 				<!-- picks -->
-		
+
 			</ul>
 		</section>
-		
+
 		<section id='hits' class='layout--feature'>
 			<div class='section__top'>
 				<p class='section__label random-color'>Greatest Hits</p>
 			</div>
-			
+
 			<ul>
 				<!-- DO NOT REMOVE -->
 				<!-- hits -->
-		
+
 			</ul>
 		</section>
 
@@ -81,18 +84,18 @@
 			<div class='section__top'>
 				<p class='section__label random-color'>How-To</p>
 				<div class='top__more'>
-					<a href='topics/#how'>See All <svg class='random-stroke' xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-						stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-						class="feather feather-chevron-right">
-						<polyline points="9 18 15 12 9 6"></polyline>
-					</svg></a>
+					<a href='topics/#how'>See All <svg class='random-stroke' xmlns="http://www.w3.org/2000/svg" width="24"
+							height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+							stroke-linejoin="round" class="feather feather-chevron-right">
+							<polyline points="9 18 15 12 9 6"></polyline>
+						</svg></a>
 				</div>
 			</div>
-			
+
 			<ul>
 				<!-- DO NOT REMOVE -->
 				<!-- how -->
-		
+
 			</ul>
 	</main>
 
@@ -104,7 +107,7 @@
 	</script>
 	<script src='common/js/d3.v5.min.js'></script>
 	<script inline src='common/js/general.js'></script>
-		
+
 	<script>
 		/* entry-js */
 	</script>

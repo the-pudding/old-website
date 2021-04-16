@@ -1,32 +1,38 @@
 header
-	width 100%
+	margin 0 auto
 	padding 0.5rem 0
 	max-width $main-width
-	margin 0 auto
+	width 100%
 
 	&.is-home
+		margin-top 2rem
 		margin-bottom 2rem
 		padding 0
 		padding-bottom 1rem
+
 		.top__title
 			+mq('bp-m')
 				width 20rem
+
 		.cta__newsletter
 			display flex
+
 		.cta__patreon
 			display flex
+
 		.cta__social
 			+mq('bp-m')
 				display flex
+
 		.header__tagline
 			display block
 			max-width 52rem
 
 	+mq('bp-m')
-		width calc(100% - 12rem)
 		position relative
-		transform none
+		width calc(100% - 12rem)
 		box-shadow none
+		transform none
 
 	.header__top
 		display flex
@@ -34,24 +40,28 @@ header
 		align-items center
 
 	.top__title
-		display none
 		position fixed
 		top 0.75rem
 		left 4rem
+		z-index set-index(overlay) + 1
+		display none
 		margin 0
 		width 10rem
-		z-index set-index(overlay) + 1
+
 		+mq('bp-3')
 			display block
+
 		+mq('bp-m')
 			position relative
-			width 12rem
-			z-index auto
 			top 0
 			left 0
+			z-index auto
+			width 12rem
+
 		a
 			display block
 			border none
+
 		svg
 			fill $off-black
 
@@ -59,8 +69,8 @@ header
 		position absolute
 		top 0
 		right 0
-		// transform translateX(100%)
 
+		// transform translateX(100%)
 		+mq('bp-m')
 			position relative
 			transform translateX(0)
@@ -71,9 +81,10 @@ header
 
 		li
 			set-type-size(small, false)
-			line-height 1
 			padding 0 1rem
 			font-family $sans-display
+			line-height 1
+
 			&:last-of-type
 				padding-right 0
 
@@ -83,35 +94,35 @@ header
 			color $gray-dark
 
 		.btn:hover
-			color $bg
 			background-color $gray-dark
-
+			color $bg
 
 	.header__tagline
 		display none
+		margin 0 auto
 		margin-top 0.25rem
-		font-family $serif-display
 		padding 1rem
 		padding-top 2rem
 		max-width 35rem
-		margin 0 auto
+		font-family $serif-display
 		set-type-size(large, true)
+
 		+mq('bp-m')
+			margin 0
 			padding 0
 			max-width 100%
-			margin 0
 			set-type-size(xx-large, true)
+
 			span
 				display none
 
-
 	.header__cta
 		display flex
-		flex-wrap wrap
 		flex-direction column
+		flex-wrap wrap
 		align-items center
-		font-family $sans-display
 		margin-top 1rem
+		font-family $sans-display
 
 		+mq('bp-m')
 			flex-direction row
@@ -122,78 +133,88 @@ header
 			color $bg
 			font-family $sans-display
 			cursor pointer
+
 			&:hover
 				background-color $gray-dark
-
 
 		svg:hover
 			fill $gray-dark
 
 	.cta__newsletter
 		display none
-		align-items center
 		flex-wrap wrap
+		align-items center
 		margin-bottom 2rem
 
 		+mq('bp-m')
-			margin 0
 			flex-wrap nowrap
+			margin 0
 
 		form
 			display flex
 
 		input
 			set-type-size(small, false)
-			line-height 1
-			font-family $sans-display
-			background transparent
 			border 1px solid $off-black
+			background transparent
+			font-family $sans-display
+			line-height 1
+
 			&:hover
 				border 1px solid $gray-dark
+
 			// margin-right 0.5rem
 			color $fg
+
 			&::placeholder
 				color $gray-dark
 
 		.newsletter__input
+			padding 0 0.5rem
 			width 8rem
 			height 2.5rem
-			padding 0 0.5rem
+
 			+mq('bp-m')
 				width 10rem
 
 		p
 			margin 0
 			margin-bottom 1rem
-			line-height 1
 			width 100%
+			line-height 1
 			set-type-size(large)
+
 			+mq('bp-m')
-				width auto
 				margin 0
 				margin-right 1rem
+				width auto
 
 	.cta__patreon
 		display none
-		align-items center
 		flex-wrap wrap
+		align-items center
+
 		+mq('bp-m')
 			flex-wrap nowrap
 			margin-left 2rem
+
 		a
 			border 1px solid $off-black
+
 			&:hover
 				border 1px solid $gray-dark
+
 		p
 			margin 0
 			margin-bottom 1rem
 			set-type-size(large)
-			line-height 1
 			width 100%
+			line-height 1
+
 			+mq('bp-m')
-				width auto
 				margin 0
 				margin-right 1rem
+				width auto
 
 	.cta__social
 		position fixed
@@ -203,18 +224,19 @@ header
 		display flex
 
 		+mq('bp-m')
-			display none
 			position relative
-			z-index auto
 			top 0
 			left 0
+			z-index auto
+			display none
 			margin-left 2rem
 
 		svg
 			fill $gray
+
 			+mq('bp-m')
 				fill $fg
 
 		a
-			border none
 			margin-right 0.5rem
+			border none
