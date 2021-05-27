@@ -8,7 +8,7 @@
 		<link>https://pudding.cool</link>
 		<description>The Pudding is an editorial publication that explains ideas debated in culture with visual essays.</description>
 		<lastBuildDate>
-			Sat, 15 May 2021 09:22:44 GMT
+			Thu, 27 May 2021 20:25:20 GMT
 		</lastBuildDate>
 		<language>en-US</language>
 		<sy:updatePeriod>daily</sy:updatePeriod>
@@ -20,6 +20,15 @@
 		</image>
 
 		
+<item>
+	<title>Help a Computer Win the New Yorker Cartoon Caption Contest</title>
+	<link>https://pudding.cool/projects/caption-contest/</link>
+	<description>This is an experiment to see if an AI program can produce humor</description>
+	<category>other></category>
+	<pubDate>Wed, 26 May 2021 04:00:00 GMT</pubDate>
+	<guid isPermaLink="false">projects/caption-contest/</guid>
+</item>
+	
 <item>
 	<title>How many artists overshadow their band after going solo?</title>
 	<link>https://pudding.cool/2021/04/solo</link>
@@ -144,15 +153,6 @@
 	<category>awards></category>
 	<pubDate>Fri, 20 Nov 2020 05:00:00 GMT</pubDate>
 	<guid isPermaLink="false">process/pudding-cup-2020</guid>
-</item>
-	
-<item>
-	<title>Who’s in the Crossword?</title>
-	<link>https://pudding.cool/2020/11/crossword</link>
-	<description>A look at representation and inclusivity in crossword puzzles.</description>
-	<category>culture></category>
-	<pubDate>Mon, 16 Nov 2020 05:00:00 GMT</pubDate>
-	<guid isPermaLink="false">2020/11/crossword</guid>
 </item>
 	
 
