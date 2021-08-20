@@ -35,7 +35,7 @@ function prepareStories() {
 			image: d.image,
 			url: d.url.trim(),
 			hed: d.hed.replace(/'/g, '’').trim(),
-			topic: d.topic
+			topic: d.topic ? d.topic[0] : ""
 		}));
 
 	const output = JSON.stringify(data);
