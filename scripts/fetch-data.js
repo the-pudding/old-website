@@ -1,36 +1,36 @@
-const fse = require('fs-extra');
-const request = require('request');
-const d3 = require('d3');
+const fse = require("fs-extra");
+const request = require("request");
+const d3 = require("d3");
 
 const cwd = process.cwd();
 
 const getAuthor = require(`${cwd}/scripts/get-author.js`);
 
 const url = {
-  base: 'https://docs.google.com/spreadsheets/d',
-  param: 'export?format=csv&gid=',
-  doc: '1rlOAKk1j4cSl6BYgzJ4bIUQ5PREOo6xASHX8JOrI-c4',
-  stories: '0',
-  authors: '2040210797',
-  pudding: '288086632',
-  pudding2: '1645739329',
-  polygraph: '2045064535',
-  polygraph2: '1823899147',
+  base: "https://docs.google.com/spreadsheets/d",
+  param: "export?format=csv&gid=",
+  doc: "1rlOAKk1j4cSl6BYgzJ4bIUQ5PREOo6xASHX8JOrI-c4",
+  stories: "0",
+  authors: "2040210797",
+  pudding: "288086632",
+  pudding2: "1645739329",
+  polygraph: "2045064535",
+  polygraph2: "1823899147",
 };
 
 function slugify(str) {
   return str
     .trim()
     .toLowerCase()
-    .replace(/’/g, '')
-    .replace(/'/g, '')
-    .replace(/\s/g, '-');
+    .replace(/’/g, "")
+    .replace(/'/g, "")
+    .replace(/\s/g, "-");
 }
 
 function cleanTemp(dir) {
-  console.log('cleaning tmp folder...');
+  console.log("cleaning tmp folder...");
   return new Promise((resolve, reject) => {
-    fse.remove(`${cwd}/.tmp/${dir}`, err => {
+    fse.remove(`${cwd}/.tmp/${dir}`, (err) => {
       if (err) reject(err);
       else resolve();
     });
@@ -38,7 +38,7 @@ function cleanTemp(dir) {
 }
 
 function fetchAnalytics() {
-  console.log('fetching analytics...');
+  console.log("fetching analytics...");
 
   const urlPudding = `${url.base}/${url.doc}/${url.param}${url.pudding}`;
   const urlPolygraph = `${url.base}/${url.doc}/${url.param}${url.polygraph}`;
@@ -80,13 +80,13 @@ function fetchAnalytics() {
       promisePudding2,
       promisePolygraph2,
     ])
-      .then(data => resolve(data))
-      .catch(err => reject(err));
+      .then((data) => resolve(data))
+      .catch((err) => reject(err));
   });
 }
 
 function fetchStories(analytics) {
-  console.log('fetching stories google sheet...');
+  console.log("fetching stories google sheet...");
   const urlStory = `${url.base}/${url.doc}/${url.param}${url.stories}`;
   return new Promise((resolve, reject) => {
     request(urlStory, (error, response, body) => {
@@ -98,7 +98,7 @@ function fetchStories(analytics) {
 }
 
 function arrayify(str) {
-  return str.split(',').map(d => d.trim());
+  return str.split(",").map((d) => d.trim());
 }
 
 function getTimeOnPage({
@@ -111,12 +111,12 @@ function getTimeOnPage({
   let views = 0;
 
   if (matchPudding2.length) {
-    const time = +matchPudding2[0][''];
+    const time = +matchPudding2[0][""];
     total += time * sumPudding;
     views += sumPudding;
   }
   if (matchPolygraph2.length) {
-    const time = +matchPolygraph2[0][''];
+    const time = +matchPolygraph2[0][""];
     total += time * sumPolygraph;
     views += sumPolygraph;
   }
@@ -126,7 +126,7 @@ function getTimeOnPage({
 }
 
 function joinStoryData({ analytics, stories }) {
-  console.log('loading data...');
+  console.log("loading data...");
   return new Promise((resolve, reject) => {
     const analyticsData = {
       pudding: d3.csvParse(analytics[0]),
@@ -138,45 +138,45 @@ function joinStoryData({ analytics, stories }) {
     const data = d3.csvParse(stories);
     // merge the two
     const sanitized = data
-      .filter(d => !d.ignore)
-      .map(d => {
+      .filter((d) => !d.ignore)
+      .map((d) => {
         // find match in analytics
-        const key = d.views_key;
-        const matchPudding = analyticsData.pudding.filter(
-          a => a.Pudding.toLowerCase().trim() === key.toLocaleLowerCase().trim()
-        );
-        const matchPolygraph = analyticsData.polygraph.filter(
-          a =>
-            a.Polygraph.toLowerCase().trim() === key.toLocaleLowerCase().trim()
-        );
-        const matchPudding2 = analyticsData.pudding2.filter(
-          a =>
-            a.Pudding2.toLowerCase().trim() === key.toLocaleLowerCase().trim()
-        );
-        const matchPolygraph2 = analyticsData.polygraph2.filter(
-          a =>
-            a.Polygraph2.toLowerCase().trim() === key.toLocaleLowerCase().trim()
-        );
+        // const key = d.views_key;
+        // const matchPudding = analyticsData.pudding.filter(
+        //   a => a.Pudding.toLowerCase().trim() === key.toLocaleLowerCase().trim()
+        // );
+        // const matchPolygraph = analyticsData.polygraph.filter(
+        //   a =>
+        //     a.Polygraph.toLowerCase().trim() === key.toLocaleLowerCase().trim()
+        // );
+        // const matchPudding2 = analyticsData.pudding2.filter(
+        //   a =>
+        //     a.Pudding2.toLowerCase().trim() === key.toLocaleLowerCase().trim()
+        // );
+        // const matchPolygraph2 = analyticsData.polygraph2.filter(
+        //   a =>
+        //     a.Polygraph2.toLowerCase().trim() === key.toLocaleLowerCase().trim()
+        // );
 
-        const sumPudding = d3.sum(matchPudding, a => +a['']);
-        const sumPolygraph = d3.sum(matchPolygraph, a => +a['']);
-        const views = sumPudding + sumPolygraph;
+        // const sumPudding = d3.sum(matchPudding, a => +a['']);
+        // const sumPolygraph = d3.sum(matchPolygraph, a => +a['']);
+        // const views = sumPudding + sumPolygraph;
 
-        const timeOnPage = getTimeOnPage({
-          sumPudding,
-          sumPolygraph,
-          matchPudding2,
-          matchPolygraph2,
-        });
+        // const timeOnPage = getTimeOnPage({
+        //   sumPudding,
+        //   sumPolygraph,
+        //   matchPudding2,
+        //   matchPolygraph2,
+        // });
 
-        const date = d3.timeParse('%m/%d/%Y')(d.date);
+        const date = d3.timeParse("%m/%d/%Y")(d.date);
         return {
           ...d,
           date,
-          views,
-          time_on_page: timeOnPage,
-          img: d.url.toLowerCase().replace(/\//g, '_'),
-          time: d3.timeFormat('%B %Y')(date),
+          //views,
+          //time_on_page: timeOnPage,
+          img: d.url.toLowerCase().replace(/\//g, "_"),
+          time: d3.timeFormat("%B %Y")(date),
           author: arrayify(d.author),
           topic: arrayify(d.topic),
           chart: arrayify(d.chart),
@@ -187,19 +187,19 @@ function joinStoryData({ analytics, stories }) {
     sanitized.reverse();
 
     if (sanitized) resolve(sanitized);
-    else reject('no data');
+    else reject("no data");
   });
 }
 
 function authorStoryData(data) {
-  return data.map(d => ({
+  return data.map((d) => ({
     ...d,
     ...getAuthor(d),
   }));
 }
 
 function imageStoryData(data) {
-  const getImage = d => {
+  const getImage = (d) => {
     try {
       if (fse.statSync(`${cwd}/dev/common/assets/thumbnails/1920/${d.img}.jpg`))
         return d.img;
@@ -208,14 +208,14 @@ function imageStoryData(data) {
     }
   };
 
-  return data.map(d => ({
+  return data.map((d) => ({
     ...d,
     image: getImage(d),
   }));
 }
 
 function writeStoryData(data) {
-  console.log('writing story data to file...');
+  console.log("writing story data to file...");
   const dir = `${cwd}/.tmp/data`;
   fse.ensureDirSync(dir);
   const json = JSON.stringify(data, null, 2);
@@ -237,7 +237,7 @@ function initStoryData() {
 }
 
 function fetchAuthors() {
-  console.log('fetching authors google sheet...');
+  console.log("fetching authors google sheet...");
   const urlStory = `${url.base}/${url.doc}/${url.param}${url.authors}`;
   return new Promise((resolve, reject) => {
     request(urlStory, (error, response, body) => {
@@ -250,7 +250,7 @@ function fetchAuthors() {
 }
 
 function slugAuthors(data) {
-  const withSlug = data.map(d => ({
+  const withSlug = data.map((d) => ({
     ...d,
     slug: slugify(d.name),
   }));
@@ -258,7 +258,7 @@ function slugAuthors(data) {
 }
 
 function writeAuthorData(data) {
-  console.log('writing author data to file...');
+  console.log("writing author data to file...");
   const dir = `${cwd}/.tmp/data`;
   fse.ensureDirSync(dir);
   const json = JSON.stringify(data, null, 2);
@@ -277,16 +277,16 @@ function initAuthorData() {
 }
 
 function initBacklogData() {
-  console.log('fetching backlog...');
+  console.log("fetching backlog...");
 
   const dir = `${cwd}/.tmp/data`;
   fse.ensureDirSync(dir);
 
   const urlBacklog = {
-    base: 'https://docs.google.com/spreadsheets/d',
-    param: 'export?format=csv&gid=',
-    doc: '1YkKthZxYyNf5jmLGVt5MlT9Cxjxmbb2hr8KSYoJ4I28',
-    stories: '0',
+    base: "https://docs.google.com/spreadsheets/d",
+    param: "export?format=csv&gid=",
+    doc: "1YkKthZxYyNf5jmLGVt5MlT9Cxjxmbb2hr8KSYoJ4I28",
+    stories: "0",
   };
 
   const urlB = `${urlBacklog.base}/${urlBacklog.doc}/${urlBacklog.param}${urlBacklog.stories}`;
@@ -305,15 +305,15 @@ function initBacklogData() {
 function init() {
   // make sure there is a .tmp dir
   fse.ensureDirSync(`${cwd}/.tmp`);
-  cleanTemp('data')
+  cleanTemp("data")
     .then(initAuthorData)
     .then(initStoryData)
     .then(initBacklogData)
     .then(() => {
-      console.log('DONE: fetch-data.js');
+      console.log("DONE: fetch-data.js");
       process.exit();
     })
-    .catch(err => console.log(err));
+    .catch((err) => console.log(err));
 }
 
 init();
